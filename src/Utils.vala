@@ -84,22 +84,22 @@ namespace Power.Utils {
 		var info = "";
 
 		if (charging) {
-			info += "%i%% charged".printf (percent);
+			info += _("%i%% charged").printf (percent);
 
 			var seconds = battery.time_to_full;
 
 			if (seconds > 0) {
 				info += " - ";
-				info += "%s until full".printf (format_seconds (seconds));
+				info += _("%s until full").printf (format_seconds (seconds));
 			}
 		} else {
-			info += "%i%% remaining".printf (percent);
+			info += _("%i%% remaining").printf (percent);
 
 			var seconds = battery.time_to_empty;
 
 			if (seconds > 0) {
 				info += " - ";
-				info += "%s until empty".printf (format_seconds (seconds));
+				info += _("%s until empty").printf (format_seconds (seconds));
 			}
 		}
 
@@ -107,6 +107,22 @@ namespace Power.Utils {
 	}
 
 	private string format_seconds (int64 seconds) {
-		return "sec";
+		var d = divide (seconds, 86400);
+		var h = divide (seconds, 3600);
+		var m = divide (seconds, 60);
+		var s = seconds;
+
+		if (d > 0)
+			return _("%i days").printf (d);
+		else if (h > 0)
+			return _("%i hours").printf (h);
+		else if (m > 0)
+			return _("%i minutes").printf (m);
+		else
+			return _("%i seconds").printf (s);
+	}
+
+	private int divide (int64 x, int y) {
+		return (int)(x - (x % y)) / y;
 	}
 }
