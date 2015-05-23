@@ -35,10 +35,6 @@ public class Power.Services.DeviceManager : Object {
 	public signal void battery_registered (string device_path, Device battery);
 	public signal void battery_deregistered (string device_path);
 
-	public DeviceManager () {
-		
-	}
-
 	public void init () {
 		if (connect_to_bus ()) {
 			update_properties ();

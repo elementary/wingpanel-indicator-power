@@ -16,17 +16,22 @@
  */
 
 public class Power.Widgets.DeviceList : Gtk.Box {
+	public Gee.HashMap<string, Gtk.Grid> entries;
+
 	public DeviceList () {
 		Object (orientation: Gtk.Orientation.VERTICAL);
+
+		entries = new Gee.HashMap<string, Gtk.Grid> ();
 
 		connect_signals ();
 	}
 
 	private void connect_signals () {
 		Services.DeviceManager.get_default ().battery_registered.connect (add_battery);
+		Services.DeviceManager.get_default ().battery_deregistered.connect (remove_battery);
 	}
 
-	private void add_battery (string device_path, Services.Device battery) {
+	private void add_battery (string device_path,	 Services.Device battery) {
 		var grid = new Gtk.Grid ();
 		grid.column_spacing = 6;
 		grid.row_spacing = 6;
@@ -55,7 +60,8 @@ public class Power.Widgets.DeviceList : Gtk.Box {
 
 		grid.attach (info_label, 1, 1, 1, 1);
 
-		this.pack_start (grid);
+		entries.@set (device_path, grid);
+		this.add (grid);
 
 		battery.properties_updated.connect (() => {
 			image.set_from_icon_name (Utils.get_icon_name_for_battery (battery), Gtk.IconSize.DIALOG);
@@ -64,5 +70,14 @@ public class Power.Widgets.DeviceList : Gtk.Box {
 		});
 
 		this.show_all ();
+	}
+
+	private void remove_battery (string device_path) {
+		if (!entries.has_key (device_path))
+			return;
+
+		this.remove (entries.@get (device_path));
+
+		entries.unset (device_path);
 	}
 }
