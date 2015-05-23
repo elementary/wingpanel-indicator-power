@@ -79,6 +79,8 @@ public class Power.Services.Device : Object {
 	public uint32 device_type { get; private set; }
 	public uint64 update_time { get; private set; }
 
+	public signal void properties_updated ();
+
 	public Device (string device_path) {
 		this.device_path = device_path;
 
@@ -138,6 +140,8 @@ public class Power.Services.Device : Object {
 			technology = device_properties.Get (device_path, "Technology").get_uint32 ();
 			device_type = device_properties.Get (device_path, "Type").get_uint32 ();
 			update_time = device_properties.Get (device_path, "UpdateTime").get_uint64 ();
+
+			properties_updated ();
 		} catch (Error e) {
 			warning ("Updating device properties failed: %s", e.message);
 		}

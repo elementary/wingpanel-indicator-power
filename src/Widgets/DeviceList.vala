@@ -18,9 +18,15 @@
 public class Power.Widgets.DeviceList : Gtk.Box {
 	public DeviceList () {
 		Object (orientation: Gtk.Orientation.VERTICAL);
+
+		connect_signals ();
 	}
 
-	public void add_battery (string device_path, Services.Device battery) {
+	private void connect_signals () {
+		Services.DeviceManager.get_default ().battery_registered.connect (add_battery);
+	}
+
+	private void add_battery (string device_path, Services.Device battery) {
 		var grid = new Gtk.Grid ();
 		grid.column_spacing = 6;
 		grid.row_spacing = 6;
@@ -50,5 +56,13 @@ public class Power.Widgets.DeviceList : Gtk.Box {
 		grid.attach (info_label, 1, 1, 1, 1);
 
 		this.pack_start (grid);
+
+		battery.properties_updated.connect (() => {
+			image.set_from_icon_name (Utils.get_icon_name_for_battery (battery), Gtk.IconSize.DIALOG);
+			title_label.set_markup (Utils.get_title_for_battery (battery));
+			info_label.set_label (Utils.get_info_for_battery (battery));
+		});
+
+		this.show_all ();
 	}
 }
