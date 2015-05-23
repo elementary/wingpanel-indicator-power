@@ -24,7 +24,8 @@ public class Power.Services.DeviceManager : Object {
 	private DBusInterfaces.UPower? upower = null;
 	private DBusInterfaces.Properties? upower_properties = null;
 
-	private Gee.HashMap<string, Device> devices;
+	public Gee.HashMap<string, Device> devices;
+	public Gee.Iterator batteries;
 
 	public bool has_battery { get; private set; }
 
@@ -37,6 +38,7 @@ public class Power.Services.DeviceManager : Object {
 		if (connect_to_bus ()) {
 			update_properties ();
 			read_devices ();
+			update_batteries ();
 			connect_signals ();
 		}
 	}
@@ -72,7 +74,10 @@ public class Power.Services.DeviceManager : Object {
 
 	private void connect_signals () {
 		upower.Changed.connect (update_properties);
-		upower.DeviceChanged.connect (update_properties);
+		upower.DeviceChanged.connect (() => {
+			update_properties ();
+			update_batteries ();
+		});
 		upower.DeviceAdded.connect (register_device);
 		upower.DeviceRemoved.connect (deregister_device);
 	}
@@ -81,15 +86,13 @@ public class Power.Services.DeviceManager : Object {
 		try {
 			on_battery = upower_properties.Get (UPOWER_PATH, "OnBattery").get_boolean ();
 			on_low_battery = upower_properties.Get (UPOWER_PATH, "OnLowBattery").get_boolean ();
-
-			check_has_battery ();
 		} catch (Error e) {
 			warning ("Updating UPower properties failed: %s", e.message);
 		}
 	}
 
-	private void check_has_battery () {
-		var batteries = devices.filter ((entry) => {
+	private void update_batteries () {
+		batteries = devices.filter ((entry) => {
 			var device = entry.value;
 
 			return device.device_type != DEVICE_TYPE_UNKNOWN && device.device_type != DEVICE_TYPE_LINE_POWER;
@@ -105,7 +108,7 @@ public class Power.Services.DeviceManager : Object {
 
 		debug ("Device \"%s\" registered", device_path);
 
-		check_has_battery ();
+		update_batteries ();
 	}
 
 	private void deregister_device (string device_path) {
@@ -117,7 +120,7 @@ public class Power.Services.DeviceManager : Object {
 
 		debug ("Device \"%s\" deregistered", device_path);
 
-		check_has_battery ();
+		update_batteries ();
 	}
 
 	public static DeviceManager get_default () {
