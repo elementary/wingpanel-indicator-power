@@ -14,6 +14,7 @@ include (ValaPrecompile)
 # Add all your vala files and requires packages to the List below to include them in the build
 vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
   Indicator.vala
+  Utils.vala
   Widgets/DisplayWidget.vala
   Widgets/DeviceList.vala
   Services/DeviceManager.vala

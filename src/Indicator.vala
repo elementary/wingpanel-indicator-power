@@ -38,13 +38,16 @@ public class Power.Indicator : Wingpanel.Indicator {
 		if (device_list == null) {
 			device_list = new Widgets.DeviceList ();
 
-			// No need to display the indicator when the device is completely in AC mode
-			this.visible = Services.DeviceManager.get_default ().has_battery;
+			Services.DeviceManager.get_default ().battery_registered.connect (device_list.add_battery);
 
+			// No need to display the indicator when the device is completely in AC mode
 			Services.DeviceManager.get_default ().notify["has-battery"].connect (() => {
 				if (this.visible != Services.DeviceManager.get_default ().has_battery)
 					this.visible = Services.DeviceManager.get_default ().has_battery;
 			});
+
+			// Start the device-search after connecting the signals
+			Services.DeviceManager.get_default ().init ();
 		}
 
 		return device_list;

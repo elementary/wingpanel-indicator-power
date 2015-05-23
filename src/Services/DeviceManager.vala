@@ -32,7 +32,14 @@ public class Power.Services.DeviceManager : Object {
 	public bool on_battery { get; private set; }
 	public bool on_low_battery { get; private set; }
 
+	public signal void battery_registered (string device_path, Device battery);
+	public signal void battery_deregistered (string device_path);
+
 	public DeviceManager () {
+		
+	}
+
+	public void init () {
 		if (connect_to_bus ()) {
 			update_properties ();
 			read_devices ();
@@ -93,7 +100,7 @@ public class Power.Services.DeviceManager : Object {
 		batteries = devices.filter ((entry) => {
 			var device = entry.value;
 
-			return device.device_type != DEVICE_TYPE_UNKNOWN && device.device_type != DEVICE_TYPE_LINE_POWER;
+			return Utils.type_is_battery (device.device_type);
 		});
 
 		has_battery = batteries.has_next ();
@@ -107,6 +114,9 @@ public class Power.Services.DeviceManager : Object {
 		debug ("Device \"%s\" registered", device_path);
 
 		update_batteries ();
+
+		if (Utils.type_is_battery (device.device_type))
+			battery_registered (device_path, device);
 	}
 
 	private void deregister_device (string device_path) {
@@ -119,6 +129,8 @@ public class Power.Services.DeviceManager : Object {
 		debug ("Device \"%s\" deregistered", device_path);
 
 		update_batteries ();
+
+		battery_deregistered (device_path);
 	}
 
 	public static DeviceManager get_default () {
