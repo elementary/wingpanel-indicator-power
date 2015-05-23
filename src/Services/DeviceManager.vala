@@ -32,8 +32,6 @@ public class Power.Services.DeviceManager : Object {
 	public bool on_battery { get; private set; }
 	public bool on_low_battery { get; private set; }
 
-	public signal void device_registered (Device device);
-
 	public DeviceManager () {
 		if (connect_to_bus ()) {
 			update_properties ();
