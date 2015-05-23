@@ -47,17 +47,21 @@ public class Power.Services.DeviceManager : Object {
 
 			return upower != null & upower_properties != null;
 		} catch (Error e) {
-			warning ("Connecting to UPower bus failed");
+			warning ("Connecting to UPower bus failed: %s", e.message);
 
 			return false;
 		}
 	}
 
 	private void read_devices () {
-		var devices = upower.EnumerateDevices ();
+		try {
+			var devices = upower.EnumerateDevices ();
 
-		foreach (string device_path in devices) {
-			register_device (device_path);
+			foreach (string device_path in devices) {
+				register_device (device_path);
+			}
+		} catch (Error e) {
+			warning ("Reading UPower devices failed: %s", e.message);
 		}
 	}
 
@@ -67,10 +71,14 @@ public class Power.Services.DeviceManager : Object {
 	}
 
 	private void update_properties () {
-		on_battery = upower_properties.Get (UPOWER_PATH, "OnBattery").get_boolean ();
-		on_low_battery = upower_properties.Get (UPOWER_PATH, "OnLowBattery").get_boolean ();
+		try {
+			on_battery = upower_properties.Get (UPOWER_PATH, "OnBattery").get_boolean ();
+			on_low_battery = upower_properties.Get (UPOWER_PATH, "OnLowBattery").get_boolean ();
 
-		check_has_battery ();
+			check_has_battery ();
+		} catch (Error e) {
+			warning ("Updating UPower properties failed: %s", e.message);
+		}
 	}
 
 	private void check_has_battery () {
