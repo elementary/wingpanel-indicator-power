@@ -24,7 +24,10 @@ public class Power.Services.DeviceManager : Object {
 	private DBusInterfaces.UPower? upower = null;
 	private DBusInterfaces.Properties? upower_properties = null;
 
+	private Gee.HashMap<string, Device> devices;
+
 	public bool has_battery { get; private set; }
+
 	public bool on_battery { get; private set; }
 	public bool on_low_battery { get; private set; }
 
@@ -39,6 +42,8 @@ public class Power.Services.DeviceManager : Object {
 	}
 
 	private bool connect_to_bus () {
+		devices = new Gee.HashMap<string, Device> ();
+
 		try {
 			upower = Bus.get_proxy_sync (BusType.SYSTEM, UPOWER_INTERFACE, UPOWER_PATH, DBusProxyFlags.NONE);
 			upower_properties = Bus.get_proxy_sync (BusType.SYSTEM, UPOWER_INTERFACE, UPOWER_PATH, DBusProxyFlags.NONE);
@@ -67,7 +72,9 @@ public class Power.Services.DeviceManager : Object {
 
 	private void connect_signals () {
 		upower.Changed.connect (update_properties);
+		upower.DeviceChanged.connect (update_properties);
 		upower.DeviceAdded.connect (register_device);
+		upower.DeviceRemoved.connect (deregister_device);
 	}
 
 	private void update_properties () {
@@ -82,14 +89,35 @@ public class Power.Services.DeviceManager : Object {
 	}
 
 	private void check_has_battery () {
-		// foreach devices
-		// cound batterys > 0 => has_bettery = true
+		var batteries = devices.filter ((entry) => {
+			var device = entry.value;
+
+			return device.device_type != DEVICE_TYPE_UNKNOWN && device.device_type != DEVICE_TYPE_LINE_POWER;
+		});
+
+		has_battery = batteries.has_next ();
 	}
 
 	private void register_device (string device_path) {
 		var device = new Device (device_path);
 
+		devices.@set (device_path, device);
+
 		debug ("Device \"%s\" registered", device_path);
+
+		check_has_battery ();
+	}
+
+	private void deregister_device (string device_path) {
+		if (!devices.has_key (device_path))
+			return;
+
+		if (!devices.unset (device_path))
+			return;
+
+		debug ("Device \"%s\" deregistered", device_path);
+
+		check_has_battery ();
 	}
 
 	public static DeviceManager get_default () {
