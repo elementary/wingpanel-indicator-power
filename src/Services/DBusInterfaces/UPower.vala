@@ -17,7 +17,7 @@
 
 namespace Power.Services.DBusInterfaces {
 	[DBus (name = "org.freedesktop.UPower")]
-	interface UPower : Object {
+	public interface UPower : Object {
 		public abstract string[] EnumerateDevices () throws IOError;
 
 		public signal void Changed ();

@@ -34,7 +34,7 @@ namespace Power.Services.DBusInterfaces {
 	}
 
 	[DBus (name = "org.freedesktop.UPower.Device")]
-	interface Device : Object {
+	public interface Device : Object {
 		public abstract HistoryDataPoint[] GetHistory (string type, uint32 timespan, uint32 resolution) throws IOError;
 		public abstract StatisticsDataPoint[] GetStatistics (string type) throws IOError;
 		public abstract void Refresh () throws IOError;

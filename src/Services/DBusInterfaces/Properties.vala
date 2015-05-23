@@ -17,7 +17,7 @@
 
 namespace Power.Services.DBusInterfaces {
 	[DBus (name = "org.freedesktop.DBus.Properties")]
-	interface Properties : Object {
+	public interface Properties : Object {
 		public abstract Variant Get (string interface, string propname) throws IOError;
 		public abstract void Set (string interface, string propname, Variant value) throws IOError;
 	}
