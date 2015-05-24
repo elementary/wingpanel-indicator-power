@@ -55,7 +55,7 @@ public class Power.Services.DeviceManager : Object {
 
 			return upower != null & upower_properties != null;
 		} catch (Error e) {
-			warning ("Connecting to UPower bus failed: %s", e.message);
+			critical ("Connecting to UPower bus failed: %s", e.message);
 
 			return false;
 		}
@@ -69,7 +69,7 @@ public class Power.Services.DeviceManager : Object {
 				register_device (device_path);
 			}
 		} catch (Error e) {
-			warning ("Reading UPower devices failed: %s", e.message);
+			critical ("Reading UPower devices failed: %s", e.message);
 		}
 	}
 
@@ -88,7 +88,7 @@ public class Power.Services.DeviceManager : Object {
 			on_battery = upower_properties.Get (UPOWER_PATH, "OnBattery").get_boolean ();
 			on_low_battery = upower_properties.Get (UPOWER_PATH, "OnLowBattery").get_boolean ();
 		} catch (Error e) {
-			warning ("Updating UPower properties failed: %s", e.message);
+			critical ("Updating UPower properties failed: %s", e.message);
 		}
 	}
 
@@ -119,6 +119,8 @@ public class Power.Services.DeviceManager : Object {
 		if (!devices.has_key (device_path))
 			return;
 
+		var device = devices.@get (device_path);
+
 		if (!devices.unset (device_path))
 			return;
 
@@ -126,7 +128,8 @@ public class Power.Services.DeviceManager : Object {
 
 		update_batteries ();
 
-		battery_deregistered (device_path);
+		if (Utils.type_is_battery (device.device_type))
+			battery_deregistered (device_path);
 	}
 
 	public static DeviceManager get_default () {

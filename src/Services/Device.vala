@@ -99,7 +99,7 @@ public class Power.Services.Device : Object {
 
 			return device != null & device_properties != null;
 		} catch (Error e) {
-			warning ("Connecting to UPower device failed: %s", e.message);
+			critical ("Connecting to UPower device failed: %s", e.message);
 
 			return false;
 		}
@@ -143,7 +143,7 @@ public class Power.Services.Device : Object {
 
 			properties_updated ();
 		} catch (Error e) {
-			warning ("Updating device properties failed: %s", e.message);
+			critical ("Updating device properties failed: %s", e.message);
 		}
 	}
 }
