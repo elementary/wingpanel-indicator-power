@@ -61,7 +61,11 @@ public class Power.Widgets.DeviceList : Gtk.Box {
 		grid.attach (info_label, 1, 1, 1, 1);
 
 		entries.@set (device_path, grid);
-		this.add (grid);
+
+		if (battery.device_type == DEVICE_TYPE_BATTERY)
+			this.pack_start (grid);
+		else
+			this.pack_end (grid);
 
 		battery.properties_updated.connect (() => {
 			image.set_from_icon_name (Utils.get_icon_name_for_battery (battery), Gtk.IconSize.DIALOG);

@@ -75,8 +75,12 @@ public class Power.Indicator : Wingpanel.Indicator {
 	}
 
 	private void set_icon_for_battery (Services.Device battery) {
-		if (display_widget != null)
-			display_widget.icon_name = Utils.get_symbolic_icon_name_for_battery (battery);
+		if (display_widget != null) {
+			var icon_name = Utils.get_symbolic_icon_name_for_battery (battery);
+
+			display_widget.icon_name = icon_name;
+			debug ("Icon changed to \"%s\"", icon_name);
+		}
 	}
 }
 

@@ -95,27 +95,39 @@ public class Power.Services.DeviceManager : Object {
 	}
 
 	private void update_batteries () {
+		batteries = devices.filter ((entry) => {
+			var device = entry.value;
+
+			return Utils.type_is_battery (device.device_type);
+		});
+
+		has_battery = batteries.has_next ();
+
+		if (has_battery)
+			update_primary_battery ();
+	}
+
+	private void update_primary_battery () {
 		Device? main_battery = null;
 		Device? alternate_battery = null;
 
-		batteries = devices.filter ((entry) => {
+		devices.@foreach ((entry) => {
 			var device = entry.value;
 			var is_battery = Utils.type_is_battery (device.device_type);
 
 			if (is_battery) {
 				if (device.device_type == DEVICE_TYPE_BATTERY) {
-					if (main_battery == null)
-						main_battery = device;
+					main_battery = device;
+
+					return false;
 				} else {
 					if (alternate_battery == null)
 						alternate_battery = device;
 				}
 			}
 
-			return is_battery;
+			return true;
 		});
-
-		has_battery = batteries.has_next ();
 
 		if (has_battery) {
 			if (main_battery != null) {
