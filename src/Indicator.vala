@@ -18,7 +18,7 @@
 public class Power.Indicator : Wingpanel.Indicator {
 	private Widgets.DisplayWidget? display_widget = null;
 
-	private Widgets.DeviceList? device_list = null;
+	private Widgets.PopoverWidget? popover_widget = null;
 
 	private Services.Device primary_battery;
 
@@ -37,8 +37,8 @@ public class Power.Indicator : Wingpanel.Indicator {
 	}
 
 	public override Gtk.Widget? get_widget () {
-		if (device_list == null) {
-			device_list = new Widgets.DeviceList ();
+		if (popover_widget == null) {
+			popover_widget = new Widgets.PopoverWidget ();
 
 			// No need to display the indicator when the device is completely in AC mode
 			Services.DeviceManager.get_default ().notify["has-battery"].connect (update_visibility);
@@ -48,7 +48,7 @@ public class Power.Indicator : Wingpanel.Indicator {
 			Services.DeviceManager.get_default ().init ();
 		}
 
-		return device_list;
+		return popover_widget;
 	}
 
 	public override void opened () {
@@ -67,19 +67,23 @@ public class Power.Indicator : Wingpanel.Indicator {
 	private void update_primary_battery () {
 		primary_battery = Services.DeviceManager.get_default ().primary_battery;
 
-		set_icon_for_battery (primary_battery);
+		show_battery_data (primary_battery);
 
 		primary_battery.properties_updated.connect (() => {
-			set_icon_for_battery (primary_battery);
+			show_battery_data (primary_battery);
 		});
 	}
 
-	private void set_icon_for_battery (Services.Device battery) {
+	private void show_battery_data (Services.Device battery) {
 		if (display_widget != null) {
 			var icon_name = Utils.get_symbolic_icon_name_for_battery (battery);
 
-			display_widget.icon_name = icon_name;
+			display_widget.set_icon_name (icon_name);
+
+			// Debug output for designers
 			debug ("Icon changed to \"%s\"", icon_name);
+
+			display_widget.set_percent ((int)Math.round (battery.percentage));
 		}
 	}
 }

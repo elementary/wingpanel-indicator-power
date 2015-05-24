@@ -15,8 +15,49 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-public class Power.Widgets.DisplayWidget : Gtk.Image {
+public class Power.Widgets.DisplayWidget : Gtk.Box {
+	private Gtk.Image image;
+
+	private Gtk.Revealer percent_revealer;
+
+	private Gtk.Label percent_label;
+
 	public DisplayWidget () {
-		this.icon_name = "content-loading-symbolic";
+		Object (orientation: Gtk.Orientation.HORIZONTAL);
+
+		build_ui ();
+		connect_signals ();
+	}
+
+	private void build_ui () {
+		image = new Gtk.Image ();
+		image.icon_name = "content-loading-symbolic";
+
+		this.pack_start (image);
+
+		percent_revealer = new Gtk.Revealer ();
+		percent_revealer.reveal_child = Services.SettingsManager.get_default ().show_percentage;
+		percent_revealer.transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT;
+
+		percent_label = new Gtk.Label ("");
+		percent_label.margin_start = 4;
+
+		percent_revealer.add (percent_label);
+
+		this.pack_start (percent_revealer);
+	}
+
+	private void connect_signals () {
+		Services.SettingsManager.get_default ().notify["show-percentage"].connect (() => {
+			percent_revealer.set_reveal_child (Services.SettingsManager.get_default ().show_percentage);
+		});
+	}
+
+	public void set_icon_name (string icon_name) {
+		image.icon_name = icon_name;
+	}
+
+	public void set_percent (int percentage) {
+		percent_label.set_label ("%i%%".printf (percentage));
 	}
 }
