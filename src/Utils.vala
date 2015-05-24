@@ -20,6 +20,10 @@ namespace Power.Utils {
 		return device_type != DEVICE_TYPE_UNKNOWN && device_type != DEVICE_TYPE_LINE_POWER;
 	}
 
+	public string get_symbolic_icon_name_for_battery (Services.Device battery) {
+		return get_icon_name_for_battery (battery) + "-symbolic";
+	}
+
 	public string get_icon_name_for_battery (Services.Device battery) {
 		switch (battery.device_type) {
 			case DEVICE_TYPE_MOUSE: return get_mouse_icon (battery.percentage);

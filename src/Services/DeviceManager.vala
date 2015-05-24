@@ -24,8 +24,10 @@ public class Power.Services.DeviceManager : Object {
 	private DBusInterfaces.UPower? upower = null;
 	private DBusInterfaces.Properties? upower_properties = null;
 
-	public Gee.HashMap<string, Device> devices;
-	public Gee.Iterator batteries;
+	public Gee.HashMap<string, Device> devices { get; private set; }
+	public Gee.Iterator batteries { get; private set; }
+
+	public Device primary_battery { get; private set; }
 
 	public bool has_battery { get; private set; }
 
@@ -93,13 +95,37 @@ public class Power.Services.DeviceManager : Object {
 	}
 
 	private void update_batteries () {
+		Device? main_battery = null;
+		Device? alternate_battery = null;
+
 		batteries = devices.filter ((entry) => {
 			var device = entry.value;
+			var is_battery = Utils.type_is_battery (device.device_type);
 
-			return Utils.type_is_battery (device.device_type);
+			if (is_battery) {
+				if (device.device_type == DEVICE_TYPE_BATTERY) {
+					if (main_battery == null)
+						main_battery = device;
+				} else {
+					if (alternate_battery == null)
+						alternate_battery = device;
+				}
+			}
+
+			return is_battery;
 		});
 
 		has_battery = batteries.has_next ();
+
+		if (has_battery) {
+			if (main_battery != null) {
+				if (primary_battery != main_battery)
+					primary_battery = main_battery;
+			} else if (alternate_battery != null) {
+				if (primary_battery != alternate_battery)
+					primary_battery = alternate_battery;
+			}
+		}
 	}
 
 	private void register_device (string device_path) {

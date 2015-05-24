@@ -17,7 +17,6 @@
 
 public class Power.Widgets.DisplayWidget : Gtk.Image {
 	public DisplayWidget () {
-		// Should normally be never displayed
 		this.icon_name = "content-loading-symbolic";
 	}
 }

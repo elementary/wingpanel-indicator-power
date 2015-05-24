@@ -20,6 +20,8 @@ public class Power.Indicator : Wingpanel.Indicator {
 
 	private Widgets.DeviceList? device_list = null;
 
+	private Services.Device primary_battery;
+
 	public Indicator () {
 		Object (code_name: Wingpanel.Indicator.POWER,
 				display_name: _("Power"),
@@ -39,10 +41,8 @@ public class Power.Indicator : Wingpanel.Indicator {
 			device_list = new Widgets.DeviceList ();
 
 			// No need to display the indicator when the device is completely in AC mode
-			Services.DeviceManager.get_default ().notify["has-battery"].connect (() => {
-				if (this.visible != Services.DeviceManager.get_default ().has_battery)
-					this.visible = Services.DeviceManager.get_default ().has_battery;
-			});
+			Services.DeviceManager.get_default ().notify["has-battery"].connect (update_visibility);
+			Services.DeviceManager.get_default ().notify["primary-battery"].connect (update_primary_battery);
 
 			// Start the device-search after connecting the signals
 			Services.DeviceManager.get_default ().init ();
@@ -57,6 +57,26 @@ public class Power.Indicator : Wingpanel.Indicator {
 
 	public override void closed () {
 		// TODO
+	}
+
+	private void update_visibility () {
+		if (this.visible != Services.DeviceManager.get_default ().has_battery)
+			this.visible = Services.DeviceManager.get_default ().has_battery;
+	}
+
+	private void update_primary_battery () {
+		primary_battery = Services.DeviceManager.get_default ().primary_battery;
+
+		set_icon_for_battery (primary_battery);
+
+		primary_battery.properties_updated.connect (() => {
+			set_icon_for_battery (primary_battery);
+		});
+	}
+
+	private void set_icon_for_battery (Services.Device battery) {
+		if (display_widget != null)
+			display_widget.icon_name = Utils.get_symbolic_icon_name_for_battery (battery);
 	}
 }
 
