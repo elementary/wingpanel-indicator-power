@@ -63,7 +63,7 @@ namespace Power.Utils {
 	public string get_title_for_battery (Services.Device battery) {
 		var title = "";
 
-		if (battery.vendor != "")
+		if (battery.vendor != "" && battery.device_type != DEVICE_TYPE_BATTERY)
 			title += "%s ".printf (battery.vendor);
 
 		switch (battery.device_type) {
