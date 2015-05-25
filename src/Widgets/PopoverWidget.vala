@@ -48,7 +48,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
 		this.pack_start (new Wingpanel.Widgets.IndicatorSeparator ());
 
-		show_settings_button = new Wingpanel.Widgets.IndicatorButton (_("Show power settings"));
+		show_settings_button = new Wingpanel.Widgets.IndicatorButton (_("Power Settings"));
 
 		this.pack_start (show_settings_button);
 	}
