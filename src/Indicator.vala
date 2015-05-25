@@ -39,6 +39,7 @@ public class Power.Indicator : Wingpanel.Indicator {
 	public override Gtk.Widget? get_widget () {
 		if (popover_widget == null) {
 			popover_widget = new Widgets.PopoverWidget ();
+			popover_widget.settings_shown.connect (() => this.close ());
 
 			// No need to display the indicator when the device is completely in AC mode
 			Services.DeviceManager.get_default ().notify["has-battery"].connect (update_visibility);

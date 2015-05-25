@@ -40,7 +40,7 @@ public class Power.Widgets.DisplayWidget : Gtk.Box {
 		percent_revealer.transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT;
 
 		percent_label = new Gtk.Label ("");
-		percent_label.margin_start = 4;
+		percent_label.margin_start = 6;
 
 		percent_revealer.add (percent_label);
 

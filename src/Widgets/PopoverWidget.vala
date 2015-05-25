@@ -16,9 +16,15 @@
  */
 
 public class Power.Widgets.PopoverWidget : Gtk.Box {
+	private const string SETTINGS_EXEC = "/usr/bin/switchboard power";
+
 	private DeviceList device_list;
 
 	private Wingpanel.Widgets.IndicatorSwitch show_percent_switch;
+
+	private Wingpanel.Widgets.IndicatorButton show_settings_button;
+
+	public signal void settings_shown ();
 
 	public PopoverWidget () {
 		Object (orientation: Gtk.Orientation.VERTICAL);
@@ -35,13 +41,28 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 		this.pack_start (new Wingpanel.Widgets.IndicatorSeparator ());
 
 		show_percent_switch = new Wingpanel.Widgets.IndicatorSwitch (_("Show percentage"), Services.SettingsManager.get_default ().show_percentage);
-		show_percent_switch.margin_start = 6;
+		show_percent_switch.margin_start = 10;
 		show_percent_switch.margin_bottom = 6;
 
 		this.pack_start (show_percent_switch);
+
+		this.pack_start (new Wingpanel.Widgets.IndicatorSeparator ());
+
+		show_settings_button = new Wingpanel.Widgets.IndicatorButton (_("Show power settings"));
+
+		this.pack_start (show_settings_button);
 	}
 
 	private void connect_signals () {
 		Services.SettingsManager.get_default ().schema.bind ("show-percentage", show_percent_switch.get_switch (), "active", SettingsBindFlags.DEFAULT);
+
+		show_settings_button.clicked.connect (show_settings);
+	}
+
+	private void show_settings () {
+		var cmd = new Granite.Services.SimpleCommand ("/usr/bin", SETTINGS_EXEC);
+		cmd.run ();
+
+		settings_shown ();
 	}
 }
