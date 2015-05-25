@@ -33,6 +33,7 @@ namespace Power.Utils {
 	}
 
 	private string get_mouse_icon (double percentage) {
+		if (percentage <= 0) return "input-mouse";
 		if (percentage < 20) return "battery-mouse-000";
 		if (percentage < 40) return "battery-mouse-020";
 		if (percentage < 60) return "battery-mouse-040";
@@ -41,6 +42,7 @@ namespace Power.Utils {
 	}
 
 	private string get_phone_icon (double percentage) {
+		if (percentage <= 0) return "phone";
 		if (percentage < 20) return "battery-phone-000";
 		if (percentage < 40) return "battery-phone-020";
 		if (percentage < 60) return "battery-phone-040";
@@ -49,6 +51,7 @@ namespace Power.Utils {
 	}
 
 	private string get_battery_icon (double percentage) {
+		if (percentage <= 0) return "battery-good";
 		if (percentage < 20) return "battery-empty";
 		if (percentage < 40) return "battery-caution";
 		if (percentage < 60) return "battery-low";
@@ -84,6 +87,9 @@ namespace Power.Utils {
 	public string get_info_for_battery (Services.Device battery) {
 		var percent = (int)Math.round (battery.percentage);
 		var charging = is_charging (battery.state);
+
+		if (percent <= 0)
+			return _("Calculating...");
 
 		var info = "";
 
