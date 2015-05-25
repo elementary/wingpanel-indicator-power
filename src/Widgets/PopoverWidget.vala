@@ -40,7 +40,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
 		this.pack_start (new Wingpanel.Widgets.IndicatorSeparator ());
 
-		show_percent_switch = new Wingpanel.Widgets.IndicatorSwitch (_("Show percentage"), Services.SettingsManager.get_default ().show_percentage);
+		show_percent_switch = new Wingpanel.Widgets.IndicatorSwitch (_("Show Percentage"), Services.SettingsManager.get_default ().show_percentage);
 		show_percent_switch.margin_start = 10;
 		show_percent_switch.margin_bottom = 6;
 
