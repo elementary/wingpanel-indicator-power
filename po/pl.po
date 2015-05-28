@@ -3,22 +3,22 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-24 17:18+0200\n"
-"PO-Revision-Date: 2015-05-23 21:47+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-05-27 23:24+0000\n"
+"Last-Translator: Pracownik_Muzeum <flaminger666@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-25 06:09+0000\n"
-"X-Generator: Launchpad (build 17514)\n"
+"X-Launchpad-Export-Date: 2015-05-28 05:39+0000\n"
+"X-Generator: Launchpad (build 17528)\n"
 
 #: ../src//Utils.vala:71
 msgid "Battery"
-msgstr ""
+msgstr "Bateria"
 
 #: ../src//Utils.vala:72
 msgid "UPS"
-msgstr ""
+msgstr "UPS"
 
 #: ../src//Utils.vala:73
 msgid "Monitor"
@@ -26,59 +26,59 @@ msgstr ""
 
 #: ../src//Utils.vala:74
 msgid "Mouse"
-msgstr ""
+msgstr "Mysz"
 
 #: ../src//Utils.vala:75
 msgid "Keyboard"
-msgstr ""
+msgstr "Klawiatura"
 
 #: ../src//Utils.vala:76
 msgid "PDA"
-msgstr ""
+msgstr "PDA"
 
 #: ../src//Utils.vala:77
 msgid "Phone"
-msgstr ""
+msgstr "Telefon"
 
 #: ../src//Utils.vala:78
 msgid "Device"
-msgstr ""
+msgstr "Urządzenie"
 
 #: ../src//Utils.vala:91
 msgid "%i%% charged"
-msgstr ""
+msgstr "%i%% naładowania"
 
 #: ../src//Utils.vala:97
 msgid "%s until full"
-msgstr ""
+msgstr "%s do pełna"
 
 #: ../src//Utils.vala:100
 msgid "%i%% remaining"
-msgstr ""
+msgstr "%i%% pozostało"
 
 #: ../src//Utils.vala:106
 msgid "%s until empty"
-msgstr ""
+msgstr "%s do opróżnieia"
 
 #: ../src//Utils.vala:120
 msgid "%i days"
-msgstr ""
+msgstr "%i dni"
 
 #: ../src//Utils.vala:122
 msgid "%i hours"
-msgstr ""
+msgstr "%i godzin"
 
 #: ../src//Utils.vala:124
 msgid "%i minutes"
-msgstr ""
+msgstr "%i minut"
 
 #: ../src//Utils.vala:126
 msgid "%i seconds"
-msgstr ""
+msgstr "%i sekund"
 
 #: ../src//Indicator.vala:27
 msgid "Power"
-msgstr ""
+msgstr "Zasilanie"
 
 #: ../src//Indicator.vala:28
 msgid "Power indicator"
