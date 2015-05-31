@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-24 17:18+0200\n"
-"PO-Revision-Date: 2015-05-25 17:02+0000\n"
-"Last-Translator: Philip Scott <felescoto95@hotmail.com>\n"
+"PO-Revision-Date: 2015-05-30 08:55+0000\n"
+"Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-26 05:57+0000\n"
-"X-Generator: Launchpad (build 17514)\n"
+"X-Launchpad-Export-Date: 2015-05-31 05:36+0000\n"
+"X-Generator: Launchpad (build 17532)\n"
 
 #: ../src//Utils.vala:71
 msgid "Battery"
@@ -18,7 +18,7 @@ msgstr "Batería"
 
 #: ../src//Utils.vala:72
 msgid "UPS"
-msgstr ""
+msgstr "SAI"
 
 #: ../src//Utils.vala:73
 msgid "Monitor"
@@ -34,7 +34,7 @@ msgstr "Teclado"
 
 #: ../src//Utils.vala:76
 msgid "PDA"
-msgstr ""
+msgstr "PDA"
 
 #: ../src//Utils.vala:77
 msgid "Phone"
@@ -46,15 +46,15 @@ msgstr "Dispositivo"
 
 #: ../src//Utils.vala:91
 msgid "%i%% charged"
-msgstr "%i%% cargado"
+msgstr "%i %% cargada"
 
 #: ../src//Utils.vala:97
 msgid "%s until full"
-msgstr ""
+msgstr "%s hasta completar"
 
 #: ../src//Utils.vala:100
 msgid "%i%% remaining"
-msgstr "%i%% restante"
+msgstr "%i %% restante"
 
 #: ../src//Utils.vala:106
 msgid "%s until empty"
@@ -82,4 +82,4 @@ msgstr "Energía"
 
 #: ../src//Indicator.vala:28
 msgid "Power indicator"
-msgstr "Indicador de Energia"
+msgstr "Indicador de energía"
