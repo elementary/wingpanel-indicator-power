@@ -3,83 +3,83 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-24 17:18+0200\n"
-"PO-Revision-Date: 2015-05-23 21:47+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-06-04 06:13+0000\n"
+"Last-Translator: colindemian <dengmengpc@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-25 06:09+0000\n"
-"X-Generator: Launchpad (build 17514)\n"
+"X-Launchpad-Export-Date: 2015-06-05 06:30+0000\n"
+"X-Generator: Launchpad (build 17540)\n"
 
 #: ../src//Utils.vala:71
 msgid "Battery"
-msgstr ""
+msgstr "电池"
 
 #: ../src//Utils.vala:72
 msgid "UPS"
-msgstr ""
+msgstr "电源"
 
 #: ../src//Utils.vala:73
 msgid "Monitor"
-msgstr ""
+msgstr "监视器"
 
 #: ../src//Utils.vala:74
 msgid "Mouse"
-msgstr ""
+msgstr "鼠标"
 
 #: ../src//Utils.vala:75
 msgid "Keyboard"
-msgstr ""
+msgstr "键盘"
 
 #: ../src//Utils.vala:76
 msgid "PDA"
-msgstr ""
+msgstr "PDA"
 
 #: ../src//Utils.vala:77
 msgid "Phone"
-msgstr ""
+msgstr "手机"
 
 #: ../src//Utils.vala:78
 msgid "Device"
-msgstr ""
+msgstr "设备"
 
 #: ../src//Utils.vala:91
 msgid "%i%% charged"
-msgstr ""
+msgstr "已充 %i%%"
 
 #: ../src//Utils.vala:97
 msgid "%s until full"
-msgstr ""
+msgstr "还需 %s 充满"
 
 #: ../src//Utils.vala:100
 msgid "%i%% remaining"
-msgstr ""
+msgstr "剩余 %i%%"
 
 #: ../src//Utils.vala:106
 msgid "%s until empty"
-msgstr ""
+msgstr "还有 %s 用尽"
 
 #: ../src//Utils.vala:120
 msgid "%i days"
-msgstr ""
+msgstr "%i 天"
 
 #: ../src//Utils.vala:122
 msgid "%i hours"
-msgstr ""
+msgstr "%i 小时"
 
 #: ../src//Utils.vala:124
 msgid "%i minutes"
-msgstr ""
+msgstr "%i 分"
 
 #: ../src//Utils.vala:126
 msgid "%i seconds"
-msgstr ""
+msgstr "%i 秒"
 
 #: ../src//Indicator.vala:27
 msgid "Power"
-msgstr ""
+msgstr "电源"
 
 #: ../src//Indicator.vala:28
 msgid "Power indicator"
-msgstr ""
+msgstr "电源指示器"
