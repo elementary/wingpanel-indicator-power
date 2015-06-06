@@ -3,83 +3,83 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-24 17:18+0200\n"
-"PO-Revision-Date: 2015-05-23 21:47+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-06-06 00:18+0000\n"
+"Last-Translator: 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-25 06:09+0000\n"
-"X-Generator: Launchpad (build 17514)\n"
+"X-Launchpad-Export-Date: 2015-06-06 05:47+0000\n"
+"X-Generator: Launchpad (build 17540)\n"
 
 #: ../src//Utils.vala:71
 msgid "Battery"
-msgstr ""
+msgstr "배터리"
 
 #: ../src//Utils.vala:72
 msgid "UPS"
-msgstr ""
+msgstr "무정전 전원공급장치(UPS)"
 
 #: ../src//Utils.vala:73
 msgid "Monitor"
-msgstr ""
+msgstr "모니터"
 
 #: ../src//Utils.vala:74
 msgid "Mouse"
-msgstr ""
+msgstr "마우스"
 
 #: ../src//Utils.vala:75
 msgid "Keyboard"
-msgstr ""
+msgstr "키보드"
 
 #: ../src//Utils.vala:76
 msgid "PDA"
-msgstr ""
+msgstr "PDA"
 
 #: ../src//Utils.vala:77
 msgid "Phone"
-msgstr ""
+msgstr "전화"
 
 #: ../src//Utils.vala:78
 msgid "Device"
-msgstr ""
+msgstr "장치"
 
 #: ../src//Utils.vala:91
 msgid "%i%% charged"
-msgstr ""
+msgstr "%i%% 충전됨"
 
 #: ../src//Utils.vala:97
 msgid "%s until full"
-msgstr ""
+msgstr "충전 까지 %s 남음"
 
 #: ../src//Utils.vala:100
 msgid "%i%% remaining"
-msgstr ""
+msgstr "%i%% 남음"
 
 #: ../src//Utils.vala:106
 msgid "%s until empty"
-msgstr ""
+msgstr "방전 까지 %s 남음"
 
 #: ../src//Utils.vala:120
 msgid "%i days"
-msgstr ""
+msgstr "%i 일"
 
 #: ../src//Utils.vala:122
 msgid "%i hours"
-msgstr ""
+msgstr "%i 시간"
 
 #: ../src//Utils.vala:124
 msgid "%i minutes"
-msgstr ""
+msgstr "%i 분"
 
 #: ../src//Utils.vala:126
 msgid "%i seconds"
-msgstr ""
+msgstr "%i 초"
 
 #: ../src//Indicator.vala:27
 msgid "Power"
-msgstr ""
+msgstr "전원"
 
 #: ../src//Indicator.vala:28
 msgid "Power indicator"
-msgstr ""
+msgstr "전원 알림"
