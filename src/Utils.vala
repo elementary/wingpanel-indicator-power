@@ -120,16 +120,16 @@ namespace Power.Utils {
 		var d = divide (seconds, 86400);
 		var h = divide (seconds, 3600);
 		var m = divide (seconds, 60);
-		var s = seconds;
+		var s = (int)seconds;
 
 		if (d > 0)
-			return _("%i days").printf (d);
+			return "%i %s".printf (d, d > 1 ? _("days") : _("day"));
 		else if (h > 0)
-			return _("%i hours").printf (h);
+			return "%i %s".printf (h, h > 1 ? _("hours") : _("hour"));
 		else if (m > 0)
-			return _("%i minutes").printf (m);
+			return "%i %s".printf (m, m > 1 ? _("minutes") : _("minute"));
 		else
-			return _("%i seconds").printf (s);
+			return "%i %s".printf (s, s > 1 ? _("seconds") : _("second"));
 	}
 
 	private int divide (int64 x, int y) {
