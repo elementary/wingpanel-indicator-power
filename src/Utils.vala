@@ -26,34 +26,34 @@ namespace Power.Utils {
 
 	public string get_icon_name_for_battery (Services.Device battery) {
 		switch (battery.device_type) {
-			case DEVICE_TYPE_MOUSE: return get_mouse_icon (battery.percentage);
-			case DEVICE_TYPE_PHONE: return get_phone_icon (battery.percentage);
-			default: return get_battery_icon (battery.percentage) + (is_charging (battery.state) ? "-charging" : "");
+			case DEVICE_TYPE_MOUSE: return get_mouse_icon (battery.percentage, battery.time_to_empty);
+			case DEVICE_TYPE_PHONE: return get_phone_icon (battery.percentage, battery.time_to_empty);
+			default: return get_battery_icon (battery.percentage, battery.time_to_empty) + (is_charging (battery.state) ? "-charging" : "");
 		}
 	}
 
-	private string get_mouse_icon (double percentage) {
+	private string get_mouse_icon (double percentage, int64 remaining_time) {
 		if (percentage <= 0) return "input-mouse";
-		if (percentage < 20) return "battery-mouse-000";
-		if (percentage < 40) return "battery-mouse-020";
+		if (percentage < 10 && (remaining_time == 0 || remaining_time < 30 * 60)) return "battery-mouse-000";
+		if (percentage < 30) return "battery-mouse-020";
 		if (percentage < 60) return "battery-mouse-040";
 		if (percentage < 80) return "battery-mouse-080";
-		return "battery-mouse-080";
+		return "battery-mouse-100";
 	}
 
-	private string get_phone_icon (double percentage) {
+	private string get_phone_icon (double percentage, int64 remaining_time) {
 		if (percentage <= 0) return "phone";
-		if (percentage < 20) return "battery-phone-000";
-		if (percentage < 40) return "battery-phone-020";
+		if (percentage < 10 && (remaining_time == 0 || remaining_time < 30 * 60)) return "battery-phone-000";
+		if (percentage < 30) return "battery-phone-020";
 		if (percentage < 60) return "battery-phone-040";
 		if (percentage < 80) return "battery-phone-080";
-		return "battery-phone-080";
+		return "battery-phone-100";
 	}
 
-	private string get_battery_icon (double percentage) {
+	private string get_battery_icon (double percentage, int64 remaining_time) {
 		if (percentage <= 0) return "battery-good";
-		if (percentage < 20) return "battery-empty";
-		if (percentage < 40) return "battery-caution";
+		if (percentage < 10 && (remaining_time == 0 || remaining_time < 30 * 60)) return "battery-empty";
+		if (percentage < 30) return "battery-caution";
 		if (percentage < 60) return "battery-low";
 		if (percentage < 80) return "battery-good";
 		return "battery-full";
