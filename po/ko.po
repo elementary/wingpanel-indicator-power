@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-07 16:55+0200\n"
-"PO-Revision-Date: 2015-06-06 00:18+0000\n"
+"PO-Revision-Date: 2015-06-10 16:57+0000\n"
 "Last-Translator: 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-06-08 05:57+0000\n"
-"X-Generator: Launchpad (build 17540)\n"
+"X-Launchpad-Export-Date: 2015-06-11 05:41+0000\n"
+"X-Generator: Launchpad (build 17549)\n"
 
 #: ../src//Utils.vala:74
 msgid "Battery"
@@ -46,7 +46,7 @@ msgstr "장치"
 
 #: ../src//Utils.vala:92
 msgid "Calculating..."
-msgstr ""
+msgstr "계산 중..."
 
 #: ../src//Utils.vala:97
 msgid "%i%% charged"
@@ -66,35 +66,35 @@ msgstr "방전 까지 %s 남음"
 
 #: ../src//Utils.vala:126
 msgid "days"
-msgstr ""
+msgstr "일"
 
 #: ../src//Utils.vala:126
 msgid "day"
-msgstr ""
+msgstr "일"
 
 #: ../src//Utils.vala:128
 msgid "hours"
-msgstr ""
+msgstr "시간"
 
 #: ../src//Utils.vala:128
 msgid "hour"
-msgstr ""
+msgstr "시"
 
 #: ../src//Utils.vala:130
 msgid "minutes"
-msgstr ""
+msgstr "분"
 
 #: ../src//Utils.vala:130
 msgid "minute"
-msgstr ""
+msgstr "분"
 
 #: ../src//Utils.vala:132
 msgid "seconds"
-msgstr ""
+msgstr "초"
 
 #: ../src//Utils.vala:132
 msgid "second"
-msgstr ""
+msgstr "초"
 
 #: ../src//Indicator.vala:27
 msgid "Power"
@@ -106,8 +106,8 @@ msgstr "전원 알림"
 
 #: ../src//Widgets/PopoverWidget.vala:43
 msgid "Show Percentage"
-msgstr ""
+msgstr "백분율 표시"
 
 #: ../src//Widgets/PopoverWidget.vala:47
 msgid "Power Settings"
-msgstr ""
+msgstr "전원 설정"
