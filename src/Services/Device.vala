@@ -55,7 +55,6 @@ public class Power.Services.Device : Object {
 	public bool is_rechargeable { get; private set; }
 	public bool online { get; private set; }
 	public bool power_supply { get; private set; }
-	//public bool recall_notice { get; private set; }
 	public double capacity { get; private set; }
 	public double energy { get; private set; }
 	public double energy_empty { get; private set; }
@@ -70,8 +69,6 @@ public class Power.Services.Device : Object {
 	public int64 time_to_full { get; private set; }
 	public string model { get; private set; }
 	public string native_path { get; private set; }
-	//public string recall_url { get; private set; }
-	//public string recall_vendor { get; private set; }
 	public string serial { get; private set; }
 	public string vendor { get; private set; }
 	public uint32 state { get; private set; }
@@ -117,7 +114,6 @@ public class Power.Services.Device : Object {
 			is_rechargeable = device_properties.Get (device_path, "IsRechargeable").get_boolean ();
 			online = device_properties.Get (device_path, "Online").get_boolean ();
 			power_supply = device_properties.Get (device_path, "PowerSupply").get_boolean ();
-			//recall_notice = device_properties.Get (device_path, "RecallNotice").get_boolean ();
 			capacity = device_properties.Get (device_path, "Capacity").get_double ();
 			energy = device_properties.Get (device_path, "Energy").get_double ();
 			energy_empty = device_properties.Get (device_path, "EnergyEmpty").get_double ();
@@ -132,8 +128,6 @@ public class Power.Services.Device : Object {
 			time_to_full = device_properties.Get (device_path, "TimeToFull").get_int64 ();
 			model = device_properties.Get (device_path, "Model").get_string ();
 			native_path = device_properties.Get (device_path, "NativePath").get_string ();
-			//recall_url = device_properties.Get (device_path, "RecallUrl").get_string ();
-			//recall_vendor = device_properties.Get (device_path, "RecallVendor").get_string ();
 			serial = device_properties.Get (device_path, "Serial").get_string ();
 			vendor = device_properties.Get (device_path, "Vendor").get_string ();
 			state = device_properties.Get (device_path, "State").get_uint32 ();
