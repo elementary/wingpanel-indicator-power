@@ -20,9 +20,9 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
 	private DeviceList device_list;
 
-	private Wingpanel.Widgets.IndicatorSwitch show_percent_switch;
+	private Wingpanel.Widgets.Switch show_percent_switch;
 
-	private Wingpanel.Widgets.IndicatorButton show_settings_button;
+	private Wingpanel.Widgets.Button show_settings_button;
 
 	public signal void settings_shown ();
 
@@ -38,13 +38,13 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
 		this.pack_start (device_list);
 
-		this.pack_start (new Wingpanel.Widgets.IndicatorSeparator ());
+		this.pack_start (new Wingpanel.Widgets.Separator ());
 
-		show_percent_switch = new Wingpanel.Widgets.IndicatorSwitch (_("Show Percentage"), Services.SettingsManager.get_default ().show_percentage);
+		show_percent_switch = new Wingpanel.Widgets.Switch (_("Show Percentage"), Services.SettingsManager.get_default ().show_percentage);
 
 		this.pack_start (show_percent_switch);
 
-		show_settings_button = new Wingpanel.Widgets.IndicatorButton (_("Power Settings") + "…");
+		show_settings_button = new Wingpanel.Widgets.Button (_("Power Settings") + "…");
 
 		this.pack_start (show_settings_button);
 	}
