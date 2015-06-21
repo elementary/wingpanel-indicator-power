@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-07 16:55+0200\n"
-"PO-Revision-Date: 2015-05-29 11:28+0000\n"
+"PO-Revision-Date: 2015-06-20 17:56+0000\n"
 "Last-Translator: Pedro Monteiro <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-06-08 05:57+0000\n"
-"X-Generator: Launchpad (build 17540)\n"
+"X-Launchpad-Export-Date: 2015-06-21 05:31+0000\n"
+"X-Generator: Launchpad (build 17572)\n"
 
 #: ../src//Utils.vala:74
 msgid "Battery"
@@ -46,7 +46,7 @@ msgstr "Dispositivo"
 
 #: ../src//Utils.vala:92
 msgid "Calculating..."
-msgstr ""
+msgstr "A estimar..."
 
 #: ../src//Utils.vala:97
 msgid "%i%% charged"
@@ -66,35 +66,35 @@ msgstr "%s até esgotada"
 
 #: ../src//Utils.vala:126
 msgid "days"
-msgstr ""
+msgstr "dias"
 
 #: ../src//Utils.vala:126
 msgid "day"
-msgstr ""
+msgstr "dia"
 
 #: ../src//Utils.vala:128
 msgid "hours"
-msgstr ""
+msgstr "horas"
 
 #: ../src//Utils.vala:128
 msgid "hour"
-msgstr ""
+msgstr "hora"
 
 #: ../src//Utils.vala:130
 msgid "minutes"
-msgstr ""
+msgstr "minutos"
 
 #: ../src//Utils.vala:130
 msgid "minute"
-msgstr ""
+msgstr "minuto"
 
 #: ../src//Utils.vala:132
 msgid "seconds"
-msgstr ""
+msgstr "segundos"
 
 #: ../src//Utils.vala:132
 msgid "second"
-msgstr ""
+msgstr "segundo"
 
 #: ../src//Indicator.vala:27
 msgid "Power"
@@ -106,8 +106,8 @@ msgstr "Indicador de Energia"
 
 #: ../src//Widgets/PopoverWidget.vala:43
 msgid "Show Percentage"
-msgstr ""
+msgstr "Mostrar Percentagem"
 
 #: ../src//Widgets/PopoverWidget.vala:47
 msgid "Power Settings"
-msgstr ""
+msgstr "Definições de Energia"
