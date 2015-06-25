@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-07 16:55+0200\n"
-"PO-Revision-Date: 2015-06-23 18:07+0000\n"
+"PO-Revision-Date: 2015-06-24 13:29+0000\n"
 "Last-Translator: Jernej Virag <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-06-24 05:59+0000\n"
-"X-Generator: Launchpad (build 17572)\n"
+"X-Launchpad-Export-Date: 2015-06-25 05:42+0000\n"
+"X-Generator: Launchpad (build 17578)\n"
 
 #: ../src//Utils.vala:74
 msgid "Battery"
@@ -106,8 +106,8 @@ msgstr "Indikator za napajanje"
 
 #: ../src//Widgets/PopoverWidget.vala:43
 msgid "Show Percentage"
-msgstr "Prikaži odstotke"
+msgstr "Pokaži odstotke v menijski vrstici"
 
 #: ../src//Widgets/PopoverWidget.vala:47
 msgid "Power Settings"
-msgstr "Nastavitve porabe"
+msgstr "Nastavitve porabe energije..."
