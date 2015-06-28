@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-07 16:55+0200\n"
-"PO-Revision-Date: 2015-06-04 06:13+0000\n"
+"PO-Revision-Date: 2015-06-27 06:25+0000\n"
 "Last-Translator: colindemian <dengmengpc@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-06-08 05:58+0000\n"
-"X-Generator: Launchpad (build 17540)\n"
+"X-Launchpad-Export-Date: 2015-06-28 05:40+0000\n"
+"X-Generator: Launchpad (build 17578)\n"
 
 #: ../src//Utils.vala:74
 msgid "Battery"
@@ -46,7 +46,7 @@ msgstr "设备"
 
 #: ../src//Utils.vala:92
 msgid "Calculating..."
-msgstr ""
+msgstr "正在估算..."
 
 #: ../src//Utils.vala:97
 msgid "%i%% charged"
@@ -66,35 +66,35 @@ msgstr "还有 %s 用尽"
 
 #: ../src//Utils.vala:126
 msgid "days"
-msgstr ""
+msgstr "天"
 
 #: ../src//Utils.vala:126
 msgid "day"
-msgstr ""
+msgstr "天"
 
 #: ../src//Utils.vala:128
 msgid "hours"
-msgstr ""
+msgstr "小时"
 
 #: ../src//Utils.vala:128
 msgid "hour"
-msgstr ""
+msgstr "小时"
 
 #: ../src//Utils.vala:130
 msgid "minutes"
-msgstr ""
+msgstr "分"
 
 #: ../src//Utils.vala:130
 msgid "minute"
-msgstr ""
+msgstr "分"
 
 #: ../src//Utils.vala:132
 msgid "seconds"
-msgstr ""
+msgstr "秒"
 
 #: ../src//Utils.vala:132
 msgid "second"
-msgstr ""
+msgstr "秒"
 
 #: ../src//Indicator.vala:27
 msgid "Power"
@@ -106,8 +106,8 @@ msgstr "电源指示器"
 
 #: ../src//Widgets/PopoverWidget.vala:43
 msgid "Show Percentage"
-msgstr ""
+msgstr "显示百分比"
 
 #: ../src//Widgets/PopoverWidget.vala:47
 msgid "Power Settings"
-msgstr ""
+msgstr "电源设置"
