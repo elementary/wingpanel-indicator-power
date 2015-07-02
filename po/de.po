@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-07 16:55+0200\n"
-"PO-Revision-Date: 2015-05-24 11:49+0000\n"
-"Last-Translator: Marcus Wichelmann <admin@marcusw.de>\n"
+"PO-Revision-Date: 2015-07-01 22:18+0000\n"
+"Last-Translator: Ononymous <foo@grr.la>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-06-08 05:56+0000\n"
-"X-Generator: Launchpad (build 17540)\n"
+"X-Launchpad-Export-Date: 2015-07-02 05:43+0000\n"
+"X-Generator: Launchpad (build 17590)\n"
 
 #: ../src//Utils.vala:74
 msgid "Battery"
@@ -46,7 +46,7 @@ msgstr "Gerät"
 
 #: ../src//Utils.vala:92
 msgid "Calculating..."
-msgstr ""
+msgstr "Berechnung läuft …"
 
 #: ../src//Utils.vala:97
 msgid "%i%% charged"
@@ -66,35 +66,35 @@ msgstr "%s bis leer"
 
 #: ../src//Utils.vala:126
 msgid "days"
-msgstr ""
+msgstr "Tage"
 
 #: ../src//Utils.vala:126
 msgid "day"
-msgstr ""
+msgstr "Tag"
 
 #: ../src//Utils.vala:128
 msgid "hours"
-msgstr ""
+msgstr "Stunden"
 
 #: ../src//Utils.vala:128
 msgid "hour"
-msgstr ""
+msgstr "Stunde"
 
 #: ../src//Utils.vala:130
 msgid "minutes"
-msgstr ""
+msgstr "Minuten"
 
 #: ../src//Utils.vala:130
 msgid "minute"
-msgstr ""
+msgstr "Minute"
 
 #: ../src//Utils.vala:132
 msgid "seconds"
-msgstr ""
+msgstr "Sekunden"
 
 #: ../src//Utils.vala:132
 msgid "second"
-msgstr ""
+msgstr "Sekunde"
 
 #: ../src//Indicator.vala:27
 msgid "Power"
@@ -110,4 +110,4 @@ msgstr ""
 
 #: ../src//Widgets/PopoverWidget.vala:47
 msgid "Power Settings"
-msgstr ""
+msgstr "Energieeinstellungen"
