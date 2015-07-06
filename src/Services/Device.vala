@@ -103,7 +103,7 @@ public class Power.Services.Device : Object {
 	}
 
 	private void connect_signals () {
-		device.Changed.connect (update_properties);
+		device.g_properties_changed.connect (update_properties);
 	}
 
 	private void update_properties () {
