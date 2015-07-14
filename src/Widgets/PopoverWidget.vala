@@ -20,6 +20,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
 	private DeviceList device_list;
 	private AppList app_list;
+	private Wingpanel.Widgets.Separator app_list_separator;
 
 	private Wingpanel.Widgets.Switch show_percent_switch;
 	private Wingpanel.Widgets.Button show_settings_button;
@@ -38,6 +39,8 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 		Idle.add (() => {
 			app_list.update_list ();
 
+			app_list_separator.set_visible (!app_list.is_empty ());
+
 			return false;
 		});
 	}
@@ -45,6 +48,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 	private void build_ui () {
 		device_list = new DeviceList ();
 		app_list = new AppList ();
+		app_list_separator = new Wingpanel.Widgets.Separator ();
 
 		show_percent_switch = new Wingpanel.Widgets.Switch (_("Show Percentage"), Services.SettingsManager.get_default ().show_percentage);
 		show_settings_button = new Wingpanel.Widgets.Button (_("Power Settings") + "…");
@@ -52,7 +56,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 		this.pack_start (device_list);
 		this.pack_start (new Wingpanel.Widgets.Separator ());
 		this.pack_start (app_list);
-		this.pack_start (new Wingpanel.Widgets.Separator ());
+		this.pack_start (app_list_separator);
 		this.pack_start (show_percent_switch);
 		this.pack_start (show_settings_button);
 	}

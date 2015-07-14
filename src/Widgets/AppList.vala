@@ -34,6 +34,10 @@ public class Power.Widgets.AppList : Gtk.Box {
 		});
 	}
 
+	public bool is_empty () {
+		return (this.get_children ().length () == 0);
+	}
+
 	private void clear_list () {
 		foreach (var child in this.get_children ())
 			this.remove (child);
