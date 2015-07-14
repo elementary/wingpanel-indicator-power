@@ -46,6 +46,9 @@ public class Power.Widgets.AppList : Gtk.Box {
 	private void add_app (Services.AppManager.PowerEater power_eater) {
 		var desktop_app_info = new DesktopAppInfo.from_filename (power_eater.application.get_desktop_file ());
 
+		if (desktop_app_info == null)
+			return;
+
 		var app_icon = desktop_app_info.get_icon ();
 		var app_name = desktop_app_info.get_generic_name ();
 		var cpu_usage = power_eater.cpu_usage;
