@@ -54,6 +54,7 @@ public class Power.Widgets.AppList : Gtk.Box {
 		grid.margin = 6;
 
 		var app_icon_image = new Gtk.Image.from_gicon (app_icon, Gtk.IconSize.LARGE_TOOLBAR);
+		app_icon_image.pixel_size = 24;
 
 		var app_name_label = new Gtk.Label (app_name);
 		app_name_label.hexpand = true;
