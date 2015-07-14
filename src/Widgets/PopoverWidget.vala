@@ -34,17 +34,6 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 		connect_signals ();
 	}
 
-	public void update_data () {
-		// Don't block the ui while updating the data
-		Idle.add (() => {
-			app_list.update_list ();
-
-			app_list_separator.set_visible (!app_list.is_empty ());
-
-			return false;
-		});
-	}
-
 	private void build_ui () {
 		device_list = new DeviceList ();
 		app_list = new AppList ();
@@ -65,6 +54,8 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 		Services.SettingsManager.get_default ().schema.bind ("show-percentage", show_percent_switch.get_switch (), "active", SettingsBindFlags.DEFAULT);
 
 		show_settings_button.clicked.connect (show_settings);
+
+		Services.ProcessMonitor.Monitor.get_default ().updated.connect (update_apps);
 	}
 
 	private void show_settings () {
@@ -72,5 +63,16 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 		cmd.run ();
 
 		settings_shown ();
+	}
+
+	private void update_apps () {
+		// Don't block the ui while updating the data
+		Idle.add (() => {
+			app_list.update_list ();
+
+			app_list_separator.set_visible (!app_list.is_empty ());
+
+			return false;
+		});
 	}
 }

@@ -49,8 +49,16 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
             kernel_process_blacklist = new Gee.HashSet<int> ();
             update_processes.begin ();
             cpu_load = 0;
-            update_time = 2000;
+            update_time = 1000;
             update_id = Timeout.add (update_time, handle_timeout);
+        }
+
+        public void start_timer () {
+            update_id = Timeout.add (update_time, handle_timeout);
+        }
+
+        public void stop_timer () {
+            GLib.Source.remove (update_id);
         }
 
         public static Monitor get_default () {
@@ -60,9 +68,9 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
         }
 
         public void change_time (int time_ms) {
-            GLib.Source.remove (update_id);
+            stop_timer ();
             update_time = time_ms;
-            update_id = Timeout.add (update_time, handle_timeout);
+            start_timer ();
         }
 
         /**
