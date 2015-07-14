@@ -24,18 +24,34 @@ public class Power.Widgets.AppList : Gtk.Box {
 		app_manager = Services.AppManager.get_default ();
 	}
 
-	public void update_list () {
+	private void connect_signals () {
+		Services.ProcessMonitor.Monitor.get_default ().updated.connect (() => {
+			// Don't block the ui while updating the data
+			Idle.add (() => {
+				update_list ();
+
+				return false;
+			});
+		});
+	}
+
+	private void update_list () {
 		clear_list ();
 
-		app_manager.get_top_power_eaters (12).@foreach ((power_eater) => {
+		var eaters = app_manager.get_top_power_eaters (12);
+
+		if (eaters.size > 0) {
+			var title_label = new Gtk.Label (_("Apps Using Lots of Power"));
+
+			this.add (new Wingpanel.Widgets.Separator ());
+			this.add (title_label);
+		}
+
+		eaters.@foreach ((power_eater) => {
 			add_app (power_eater);
 
 			return true;
 		});
-	}
-
-	public bool is_empty () {
-		return (this.get_children ().length () == 0);
 	}
 
 	private void clear_list () {

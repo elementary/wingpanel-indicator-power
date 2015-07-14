@@ -20,7 +20,6 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
 	private DeviceList device_list;
 	private AppList app_list;
-	private Wingpanel.Widgets.Separator app_list_separator;
 
 	private Wingpanel.Widgets.Switch show_percent_switch;
 	private Wingpanel.Widgets.Button show_settings_button;
@@ -37,15 +36,13 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 	private void build_ui () {
 		device_list = new DeviceList ();
 		app_list = new AppList ();
-		app_list_separator = new Wingpanel.Widgets.Separator ();
 
 		show_percent_switch = new Wingpanel.Widgets.Switch (_("Show Percentage"), Services.SettingsManager.get_default ().show_percentage);
 		show_settings_button = new Wingpanel.Widgets.Button (_("Power Settings") + "…");
 
 		this.pack_start (device_list);
+		this.pack_start (app_list); // The app-list contains an own separator that is displayed if necessary.
 		this.pack_start (new Wingpanel.Widgets.Separator ());
-		this.pack_start (app_list);
-		this.pack_start (app_list_separator);
 		this.pack_start (show_percent_switch);
 		this.pack_start (show_settings_button);
 	}
@@ -54,8 +51,6 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 		Services.SettingsManager.get_default ().schema.bind ("show-percentage", show_percent_switch.get_switch (), "active", SettingsBindFlags.DEFAULT);
 
 		show_settings_button.clicked.connect (show_settings);
-
-		Services.ProcessMonitor.Monitor.get_default ().updated.connect (update_apps);
 	}
 
 	private void show_settings () {
@@ -63,16 +58,5 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 		cmd.run ();
 
 		settings_shown ();
-	}
-
-	private void update_apps () {
-		// Don't block the ui while updating the data
-		Idle.add (() => {
-			app_list.update_list ();
-
-			app_list_separator.set_visible (!app_list.is_empty ());
-
-			return false;
-		});
 	}
 }
