@@ -50,7 +50,6 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
             update_processes.begin ();
             cpu_load = 0;
             update_time = 1000;
-            update_id = Timeout.add (update_time, handle_timeout);
         }
 
         public void start_timer () {
