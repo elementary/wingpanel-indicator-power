@@ -53,7 +53,8 @@ public class Power.Indicator : Wingpanel.Indicator {
 	}
 
 	public override void opened () {
-		// TODO
+		if (popover_widget != null)
+			popover_widget.update_data ();
 	}
 
 	public override void closed () {
