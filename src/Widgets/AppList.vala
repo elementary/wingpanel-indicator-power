@@ -22,6 +22,8 @@ public class Power.Widgets.AppList : Gtk.Box {
 		Object (orientation: Gtk.Orientation.VERTICAL);
 
 		app_manager = Services.AppManager.get_default ();
+
+		connect_signals ();
 	}
 
 	private void connect_signals () {
