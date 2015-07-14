@@ -18,8 +18,8 @@
 public class Power.Widgets.PopoverWidget : Gtk.Box {
 	private const string SETTINGS_EXEC = "/usr/bin/switchboard power";
 
-	private AppList app_list;
 	private DeviceList device_list;
+	private AppList app_list;
 
 	private Wingpanel.Widgets.Switch show_percent_switch;
 	private Wingpanel.Widgets.Button show_settings_button;
@@ -43,15 +43,15 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 	}
 
 	private void build_ui () {
-		app_list = new AppList ();
 		device_list = new DeviceList ();
+		app_list = new AppList ();
 
 		show_percent_switch = new Wingpanel.Widgets.Switch (_("Show Percentage"), Services.SettingsManager.get_default ().show_percentage);
 		show_settings_button = new Wingpanel.Widgets.Button (_("Power Settings") + "…");
 
-		this.pack_start (app_list);
-		this.pack_start (new Wingpanel.Widgets.Separator ());
 		this.pack_start (device_list);
+		this.pack_start (new Wingpanel.Widgets.Separator ());
+		this.pack_start (app_list);
 		this.pack_start (new Wingpanel.Widgets.Separator ());
 		this.pack_start (show_percent_switch);
 		this.pack_start (show_settings_button);
