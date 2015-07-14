@@ -43,6 +43,8 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
          * Construct a new ProcessMonitor
          */
         private Monitor () {
+            debug ("Initialising process monitor.");
+
             process_list = new Gee.HashMap<int, Process> ();
             kernel_process_blacklist = new Gee.HashSet<int> ();
             update_processes.begin ();
