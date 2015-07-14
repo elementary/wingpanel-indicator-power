@@ -154,7 +154,9 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
             GTop.get_swap (out swap);
             swap_usage = (double) swap.used / swap.total;
 
-            var remove_me = new Gee.HashSet<int>();
+            // TODO: The while loop of this part of the code seems to end up in an infinite loop on some systems.
+            // As far as we are not needing it in the moment I've commented it out. We can remove it later.
+            /*var remove_me = new Gee.HashSet<int>();
 
             // go through each process and update it, removing the old ones
             foreach (var process in process_list.values) {
@@ -191,7 +193,7 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
             }
             catch (Error e) {
                 stderr.printf ("Error: %s\n", e.message);
-            }
+            }*/
 
             cpu_last_used = used;
             cpu_last_total = cpu_data.total;
@@ -237,7 +239,7 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
         /**
          * Remove the process from all lists and broadcast the process_removed signal if removed.
          */
-        private void remove_process (int pid) {
+        /*private void remove_process (int pid) {
             if (process_list.has_key (pid)) {
                 process_list.unset (pid);
                 process_removed (pid);
@@ -245,5 +247,5 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
             else if (kernel_process_blacklist.contains (pid)) {
                 kernel_process_blacklist.remove (pid);
             }
-        }
+        }*/
     }
