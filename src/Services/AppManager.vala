@@ -34,10 +34,10 @@ public class Power.Services.AppManager : Object {
 		var applications = matcher.get_running_applications ();
 
 		applications.@foreach ((app) => {
-			// Use the relative cpu-usage
-			var cpu_usage = (int)(get_cpu_usage_for_app (app) / ProcessMonitor.Monitor.get_default ().cpu_load * 100);
+			// cpu-usage in percent
+			var cpu_usage = (int)(get_cpu_usage_for_app (app) * 100);
 
-			if (cpu_usage >= 1)
+			if (cpu_usage >= 10)
 				list.add ({app, cpu_usage});
 		});
 

@@ -51,7 +51,6 @@ public class Power.Widgets.AppList : Gtk.Box {
 
 		var app_icon = desktop_app_info.get_icon ();
 		var app_name = desktop_app_info.get_generic_name ();
-		var cpu_usage = power_eater.cpu_usage;
 
 		if (app_icon == null || app_name == null)
 			return;
@@ -64,15 +63,10 @@ public class Power.Widgets.AppList : Gtk.Box {
 		app_icon_image.pixel_size = 24;
 
 		var app_name_label = new Gtk.Label (app_name);
-		app_name_label.hexpand = true;
 		app_name_label.halign = Gtk.Align.START;
-
-		var cpu_usage_label = new Gtk.Label ("%i%%".printf (cpu_usage));
-		cpu_usage_label.halign = Gtk.Align.END;
 
 		grid.attach (app_icon_image, 0, 0, 1, 1);
 		grid.attach (app_name_label, 1, 0, 1, 1);
-		grid.attach (cpu_usage_label, 2, 0, 1, 1);
 
 		this.add (grid);
 		this.show_all ();
