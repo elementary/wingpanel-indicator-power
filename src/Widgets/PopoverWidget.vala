@@ -44,7 +44,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
 		this.pack_start (show_percent_switch);
 
-		show_settings_button = new Wingpanel.Widgets.Button (_("Power Settings") + "…");
+		show_settings_button = new Wingpanel.Widgets.Button (_("Power Settings…");
 
 		this.pack_start (show_settings_button);
 	}
