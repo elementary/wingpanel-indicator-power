@@ -20,9 +20,6 @@
 public class Power.Services.ProcessMonitor.Monitor : Object {
     public double cpu_load { get; private set; }
     public double[] cpu_loads { get; private set; }
-    public double mem_usage { get; private set; }
-    public double mem_total { get; private set; }
-    public double swap_usage { get; private set; }
 
     uint64 cpu_last_used = 0;
     uint64 cpu_last_total = 0;
@@ -129,17 +126,6 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
             cpu_loads[i] = ((double)(useds[i] - cpu_last_useds[i])) /
                            (cpu_data.xcpu_total[i] - cpu_last_totals[i]);
         }
-
-        /* Memory */
-        GTop.Memory mem;
-        GTop.get_mem (out mem);
-        mem_usage = ((double)(mem.used - mem.buffer - mem.cached));
-        mem_total = mem.total;
-
-        /* Swap */
-        GTop.Swap swap;
-        GTop.get_swap (out swap);
-        swap_usage = (double)swap.used / swap.total;
 
         var remove_me = new Gee.HashSet<int> ();
 

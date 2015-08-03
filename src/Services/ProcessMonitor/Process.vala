@@ -55,11 +55,6 @@ public class Power.Services.ProcessMonitor.Process : Object {
      */
     public double cpu_usage { get; private set; }
 
-    /**
-     * Memory usage of the process, measured in KiB.
-     */
-    public uint64 mem_usage { get; private set; }
-
     private uint64 cpu_last_used;
 
     /**
@@ -120,13 +115,7 @@ public class Power.Services.ProcessMonitor.Process : Object {
             GTop.get_proc_time (out proc_time, pid);
             cpu_usage = ((double)(proc_time.rtime - cpu_last_used)) / (cpu_total - cpu_last_total);
             cpu_last_used = proc_time.rtime;
-
-            /* // calculate mem usage using rss, not very accurate */
-            GTop.ProcMem proc_mem;
-            GTop.get_proc_mem (out proc_mem, pid);
-            mem_usage = (proc_mem.resident - proc_mem.share) / (1024);     /* unit is KiB */
-        }
-        catch (Error e) {
+        } catch (Error e) {
             stderr.printf ("Error reading stat file '%s': %s\n", stat_file.get_path (), e.message);
 
             return false;
@@ -152,7 +141,7 @@ public class Power.Services.ProcessMonitor.Process : Object {
         try {
             /* read the single line from the file */
             var dis = new DataInputStream (cmdline_file.read ());
-            uint8[] cmdline_contents_array = new uint8[4097];     /* 4096 is max size with a null terminator */
+            uint8[] cmdline_contents_array = new uint8[4097]; /* 4096 is max size with a null terminator */
             var size = dis.read (cmdline_contents_array);
 
             if (size <= 0) {
