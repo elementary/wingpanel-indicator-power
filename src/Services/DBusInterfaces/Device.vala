@@ -38,5 +38,7 @@ namespace Power.Services.DBusInterfaces {
 		public abstract HistoryDataPoint[] GetHistory (string type, uint32 timespan, uint32 resolution) throws IOError;
 		public abstract StatisticsDataPoint[] GetStatistics (string type) throws IOError;
 		public abstract void Refresh () throws IOError;
+
+		public signal void Changed ();
 	}
 }

@@ -38,7 +38,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 		app_list = new AppList ();
 
 		show_percent_switch = new Wingpanel.Widgets.Switch (_("Show Percentage"), Services.SettingsManager.get_default ().show_percentage);
-		show_settings_button = new Wingpanel.Widgets.Button (_("Power Settings") + "…");
+		show_settings_button = new Wingpanel.Widgets.Button (_("Power Settings…"));
 
 		this.pack_start (device_list);
 		this.pack_start (app_list); // The app-list contains an own separator that is displayed if necessary.
