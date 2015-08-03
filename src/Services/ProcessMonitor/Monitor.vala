@@ -36,9 +36,6 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
 
         private static Monitor? instance = null;
 
-        public int update_time { get; private set; }
-        private uint update_id;
-
         /**
          * Construct a new ProcessMonitor
          */
@@ -49,27 +46,16 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
             kernel_process_blacklist = new Gee.HashSet<int> ();
             update_processes.begin ();
             cpu_load = 0;
-            update_time = 1000;
         }
 
-        public void start_timer () {
-            update_id = Timeout.add (update_time, handle_timeout);
-        }
-
-        public void stop_timer () {
-            GLib.Source.remove (update_id);
+        public void update () {
+            update_processes.begin ();
         }
 
         public static Monitor get_default () {
             if (instance == null)
                 instance = new Monitor ();
             return instance;
-        }
-
-        public void change_time (int time_ms) {
-            stop_timer ();
-            update_time = time_ms;
-            start_timer ();
         }
 
         /**
@@ -114,14 +100,6 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
          */
         public Gee.Map<int, Process> get_process_list () {
             return process_list.read_only_view;
-        }
-
-        /**
-         * Handle updating the process list
-         */
-        private bool handle_timeout () {
-            update_processes.begin ();
-            return true;
         }
 
         /**

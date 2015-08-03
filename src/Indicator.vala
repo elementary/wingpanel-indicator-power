@@ -53,11 +53,11 @@ public class Power.Indicator : Wingpanel.Indicator {
 	}
 
 	public override void opened () {
-		Services.ProcessMonitor.Monitor.get_default ().start_timer ();
+		Services.ProcessMonitor.Monitor.get_default ().update ();
 	}
 
 	public override void closed () {
-		Services.ProcessMonitor.Monitor.get_default ().stop_timer ();
+		// No nothing for now
 	}
 
 	private void update_visibility () {
