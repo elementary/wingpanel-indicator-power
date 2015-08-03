@@ -58,7 +58,8 @@ public class Power.Services.AppManager : Object {
 		double cpu_usage_sum = 0;
 
 		foreach (var window in app.get_windows ()) {
-			cpu_usage_sum += get_sub_process_cpu_usage_sum ((int)window.get_pid ());
+			if (window.get_window_type () != Bamf.WindowType.DOCK)
+				cpu_usage_sum += get_sub_process_cpu_usage_sum ((int)window.get_pid ());
 		}
 
 		return cpu_usage_sum;
