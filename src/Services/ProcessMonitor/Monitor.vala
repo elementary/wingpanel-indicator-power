@@ -154,9 +154,7 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
             GTop.get_swap (out swap);
             swap_usage = (double) swap.used / swap.total;
 
-            // TODO: The while loop of this part of the code seems to end up in an infinite loop on some systems.
-            // As far as we are not needing it in the moment I've commented it out. We can remove it later.
-            /*var remove_me = new Gee.HashSet<int>();
+            var remove_me = new Gee.HashSet<int>();
 
             // go through each process and update it, removing the old ones
             foreach (var process in process_list.values) {
@@ -166,34 +164,22 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
                 }
             }
 
-            // remove everything from flags
+                        // remove everything from flags
             foreach (var pid in remove_me) {
                 remove_process (pid);
             }
 
-            try {
-                var proc_dir = File.new_for_path ("/proc/");
-                var dir_enumerator = proc_dir.enumerate_children ("standard::*", 0);
+            var uid = Posix.getuid ();
+            GTop.ProcList proclist;
+            var pids = GTop.get_proclist (out proclist, GTop.GLIBTOP_KERN_PROC_UID, uid);
 
-                FileInfo info;
+            for (int i = 0; i < proclist.number; i++) {
+                int pid = pids[i];
 
-                // go through the files
-                while ((info = dir_enumerator.next_file ()) != null) {
-                    int pid = 0;
-
-                    // if file is a directory and the name is a number
-                    if ((info.get_file_type () == FileType.DIRECTORY)
-                            && ((pid = int.parse (info.get_name ())) != 0)) {
-                        // got a process id, does it belong to a process that we already have?
-                        if (!process_list.has_key (pid) && !kernel_process_blacklist.contains (pid)) {
-                            add_process (pid);
-                        }
-                    }
+                if (!process_list.has_key (pid) && !kernel_process_blacklist.contains (pid)) {
+                    add_process (pid);
                 }
             }
-            catch (Error e) {
-                stderr.printf ("Error: %s\n", e.message);
-            }*/
 
             cpu_last_used = used;
             cpu_last_total = cpu_data.total;
@@ -239,7 +225,7 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
         /**
          * Remove the process from all lists and broadcast the process_removed signal if removed.
          */
-        /*private void remove_process (int pid) {
+        private void remove_process (int pid) {
             if (process_list.has_key (pid)) {
                 process_list.unset (pid);
                 process_removed (pid);
@@ -247,5 +233,5 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
             else if (kernel_process_blacklist.contains (pid)) {
                 kernel_process_blacklist.remove (pid);
             }
-        }*/
+        }
     }

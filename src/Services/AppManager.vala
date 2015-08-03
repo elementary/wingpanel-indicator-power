@@ -58,15 +58,31 @@ public class Power.Services.AppManager : Object {
 		double cpu_usage_sum = 0;
 
 		foreach (var window in app.get_windows ()) {
-			if (window.get_window_type () != Bamf.WindowType.DOCK) {
-				var process = ProcessMonitor.Monitor.get_default ().get_process ((int)window.get_pid ());
-
-				if (process != null)
-					cpu_usage_sum += process.cpu_usage;
-			}
+			cpu_usage_sum += get_sub_process_cpu_usage_sum ((int)window.get_pid ());
 		}
 
 		return cpu_usage_sum;
+	}
+
+	private double get_sub_process_cpu_usage_sum (int parent_pid) {
+		var sub_processes = ProcessMonitor.Monitor.get_default ().get_sub_processes (parent_pid);
+
+		double cpu_usage_sum = get_process_cpu_usage (parent_pid);
+
+		foreach (int sp_pid in sub_processes) {
+			cpu_usage_sum += get_sub_process_cpu_usage_sum (sp_pid);
+		}
+
+		return cpu_usage_sum;
+	}
+
+	private double get_process_cpu_usage (int pid) {
+		var process = ProcessMonitor.Monitor.get_default ().get_process (pid);
+
+		if (process != null)
+			return process.cpu_usage;
+
+		return 0;
 	}
 
 	public static AppManager get_default () {
