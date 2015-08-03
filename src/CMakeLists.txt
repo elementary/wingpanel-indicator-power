@@ -35,7 +35,7 @@ PACKAGES
   libbamf3
   posix
 CUSTOM_VAPIS
-  ../vapi/GTop.vapi
+  ../vapi/libgtop-2.0.vapi
 OPTIONS
   --thread
 )
