@@ -26,6 +26,11 @@ public class Power.Widgets.AppList : Gtk.Box {
 		connect_signals ();
 	}
 
+	public void clear_list () {
+		foreach (var child in this.get_children ())
+			this.remove (child);
+	}
+
 	private void connect_signals () {
 		Services.ProcessMonitor.Monitor.get_default ().updated.connect (() => {
 			// Don't block the ui while updating the data
@@ -59,11 +64,6 @@ public class Power.Widgets.AppList : Gtk.Box {
 
 			return true;
 		});
-	}
-
-	private void clear_list () {
-		foreach (var child in this.get_children ())
-			this.remove (child);
 	}
 
 	private void add_app (Services.AppManager.PowerEater power_eater) {

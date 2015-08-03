@@ -57,7 +57,7 @@ public class Power.Indicator : Wingpanel.Indicator {
 	}
 
 	public override void closed () {
-		// No nothing for now
+		popover_widget.slim_down ();
 	}
 
 	private void update_visibility () {

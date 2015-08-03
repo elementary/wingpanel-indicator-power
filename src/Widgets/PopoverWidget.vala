@@ -33,6 +33,10 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 		connect_signals ();
 	}
 
+	public void slim_down () {
+		app_list.clear_list ();
+	}
+
 	private void build_ui () {
 		device_list = new DeviceList ();
 		app_list = new AppList ();

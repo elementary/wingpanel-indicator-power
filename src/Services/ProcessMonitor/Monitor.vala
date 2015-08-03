@@ -49,6 +49,13 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
 
     public void update () {
         update_processes.begin ();
+
+        /* Do it one more time for better accuracy */
+        Timeout.add (100, () => {
+            update_processes.begin ();
+
+            return false;
+        });
     }
 
     public static Monitor get_default () {
