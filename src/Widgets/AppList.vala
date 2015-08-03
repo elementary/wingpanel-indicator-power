@@ -68,7 +68,7 @@ public class Power.Widgets.AppList : Gtk.Box {
 			return;
 
 		var app_icon = desktop_app_info.get_icon ();
-		var app_name = desktop_app_info.get_generic_name ();
+		var app_name = desktop_app_info.get_name ();
 
 		if (app_icon == null || app_name == null)
 			return;
