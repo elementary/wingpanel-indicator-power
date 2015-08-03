@@ -44,6 +44,11 @@ public class Power.Widgets.AppList : Gtk.Box {
 
 		if (eaters.size > 0) {
 			var title_label = new Gtk.Label (_("Apps Using Lots of Power"));
+			title_label.get_style_context ().add_class ("h4");
+			title_label.halign = Gtk.Align.START;
+			title_label.margin_start = 12;
+			title_label.margin_end = 12;
+			title_label.margin_bottom = 6;
 
 			this.add (new Wingpanel.Widgets.Separator ());
 			this.add (title_label);
@@ -75,7 +80,9 @@ public class Power.Widgets.AppList : Gtk.Box {
 
 		var grid = new Gtk.Grid ();
 		grid.column_spacing = 6;
-		grid.margin = 6;
+		grid.margin_start = 12;
+		grid.margin_end = 12;
+		grid.margin_bottom = 6;
 
 		var app_icon_image = new Gtk.Image.from_gicon (app_icon, Gtk.IconSize.LARGE_TOOLBAR);
 		app_icon_image.pixel_size = 24;

@@ -31,7 +31,7 @@ public class Power.Widgets.DeviceList : Gtk.Box {
 		Services.DeviceManager.get_default ().battery_deregistered.connect (remove_battery);
 	}
 
-	private void add_battery (string device_path,	 Services.Device battery) {
+	private void add_battery (string device_path, Services.Device battery) {
 		var grid = new Gtk.Grid ();
 		grid.column_spacing = 6;
 		grid.row_spacing = 6;
