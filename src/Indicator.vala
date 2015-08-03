@@ -53,11 +53,11 @@ public class Power.Indicator : Wingpanel.Indicator {
 	}
 
 	public override void opened () {
-		// TODO
+		Services.ProcessMonitor.Monitor.get_default ().update ();
 	}
 
 	public override void closed () {
-		// TODO
+		popover_widget.slim_down ();
 	}
 
 	private void update_visibility () {
