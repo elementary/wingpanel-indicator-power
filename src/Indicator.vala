@@ -16,16 +16,20 @@
  */
 
 public class Power.Indicator : Wingpanel.Indicator {
+	private bool is_in_session = false;
+
 	private Widgets.DisplayWidget? display_widget = null;
 
 	private Widgets.PopoverWidget? popover_widget = null;
 
 	private Services.Device primary_battery;
 
-	public Indicator () {
+	public Indicator (bool is_in_session) {
 		Object (code_name: Wingpanel.Indicator.POWER,
 				display_name: _("Power"),
 				description:_("Power indicator"));
+
+		this.is_in_session = is_in_session;
 	}
 
 	public override Gtk.Widget get_display_widget () {
@@ -38,7 +42,7 @@ public class Power.Indicator : Wingpanel.Indicator {
 
 	public override Gtk.Widget? get_widget () {
 		if (popover_widget == null) {
-			popover_widget = new Widgets.PopoverWidget ();
+			popover_widget = new Widgets.PopoverWidget (is_in_session);
 			popover_widget.settings_shown.connect (() => this.close ());
 
 			// No need to display the indicator when the device is completely in AC mode
@@ -89,8 +93,10 @@ public class Power.Indicator : Wingpanel.Indicator {
 	}
 }
 
-public Wingpanel.Indicator get_indicator (Module module) {
+public Wingpanel.Indicator get_indicator (Module module, Wingpanel.IndicatorManager.ServerType server_type) {
 	debug ("Activating Power Indicator");
-	var indicator = new Power.Indicator ();
+
+	var indicator = new Power.Indicator (server_type == Wingpanel.IndicatorManager.ServerType.SESSION);
+
 	return indicator;
 }
