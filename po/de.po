@@ -3,18 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-07 16:55+0200\n"
-"PO-Revision-Date: 2015-07-28 18:56+0000\n"
-"Last-Translator: Ononymous <foo@grr.la>\n"
+"PO-Revision-Date: 2015-08-17 20:46+0000\n"
+"Last-Translator: Tobias Bannert <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-07-29 06:00+0000\n"
-"X-Generator: Launchpad (build 17646)\n"
+"X-Launchpad-Export-Date: 2015-08-18 06:04+0000\n"
+"X-Generator: Launchpad (build 17690)\n"
 
 #: ../src//Utils.vala:74
 msgid "Battery"
-msgstr "Batterie"
+msgstr "Akku"
 
 #: ../src//Utils.vala:75
 msgid "UPS"
@@ -38,7 +38,7 @@ msgstr "PDA"
 
 #: ../src//Utils.vala:80
 msgid "Phone"
-msgstr "Phone"
+msgstr "Telefon"
 
 #: ../src//Utils.vala:81
 msgid "Device"
@@ -102,7 +102,7 @@ msgstr "Energie"
 
 #: ../src//Indicator.vala:28
 msgid "Power indicator"
-msgstr "Energie-Indikator"
+msgstr "Energieanzeige"
 
 #: ../src//Widgets/PopoverWidget.vala:43
 msgid "Show Percentage"
