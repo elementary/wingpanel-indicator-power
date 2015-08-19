@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-07 16:55+0200\n"
-"PO-Revision-Date: 2015-06-10 16:57+0000\n"
-"Last-Translator: 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>\n"
+"PO-Revision-Date: 2015-08-18 12:00+0000\n"
+"Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-06-11 05:41+0000\n"
-"X-Generator: Launchpad (build 17549)\n"
+"X-Launchpad-Export-Date: 2015-08-19 05:59+0000\n"
+"X-Generator: Launchpad (build 17690)\n"
 
 #: ../src//Utils.vala:74
 msgid "Battery"
@@ -18,7 +18,7 @@ msgstr "배터리"
 
 #: ../src//Utils.vala:75
 msgid "UPS"
-msgstr "무정전 전원공급장치(UPS)"
+msgstr "UPS"
 
 #: ../src//Utils.vala:76
 msgid "Monitor"
@@ -78,7 +78,7 @@ msgstr "시간"
 
 #: ../src//Utils.vala:128
 msgid "hour"
-msgstr "시"
+msgstr "시간"
 
 #: ../src//Utils.vala:130
 msgid "minutes"
@@ -102,7 +102,7 @@ msgstr "전원"
 
 #: ../src//Indicator.vala:28
 msgid "Power indicator"
-msgstr "전원 알림"
+msgstr "전원 표시"
 
 #: ../src//Widgets/PopoverWidget.vala:43
 msgid "Show Percentage"
