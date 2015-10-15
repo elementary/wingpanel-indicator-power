@@ -2,112 +2,116 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-07 16:55+0200\n"
+"POT-Creation-Date: 2015-10-14 16:29+0200\n"
 "PO-Revision-Date: 2015-08-17 20:46+0000\n"
 "Last-Translator: Tobias Bannert <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-08-18 06:04+0000\n"
-"X-Generator: Launchpad (build 17690)\n"
+"X-Launchpad-Export-Date: 2015-10-15 06:09+0000\n"
+"X-Generator: Launchpad (build 17812)\n"
 
-#: ../src//Utils.vala:74
-msgid "Battery"
-msgstr "Akku"
-
-#: ../src//Utils.vala:75
-msgid "UPS"
-msgstr "USV"
-
-#: ../src//Utils.vala:76
-msgid "Monitor"
-msgstr "Bildschirm"
-
-#: ../src//Utils.vala:77
-msgid "Mouse"
-msgstr "Maus"
-
-#: ../src//Utils.vala:78
-msgid "Keyboard"
-msgstr "Tastatur"
-
-#: ../src//Utils.vala:79
-msgid "PDA"
-msgstr "PDA"
-
-#: ../src//Utils.vala:80
-msgid "Phone"
-msgstr "Telefon"
-
-#: ../src//Utils.vala:81
-msgid "Device"
-msgstr "Gerät"
-
-#: ../src//Utils.vala:92
-msgid "Calculating..."
-msgstr "Berechnung läuft …"
-
-#: ../src//Utils.vala:97
-msgid "%i%% charged"
-msgstr "%i%% geladen"
-
-#: ../src//Utils.vala:103
-msgid "%s until full"
-msgstr "%s bis voll"
-
-#: ../src//Utils.vala:106
-msgid "%i%% remaining"
-msgstr "%i%% verbleibend"
-
-#: ../src//Utils.vala:112
-msgid "%s until empty"
-msgstr "%s bis leer"
-
-#: ../src//Utils.vala:126
-msgid "days"
-msgstr "Tage"
-
-#: ../src//Utils.vala:126
-msgid "day"
-msgstr "Tag"
-
-#: ../src//Utils.vala:128
-msgid "hours"
-msgstr "Stunden"
-
-#: ../src//Utils.vala:128
-msgid "hour"
-msgstr "Stunde"
-
-#: ../src//Utils.vala:130
-msgid "minutes"
-msgstr "Minuten"
-
-#: ../src//Utils.vala:130
-msgid "minute"
-msgstr "Minute"
-
-#: ../src//Utils.vala:132
-msgid "seconds"
-msgstr "Sekunden"
-
-#: ../src//Utils.vala:132
-msgid "second"
-msgstr "Sekunde"
-
-#: ../src//Indicator.vala:27
+#: ../src/Indicator.vala:29
 msgid "Power"
 msgstr "Energie"
 
-#: ../src//Indicator.vala:28
+#: ../src/Indicator.vala:30
 msgid "Power indicator"
 msgstr "Energieanzeige"
 
-#: ../src//Widgets/PopoverWidget.vala:43
+#: ../src/Widgets/PopoverWidget.vala:49
 msgid "Show Percentage"
 msgstr "Prozentanzeige"
 
-#: ../src//Widgets/PopoverWidget.vala:47
-msgid "Power Settings"
-msgstr "Energieeinstellungen"
+#: ../src/Widgets/PopoverWidget.vala:50
+msgid "Power Settings…"
+msgstr ""
+
+#: ../src/Widgets/AppList.vala:51
+msgid "Apps Using Lots of Power"
+msgstr ""
+
+#: ../src/Utils.vala:74
+msgid "Battery"
+msgstr "Akku"
+
+#: ../src/Utils.vala:75
+msgid "UPS"
+msgstr "USV"
+
+#: ../src/Utils.vala:76
+msgid "Monitor"
+msgstr "Bildschirm"
+
+#: ../src/Utils.vala:77
+msgid "Mouse"
+msgstr "Maus"
+
+#: ../src/Utils.vala:78
+msgid "Keyboard"
+msgstr "Tastatur"
+
+#: ../src/Utils.vala:79
+msgid "PDA"
+msgstr "PDA"
+
+#: ../src/Utils.vala:80
+msgid "Phone"
+msgstr "Telefon"
+
+#: ../src/Utils.vala:81
+msgid "Device"
+msgstr "Gerät"
+
+#: ../src/Utils.vala:92
+msgid "Calculating..."
+msgstr "Berechnung läuft …"
+
+#: ../src/Utils.vala:97
+msgid "%i%% charged"
+msgstr "%i%% geladen"
+
+#: ../src/Utils.vala:103
+msgid "%s until full"
+msgstr "%s bis voll"
+
+#: ../src/Utils.vala:106
+msgid "%i%% remaining"
+msgstr "%i%% verbleibend"
+
+#: ../src/Utils.vala:112
+msgid "%s until empty"
+msgstr "%s bis leer"
+
+#: ../src/Utils.vala:126
+msgid "days"
+msgstr "Tage"
+
+#: ../src/Utils.vala:126
+msgid "day"
+msgstr "Tag"
+
+#: ../src/Utils.vala:128
+msgid "hours"
+msgstr "Stunden"
+
+#: ../src/Utils.vala:128
+msgid "hour"
+msgstr "Stunde"
+
+#: ../src/Utils.vala:130
+msgid "minutes"
+msgstr "Minuten"
+
+#: ../src/Utils.vala:130
+msgid "minute"
+msgstr "Minute"
+
+#: ../src/Utils.vala:132
+msgid "seconds"
+msgstr "Sekunden"
+
+#: ../src/Utils.vala:132
+msgid "second"
+msgstr "Sekunde"

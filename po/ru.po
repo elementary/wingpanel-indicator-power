@@ -2,112 +2,116 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-07 16:55+0200\n"
-"PO-Revision-Date: 2015-09-18 20:07+0000\n"
+"POT-Creation-Date: 2015-10-14 16:29+0200\n"
+"PO-Revision-Date: 2015-10-14 16:02+0000\n"
 "Last-Translator: crow <crow@rikka.io>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-19 05:43+0000\n"
-"X-Generator: Launchpad (build 17746)\n"
+"X-Launchpad-Export-Date: 2015-10-15 06:09+0000\n"
+"X-Generator: Launchpad (build 17812)\n"
 
-#: ../src//Utils.vala:74
-msgid "Battery"
-msgstr "Батарея"
-
-#: ../src//Utils.vala:75
-msgid "UPS"
-msgstr "ИБП"
-
-#: ../src//Utils.vala:76
-msgid "Monitor"
-msgstr "Монитор"
-
-#: ../src//Utils.vala:77
-msgid "Mouse"
-msgstr "Мышь"
-
-#: ../src//Utils.vala:78
-msgid "Keyboard"
-msgstr "Клавиатура"
-
-#: ../src//Utils.vala:79
-msgid "PDA"
-msgstr "КПК"
-
-#: ../src//Utils.vala:80
-msgid "Phone"
-msgstr "Телефон"
-
-#: ../src//Utils.vala:81
-msgid "Device"
-msgstr "Устройство"
-
-#: ../src//Utils.vala:92
-msgid "Calculating..."
-msgstr "Подсчёт..."
-
-#: ../src//Utils.vala:97
-msgid "%i%% charged"
-msgstr "%i%% заряжено"
-
-#: ../src//Utils.vala:103
-msgid "%s until full"
-msgstr "%s до полного"
-
-#: ../src//Utils.vala:106
-msgid "%i%% remaining"
-msgstr "%i%% осталось"
-
-#: ../src//Utils.vala:112
-msgid "%s until empty"
-msgstr "%s до разряда"
-
-#: ../src//Utils.vala:126
-msgid "days"
-msgstr "дней"
-
-#: ../src//Utils.vala:126
-msgid "day"
-msgstr "день"
-
-#: ../src//Utils.vala:128
-msgid "hours"
-msgstr "часов"
-
-#: ../src//Utils.vala:128
-msgid "hour"
-msgstr "час"
-
-#: ../src//Utils.vala:130
-msgid "minutes"
-msgstr "минут"
-
-#: ../src//Utils.vala:130
-msgid "minute"
-msgstr "минута"
-
-#: ../src//Utils.vala:132
-msgid "seconds"
-msgstr "секунд"
-
-#: ../src//Utils.vala:132
-msgid "second"
-msgstr "секунда"
-
-#: ../src//Indicator.vala:27
+#: ../src/Indicator.vala:29
 msgid "Power"
 msgstr "Питание"
 
-#: ../src//Indicator.vala:28
+#: ../src/Indicator.vala:30
 msgid "Power indicator"
 msgstr "Индиккатор питания"
 
-#: ../src//Widgets/PopoverWidget.vala:43
+#: ../src/Widgets/PopoverWidget.vala:49
 msgid "Show Percentage"
 msgstr "Отображать проценты"
 
-#: ../src//Widgets/PopoverWidget.vala:47
-msgid "Power Settings"
-msgstr "Настройки питания"
+#: ../src/Widgets/PopoverWidget.vala:50
+msgid "Power Settings…"
+msgstr "Параметры питания..."
+
+#: ../src/Widgets/AppList.vala:51
+msgid "Apps Using Lots of Power"
+msgstr "Энергозатратные приложения"
+
+#: ../src/Utils.vala:74
+msgid "Battery"
+msgstr "Батарея"
+
+#: ../src/Utils.vala:75
+msgid "UPS"
+msgstr "ИБП"
+
+#: ../src/Utils.vala:76
+msgid "Monitor"
+msgstr "Монитор"
+
+#: ../src/Utils.vala:77
+msgid "Mouse"
+msgstr "Мышь"
+
+#: ../src/Utils.vala:78
+msgid "Keyboard"
+msgstr "Клавиатура"
+
+#: ../src/Utils.vala:79
+msgid "PDA"
+msgstr "КПК"
+
+#: ../src/Utils.vala:80
+msgid "Phone"
+msgstr "Телефон"
+
+#: ../src/Utils.vala:81
+msgid "Device"
+msgstr "Устройство"
+
+#: ../src/Utils.vala:92
+msgid "Calculating..."
+msgstr "Подсчёт..."
+
+#: ../src/Utils.vala:97
+msgid "%i%% charged"
+msgstr "%i%% заряжено"
+
+#: ../src/Utils.vala:103
+msgid "%s until full"
+msgstr "%s до полного"
+
+#: ../src/Utils.vala:106
+msgid "%i%% remaining"
+msgstr "%i%% осталось"
+
+#: ../src/Utils.vala:112
+msgid "%s until empty"
+msgstr "%s до разряда"
+
+#: ../src/Utils.vala:126
+msgid "days"
+msgstr "дней"
+
+#: ../src/Utils.vala:126
+msgid "day"
+msgstr "день"
+
+#: ../src/Utils.vala:128
+msgid "hours"
+msgstr "часов"
+
+#: ../src/Utils.vala:128
+msgid "hour"
+msgstr "час"
+
+#: ../src/Utils.vala:130
+msgid "minutes"
+msgstr "минут"
+
+#: ../src/Utils.vala:130
+msgid "minute"
+msgstr "минута"
+
+#: ../src/Utils.vala:132
+msgid "seconds"
+msgstr "секунд"
+
+#: ../src/Utils.vala:132
+msgid "second"
+msgstr "секунда"

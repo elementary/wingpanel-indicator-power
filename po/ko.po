@@ -2,112 +2,116 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-07 16:55+0200\n"
+"POT-Creation-Date: 2015-10-14 16:29+0200\n"
 "PO-Revision-Date: 2015-08-23 08:53+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-08-24 05:24+0000\n"
-"X-Generator: Launchpad (build 17690)\n"
+"X-Launchpad-Export-Date: 2015-10-15 06:09+0000\n"
+"X-Generator: Launchpad (build 17812)\n"
 
-#: ../src//Utils.vala:74
-msgid "Battery"
-msgstr "배터리"
-
-#: ../src//Utils.vala:75
-msgid "UPS"
-msgstr "UPS"
-
-#: ../src//Utils.vala:76
-msgid "Monitor"
-msgstr "모니터"
-
-#: ../src//Utils.vala:77
-msgid "Mouse"
-msgstr "마우스"
-
-#: ../src//Utils.vala:78
-msgid "Keyboard"
-msgstr "키보드"
-
-#: ../src//Utils.vala:79
-msgid "PDA"
-msgstr "PDA"
-
-#: ../src//Utils.vala:80
-msgid "Phone"
-msgstr "전화"
-
-#: ../src//Utils.vala:81
-msgid "Device"
-msgstr "장치"
-
-#: ../src//Utils.vala:92
-msgid "Calculating..."
-msgstr "계산 중..."
-
-#: ../src//Utils.vala:97
-msgid "%i%% charged"
-msgstr "%i%% 충전됨"
-
-#: ../src//Utils.vala:103
-msgid "%s until full"
-msgstr "완충 까지 %s 남음"
-
-#: ../src//Utils.vala:106
-msgid "%i%% remaining"
-msgstr "%i%% 남음"
-
-#: ../src//Utils.vala:112
-msgid "%s until empty"
-msgstr "방전 까지 %s 남음"
-
-#: ../src//Utils.vala:126
-msgid "days"
-msgstr "일"
-
-#: ../src//Utils.vala:126
-msgid "day"
-msgstr "일"
-
-#: ../src//Utils.vala:128
-msgid "hours"
-msgstr "시간"
-
-#: ../src//Utils.vala:128
-msgid "hour"
-msgstr "시간"
-
-#: ../src//Utils.vala:130
-msgid "minutes"
-msgstr "분"
-
-#: ../src//Utils.vala:130
-msgid "minute"
-msgstr "분"
-
-#: ../src//Utils.vala:132
-msgid "seconds"
-msgstr "초"
-
-#: ../src//Utils.vala:132
-msgid "second"
-msgstr "초"
-
-#: ../src//Indicator.vala:27
+#: ../src/Indicator.vala:29
 msgid "Power"
 msgstr "전력"
 
-#: ../src//Indicator.vala:28
+#: ../src/Indicator.vala:30
 msgid "Power indicator"
 msgstr "전력 표시"
 
-#: ../src//Widgets/PopoverWidget.vala:43
+#: ../src/Widgets/PopoverWidget.vala:49
 msgid "Show Percentage"
 msgstr "백분율 표시"
 
-#: ../src//Widgets/PopoverWidget.vala:47
-msgid "Power Settings"
-msgstr "전력 설정"
+#: ../src/Widgets/PopoverWidget.vala:50
+msgid "Power Settings…"
+msgstr ""
+
+#: ../src/Widgets/AppList.vala:51
+msgid "Apps Using Lots of Power"
+msgstr ""
+
+#: ../src/Utils.vala:74
+msgid "Battery"
+msgstr "배터리"
+
+#: ../src/Utils.vala:75
+msgid "UPS"
+msgstr "UPS"
+
+#: ../src/Utils.vala:76
+msgid "Monitor"
+msgstr "모니터"
+
+#: ../src/Utils.vala:77
+msgid "Mouse"
+msgstr "마우스"
+
+#: ../src/Utils.vala:78
+msgid "Keyboard"
+msgstr "키보드"
+
+#: ../src/Utils.vala:79
+msgid "PDA"
+msgstr "PDA"
+
+#: ../src/Utils.vala:80
+msgid "Phone"
+msgstr "전화"
+
+#: ../src/Utils.vala:81
+msgid "Device"
+msgstr "장치"
+
+#: ../src/Utils.vala:92
+msgid "Calculating..."
+msgstr "계산 중..."
+
+#: ../src/Utils.vala:97
+msgid "%i%% charged"
+msgstr "%i%% 충전됨"
+
+#: ../src/Utils.vala:103
+msgid "%s until full"
+msgstr "완충 까지 %s 남음"
+
+#: ../src/Utils.vala:106
+msgid "%i%% remaining"
+msgstr "%i%% 남음"
+
+#: ../src/Utils.vala:112
+msgid "%s until empty"
+msgstr "방전 까지 %s 남음"
+
+#: ../src/Utils.vala:126
+msgid "days"
+msgstr "일"
+
+#: ../src/Utils.vala:126
+msgid "day"
+msgstr "일"
+
+#: ../src/Utils.vala:128
+msgid "hours"
+msgstr "시간"
+
+#: ../src/Utils.vala:128
+msgid "hour"
+msgstr "시간"
+
+#: ../src/Utils.vala:130
+msgid "minutes"
+msgstr "분"
+
+#: ../src/Utils.vala:130
+msgid "minute"
+msgstr "분"
+
+#: ../src/Utils.vala:132
+msgid "seconds"
+msgstr "초"
+
+#: ../src/Utils.vala:132
+msgid "second"
+msgstr "초"
