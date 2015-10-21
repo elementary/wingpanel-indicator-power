@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-14 16:29+0200\n"
-"PO-Revision-Date: 2015-10-20 01:21+0000\n"
+"PO-Revision-Date: 2015-10-20 18:07+0000\n"
 "Last-Translator: Yuly Nesterov <crow@rikka.io>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-10-20 05:52+0000\n"
+"X-Launchpad-Export-Date: 2015-10-21 06:22+0000\n"
 "X-Generator: Launchpad (build 17812)\n"
 
 #: ../src/Indicator.vala:29
@@ -26,7 +26,7 @@ msgstr "Отображать проценты"
 
 #: ../src/Widgets/PopoverWidget.vala:50
 msgid "Power Settings…"
-msgstr "Настройки питания..."
+msgstr "Параметры питания..."
 
 #: ../src/Widgets/AppList.vala:51
 msgid "Apps Using Lots of Power"
@@ -74,7 +74,7 @@ msgstr "%i%% заряжено"
 
 #: ../src/Utils.vala:103
 msgid "%s until full"
-msgstr "%s до полного"
+msgstr "%s осталось"
 
 #: ../src/Utils.vala:106
 msgid "%i%% remaining"
