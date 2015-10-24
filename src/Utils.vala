@@ -137,7 +137,7 @@ namespace Power.Utils {
         var charging = is_charging (battery.state);
 
         if (percent <= 0) {
-            return _("Calculating...");
+            return _("Calculating…");
         }
 
         var info = "";
@@ -149,7 +149,15 @@ namespace Power.Utils {
 
             if (seconds > 0) {
                 info += " - ";
-                info += _("%s until full").printf (format_seconds (seconds));
+                if (seconds >= 86400) {
+                    info += ngettext ("%i day until full", "%i days until full", (ulong) (seconds/86400));
+                } else if (seconds >= 3600) {
+                    info += ngettext ("%i hour until full", "%i hours until full", (ulong) (seconds/3600));
+                } else if (seconds >= 60) {
+                    info += ngettext ("%i minute until full", "%i minutes until full", (ulong) (seconds/60));
+                } else {
+                    info += ngettext ("%i second until full", "%i seconds until full", (ulong) seconds);
+                }
             }
         } else {
             info += _("%i%% remaining").printf (percent);
@@ -158,31 +166,18 @@ namespace Power.Utils {
 
             if (seconds > 0) {
                 info += " - ";
-                info += _("%s until empty").printf (format_seconds (seconds));
+                if (seconds >= 86400) {
+                    info += ngettext ("%i day until empty", "%i days until empty", (ulong) (seconds/86400));
+                } else if (seconds >= 3600) {
+                    info += ngettext ("%i hour until empty", "%i hours until empty", (ulong) (seconds/3600));
+                } else if (seconds >= 60) {
+                    info += ngettext ("%i minute until empty", "%i minutes until empty", (ulong) (seconds/60));
+                } else {
+                    info += ngettext ("%i second until empty", "%i seconds until empty", (ulong) seconds);
+                }
             }
         }
 
         return info;
-    }
-
-    private string format_seconds (int64 seconds) {
-        var d = divide (seconds, 86400);
-        var h = divide (seconds, 3600);
-        var m = divide (seconds, 60);
-        var s = (int)seconds;
-
-        if (d > 0) {
-            return "%i %s".printf (d, d > 1 ? _("days") : _("day"));
-        } else if (h > 0) {
-            return "%i %s".printf (h, h > 1 ? _("hours") : _("hour"));
-        } else if (m > 0) {
-            return "%i %s".printf (m, m > 1 ? _("minutes") : _("minute"));
-        } else {
-            return "%i %s".printf (s, s > 1 ? _("seconds") : _("second"));
-        }
-    }
-
-    private int divide (int64 x, int y) {
-        return (int)(x - (x % y)) / y;
     }
 }
