@@ -150,13 +150,16 @@ namespace Power.Utils {
             if (seconds > 0) {
                 info += " - ";
                 if (seconds >= 86400) {
-                    info += ngettext ("%i day until full", "%i days until full", (ulong) (seconds/86400));
+                    var days = seconds/86400;
+                    info += ngettext ("%i day until full", "%i days until full", (ulong) days).printf (days);
                 } else if (seconds >= 3600) {
-                    info += ngettext ("%i hour until full", "%i hours until full", (ulong) (seconds/3600));
+                    var hours = seconds/3600;
+                    info += ngettext ("%i hour until full", "%i hours until full", (ulong) hours).printf (hours);
                 } else if (seconds >= 60) {
-                    info += ngettext ("%i minute until full", "%i minutes until full", (ulong) (seconds/60));
+                    var minutes = seconds/60;
+                    info += ngettext ("%i minute until full", "%i minutes until full", (ulong) minutes).printf (minutes);
                 } else {
-                    info += ngettext ("%i second until full", "%i seconds until full", (ulong) seconds);
+                    info += ngettext ("%i second until full", "%i seconds until full", (ulong) seconds).printf (seconds);
                 }
             }
         } else {
@@ -167,13 +170,16 @@ namespace Power.Utils {
             if (seconds > 0) {
                 info += " - ";
                 if (seconds >= 86400) {
-                    info += ngettext ("%i day until empty", "%i days until empty", (ulong) (seconds/86400));
+                    var days = seconds/86400;
+                    info += ngettext ("%i day until empty", "%i days until empty", (ulong) days).printf (days);
                 } else if (seconds >= 3600) {
-                    info += ngettext ("%i hour until empty", "%i hours until empty", (ulong) (seconds/3600));
+                    var hours = seconds/3600;
+                    info += ngettext ("%i hour until empty", "%i hours until empty", (ulong) hours).printf (hours);
                 } else if (seconds >= 60) {
-                    info += ngettext ("%i minute until empty", "%i minutes until empty", (ulong) (seconds/60));
+                    var minutes = seconds/60;
+                    info += ngettext ("%i minute until empty", "%i minutes until empty", (ulong) minutes).printf (minutes);
                 } else {
-                    info += ngettext ("%i second until empty", "%i seconds until empty", (ulong) seconds);
+                    info += ngettext ("%i second until empty", "%i seconds until empty", (ulong) seconds).printf (seconds);
                 }
             }
         }
