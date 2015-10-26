@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-24 14:17+0200\n"
-"PO-Revision-Date: 2015-10-15 07:44+0000\n"
+"PO-Revision-Date: 2015-10-25 09:28+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-10-25 05:50+0000\n"
+"X-Launchpad-Export-Date: 2015-10-26 05:27+0000\n"
 "X-Generator: Launchpad (build 17812)\n"
 
 #: ../src/Indicator.vala:31
@@ -67,7 +67,7 @@ msgstr "Laite"
 
 #: ../src/Utils.vala:140
 msgid "Calculating…"
-msgstr ""
+msgstr "Lasketaan…"
 
 #: ../src/Utils.vala:146
 msgid "%i%% charged"
@@ -76,26 +76,26 @@ msgstr "%i%% ladattu"
 #: ../src/Utils.vala:153
 msgid "%i day until full"
 msgid_plural "%i days until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%i päivä kunnes täynnä"
+msgstr[1] "%i päivää kunnes täynnä"
 
 #: ../src/Utils.vala:155
 msgid "%i hour until full"
 msgid_plural "%i hours until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%i tunti kunnes täynnä"
+msgstr[1] "%i tuntia kunnes täynnä"
 
 #: ../src/Utils.vala:157
 msgid "%i minute until full"
 msgid_plural "%i minutes until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%i minuutti kunnes täynnä"
+msgstr[1] "%i minuuttia kunnes täynnä"
 
 #: ../src/Utils.vala:159
 msgid "%i second until full"
 msgid_plural "%i seconds until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%i sekunti kunnes täynnä"
+msgstr[1] "%i sekuntia kunnes täynnä"
 
 #: ../src/Utils.vala:163
 msgid "%i%% remaining"
@@ -104,23 +104,23 @@ msgstr "%i%% jäljellä"
 #: ../src/Utils.vala:170
 msgid "%i day until empty"
 msgid_plural "%i days until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%i päivä kunnes tyhjä"
+msgstr[1] "%i päivää kunnes tyhjä"
 
 #: ../src/Utils.vala:172
 msgid "%i hour until empty"
 msgid_plural "%i hours until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%i tunti kunnes tyhjä"
+msgstr[1] "%i tuntia kunnes tyhjä"
 
 #: ../src/Utils.vala:174
 msgid "%i minute until empty"
 msgid_plural "%i minutes until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%i minuutti kunnes tyhjä"
+msgstr[1] "%i minuuttia kunnes tyhjä"
 
 #: ../src/Utils.vala:176
 msgid "%i second until empty"
 msgid_plural "%i seconds until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%i sekunti kunnes tyhjä"
+msgstr[1] "%i sekuntia kunnes tyhjä"
