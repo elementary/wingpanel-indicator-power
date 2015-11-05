@@ -3,15 +3,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-24 14:17+0200\n"
-"PO-Revision-Date: 2015-10-16 13:44+0000\n"
+"PO-Revision-Date: 2015-11-04 11:57+0000\n"
 "Last-Translator: Tobias Bannert <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-10-25 05:50+0000\n"
-"X-Generator: Launchpad (build 17812)\n"
+"X-Launchpad-Export-Date: 2015-11-05 05:55+0000\n"
+"X-Generator: Launchpad (build 17838)\n"
 
 #: ../src/Indicator.vala:31
 msgid "Power"
@@ -67,7 +67,7 @@ msgstr "Gerät"
 
 #: ../src/Utils.vala:140
 msgid "Calculating…"
-msgstr ""
+msgstr "Berechnung läuft …"
 
 #: ../src/Utils.vala:146
 msgid "%i%% charged"
