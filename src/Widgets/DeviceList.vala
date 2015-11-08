@@ -33,15 +33,36 @@ public class Power.Widgets.DeviceList : Gtk.Box {
         Services.DeviceManager.get_default ().battery_deregistered.connect (remove_battery);
     }
 
+    private void update_icons (Services.Device battery, Gtk.Image device_image, Gtk.Image battery_image) {
+        if (Utils.type_has_device_icon (battery.device_type)) {
+            device_image.set_from_icon_name (Utils.get_icon_name_for_device (battery), Gtk.IconSize.DIALOG);
+            battery_image.set_from_icon_name (Utils.get_icon_name_for_battery (battery), Gtk.IconSize.DND);
+        } else {
+            device_image.set_from_icon_name (Utils.get_icon_name_for_battery (battery), Gtk.IconSize.DIALOG);
+            battery_image.clear ();
+        }
+    }
+
     private void add_battery (string device_path, Services.Device battery) {
         var grid = new Gtk.Grid ();
         grid.column_spacing = 6;
         grid.row_spacing = 6;
         grid.margin = 6;
 
-        var image = new Gtk.Image.from_icon_name (Utils.get_icon_name_for_battery (battery), Gtk.IconSize.DIALOG);
+        var device_image = new Gtk.Image ();
+        device_image.margin_end = 3;
 
-        grid.attach (image, 0, 0, 1, 2);
+        var battery_image = new Gtk.Image ();
+        battery_image.halign = Gtk.Align.END;
+        battery_image.valign = Gtk.Align.END;
+
+        update_icons (battery, device_image, battery_image);
+
+        var overlay = new Gtk.Overlay ();
+        overlay.add (device_image);
+        overlay.add_overlay (battery_image);
+
+        grid.attach (overlay, 0, 0, 1, 2);
 
         var title_label = new Gtk.Label (Utils.get_title_for_battery (battery));
         title_label.use_markup = true;
@@ -71,7 +92,7 @@ public class Power.Widgets.DeviceList : Gtk.Box {
         }
 
         battery.properties_updated.connect (() => {
-            image.set_from_icon_name (Utils.get_icon_name_for_battery (battery), Gtk.IconSize.DIALOG);
+            update_icons (battery, device_image, battery_image);
             title_label.set_markup (Utils.get_title_for_battery (battery));
             info_label.set_label (Utils.get_info_for_battery (battery));
         });
