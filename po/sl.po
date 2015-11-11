@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-24 14:17+0200\n"
+"POT-Creation-Date: 2015-11-10 14:22-0800\n"
 "PO-Revision-Date: 2015-10-30 22:25+0000\n"
 "Last-Translator: Jernej Virag <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,8 +11,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
 "n%100==4 ? 3 : 0);\n"
-"X-Launchpad-Export-Date: 2015-10-31 05:37+0000\n"
-"X-Generator: Launchpad (build 17838)\n"
+"X-Launchpad-Export-Date: 2015-11-11 05:56+0000\n"
+"X-Generator: Launchpad (build 17843)\n"
 
 #: ../src/Indicator.vala:31
 msgid "Power"
@@ -22,59 +22,47 @@ msgstr "Napajanje"
 msgid "Power indicator"
 msgstr "Indikator za napajanje"
 
-#: ../src/Widgets/PopoverWidget.vala:51
-msgid "Show Percentage"
-msgstr "Pokaži odstotke v menijski vrstici"
-
-#: ../src/Widgets/PopoverWidget.vala:52
-msgid "Power Settings…"
-msgstr "Nastavitve porabe energije ..."
-
-#: ../src/Widgets/AppList.vala:54
-msgid "Apps Using Lots of Power"
-msgstr "Aplikacije, ki porabljajo veliko energije"
-
-#: ../src/Utils.vala:122
+#: ../src/Utils.vala:84
 msgid "Battery"
 msgstr "Baterija"
 
-#: ../src/Utils.vala:123
+#: ../src/Utils.vala:85
 msgid "UPS"
 msgstr "Brezprekinitveno napajanje"
 
-#: ../src/Utils.vala:124
+#: ../src/Utils.vala:86
 msgid "Monitor"
 msgstr "Zaslon"
 
-#: ../src/Utils.vala:125
+#: ../src/Utils.vala:87
 msgid "Mouse"
 msgstr "Miška"
 
-#: ../src/Utils.vala:126
+#: ../src/Utils.vala:88
 msgid "Keyboard"
 msgstr "Tipkovnica"
 
-#: ../src/Utils.vala:127
+#: ../src/Utils.vala:89
 msgid "PDA"
 msgstr "Dlančnik"
 
-#: ../src/Utils.vala:128
+#: ../src/Utils.vala:90
 msgid "Phone"
 msgstr "Telefon"
 
-#: ../src/Utils.vala:129
+#: ../src/Utils.vala:91
 msgid "Device"
 msgstr "Naprava"
 
-#: ../src/Utils.vala:140
+#: ../src/Utils.vala:102
 msgid "Calculating…"
 msgstr "ocenjevanje približka..."
 
-#: ../src/Utils.vala:146
+#: ../src/Utils.vala:108
 msgid "%i%% charged"
 msgstr "%i% % napolnjena"
 
-#: ../src/Utils.vala:153
+#: ../src/Utils.vala:116
 msgid "%i day until full"
 msgid_plural "%i days until full"
 msgstr[0] "%i dni do polnosti"
@@ -82,7 +70,7 @@ msgstr[1] "%i dan do polnosti"
 msgstr[2] "%i dni do polnosti"
 msgstr[3] "%i dnevi do polnosti"
 
-#: ../src/Utils.vala:155
+#: ../src/Utils.vala:119
 msgid "%i hour until full"
 msgid_plural "%i hours until full"
 msgstr[0] "%i ur do polnosti"
@@ -90,7 +78,7 @@ msgstr[1] "%i ura do polnosti"
 msgstr[2] "%i uri do polnosti"
 msgstr[3] "%i ure do polnosti"
 
-#: ../src/Utils.vala:157
+#: ../src/Utils.vala:122
 msgid "%i minute until full"
 msgid_plural "%i minutes until full"
 msgstr[0] "%i minut do polnosti"
@@ -98,7 +86,7 @@ msgstr[1] "%i minuta do polnosti"
 msgstr[2] "%i minuti do polnosti"
 msgstr[3] "%i minute do polnosti"
 
-#: ../src/Utils.vala:159
+#: ../src/Utils.vala:124
 msgid "%i second until full"
 msgid_plural "%i seconds until full"
 msgstr[0] "%i sekund do polnosti"
@@ -106,11 +94,11 @@ msgstr[1] "%i sekunda do polnosti"
 msgstr[2] "%i sekundi do polnosti"
 msgstr[3] "%i sekunde do polnosti"
 
-#: ../src/Utils.vala:163
+#: ../src/Utils.vala:128
 msgid "%i%% remaining"
 msgstr "%i% % ostalo"
 
-#: ../src/Utils.vala:170
+#: ../src/Utils.vala:136
 msgid "%i day until empty"
 msgid_plural "%i days until empty"
 msgstr[0] "%i dni do izpraznjenja"
@@ -118,7 +106,7 @@ msgstr[1] "%i dan do izpraznjenja"
 msgstr[2] "%i dni do izpraznjenja"
 msgstr[3] "%i dnevi do izpraznjenja"
 
-#: ../src/Utils.vala:172
+#: ../src/Utils.vala:139
 msgid "%i hour until empty"
 msgid_plural "%i hours until empty"
 msgstr[0] "%i ur do izpraznjenja"
@@ -126,7 +114,7 @@ msgstr[1] "%i ura do izpraznjenja"
 msgstr[2] "%i uri do izpraznjenja"
 msgstr[3] "%i ure do izpraznjenja"
 
-#: ../src/Utils.vala:174
+#: ../src/Utils.vala:142
 msgid "%i minute until empty"
 msgid_plural "%i minutes until empty"
 msgstr[0] "%i minut do izpraznjenja"
@@ -134,10 +122,22 @@ msgstr[1] "%i minuta do izpraznjenja"
 msgstr[2] "%i minuti do izpraznjenja"
 msgstr[3] "%i minute do izpraznjenja"
 
-#: ../src/Utils.vala:176
+#: ../src/Utils.vala:144
 msgid "%i second until empty"
 msgid_plural "%i seconds until empty"
 msgstr[0] "%i sekund do izpraznjenja"
 msgstr[1] "%i sekunda do izpraznjenja"
 msgstr[2] "%i sekundi do izpraznjenja"
 msgstr[3] "%i sekunde do izpraznjenja"
+
+#: ../src/Widgets/AppList.vala:54
+msgid "Apps Using Lots of Power"
+msgstr "Aplikacije, ki porabljajo veliko energije"
+
+#: ../src/Widgets/PopoverWidget.vala:51
+msgid "Show Percentage"
+msgstr "Pokaži odstotke v menijski vrstici"
+
+#: ../src/Widgets/PopoverWidget.vala:52
+msgid "Power Settings…"
+msgstr "Nastavitve porabe energije ..."

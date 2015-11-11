@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-24 14:17+0200\n"
+"POT-Creation-Date: 2015-11-10 14:22-0800\n"
 "PO-Revision-Date: 2015-10-24 15:28+0000\n"
 "Last-Translator: Yuly Nesterov <crow@rikka.io>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,8 +11,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2015-10-25 05:50+0000\n"
-"X-Generator: Launchpad (build 17812)\n"
+"X-Launchpad-Export-Date: 2015-11-11 05:56+0000\n"
+"X-Generator: Launchpad (build 17843)\n"
 
 #: ../src/Indicator.vala:31
 msgid "Power"
@@ -22,6 +22,110 @@ msgstr "Питание"
 msgid "Power indicator"
 msgstr "Индикатор питания"
 
+#: ../src/Utils.vala:84
+msgid "Battery"
+msgstr "Батарея"
+
+#: ../src/Utils.vala:85
+msgid "UPS"
+msgstr "ИБП"
+
+#: ../src/Utils.vala:86
+msgid "Monitor"
+msgstr "Монитор"
+
+#: ../src/Utils.vala:87
+msgid "Mouse"
+msgstr "Мышь"
+
+#: ../src/Utils.vala:88
+msgid "Keyboard"
+msgstr "Клавиатура"
+
+#: ../src/Utils.vala:89
+msgid "PDA"
+msgstr "КПК"
+
+#: ../src/Utils.vala:90
+msgid "Phone"
+msgstr "Телефон"
+
+#: ../src/Utils.vala:91
+msgid "Device"
+msgstr "Устройство"
+
+#: ../src/Utils.vala:102
+msgid "Calculating…"
+msgstr "Вычисление…"
+
+#: ../src/Utils.vala:108
+msgid "%i%% charged"
+msgstr "%i%% заряжено"
+
+#: ../src/Utils.vala:116
+msgid "%i day until full"
+msgid_plural "%i days until full"
+msgstr[0] "%i день остался"
+msgstr[1] "%i дня осталось"
+msgstr[2] "%i дней осталось"
+
+#: ../src/Utils.vala:119
+msgid "%i hour until full"
+msgid_plural "%i hours until full"
+msgstr[0] "%i час остался"
+msgstr[1] "%i часа осталось"
+msgstr[2] "%i часов осталось"
+
+#: ../src/Utils.vala:122
+msgid "%i minute until full"
+msgid_plural "%i minutes until full"
+msgstr[0] "%i минута осталась"
+msgstr[1] "%i минуты осталось"
+msgstr[2] "%i минут осталось"
+
+#: ../src/Utils.vala:124
+msgid "%i second until full"
+msgid_plural "%i seconds until full"
+msgstr[0] "%i секунда осталась"
+msgstr[1] "%i секунды осталось"
+msgstr[2] "%i секунд осталось"
+
+#: ../src/Utils.vala:128
+msgid "%i%% remaining"
+msgstr "%i%% осталось"
+
+#: ../src/Utils.vala:136
+msgid "%i day until empty"
+msgid_plural "%i days until empty"
+msgstr[0] "%i день до разряда"
+msgstr[1] "%i дня до разряда"
+msgstr[2] "%i дней до разряда"
+
+#: ../src/Utils.vala:139
+msgid "%i hour until empty"
+msgid_plural "%i hours until empty"
+msgstr[0] "%i час до разряда"
+msgstr[1] "%i часа до разряда"
+msgstr[2] "%i часов до разряда"
+
+#: ../src/Utils.vala:142
+msgid "%i minute until empty"
+msgid_plural "%i minutes until empty"
+msgstr[0] "%i минута до разряда"
+msgstr[1] "%i минуты до разряда"
+msgstr[2] "%i минут до разряда"
+
+#: ../src/Utils.vala:144
+msgid "%i second until empty"
+msgid_plural "%i seconds until empty"
+msgstr[0] "%i секунда до разряда"
+msgstr[1] "%i секунды до разряда"
+msgstr[2] "%i секунд до разряда"
+
+#: ../src/Widgets/AppList.vala:54
+msgid "Apps Using Lots of Power"
+msgstr "Энергозатратные приложения"
+
 #: ../src/Widgets/PopoverWidget.vala:51
 msgid "Show Percentage"
 msgstr "Отображать проценты"
@@ -29,107 +133,3 @@ msgstr "Отображать проценты"
 #: ../src/Widgets/PopoverWidget.vala:52
 msgid "Power Settings…"
 msgstr "Параметры питания..."
-
-#: ../src/Widgets/AppList.vala:54
-msgid "Apps Using Lots of Power"
-msgstr "Энергозатратные приложения"
-
-#: ../src/Utils.vala:122
-msgid "Battery"
-msgstr "Батарея"
-
-#: ../src/Utils.vala:123
-msgid "UPS"
-msgstr "ИБП"
-
-#: ../src/Utils.vala:124
-msgid "Monitor"
-msgstr "Монитор"
-
-#: ../src/Utils.vala:125
-msgid "Mouse"
-msgstr "Мышь"
-
-#: ../src/Utils.vala:126
-msgid "Keyboard"
-msgstr "Клавиатура"
-
-#: ../src/Utils.vala:127
-msgid "PDA"
-msgstr "КПК"
-
-#: ../src/Utils.vala:128
-msgid "Phone"
-msgstr "Телефон"
-
-#: ../src/Utils.vala:129
-msgid "Device"
-msgstr "Устройство"
-
-#: ../src/Utils.vala:140
-msgid "Calculating…"
-msgstr "Вычисление…"
-
-#: ../src/Utils.vala:146
-msgid "%i%% charged"
-msgstr "%i%% заряжено"
-
-#: ../src/Utils.vala:153
-msgid "%i day until full"
-msgid_plural "%i days until full"
-msgstr[0] "%i день остался"
-msgstr[1] "%i дня осталось"
-msgstr[2] "%i дней осталось"
-
-#: ../src/Utils.vala:155
-msgid "%i hour until full"
-msgid_plural "%i hours until full"
-msgstr[0] "%i час остался"
-msgstr[1] "%i часа осталось"
-msgstr[2] "%i часов осталось"
-
-#: ../src/Utils.vala:157
-msgid "%i minute until full"
-msgid_plural "%i minutes until full"
-msgstr[0] "%i минута осталась"
-msgstr[1] "%i минуты осталось"
-msgstr[2] "%i минут осталось"
-
-#: ../src/Utils.vala:159
-msgid "%i second until full"
-msgid_plural "%i seconds until full"
-msgstr[0] "%i секунда осталась"
-msgstr[1] "%i секунды осталось"
-msgstr[2] "%i секунд осталось"
-
-#: ../src/Utils.vala:163
-msgid "%i%% remaining"
-msgstr "%i%% осталось"
-
-#: ../src/Utils.vala:170
-msgid "%i day until empty"
-msgid_plural "%i days until empty"
-msgstr[0] "%i день до разряда"
-msgstr[1] "%i дня до разряда"
-msgstr[2] "%i дней до разряда"
-
-#: ../src/Utils.vala:172
-msgid "%i hour until empty"
-msgid_plural "%i hours until empty"
-msgstr[0] "%i час до разряда"
-msgstr[1] "%i часа до разряда"
-msgstr[2] "%i часов до разряда"
-
-#: ../src/Utils.vala:174
-msgid "%i minute until empty"
-msgid_plural "%i minutes until empty"
-msgstr[0] "%i минута до разряда"
-msgstr[1] "%i минуты до разряда"
-msgstr[2] "%i минут до разряда"
-
-#: ../src/Utils.vala:176
-msgid "%i second until empty"
-msgid_plural "%i seconds until empty"
-msgstr[0] "%i секунда до разряда"
-msgstr[1] "%i секунды до разряда"
-msgstr[2] "%i секунд до разряда"

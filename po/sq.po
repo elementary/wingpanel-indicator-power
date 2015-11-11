@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-24 14:17+0200\n"
+"POT-Creation-Date: 2015-11-10 14:22-0800\n"
 "PO-Revision-Date: 2015-11-03 19:45+0000\n"
 "Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10,8 +10,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-11-04 06:18+0000\n"
-"X-Generator: Launchpad (build 17838)\n"
+"X-Launchpad-Export-Date: 2015-11-11 05:56+0000\n"
+"X-Generator: Launchpad (build 17843)\n"
 
 #: ../src/Indicator.vala:31
 msgid "Power"
@@ -21,6 +21,102 @@ msgstr ""
 msgid "Power indicator"
 msgstr "Treguesi i energjisë"
 
+#: ../src/Utils.vala:84
+msgid "Battery"
+msgstr "Bateria"
+
+#: ../src/Utils.vala:85
+msgid "UPS"
+msgstr ""
+
+#: ../src/Utils.vala:86
+msgid "Monitor"
+msgstr "Monitori"
+
+#: ../src/Utils.vala:87
+msgid "Mouse"
+msgstr ""
+
+#: ../src/Utils.vala:88
+msgid "Keyboard"
+msgstr "Tastiera"
+
+#: ../src/Utils.vala:89
+msgid "PDA"
+msgstr ""
+
+#: ../src/Utils.vala:90
+msgid "Phone"
+msgstr "Telefoni"
+
+#: ../src/Utils.vala:91
+msgid "Device"
+msgstr "Pajisja"
+
+#: ../src/Utils.vala:102
+msgid "Calculating…"
+msgstr "Duke llogaritur..."
+
+#: ../src/Utils.vala:108
+msgid "%i%% charged"
+msgstr ""
+
+#: ../src/Utils.vala:116
+msgid "%i day until full"
+msgid_plural "%i days until full"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/Utils.vala:119
+msgid "%i hour until full"
+msgid_plural "%i hours until full"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/Utils.vala:122
+msgid "%i minute until full"
+msgid_plural "%i minutes until full"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/Utils.vala:124
+msgid "%i second until full"
+msgid_plural "%i seconds until full"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/Utils.vala:128
+msgid "%i%% remaining"
+msgstr "%i%% ngelet"
+
+#: ../src/Utils.vala:136
+msgid "%i day until empty"
+msgid_plural "%i days until empty"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/Utils.vala:139
+msgid "%i hour until empty"
+msgid_plural "%i hours until empty"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/Utils.vala:142
+msgid "%i minute until empty"
+msgid_plural "%i minutes until empty"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/Utils.vala:144
+msgid "%i second until empty"
+msgid_plural "%i seconds until empty"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/Widgets/AppList.vala:54
+msgid "Apps Using Lots of Power"
+msgstr ""
+
 #: ../src/Widgets/PopoverWidget.vala:51
 msgid "Show Percentage"
 msgstr "Shfaqe përqindjen"
@@ -28,99 +124,3 @@ msgstr "Shfaqe përqindjen"
 #: ../src/Widgets/PopoverWidget.vala:52
 msgid "Power Settings…"
 msgstr ""
-
-#: ../src/Widgets/AppList.vala:54
-msgid "Apps Using Lots of Power"
-msgstr ""
-
-#: ../src/Utils.vala:122
-msgid "Battery"
-msgstr "Bateria"
-
-#: ../src/Utils.vala:123
-msgid "UPS"
-msgstr ""
-
-#: ../src/Utils.vala:124
-msgid "Monitor"
-msgstr "Monitori"
-
-#: ../src/Utils.vala:125
-msgid "Mouse"
-msgstr ""
-
-#: ../src/Utils.vala:126
-msgid "Keyboard"
-msgstr "Tastiera"
-
-#: ../src/Utils.vala:127
-msgid "PDA"
-msgstr ""
-
-#: ../src/Utils.vala:128
-msgid "Phone"
-msgstr "Telefoni"
-
-#: ../src/Utils.vala:129
-msgid "Device"
-msgstr "Pajisja"
-
-#: ../src/Utils.vala:140
-msgid "Calculating…"
-msgstr "Duke llogaritur..."
-
-#: ../src/Utils.vala:146
-msgid "%i%% charged"
-msgstr ""
-
-#: ../src/Utils.vala:153
-msgid "%i day until full"
-msgid_plural "%i days until full"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ../src/Utils.vala:155
-msgid "%i hour until full"
-msgid_plural "%i hours until full"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ../src/Utils.vala:157
-msgid "%i minute until full"
-msgid_plural "%i minutes until full"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ../src/Utils.vala:159
-msgid "%i second until full"
-msgid_plural "%i seconds until full"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ../src/Utils.vala:163
-msgid "%i%% remaining"
-msgstr "%i%% ngelet"
-
-#: ../src/Utils.vala:170
-msgid "%i day until empty"
-msgid_plural "%i days until empty"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ../src/Utils.vala:172
-msgid "%i hour until empty"
-msgid_plural "%i hours until empty"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ../src/Utils.vala:174
-msgid "%i minute until empty"
-msgid_plural "%i minutes until empty"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ../src/Utils.vala:176
-msgid "%i second until empty"
-msgid_plural "%i seconds until empty"
-msgstr[0] ""
-msgstr[1] ""
