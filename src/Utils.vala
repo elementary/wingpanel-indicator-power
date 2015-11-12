@@ -113,15 +113,15 @@ namespace Power.Utils {
                 info += " - ";
                 if (seconds >= 86400) {
                     var days = seconds/86400;
-                    info += ngettext ("%i day until full", "%i days until full", (ulong) days).printf (days);
+                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld day until full", "%lld days until full", (ulong) days).printf (days);
                 } else if (seconds >= 3600) {
                     var hours = seconds/3600;
-                    info += ngettext ("%i hour until full", "%i hours until full", (ulong) hours).printf (hours);
+                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld hour until full", "%lld hours until full", (ulong) hours).printf (hours);
                 } else if (seconds >= 60) {
                     var minutes = seconds/60;
-                    info += ngettext ("%i minute until full", "%i minutes until full", (ulong) minutes).printf (minutes);
+                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld minute until full", "%lld minutes until full", (ulong) minutes).printf (minutes);
                 } else {
-                    info += ngettext ("%i second until full", "%i seconds until full", (ulong) seconds).printf (seconds);
+                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld second until full", "%lld seconds until full", (ulong) seconds).printf (seconds);
                 }
             }
         } else {
@@ -133,19 +133,31 @@ namespace Power.Utils {
                 info += " - ";
                 if (seconds >= 86400) {
                     var days = seconds/86400;
-                    info += ngettext ("%i day until empty", "%i days until empty", (ulong) days).printf (days);
+                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld day until empty", "%lld days until empty", (ulong) days).printf (days);
                 } else if (seconds >= 3600) {
                     var hours = seconds/3600;
-                    info += ngettext ("%i hour until empty", "%i hours until empty", (ulong) hours).printf (hours);
+                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld hour until empty", "%lld hours until empty", (ulong) hours).printf (hours);
                 } else if (seconds >= 60) {
                     var minutes = seconds/60;
-                    info += ngettext ("%i minute until empty", "%i minutes until empty", (ulong) minutes).printf (minutes);
+                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld minute until empty", "%lld minutes until empty", (ulong) minutes).printf (minutes);
                 } else {
-                    info += ngettext ("%i second until empty", "%i seconds until empty", (ulong) seconds).printf (seconds);
+                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld second until empty", "%lld seconds until empty", (ulong) seconds).printf (seconds);
                 }
             }
         }
 
         return info;
+    }
+
+    // TODO: Replace this and above with P_ when https://bugzilla.gnome.org/show_bug.cgi?id=758000 is fixed.
+    private void translations () {
+        ngettext ("%lld day until full", "%lld days until full", 0);
+        ngettext ("%lld hour until full", "%lld hours until full", 0);
+        ngettext ("%lld minute until full", "%lld minutes until full", 0);
+        ngettext ("%lld second until full", "%lld seconds until full", 0);
+        ngettext ("%lld day until empty", "%lld days until empty", 0);
+        ngettext ("%lld hour until empty", "%lld hours until empty", 0);
+        ngettext ("%lld minute until empty", "%lld minutes until empty", 0);
+        ngettext ("%lld second until empty", "%lld seconds until empty", 0);
     }
 }
