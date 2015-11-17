@@ -3,124 +3,116 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-10 14:22-0800\n"
-"PO-Revision-Date: 2015-05-23 21:47+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-11-16 23:43+0000\n"
+"Last-Translator: Beqa Arabuli <arabulibeqa@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2015-11-11 05:56+0000\n"
-"X-Generator: Launchpad (build 17843)\n"
+"X-Launchpad-Export-Date: 2015-11-17 05:56+0000\n"
+"X-Generator: Launchpad (build 17847)\n"
 
 #: ../src/Indicator.vala:31
 msgid "Power"
-msgstr ""
+msgstr "ეკლვება"
 
 #: ../src/Indicator.vala:32
 msgid "Power indicator"
-msgstr ""
+msgstr "ელკვების მაჩვენებელი"
 
 #: ../src/Utils.vala:84
 msgid "Battery"
-msgstr ""
+msgstr "ელემენტი"
 
 #: ../src/Utils.vala:85
 msgid "UPS"
-msgstr ""
+msgstr "უკბ"
 
 #: ../src/Utils.vala:86
 msgid "Monitor"
-msgstr ""
+msgstr "მონიტორი"
 
 #: ../src/Utils.vala:87
 msgid "Mouse"
-msgstr ""
+msgstr "მაუსი"
 
 #: ../src/Utils.vala:88
 msgid "Keyboard"
-msgstr ""
+msgstr "კლავიატურა"
 
 #: ../src/Utils.vala:89
 msgid "PDA"
-msgstr ""
+msgstr "PDA"
 
 #: ../src/Utils.vala:90
 msgid "Phone"
-msgstr ""
+msgstr "ტელეფონი"
 
 #: ../src/Utils.vala:91
 msgid "Device"
-msgstr ""
+msgstr "მოწყობილობა"
 
 #: ../src/Utils.vala:102
 msgid "Calculating…"
-msgstr ""
+msgstr "ითვლება..."
 
 #: ../src/Utils.vala:108
 msgid "%i%% charged"
-msgstr ""
+msgstr "%i%% დამუხტული"
 
 #: ../src/Utils.vala:116
 msgid "%i day until full"
 msgid_plural "%i days until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%i დღე ბოლომდე დასამუხტად"
 
 #: ../src/Utils.vala:119
 msgid "%i hour until full"
 msgid_plural "%i hours until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%i საათი ბოლომდე დასამუხტად"
 
 #: ../src/Utils.vala:122
 msgid "%i minute until full"
 msgid_plural "%i minutes until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%i წუთი ბოლომდე დასამუხტად"
 
 #: ../src/Utils.vala:124
 msgid "%i second until full"
 msgid_plural "%i seconds until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%i წამი ბოლომდე დასამუხტად"
 
 #: ../src/Utils.vala:128
 msgid "%i%% remaining"
-msgstr ""
+msgstr "%i%% დარჩენილი"
 
 #: ../src/Utils.vala:136
 msgid "%i day until empty"
 msgid_plural "%i days until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%i დღე დასაცლელად"
 
 #: ../src/Utils.vala:139
 msgid "%i hour until empty"
 msgid_plural "%i hours until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%i საათი დასაცლელად"
 
 #: ../src/Utils.vala:142
 msgid "%i minute until empty"
 msgid_plural "%i minutes until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%i წუთი დასაცლელად"
 
 #: ../src/Utils.vala:144
 msgid "%i second until empty"
 msgid_plural "%i seconds until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%i წამი დასაცლელად"
 
 #: ../src/Widgets/AppList.vala:54
 msgid "Apps Using Lots of Power"
-msgstr ""
+msgstr "აპები, რომლებიც ბევრ ენერგიას იყენებენ"
 
 #: ../src/Widgets/PopoverWidget.vala:51
 msgid "Show Percentage"
-msgstr ""
+msgstr "პროცენტის ჩვენება"
 
 #: ../src/Widgets/PopoverWidget.vala:52
 msgid "Power Settings…"
-msgstr ""
+msgstr "ელკვების პარამეტრები..."
