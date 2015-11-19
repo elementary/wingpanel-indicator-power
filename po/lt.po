@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-10 14:22-0800\n"
+"POT-Creation-Date: 2015-11-12 14:47+0100\n"
 "PO-Revision-Date: 2015-05-23 21:47+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,8 +11,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "(n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2015-11-11 05:56+0000\n"
-"X-Generator: Launchpad (build 17843)\n"
+"X-Launchpad-Export-Date: 2015-11-19 05:37+0000\n"
+"X-Generator: Launchpad (build 17850)\n"
 
 #: ../src/Indicator.vala:31
 msgid "Power"
@@ -20,6 +20,18 @@ msgstr ""
 
 #: ../src/Indicator.vala:32
 msgid "Power indicator"
+msgstr ""
+
+#: ../src/Widgets/PopoverWidget.vala:51
+msgid "Show Percentage"
+msgstr ""
+
+#: ../src/Widgets/PopoverWidget.vala:52
+msgid "Power Settings…"
+msgstr ""
+
+#: ../src/Widgets/AppList.vala:54
+msgid "Apps Using Lots of Power"
 msgstr ""
 
 #: ../src/Utils.vala:84
@@ -54,74 +66,62 @@ msgstr ""
 msgid "Device"
 msgstr ""
 
-#: ../src/Utils.vala:102
+#: ../src/Utils.vala:103
 msgid "Calculating…"
 msgstr ""
 
-#: ../src/Utils.vala:108
+#: ../src/Utils.vala:109
 msgid "%i%% charged"
 msgstr ""
 
-#: ../src/Utils.vala:116
-msgid "%i day until full"
-msgid_plural "%i days until full"
+#: ../src/Utils.vala:117
+msgid "%lld day until full"
+msgid_plural "%lld days until full"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../src/Utils.vala:119
-msgid "%i hour until full"
-msgid_plural "%i hours until full"
+#: ../src/Utils.vala:120
+msgid "%lld hour until full"
+msgid_plural "%lld hours until full"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../src/Utils.vala:122
-msgid "%i minute until full"
-msgid_plural "%i minutes until full"
+#: ../src/Utils.vala:123
+msgid "%lld minute until full"
+msgid_plural "%lld minutes until full"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../src/Utils.vala:124
-msgid "%i second until full"
-msgid_plural "%i seconds until full"
+#: ../src/Utils.vala:125
+msgid "%lld second until full"
+msgid_plural "%lld seconds until full"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../src/Utils.vala:128
+#: ../src/Utils.vala:129
 msgid "%i%% remaining"
 msgstr ""
 
-#: ../src/Utils.vala:136
-msgid "%i day until empty"
-msgid_plural "%i days until empty"
+#: ../src/Utils.vala:137
+msgid "%lld day until empty"
+msgid_plural "%lld days until empty"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../src/Utils.vala:139
-msgid "%i hour until empty"
-msgid_plural "%i hours until empty"
+#: ../src/Utils.vala:140
+msgid "%lld hour until empty"
+msgid_plural "%lld hours until empty"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../src/Utils.vala:142
-msgid "%i minute until empty"
-msgid_plural "%i minutes until empty"
+#: ../src/Utils.vala:143
+msgid "%lld minute until empty"
+msgid_plural "%lld minutes until empty"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../src/Utils.vala:144
-msgid "%i second until empty"
-msgid_plural "%i seconds until empty"
+#: ../src/Utils.vala:145
+msgid "%lld second until empty"
+msgid_plural "%lld seconds until empty"
 msgstr[0] ""
 msgstr[1] ""
-
-#: ../src/Widgets/AppList.vala:54
-msgid "Apps Using Lots of Power"
-msgstr ""
-
-#: ../src/Widgets/PopoverWidget.vala:51
-msgid "Show Percentage"
-msgstr ""
-
-#: ../src/Widgets/PopoverWidget.vala:52
-msgid "Power Settings…"
-msgstr ""
