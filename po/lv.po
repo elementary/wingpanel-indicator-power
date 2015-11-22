@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-12 14:47+0100\n"
-"PO-Revision-Date: 2015-05-23 21:47+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-11-21 13:20+0000\n"
+"Last-Translator: Ar2 <arturss5@inbox.lv>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2015-11-19 05:37+0000\n"
+"X-Launchpad-Export-Date: 2015-11-22 05:32+0000\n"
 "X-Generator: Launchpad (build 17850)\n"
 
 #: ../src/Indicator.vala:31
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../src/Utils.vala:84
 msgid "Battery"
-msgstr ""
+msgstr "Akumulators"
 
 #: ../src/Utils.vala:85
 msgid "UPS"
@@ -47,27 +47,27 @@ msgstr ""
 
 #: ../src/Utils.vala:87
 msgid "Mouse"
-msgstr ""
+msgstr "Pele"
 
 #: ../src/Utils.vala:88
 msgid "Keyboard"
-msgstr ""
+msgstr "Tastatūra"
 
 #: ../src/Utils.vala:89
 msgid "PDA"
-msgstr ""
+msgstr "Plaukstdators"
 
 #: ../src/Utils.vala:90
 msgid "Phone"
-msgstr ""
+msgstr "Telefons"
 
 #: ../src/Utils.vala:91
 msgid "Device"
-msgstr ""
+msgstr "Ierīce"
 
 #: ../src/Utils.vala:103
 msgid "Calculating…"
-msgstr ""
+msgstr "Rēķina..."
 
 #: ../src/Utils.vala:109
 msgid "%i%% charged"
@@ -99,7 +99,7 @@ msgstr[1] ""
 
 #: ../src/Utils.vala:129
 msgid "%i%% remaining"
-msgstr ""
+msgstr "%i%% atlicis"
 
 #: ../src/Utils.vala:137
 msgid "%lld day until empty"
