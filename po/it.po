@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-12 14:47+0100\n"
-"PO-Revision-Date: 2015-11-14 15:09+0000\n"
-"Last-Translator: Emanuele Tocco <mr.emanueletocco@gmail.com>\n"
+"PO-Revision-Date: 2015-11-22 09:42+0000\n"
+"Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-11-19 05:37+0000\n"
+"X-Launchpad-Export-Date: 2015-11-23 05:32+0000\n"
 "X-Generator: Launchpad (build 17850)\n"
 
 #: ../src/Indicator.vala:31
@@ -19,7 +19,7 @@ msgstr "Alimentazione"
 
 #: ../src/Indicator.vala:32
 msgid "Power indicator"
-msgstr "Indicatore batteria"
+msgstr "Indicatore dell'alimentazione"
 
 #: ../src/Widgets/PopoverWidget.vala:51
 msgid "Show Percentage"
@@ -27,11 +27,11 @@ msgstr "Mostra percentuale"
 
 #: ../src/Widgets/PopoverWidget.vala:52
 msgid "Power Settings…"
-msgstr "Impostazioni Alimentazione..."
+msgstr "Impostazioni dell'alimentazione ..."
 
 #: ../src/Widgets/AppList.vala:54
 msgid "Apps Using Lots of Power"
-msgstr "Applicazioni che usano molta carica"
+msgstr "Applicazioni che usano molta energia"
 
 #: ../src/Utils.vala:84
 msgid "Battery"
@@ -67,7 +67,7 @@ msgstr "Dispositivo"
 
 #: ../src/Utils.vala:103
 msgid "Calculating…"
-msgstr "Calcolo…"
+msgstr "Calcolo ..."
 
 #: ../src/Utils.vala:109
 msgid "%i%% charged"
@@ -76,26 +76,26 @@ msgstr "%i%% carico"
 #: ../src/Utils.vala:117
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld giorno al completamento"
+msgstr[1] "%lld giorni al completamento"
 
 #: ../src/Utils.vala:120
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld ora al completamento"
+msgstr[1] "%lld ore al completamento"
 
 #: ../src/Utils.vala:123
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld minuto al completamento"
+msgstr[1] "%lld minuti al completamento"
 
 #: ../src/Utils.vala:125
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld secondo al completamento"
+msgstr[1] "%lld secondi al completamento"
 
 #: ../src/Utils.vala:129
 msgid "%i%% remaining"
@@ -104,23 +104,23 @@ msgstr "%i%% rimanenti"
 #: ../src/Utils.vala:137
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld giorno all'esaurimento"
+msgstr[1] "%lld giorni all'esaurimento"
 
 #: ../src/Utils.vala:140
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld ora all'esaurimento"
+msgstr[1] "%lld ore all'esaurimento"
 
 #: ../src/Utils.vala:143
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld minuto all'esaurimento"
+msgstr[1] "%lld minuti all'esaurimento"
 
 #: ../src/Utils.vala:145
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld secondo all'esaurimento"
+msgstr[1] "%lld secondi all'esaurimento"
