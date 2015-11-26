@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-12 14:47+0100\n"
-"PO-Revision-Date: 2015-11-08 00:13+0000\n"
-"Last-Translator: Juan Mantilla <judamalo77@gmail.com>\n"
+"PO-Revision-Date: 2015-11-26 05:07+0000\n"
+"Last-Translator: Alonso Montenegro <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-11-19 05:37+0000\n"
+"X-Launchpad-Export-Date: 2015-11-26 05:38+0000\n"
 "X-Generator: Launchpad (build 17850)\n"
 
 #: ../src/Indicator.vala:31
@@ -27,7 +27,7 @@ msgstr "Mostrar Porcentaje"
 
 #: ../src/Widgets/PopoverWidget.vala:52
 msgid "Power Settings…"
-msgstr ""
+msgstr "Configuración de energía…"
 
 #: ../src/Widgets/AppList.vala:54
 msgid "Apps Using Lots of Power"
@@ -67,7 +67,7 @@ msgstr "Dispositivo"
 
 #: ../src/Utils.vala:103
 msgid "Calculating…"
-msgstr ""
+msgstr "Calculando…"
 
 #: ../src/Utils.vala:109
 msgid "%i%% charged"
@@ -76,26 +76,25 @@ msgstr "%i %% cargada"
 #: ../src/Utils.vala:117
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld"
 
 #: ../src/Utils.vala:120
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld hora hasta completarse"
+msgstr[1] "%lld horas hasta completarse"
 
 #: ../src/Utils.vala:123
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld minuto hasta completarse"
+msgstr[1] "%lld minutos hasta completarse"
 
 #: ../src/Utils.vala:125
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld segundo hasta completarse"
+msgstr[1] "%lld segundos hasta completarse"
 
 #: ../src/Utils.vala:129
 msgid "%i%% remaining"
