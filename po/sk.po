@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-12 14:47+0100\n"
-"PO-Revision-Date: 2016-01-09 11:32+0000\n"
+"PO-Revision-Date: 2016-01-11 18:36+0000\n"
 "Last-Translator: Lukáš Papík <stereo839@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Launchpad-Export-Date: 2016-01-10 05:33+0000\n"
+"X-Launchpad-Export-Date: 2016-01-12 05:46+0000\n"
 "X-Generator: Launchpad (build 17881)\n"
 
 #: ../src/Indicator.vala:31
@@ -76,26 +76,30 @@ msgstr "Nabité na %i%%"
 #: ../src/Utils.vala:117
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
-msgstr[0] "%lld deň pred plným"
-msgstr[1] "%lld dni pred plným"
+msgstr[0] "%lld dní pred plným"
+msgstr[1] "%lld deň pred plným"
+msgstr[2] "%lld dni pred plným"
 
 #: ../src/Utils.vala:120
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
-msgstr[0] "%lld hodina pred plným"
-msgstr[1] "%lld hodín pred plným"
+msgstr[0] "%lld hodín pred plným"
+msgstr[1] "%lld hodina pred plným"
+msgstr[2] "%lld hodiny pred plným"
 
 #: ../src/Utils.vala:123
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
-msgstr[0] "%lld minuta pred plným"
-msgstr[1] "%lld minút pred plným"
+msgstr[0] "%lld minút pred plným"
+msgstr[1] "%lld minúta pred plným"
+msgstr[2] "%lld minúty pred plným"
 
 #: ../src/Utils.vala:125
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
-msgstr[0] "%lld sekuda pred plným"
-msgstr[1] "%lld sekúnd pred plným"
+msgstr[0] "%lld sekúnd pred plným"
+msgstr[1] "%lld sekunda pred plným"
+msgstr[2] "%lld sekundy pred plným"
 
 #: ../src/Utils.vala:129
 msgid "%i%% remaining"
@@ -104,23 +108,27 @@ msgstr "Zostáva %i%%"
 #: ../src/Utils.vala:137
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
-msgstr[0] "%lld deň pred prázdným"
-msgstr[1] "%lld dní pred prázdným"
+msgstr[0] "%lld dní pred prázdným"
+msgstr[1] "%lld deň pred prázdným"
+msgstr[2] "%lld dni pred prázdným"
 
 #: ../src/Utils.vala:140
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
-msgstr[0] "%lld hodina pred prázdným"
-msgstr[1] "%lld hodín pred prázdným"
+msgstr[0] "%lld hodín pred prázdným"
+msgstr[1] "%lld hodina pred prázdným"
+msgstr[2] "%lld hodiny pred prázdným"
 
 #: ../src/Utils.vala:143
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
-msgstr[0] "%lld minuta pred prázdným"
-msgstr[1] "%lld minút pred prázdným"
+msgstr[0] "%lld minút pred prázdným"
+msgstr[1] "%lld minúta pred prázdným"
+msgstr[2] "%lld minúty pred prázdným"
 
 #: ../src/Utils.vala:145
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
-msgstr[0] "%lld sekunda pred prázdným"
-msgstr[1] "%lld sekúnd pred prázdným"
+msgstr[0] "%lld sekúnd pred prázdným"
+msgstr[1] "%lld sekunda pred prázdným"
+msgstr[2] "%lld sekundy pred prázdným"
