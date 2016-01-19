@@ -3,15 +3,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-12 14:47+0100\n"
-"PO-Revision-Date: 2015-11-12 13:27+0000\n"
+"PO-Revision-Date: 2016-01-19 00:36+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2015-11-19 05:37+0000\n"
-"X-Generator: Launchpad (build 17850)\n"
+"X-Launchpad-Export-Date: 2016-01-19 05:55+0000\n"
+"X-Generator: Launchpad (build 17886)\n"
 
 #: ../src/Indicator.vala:31
 msgid "Power"
@@ -76,26 +76,26 @@ msgstr "chargé à %i%%"
 #: ../src/Utils.vala:117
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld jour avant pleine charge"
+msgstr[1] "%lld jours avant pleine charge"
 
 #: ../src/Utils.vala:120
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld heure avant pleine charge"
+msgstr[1] "%lld heures avant pleine charge"
 
 #: ../src/Utils.vala:123
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld minute avant pleine charge"
+msgstr[1] "%lld minutes avant pleine charge"
 
 #: ../src/Utils.vala:125
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld seconde avant pleine charge"
+msgstr[1] "%lld secondes avant pleine charge"
 
 #: ../src/Utils.vala:129
 msgid "%i%% remaining"
@@ -104,23 +104,23 @@ msgstr "%i%% restants"
 #: ../src/Utils.vala:137
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld jour avant décharge complète"
+msgstr[1] "%lld jours avant décharge complète"
 
 #: ../src/Utils.vala:140
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld heure avant décharge complète"
+msgstr[1] "%lld heures avant décharge complète"
 
 #: ../src/Utils.vala:143
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld minute avant décharge complète"
+msgstr[1] "%lld minutes avant décharge complète"
 
 #: ../src/Utils.vala:145
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld seconde avant décharge complète"
+msgstr[1] "%lld secondes avant décharge complète"
