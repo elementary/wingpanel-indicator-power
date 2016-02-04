@@ -3,15 +3,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-12 14:47+0100\n"
-"PO-Revision-Date: 2015-12-14 21:25+0000\n"
+"PO-Revision-Date: 2016-02-03 14:16+0000\n"
 "Last-Translator: Nico Du <nico_d@gmx.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-12-15 05:41+0000\n"
-"X-Generator: Launchpad (build 17865)\n"
+"X-Launchpad-Export-Date: 2016-02-04 06:22+0000\n"
+"X-Generator: Launchpad (build 17908)\n"
 
 #: ../src/Indicator.vala:31
 msgid "Power"
@@ -76,26 +76,26 @@ msgstr "%i%% geladen"
 #: ../src/Utils.vala:117
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Vollständig geladen in %lld Tag"
+msgstr[1] "Vollständig geladen in %lld Tagen"
 
 #: ../src/Utils.vala:120
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Vollständig geladen in %lld Stunde"
+msgstr[1] "Vollständig geladen in %lld Stunden"
 
 #: ../src/Utils.vala:123
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Vollständig geladen in %lld Minute"
+msgstr[1] "Vollständig geladen in %lld Minuten"
 
 #: ../src/Utils.vala:125
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Vollständig geladen in %lld Sekunde"
+msgstr[1] "Vollständig geladen in %lld Sekunden"
 
 #: ../src/Utils.vala:129
 msgid "%i%% remaining"
@@ -110,8 +110,8 @@ msgstr[1] "Entladen in %lld Tagen"
 #: ../src/Utils.vala:140
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Vollständig Entladen in %lld Stunden"
+msgstr[1] "Vollständig Entladen in %lld Stunden"
 
 #: ../src/Utils.vala:143
 msgid "%lld minute until empty"
