@@ -18,7 +18,7 @@
  */
 
 public class Power.Widgets.PopoverWidget : Gtk.Box {
-    private bool show_app_list = false;
+    private bool is_in_session = false;
 
     private const string SETTINGS_EXEC = "/usr/bin/switchboard power";
 
@@ -30,17 +30,17 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
     public signal void settings_shown ();
 
-    public PopoverWidget (bool show_app_list = false) {
+    public PopoverWidget (bool is_in_session = false) {
         Object (orientation: Gtk.Orientation.VERTICAL);
 
-        this.show_app_list = show_app_list;
+        this.is_in_session = is_in_session;
 
         build_ui ();
         connect_signals ();
     }
 
     public void slim_down () {
-        if (show_app_list) {
+        if (is_in_session) {
             app_list.clear_list ();
         }
     }
@@ -53,15 +53,16 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
         this.pack_start (device_list);
 
-        if (show_app_list) {
+        if (is_in_session) {
             app_list = new AppList ();
-
             this.pack_start (app_list); /* The app-list contains an own separator that is displayed if necessary. */
+            this.pack_start (new Wingpanel.Widgets.Separator ());
+            this.pack_start (show_percent_switch);
+            this.pack_start (show_settings_button);
+        } else {
+            this.pack_start (new Wingpanel.Widgets.Separator ());
+            this.pack_start (show_percent_switch);
         }
-
-        this.pack_start (new Wingpanel.Widgets.Separator ());
-        this.pack_start (show_percent_switch);
-        this.pack_start (show_settings_button);
     }
 
     private void connect_signals () {
