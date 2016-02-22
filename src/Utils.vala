@@ -31,7 +31,7 @@ namespace Power.Utils {
     }
 
     public string get_icon_name_for_battery (Services.Device battery) {
-        return get_battery_icon (battery.percentage, battery.time_to_empty) + 
+        return get_battery_icon (battery.percentage, battery.time_to_empty) +
               (is_charging (battery.state) ? "-charging" : "");
     }
 
@@ -41,12 +41,12 @@ namespace Power.Utils {
             case DEVICE_TYPE_MOUSE: return "input-mouse";
             case DEVICE_TYPE_KEYBOARD: return "input-keyboard";
             default: return get_icon_name_for_battery (device);
-        } 
+        }
     }
 
     private string get_battery_icon (double percentage, int64 remaining_time) {
         if (percentage <= 0) {
-            return "battery-missing";
+            return "battery-good";
         }
 
         if (percentage < 10 && (remaining_time == 0 || remaining_time < 30 * 60)) {
