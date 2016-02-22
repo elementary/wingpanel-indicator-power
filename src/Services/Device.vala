@@ -45,6 +45,7 @@ const uint32 DEVICE_TYPE_PHONE = 8;
 
 public class Power.Services.Device : Object {
     private const string DEVICE_INTERFACE = "org.freedesktop.UPower";
+    private const string INTERFACE = "org.freedesktop.UPower.Device";
 
     private string device_path = "";
 
@@ -106,37 +107,39 @@ public class Power.Services.Device : Object {
 
     private void connect_signals () {
         device.g_properties_changed.connect (update_properties);
-        device.Changed.connect (update_properties);
+        device_properties.PropertiesChanged.connect (() => {
+            update_properties ();
+        });
     }
 
     private void update_properties () {
         try {
-            has_history = device_properties.Get (device_path, "HasHistory").get_boolean ();
-            has_statistics = device_properties.Get (device_path, "HasStatistics").get_boolean ();
-            is_present = device_properties.Get (device_path, "IsPresent").get_boolean ();
-            is_rechargeable = device_properties.Get (device_path, "IsRechargeable").get_boolean ();
-            online = device_properties.Get (device_path, "Online").get_boolean ();
-            power_supply = device_properties.Get (device_path, "PowerSupply").get_boolean ();
-            capacity = device_properties.Get (device_path, "Capacity").get_double ();
-            energy = device_properties.Get (device_path, "Energy").get_double ();
-            energy_empty = device_properties.Get (device_path, "EnergyEmpty").get_double ();
-            energy_full = device_properties.Get (device_path, "EnergyFull").get_double ();
-            energy_full_design = device_properties.Get (device_path, "EnergyFullDesign").get_double ();
-            energy_rate = device_properties.Get (device_path, "EnergyRate").get_double ();
-            luminosity = device_properties.Get (device_path, "Luminosity").get_double ();
-            percentage = device_properties.Get (device_path, "Percentage").get_double ();
-            temperature = device_properties.Get (device_path, "Temperature").get_double ();
-            voltage = device_properties.Get (device_path, "Voltage").get_double ();
-            time_to_empty = device_properties.Get (device_path, "TimeToEmpty").get_int64 ();
-            time_to_full = device_properties.Get (device_path, "TimeToFull").get_int64 ();
-            model = device_properties.Get (device_path, "Model").get_string ();
-            native_path = device_properties.Get (device_path, "NativePath").get_string ();
-            serial = device_properties.Get (device_path, "Serial").get_string ();
-            vendor = device_properties.Get (device_path, "Vendor").get_string ();
-            state = device_properties.Get (device_path, "State").get_uint32 ();
-            technology = device_properties.Get (device_path, "Technology").get_uint32 ();
-            device_type = device_properties.Get (device_path, "Type").get_uint32 ();
-            update_time = device_properties.Get (device_path, "UpdateTime").get_uint64 ();
+            has_history = device_properties.Get (INTERFACE, "HasHistory").get_boolean ();
+            has_statistics = device_properties.Get (INTERFACE, "HasStatistics").get_boolean ();
+            is_present = device_properties.Get (INTERFACE, "IsPresent").get_boolean ();
+            is_rechargeable = device_properties.Get (INTERFACE, "IsRechargeable").get_boolean ();
+            online = device_properties.Get (INTERFACE, "Online").get_boolean ();
+            power_supply = device_properties.Get (INTERFACE, "PowerSupply").get_boolean ();
+            capacity = device_properties.Get (INTERFACE, "Capacity").get_double ();
+            energy = device_properties.Get (INTERFACE, "Energy").get_double ();
+            energy_empty = device_properties.Get (INTERFACE, "EnergyEmpty").get_double ();
+            energy_full = device_properties.Get (INTERFACE, "EnergyFull").get_double ();
+            energy_full_design = device_properties.Get (INTERFACE, "EnergyFullDesign").get_double ();
+            energy_rate = device_properties.Get (INTERFACE, "EnergyRate").get_double ();
+            luminosity = device_properties.Get (INTERFACE, "Luminosity").get_double ();
+            percentage = device_properties.Get (INTERFACE, "Percentage").get_double ();
+            temperature = device_properties.Get (INTERFACE, "Temperature").get_double ();
+            voltage = device_properties.Get (INTERFACE, "Voltage").get_double ();
+            time_to_empty = device_properties.Get (INTERFACE, "TimeToEmpty").get_int64 ();
+            time_to_full = device_properties.Get (INTERFACE, "TimeToFull").get_int64 ();
+            model = device_properties.Get (INTERFACE, "Model").get_string ();
+            native_path = device_properties.Get (INTERFACE, "NativePath").get_string ();
+            serial = device_properties.Get (INTERFACE, "Serial").get_string ();
+            vendor = device_properties.Get (INTERFACE, "Vendor").get_string ();
+            state = device_properties.Get (INTERFACE, "State").get_uint32 ();
+            technology = device_properties.Get (INTERFACE, "Technology").get_uint32 ();
+            device_type = device_properties.Get (INTERFACE, "Type").get_uint32 ();
+            update_time = device_properties.Get (INTERFACE, "UpdateTime").get_uint64 ();
 
             properties_updated ();
         } catch (Error e) {

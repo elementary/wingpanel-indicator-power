@@ -22,9 +22,7 @@ namespace Power.Services.DBusInterfaces {
     public interface UPower : Object {
         public abstract string[] EnumerateDevices () throws IOError;
 
-        public signal void Changed ();
         public signal void DeviceAdded (string device_path);
-        public signal void DeviceChanged (string device_path);
         public signal void DeviceRemoved (string device_path);
     }
 }

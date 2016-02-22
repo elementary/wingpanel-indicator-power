@@ -78,19 +78,18 @@ public class Power.Services.DeviceManager : Object {
     }
 
     private void connect_signals () {
-        upower.Changed.connect (update_properties);
-        upower.DeviceChanged.connect (() => {
+        upower_properties.PropertiesChanged.connect (() => {
             update_properties ();
             update_batteries ();
         });
+
         upower.DeviceAdded.connect (register_device);
         upower.DeviceRemoved.connect (deregister_device);
     }
 
     private void update_properties () {
         try {
-            on_battery = upower_properties.Get (UPOWER_PATH, "OnBattery").get_boolean ();
-            on_low_battery = upower_properties.Get (UPOWER_PATH, "OnLowBattery").get_boolean ();
+            on_battery = upower_properties.Get (UPOWER_INTERFACE, "OnBattery").get_boolean ();
         } catch (Error e) {
             critical ("Updating UPower properties failed: %s", e.message);
         }

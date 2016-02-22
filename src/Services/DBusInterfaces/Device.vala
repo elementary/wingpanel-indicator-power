@@ -41,7 +41,5 @@ namespace Power.Services.DBusInterfaces {
 
         public abstract StatisticsDataPoint[] GetStatistics (string type) throws IOError;
         public abstract void Refresh () throws IOError;
-
-        public signal void Changed ();
     }
 }
