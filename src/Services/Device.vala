@@ -108,6 +108,7 @@ public class Power.Services.Device : Object {
     private void connect_signals () {
         device.g_properties_changed.connect (update_properties);
         device_properties.PropertiesChanged.connect ((name, directory, array) => {
+            device.Refresh ();
             update_properties ();
         });
     }
