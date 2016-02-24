@@ -110,13 +110,9 @@ public class Power.Services.Device : Object {
         device_properties.PropertiesChanged.connect ((name, directory, array) => {
             try {
                 device.Refresh ();
-                device.Refresh ();
-                device.Refresh ();
                 update_properties ();
                 update_properties ();
-                device.Refresh ();
-                device.Refresh ();
-                update_properties ();
+                stderr.printf ("I was updated!\n");
             } catch (Error e) {
                 stderr.printf ("Could not get device info: %s\n", e.message);
             }
