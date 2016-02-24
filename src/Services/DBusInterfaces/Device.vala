@@ -41,5 +41,61 @@ namespace Power.Services.DBusInterfaces {
 
         public abstract StatisticsDataPoint[] GetStatistics (string type) throws IOError;
         public abstract void Refresh () throws IOError;
+
+        public abstract bool has_history { public owned get; public set; }
+        public abstract bool has_statistics { public owned get; public set; }
+        public abstract bool is_present { public owned get; public set; }
+        public abstract bool is_rechargeable { public owned get; public set; }
+        public abstract bool online { public owned get; public set; }
+        public abstract bool power_supply { public owned get; public set; }
+        public abstract double capacity { public owned get; public set; }
+        public abstract double energy { public owned get; public set; }
+        public abstract double energy_empty { public owned get; public set; }
+        public abstract double energy_full { public owned get; public set; }
+        public abstract double energy_full_design { public owned get; public set; }
+        public abstract double energy_rate { public owned get; public set; }
+        public abstract double luminosity { public owned get; public set; }
+        public abstract double percentage { public owned get; public set; }
+        public abstract double temperature { public owned get; public set; }
+        public abstract double voltage { public owned get; public set; }
+        public abstract int64 time_to_empty { public owned get; public set; }
+        public abstract int64 time_to_full { public owned get; public set; }
+        public abstract string model { public owned get; public set; }
+        public abstract string native_path { public owned get; public set; }
+        public abstract string serial { public owned get; public set; }
+        public abstract string vendor { public owned get; public set; }
+        public abstract uint32 state { public owned get; public set; }
+        public abstract uint32 technology { public owned get; public set; }
+        public abstract uint32 Type { public owned get; public set; }
+        public abstract uint64 update_time  { public owned get; public set; }
     }
 }
+
+/*
+           public abstract StatisticsDataPoint[] GetStatistics (string type) throws IOError;
+           public abstract void Refresh () throws IOError;
+           public abstract bool has_history { public owned get; public set; }
+           public abstract bool HasStatistics { public owned get; public set; }
+           public abstract bool IsPresent { public owned get; public set; }
+           public abstract bool IsRechargeable { public owned get; public set; }
+           public abstract bool Online { public owned get; public set; }
+           public abstract bool PowerSupply { public owned get; public set; }
+           public abstract double Capacity { public owned get; public set; }
+           public abstract double Energy { public owned get; public set; }
+           public abstract double EnergyEmpty { public owned get; public set; }
+           public abstract double EnergyFull { public owned get; public set; }
+           public abstract double EnergyFullDesign { public owned get; public set; }
+           public abstract double EnergyRate { public owned get; public set; }
+           public abstract double Luminosity { public owned get; public set; }
+           public abstract double Temperature { public owned get; public set; }
+           public abstract double Voltage { public owned get; public set; }
+           public abstract int64 TimeToEmpty { public owned get; public set; }
+           public abstract int64 TimeToFull { public owned get; public set; }}
+           public abstract string Model { public owned get; public set; }}
+           public abstract string NativePath { public owned get; public set; }}
+           public abstract string Serial { public owned get; public set; }}
+           public abstract string Vendor { public owned get; public set; }}
+           public abstract uint32 State { public owned get; public set; }}
+           public abstract uint32 Technology { public owned get; public set; }}
+           public abstract uint32 Type { public owned get; public set; }}
+           public abstract uint64 UpdateTime  { public owned get; public set; }}*/
