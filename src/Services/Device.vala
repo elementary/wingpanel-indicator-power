@@ -109,7 +109,12 @@ public class Power.Services.Device : Object {
     private void connect_signals () {
         device.g_properties_changed.connect (update_properties);
         device_properties.PropertiesChanged.connect ((name, directory, array) => {
-            update_properties ();
+            try {
+                device.Refresh ();
+                update_properties ();
+            } catch (Error e) {
+                critical ("Could not get device properties: %s", e.message);
+            }
         });
     }
 

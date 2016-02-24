@@ -70,32 +70,3 @@ namespace Power.Services.DBusInterfaces {
         public abstract uint64 update_time  { public owned get; public set; }
     }
 }
-
-/*
-           public abstract StatisticsDataPoint[] GetStatistics (string type) throws IOError;
-           public abstract void Refresh () throws IOError;
-           public abstract bool has_history { public owned get; public set; }
-           public abstract bool HasStatistics { public owned get; public set; }
-           public abstract bool IsPresent { public owned get; public set; }
-           public abstract bool IsRechargeable { public owned get; public set; }
-           public abstract bool Online { public owned get; public set; }
-           public abstract bool PowerSupply { public owned get; public set; }
-           public abstract double Capacity { public owned get; public set; }
-           public abstract double Energy { public owned get; public set; }
-           public abstract double EnergyEmpty { public owned get; public set; }
-           public abstract double EnergyFull { public owned get; public set; }
-           public abstract double EnergyFullDesign { public owned get; public set; }
-           public abstract double EnergyRate { public owned get; public set; }
-           public abstract double Luminosity { public owned get; public set; }
-           public abstract double Temperature { public owned get; public set; }
-           public abstract double Voltage { public owned get; public set; }
-           public abstract int64 TimeToEmpty { public owned get; public set; }
-           public abstract int64 TimeToFull { public owned get; public set; }}
-           public abstract string Model { public owned get; public set; }}
-           public abstract string NativePath { public owned get; public set; }}
-           public abstract string Serial { public owned get; public set; }}
-           public abstract string Vendor { public owned get; public set; }}
-           public abstract uint32 State { public owned get; public set; }}
-           public abstract uint32 Technology { public owned get; public set; }}
-           public abstract uint32 Type { public owned get; public set; }}
-           public abstract uint64 UpdateTime  { public owned get; public set; }}*/
