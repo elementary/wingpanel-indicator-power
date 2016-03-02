@@ -45,12 +45,10 @@ const uint32 DEVICE_TYPE_PHONE = 8;
 
 public class Power.Services.Device : Object {
     private const string DEVICE_INTERFACE = "org.freedesktop.UPower";
-    private const string INTERFACE = "org.freedesktop.UPower.Device";
 
     private string device_path = "";
 
     private DBusInterfaces.Device? device = null;
-    private DBusInterfaces.Properties? device_properties = null;
 
     public bool has_history { get; private set; }
     public bool has_statistics { get; private set; }
@@ -86,7 +84,6 @@ public class Power.Services.Device : Object {
 
         if (connect_to_bus ()) {
             update_properties ();
-            update_properties ();
             connect_signals ();
         }
     }
@@ -94,58 +91,49 @@ public class Power.Services.Device : Object {
     private bool connect_to_bus () {
         try {
             device = Bus.get_proxy_sync (BusType.SYSTEM, DEVICE_INTERFACE, device_path, DBusProxyFlags.NONE);
-            device_properties = Bus.get_proxy_sync (BusType.SYSTEM, DEVICE_INTERFACE, device_path, DBusProxyFlags.NONE);
 
             debug ("Connection to UPower device established");
-
-            return device != null & device_properties != null;
         } catch (Error e) {
             critical ("Connecting to UPower device failed: %s", e.message);
-
-            return false;
         }
+
+        return device != null;
     }
 
     private void connect_signals () {
         device.g_properties_changed.connect (update_properties);
-        device_properties.PropertiesChanged.connect ((name, directory, array) => {
-            try {
-                device.Refresh ();
-                update_properties ();
-            } catch (Error e) {
-                critical ("Could not get device properties: %s", e.message);
-            }
-        });
     }
 
     private void update_properties () {
-            has_history = device.has_history;
-            has_statistics = device.has_statistics;
-            is_present = device.is_present;
-            is_rechargeable = device.is_rechargeable;
-            online = device.online;
-            power_supply = device.power_supply;
-            capacity = device.capacity;
-            energy = device.energy;
-            energy_empty = device.energy_empty;
-            energy_full = device.energy_full;
-            energy_full_design = device.energy_full_design;
-            energy_rate = device.energy_rate;
-            luminosity = device.luminosity;
-            percentage = device.percentage;
-            temperature = device.temperature;
-            voltage = device.voltage;
-            time_to_empty = device.time_to_empty;
-            time_to_full = device.time_to_full;
-            model = device.model;
-            native_path = device.native_path;
-            serial = device.serial;
-            vendor = device.vendor;
-            device_type = device.Type;
-            state = device.state;
-            technology = device.technology;
-            update_time = device.update_time;
+        device.Refresh ();
 
-            properties_updated ();
+        has_history = device.has_history;
+        has_statistics = device.has_statistics;
+        is_present = device.is_present;
+        is_rechargeable = device.is_rechargeable;
+        online = device.online;
+        power_supply = device.power_supply;
+        capacity = device.capacity;
+        energy = device.energy;
+        energy_empty = device.energy_empty;
+        energy_full = device.energy_full;
+        energy_full_design = device.energy_full_design;
+        energy_rate = device.energy_rate;
+        luminosity = device.luminosity;
+        percentage = device.percentage;
+        temperature = device.temperature;
+        voltage = device.voltage;
+        time_to_empty = device.time_to_empty;
+        time_to_full = device.time_to_full;
+        model = device.model;
+        native_path = device.native_path;
+        serial = device.serial;
+        vendor = device.vendor;
+        device_type = device.Type;
+        state = device.state;
+        technology = device.technology;
+        update_time = device.update_time;
+
+        properties_updated ();
     }
 }
