@@ -75,20 +75,20 @@ namespace Power.Utils {
     public string get_title_for_battery (Services.Device battery) {
         var title = "";
 
-        if (battery.vendor != "" && battery.device_type != DEVICE_TYPE_BATTERY) {
-            title += "%s ".printf (battery.vendor);
-        }
-
         switch (battery.device_type) {
             /* TODO: Do we want to differentiate between batteries and rechargeable batteries? (See German: Batterie <-> Akku) */
-            case DEVICE_TYPE_BATTERY: title += _("Battery"); break;
-            case DEVICE_TYPE_UPS: title += _("UPS"); break;
-            case DEVICE_TYPE_MONITOR: title += _("Monitor"); break;
-            case DEVICE_TYPE_MOUSE: title += _("Mouse"); break;
-            case DEVICE_TYPE_KEYBOARD: title += _("Keyboard"); break;
-            case DEVICE_TYPE_PDA: title += _("PDA"); break;
-            case DEVICE_TYPE_PHONE: title += _("Phone"); break;
-            default: title += _("Device"); break;
+            case DEVICE_TYPE_BATTERY: title = _("Battery"); break;
+            case DEVICE_TYPE_UPS: title = _("UPS"); break;
+            case DEVICE_TYPE_MONITOR: title = _("Display"); break;
+            case DEVICE_TYPE_MOUSE: title = _("Mouse"); break;
+            case DEVICE_TYPE_KEYBOARD: title = _("Keyboard"); break;
+            case DEVICE_TYPE_PDA: title = _("PDA"); break;
+            case DEVICE_TYPE_PHONE: title = _("Phone"); break;
+            default: title = battery.vendor + " " + _("Device"); break;
+        }
+
+        if (battery.device_type == DEVICE_TYPE_PHONE && battery.model != "") {
+            title = battery.model;
         }
 
         return "<b>%s</b>".printf (title);
