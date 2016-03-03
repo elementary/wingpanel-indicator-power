@@ -79,7 +79,7 @@ namespace Power.Utils {
             /* TODO: Do we want to differentiate between batteries and rechargeable batteries? (See German: Batterie <-> Akku) */
             case DEVICE_TYPE_BATTERY: title = _("Battery"); break;
             case DEVICE_TYPE_UPS: title = _("UPS"); break;
-            case DEVICE_TYPE_MONITOR: title = _("Monitor"); break;
+            case DEVICE_TYPE_MONITOR: title = _("Display"); break;
             case DEVICE_TYPE_MOUSE: title = _("Mouse"); break;
             case DEVICE_TYPE_KEYBOARD: title = _("Keyboard"); break;
             case DEVICE_TYPE_PDA: title = _("PDA"); break;
