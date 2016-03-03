@@ -69,7 +69,7 @@ public class Power.Services.DeviceManager : Object {
         try {
             var devices = upower.EnumerateDevices ();
 
-            foreach (string device_path in devices) {
+            foreach (ObjectPath device_path in devices) {
                 register_device (device_path);
             }
         } catch (Error e) {
@@ -78,19 +78,18 @@ public class Power.Services.DeviceManager : Object {
     }
 
     private void connect_signals () {
-        upower.Changed.connect (update_properties);
-        upower.DeviceChanged.connect (() => {
+        upower_properties.PropertiesChanged.connect ((name, directory, array) => {
             update_properties ();
             update_batteries ();
         });
+
         upower.DeviceAdded.connect (register_device);
         upower.DeviceRemoved.connect (deregister_device);
     }
 
     private void update_properties () {
         try {
-            on_battery = upower_properties.Get (UPOWER_PATH, "OnBattery").get_boolean ();
-            on_low_battery = upower_properties.Get (UPOWER_PATH, "OnLowBattery").get_boolean ();
+            on_battery = upower_properties.Get (UPOWER_INTERFACE, "OnBattery").get_boolean ();
         } catch (Error e) {
             critical ("Updating UPower properties failed: %s", e.message);
         }
@@ -146,13 +145,11 @@ public class Power.Services.DeviceManager : Object {
         }
     }
 
-    private void register_device (string device_path) {
+    private void register_device (ObjectPath device_path) {
         var device = new Device (device_path);
 
         devices.@set (device_path, device);
-
         debug ("Device \"%s\" registered", device_path);
-
         update_batteries ();
 
         if (Utils.type_is_battery (device.device_type)) {
@@ -160,7 +157,7 @@ public class Power.Services.DeviceManager : Object {
         }
     }
 
-    private void deregister_device (string device_path) {
+    private void deregister_device (ObjectPath device_path) {
         if (!devices.has_key (device_path)) {
             return;
         }
@@ -172,7 +169,6 @@ public class Power.Services.DeviceManager : Object {
         }
 
         debug ("Device \"%s\" deregistered", device_path);
-
         update_batteries ();
 
         if (Utils.type_is_battery (device.device_type)) {

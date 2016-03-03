@@ -42,6 +42,31 @@ namespace Power.Services.DBusInterfaces {
         public abstract StatisticsDataPoint[] GetStatistics (string type) throws IOError;
         public abstract void Refresh () throws IOError;
 
-        public signal void Changed ();
+        public abstract bool has_history { public owned get; public set; }
+        public abstract bool has_statistics { public owned get; public set; }
+        public abstract bool is_present { public owned get; public set; }
+        public abstract bool is_rechargeable { public owned get; public set; }
+        public abstract bool online { public owned get; public set; }
+        public abstract bool power_supply { public owned get; public set; }
+        public abstract double capacity { public owned get; public set; }
+        public abstract double energy { public owned get; public set; }
+        public abstract double energy_empty { public owned get; public set; }
+        public abstract double energy_full { public owned get; public set; }
+        public abstract double energy_full_design { public owned get; public set; }
+        public abstract double energy_rate { public owned get; public set; }
+        public abstract double luminosity { public owned get; public set; }
+        public abstract double percentage { public owned get; public set; }
+        public abstract double temperature { public owned get; public set; }
+        public abstract double voltage { public owned get; public set; }
+        public abstract int64 time_to_empty { public owned get; public set; }
+        public abstract int64 time_to_full { public owned get; public set; }
+        public abstract string model { public owned get; public set; }
+        public abstract string native_path { public owned get; public set; }
+        public abstract string serial { public owned get; public set; }
+        public abstract string vendor { public owned get; public set; }
+        public abstract uint32 state { public owned get; public set; }
+        public abstract uint32 technology { public owned get; public set; }
+        public abstract uint32 Type { public owned get; public set; }
+        public abstract uint64 update_time  { public owned get; public set; }
     }
 }

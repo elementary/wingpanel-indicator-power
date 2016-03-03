@@ -49,7 +49,6 @@ public class Power.Services.Device : Object {
     private string device_path = "";
 
     private DBusInterfaces.Device? device = null;
-    private DBusInterfaces.Properties? device_properties = null;
 
     public bool has_history { get; private set; }
     public bool has_statistics { get; private set; }
@@ -92,55 +91,49 @@ public class Power.Services.Device : Object {
     private bool connect_to_bus () {
         try {
             device = Bus.get_proxy_sync (BusType.SYSTEM, DEVICE_INTERFACE, device_path, DBusProxyFlags.NONE);
-            device_properties = Bus.get_proxy_sync (BusType.SYSTEM, DEVICE_INTERFACE, device_path, DBusProxyFlags.NONE);
 
             debug ("Connection to UPower device established");
-
-            return device != null & device_properties != null;
         } catch (Error e) {
             critical ("Connecting to UPower device failed: %s", e.message);
-
-            return false;
         }
+
+        return device != null;
     }
 
     private void connect_signals () {
         device.g_properties_changed.connect (update_properties);
-        device.Changed.connect (update_properties);
     }
 
     private void update_properties () {
-        try {
-            has_history = device_properties.Get (device_path, "HasHistory").get_boolean ();
-            has_statistics = device_properties.Get (device_path, "HasStatistics").get_boolean ();
-            is_present = device_properties.Get (device_path, "IsPresent").get_boolean ();
-            is_rechargeable = device_properties.Get (device_path, "IsRechargeable").get_boolean ();
-            online = device_properties.Get (device_path, "Online").get_boolean ();
-            power_supply = device_properties.Get (device_path, "PowerSupply").get_boolean ();
-            capacity = device_properties.Get (device_path, "Capacity").get_double ();
-            energy = device_properties.Get (device_path, "Energy").get_double ();
-            energy_empty = device_properties.Get (device_path, "EnergyEmpty").get_double ();
-            energy_full = device_properties.Get (device_path, "EnergyFull").get_double ();
-            energy_full_design = device_properties.Get (device_path, "EnergyFullDesign").get_double ();
-            energy_rate = device_properties.Get (device_path, "EnergyRate").get_double ();
-            luminosity = device_properties.Get (device_path, "Luminosity").get_double ();
-            percentage = device_properties.Get (device_path, "Percentage").get_double ();
-            temperature = device_properties.Get (device_path, "Temperature").get_double ();
-            voltage = device_properties.Get (device_path, "Voltage").get_double ();
-            time_to_empty = device_properties.Get (device_path, "TimeToEmpty").get_int64 ();
-            time_to_full = device_properties.Get (device_path, "TimeToFull").get_int64 ();
-            model = device_properties.Get (device_path, "Model").get_string ();
-            native_path = device_properties.Get (device_path, "NativePath").get_string ();
-            serial = device_properties.Get (device_path, "Serial").get_string ();
-            vendor = device_properties.Get (device_path, "Vendor").get_string ();
-            state = device_properties.Get (device_path, "State").get_uint32 ();
-            technology = device_properties.Get (device_path, "Technology").get_uint32 ();
-            device_type = device_properties.Get (device_path, "Type").get_uint32 ();
-            update_time = device_properties.Get (device_path, "UpdateTime").get_uint64 ();
+        device.Refresh ();
 
-            properties_updated ();
-        } catch (Error e) {
-            critical ("Updating device properties failed: %s", e.message);
-        }
+        has_history = device.has_history;
+        has_statistics = device.has_statistics;
+        is_present = device.is_present;
+        is_rechargeable = device.is_rechargeable;
+        online = device.online;
+        power_supply = device.power_supply;
+        capacity = device.capacity;
+        energy = device.energy;
+        energy_empty = device.energy_empty;
+        energy_full = device.energy_full;
+        energy_full_design = device.energy_full_design;
+        energy_rate = device.energy_rate;
+        luminosity = device.luminosity;
+        percentage = device.percentage;
+        temperature = device.temperature;
+        voltage = device.voltage;
+        time_to_empty = device.time_to_empty;
+        time_to_full = device.time_to_full;
+        model = device.model;
+        native_path = device.native_path;
+        serial = device.serial;
+        vendor = device.vendor;
+        device_type = device.Type;
+        state = device.state;
+        technology = device.technology;
+        update_time = device.update_time;
+
+        properties_updated ();
     }
 }
