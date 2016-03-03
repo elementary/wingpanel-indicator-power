@@ -3,15 +3,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-12 14:47+0100\n"
-"PO-Revision-Date: 2015-11-26 05:07+0000\n"
-"Last-Translator: Alonso Montenegro <Unknown>\n"
+"PO-Revision-Date: 2016-03-03 05:57+0000\n"
+"Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-11-27 05:41+0000\n"
-"X-Generator: Launchpad (build 17850)\n"
+"X-Launchpad-Export-Date: 2016-03-03 06:19+0000\n"
+"X-Generator: Launchpad (build 17925)\n"
 
 #: ../src/Indicator.vala:31
 msgid "Power"
@@ -23,7 +23,7 @@ msgstr "Indicador de energía"
 
 #: ../src/Widgets/PopoverWidget.vala:51
 msgid "Show Percentage"
-msgstr "Mostrar Porcentaje"
+msgstr "Mostrar porcentaje"
 
 #: ../src/Widgets/PopoverWidget.vala:52
 msgid "Power Settings…"
@@ -76,7 +76,8 @@ msgstr "%i %% cargada"
 #: ../src/Utils.vala:117
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
-msgstr[0] "%lld"
+msgstr[0] "%lld día hasta completarse"
+msgstr[1] "%lld días hasta completarse"
 
 #: ../src/Utils.vala:120
 msgid "%lld hour until full"
@@ -103,23 +104,23 @@ msgstr "%i %% restante"
 #: ../src/Utils.vala:137
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld día hasta vaciarse"
+msgstr[1] "%lld días hasta vaciarse"
 
 #: ../src/Utils.vala:140
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld hora hasta vaciarse"
+msgstr[1] "%lld horas hasta vaciarse"
 
 #: ../src/Utils.vala:143
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld minuto hasta vaciarse"
+msgstr[1] "%lld minutos hasta vaciarse"
 
 #: ../src/Utils.vala:145
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld segundo hasta vaciarse"
+msgstr[1] "%lld segundos hasta vaciarse"
