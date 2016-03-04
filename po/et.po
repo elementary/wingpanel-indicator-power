@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-12 14:47+0100\n"
+"POT-Creation-Date: 2016-03-03 22:10-0600\n"
 "PO-Revision-Date: 2015-12-12 15:01+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10,8 +10,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-12-13 05:35+0000\n"
-"X-Generator: Launchpad (build 17865)\n"
+"X-Launchpad-Export-Date: 2016-03-04 06:25+0000\n"
+"X-Generator: Launchpad (build 17936)\n"
 
 #: ../src/Indicator.vala:31
 msgid "Power"
@@ -21,6 +21,10 @@ msgstr "Toide"
 msgid "Power indicator"
 msgstr "Toite indikaator"
 
+#: ../src/Widgets/AppList.vala:54
+msgid "Apps Using Lots of Power"
+msgstr "Rakendused, mis kasutavad palju toidet"
+
 #: ../src/Widgets/PopoverWidget.vala:51
 msgid "Show Percentage"
 msgstr "Protsendi näitamine"
@@ -29,98 +33,97 @@ msgstr "Protsendi näitamine"
 msgid "Power Settings…"
 msgstr "Toite seaded…"
 
-#: ../src/Widgets/AppList.vala:54
-msgid "Apps Using Lots of Power"
-msgstr "Rakendused, mis kasutavad palju toidet"
-
-#: ../src/Utils.vala:84
+#: ../src/Utils.vala:80
 msgid "Battery"
 msgstr "Aku"
 
-#: ../src/Utils.vala:85
+#: ../src/Utils.vala:81
 msgid "UPS"
 msgstr "UPS"
 
-#: ../src/Utils.vala:86
-msgid "Monitor"
-msgstr "Kuvar"
+#: ../src/Utils.vala:82
+msgid "Display"
+msgstr ""
 
-#: ../src/Utils.vala:87
+#: ../src/Utils.vala:83
 msgid "Mouse"
 msgstr "Hiir"
 
-#: ../src/Utils.vala:88
+#: ../src/Utils.vala:84
 msgid "Keyboard"
 msgstr "Klaviatuur"
 
-#: ../src/Utils.vala:89
+#: ../src/Utils.vala:85
 msgid "PDA"
 msgstr "PDA"
 
-#: ../src/Utils.vala:90
+#: ../src/Utils.vala:86
 msgid "Phone"
 msgstr "Telefon"
 
-#: ../src/Utils.vala:91
+#: ../src/Utils.vala:87
 msgid "Device"
 msgstr "Seade"
 
-#: ../src/Utils.vala:103
+#: ../src/Utils.vala:102
 msgid "Calculating…"
 msgstr "Arvutamine…"
 
-#: ../src/Utils.vala:109
+#: ../src/Utils.vala:108
 msgid "%i%% charged"
 msgstr "%i%% laetud"
 
-#: ../src/Utils.vala:117
+#: ../src/Utils.vala:128
+msgid "%i%% remaining"
+msgstr "%i%% jäänud"
+
+#: ../src/Utils.vala:154
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "%lld päev täislaadimiseni"
 msgstr[1] "%lld päeva täislaadimiseni"
 
-#: ../src/Utils.vala:120
+#: ../src/Utils.vala:155
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld tund täislaadimiseni"
 msgstr[1] "%lld tundi täislaadimiseni"
 
-#: ../src/Utils.vala:123
+#: ../src/Utils.vala:156
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld minut täislaadimiseni"
 msgstr[1] "%lld minutit täislaadimiseni"
 
-#: ../src/Utils.vala:125
+#: ../src/Utils.vala:157
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld sekund täislaadimiseni"
 msgstr[1] "%lld sekundit täislaadimiseni"
 
-#: ../src/Utils.vala:129
-msgid "%i%% remaining"
-msgstr "%i%% jäänud"
-
-#: ../src/Utils.vala:137
+#: ../src/Utils.vala:158
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "%lld päev aku tühjenemiseni"
 msgstr[1] "%lld päeva aku tühjenemiseni"
 
-#: ../src/Utils.vala:140
+#: ../src/Utils.vala:159
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld tund aku tühjenemiseni"
 msgstr[1] "%lld tundi aku tühjenemiseni"
 
-#: ../src/Utils.vala:143
+#: ../src/Utils.vala:160
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld minut aku tühjenemiseni"
 msgstr[1] "%lld minutit aku tühjenemiseni"
 
-#: ../src/Utils.vala:145
+#: ../src/Utils.vala:161
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
 msgstr[0] "%lld sekund aku tühjenemiseni"
 msgstr[1] "%lld sekundit aku tühjenemiseni"
+
+#~ msgid "Monitor"
+#~ msgstr "Kuvar"
