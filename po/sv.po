@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-03 22:10-0600\n"
-"PO-Revision-Date: 2016-07-20 13:14+0000\n"
+"PO-Revision-Date: 2016-07-23 16:21+0000\n"
 "Last-Translator: Mikael Nyberg <mikanybe@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-07-21 06:05+0000\n"
+"X-Launchpad-Export-Date: 2016-07-24 05:39+0000\n"
 "X-Generator: Launchpad (build 18147)\n"
 
 #: ../src/Indicator.vala:31
@@ -27,7 +27,7 @@ msgstr "Program som drar mycket ström"
 
 #: ../src/Widgets/PopoverWidget.vala:51
 msgid "Show Percentage"
-msgstr "Visa procentandel"
+msgstr "Visa som procent"
 
 #: ../src/Widgets/PopoverWidget.vala:52
 msgid "Power Settings…"
