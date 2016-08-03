@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-03 22:10-0600\n"
-"PO-Revision-Date: 2016-08-02 02:08+0000\n"
-"Last-Translator: Ryo Nakano <Unknown>\n"
+"PO-Revision-Date: 2016-08-03 02:29+0000\n"
+"Last-Translator: BALLOON a.k.a. Fu-sen. (Keiichi SHIGA) <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2016-08-02 06:04+0000\n"
+"X-Launchpad-Export-Date: 2016-08-03 06:13+0000\n"
 "X-Generator: Launchpad (build 18169)\n"
 
 #: ../src/Indicator.vala:31
@@ -23,7 +23,7 @@ msgstr "パワーインジケーター"
 
 #: ../src/Widgets/AppList.vala:54
 msgid "Apps Using Lots of Power"
-msgstr ""
+msgstr "アプリケーションが大量の電気を消費しています"
 
 #: ../src/Widgets/PopoverWidget.vala:51
 msgid "Show Percentage"
@@ -80,39 +80,39 @@ msgstr "残り %i%%"
 #: ../src/Utils.vala:154
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
-msgstr[0] "充電完了まで%lld日"
+msgstr[0] "充電完了まで %lld 日"
 
 #: ../src/Utils.vala:155
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
-msgstr[0] "充電完了まで%lld時間"
+msgstr[0] "充電完了まで %lld 時間"
 
 #: ../src/Utils.vala:156
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
-msgstr[0] "充電完了まで%lld分"
+msgstr[0] "充電完了まで %lld 分"
 
 #: ../src/Utils.vala:157
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
-msgstr[0] "充電完了まで%lld秒"
+msgstr[0] "充電完了まで %lld 秒"
 
 #: ../src/Utils.vala:158
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
-msgstr[0] "残り%lld日"
+msgstr[0] "残り %lld 日"
 
 #: ../src/Utils.vala:159
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
-msgstr[0] "残り%lld時間"
+msgstr[0] "残り %lld 時間"
 
 #: ../src/Utils.vala:160
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
-msgstr[0] "残り%lld分"
+msgstr[0] "残り %lld 分"
 
 #: ../src/Utils.vala:161
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
-msgstr[0] "残り%lld秒"
+msgstr[0] "残り %lld 秒"
