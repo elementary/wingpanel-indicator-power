@@ -3,15 +3,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-03 22:10-0600\n"
-"PO-Revision-Date: 2015-07-30 15:33+0000\n"
+"PO-Revision-Date: 2016-08-06 01:13+0000\n"
 "Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-03-05 06:34+0000\n"
-"X-Generator: Launchpad (build 17936)\n"
+"X-Launchpad-Export-Date: 2016-08-06 05:49+0000\n"
+"X-Generator: Launchpad (build 18169)\n"
 
 #: ../src/Indicator.vala:31
 msgid "Power"
@@ -23,7 +23,7 @@ msgstr "Indicador d’energia"
 
 #: ../src/Widgets/AppList.vala:54
 msgid "Apps Using Lots of Power"
-msgstr ""
+msgstr "Aplicacions que consumeixen massa energia"
 
 #: ../src/Widgets/PopoverWidget.vala:51
 msgid "Show Percentage"
@@ -67,7 +67,7 @@ msgstr "Dispositiu"
 
 #: ../src/Utils.vala:102
 msgid "Calculating…"
-msgstr ""
+msgstr "S’està calculant…"
 
 #: ../src/Utils.vala:108
 msgid "%i%% charged"
@@ -75,7 +75,7 @@ msgstr "%i %% carregat"
 
 #: ../src/Utils.vala:128
 msgid "%i%% remaining"
-msgstr ""
+msgstr "Queda un %i %%"
 
 #: ../src/Utils.vala:154
 msgid "%lld day until full"
