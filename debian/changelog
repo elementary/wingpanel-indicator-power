@@ -1,3 +1,9 @@
+wingpanel-indicator-power (2.0) xenial; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Sun, 14 Aug 2016 03:37:51 -0500
+
 wingpanel-indicator-power (0.1) trusty; urgency=low
 
   * Initial Release.
