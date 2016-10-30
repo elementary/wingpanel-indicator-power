@@ -20,8 +20,6 @@
 public class Power.Widgets.PopoverWidget : Gtk.Box {
     private bool is_in_session = false;
 
-    private const string SETTINGS_EXEC = "/usr/bin/switchboard power";
-
     private DeviceList device_list;
     private AppList app_list;
 
@@ -72,8 +70,14 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
     }
 
     private void show_settings () {
-        var cmd = new Granite.Services.SimpleCommand ("/usr/bin", SETTINGS_EXEC);
-        cmd.run ();
+        var list = new List<string> ();
+        list.append ("power");
+        try {
+            var appinfo = AppInfo.create_from_commandline ("switchboard", null, AppInfoCreateFlags.SUPPORTS_URIS);
+            appinfo.launch_uris (list, null);
+        } catch (Error e) {
+            warning ("%s\n", e.message);
+        }
 
         settings_shown ();
     }
