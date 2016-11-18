@@ -3,15 +3,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-03 22:10-0600\n"
-"PO-Revision-Date: 2016-08-19 10:49+0000\n"
-"Last-Translator: Nate <natejms@outlook.com>\n"
+"PO-Revision-Date: 2016-11-18 06:23+0000\n"
+"Last-Translator: etienne <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-18 06:25+0000\n"
+"X-Generator: Launchpad (build 18269)\n"
 
 #: ../src/Indicator.vala:31
 msgid "Power"
@@ -19,19 +19,19 @@ msgstr "Charge"
 
 #: ../src/Indicator.vala:32
 msgid "Power indicator"
-msgstr ""
+msgstr "Charge restante"
 
 #: ../src/Widgets/AppList.vala:54
 msgid "Apps Using Lots of Power"
-msgstr "Applications qui Utilisent Beaucoup de Charge"
+msgstr "Applications utilisant beaucoup d'énergie"
 
 #: ../src/Widgets/PopoverWidget.vala:51
 msgid "Show Percentage"
-msgstr "Montrer Pourcentage"
+msgstr "Afficher le pourcentage"
 
 #: ../src/Widgets/PopoverWidget.vala:52
 msgid "Power Settings…"
-msgstr ""
+msgstr "Réglages d'alimentation"
 
 #: ../src/Utils.vala:80
 msgid "Battery"
