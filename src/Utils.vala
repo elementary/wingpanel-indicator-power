@@ -31,8 +31,12 @@ namespace Power.Utils {
     }
 
     public string get_icon_name_for_battery (Services.Device battery) {
-        return get_battery_icon (battery.percentage, battery.time_to_empty) +
-              (is_charging (battery.state) ? "-charging" : "");
+        if (battery.percentage == 100 && is_charging (battery.state) == true) {
+            return "battery-full-charged";
+        } else {
+            return get_battery_icon (battery.percentage, battery.time_to_empty) +
+                (is_charging (battery.state) ? "-charging" : "");
+        }
     }
 
     public string? get_icon_name_for_device (Services.Device device) {
