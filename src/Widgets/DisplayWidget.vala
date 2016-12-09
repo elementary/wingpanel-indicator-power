@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2015 Wingpanel Developers (http://launchpad.net/wingpanel)
+ * Copyright (c) 2011-2016 elementary LLC. (https://launchpad.net/wingpanel)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -19,19 +19,14 @@
 
 public class Power.Widgets.DisplayWidget : Gtk.Box {
     private Gtk.Image image;
-
     private Gtk.Revealer percent_revealer;
-
     private Gtk.Label percent_label;
 
     public DisplayWidget () {
         Object (orientation: Gtk.Orientation.HORIZONTAL);
-
-        build_ui ();
-        connect_signals ();
     }
 
-    private void build_ui () {
+    construct {
         image = new Gtk.Image ();
         image.icon_name = "content-loading-symbolic";
 
@@ -47,9 +42,7 @@ public class Power.Widgets.DisplayWidget : Gtk.Box {
         percent_revealer.add (percent_label);
 
         this.pack_start (percent_revealer);
-    }
 
-    private void connect_signals () {
         Services.SettingsManager.get_default ().notify["show-percentage"].connect (() => {
             percent_revealer.set_reveal_child (Services.SettingsManager.get_default ().show_percentage);
         });

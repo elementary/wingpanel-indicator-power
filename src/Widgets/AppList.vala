@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2015 Wingpanel Developers (http://launchpad.net/wingpanel)
+ * Copyright (c) 2011-2016 elementary LLC. (https://launchpad.net/wingpanel)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -22,19 +22,11 @@ public class Power.Widgets.AppList : Gtk.Box {
 
     public AppList () {
         Object (orientation: Gtk.Orientation.VERTICAL);
+    }
 
+    construct {
         app_manager = Services.AppManager.get_default ();
 
-        connect_signals ();
-    }
-
-    public void clear_list () {
-        foreach (var child in this.get_children ()) {
-            this.remove (child);
-        }
-    }
-
-    private void connect_signals () {
         Services.ProcessMonitor.Monitor.get_default ().updated.connect (() => {
             /* Don't block the ui while updating the data */
             Idle.add (() => {
@@ -43,6 +35,12 @@ public class Power.Widgets.AppList : Gtk.Box {
                 return false;
             });
         });
+    }
+
+    public void clear_list () {
+        foreach (var child in this.get_children ()) {
+            this.remove (child);
+        }
     }
 
     private void update_list () {
