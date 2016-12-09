@@ -17,42 +17,43 @@
  * Boston, MA 02111-1307, USA.
  */
 
-public class Power.Widgets.DisplayWidget : Gtk.Box {
+public class Power.Widgets.DisplayWidget : Gtk.Grid {
     private Gtk.Image image;
     private Gtk.Revealer percent_revealer;
     private Gtk.Label percent_label;
 
-    public DisplayWidget () {
-        Object (orientation: Gtk.Orientation.HORIZONTAL);
+    public string icon_name {
+        set {
+            image.icon_name = value;
+        }
+    }
+
+    public int percent {
+        set {
+            percent_label.label = "%i%%".printf (value);
+        }
     }
 
     construct {
+        valign = Gtk.Align.CENTER;
+
         image = new Gtk.Image ();
         image.icon_name = "content-loading-symbolic";
-
-        this.pack_start (image);
-
-        percent_revealer = new Gtk.Revealer ();
-        percent_revealer.reveal_child = Services.SettingsManager.get_default ().show_percentage;
-        percent_revealer.transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT;
+        image.valign = Gtk.Align.END;
 
         percent_label = new Gtk.Label ("");
         percent_label.margin_start = 6;
 
+        percent_revealer = new Gtk.Revealer ();
+        percent_revealer.reveal_child = Services.SettingsManager.get_default ().show_percentage;
+        percent_revealer.transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT;
         percent_revealer.add (percent_label);
 
-        this.pack_start (percent_revealer);
+        add (image);
+        add (percent_revealer);
 
         Services.SettingsManager.get_default ().notify["show-percentage"].connect (() => {
             percent_revealer.set_reveal_child (Services.SettingsManager.get_default ().show_percentage);
         });
-    }
-
-    public void set_icon_name (string icon_name) {
-        image.icon_name = icon_name;
-    }
-
-    public void set_percent (int percentage) {
-        percent_label.set_label ("%i%%".printf (percentage));
     }
 }

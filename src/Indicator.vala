@@ -86,12 +86,12 @@ public class Power.Indicator : Wingpanel.Indicator {
         if (display_widget != null) {
             var icon_name = Utils.get_symbolic_icon_name_for_battery (battery);
 
-            display_widget.set_icon_name (icon_name);
+            display_widget.icon_name = icon_name;
 
             /* Debug output for designers */
             debug ("Icon changed to \"%s\"", icon_name);
 
-            display_widget.set_percent ((int)Math.round (battery.percentage));
+            display_widget.percent = (int)Math.round (battery.percentage);
         }
     }
 }
