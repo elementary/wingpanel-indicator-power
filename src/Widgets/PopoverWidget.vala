@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2015 Wingpanel Developers (http://launchpad.net/wingpanel)
+ * Copyright (c) 2011-2016 elementary LLC. (https://launchpad.net/wingpanel)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -18,8 +18,7 @@
  */
 
 public class Power.Widgets.PopoverWidget : Gtk.Box {
-    private bool is_in_session = false;
-
+    public bool is_in_session { get; construct; default = false; }
     private DeviceList device_list;
     private AppList app_list;
 
@@ -28,22 +27,11 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
     public signal void settings_shown ();
 
-    public PopoverWidget (bool is_in_session = false) {
-        Object (orientation: Gtk.Orientation.VERTICAL);
-
-        this.is_in_session = is_in_session;
-
-        build_ui ();
-        connect_signals ();
+    public PopoverWidget (bool is_in_session) {
+        Object (is_in_session: is_in_session, orientation: Gtk.Orientation.VERTICAL);
     }
 
-    public void slim_down () {
-        if (is_in_session) {
-            app_list.clear_list ();
-        }
-    }
-
-    private void build_ui () {
+    construct {
         device_list = new DeviceList ();
 
         show_percent_switch = new Wingpanel.Widgets.Switch (_("Show Percentage"), Services.SettingsManager.get_default ().show_percentage);
@@ -61,12 +49,16 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
             this.pack_start (new Wingpanel.Widgets.Separator ());
             this.pack_start (show_percent_switch);
         }
-    }
 
-    private void connect_signals () {
         Services.SettingsManager.get_default ().schema.bind ("show-percentage", show_percent_switch.get_switch (), "active", SettingsBindFlags.DEFAULT);
 
         show_settings_button.clicked.connect (show_settings);
+    }
+
+    public void slim_down () {
+        if (is_in_session) {
+            app_list.clear_list ();
+        }
     }
 
     private void show_settings () {

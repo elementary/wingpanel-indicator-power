@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2015 Wingpanel Developers (http://launchpad.net/wingpanel)
+ * Copyright (c) 2011-2016 elementary LLC. (https://launchpad.net/wingpanel)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -22,13 +22,11 @@ public class Power.Widgets.DeviceList : Gtk.Box {
 
     public DeviceList () {
         Object (orientation: Gtk.Orientation.VERTICAL);
-
-        entries = new Gee.HashMap<string, Gtk.Grid> ();
-
-        connect_signals ();
     }
 
-    private void connect_signals () {
+    construct {
+        entries = new Gee.HashMap<string, Gtk.Grid> ();
+
         Services.DeviceManager.get_default ().battery_registered.connect (add_battery);
         Services.DeviceManager.get_default ().battery_deregistered.connect (remove_battery);
     }
