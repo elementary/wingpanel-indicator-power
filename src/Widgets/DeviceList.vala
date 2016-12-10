@@ -60,8 +60,6 @@ public class Power.Widgets.DeviceList : Gtk.Box {
         overlay.add (device_image);
         overlay.add_overlay (battery_image);
 
-        grid.attach (overlay, 0, 0, 1, 2);
-
         var title_label = new Gtk.Label (Utils.get_title_for_battery (battery));
         title_label.use_markup = true;
         title_label.halign = Gtk.Align.START;
@@ -70,8 +68,6 @@ public class Power.Widgets.DeviceList : Gtk.Box {
         title_label.vexpand = true;
         title_label.margin_end = 6;
 
-        grid.attach (title_label, 1, 0, 1, 1);
-
         var info_label = new Gtk.Label (Utils.get_info_for_battery (battery));
         info_label.halign = Gtk.Align.START;
         info_label.valign = Gtk.Align.START;
@@ -79,6 +75,8 @@ public class Power.Widgets.DeviceList : Gtk.Box {
         info_label.vexpand = true;
         info_label.margin_end = 6;
 
+        grid.attach (overlay, 0, 0, 1, 2);
+        grid.attach (title_label, 1, 0, 1, 1);
         grid.attach (info_label, 1, 1, 1, 1);
 
         entries.@set (device_path, grid);

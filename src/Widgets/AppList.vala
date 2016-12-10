@@ -17,7 +17,7 @@
  * Boston, MA 02111-1307, USA.
  */
 
-public class Power.Widgets.AppList : Gtk.Box {
+public class Power.Widgets.AppList : Gtk.Grid {
     private Services.AppManager app_manager;
 
     public AppList () {
