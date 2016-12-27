@@ -3,15 +3,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-03 22:10-0600\n"
-"PO-Revision-Date: 2016-12-02 16:27+0000\n"
-"Last-Translator: abuyop <Unknown>\n"
+"PO-Revision-Date: 2016-12-27 03:05+0000\n"
+"Last-Translator: Timothy <timothy.wong@rocketmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-12-03 05:20+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
+"X-Launchpad-Export-Date: 2016-12-27 05:07+0000\n"
+"X-Generator: Launchpad (build 18298)\n"
 
 #: ../src/Indicator.vala:31
 msgid "Power"
@@ -80,47 +80,47 @@ msgstr "%i%% berbaki"
 #: ../src/Utils.vala:154
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld hari sehingga penuh"
+msgstr[1] "%lld hari sehingga penuh"
 
 #: ../src/Utils.vala:155
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lls jam sehingga penuh"
+msgstr[1] "%lld jam sehingga penuh"
 
 #: ../src/Utils.vala:156
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld minit sehingga penuh"
+msgstr[1] "%lld minit sehingga penuh"
 
 #: ../src/Utils.vala:157
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld saat sehingga penuh"
+msgstr[1] "%lld saat sehingga penuh"
 
 #: ../src/Utils.vala:158
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld hari sehingga kosong"
+msgstr[1] "%lld hari sehingga kosong"
 
 #: ../src/Utils.vala:159
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld jam sehingga kosong"
+msgstr[1] "%lld jam sehingga kosong"
 
 #: ../src/Utils.vala:160
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld minit sehingga kosong"
+msgstr[1] "%lld minit sehingga kosong"
 
 #: ../src/Utils.vala:161
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld saat sehingga kosong"
+msgstr[1] "%lld saat sehingga kosong"
