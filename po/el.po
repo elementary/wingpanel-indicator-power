@@ -3,15 +3,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-03 22:10-0600\n"
-"PO-Revision-Date: 2015-05-23 21:47+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2017-01-17 00:13+0000\n"
+"Last-Translator: Christos Iatropoulos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2017-01-17 07:10+0000\n"
+"X-Generator: Launchpad (build 18302)\n"
 
 #: ../src/Indicator.vala:31
 msgid "Power"
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../src/Utils.vala:80
 msgid "Battery"
-msgstr ""
+msgstr "Μπαταρία"
 
 #: ../src/Utils.vala:81
 msgid "UPS"
@@ -43,15 +43,15 @@ msgstr ""
 
 #: ../src/Utils.vala:82
 msgid "Display"
-msgstr ""
+msgstr "Οθόνη"
 
 #: ../src/Utils.vala:83
 msgid "Mouse"
-msgstr ""
+msgstr "Ποντίκι"
 
 #: ../src/Utils.vala:84
 msgid "Keyboard"
-msgstr ""
+msgstr "Πληκτρολόγιο"
 
 #: ../src/Utils.vala:85
 msgid "PDA"
@@ -59,11 +59,11 @@ msgstr ""
 
 #: ../src/Utils.vala:86
 msgid "Phone"
-msgstr ""
+msgstr "Τηλέφωνο"
 
 #: ../src/Utils.vala:87
 msgid "Device"
-msgstr ""
+msgstr "Συσκευή"
 
 #: ../src/Utils.vala:102
 msgid "Calculating…"
@@ -71,11 +71,11 @@ msgstr ""
 
 #: ../src/Utils.vala:108
 msgid "%i%% charged"
-msgstr ""
+msgstr "%i%% φορτίστηκε"
 
 #: ../src/Utils.vala:128
 msgid "%i%% remaining"
-msgstr ""
+msgstr "%i%% απομένει"
 
 #: ../src/Utils.vala:154
 msgid "%lld day until full"
