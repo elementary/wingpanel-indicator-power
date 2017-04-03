@@ -26,26 +26,36 @@ public class Power.Services.DeviceManager : Object {
     private DBusInterfaces.UPower? upower = null;
     private DBusInterfaces.Properties? upower_properties = null;
 
+    public Services.Backlight backlight;
+
     public Gee.HashMap<string, Device> devices { get; private set; }
     public Gee.Iterator batteries { get; private set; }
-
     public Device primary_battery { get; private set; }
-
     public bool has_battery { get; private set; }
-
     public bool on_battery { get; private set; }
     public bool on_low_battery { get; private set; }
 
     public signal void battery_registered (string device_path, Device battery);
     public signal void battery_deregistered (string device_path);
 
+    // singleton one class object in memory. use instance to get data.
     public void init () {
+        backlight = new Services.Backlight ();
+
         if (connect_to_bus ()) {
             update_properties ();
             read_devices ();
             update_batteries ();
             connect_signals ();
         }
+    }
+
+    public static DeviceManager get_default () {
+        if (instance == null) {
+            instance = new DeviceManager ();
+        }
+
+        return instance;
     }
 
     private bool connect_to_bus () {
@@ -65,7 +75,7 @@ public class Power.Services.DeviceManager : Object {
         }
     }
 
-    private void read_devices () {
+    public void read_devices () {
         try {
             var devices = upower.EnumerateDevices ();
 
@@ -105,6 +115,7 @@ public class Power.Services.DeviceManager : Object {
         has_battery = batteries.has_next ();
 
         if (has_battery) {
+            //warning ("has battery = true");
             update_primary_battery ();
         }
     }
@@ -174,13 +185,5 @@ public class Power.Services.DeviceManager : Object {
         if (Utils.type_is_battery (device.device_type)) {
             battery_deregistered (device_path);
         }
-    }
-
-    public static DeviceManager get_default () {
-        if (instance == null) {
-            instance = new DeviceManager ();
-        }
-
-        return instance;
     }
 }

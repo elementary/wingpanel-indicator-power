@@ -105,7 +105,11 @@ public class Power.Services.Device : Object {
     }
 
     private void update_properties () {
-        device.Refresh ();
+        try {
+            device.Refresh ();
+        } catch (Error e) {
+            critical ("Updating the upower device parameters failed: %s", e.message);
+        }
 
         has_history = device.has_history;
         has_statistics = device.has_statistics;

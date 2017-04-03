@@ -21,6 +21,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
     public bool is_in_session { get; construct; default = false; }
     private DeviceList device_list;
     private AppList app_list;
+    private ScreenBrightness screen_brightness;
 
     private Wingpanel.Widgets.Switch show_percent_switch;
     private Wingpanel.Widgets.Button show_settings_button;
@@ -34,6 +35,19 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
     construct {
         device_list = new DeviceList ();
 
+        if (Services.DeviceManager.get_default ().has_battery) {
+            debug ("show list of batteries");
+            pack_start (device_list);
+            pack_start (new Wingpanel.Widgets.Separator ());
+        }
+
+
+        if (Services.DeviceManager.get_default ().backlight.present) {
+            debug ("show brightness slider");
+            screen_brightness = new ScreenBrightness ();
+            pack_start (screen_brightness);
+        }
+
         show_percent_switch = new Wingpanel.Widgets.Switch (_("Show Percentage"), Services.SettingsManager.get_default ().show_percentage);
         show_settings_button = new Wingpanel.Widgets.Button (_("Power Settings…"));
 
@@ -43,9 +57,13 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
             app_list = new AppList ();
             this.pack_start (app_list); /* The app-list contains an own separator that is displayed if necessary. */
             this.pack_start (new Wingpanel.Widgets.Separator ());
-            this.pack_start (show_percent_switch);
+
+            if (Services.DeviceManager.get_default ().has_battery) {
+                this.pack_start (show_percent_switch);
+            }
+
             this.pack_start (show_settings_button);
-        } else {
+        } else if (Services.DeviceManager.get_default ().has_battery) {
             this.pack_start (new Wingpanel.Widgets.Separator ());
             this.pack_start (show_percent_switch);
         }
@@ -59,6 +77,10 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
         if (is_in_session) {
             app_list.clear_list ();
         }
+    }
+
+    public void update_brightness_slider () {
+        screen_brightness.update_slider ();
     }
 
     private void show_settings () {
