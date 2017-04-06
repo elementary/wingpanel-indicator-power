@@ -34,15 +34,16 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
     construct {
         device_list = new DeviceList ();
+        var dm = Services.DeviceManager.get_default ();
 
-        if (Services.DeviceManager.get_default ().has_battery) {
+        if (dm.has_battery) {
             debug ("show list of batteries");
             pack_start (device_list);
             pack_start (new Wingpanel.Widgets.Separator ());
         }
 
 
-        if (Services.DeviceManager.get_default ().backlight.present) {
+        if (dm.backlight.present) {
             debug ("show brightness slider");
             screen_brightness = new ScreenBrightness ();
             pack_start (screen_brightness);
@@ -58,12 +59,12 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
             this.pack_start (app_list); /* The app-list contains an own separator that is displayed if necessary. */
             this.pack_start (new Wingpanel.Widgets.Separator ());
 
-            if (Services.DeviceManager.get_default ().has_battery) {
+            if (dm.has_battery) {
                 this.pack_start (show_percent_switch);
             }
 
             this.pack_start (show_settings_button);
-        } else if (Services.DeviceManager.get_default ().has_battery) {
+        } else if (dm.has_battery) {
             this.pack_start (new Wingpanel.Widgets.Separator ());
             this.pack_start (show_percent_switch);
         }

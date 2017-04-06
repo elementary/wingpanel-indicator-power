@@ -28,6 +28,9 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
 
     public ScreenBrightness () {
         Object (orientation: Gtk.Orientation.HORIZONTAL);
+    }
+
+    construct {
         set_column_spacing (12);
         init_bus.begin ();
         
@@ -42,7 +45,7 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
 
         brightness_slider.value_changed.connect (() => {
             on_scale_value_changed.begin ();
-		});
+        });
 
       #if OLD_GSD
         brightness_slider.set_value (iscreen.get_percentage ());

@@ -19,7 +19,7 @@
 
 public class Power.Services.Backlight : GLib.Object {
 
-    private const string backlight_name = "backlight";
+    private const string BACKLIGHT_NAME = "backlight";
 
     public bool present { get; construct set; }
 
@@ -31,7 +31,7 @@ public class Power.Services.Backlight : GLib.Object {
     private bool get_backlight_present () {
         var context = new UDev.Context ();
         var e = context.create_enumerate ();
-        e.add_match_subsystem (backlight_name);
+        e.add_match_subsystem (BACKLIGHT_NAME);
         e.scan_devices ();
 
         for (unowned UDev.List d = e.entries; d != null; d = d.next) {

@@ -32,9 +32,6 @@ public class Power.Indicator : Wingpanel.Indicator {
                 description: _("Power indicator"));
 
         this.is_in_session = is_in_session;
-
-        // init background data
-        Services.DeviceManager.get_default ().init ();
     }
 
     public override Gtk.Widget get_display_widget () {
@@ -50,17 +47,17 @@ public class Power.Indicator : Wingpanel.Indicator {
             popover_widget = new Widgets.PopoverWidget (is_in_session);
             popover_widget.settings_shown.connect (() => this.close ());
 
-            var DM = Services.DeviceManager.get_default ();
+            var dm = Services.DeviceManager.get_default ();
 
             /* No need to display the indicator when the device is completely in AC mode */
-            if (DM.has_battery || DM.backlight.present) {
+            if (dm.has_battery || dm.backlight.present) {
                 update_visibility ();
-                if (DM.primary_battery != null) {
+                if (dm.primary_battery != null) {
                     update_primary_battery ();
                     /* No need to display the indicator when the device is completely in AC mode */
-                    Services.DeviceManager.get_default ().notify["has-battery"].connect (update_visibility);
-                    Services.DeviceManager.get_default ().notify["primary-battery"].connect (update_primary_battery);
-                } else if (DM.backlight.present) {
+                    dm.notify["has-battery"].connect (update_visibility);
+                    dm.notify["primary-battery"].connect (update_primary_battery);
+                } else if (dm.backlight.present) {
                     show_backlight_data ();
                 }
             }
@@ -79,8 +76,8 @@ public class Power.Indicator : Wingpanel.Indicator {
     }
 
     private void update_visibility () {
-        if (Services.DeviceManager.get_default ().has_battery || 
-            Services.DeviceManager.get_default ().backlight.present) {
+        var dm = Services.DeviceManager.get_default ();
+        if (dm.has_battery || dm.backlight.present) {
             visible = true;
         } else {
             visible = false;

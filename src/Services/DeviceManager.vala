@@ -38,19 +38,19 @@ public class Power.Services.DeviceManager : Object {
     public signal void battery_registered (string device_path, Device battery);
     public signal void battery_deregistered (string device_path);
 
-    // singleton one class object in memory. use instance to get data.
-    public void init () {
+    construct {
         backlight = new Services.Backlight ();
-
+            
         if (connect_to_bus ()) {
             update_properties ();
             read_devices ();
             update_batteries ();
             connect_signals ();
-        }
+        }    
     }
 
-    public static DeviceManager get_default () {
+    // singleton one class object in memory. use instance to get data.
+    public static unowned DeviceManager get_default () {
         if (instance == null) {
             instance = new DeviceManager ();
         }
@@ -115,7 +115,6 @@ public class Power.Services.DeviceManager : Object {
         has_battery = batteries.has_next ();
 
         if (has_battery) {
-            //warning ("has battery = true");
             update_primary_battery ();
         }
     }
