@@ -26,16 +26,13 @@ public class Power.Widgets.DeviceList : Gtk.Box {
 
     construct {
         entries = new Gee.HashMap<string, Gtk.Grid> ();
+        var dm = Services.DeviceManager.get_default ();
 
-        connect_signals ();
+        dm.battery_registered.connect (add_battery);
+        dm.battery_deregistered.connect (remove_battery);
 
         // load all battery information.
-        Services.DeviceManager.get_default ().read_devices ();
-    }
-
-    private void connect_signals () {
-        Services.DeviceManager.get_default ().battery_registered.connect (add_battery);
-        Services.DeviceManager.get_default ().battery_deregistered.connect (remove_battery);
+        dm.read_devices ();
     }
 
     private void update_icons (Services.Device battery, Gtk.Image device_image, Gtk.Image battery_image) {

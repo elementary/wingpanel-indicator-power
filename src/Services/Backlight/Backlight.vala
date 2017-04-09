@@ -28,7 +28,7 @@ public class Power.Services.Backlight : GLib.Object {
         debug ("backlight present: %s", present.to_string ());
     }
 
-    private bool get_backlight_present () {
+    private static bool get_backlight_present () {
         var context = new UDev.Context ();
         var e = context.create_enumerate ();
         e.add_match_subsystem (BACKLIGHT_NAME);

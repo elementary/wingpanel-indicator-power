@@ -18,7 +18,6 @@
  */
 
 public class Power.Widgets.ScreenBrightness : Gtk.Grid {
-
     private const string DBUS_PATH = "/org/gnome/SettingsDaemon/Power";
     private const string DBUS_NAME = "org.gnome.SettingsDaemon";
 
@@ -26,11 +25,8 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
     private Gtk.Scale brightness_slider;
     private Services.DBusInterfaces.PowerSettings iscreen;
 
-    public ScreenBrightness () {
-        Object (orientation: Gtk.Orientation.HORIZONTAL);
-    }
-
     construct {
+        orientation = Gtk.Orientation.HORIZONTAL;
         set_column_spacing (12);
         init_bus.begin ();
         

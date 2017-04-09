@@ -26,8 +26,7 @@ public class Power.Services.DeviceManager : Object {
     private DBusInterfaces.UPower? upower = null;
     private DBusInterfaces.Properties? upower_properties = null;
 
-    public Services.Backlight backlight;
-
+    public Services.Backlight backlight { get; construct; }
     public Gee.HashMap<string, Device> devices { get; private set; }
     public Gee.Iterator batteries { get; private set; }
     public Device primary_battery { get; private set; }
