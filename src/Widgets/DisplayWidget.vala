@@ -22,17 +22,6 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
     private Gtk.Revealer percent_revealer;
     private Gtk.Label percent_label;
 
-    public string icon_name {
-        set {
-            image.icon_name = value;
-        }
-    }
-
-    public int percent {
-        set {
-            percent_label.label = "%i%%".printf (value);
-        }
-    }
 
     construct {
         valign = Gtk.Align.CENTER;
@@ -55,5 +44,13 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
         Services.SettingsManager.get_default ().notify["show-percentage"].connect (() => {
             percent_revealer.set_reveal_child (Services.SettingsManager.get_default ().show_percentage);
         });
+    }
+
+    public void set_icon_name (string icon_name) {
+        image.icon_name = icon_name;
+    }
+
+    public void set_percent (int percentage) {
+        percent_label.set_label ("%i%%".printf (percentage));
     }
 }

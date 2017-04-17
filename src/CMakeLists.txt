@@ -1,7 +1,7 @@
 find_package (PkgConfig)
 
 # Add all your dependencies to the list below
-pkg_check_modules (DEPS REQUIRED gthread-2.0 gtk+-3.0 wingpanel-2.0 granite libgtop-2.0 libbamf3)
+pkg_check_modules (DEPS REQUIRED gthread-2.0 gtk+-3.0 wingpanel-2.0 granite libgtop-2.0 libbamf3 libudev)
 
 add_definitions (${DEPS_CFLAGS})
 link_directories (${DEPS_LIBRARY_DIRS})
@@ -19,6 +19,7 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
   Widgets/PopoverWidget.vala
   Widgets/AppList.vala
   Widgets/DeviceList.vala
+  Widgets/ScreenBrightness.vala
   Services/SettingsManager.vala
   Services/DeviceManager.vala
   Services/Device.vala
@@ -26,8 +27,10 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
   Services/DBusInterfaces/Properties.vala
   Services/DBusInterfaces/UPower.vala
   Services/DBusInterfaces/Device.vala
+  Services/DBusInterfaces/Screen.vala
   Services/ProcessMonitor/Monitor.vala
   Services/ProcessMonitor/Process.vala
+  Services/Backlight/Backlight.vala
   ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
   wingpanel-2.0
@@ -36,6 +39,7 @@ PACKAGES
   posix
 CUSTOM_VAPIS
   ../vapi/libgtop-2.0.vapi
+  ../vapi/libudev.vapi
 OPTIONS
   --thread
 )

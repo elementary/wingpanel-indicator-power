@@ -47,12 +47,20 @@ public class Power.Indicator : Wingpanel.Indicator {
             popover_widget = new Widgets.PopoverWidget (is_in_session);
             popover_widget.settings_shown.connect (() => this.close ());
 
-            /* No need to display the indicator when the device is completely in AC mode */
-            Services.DeviceManager.get_default ().notify["has-battery"].connect (update_visibility);
-            Services.DeviceManager.get_default ().notify["primary-battery"].connect (update_primary_battery);
+            var dm = Services.DeviceManager.get_default ();
 
-            /* Start the device-search after connecting the signals */
-            Services.DeviceManager.get_default ().init ();
+            /* No need to display the indicator when the device is completely in AC mode */
+            if (dm.has_battery || dm.backlight.present) {
+                update_visibility ();
+                if (dm.primary_battery != null) {
+                    update_primary_battery ();
+                    /* No need to display the indicator when the device is completely in AC mode */
+                    dm.notify["has-battery"].connect (update_visibility);
+                    dm.notify["primary-battery"].connect (update_primary_battery);
+                } else if (dm.backlight.present) {
+                    show_backlight_data ();
+                }
+            }
         }
 
         return popover_widget;
@@ -60,6 +68,7 @@ public class Power.Indicator : Wingpanel.Indicator {
 
     public override void opened () {
         Services.ProcessMonitor.Monitor.get_default ().update ();
+        popover_widget.update_brightness_slider ();
     }
 
     public override void closed () {
@@ -67,8 +76,11 @@ public class Power.Indicator : Wingpanel.Indicator {
     }
 
     private void update_visibility () {
-        if (this.visible != Services.DeviceManager.get_default ().has_battery) {
-            this.visible = Services.DeviceManager.get_default ().has_battery;
+        var dm = Services.DeviceManager.get_default ();
+        if (dm.has_battery || dm.backlight.present) {
+            visible = true;
+        } else {
+            visible = false;
         }
     }
 
@@ -86,13 +98,24 @@ public class Power.Indicator : Wingpanel.Indicator {
         if (display_widget != null) {
             var icon_name = Utils.get_symbolic_icon_name_for_battery (battery);
 
-            display_widget.icon_name = icon_name;
+            display_widget.set_icon_name (icon_name);
 
             /* Debug output for designers */
             debug ("Icon changed to \"%s\"", icon_name);
 
-            display_widget.percent = (int)Math.round (battery.percentage);
-        }
+            display_widget.set_percent ((int)Math.round (battery.percentage));
+    	}
+    }
+
+    private void show_backlight_data () {
+        if (display_widget != null) {
+	    var icon_name = Utils.get_symbolic_icon_name_for_backlight ();
+
+	    display_widget.set_icon_name (icon_name);
+
+	    /* Debug output for designers */
+	    debug ("Icon changed to \"%s\"", icon_name);
+	}
     }
 }
 

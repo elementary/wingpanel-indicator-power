@@ -27,6 +27,10 @@ public class Power.Widgets.AppList : Gtk.Grid {
     construct {
         app_manager = Services.AppManager.get_default ();
 
+        connect_signals ();
+    }
+
+    private void connect_signals () {
         Services.ProcessMonitor.Monitor.get_default ().updated.connect (() => {
             /* Don't block the ui while updating the data */
             Idle.add (() => {
