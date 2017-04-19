@@ -60,7 +60,10 @@ public class Power.Widgets.AppList : Gtk.Grid {
             title_label.margin_end = 12;
             title_label.margin_bottom = 6;
 
-            this.add (new Wingpanel.Widgets.Separator ());
+            var separator = new Wingpanel.Widgets.Separator ();
+            separator.hexpand = true;
+
+            this.add (separator);
             this.add (title_label);
         }
 
