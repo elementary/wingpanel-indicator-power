@@ -58,13 +58,6 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
       #else
         brightness_slider.set_value (iscreen.brightness);
       #endif
-
-      // this fixes the first slow response
-      #if OLD_GSD
-        iscreen.set_percentage (iscreen.get_percentage ());
-      #else
-        iscreen.brightness = iscreen.brightness;
-      #endif
     }
 
     private async void init_bus () {
@@ -79,9 +72,13 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
         int val = (int) brightness_slider.get_value ();
         try {
           #if OLD_GSD
-            iscreen.set_percentage (val);
+            if (iscreen.get_percentage () != val) {
+                iscreen.set_percentage (val);
+            }
           #else
-            iscreen.brightness = val;
+            if (iscreen.brightness != val) {
+                iscreen.brightness = val;
+            }
           #endif
         } catch (IOError e) {
             warning ("screen brightness error %s", e.message);
