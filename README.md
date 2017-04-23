@@ -9,6 +9,7 @@ You'll need the following dependencies:
 * libbamf3-dev
 * libgranite-dev
 * libgtop2-dev
+* libudev-dev
 * libwingpanel-2.0-dev
 * valac
 
