@@ -46,11 +46,6 @@ public class Power.Widgets.DeviceList : Gtk.Box {
     }
 
     private void add_battery (string device_path, Services.Device battery) {
-        var grid = new Gtk.Grid ();
-        grid.column_spacing = 6;
-        grid.row_spacing = 6;
-        grid.margin = 6;
-
         var device_image = new Gtk.Image ();
         device_image.margin_end = 3;
 
@@ -68,17 +63,19 @@ public class Power.Widgets.DeviceList : Gtk.Box {
         title_label.use_markup = true;
         title_label.halign = Gtk.Align.START;
         title_label.valign = Gtk.Align.END;
-        title_label.hexpand = true;
-        title_label.vexpand = true;
         title_label.margin_end = 6;
 
         var info_label = new Gtk.Label (Utils.get_info_for_battery (battery));
         info_label.halign = Gtk.Align.START;
         info_label.valign = Gtk.Align.START;
-        info_label.hexpand = true;
-        info_label.vexpand = true;
         info_label.margin_end = 6;
 
+        var grid = new Gtk.Grid ();
+        grid.column_spacing = 3;
+        grid.row_spacing = 0;
+        grid.margin = 6;
+        grid.margin_top = 3;
+        grid.margin_bottom = 3;
         grid.attach (overlay, 0, 0, 1, 2);
         grid.attach (title_label, 1, 0, 1, 1);
         grid.attach (info_label, 1, 1, 1, 1);
