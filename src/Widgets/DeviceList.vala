@@ -72,7 +72,6 @@ public class Power.Widgets.DeviceList : Gtk.Box {
 
         var grid = new Gtk.Grid ();
         grid.column_spacing = 3;
-        grid.row_spacing = 0;
         grid.margin = 6;
         grid.margin_top = 3;
         grid.margin_bottom = 3;
