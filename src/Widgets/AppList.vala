@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2016 elementary LLC. (https://launchpad.net/wingpanel)
+ * Copyright (c) 2011-2016 elementary LLC. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -27,10 +27,6 @@ public class Power.Widgets.AppList : Gtk.Grid {
     construct {
         app_manager = Services.AppManager.get_default ();
 
-        connect_signals ();
-    }
-
-    private void connect_signals () {
         Services.ProcessMonitor.Monitor.get_default ().updated.connect (() => {
             /* Don't block the ui while updating the data */
             Idle.add (() => {
@@ -68,42 +64,42 @@ public class Power.Widgets.AppList : Gtk.Grid {
         }
 
         eaters.@foreach ((power_eater) => {
-            add_app (power_eater);
+            var desktop_app_info = new DesktopAppInfo.from_filename (power_eater.application.get_desktop_file ());
+
+            if (desktop_app_info == null) {
+                return false;
+            }
+
+            var app_icon = desktop_app_info.get_icon ();
+            var app_name = desktop_app_info.get_name ();
+
+            if (app_icon == null || app_name == null) {
+                return false;
+            }
+
+            var app_row = new AppRow (app_icon, app_name);
+            add (app_row);
 
             return true;
         });
+
+            show_all ();
     }
 
-    private void add_app (Services.AppManager.PowerEater power_eater) {
-        var desktop_app_info = new DesktopAppInfo.from_filename (power_eater.application.get_desktop_file ());
+    private class AppRow : Gtk.Grid {
+        public AppRow (GLib.Icon app_icon, string app_name) {
+            var app_icon_image = new Gtk.Image.from_gicon (app_icon, Gtk.IconSize.LARGE_TOOLBAR);
+            app_icon_image.pixel_size = 24;
 
-        if (desktop_app_info == null) {
-            return;
+            var app_name_label = new Gtk.Label (app_name);
+            app_name_label.halign = Gtk.Align.START;
+
+            column_spacing = 18;
+            margin_start = 18;
+            margin_end = 12;
+            margin_bottom = 12;
+            attach (app_icon_image, 0, 0, 1, 1);
+            attach (app_name_label, 1, 0, 1, 1);
         }
-
-        var app_icon = desktop_app_info.get_icon ();
-        var app_name = desktop_app_info.get_name ();
-
-        if (app_icon == null || app_name == null) {
-            return;
-        }
-
-        var grid = new Gtk.Grid ();
-        grid.column_spacing = 6;
-        grid.margin_start = 12;
-        grid.margin_end = 12;
-        grid.margin_bottom = 6;
-
-        var app_icon_image = new Gtk.Image.from_gicon (app_icon, Gtk.IconSize.LARGE_TOOLBAR);
-        app_icon_image.pixel_size = 24;
-
-        var app_name_label = new Gtk.Label (app_name);
-        app_name_label.halign = Gtk.Align.START;
-
-        grid.attach (app_icon_image, 0, 0, 1, 1);
-        grid.attach (app_name_label, 1, 0, 1, 1);
-
-        this.add (grid);
-        this.show_all ();
     }
 }
