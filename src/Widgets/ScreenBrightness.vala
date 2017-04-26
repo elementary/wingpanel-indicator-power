@@ -27,7 +27,7 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
 
     construct {
         orientation = Gtk.Orientation.HORIZONTAL;
-        set_column_spacing (12);
+        column_spacing = 6;
         init_bus.begin ();
         
         image = new Gtk.Image.from_icon_name ("brightness-display-symbolic", Gtk.IconSize.DIALOG);
@@ -38,6 +38,7 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
         brightness_slider.margin_end = 12;
         brightness_slider.hexpand = true;
         brightness_slider.draw_value = false;
+        brightness_slider.width_request = 175;
 
         brightness_slider.value_changed.connect (() => {
             on_scale_value_changed.begin ();
