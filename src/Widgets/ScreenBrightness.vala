@@ -13,8 +13,8 @@
  *
  * You should have received a copy of the GNU General Public
  * License along with this program; if not, write to the
- * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
- * Boston, MA 02111-1307, USA.
+ * Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,
+ * Boston, MA 02110-1301, USA.
  */
 
 public class Power.Widgets.ScreenBrightness : Gtk.Grid {
@@ -29,7 +29,7 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
         orientation = Gtk.Orientation.HORIZONTAL;
         column_spacing = 6;
         init_bus.begin ();
-        
+
         image = new Gtk.Image.from_icon_name ("brightness-display-symbolic", Gtk.IconSize.DIALOG);
         image.margin_start = 6;
         attach (image, 0, 0, 1, 1);
