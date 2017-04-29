@@ -13,8 +13,8 @@
  *
  * You should have received a copy of the GNU General Public
  * License along with this program; if not, write to the
- * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
- * Boston, MA 02111-1307, USA.
+ * Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,
+ * Boston, MA 02110-1301, USA.
  */
 
 public class Power.Services.DeviceManager : Object {
@@ -39,13 +39,13 @@ public class Power.Services.DeviceManager : Object {
 
     construct {
         backlight = new Services.Backlight ();
-            
+
         if (connect_to_bus ()) {
             update_properties ();
             read_devices ();
             update_batteries ();
             connect_signals ();
-        }    
+        }
     }
 
     // singleton one class object in memory. use instance to get data.
