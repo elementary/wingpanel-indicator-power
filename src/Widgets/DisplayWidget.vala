@@ -28,7 +28,7 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
 
         image = new Gtk.Image ();
         image.icon_name = "content-loading-symbolic";
-        image.valign = Gtk.Align.END;
+        image.pixel_size = 24;
 
         percent_label = new Gtk.Label ("");
         percent_label.margin_start = 6;
