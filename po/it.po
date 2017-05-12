@@ -3,16 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-03 22:10-0600\n"
-"PO-Revision-Date: 2016-03-12 08:56+0000\n"
-"Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2017-05-12 21:26+0000\n"
+"Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
+"Language-Team: Italian <https://l10n.elementary.io/projects/wingpanel"
+"/wingpanel-indicator-power/it/>\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
 
 #: ../src/Indicator.vala:31
 msgid "Power"
@@ -32,7 +33,7 @@ msgstr "Mostra percentuale"
 
 #: ../src/Widgets/PopoverWidget.vala:52
 msgid "Power Settings…"
-msgstr "Impostazioni dell'alimentazione..."
+msgstr "Impostazioni dell'alimentazione…"
 
 #: ../src/Utils.vala:80
 msgid "Battery"
@@ -68,7 +69,7 @@ msgstr "Dispositivo"
 
 #: ../src/Utils.vala:102
 msgid "Calculating…"
-msgstr "Calcolo..."
+msgstr "Calcolo…"
 
 #: ../src/Utils.vala:108
 msgid "%i%% charged"
