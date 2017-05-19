@@ -30,8 +30,9 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
         column_spacing = 6;
         init_bus.begin ();
 
-        image = new Gtk.Image.from_icon_name ("brightness-display-symbolic", Gtk.IconSize.DIALOG);
+        image = new Gtk.Image.from_icon_name ("brightness-display-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
         image.margin_start = 6;
+        image.pixel_size = 24;
         attach (image, 0, 0, 1, 1);
 
         brightness_slider = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 10);
