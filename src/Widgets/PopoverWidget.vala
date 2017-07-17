@@ -20,8 +20,9 @@
 public class Power.Widgets.PopoverWidget : Gtk.Box {
     public bool is_in_session { get; construct; default = false; }
     private DeviceList device_list;
-    private AppList app_list;
+    private Wingpanel.Widgets.Separator device_separator = null;
     private ScreenBrightness screen_brightness;
+    private AppList app_list;
 
     private Wingpanel.Widgets.Switch show_percent_switch;
     private Wingpanel.Widgets.Button show_settings_button;
@@ -33,14 +34,33 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
     }
 
     construct {
-        device_list = new DeviceList ();
         var dm = Services.DeviceManager.get_default ();
 
-        if (dm.has_battery) {
-            debug ("show list of batteries");
-            pack_start (device_list);
-            if (dm.backlight.present)
-              pack_start (new Wingpanel.Widgets.Separator ());
+        device_list = new DeviceList ();
+        device_list.modify_bg(Gtk.StateType.NORMAL, {255,0,100,200});
+        //debug ("show list of batteries");
+        pack_start (device_list);
+
+        if (dm.backlight.present) {
+            if (device_list.get_device_count () > 0) {
+                device_separator = new Wingpanel.Widgets.Separator ();
+                pack_start (device_separator);
+            }
+
+            device_list.device_count_changed.connect(() => {
+                bool had_devices = device_separator != null;
+                bool has_devices = device_list.get_device_count () > 0;
+                if (has_devices != had_devices) {
+                    if (has_devices) {
+                        device_separator = new Wingpanel.Widgets.Separator ();
+                        this.pack_start (device_separator);
+                        this.reorder_child (device_separator, 1);
+                    } else {
+                        this.remove(device_separator);
+                        device_separator = null;
+                    }
+                }
+            });
         }
 
         if (dm.backlight.present) {
@@ -51,8 +71,6 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
         show_percent_switch = new Wingpanel.Widgets.Switch (_("Show Percentage"), Services.SettingsManager.get_default ().show_percentage);
         show_settings_button = new Wingpanel.Widgets.Button (_("Power Settings…"));
-
-        this.pack_start (device_list);
 
         if (is_in_session) {
             app_list = new AppList ();
