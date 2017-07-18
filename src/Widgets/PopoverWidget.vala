@@ -23,6 +23,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
     private Wingpanel.Widgets.Separator device_separator = null;
     private ScreenBrightness screen_brightness;
     private AppList app_list;
+    private Wingpanel.Widgets.Separator last_separator = null;
 
     private Wingpanel.Widgets.Switch show_percent_switch;
     private Wingpanel.Widgets.Button show_settings_button;
@@ -37,30 +38,15 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
         var dm = Services.DeviceManager.get_default ();
 
         device_list = new DeviceList ();
-        device_list.modify_bg(Gtk.StateType.NORMAL, {255,0,100,200});
+        //device_list.modify_bg(Gtk.StateType.NORMAL, {0,0xff00, 0xee00, 0});
         //debug ("show list of batteries");
         pack_start (device_list);
 
         if (dm.backlight.present) {
-            if (device_list.get_device_count () > 0) {
+            if (dm.has_battery) {
                 device_separator = new Wingpanel.Widgets.Separator ();
                 pack_start (device_separator);
             }
-
-            device_list.device_count_changed.connect(() => {
-                bool had_devices = device_separator != null;
-                bool has_devices = device_list.get_device_count () > 0;
-                if (has_devices != had_devices) {
-                    if (has_devices) {
-                        device_separator = new Wingpanel.Widgets.Separator ();
-                        this.pack_start (device_separator);
-                        this.reorder_child (device_separator, 1);
-                    } else {
-                        this.remove(device_separator);
-                        device_separator = null;
-                    }
-                }
-            });
         }
 
         if (dm.backlight.present) {
@@ -75,17 +61,51 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
         if (is_in_session) {
             app_list = new AppList ();
             this.pack_start (app_list); /* The app-list contains an own separator that is displayed if necessary. */
-            this.pack_start (new Wingpanel.Widgets.Separator ());
+        }
 
+        if (is_in_session || dm.has_battery) {
+            last_separator = new Wingpanel.Widgets.Separator ();
+            this.pack_start (last_separator);
+            if (is_in_session) {
+                this.pack_end (show_settings_button);
+            }
             if (dm.has_battery) {
-                this.pack_start (show_percent_switch);
+                this.pack_end (show_percent_switch);
+            }
+        }
+
+        dm.notify["has-battery"].connect((s, p) => {
+            bool had_separator = last_separator != null;
+            bool has_separator = is_in_session || dm.has_battery;
+            
+            if (has_separator != had_separator) {
+                if (has_separator) {
+                    this.pack_start (last_separator = new Wingpanel.Widgets.Separator ());
+                } else {
+                    this.remove (last_separator);
+                    last_separator = null;
+                }
             }
 
-            this.pack_start (show_settings_button);
-        } else if (dm.has_battery) {
-            this.pack_start (new Wingpanel.Widgets.Separator ());
-            this.pack_start (show_percent_switch);
-        }
+            this.remove (show_percent_switch);
+            if (dm.has_battery) {
+                this.pack_end (show_percent_switch);
+            }
+
+            if (dm.backlight.present) {
+                bool had_battery = device_separator != null;
+                if (dm.has_battery != had_battery) {
+                    if (dm.has_battery) {
+                        device_separator = new Wingpanel.Widgets.Separator ();
+                        this.pack_start (device_separator);
+                        this.reorder_child (device_separator, 1);
+                    } else {
+                        this.remove(device_separator);
+                        device_separator = null;
+                    }
+                }
+            }
+        });
 
         Services.SettingsManager.get_default ().schema.bind ("show-percentage", show_percent_switch.get_switch (), "active", SettingsBindFlags.DEFAULT);
 

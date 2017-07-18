@@ -24,11 +24,6 @@ public class Power.Widgets.DeviceList : Gtk.Box {
         Object (orientation: Gtk.Orientation.VERTICAL);
     }
 
-    public signal void device_count_changed ();
-    public int get_device_count () {
-        return entries.size;
-    }
-
     construct {
         entries = new Gee.HashMap<string, Gtk.Grid> ();
         var dm = Services.DeviceManager.get_default ();
@@ -99,8 +94,6 @@ public class Power.Widgets.DeviceList : Gtk.Box {
         });
 
         this.show_all ();
-
-        device_count_changed ();
     }
 
     private void remove_battery (string device_path) {
@@ -111,7 +104,5 @@ public class Power.Widgets.DeviceList : Gtk.Box {
         this.remove (entries.@get (device_path));
 
         entries.unset (device_path);
-
-        device_count_changed ();
     }
 }
