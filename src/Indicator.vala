@@ -52,15 +52,14 @@ public class Power.Indicator : Wingpanel.Indicator {
             /* No need to display the indicator when the device is completely in AC mode */
             if (dm.has_battery || dm.backlight.present) {
                 update_visibility ();
-                if (dm.primary_battery != null) {
+                /*if (dm.primary_battery != null) {
                     update_primary_battery ();
-                    /* No need to display the indicator when the device is completely in AC mode */
-                    dm.notify["has-battery"].connect (update_visibility);
-                    dm.notify["primary-battery"].connect (update_primary_battery);
                 } else if (dm.backlight.present) {
                     show_backlight_data ();
-                }
+                }*/
             }
+            dm.notify["has-battery"].connect (update_visibility);
+            dm.notify["primary-battery"].connect (update_primary_battery);
         }
 
         return popover_widget;
@@ -77,45 +76,48 @@ public class Power.Indicator : Wingpanel.Indicator {
 
     private void update_visibility () {
         var dm = Services.DeviceManager.get_default ();
-        if (dm.has_battery || dm.backlight.present) {
-            visible = true;
-        } else {
-            visible = false;
+        visible = (dm.has_battery || dm.backlight.present);
+        if (visible) {
+            if (dm.has_battery) {
+                update_primary_battery ();
+            } else {
+                show_backlight_data ();
+            }
         }
     }
 
     private void update_primary_battery () {
+        if (primary_battery != null) {
+            primary_battery.properties_updated.disconnect (show_primary_battery_data);
+        }
+
         primary_battery = Services.DeviceManager.get_default ().primary_battery;
-
-        show_battery_data (primary_battery);
-
-        primary_battery.properties_updated.connect (() => {
-            show_battery_data (primary_battery);
-        });
+        show_primary_battery_data ();
+        primary_battery.properties_updated.connect (show_primary_battery_data);
     }
 
-    private void show_battery_data (Services.Device battery) {
-        if (display_widget != null) {
-            var icon_name = Utils.get_symbolic_icon_name_for_battery (battery);
+    private void show_primary_battery_data () {
+        if (primary_battery != null && display_widget != null) {
+            var icon_name = Utils.get_symbolic_icon_name_for_battery (primary_battery);
 
-            display_widget.set_icon_name (icon_name);
+            display_widget.set_icon_name (icon_name, true);
 
             /* Debug output for designers */
             debug ("Icon changed to \"%s\"", icon_name);
 
-            display_widget.set_percent ((int)Math.round (battery.percentage));
-    	}
+            display_widget.set_percent ((int)Math.round (primary_battery.percentage));
+        }
     }
 
     private void show_backlight_data () {
         if (display_widget != null) {
-	    var icon_name = Utils.get_symbolic_icon_name_for_backlight ();
+            var icon_name = Utils.get_symbolic_icon_name_for_backlight ();
 
-	    display_widget.set_icon_name (icon_name);
+            display_widget.set_icon_name (icon_name, false);
 
-	    /* Debug output for designers */
-	    debug ("Icon changed to \"%s\"", icon_name);
-	}
+            /* Debug output for designers */
+            debug ("Icon changed to \"%s\"", icon_name);
+        }
     }
 }
 

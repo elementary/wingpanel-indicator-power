@@ -21,7 +21,7 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
     private Gtk.Image image;
     private Gtk.Revealer percent_revealer;
     private Gtk.Label percent_label;
-
+    private bool allow_percent = false;
 
     construct {
         valign = Gtk.Align.CENTER;
@@ -34,23 +34,30 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
         percent_label.margin_start = 6;
 
         percent_revealer = new Gtk.Revealer ();
-        percent_revealer.reveal_child = Services.SettingsManager.get_default ().show_percentage;
+        update_revealer ();
         percent_revealer.transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT;
         percent_revealer.add (percent_label);
 
         add (image);
         add (percent_revealer);
 
-        Services.SettingsManager.get_default ().notify["show-percentage"].connect (() => {
-            percent_revealer.set_reveal_child (Services.SettingsManager.get_default ().show_percentage);
-        });
+        Services.SettingsManager.get_default ().notify["show-percentage"].connect (update_revealer);
     }
 
-    public void set_icon_name (string icon_name) {
+    public void set_icon_name (string icon_name, bool allow_percent) {
         image.icon_name = icon_name;
+        
+        if (this.allow_percent != allow_percent) {
+            this.allow_percent = allow_percent;
+            update_revealer ();
+        }
     }
 
     public void set_percent (int percentage) {
         percent_label.set_label ("%i%%".printf (percentage));
+    }
+
+    private void update_revealer () {
+        percent_revealer.reveal_child = Services.SettingsManager.get_default ().show_percentage && allow_percent;
     }
 }
