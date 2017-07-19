@@ -36,9 +36,9 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
     construct {
         var dm = Services.DeviceManager.get_default ();
+        var sm = Services.SettingsManager.get_default ();
 
         device_list = new DeviceList ();
-        //device_list.modify_bg(Gtk.StateType.NORMAL, {0,0xff00, 0xee00, 0});
         //debug ("show list of batteries");
         pack_start (device_list);
 
@@ -55,7 +55,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
             pack_start (screen_brightness);
         }
 
-        show_percent_switch = new Wingpanel.Widgets.Switch (_("Show Percentage"), Services.SettingsManager.get_default ().show_percentage);
+        show_percent_switch = new Wingpanel.Widgets.Switch (_("Show Percentage"), sm.show_percentage);
         show_settings_button = new Wingpanel.Widgets.Button (_("Power Settings…"));
 
         if (is_in_session) {
@@ -81,6 +81,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
             if (has_separator != had_separator) {
                 if (has_separator) {
                     this.pack_start (last_separator = new Wingpanel.Widgets.Separator ());
+                    last_separator.show ();
                 } else {
                     this.remove (last_separator);
                     last_separator = null;
@@ -99,15 +100,16 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
                         device_separator = new Wingpanel.Widgets.Separator ();
                         this.pack_start (device_separator);
                         this.reorder_child (device_separator, 1);
+                        device_separator.show ();
                     } else {
-                        this.remove(device_separator);
+                        this.remove (device_separator);
                         device_separator = null;
                     }
                 }
             }
         });
 
-        Services.SettingsManager.get_default ().schema.bind ("show-percentage", show_percent_switch.get_switch (), "active", SettingsBindFlags.DEFAULT);
+        sm.schema.bind ("show-percentage", show_percent_switch.get_switch (), "active", SettingsBindFlags.DEFAULT);
 
         show_settings_button.clicked.connect (show_settings);
     }
