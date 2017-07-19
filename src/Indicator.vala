@@ -76,7 +76,13 @@ public class Power.Indicator : Wingpanel.Indicator {
 
     private void update_visibility () {
         var dm = Services.DeviceManager.get_default ();
-        visible = (dm.has_battery || dm.backlight.present);
+        
+        bool should_be_visible = (dm.has_battery || dm.backlight.present);
+        if (visible != should_be_visible) {
+            /* NOTE: popover closes every time you set visibility, so change property only when needed */
+            visible = should_be_visible;
+        }
+        
         if (visible) {
             if (dm.has_battery) {
                 update_primary_battery ();
@@ -92,8 +98,10 @@ public class Power.Indicator : Wingpanel.Indicator {
         }
 
         primary_battery = Services.DeviceManager.get_default ().primary_battery;
-        show_primary_battery_data ();
-        primary_battery.properties_updated.connect (show_primary_battery_data);
+        if (primary_battery != null) {
+            show_primary_battery_data ();
+            primary_battery.properties_updated.connect (show_primary_battery_data);
+        }
     }
 
     private void show_primary_battery_data () {
