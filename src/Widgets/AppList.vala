@@ -83,7 +83,7 @@ public class Power.Widgets.AppList : Gtk.Grid {
             return true;
         });
 
-            show_all ();
+        show_all ();
     }
 
     private class AppRow : Gtk.Grid {
