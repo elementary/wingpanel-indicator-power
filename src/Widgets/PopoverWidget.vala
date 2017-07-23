@@ -39,8 +39,9 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
         if (dm.has_battery) {
             debug ("show list of batteries");
             pack_start (device_list);
-            if (dm.backlight.present)
+            if (dm.backlight.present) {
               pack_start (new Wingpanel.Widgets.Separator ());
+            }
         }
 
         if (dm.backlight.present) {
