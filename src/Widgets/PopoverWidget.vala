@@ -47,9 +47,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
                 device_separator = new Wingpanel.Widgets.Separator ();
                 pack_start (device_separator);
             }
-        }
 
-        if (dm.backlight.present) {
             debug ("show brightness slider");
             screen_brightness = new ScreenBrightness ();
             pack_start (screen_brightness);
