@@ -86,13 +86,10 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
     }
 
     private void show_settings () {
-        var list = new List<string> ();
-        list.append ("power");
         try {
-            var appinfo = AppInfo.create_from_commandline ("switchboard", null, AppInfoCreateFlags.SUPPORTS_URIS);
-            appinfo.launch_uris (list, null);
+            AppInfo.launch_default_for_uri ("settings://power", null);
         } catch (Error e) {
-            warning ("%s\n", e.message);
+            warning ("Failed to open power settings: %s", e.message);
         }
 
         settings_shown ();
