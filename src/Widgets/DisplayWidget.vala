@@ -47,7 +47,9 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
             if (allow_percent && e.button == Gdk.BUTTON_MIDDLE) {
                 Services.SettingsManager sm = Services.SettingsManager.get_default ();
                 sm.show_percentage = !sm.show_percentage;
+                return true;
             }
+            return false;
         });
     }
 
