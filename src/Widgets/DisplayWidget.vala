@@ -42,6 +42,15 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
         add (percent_revealer);
 
         Services.SettingsManager.get_default ().notify["show-percentage"].connect (update_revealer);
+
+        this.button_press_event.connect ((e) => {
+            if (allow_percent && e.button == Gdk.BUTTON_MIDDLE) {
+                Services.SettingsManager sm = Services.SettingsManager.get_default ();
+                sm.show_percentage = !sm.show_percentage;
+                return true;
+            }
+            return false;
+        });
     }
 
     public void set_icon_name (string icon_name, bool allow_percent) {
