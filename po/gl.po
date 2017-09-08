@@ -3,125 +3,126 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-03 22:10-0600\n"
-"PO-Revision-Date: 2015-05-23 21:47+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2017-09-08 16:32+0000\n"
+"Last-Translator: Thiago Galvani <thiagopaiva99@gmail.com>\n"
+"Language-Team: Galician <https://weblate.elementary.io/projects/wingpanel"
+"/wingpanel-indicator-power/gl/>\n"
+"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.16\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
 
 #: ../src/Indicator.vala:31
 msgid "Power"
-msgstr ""
+msgstr "Poder"
 
 #: ../src/Indicator.vala:32
 msgid "Power indicator"
-msgstr ""
+msgstr "Indicador de potencia"
 
 #: ../src/Widgets/AppList.vala:54
 msgid "Apps Using Lots of Power"
-msgstr ""
+msgstr "Aplicacións que usan moito poder"
 
 #: ../src/Widgets/PopoverWidget.vala:51
 msgid "Show Percentage"
-msgstr ""
+msgstr "Mostrar porcentaxe"
 
 #: ../src/Widgets/PopoverWidget.vala:52
 msgid "Power Settings…"
-msgstr ""
+msgstr "Configuración de enerxía …"
 
 #: ../src/Utils.vala:80
 msgid "Battery"
-msgstr ""
+msgstr "Batería"
 
 #: ../src/Utils.vala:81
 msgid "UPS"
-msgstr ""
+msgstr "UPS"
 
 #: ../src/Utils.vala:82
 msgid "Display"
-msgstr ""
+msgstr "Mostrar"
 
 #: ../src/Utils.vala:83
 msgid "Mouse"
-msgstr ""
+msgstr "Mouse"
 
 #: ../src/Utils.vala:84
 msgid "Keyboard"
-msgstr ""
+msgstr "Teclado"
 
 #: ../src/Utils.vala:85
 msgid "PDA"
-msgstr ""
+msgstr "PDA"
 
 #: ../src/Utils.vala:86
 msgid "Phone"
-msgstr ""
+msgstr "Teléfono"
 
 #: ../src/Utils.vala:87
 msgid "Device"
-msgstr ""
+msgstr "Dispositivo"
 
 #: ../src/Utils.vala:102
 msgid "Calculating…"
-msgstr ""
+msgstr "Calculando …"
 
 #: ../src/Utils.vala:108
 msgid "%i%% charged"
-msgstr ""
+msgstr "%i%% cargados"
 
 #: ../src/Utils.vala:128
 msgid "%i%% remaining"
-msgstr ""
+msgstr "%i%% restantes"
 
 #: ../src/Utils.vala:154
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld día ata cheo"
+msgstr[1] "%lld días ata cheos"
 
 #: ../src/Utils.vala:155
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld hora ata chea"
+msgstr[1] "%lld horas ata cheas"
 
 #: ../src/Utils.vala:156
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld minuto ata cheo"
+msgstr[1] "%lld minutos ata completar"
 
 #: ../src/Utils.vala:157
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld segundo ata cheo"
+msgstr[1] "%lld segundos ata completar"
 
 #: ../src/Utils.vala:158
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld día ata que estea baleiro"
+msgstr[1] "%lld días ata que estea baleiro"
 
 #: ../src/Utils.vala:159
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld hora ata que estea baleira"
+msgstr[1] "%lld horas ata que estea baleira"
 
 #: ../src/Utils.vala:160
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld minuto ata que estea baleiro"
+msgstr[1] "%lld minutos ata que estea baleiro"
 
 #: ../src/Utils.vala:161
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld segundo ata baleiro"
+msgstr[1] "%lld segundos ata que estea baleiro"
