@@ -70,10 +70,21 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
         }
     }
 
-    private async void on_scale_value_changed () {
+    public async void on_scale_value_changed () {
         int val = (int) brightness_slider.get_value ();
         try {
-          #if OLD_GSD
+          set_brightness (val);
+        } catch (IOError e) {
+            warning ("screen brightness error %s", e.message);
+        }
+    }
+
+    public Gtk.Scale get_scale () {
+        return brightness_slider;
+    }
+
+    private void set_brightness (int val) {
+        #if OLD_GSD
             if (iscreen.get_percentage () != val) {
                 iscreen.set_percentage (val);
             }
@@ -82,8 +93,5 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
                 iscreen.brightness = val;
             }
           #endif
-        } catch (IOError e) {
-            warning ("screen brightness error %s", e.message);
-        }
     }
 }

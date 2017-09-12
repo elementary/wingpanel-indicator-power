@@ -27,6 +27,8 @@ public class Power.Indicator : Wingpanel.Indicator {
     private Services.Device primary_battery;
     private bool notify_battery = false;
 
+    private Widgets.ScreenBrightness screen_brightness;
+
     public Indicator (bool is_in_session) {
         Object (code_name : Wingpanel.Indicator.POWER,
                 display_name : _("Power"),
@@ -34,6 +36,30 @@ public class Power.Indicator : Wingpanel.Indicator {
 
         this.is_in_session = is_in_session;
     }
+
+    construct {
+        display_widget = new Widgets.DisplayWidget ();
+        screen_brightness = new Widgets.ScreenBrightness ();
+
+        display_widget.scroll_event.connect (on_icon_scroll_event);
+
+    }
+
+    private bool on_icon_scroll_event (Gdk.EventScroll e) {
+            var scale = screen_brightness.get_scale();
+            int dir = 0;
+            if (e.direction == Gdk.ScrollDirection.UP) {
+                dir = 1;
+                scale.set_value(scale.get_value () + 10);
+            } else if (e.direction == Gdk.ScrollDirection.DOWN) {
+                scale.set_value(scale.get_value () - 10);
+                dir = -1;
+            }
+            //  screen_brightness.on_scale_value_changed();
+            message ("%i", (int) screen_brightness.get_scale().get_value ());
+
+            return Gdk.EVENT_STOP;
+    }    
 
     public override Gtk.Widget get_display_widget () {
         if (display_widget == null) {

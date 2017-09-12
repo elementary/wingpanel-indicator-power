@@ -51,22 +51,7 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
             }
             return false;
         });
-        this.scroll_event.connect (on_icon_scroll_event);
-    }
 
-        private bool on_icon_scroll_event (Gdk.EventScroll e) {
-
-            int dir = 0;
-            if (e.direction == Gdk.ScrollDirection.UP) {
-                dir = 1;
-            } else if (e.direction == Gdk.ScrollDirection.DOWN) {
-                dir = -1;
-            }
-            Power.Widgets.ScreenBrightness
-
-            message ("%i", dir);
-
-            return Gdk.EVENT_STOP;
     }
 
     public void set_icon_name (string icon_name, bool allow_percent) {
