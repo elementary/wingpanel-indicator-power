@@ -34,13 +34,11 @@ public class Power.Indicator : Wingpanel.Indicator {
                 display_name : _("Power"),
                 description: _("Power indicator"));
 
-        this.is_in_session = is_in_session;
-
         display_widget = new Widgets.DisplayWidget ();
         screen_brightness = new Widgets.ScreenBrightness ();
         popover_widget = new Widgets.PopoverWidget (screen_brightness, is_in_session);
 
-        popover_widget.settings_shown.connect (() => this.close ());
+        popover_widget.settings_shown.connect (() => close ());
 
         var dm = Services.DeviceManager.get_default ();
 
@@ -61,8 +59,6 @@ public class Power.Indicator : Wingpanel.Indicator {
             } else if (e.direction == Gdk.ScrollDirection.DOWN) {
                 screen_brightness.set_value(screen_brightness.get_value () - 10);
             }
-            message ("%i", screen_brightness.get_value ());
-
             return Gdk.EVENT_STOP;
     }    
 

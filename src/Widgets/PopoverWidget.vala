@@ -30,7 +30,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
     public signal void settings_shown ();
 
-    public PopoverWidget (Widgets.ScreenBrightness _screen_brightness, bool is_in_session) {
+    public PopoverWidget (Widgets.ScreenBrightness screen_brightness, bool is_in_session) {
         Object (is_in_session: is_in_session, orientation: Gtk.Orientation.VERTICAL);
 
         var dm = Services.DeviceManager.get_default ();
@@ -45,7 +45,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
                 device_separator = new Wingpanel.Widgets.Separator ();
                 pack_start (device_separator);
             }
-        screen_brightness = _screen_brightness;
+            this.screen_brightness = screen_brightness;
             add (screen_brightness);
         }
 
