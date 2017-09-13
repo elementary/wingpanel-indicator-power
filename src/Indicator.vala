@@ -35,28 +35,33 @@ public class Power.Indicator : Wingpanel.Indicator {
                 description: _("Power indicator"));
 
         this.is_in_session = is_in_session;
-    }
 
-    construct {
         display_widget = new Widgets.DisplayWidget ();
         screen_brightness = new Widgets.ScreenBrightness ();
+        popover_widget = new Widgets.PopoverWidget (screen_brightness, is_in_session);
+
+        popover_widget.settings_shown.connect (() => this.close ());
+
+        var dm = Services.DeviceManager.get_default ();
+
+        /* No need to display the indicator when the device is completely in AC mode */
+        if (dm.has_battery || dm.backlight.present) {
+            update_visibility ();
+        }
+        dm.notify["has-battery"].connect (update_visibility);        
 
         display_widget.scroll_event.connect (on_icon_scroll_event);
-
     }
 
+    construct { }
+
     private bool on_icon_scroll_event (Gdk.EventScroll e) {
-            var scale = screen_brightness.get_scale();
-            int dir = 0;
             if (e.direction == Gdk.ScrollDirection.UP) {
-                dir = 1;
-                scale.set_value(scale.get_value () + 10);
+                screen_brightness.set_value(screen_brightness.get_value () + 10);
             } else if (e.direction == Gdk.ScrollDirection.DOWN) {
-                scale.set_value(scale.get_value () - 10);
-                dir = -1;
+                screen_brightness.set_value(screen_brightness.get_value () - 10);
             }
-            //  screen_brightness.on_scale_value_changed();
-            message ("%i", (int) screen_brightness.get_scale().get_value ());
+            message ("%i", screen_brightness.get_value ());
 
             return Gdk.EVENT_STOP;
     }    
@@ -71,7 +76,7 @@ public class Power.Indicator : Wingpanel.Indicator {
 
     public override Gtk.Widget? get_widget () {
         if (popover_widget == null) {
-            popover_widget = new Widgets.PopoverWidget (is_in_session);
+            popover_widget = new Widgets.PopoverWidget (screen_brightness, is_in_session);
             popover_widget.settings_shown.connect (() => this.close ());
 
             var dm = Services.DeviceManager.get_default ();
