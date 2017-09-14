@@ -33,9 +33,11 @@ public class Power.Indicator : Wingpanel.Indicator {
         Object (code_name : Wingpanel.Indicator.POWER,
                 display_name : _("Power"),
                 description: _("Power indicator"));
+    }
 
-        display_widget = new Widgets.DisplayWidget ();
+    construct {
         screen_brightness = new Widgets.ScreenBrightness ();
+        display_widget = new Widgets.DisplayWidget (screen_brightness);
         popover_widget = new Widgets.PopoverWidget (screen_brightness, is_in_session);
 
         popover_widget.settings_shown.connect (() => close ());
@@ -47,43 +49,13 @@ public class Power.Indicator : Wingpanel.Indicator {
             update_visibility ();
         }
         dm.notify["has-battery"].connect (update_visibility);        
-
-        display_widget.scroll_event.connect (on_icon_scroll_event);
     }
 
-    construct { }
-
-    private bool on_icon_scroll_event (Gdk.EventScroll e) {
-            if (e.direction == Gdk.ScrollDirection.UP) {
-                screen_brightness.set_value(screen_brightness.get_value () + 10);
-            } else if (e.direction == Gdk.ScrollDirection.DOWN) {
-                screen_brightness.set_value(screen_brightness.get_value () - 10);
-            }
-            return Gdk.EVENT_STOP;
-    }    
-
     public override Gtk.Widget get_display_widget () {
-        if (display_widget == null) {
-            display_widget = new Widgets.DisplayWidget ();
-        }
-
         return display_widget;
     }
 
     public override Gtk.Widget? get_widget () {
-        if (popover_widget == null) {
-            popover_widget = new Widgets.PopoverWidget (screen_brightness, is_in_session);
-            popover_widget.settings_shown.connect (() => this.close ());
-
-            var dm = Services.DeviceManager.get_default ();
-
-            /* No need to display the indicator when the device is completely in AC mode */
-            if (dm.has_battery || dm.backlight.present) {
-                update_visibility ();
-            }
-            dm.notify["has-battery"].connect (update_visibility);
-        }
-
         return popover_widget;
     }
 

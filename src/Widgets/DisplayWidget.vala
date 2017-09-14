@@ -22,6 +22,11 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
     private Gtk.Revealer percent_revealer;
     private Gtk.Label percent_label;
     private bool allow_percent = false;
+    private Widgets.ScreenBrightness screen_brightness;
+
+    public DisplayWidget (Widgets.ScreenBrightness screen_brightness) {
+        this.screen_brightness = screen_brightness;
+    }
 
     construct {
         valign = Gtk.Align.CENTER;
@@ -50,6 +55,10 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
                 return true;
             }
             return false;
+        });
+
+        this.scroll_event.connect ((e) => {
+            screen_brightness.on_scroll (e);
         });
 
     }

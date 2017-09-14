@@ -22,39 +22,45 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
     private const string DBUS_NAME = "org.gnome.SettingsDaemon";
 
     private Gtk.Image image;
-    private Gtk.Scale brightness_slider;
+    private Gtk.Scale scale;
     private Services.DBusInterfaces.PowerSettings iscreen;
+
+    public int val {
+        get { return (int) scale.get_value (); }
+        set { scale.set_value (value); }
+    }
+
+    const int STEP = 10;
 
     construct {
         orientation = Gtk.Orientation.HORIZONTAL;
         column_spacing = 6;
         init_bus.begin ();
 
+        var image_box = new Gtk.EventBox ();
         image = new Gtk.Image.from_icon_name ("brightness-display-symbolic", Gtk.IconSize.DIALOG);
-        image.margin_start = 6;
-        attach (image, 0, 0, 1, 1);
+        image_box.halign = Gtk.Align.START;
+        image_box.add (image);
+        image_box.scroll_event.connect (on_scroll);
+        attach (image_box, 0, 0, 1, 1);
 
-        brightness_slider = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 10);
-        brightness_slider.adjustment.page_increment = 10;
-        brightness_slider.margin_end = 12;
-        brightness_slider.hexpand = true;
-        brightness_slider.draw_value = false;
-        brightness_slider.width_request = 175;
-
-        brightness_slider.value_changed.connect (() => {
-            on_scale_value_changed.begin ();
-        });
-
-        update_slider ();
-
-        attach (brightness_slider, 1, 0, 1, 1);
+        scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, STEP);
+        scale.adjustment.page_increment = STEP;
+        scale.margin_end = 12;
+        scale.hexpand = true;
+        scale.draw_value = false;
+        scale.width_request = 175;
+        scale.value_changed.connect (on_scale_value_changed);
+        attach (scale, 1, 0, 1, 1);
     }
 
     public void update_slider () {
       #if OLD_GSD
-        brightness_slider.set_value (iscreen.get_percentage ());
+        scale.val = iscreen.get_percentage ();
       #else
-        brightness_slider.set_value (iscreen.brightness);
+        // When trying to use val property:
+        // error: The name `val' does not exist in the context of `Gtk.Scale'
+        scale.set_value (iscreen.brightness);
       #endif
     }
 
@@ -66,8 +72,7 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
         }
     }
 
-    public async void on_scale_value_changed () {
-        int val = this.get_value ();
+    private async void on_scale_value_changed () {
         try {
             #if OLD_GSD
                 if (iscreen.get_percentage () != val) {
@@ -83,12 +88,13 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
         }
     }
 
-    public int get_value () {
-        return (int) brightness_slider.get_value ();
-    }
-
-    public void set_value (int value) {
-        brightness_slider.set_value (value);
-    }
+    public bool on_scroll (Gdk.EventScroll e) {
+            if (e.direction == Gdk.ScrollDirection.UP) {
+                val += STEP;
+            } else if (e.direction == Gdk.ScrollDirection.DOWN) {
+                val -= STEP;
+            }
+            return Gdk.EVENT_STOP;
+        }
 
 }
