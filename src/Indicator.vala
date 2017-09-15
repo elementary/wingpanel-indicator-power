@@ -27,8 +27,6 @@ public class Power.Indicator : Wingpanel.Indicator {
     private Services.Device primary_battery;
     private bool notify_battery = false;
 
-    private Widgets.ScreenBrightness screen_brightness;
-
     public Indicator (bool is_in_session) {
         Object (code_name : Wingpanel.Indicator.POWER,
                 display_name : _("Power"),
@@ -36,9 +34,8 @@ public class Power.Indicator : Wingpanel.Indicator {
     }
 
     construct {
-        screen_brightness = new Widgets.ScreenBrightness ();
-        display_widget = new Widgets.DisplayWidget (screen_brightness);
-        popover_widget = new Widgets.PopoverWidget (screen_brightness, is_in_session);
+        popover_widget = new Widgets.PopoverWidget (is_in_session);
+        display_widget = new Widgets.DisplayWidget (popover_widget);
 
         popover_widget.settings_shown.connect (() => close ());
 

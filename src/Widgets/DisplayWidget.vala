@@ -22,10 +22,10 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
     private Gtk.Revealer percent_revealer;
     private Gtk.Label percent_label;
     private bool allow_percent = false;
-    private Widgets.ScreenBrightness screen_brightness;
+    private Widgets.PopoverWidget popover_widget;
 
-    public DisplayWidget (Widgets.ScreenBrightness screen_brightness) {
-        this.screen_brightness = screen_brightness;
+    public DisplayWidget (Widgets.PopoverWidget popover_widget) {
+        this.popover_widget = popover_widget;
     }
 
     construct {
@@ -58,7 +58,7 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
         });
 
         this.scroll_event.connect ((e) => {
-            screen_brightness.on_scroll (e);
+            popover_widget.on_scroll_brightness_slider (e);
         });
 
     }
