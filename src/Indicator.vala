@@ -18,7 +18,7 @@
  */
 
 public class Power.Indicator : Wingpanel.Indicator {
-    private bool is_in_session { get; construct set; }
+    public bool is_in_session { get; construct set; }
 
     private Widgets.DisplayWidget? display_widget = null;
 
