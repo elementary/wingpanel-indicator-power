@@ -32,14 +32,13 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
     public PopoverWidget (bool is_in_session) {
         Object (is_in_session: is_in_session, orientation: Gtk.Orientation.VERTICAL);
-
-        brightness_slider = new BrightnessSlider ();
-
+    }
+    
+    construct {
         var dm = Services.DeviceManager.get_default ();
         var sm = Services.SettingsManager.get_default ();
 
         device_list = new DeviceList ();
-        //debug ("show list of batteries");
         pack_start (device_list);
 
         if (dm.backlight.present) {
@@ -47,6 +46,9 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
                 device_separator = new Wingpanel.Widgets.Separator ();
                 pack_start (device_separator);
             }
+
+            brightness_slider = new BrightnessSlider ();
+
             add (brightness_slider);
         }
 
@@ -55,17 +57,17 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
         if (is_in_session) {
             app_list = new AppList ();
-            this.pack_start (app_list); /* The app-list contains an own separator that is displayed if necessary. */
+            pack_start (app_list); /* The app-list contains an own separator that is displayed if necessary. */
         }
 
         if (is_in_session || dm.has_battery) {
             last_separator = new Wingpanel.Widgets.Separator ();
-            this.pack_start (last_separator);
+            pack_start (last_separator);
             if (is_in_session) {
-                this.pack_end (show_settings_button);
+                pack_end (show_settings_button);
             }
             if (dm.has_battery) {
-                this.pack_end (show_percent_switch);
+                pack_end (show_percent_switch);
             }
         }
 
@@ -75,17 +77,17 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
             
             if (has_separator != had_separator) {
                 if (has_separator) {
-                    this.pack_start (last_separator = new Wingpanel.Widgets.Separator ());
+                    pack_start (last_separator = new Wingpanel.Widgets.Separator ());
                     last_separator.show ();
                 } else {
-                    this.remove (last_separator);
+                    remove (last_separator);
                     last_separator = null;
                 }
             }
 
-            this.remove (show_percent_switch);
+            remove (show_percent_switch);
             if (dm.has_battery) {
-                this.pack_end (show_percent_switch);
+                pack_end (show_percent_switch);
             }
 
             if (dm.backlight.present) {
@@ -93,11 +95,11 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
                 if (dm.has_battery != had_battery) {
                     if (dm.has_battery) {
                         device_separator = new Wingpanel.Widgets.Separator ();
-                        this.pack_start (device_separator);
-                        this.reorder_child (device_separator, 1);
+                        pack_start (device_separator);
+                        reorder_child (device_separator, 1);
                         device_separator.show ();
                     } else {
-                        this.remove (device_separator);
+                        remove (device_separator);
                         device_separator = null;
                     }
                 }
