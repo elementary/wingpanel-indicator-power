@@ -21,7 +21,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
     public bool is_in_session { get; construct; default = false; }
     private DeviceList device_list;
     private Wingpanel.Widgets.Separator device_separator = null;
-    private Widgets.ScreenBrightness screen_brightness;
+    private Widgets.BrightnessSlider brightness_slider;
     private AppList app_list;
     private Wingpanel.Widgets.Separator last_separator = null;
 
@@ -33,7 +33,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
     public PopoverWidget (bool is_in_session) {
         Object (is_in_session: is_in_session, orientation: Gtk.Orientation.VERTICAL);
 
-        screen_brightness = new ScreenBrightness ();
+        brightness_slider = new BrightnessSlider ();
 
         var dm = Services.DeviceManager.get_default ();
         var sm = Services.SettingsManager.get_default ();
@@ -47,7 +47,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
                 device_separator = new Wingpanel.Widgets.Separator ();
                 pack_start (device_separator);
             }
-            add (screen_brightness);
+            add (brightness_slider);
         }
 
         show_percent_switch = new Wingpanel.Widgets.Switch (_("Show Percentage"), sm.show_percentage);
@@ -116,11 +116,11 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
     }
 
     public void update_brightness_slider () {
-        screen_brightness.update_slider ();
+        brightness_slider.update_slider ();
     }
 
     public void on_scroll_brightness_slider (Gdk.EventScroll e) {
-        screen_brightness.on_scroll (e);
+        brightness_slider.on_scroll (e);
     }
 
     private void show_settings () {

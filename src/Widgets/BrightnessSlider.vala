@@ -17,7 +17,7 @@
  * Boston, MA 02110-1301, USA.
  */
 
-public class Power.Widgets.ScreenBrightness : Gtk.Grid {
+public class Power.Widgets.BrightnessSlider : Gtk.Grid {
     private const string DBUS_PATH = "/org/gnome/SettingsDaemon/Power";
     private const string DBUS_NAME = "org.gnome.SettingsDaemon";
 
