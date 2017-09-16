@@ -33,7 +33,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
     public PopoverWidget (bool is_in_session) {
         Object (is_in_session: is_in_session, orientation: Gtk.Orientation.VERTICAL);
     }
-    
+
     construct {
         var dm = Services.DeviceManager.get_default ();
         var sm = Services.SettingsManager.get_default ();
