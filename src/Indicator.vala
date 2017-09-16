@@ -18,7 +18,7 @@
  */
 
 public class Power.Indicator : Wingpanel.Indicator {
-    private bool is_in_session = false;
+    private bool is_in_session { get; construct set; }
 
     private Widgets.DisplayWidget? display_widget = null;
 
@@ -30,7 +30,8 @@ public class Power.Indicator : Wingpanel.Indicator {
     public Indicator (bool is_in_session) {
         Object (code_name : Wingpanel.Indicator.POWER,
                 display_name : _("Power"),
-                description: _("Power indicator"));
+                description: _("Power indicator"),
+                is_in_session: is_in_session);
     }
 
     construct {
