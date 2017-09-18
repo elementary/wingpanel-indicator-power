@@ -18,14 +18,19 @@
  */
 
 public class Power.Indicator : Wingpanel.Indicator {
+    private const string DBUS_PATH = "/org/gnome/SettingsDaemon/Power";
+    private const string DBUS_NAME = "org.gnome.SettingsDaemon";
+
     public bool is_in_session { get; construct set; }
 
     private Widgets.DisplayWidget? display_widget = null;
-
     private Widgets.PopoverWidget? popover_widget = null;
 
     private Services.Device primary_battery;
+    private Services.DBusInterfaces.PowerSettings screen;
+
     private bool notify_battery = false;
+    
 
     public Indicator (bool is_in_session) {
         Object (code_name : Wingpanel.Indicator.POWER,
@@ -35,10 +40,15 @@ public class Power.Indicator : Wingpanel.Indicator {
     }
 
     construct {
+        init_bus ();
         popover_widget = new Widgets.PopoverWidget (is_in_session);
-        display_widget = new Widgets.DisplayWidget (popover_widget);
-
         popover_widget.settings_shown.connect (() => close ());
+        popover_widget.update_brightness.connect (on_update_brightness);
+
+        display_widget = new Widgets.DisplayWidget ();
+        display_widget.indicator_scroll.connect ((event)=> {
+            popover_widget.on_scroll_brightness_slider (event);
+        });
 
         var dm = Services.DeviceManager.get_default ();
 
@@ -59,7 +69,7 @@ public class Power.Indicator : Wingpanel.Indicator {
 
     public override void opened () {
         Services.ProcessMonitor.Monitor.get_default ().update ();
-        popover_widget.update_brightness_slider ();
+        popover_widget.update_slider (screen.brightness);
     }
 
     public override void closed () {
@@ -125,6 +135,24 @@ public class Power.Indicator : Wingpanel.Indicator {
 
             /* Debug output for designers */
             debug ("Icon changed to \"%s\"", icon_name);
+        }
+    }
+
+    private async void init_bus () {
+        try {
+            screen = Bus.get_proxy_sync (BusType.SESSION, DBUS_NAME, DBUS_PATH, DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
+        } catch (IOError e) {
+            warning ("screen brightness error %s", e.message);
+        }
+    }
+
+    private void on_update_brightness (int val) {
+        try {
+            if (screen.brightness != val) {
+                screen.brightness = val;
+            }
+        } catch (IOError e) {
+            warning ("screen brightness error %s", e.message);
         }
     }
 }

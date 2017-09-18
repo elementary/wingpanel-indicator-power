@@ -22,11 +22,8 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
     private Gtk.Revealer percent_revealer;
     private Gtk.Label percent_label;
     private bool allow_percent = false;
-    private Widgets.PopoverWidget popover_widget;
 
-    public DisplayWidget (Widgets.PopoverWidget popover_widget) {
-        this.popover_widget = popover_widget;
-    }
+    public signal void indicator_scroll (Gdk.EventScroll event); 
 
     construct {
         valign = Gtk.Align.CENTER;
@@ -58,7 +55,7 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
         });
 
         this.scroll_event.connect ((e) => {
-            popover_widget.on_scroll_brightness_slider (e);
+            indicator_scroll (e);
         });
 
     }

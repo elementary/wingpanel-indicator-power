@@ -18,24 +18,21 @@
  */
 
 public class Power.Widgets.BrightnessSlider : Gtk.Grid {
-    private const string DBUS_PATH = "/org/gnome/SettingsDaemon/Power";
-    private const string DBUS_NAME = "org.gnome.SettingsDaemon";
+    private const int STEP = 10;
 
     private Gtk.Image image;
     private Gtk.Scale scale;
-    private Services.DBusInterfaces.PowerSettings iscreen;
 
     public int val {
         get { return (int) scale.get_value (); }
         set { scale.set_value (value); }
     }
 
-    const int STEP = 10;
+    public signal void update_brightness (int val); 
 
     construct {
         orientation = Gtk.Orientation.HORIZONTAL;
         column_spacing = 6;
-        init_bus.begin ();
 
         var image_box = new Gtk.EventBox ();
         image = new Gtk.Image.from_icon_name ("brightness-display-symbolic", Gtk.IconSize.DIALOG);
@@ -54,38 +51,12 @@ public class Power.Widgets.BrightnessSlider : Gtk.Grid {
         attach (scale, 1, 0, 1, 1);
     }
 
-    public void update_slider () {
-      #if OLD_GSD
-        scale.val = iscreen.get_percentage ();
-      #else
-        // When trying to use val property:
-        // error: The name `val' does not exist in the context of `Gtk.Scale'
-        scale.set_value (iscreen.brightness);
-      #endif
-    }
-
-    private async void init_bus () {
-        try {
-            iscreen = Bus.get_proxy_sync (BusType.SESSION, DBUS_NAME, DBUS_PATH, DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
-        } catch (IOError e) {
-            warning ("screen brightness error %s", e.message);
-        }
+    public void update_slider (int val) {
+        this.val = val;
     }
 
     private async void on_scale_value_changed () {
-        try {
-            #if OLD_GSD
-                if (iscreen.get_percentage () != val) {
-                    iscreen.set_percentage (val);
-                }
-          #else
-                if (iscreen.brightness != val) {
-                    iscreen.brightness = val;
-                }
-          #endif
-        } catch (IOError e) {
-            warning ("screen brightness error %s", e.message);
-        }
+        update_brightness (val);
     }
 
     public bool on_scroll (Gdk.EventScroll e) {

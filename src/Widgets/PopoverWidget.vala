@@ -29,6 +29,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
     private Wingpanel.Widgets.Button show_settings_button;
 
     public signal void settings_shown ();
+    public signal void update_brightness (int val);
 
     public PopoverWidget (bool is_in_session) {
         Object (is_in_session: is_in_session, orientation: Gtk.Orientation.VERTICAL);
@@ -48,6 +49,9 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
             }
 
             brightness_slider = new BrightnessSlider ();
+            brightness_slider.update_brightness.connect ((val) => {
+                update_brightness (val);
+            });
 
             add (brightness_slider);
         }
@@ -117,8 +121,8 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
         }
     }
 
-    public void update_brightness_slider () {
-        brightness_slider.update_slider ();
+    public void update_slider (int val) {
+        brightness_slider.update_slider (val);
     }
 
     public void on_scroll_brightness_slider (Gdk.EventScroll e) {
@@ -131,7 +135,6 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
         } catch (Error e) {
             warning ("Failed to open power settings: %s", e.message);
         }
-
         settings_shown ();
     }
 }
