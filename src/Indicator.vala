@@ -40,7 +40,7 @@ public class Power.Indicator : Wingpanel.Indicator {
     }
 
     construct {
-        init_bus ();
+        init_bus.begin ();
         popover_widget = new Widgets.PopoverWidget (is_in_session);
         popover_widget.settings_shown.connect (() => close ());
         popover_widget.update_brightness.connect (on_update_brightness);
