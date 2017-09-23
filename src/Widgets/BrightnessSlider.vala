@@ -51,10 +51,6 @@ public class Power.Widgets.BrightnessSlider : Gtk.Grid {
         attach (scale, 1, 0, 1, 1);
     }
 
-    public void update_slider (int val) {
-        this.val = val;
-    }
-
     private async void on_scale_value_changed () {
         update_brightness (val);
     }

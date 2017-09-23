@@ -122,7 +122,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
     }
 
     public void update_slider (int val) {
-        brightness_slider.update_slider (val);
+        brightness_slider.val = val;
     }
 
     public void on_scroll_brightness_slider (Gdk.EventScroll e) {
