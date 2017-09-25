@@ -38,7 +38,9 @@ public class Power.Widgets.BrightnessSlider : Gtk.Grid {
         image = new Gtk.Image.from_icon_name ("brightness-display-symbolic", Gtk.IconSize.DIALOG);
         image_box.halign = Gtk.Align.START;
         image_box.add (image);
-        image_box.scroll_event.connect (on_scroll);
+        image_box.scroll_event.connect ((e) => {
+            val += Power.Utils.handle_scroll(e);
+        });
         attach (image_box, 0, 0, 1, 1);
 
         scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, STEP);
@@ -54,14 +56,5 @@ public class Power.Widgets.BrightnessSlider : Gtk.Grid {
     private async void on_scale_value_changed () {
         update_brightness (val);
     }
-
-    public bool on_scroll (Gdk.EventScroll e) {
-            if (e.direction == Gdk.ScrollDirection.UP) {
-                val += STEP;
-            } else if (e.direction == Gdk.ScrollDirection.DOWN) {
-                val -= STEP;
-            }
-            return Gdk.EVENT_STOP;
-        }
 
 }

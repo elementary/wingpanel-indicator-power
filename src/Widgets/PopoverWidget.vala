@@ -121,15 +121,11 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
         }
     }
 
-    public void update_slider (int val) {
-        brightness_slider.val = val;
+    public void update_slider (int step) {
+        brightness_slider.val = step;
     }
 
-    public void on_scroll_brightness_slider (Gdk.EventScroll e) {
-        brightness_slider.on_scroll (e);
-    }
-
-    private void show_settings () {
+     private void show_settings () {
         try {
             AppInfo.launch_default_for_uri ("settings://power", null);
         } catch (Error e) {

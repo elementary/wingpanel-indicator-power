@@ -46,8 +46,8 @@ public class Power.Indicator : Wingpanel.Indicator {
         popover_widget.update_brightness.connect (on_update_brightness);
 
         display_widget = new Widgets.DisplayWidget ();
-        display_widget.indicator_scroll.connect ((event)=> {
-            popover_widget.on_scroll_brightness_slider (event);
+        display_widget.indicator_scroll.connect ((step)=> {
+            popover_widget.update_slider (screen.brightness + step);
         });
 
         var dm = Services.DeviceManager.get_default ();

@@ -23,7 +23,7 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
     private Gtk.Label percent_label;
     private bool allow_percent = false;
 
-    public signal void indicator_scroll (Gdk.EventScroll event); 
+    public signal void indicator_scroll (int step); 
 
     construct {
         valign = Gtk.Align.CENTER;
@@ -55,7 +55,7 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
         });
 
         this.scroll_event.connect ((e) => {
-            indicator_scroll (e);
+            indicator_scroll (Power.Utils.handle_scroll(e));
         });
 
     }
