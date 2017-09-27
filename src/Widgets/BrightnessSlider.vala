@@ -28,7 +28,12 @@ public class Power.Widgets.BrightnessSlider : Gtk.Grid {
         set { scale.set_value (value); }
     }
 
-    public signal void update_brightness (int val); 
+    // The integer returned is a relative change in the brightness value (ie.
+    // a +10 increase or a -10 decrease)
+    public signal void brightness_change (int change);
+
+    // The integer returned is absolute
+    public signal void brightness_new_value (int new_value);
 
     construct {
         orientation = Gtk.Orientation.HORIZONTAL;
@@ -39,7 +44,7 @@ public class Power.Widgets.BrightnessSlider : Gtk.Grid {
         image_box.halign = Gtk.Align.START;
         image_box.add (image);
         image_box.scroll_event.connect ((e) => {
-            val += Power.Utils.handle_scroll(e);
+            brightness_change (Power.Utils.handle_scroll(e));
         });
         attach (image_box, 0, 0, 1, 1);
 
@@ -49,12 +54,10 @@ public class Power.Widgets.BrightnessSlider : Gtk.Grid {
         scale.hexpand = true;
         scale.draw_value = false;
         scale.width_request = 175;
-        scale.value_changed.connect (on_scale_value_changed);
+        scale.value_changed.connect (() => {
+            brightness_new_value(val);
+        });
         attach (scale, 1, 0, 1, 1);
-    }
-
-    private async void on_scale_value_changed () {
-        update_brightness (val);
     }
 
 }

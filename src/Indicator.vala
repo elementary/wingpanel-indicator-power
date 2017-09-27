@@ -30,7 +30,23 @@ public class Power.Indicator : Wingpanel.Indicator {
     private Services.DBusInterfaces.PowerSettings screen;
 
     private bool notify_battery = false;
-    
+
+    private int screen_brightness {
+        get {
+            return screen.brightness;
+        }
+
+        set {
+            try {
+                if (screen.brightness != value) {
+                    int new_value = value < 0 ? 0 : value;
+                    screen.brightness = new_value > 100 ? 100 : new_value;
+                }
+            } catch (IOError e) {
+                warning ("screen brightness error %s", e.message);
+            }
+        }
+    }
 
     public Indicator (bool is_in_session) {
         Object (code_name : Wingpanel.Indicator.POWER,
@@ -43,12 +59,13 @@ public class Power.Indicator : Wingpanel.Indicator {
         init_bus.begin ();
         popover_widget = new Widgets.PopoverWidget (is_in_session);
         popover_widget.settings_shown.connect (() => close ());
-        popover_widget.update_brightness.connect (on_update_brightness);
+        popover_widget.brightness_change.connect (on_brightness_change);
+        popover_widget.brightness_new_value.connect ((new_value) => {
+                screen_brightness = new_value;
+        });
 
         display_widget = new Widgets.DisplayWidget ();
-        display_widget.indicator_scroll.connect ((step)=> {
-            popover_widget.update_slider (screen.brightness + step);
-        });
+        display_widget.brightness_change.connect (on_brightness_change);
 
         var dm = Services.DeviceManager.get_default ();
 
@@ -56,7 +73,7 @@ public class Power.Indicator : Wingpanel.Indicator {
         if (dm.has_battery || dm.backlight.present) {
             update_visibility ();
         }
-        dm.notify["has-battery"].connect (update_visibility);        
+        dm.notify["has-battery"].connect (update_visibility);
     }
 
     public override Gtk.Widget get_display_widget () {
@@ -69,7 +86,7 @@ public class Power.Indicator : Wingpanel.Indicator {
 
     public override void opened () {
         Services.ProcessMonitor.Monitor.get_default ().update ();
-        popover_widget.update_slider (screen.brightness);
+        popover_widget.update_slider (screen_brightness);
     }
 
     public override void closed () {
@@ -84,7 +101,7 @@ public class Power.Indicator : Wingpanel.Indicator {
             /* NOTE: popover closes every time you set visibility, so change property only when needed */
             visible = should_be_visible;
         }
-        
+
         if (visible) {
             if (dm.has_battery) {
                 update_primary_battery ();
@@ -117,7 +134,7 @@ public class Power.Indicator : Wingpanel.Indicator {
     private void show_primary_battery_data () {
         if (primary_battery != null && display_widget != null) {
             var icon_name = Utils.get_symbolic_icon_name_for_battery (primary_battery);
-            
+
             display_widget.set_icon_name (icon_name, true);
 
             /* Debug output for designers */
@@ -146,14 +163,9 @@ public class Power.Indicator : Wingpanel.Indicator {
         }
     }
 
-    private void on_update_brightness (int val) {
-        try {
-            if (screen.brightness != val) {
-                screen.brightness = val;
-            }
-        } catch (IOError e) {
-            warning ("screen brightness error %s", e.message);
-        }
+    private void on_brightness_change (int change) {
+        screen_brightness += change;
+        popover_widget.update_slider (screen_brightness);
     }
 }
 

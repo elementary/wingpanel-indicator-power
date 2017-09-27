@@ -29,7 +29,13 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
     private Wingpanel.Widgets.Button show_settings_button;
 
     public signal void settings_shown ();
-    public signal void update_brightness (int val);
+
+    // The integer returned is a relative change in the brightness value (ie.
+    // a +10 increase or a -10 decrease)
+    public signal void brightness_change (int change);
+
+    // The integer returned is absolute
+    public signal void brightness_new_value (int new_value);
 
     public PopoverWidget (bool is_in_session) {
         Object (is_in_session: is_in_session, orientation: Gtk.Orientation.VERTICAL);
@@ -49,9 +55,8 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
             }
 
             brightness_slider = new BrightnessSlider ();
-            brightness_slider.update_brightness.connect ((val) => {
-                update_brightness (val);
-            });
+            brightness_slider.brightness_new_value.connect ((val) => { brightness_new_value (val); });
+            brightness_slider.brightness_change.connect ((val) => { brightness_change (val); });
 
             add (brightness_slider);
         }
@@ -78,7 +83,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
         dm.notify["has-battery"].connect((s, p) => {
             bool had_separator = last_separator != null;
             bool has_separator = is_in_session || dm.has_battery;
-            
+
             if (has_separator != had_separator) {
                 if (has_separator) {
                     pack_start (last_separator = new Wingpanel.Widgets.Separator ());
@@ -121,8 +126,8 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
         }
     }
 
-    public void update_slider (int step) {
-        brightness_slider.val = step;
+    public void update_slider (int new_value) {
+        brightness_slider.val = new_value;
     }
 
      private void show_settings () {

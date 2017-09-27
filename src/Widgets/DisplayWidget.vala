@@ -23,7 +23,9 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
     private Gtk.Label percent_label;
     private bool allow_percent = false;
 
-    public signal void indicator_scroll (int step); 
+    // The integer returned is a relative change in the brightness value (ie.
+    // a +10 increase or a -10 decrease)
+    public signal void brightness_change (int change);
 
     construct {
         valign = Gtk.Align.CENTER;
@@ -45,7 +47,7 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
 
         Services.SettingsManager.get_default ().notify["show-percentage"].connect (update_revealer);
 
-        this.button_press_event.connect ((e) => {
+        button_press_event.connect ((e) => {
             if (allow_percent && e.button == Gdk.BUTTON_MIDDLE) {
                 Services.SettingsManager sm = Services.SettingsManager.get_default ();
                 sm.show_percentage = !sm.show_percentage;
@@ -54,15 +56,15 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
             return false;
         });
 
-        this.scroll_event.connect ((e) => {
-            indicator_scroll (Power.Utils.handle_scroll(e));
+        scroll_event.connect ((e) => {
+            brightness_change (Power.Utils.handle_scroll(e));
         });
 
     }
 
     public void set_icon_name (string icon_name, bool allow_percent) {
         image.icon_name = icon_name;
-        
+
         if (this.allow_percent != allow_percent) {
             this.allow_percent = allow_percent;
             update_revealer ();
