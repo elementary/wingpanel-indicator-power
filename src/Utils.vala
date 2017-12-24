@@ -18,6 +18,9 @@
  */
 
 namespace Power.Utils {
+
+    const int STEP = 10;
+
     public bool type_is_battery (uint32 device_type) {
         return device_type != DEVICE_TYPE_UNKNOWN && device_type != DEVICE_TYPE_LINE_POWER;
     }

@@ -18,7 +18,6 @@
  */
 
 public class Power.Widgets.BrightnessSlider : Gtk.Grid {
-    private const int STEP = 10;
 
     private Gtk.Image image;
     private Gtk.Scale scale;
@@ -48,8 +47,8 @@ public class Power.Widgets.BrightnessSlider : Gtk.Grid {
         });
         attach (image_box, 0, 0, 1, 1);
 
-        scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, STEP);
-        scale.adjustment.page_increment = STEP;
+        scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, Power.Utils.STEP);
+        scale.adjustment.page_increment = Power.Utils.STEP;
         scale.margin_end = 12;
         scale.hexpand = true;
         scale.draw_value = false;
