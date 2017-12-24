@@ -30,8 +30,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
     public signal void settings_shown ();
 
-    // The integer returned is a relative change in the brightness value (ie.
-    // a +10 increase or a -10 decrease)
+    // Refering to a relative change in the brightness value (Power.Utils.STEP)
     public signal void brightness_change (int change);
 
     // The integer returned is absolute
