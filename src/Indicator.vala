@@ -35,15 +35,9 @@ public class Power.Indicator : Wingpanel.Indicator {
         get {
             return screen.brightness;
         }
-
         set {
-            try {
-                if (screen.brightness != value) {
-                    int new_value = value < 0 ? 0 : value;
-                    screen.brightness = new_value > 100 ? 100 : new_value;
-                }
-            } catch (IOError e) {
-                warning ("screen brightness error %s", e.message);
+            if (screen.brightness != value) {
+                    screen.brightness = value.clamp (0, 100);
             }
         }
     }
