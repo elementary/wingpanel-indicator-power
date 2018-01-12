@@ -173,12 +173,6 @@ namespace Power.Utils {
     }
 
     public int handle_scroll (Gdk.EventScroll e) {
-        int step = 10;
-        if (e.direction == Gdk.ScrollDirection.UP) {
-           return step;
-        } else if (e.direction == Gdk.ScrollDirection.DOWN) {
-            step = -step;
-        }
-        return step;
+        return (e.direction == Gdk.ScrollDirection.UP ? STEP : -STEP);
     }
 }
