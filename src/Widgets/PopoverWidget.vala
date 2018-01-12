@@ -129,7 +129,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
         brightness_slider.val = new_value;
     }
 
-     private void show_settings () {
+    private void show_settings () {
         try {
             AppInfo.launch_default_for_uri ("settings://power", null);
         } catch (Error e) {
