@@ -32,9 +32,7 @@ public class Power.Indicator : Wingpanel.Indicator {
     private bool notify_battery = false;
 
     private int screen_brightness {
-        get {
-            return screen.brightness;
-        }
+        get { return screen.brightness; }
         set {
             if (screen.brightness != value) {
                     screen.brightness = value.clamp (0, 100);
@@ -53,13 +51,17 @@ public class Power.Indicator : Wingpanel.Indicator {
         init_bus.begin ();
         popover_widget = new Widgets.PopoverWidget (is_in_session);
         popover_widget.settings_shown.connect (() => close ());
-        popover_widget.brightness_change.connect (on_brightness_change);
+        popover_widget.brightness_change.connect ((change) => { 
+            popover_widget.slider_val += change;
+        });
         popover_widget.brightness_new_value.connect ((new_value) => {
-                screen_brightness = new_value;
+            screen_brightness = new_value;
         });
 
         display_widget = new Widgets.DisplayWidget ();
-        display_widget.brightness_change.connect (on_brightness_change);
+        display_widget.brightness_change.connect ((change) => { 
+            popover_widget.slider_val += change;
+        });
 
         var dm = Services.DeviceManager.get_default ();
 
@@ -80,7 +82,7 @@ public class Power.Indicator : Wingpanel.Indicator {
 
     public override void opened () {
         Services.ProcessMonitor.Monitor.get_default ().update ();
-        popover_widget.update_slider (screen_brightness);
+        popover_widget.slider_val = screen_brightness;
     }
 
     public override void closed () {
@@ -155,11 +157,6 @@ public class Power.Indicator : Wingpanel.Indicator {
         } catch (IOError e) {
             warning ("screen brightness error %s", e.message);
         }
-    }
-
-    private void on_brightness_change (int change) {
-        screen_brightness += change;
-        popover_widget.update_slider (screen_brightness);
     }
 }
 

@@ -40,6 +40,11 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
         Object (is_in_session: is_in_session, orientation: Gtk.Orientation.VERTICAL);
     }
 
+    public int slider_val {
+        get { return brightness_slider.val; }
+        set { brightness_slider.val = value.clamp (0, 100); }
+    }
+
     construct {
         var dm = Services.DeviceManager.get_default ();
         var sm = Services.SettingsManager.get_default ();
@@ -123,10 +128,6 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
         if (is_in_session) {
             app_list.clear_list ();
         }
-    }
-
-    public void update_slider (int new_value) {
-        brightness_slider.val = new_value;
     }
 
     private void show_settings () {
