@@ -23,9 +23,6 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
     private Gtk.Label percent_label;
     private bool allow_percent = false;
 
-    // Refering to a relative change in the brightness value (Power.Utils.STEP)
-    public signal void brightness_change (int change);
-
     construct {
         valign = Gtk.Align.CENTER;
 
@@ -54,11 +51,6 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
             }
             return false;
         });
-
-        scroll_event.connect ((e) => {
-            brightness_change (Power.Utils.handle_scroll(e));
-        });
-
     }
 
     public void set_icon_name (string icon_name, bool allow_percent) {

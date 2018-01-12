@@ -59,8 +59,8 @@ public class Power.Indicator : Wingpanel.Indicator {
         });
 
         display_widget = new Widgets.DisplayWidget ();
-        display_widget.brightness_change.connect ((change) => { 
-            popover_widget.slider_val += change;
+        display_widget.scroll_event.connect ((e) => { 
+            popover_widget.slider_val += Power.Utils.handle_scroll(e);
         });
 
         var dm = Services.DeviceManager.get_default ();
