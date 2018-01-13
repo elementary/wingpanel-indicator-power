@@ -53,9 +53,22 @@ public class Power.Widgets.BrightnessSlider : Gtk.Grid {
         scale.draw_value = false;
         scale.width_request = 175;
         scale.value_changed.connect (() => {
-            brightness_new_value (val);
+            schedule_brightness_change ();
         });
         attach (scale, 1, 0, 1, 1);
     }
+
+    uint brightness_change_timeout_id = 0;
+        private void schedule_brightness_change () {
+                if (brightness_change_timeout_id > 0) {
+                    return;
+                }
+
+                brightness_change_timeout_id = Timeout.add (10, () => {
+                    brightness_new_value (val);
+                    brightness_change_timeout_id = 0;
+                    return false;
+                });
+            }
 
 }
