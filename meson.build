@@ -39,7 +39,7 @@ shared_module(
         meson.get_compiler('vala').find_library('posix')
     ],
     install: true,
-    install_dir : get_option('libdir') + '/wingpanel'
+    install_dir : wingpanel_dep.get_pkgconfig_variable('indicatorsdir')
 )
 
 subdir('po')
