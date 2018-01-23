@@ -1,4 +1,4 @@
-project('session', 'vala', 'c')
+project('power', 'vala', 'c')
 
 i18n = import('i18n')
 
