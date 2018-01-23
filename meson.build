@@ -6,17 +6,6 @@ add_global_arguments('-DGETTEXT_PACKAGE="' + meson.project_name() + '-indicator"
 add_project_arguments(['--vapidir', join_paths(meson.current_source_dir(), 'vapi')], 
                       language: 'vala')
 
-configuration_data = configuration_data()
-configuration_data.set('DATADIR', get_option('libdir') + '/wingpanel')
-configuration_data.set('PKGDATADIR', get_option('libdir') + '/wingpanel')
-configuration_data.set('GETTEXT_PACKAGE', meson.project_name() + '-indicator')
-
-config_file = configure_file(
-    input: 'config.vala.cmake',
-    output: 'config.vala',
-    configuration: configuration_data
-)
-
 shared_module(
     meson.project_name(),
     'src/Indicator.vala',
@@ -37,7 +26,6 @@ shared_module(
     'src/Widgets/DisplayWidget.vala',
     'src/Widgets/PopoverWidget.vala',
     'src/Widgets/ScreenBrightness.vala',
-    config_file,
     dependencies: [
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
