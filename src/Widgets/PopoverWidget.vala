@@ -26,7 +26,6 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
     private Wingpanel.Widgets.Separator last_separator = null;
 
     private Wingpanel.Widgets.Switch show_percent_switch;
-    private Wingpanel.Widgets.Button show_settings_button;
 
     public signal void settings_shown ();
 
@@ -66,7 +65,9 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
         }
 
         show_percent_switch = new Wingpanel.Widgets.Switch (_("Show Percentage"), sm.show_percentage);
-        show_settings_button = new Wingpanel.Widgets.Button (_("Power Settings…"));
+
+        var show_settings_button = new Gtk.ModelButton ();
+        show_settings_button.text = _("Power Settings…");
 
         if (is_in_session) {
             app_list = new AppList ();
