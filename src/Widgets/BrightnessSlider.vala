@@ -22,6 +22,8 @@ public class Power.Widgets.BrightnessSlider : Gtk.Grid {
     private Gtk.Image image;
     private Gtk.Scale scale;
 
+    private uint brightness_change_timeout_id;
+
     public int val {
         get { return (int) scale.get_value (); }
         set { scale.set_value (value); }
@@ -56,19 +58,18 @@ public class Power.Widgets.BrightnessSlider : Gtk.Grid {
             schedule_brightness_change ();
         });
         attach (scale, 1, 0, 1, 1);
+
+        brightness_change_timeout_id = 0;
     }
 
-    uint brightness_change_timeout_id = 0;
-        private void schedule_brightness_change () {
-                if (brightness_change_timeout_id > 0) {
-                    return;
-                }
+    private void schedule_brightness_change () {
+        if (brightness_change_timeout_id > 0) { return; }
 
-                brightness_change_timeout_id = Timeout.add (10, () => {
-                    brightness_new_value (val);
-                    brightness_change_timeout_id = 0;
-                    return false;
-                });
-            }
+        brightness_change_timeout_id = Timeout.add (10, () => {
+            brightness_new_value (val);
+            brightness_change_timeout_id = 0;
+            return false;
+        });
+    }
 
 }
