@@ -21,7 +21,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
     public bool is_in_session { get; construct; default = false; }
     private DeviceList device_list;
     private Wingpanel.Widgets.Separator device_separator = null;
-    private ScreenBrightness screen_brightness;
+    private Widgets.BrightnessSlider brightness_slider;
     private AppList app_list;
     private Wingpanel.Widgets.Separator last_separator = null;
 
@@ -29,8 +29,19 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
     public signal void settings_shown ();
 
+    // Refering to a relative change in the brightness value (Power.Utils.STEP)
+    public signal void brightness_change (int change);
+
+    // The integer returned is absolute
+    public signal void brightness_new_value (int new_value);
+
     public PopoverWidget (bool is_in_session) {
         Object (is_in_session: is_in_session, orientation: Gtk.Orientation.VERTICAL);
+    }
+
+    public int slider_val {
+        get { return brightness_slider.val; }
+        set { brightness_slider.val = value.clamp (0, 100); }
     }
 
     construct {
@@ -38,7 +49,6 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
         var sm = Services.SettingsManager.get_default ();
 
         device_list = new DeviceList ();
-        //debug ("show list of batteries");
         pack_start (device_list);
 
         if (dm.backlight.present) {
@@ -47,9 +57,11 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
                 pack_start (device_separator);
             }
 
-            debug ("show brightness slider");
-            screen_brightness = new ScreenBrightness ();
-            pack_start (screen_brightness);
+            brightness_slider = new BrightnessSlider ();
+            brightness_slider.brightness_new_value.connect ((val) => { brightness_new_value (val); });
+            brightness_slider.brightness_change.connect ((val) => { brightness_change (val); });
+
+            add (brightness_slider);
         }
 
         show_percent_switch = new Wingpanel.Widgets.Switch (_("Show Percentage"), sm.show_percentage);
@@ -59,37 +71,37 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
         if (is_in_session) {
             app_list = new AppList ();
-            this.pack_start (app_list); /* The app-list contains an own separator that is displayed if necessary. */
+            pack_start (app_list); /* The app-list contains an own separator that is displayed if necessary. */
         }
 
         if (is_in_session || dm.has_battery) {
             last_separator = new Wingpanel.Widgets.Separator ();
-            this.pack_start (last_separator);
+            pack_start (last_separator);
             if (is_in_session) {
-                this.pack_end (show_settings_button);
+                pack_end (show_settings_button);
             }
             if (dm.has_battery) {
-                this.pack_end (show_percent_switch);
+                pack_end (show_percent_switch);
             }
         }
 
         dm.notify["has-battery"].connect((s, p) => {
             bool had_separator = last_separator != null;
             bool has_separator = is_in_session || dm.has_battery;
-            
+
             if (has_separator != had_separator) {
                 if (has_separator) {
-                    this.pack_start (last_separator = new Wingpanel.Widgets.Separator ());
+                    pack_start (last_separator = new Wingpanel.Widgets.Separator ());
                     last_separator.show ();
                 } else {
-                    this.remove (last_separator);
+                    remove (last_separator);
                     last_separator = null;
                 }
             }
 
-            this.remove (show_percent_switch);
+            remove (show_percent_switch);
             if (dm.has_battery) {
-                this.pack_end (show_percent_switch);
+                pack_end (show_percent_switch);
             }
 
             if (dm.backlight.present) {
@@ -97,11 +109,11 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
                 if (dm.has_battery != had_battery) {
                     if (dm.has_battery) {
                         device_separator = new Wingpanel.Widgets.Separator ();
-                        this.pack_start (device_separator);
-                        this.reorder_child (device_separator, 1);
+                        pack_start (device_separator);
+                        reorder_child (device_separator, 1);
                         device_separator.show ();
                     } else {
-                        this.remove (device_separator);
+                        remove (device_separator);
                         device_separator = null;
                     }
                 }
@@ -119,17 +131,12 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
         }
     }
 
-    public void update_brightness_slider () {
-        screen_brightness.update_slider ();
-    }
-
     private void show_settings () {
         try {
             AppInfo.launch_default_for_uri ("settings://power", null);
         } catch (Error e) {
             warning ("Failed to open power settings: %s", e.message);
         }
-
         settings_shown ();
     }
 }

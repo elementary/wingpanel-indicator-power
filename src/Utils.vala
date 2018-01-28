@@ -18,6 +18,9 @@
  */
 
 namespace Power.Utils {
+
+    const int STEP = 10;
+
     public bool type_is_battery (uint32 device_type) {
         return device_type != DEVICE_TYPE_UNKNOWN && device_type != DEVICE_TYPE_LINE_POWER;
     }
@@ -167,5 +170,9 @@ namespace Power.Utils {
         ngettext ("%lld hour until empty", "%lld hours until empty", 0);
         ngettext ("%lld minute until empty", "%lld minutes until empty", 0);
         ngettext ("%lld second until empty", "%lld seconds until empty", 0);
+    }
+
+    public int handle_scroll (Gdk.EventScroll e) {
+        return (e.direction == Gdk.ScrollDirection.UP ? STEP : -STEP);
     }
 }
