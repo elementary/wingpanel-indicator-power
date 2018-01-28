@@ -33,7 +33,7 @@ public class Power.Indicator : Wingpanel.Indicator {
 
     private int screen_brightness {
         get { return screen.brightness; }
-        set {
+        private set {
             if (screen.brightness != value) {
                     screen.brightness = value.clamp (0, 100);
             }
