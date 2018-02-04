@@ -21,6 +21,7 @@ namespace Power.Services.DBusInterfaces {
     [DBus (name = "org.freedesktop.UPower")]
     public interface UPower : Object {
         public abstract ObjectPath[] EnumerateDevices () throws IOError;
+        public abstract ObjectPath GetDisplayDevice () throws IOError;
 
         public signal void DeviceAdded (ObjectPath device_path);
         public signal void DeviceRemoved (ObjectPath device_path);
