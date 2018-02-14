@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-03 22:10-0600\n"
-"PO-Revision-Date: 2017-05-12 15:25+0000\n"
-"Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
-"Language-Team: Dutch <https://l10n.elementary.io/projects/wingpanel"
+"PO-Revision-Date: 2018-01-15 00:16+0000\n"
+"Last-Translator: Pieter De Clercq <pieter.eke@gmail.com>\n"
+"Language-Team: Dutch <https://weblate.elementary.io/projects/wingpanel"
 "/wingpanel-indicator-power/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: ../src/Indicator.vala:31
@@ -29,7 +29,7 @@ msgstr "Applicaties die veel energie verbruiken"
 
 #: ../src/Widgets/PopoverWidget.vala:51
 msgid "Show Percentage"
-msgstr "Laat percentage zien"
+msgstr "Toon percentage"
 
 #: ../src/Widgets/PopoverWidget.vala:52
 msgid "Power Settings…"
@@ -77,7 +77,7 @@ msgstr "%i%% opgeladen"
 
 #: ../src/Utils.vala:128
 msgid "%i%% remaining"
-msgstr "%i%% overgebleven"
+msgstr "%i%% resterend"
 
 #: ../src/Utils.vala:154
 msgid "%lld day until full"
@@ -124,5 +124,5 @@ msgstr[1] "%lld minuten tot leeg"
 #: ../src/Utils.vala:161
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
-msgstr[0] "%lld second tot leeg"
+msgstr[0] "%lld seconde tot leeg"
 msgstr[1] "%lld seconden tot leeg"

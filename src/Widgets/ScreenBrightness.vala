@@ -19,7 +19,7 @@
 
 public class Power.Widgets.ScreenBrightness : Gtk.Grid {
     private const string DBUS_PATH = "/org/gnome/SettingsDaemon/Power";
-    private const string DBUS_NAME = "org.gnome.SettingsDaemon";
+    private const string DBUS_NAME = "org.gnome.SettingsDaemon.Power";
 
     private Gtk.Image image;
     private Gtk.Scale brightness_slider;

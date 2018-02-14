@@ -29,7 +29,7 @@ public class Power.Services.DeviceManager : Object {
     public Services.Backlight backlight { get; construct; }
     public Gee.HashMap<string, Device> devices { get; private set; }
     public Gee.Iterator batteries { get; private set; }
-    public Device primary_battery { get; private set; }
+    public Device display_device { get; private set; }
     public bool has_battery { get; private set; }
     public bool on_battery { get; private set; }
     public bool on_low_battery { get; private set; }
@@ -76,6 +76,11 @@ public class Power.Services.DeviceManager : Object {
 
     public void read_devices () {
         try {
+            // Add Display Device for Panel display
+            var display_device_path = upower.GetDisplayDevice ();
+            display_device = new Device (display_device_path);
+
+            // Fetch other devices for Detail in Panel
             var devices = upower.EnumerateDevices ();
 
             foreach (ObjectPath device_path in devices) {
@@ -112,46 +117,6 @@ public class Power.Services.DeviceManager : Object {
         });
 
         has_battery = batteries.has_next ();
-
-        if (has_battery) {
-            update_primary_battery ();
-        }
-    }
-
-    private void update_primary_battery () {
-        Device? main_battery = null;
-        Device? alternate_battery = null;
-
-        devices.@foreach ((entry) => {
-            var device = entry.value;
-            var is_battery = Utils.type_is_battery (device.device_type);
-
-            if (is_battery) {
-                if (device.device_type == DEVICE_TYPE_BATTERY) {
-                    main_battery = device;
-
-                    return false;
-                } else {
-                    if (alternate_battery == null) {
-                        alternate_battery = device;
-                    }
-                }
-            }
-
-            return true;
-        });
-
-        if (has_battery) {
-            if (main_battery != null) {
-                if (primary_battery != main_battery) {
-                    primary_battery = main_battery;
-                }
-            } else if (alternate_battery != null) {
-                if (primary_battery != alternate_battery) {
-                    primary_battery = alternate_battery;
-                }
-            }
-        }
     }
 
     private void register_device (ObjectPath device_path) {
