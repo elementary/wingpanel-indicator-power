@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-03 22:10-0600\n"
-"PO-Revision-Date: 2017-04-23 03:51+0000\n"
-"Last-Translator: Ryo Nakano <nscnskichiro0911@gmail.com>\n"
-"Language-Team: Japanese <https://l10n.elementary.io/projects/wingpanel"
+"PO-Revision-Date: 2018-03-25 00:11+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
+"Language-Team: Japanese <https://weblate.elementary.io/projects/wingpanel"
 "/wingpanel-indicator-power/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: ../src/Indicator.vala:31
@@ -25,11 +25,11 @@ msgstr "パワーインジケーター"
 
 #: ../src/Widgets/AppList.vala:54
 msgid "Apps Using Lots of Power"
-msgstr "アプリケーションが大量の電気を消費しています"
+msgstr "アプリが大量の電気を消費しています"
 
 #: ../src/Widgets/PopoverWidget.vala:51
 msgid "Show Percentage"
-msgstr "パーセント表示"
+msgstr "割合 (%) を表示"
 
 #: ../src/Widgets/PopoverWidget.vala:52
 msgid "Power Settings…"
