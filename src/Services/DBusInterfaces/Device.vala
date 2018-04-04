@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2015 elementary LLC. (https://elementary.io)
+ * Copyright (c) 2011-2018 elementary LLC. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -37,10 +37,10 @@ namespace Power.Services.DBusInterfaces {
 
     [DBus (name = "org.freedesktop.UPower.Device")]
     public interface Device : DBusProxy {
-        public abstract HistoryDataPoint[] GetHistory (string type, uint32 timespan, uint32 resolution) throws IOError;
+        public abstract HistoryDataPoint[] GetHistory (string type, uint32 timespan, uint32 resolution) throws GLib.Error;
 
-        public abstract StatisticsDataPoint[] GetStatistics (string type) throws IOError;
-        public abstract void Refresh () throws IOError;
+        public abstract StatisticsDataPoint[] GetStatistics (string type) throws GLib.Error;
+        public abstract void Refresh () throws GLib.Error;
 
         public abstract bool has_history { public owned get; public set; }
         public abstract bool has_statistics { public owned get; public set; }
