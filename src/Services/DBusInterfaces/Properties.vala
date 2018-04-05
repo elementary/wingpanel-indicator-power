@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2015 elementary LLC. (https://elementary.io)
+ * Copyright (c) 2011-2018 elementary LLC. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -20,8 +20,8 @@
 namespace Power.Services.DBusInterfaces {
     [DBus (name = "org.freedesktop.DBus.Properties")]
     public interface Properties : Object {
-        public abstract Variant Get (string interface, string propname) throws IOError;
-        public abstract void Set (string interface, string propname, Variant value) throws IOError;
+        public abstract Variant Get (string interface, string propname) throws GLib.Error;
+        public abstract void Set (string interface, string propname, Variant value) throws GLib.Error;
         public signal void PropertiesChanged (string changed, HashTable<string, Variant> propertiesm, string[] array);
     }
 }
