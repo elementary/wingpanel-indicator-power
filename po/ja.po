@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-03 22:10-0600\n"
-"PO-Revision-Date: 2018-03-25 00:11+0000\n"
+"PO-Revision-Date: 2018-05-03 08:01+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/wingpanel"
 "/wingpanel-indicator-power/ja/>\n"
@@ -69,7 +69,7 @@ msgstr "デバイス"
 
 #: ../src/Utils.vala:102
 msgid "Calculating…"
-msgstr "計算中…"
+msgstr "計算しています…"
 
 #: ../src/Utils.vala:108
 msgid "%i%% charged"
