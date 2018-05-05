@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-03 22:10-0600\n"
-"PO-Revision-Date: 2018-05-03 08:01+0000\n"
+"PO-Revision-Date: 2018-05-06 00:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/wingpanel"
 "/wingpanel-indicator-power/ja/>\n"
@@ -29,7 +29,7 @@ msgstr "アプリが大量の電気を消費しています"
 
 #: ../src/Widgets/PopoverWidget.vala:51
 msgid "Show Percentage"
-msgstr "割合 (%) を表示"
+msgstr "パーセント表示"
 
 #: ../src/Widgets/PopoverWidget.vala:52
 msgid "Power Settings…"
