@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-03 22:10-0600\n"
-"PO-Revision-Date: 2018-03-25 00:11+0000\n"
+"PO-Revision-Date: 2018-05-07 00:05+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/wingpanel"
 "/wingpanel-indicator-power/ja/>\n"
@@ -25,11 +25,11 @@ msgstr "パワーインジケーター"
 
 #: ../src/Widgets/AppList.vala:54
 msgid "Apps Using Lots of Power"
-msgstr "アプリが大量の電気を消費しています"
+msgstr "電力の消費が激しいアプリ"
 
 #: ../src/Widgets/PopoverWidget.vala:51
 msgid "Show Percentage"
-msgstr "割合 (%) を表示"
+msgstr "パーセント表示"
 
 #: ../src/Widgets/PopoverWidget.vala:52
 msgid "Power Settings…"
@@ -69,7 +69,7 @@ msgstr "デバイス"
 
 #: ../src/Utils.vala:102
 msgid "Calculating…"
-msgstr "計算中…"
+msgstr "計算しています…"
 
 #: ../src/Utils.vala:108
 msgid "%i%% charged"

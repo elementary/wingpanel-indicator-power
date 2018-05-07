@@ -38,6 +38,15 @@ public class Power.Indicator : Wingpanel.Indicator {
     public override Gtk.Widget get_display_widget () {
         if (display_widget == null) {
             display_widget = new Widgets.DisplayWidget ();
+
+            var dm = Services.DeviceManager.get_default ();
+
+            /* No need to display the indicator when the device is completely in AC mode */
+            if (dm.has_battery || dm.backlight.present) {
+                update_visibility ();
+            }
+
+            dm.notify["has-battery"].connect (update_visibility);
         }
 
         return display_widget;
@@ -47,14 +56,6 @@ public class Power.Indicator : Wingpanel.Indicator {
         if (popover_widget == null) {
             popover_widget = new Widgets.PopoverWidget (is_in_session);
             popover_widget.settings_shown.connect (() => this.close ());
-
-            var dm = Services.DeviceManager.get_default ();
-
-            /* No need to display the indicator when the device is completely in AC mode */
-            if (dm.has_battery || dm.backlight.present) {
-                update_visibility ();
-            }
-            dm.notify["has-battery"].connect (update_visibility);
         }
 
         return popover_widget;

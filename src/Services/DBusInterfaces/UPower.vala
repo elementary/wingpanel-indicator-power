@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2015 elementary LLC. (https://elementary.io)
+ * Copyright (c) 2011-2018 elementary LLC. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -20,8 +20,8 @@
 namespace Power.Services.DBusInterfaces {
     [DBus (name = "org.freedesktop.UPower")]
     public interface UPower : Object {
-        public abstract ObjectPath[] EnumerateDevices () throws IOError;
-        public abstract ObjectPath GetDisplayDevice () throws IOError;
+        public abstract ObjectPath[] EnumerateDevices () throws GLib.Error;
+        public abstract ObjectPath GetDisplayDevice () throws GLib.Error;
 
         public signal void DeviceAdded (ObjectPath device_path);
         public signal void DeviceRemoved (ObjectPath device_path);
