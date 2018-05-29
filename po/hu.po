@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-03 22:10-0600\n"
-"PO-Revision-Date: 2018-05-29 11:31+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2018-05-29 11:32+0000\n"
+"Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/wingpanel"
 "/wingpanel-indicator-power/hu/>\n"
 "Language: hu\n"
@@ -57,7 +57,7 @@ msgstr "Billentyűzet"
 
 #: ../src/Utils.vala:85
 msgid "PDA"
-msgstr ""
+msgstr "PDA"
 
 #: ../src/Utils.vala:86
 msgid "Phone"
