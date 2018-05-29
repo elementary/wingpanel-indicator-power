@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-03 22:10-0600\n"
-"PO-Revision-Date: 2018-05-29 11:42+0000\n"
-"Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
+"PO-Revision-Date: 2018-05-30 00:06+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/wingpanel"
 "/wingpanel-indicator-power/hu/>\n"
 "Language: hu\n"
@@ -82,47 +82,47 @@ msgstr "%i%% hátralévő"
 #: ../src/Utils.vala:154
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld nap a feltöltésig"
+msgstr[1] "%lld nap a feltöltésig"
 
 #: ../src/Utils.vala:155
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld óra a feltöltésig"
+msgstr[1] "%lld óra a feltöltésig"
 
 #: ../src/Utils.vala:156
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld perc a feltöltésig"
+msgstr[1] "%lld perc a feltöltésig"
 
 #: ../src/Utils.vala:157
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld másodperc a feltöltésig"
+msgstr[1] "%lld másodperc a feltöltésig"
 
 #: ../src/Utils.vala:158
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld nap a lemerülésig"
+msgstr[1] "%lld nap a lemerülésig"
 
 #: ../src/Utils.vala:159
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld óra a lemerülésig"
+msgstr[1] "%lld óra a lemerülésig"
 
 #: ../src/Utils.vala:160
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld perc a lemerülésig"
+msgstr[1] "%lld perc a lemerülésig"
 
 #: ../src/Utils.vala:161
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%lld másodperc a lemerülésig"
+msgstr[1] "%lld másodperc a lemerülésig"
