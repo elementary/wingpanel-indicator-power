@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-03 22:10-0600\n"
 "PO-Revision-Date: 2018-05-29 11:33+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/wingpanel"
 "/wingpanel-indicator-power/hu/>\n"
 "Language: hu\n"
@@ -69,7 +69,7 @@ msgstr "Eszköz"
 
 #: ../src/Utils.vala:102
 msgid "Calculating…"
-msgstr "Számítás..."
+msgstr "Számítás…"
 
 #: ../src/Utils.vala:108
 msgid "%i%% charged"
