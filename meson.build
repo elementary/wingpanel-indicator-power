@@ -18,8 +18,7 @@ config_in = configure_file(
     configuration: conf_data
 )
 
-shared_module(
-    meson.project_name(),
+files = files(
     'src/Indicator.vala',
     'src/Utils.vala',
     'src/Services/AppManager.vala',
@@ -37,28 +36,31 @@ shared_module(
     'src/Widgets/DeviceList.vala',
     'src/Widgets/DisplayWidget.vala',
     'src/Widgets/PopoverWidget.vala',
-    'src/Widgets/ScreenBrightness.vala',
+    'src/Widgets/ScreenBrightness.vala'
+)
+
+dependencies = [
+    dependency('glib-2.0'),
+    dependency('gobject-2.0'),
+    dependency('granite'),
+    dependency('gtk+-3.0'),
+    dependency('libbamf3'),
+    dependency('libgtop-2.0'),
+    dependency('libudev'),
+    wingpanel_dep,
+    meson.get_compiler('vala').find_library('posix')
+]
+
+shared_module(
+    meson.project_name(),
+    files,
     config_in,
-    dependencies: [
-        dependency('glib-2.0'),
-        dependency('gobject-2.0'),
-        dependency('granite'),
-        dependency('gtk+-3.0'),
-        dependency('libbamf3'),
-        dependency('libgtop-2.0'),
-        dependency('libudev'),
-        wingpanel_dep,
-        meson.get_compiler('vala').find_library('posix')
-    ],
+    dependencies: dependencies,
     install: true,
     install_dir : wingpanel_dep.get_pkgconfig_variable('indicatorsdir')
 )
 
-install_data(
-    'schemas/org.pantheon.desktop.wingpanel.indicators.power.gschema.xml',
-    install_dir: join_paths(get_option('datadir'), 'glib-2.0', 'schemas')
-)
-
 subdir('po')
+subdir('schemas')
 
 meson.add_install_script('meson/post_install.py')
