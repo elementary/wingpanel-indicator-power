@@ -9,6 +9,15 @@ add_project_arguments(['--vapidir', join_paths(meson.current_source_dir(), 'vapi
 
 wingpanel_dep = dependency('wingpanel-2.0')
 
+conf_data = configuration_data()
+conf_data.set('GETTEXT_PACKAGE', gettext_name)
+
+config_in = configure_file(
+    input: 'config.vala.in',
+    output: '@BASENAME@',
+    configuration: conf_data
+)
+
 shared_module(
     meson.project_name(),
     'src/Indicator.vala',
@@ -29,6 +38,7 @@ shared_module(
     'src/Widgets/DisplayWidget.vala',
     'src/Widgets/PopoverWidget.vala',
     'src/Widgets/ScreenBrightness.vala',
+    config_in,
     dependencies: [
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
