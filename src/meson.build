@@ -13,16 +13,16 @@ files = files(
     'Indicator.vala',
     'Utils.vala',
     'Services/AppManager.vala',
-    'Services/Device.vala',
-    'Services/DeviceManager.vala',
-    'Services/SettingsManager.vala',
     'Services/Backlight/Backlight.vala',
     'Services/DBusInterfaces/Device.vala',
     'Services/DBusInterfaces/Properties.vala',
     'Services/DBusInterfaces/Screen.vala',
     'Services/DBusInterfaces/UPower.vala',
+    'Services/Device.vala',
+    'Services/DeviceManager.vala',
     'Services/ProcessMonitor/Monitor.vala',
     'Services/ProcessMonitor/Process.vala',
+    'Services/SettingsManager.vala',
     'Widgets/AppList.vala',
     'Widgets/DeviceList.vala',
     'Widgets/DisplayWidget.vala',
@@ -38,8 +38,8 @@ dependencies = [
     dependency('libbamf3'),
     dependency('libgtop-2.0'),
     dependency('libudev'),
-    wingpanel_dep,
-    meson.get_compiler('vala').find_library('posix')
+    meson.get_compiler('vala').find_library('posix'),
+    wingpanel_dep
 ]
 
 shared_module(
