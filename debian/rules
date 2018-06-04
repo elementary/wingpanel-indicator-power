@@ -12,5 +12,8 @@
 %:
 	dh $@ 
 
+override_dh_missing:
+	dh_missing --fail-missing --list-missing
+
 override_dh_strip:
-	dh_strip --dbg-package=wingpanel-indicator-power-dbg
+	dh_strip -p wingpanel-indicator-power --dbgsym-migration='wingpanel-indicator-power-dbg (<< 2.1.1)'
