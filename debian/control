@@ -2,8 +2,8 @@ Source: wingpanel-indicator-power
 Section: x11
 Priority: optional
 Maintainer: Cody Garver <cody@elementary.io>
-Build-Depends: cmake,
-               debhelper (>= 10.5.1),
+Build-Depends: debhelper (>= 10.5.1),
+               gettext,
                gobject-introspection,
                libbamf3-dev,
                libgranite-dev,
@@ -11,6 +11,7 @@ Build-Depends: cmake,
                libgtop2-dev,
                libudev-dev,
                libwingpanel-2.0-dev,
+               meson,
                valac (>= 0.28)
 Standards-Version: 4.1.1
 Homepage: https://launchpad.net/wingpanel-indicator-power
