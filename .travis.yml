@@ -4,13 +4,11 @@ services:
  - docker
 
 env:
- - DEPENDENCY_PACKAGES="cmake libbamf3-dev libgranite-dev libgtop2-dev libudev-dev libwingpanel-2.0-dev valac"
+ - DEPENDENCY_PACKAGES="libbamf3-dev libgranite-dev libgtop2-dev libudev-dev libwingpanel-2.0-dev meson valac"
 
 install:
- - docker pull elementary/docker:loki
- - docker run -v "$PWD":/tmp/build-dir elementary/docker:loki /bin/sh -c "apt-get update && apt-get -y install $DEPENDENCY_PACKAGES && cd /tmp/build-dir && cmake . && env CTEST_OUTPUT_ON_FAILURE=true make"
- - docker pull elementary/docker:loki-unstable
- - docker run -v "$PWD":/tmp/build-dir elementary/docker:loki-unstable /bin/sh -c "apt-get update && apt-get -y install $DEPENDENCY_PACKAGES && cd /tmp/build-dir && cmake . && env CTEST_OUTPUT_ON_FAILURE=true make"
+ - docker pull elementary/docker:juno-unstable
+ - docker run -v "$PWD":/tmp/build-dir elementary/docker:juno-unstable /bin/sh -c "apt-get update && apt-get -y install $DEPENDENCY_PACKAGES && cd /tmp/build-dir && meson build && ninja -C build"
 
 script:
  - echo BUILDS PASSED
