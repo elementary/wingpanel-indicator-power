@@ -2,12 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-03 22:10-0600\n"
+"POT-Creation-Date: 2018-06-05 05:22-0500\n"
 "PO-Revision-Date: 2018-06-05 10:21+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: French (Canada) "
-"<https://weblate.elementary.io/projects/wingpanel/wingpanel-indicator-"
-"power/fr_CA/>\n"
+"Language-Team: French (Canada) <https://weblate.elementary.io/projects/"
+"wingpanel/wingpanel-indicator-power/fr_CA/>\n"
 "Language: fr_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,114 +15,124 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-19 06:17+0000\n"
 
-#: ../src/Indicator.vala:31
+#: src/Indicator.vala:32
 msgid "Power"
 msgstr "Charge"
 
-#: ../src/Indicator.vala:32
+#: src/Indicator.vala:33
 msgid "Power indicator"
 msgstr "Charge restante"
 
-#: ../src/Widgets/AppList.vala:54
-msgid "Apps Using Lots of Power"
-msgstr "Applications utilisant beaucoup d'énergie"
-
-#: ../src/Widgets/PopoverWidget.vala:51
-msgid "Show Percentage"
-msgstr "Afficher le pourcentage"
-
-#: ../src/Widgets/PopoverWidget.vala:52
-msgid "Power Settings…"
-msgstr "Paramètres d'alimentation …"
-
-#: ../src/Utils.vala:80
+#: src/Utils.vala:88
 msgid "Battery"
 msgstr "Pile"
 
-#: ../src/Utils.vala:81
+#: src/Utils.vala:89
 msgid "UPS"
 msgstr "UPS"
 
-#: ../src/Utils.vala:82
+#: src/Utils.vala:90
 msgid "Display"
 msgstr "Affichage"
 
-#: ../src/Utils.vala:83
+#: src/Utils.vala:91
 msgid "Mouse"
 msgstr "Souris"
 
-#: ../src/Utils.vala:84
+#: src/Utils.vala:92
 msgid "Keyboard"
 msgstr "Clavier"
 
-#: ../src/Utils.vala:85
+#: src/Utils.vala:93
 msgid "PDA"
 msgstr "Assistant personnel"
 
-#: ../src/Utils.vala:86
+#: src/Utils.vala:94
 msgid "Phone"
 msgstr "Téléphone"
 
-#: ../src/Utils.vala:87
+#: src/Utils.vala:95
 msgid "Device"
 msgstr "Appareil"
 
-#: ../src/Utils.vala:102
+#: src/Utils.vala:110
 msgid "Calculating…"
 msgstr "Calcul…"
 
-#: ../src/Utils.vala:108
+#: src/Utils.vala:116
+#, c-format
 msgid "%i%% charged"
 msgstr "%i%% chargé"
 
-#: ../src/Utils.vala:128
-msgid "%i%% remaining"
-msgstr "%i%% restants"
-
-#: ../src/Utils.vala:154
+#: src/Utils.vala:124 src/Utils.vala:162
+#, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "%lld jour avant pleine charge"
 msgstr[1] "%lld jours avant pleine charge"
 
-#: ../src/Utils.vala:155
+#: src/Utils.vala:127 src/Utils.vala:163
+#, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld heure avant pleine charge"
 msgstr[1] "%lld heures avant pleine charge"
 
-#: ../src/Utils.vala:156
+#: src/Utils.vala:130 src/Utils.vala:164
+#, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld minute avant pleine charge"
 msgstr[1] "%lld minutes avant pleine charge"
 
-#: ../src/Utils.vala:157
+#: src/Utils.vala:132 src/Utils.vala:165
+#, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld seconde avant pleine charge"
 msgstr[1] "%lld secondes avant pleine charge"
 
-#: ../src/Utils.vala:158
+#: src/Utils.vala:136
+#, c-format
+msgid "%i%% remaining"
+msgstr "%i%% restants"
+
+#: src/Utils.vala:144 src/Utils.vala:166
+#, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "%lld jour restant"
 msgstr[1] "%lld jours restants"
 
-#: ../src/Utils.vala:159
+#: src/Utils.vala:147 src/Utils.vala:167
+#, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld heure restante"
 msgstr[1] "%lld heures restantes"
 
-#: ../src/Utils.vala:160
+#: src/Utils.vala:150 src/Utils.vala:168
+#, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld minute restante"
 msgstr[1] "%lld minutes restantes"
 
-#: ../src/Utils.vala:161
+#: src/Utils.vala:152 src/Utils.vala:169
+#, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
 msgstr[0] "%lld seconde restante"
 msgstr[1] "%lld secondes restantes"
+
+#: src/Widgets/AppList.vala:52
+msgid "Apps Using Lots of Power"
+msgstr "Applications utilisant beaucoup d'énergie"
+
+#: src/Widgets/PopoverWidget.vala:55
+msgid "Show Percentage"
+msgstr "Afficher le pourcentage"
+
+#: src/Widgets/PopoverWidget.vala:58
+msgid "Power Settings…"
+msgstr "Paramètres d'alimentation …"

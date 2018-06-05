@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-03 22:10-0600\n"
+"POT-Creation-Date: 2018-06-05 05:22-0500\n"
 "PO-Revision-Date: 2016-07-13 15:33+0000\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,122 +15,132 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 "X-Generator: Launchpad (build 18246)\n"
 
-#: ../src/Indicator.vala:31
+#: src/Indicator.vala:32
 msgid "Power"
 msgstr "Energija"
 
-#: ../src/Indicator.vala:32
+#: src/Indicator.vala:33
 msgid "Power indicator"
 msgstr "Indikator energije"
 
-#: ../src/Widgets/AppList.vala:54
-msgid "Apps Using Lots of Power"
-msgstr "Aplikacije koje koriste mnogo energije"
-
-#: ../src/Widgets/PopoverWidget.vala:51
-msgid "Show Percentage"
-msgstr "Prikaži postotak"
-
-#: ../src/Widgets/PopoverWidget.vala:52
-msgid "Power Settings…"
-msgstr "Postavke napajanja…"
-
-#: ../src/Utils.vala:80
+#: src/Utils.vala:88
 msgid "Battery"
 msgstr "Baterija"
 
-#: ../src/Utils.vala:81
+#: src/Utils.vala:89
 msgid "UPS"
 msgstr "Neprekidno napajanje (UPS)"
 
-#: ../src/Utils.vala:82
+#: src/Utils.vala:90
 msgid "Display"
 msgstr "Zaslon"
 
-#: ../src/Utils.vala:83
+#: src/Utils.vala:91
 msgid "Mouse"
 msgstr "Miš"
 
-#: ../src/Utils.vala:84
+#: src/Utils.vala:92
 msgid "Keyboard"
 msgstr "Tipkovnica"
 
-#: ../src/Utils.vala:85
+#: src/Utils.vala:93
 msgid "PDA"
 msgstr "Dlanovnik"
 
-#: ../src/Utils.vala:86
+#: src/Utils.vala:94
 msgid "Phone"
 msgstr "Telefon"
 
-#: ../src/Utils.vala:87
+#: src/Utils.vala:95
 msgid "Device"
 msgstr "Uređaj"
 
-#: ../src/Utils.vala:102
+#: src/Utils.vala:110
 msgid "Calculating…"
 msgstr "Izračunavanje..."
 
-#: ../src/Utils.vala:108
+#: src/Utils.vala:116
+#, c-format
 msgid "%i%% charged"
 msgstr "%i%% napunjeno"
 
-#: ../src/Utils.vala:128
-msgid "%i%% remaining"
-msgstr "%i%% preostalo"
-
-#: ../src/Utils.vala:154
+#: src/Utils.vala:124 src/Utils.vala:162
+#, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "%lld dan do završetka punjenja"
 msgstr[1] "%lld dana do završetka punjenja"
 msgstr[2] "%lld dana do završetka punjenja"
 
-#: ../src/Utils.vala:155
+#: src/Utils.vala:127 src/Utils.vala:163
+#, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld sat do završetka punjenja"
 msgstr[1] "%lld sata do završetka punjenja"
 msgstr[2] "%lld sati do završetka punjenja"
 
-#: ../src/Utils.vala:156
+#: src/Utils.vala:130 src/Utils.vala:164
+#, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld minuta do završetka punjenja"
 msgstr[1] "%lld minute do završetka punjenja"
 msgstr[2] "%lld minuta do završetka punjenja"
 
-#: ../src/Utils.vala:157
+#: src/Utils.vala:132 src/Utils.vala:165
+#, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld sekunda do završetka punjenja"
 msgstr[1] "%lld sekunde do završetka punjenja"
 msgstr[2] "%lld sekundi do završetka punjenja"
 
-#: ../src/Utils.vala:158
+#: src/Utils.vala:136
+#, c-format
+msgid "%i%% remaining"
+msgstr "%i%% preostalo"
+
+#: src/Utils.vala:144 src/Utils.vala:166
+#, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "%lld dan do ispražnjenosti"
 msgstr[1] "%lld dana do ispražnjenosti"
 msgstr[2] "%lld dana do ispražnjenosti"
 
-#: ../src/Utils.vala:159
+#: src/Utils.vala:147 src/Utils.vala:167
+#, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld sat do ispražnjenosti"
 msgstr[1] "%lld sata do ispražnjenosti"
 msgstr[2] "%lld sati do ispražnjenosti"
 
-#: ../src/Utils.vala:160
+#: src/Utils.vala:150 src/Utils.vala:168
+#, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld minuta do ispražnjenosti"
 msgstr[1] "%lld minute do ispražnjenosti"
 msgstr[2] "%lld minuta do ispražnjenosti"
 
-#: ../src/Utils.vala:161
+#: src/Utils.vala:152 src/Utils.vala:169
+#, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
 msgstr[0] "%lld sekunda do ispražnjenosti"
 msgstr[1] "%lld sekunde do ispražnjenosti"
 msgstr[2] "%lld sekundi do ispražnjenosti"
+
+#: src/Widgets/AppList.vala:52
+msgid "Apps Using Lots of Power"
+msgstr "Aplikacije koje koriste mnogo energije"
+
+#: src/Widgets/PopoverWidget.vala:55
+msgid "Show Percentage"
+msgstr "Prikaži postotak"
+
+#: src/Widgets/PopoverWidget.vala:58
+msgid "Power Settings…"
+msgstr "Postavke napajanja…"

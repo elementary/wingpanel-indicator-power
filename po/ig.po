@@ -1,0 +1,140 @@
+# Igbo translations for power-indicator package.
+# Copyright (C) 2018 THE power-indicator'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the power-indicator package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: power-indicator\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-05 05:22-0500\n"
+"PO-Revision-Date: 2018-06-05 05:22-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ig\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: src/Indicator.vala:32
+msgid "Power"
+msgstr ""
+
+#: src/Indicator.vala:33
+msgid "Power indicator"
+msgstr ""
+
+#: src/Utils.vala:88
+msgid "Battery"
+msgstr ""
+
+#: src/Utils.vala:89
+msgid "UPS"
+msgstr ""
+
+#: src/Utils.vala:90
+msgid "Display"
+msgstr ""
+
+#: src/Utils.vala:91
+msgid "Mouse"
+msgstr ""
+
+#: src/Utils.vala:92
+msgid "Keyboard"
+msgstr ""
+
+#: src/Utils.vala:93
+msgid "PDA"
+msgstr ""
+
+#: src/Utils.vala:94
+msgid "Phone"
+msgstr ""
+
+#: src/Utils.vala:95
+msgid "Device"
+msgstr ""
+
+#: src/Utils.vala:110
+msgid "Calculating…"
+msgstr ""
+
+#: src/Utils.vala:116
+#, c-format
+msgid "%i%% charged"
+msgstr ""
+
+#: src/Utils.vala:124 src/Utils.vala:162
+#, c-format
+msgid "%lld day until full"
+msgid_plural "%lld days until full"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Utils.vala:127 src/Utils.vala:163
+#, c-format
+msgid "%lld hour until full"
+msgid_plural "%lld hours until full"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Utils.vala:130 src/Utils.vala:164
+#, c-format
+msgid "%lld minute until full"
+msgid_plural "%lld minutes until full"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Utils.vala:132 src/Utils.vala:165
+#, c-format
+msgid "%lld second until full"
+msgid_plural "%lld seconds until full"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Utils.vala:136
+#, c-format
+msgid "%i%% remaining"
+msgstr ""
+
+#: src/Utils.vala:144 src/Utils.vala:166
+#, c-format
+msgid "%lld day until empty"
+msgid_plural "%lld days until empty"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Utils.vala:147 src/Utils.vala:167
+#, c-format
+msgid "%lld hour until empty"
+msgid_plural "%lld hours until empty"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Utils.vala:150 src/Utils.vala:168
+#, c-format
+msgid "%lld minute until empty"
+msgid_plural "%lld minutes until empty"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Utils.vala:152 src/Utils.vala:169
+#, c-format
+msgid "%lld second until empty"
+msgid_plural "%lld seconds until empty"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Widgets/AppList.vala:52
+msgid "Apps Using Lots of Power"
+msgstr ""
+
+#: src/Widgets/PopoverWidget.vala:55
+msgid "Show Percentage"
+msgstr ""
+
+#: src/Widgets/PopoverWidget.vala:58
+msgid "Power Settings…"
+msgstr ""

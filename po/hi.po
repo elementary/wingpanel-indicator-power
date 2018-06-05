@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-03 22:10-0600\n"
+"POT-Creation-Date: 2018-06-05 05:22-0500\n"
 "PO-Revision-Date: 2018-03-20 00:14+0000\n"
 "Last-Translator: Anand Kumar <anand@anandkumar.net>\n"
-"Language-Team: Hindi <https://weblate.elementary.io/projects/wingpanel"
-"/wingpanel-indicator-power/hi/>\n"
+"Language-Team: Hindi <https://weblate.elementary.io/projects/wingpanel/"
+"wingpanel-indicator-power/hi/>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,114 +15,124 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: ../src/Indicator.vala:31
+#: src/Indicator.vala:32
 msgid "Power"
 msgstr "पावर"
 
-#: ../src/Indicator.vala:32
+#: src/Indicator.vala:33
 msgid "Power indicator"
 msgstr "शक्ति प्रदर्शक"
 
-#: ../src/Widgets/AppList.vala:54
-msgid "Apps Using Lots of Power"
-msgstr "एप्प्स ज़्यादा ताक़त ले रहें हैं"
-
-#: ../src/Widgets/PopoverWidget.vala:51
-msgid "Show Percentage"
-msgstr "प्रतिशत दिखाएँ"
-
-#: ../src/Widgets/PopoverWidget.vala:52
-msgid "Power Settings…"
-msgstr "पावर सेटिंग्स …"
-
-#: ../src/Utils.vala:80
+#: src/Utils.vala:88
 msgid "Battery"
 msgstr "बैटरी"
 
-#: ../src/Utils.vala:81
+#: src/Utils.vala:89
 msgid "UPS"
 msgstr "यू.पी.एस."
 
-#: ../src/Utils.vala:82
+#: src/Utils.vala:90
 msgid "Display"
 msgstr "प्रदर्शक"
 
-#: ../src/Utils.vala:83
+#: src/Utils.vala:91
 msgid "Mouse"
 msgstr "माउस"
 
-#: ../src/Utils.vala:84
+#: src/Utils.vala:92
 msgid "Keyboard"
 msgstr "कुंजीपटल"
 
-#: ../src/Utils.vala:85
+#: src/Utils.vala:93
 msgid "PDA"
 msgstr "पी डी ऐ"
 
-#: ../src/Utils.vala:86
+#: src/Utils.vala:94
 msgid "Phone"
 msgstr "दूरभाष"
 
-#: ../src/Utils.vala:87
+#: src/Utils.vala:95
 msgid "Device"
 msgstr "युक्ति"
 
-#: ../src/Utils.vala:102
+#: src/Utils.vala:110
 msgid "Calculating…"
 msgstr "गणना में…"
 
-#: ../src/Utils.vala:108
+#: src/Utils.vala:116
+#, c-format
 msgid "%i%% charged"
 msgstr "%i%% चार्ज हुआ"
 
-#: ../src/Utils.vala:128
-msgid "%i%% remaining"
-msgstr "%i%% शेष"
-
-#: ../src/Utils.vala:154
+#: src/Utils.vala:124 src/Utils.vala:162
+#, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "%lld दिन पूर्ण होने में शेष"
 msgstr[1] "%lld दिन पूर्ण होने में शेष"
 
-#: ../src/Utils.vala:155
+#: src/Utils.vala:127 src/Utils.vala:163
+#, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld घंटा पूर्ण होने में शेष"
 msgstr[1] "%lld घंटे पूर्ण होने में शेष"
 
-#: ../src/Utils.vala:156
+#: src/Utils.vala:130 src/Utils.vala:164
+#, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld मिनट पूर्ण होने में शेष"
 msgstr[1] "%lld मिनट पूर्ण होने में शेष"
 
-#: ../src/Utils.vala:157
+#: src/Utils.vala:132 src/Utils.vala:165
+#, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld सेकण्ड पूर्ण होने में शेष"
 msgstr[1] "%lld सेकण्ड पूर्ण होने में शेष"
 
-#: ../src/Utils.vala:158
+#: src/Utils.vala:136
+#, c-format
+msgid "%i%% remaining"
+msgstr "%i%% शेष"
+
+#: src/Utils.vala:144 src/Utils.vala:166
+#, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "%lld दिन ख़ाली होने में शेष"
 msgstr[1] "%lld दिन ख़ाली होने में शेष"
 
-#: ../src/Utils.vala:159
+#: src/Utils.vala:147 src/Utils.vala:167
+#, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld घंटा ख़ाली होने में शेष"
 msgstr[1] "%lld घंटे ख़ाली होने में शेष"
 
-#: ../src/Utils.vala:160
+#: src/Utils.vala:150 src/Utils.vala:168
+#, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld मिनट ख़ाली होने में शेष"
 msgstr[1] "%lld मिनट ख़ाली होने में शेष"
 
-#: ../src/Utils.vala:161
+#: src/Utils.vala:152 src/Utils.vala:169
+#, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
 msgstr[0] "%lld सेकण्ड ख़ाली होने में शेष"
 msgstr[1] "%lld सेकण्ड ख़ाली होने में शेष"
+
+#: src/Widgets/AppList.vala:52
+msgid "Apps Using Lots of Power"
+msgstr "एप्प्स ज़्यादा ताक़त ले रहें हैं"
+
+#: src/Widgets/PopoverWidget.vala:55
+msgid "Show Percentage"
+msgstr "प्रतिशत दिखाएँ"
+
+#: src/Widgets/PopoverWidget.vala:58
+msgid "Power Settings…"
+msgstr "पावर सेटिंग्स …"
