@@ -23,7 +23,7 @@ public class Power.Services.SettingsManager : Granite.Services.Settings {
     public bool show_percentage { get; set; }
 
     public SettingsManager () {
-        base ("org.pantheon.desktop.wingpanel.indicators.power");
+        base ("io.elementary.desktop.wingpanel.power");
     }
 
     public static SettingsManager get_default () {
