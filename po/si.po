@@ -3,65 +3,66 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 05:22-0500\n"
-"PO-Revision-Date: 2015-05-23 21:47+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-06-10 00:14+0000\n"
+"Last-Translator: Gamunu Balagalla <gamunu.balagalla@gmail.com>\n"
+"Language-Team: Sinhala <https://weblate.elementary.io/projects/wingpanel"
+"/wingpanel-indicator-power/si/>\n"
+"Language: si\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
 
 #: src/Indicator.vala:32
 msgid "Power"
-msgstr ""
+msgstr "බලය"
 
 #: src/Indicator.vala:33
 msgid "Power indicator"
-msgstr ""
+msgstr "බල දර්ශකය"
 
 #: src/Utils.vala:88
 msgid "Battery"
-msgstr ""
+msgstr "බැටරි"
 
 #: src/Utils.vala:89
 msgid "UPS"
-msgstr ""
+msgstr "UPS"
 
 #: src/Utils.vala:90
 msgid "Display"
-msgstr ""
+msgstr "සංදර්ශකය"
 
 #: src/Utils.vala:91
 msgid "Mouse"
-msgstr ""
+msgstr "මූසිකය"
 
 #: src/Utils.vala:92
 msgid "Keyboard"
-msgstr ""
+msgstr "යතුරු පුවරුව"
 
 #: src/Utils.vala:93
 msgid "PDA"
-msgstr ""
+msgstr "PDA"
 
 #: src/Utils.vala:94
 msgid "Phone"
-msgstr ""
+msgstr "දුරකථන"
 
 #: src/Utils.vala:95
 msgid "Device"
-msgstr ""
+msgstr "උපකරණය"
 
 #: src/Utils.vala:110
 msgid "Calculating…"
-msgstr ""
+msgstr "ගණනය කරමින්…"
 
 #: src/Utils.vala:116
 #, c-format
 msgid "%i%% charged"
-msgstr ""
+msgstr "%i%% ආරෝපණයවී ඇත"
 
 #: src/Utils.vala:124 src/Utils.vala:162
 #, c-format
