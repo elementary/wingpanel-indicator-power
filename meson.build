@@ -1,4 +1,8 @@
-project('power', 'vala', 'c')
+project(
+    'power',
+    'vala', 'c',
+    version: '2.1.2'
+)
 
 gettext_name = meson.project_name() + '-indicator'
 i18n = import('i18n')
