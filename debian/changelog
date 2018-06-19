@@ -1,8 +1,8 @@
-wingpanel-indicator-power (2.1.2) UNRELEASED; urgency=medium
+wingpanel-indicator-power (2.1.2) bionic; urgency=medium
 
-  * Pre-release version bump.
+  * New upstream release.
 
- -- Cody Garver <cody@elementary.io>  Mon, 04 Jun 2018 06:20:23 -0500
+ -- Cody Garver <cody@elementary.io>  Mon, 18 Jun 2018 20:16:23 -0500
 
 wingpanel-indicator-power (2.1.1) xenial; urgency=medium
 
