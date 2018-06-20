@@ -42,6 +42,9 @@ const uint32 DEVICE_TYPE_MOUSE = 5;
 const uint32 DEVICE_TYPE_KEYBOARD = 6;
 const uint32 DEVICE_TYPE_PDA = 7;
 const uint32 DEVICE_TYPE_PHONE = 8;
+const uint32 DEVICE_TYPE_MEDIA_PLAYER = 9;
+const uint32 DEVICE_TYPE_TABLET = 10;
+const uint32 DEVICE_TYPE_COMPUTER = 11;
 
 public class Power.Services.Device : Object {
     private const string DEVICE_INTERFACE = "org.freedesktop.UPower";

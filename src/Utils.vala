@@ -23,7 +23,10 @@ namespace Power.Utils {
     }
 
     public bool type_has_device_icon (uint32 device_type) {
-        return device_type == DEVICE_TYPE_PHONE || device_type == DEVICE_TYPE_MOUSE || device_type == DEVICE_TYPE_KEYBOARD;
+        return device_type == DEVICE_TYPE_PHONE ||
+               device_type == DEVICE_TYPE_MOUSE ||
+               device_type == DEVICE_TYPE_KEYBOARD ||
+               device_type == DEVICE_TYPE_TABLET;
     }
 
     public string get_symbolic_icon_name_for_battery (Services.Device battery) {
@@ -48,6 +51,7 @@ namespace Power.Utils {
             case DEVICE_TYPE_PHONE: return "phone";
             case DEVICE_TYPE_MOUSE: return "input-mouse";
             case DEVICE_TYPE_KEYBOARD: return "input-keyboard";
+            case DEVICE_TYPE_TABLET: return "input-tablet";
             default: return get_icon_name_for_battery (device);
         }
     }
@@ -92,10 +96,17 @@ namespace Power.Utils {
             case DEVICE_TYPE_KEYBOARD: title = _("Keyboard"); break;
             case DEVICE_TYPE_PDA: title = _("PDA"); break;
             case DEVICE_TYPE_PHONE: title = _("Phone"); break;
+            case DEVICE_TYPE_MEDIA_PLAYER: title = _("Media Player"); break;
+            case DEVICE_TYPE_TABLET: title = _("Tablet"); break;
+            case DEVICE_TYPE_COMPUTER: title = _("Computer"); break;
             default: title = battery.vendor + " " + _("Device"); break;
         }
 
         if (battery.device_type == DEVICE_TYPE_PHONE && battery.model != "") {
+            title = battery.model;
+        }
+
+        if (battery.device_type == DEVICE_TYPE_TABLET && battery.model != "") {
             title = battery.model;
         }
 
