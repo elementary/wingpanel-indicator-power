@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-21 09:31-0700\n"
-"PO-Revision-Date: 2018-06-21 18:09+0000\n"
+"PO-Revision-Date: 2018-06-22 00:11+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål "
 "<https://weblate.elementary.io/projects/wingpanel/wingpanel-indicator-"
@@ -53,6 +53,7 @@ msgid "Phone"
 msgstr "Telefon"
 
 #: src/Utils.vala:99
+#, fuzzy
 msgid "Media Player"
 msgstr "Mediaspiller"
 
