@@ -73,12 +73,12 @@ public class Power.Indicator : Wingpanel.Indicator {
     private void update_visibility () {
         var dm = Services.DeviceManager.get_default ();
 
-        bool should_be_visible = (dm.has_battery || dm.backlight.present);
+        bool should_be_visible = !dm.only_charging_peripheral_devices && (dm.has_battery || dm.backlight.present);
         if (visible != should_be_visible) {
             /* NOTE: popover closes every time you set visibility, so change property only when needed */
             visible = should_be_visible;
         }
-        
+
         if (visible) {
             if (dm.has_battery) {
                 update_display_device ();
@@ -111,7 +111,7 @@ public class Power.Indicator : Wingpanel.Indicator {
     private void show_display_device_data () {
         if (display_device != null && display_widget != null) {
             var icon_name = Utils.get_symbolic_icon_name_for_battery (display_device);
-            
+
             display_widget.set_icon_name (icon_name, true);
 
             /* Debug output for designers */

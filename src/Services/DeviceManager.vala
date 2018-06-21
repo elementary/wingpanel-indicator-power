@@ -33,6 +33,7 @@ public class Power.Services.DeviceManager : Object {
     public bool has_battery { get; private set; }
     public bool on_battery { get; private set; }
     public bool on_low_battery { get; private set; }
+    public bool only_charging_peripheral_devices { get; private set; }
 
     public signal void battery_registered (string device_path, Device battery);
     public signal void battery_deregistered (string device_path);
@@ -117,6 +118,15 @@ public class Power.Services.DeviceManager : Object {
         });
 
         has_battery = batteries.has_next ();
+
+        // Only interested in devices if they're discharging peripherals or supplying power to the computer
+        only_charging_peripheral_devices = true;
+        foreach (var device in devices.values) {
+            if (device.power_supply || device.state == DEVICE_STATE_DISCHARGING || device.state == DEVICE_STATE_EMPTY) {
+                only_charging_peripheral_devices = false;
+                break;
+            }
+        }
     }
 
     private void register_device (ObjectPath device_path) {
