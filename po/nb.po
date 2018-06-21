@@ -3,16 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-21 09:31-0700\n"
-"PO-Revision-Date: 2016-03-12 15:32+0000\n"
-"Last-Translator: ProsjektX <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-06-21 18:09+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"Language-Team: Norwegian Bokmål "
+"<https://weblate.elementary.io/projects/wingpanel/wingpanel-indicator-"
+"power/nb/>\n"
+"Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
 
 #: src/Indicator.vala:32
 msgid "Power"
@@ -52,15 +54,15 @@ msgstr "Telefon"
 
 #: src/Utils.vala:99
 msgid "Media Player"
-msgstr ""
+msgstr "Mediaspiller"
 
 #: src/Utils.vala:100
 msgid "Tablet"
-msgstr ""
+msgstr "Nettbrett"
 
 #: src/Utils.vala:101
 msgid "Computer"
-msgstr ""
+msgstr "Datamaskin"
 
 #: src/Utils.vala:102
 msgid "Device"
