@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-05 05:22-0500\n"
+"POT-Creation-Date: 2018-06-21 09:31-0700\n"
 "PO-Revision-Date: 2017-04-19 22:59+0000\n"
 "Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
 "Language-Team: nn (generated) <https://l10n.elementary.io/projects/wingpanel/"
@@ -23,102 +23,114 @@ msgstr "Straum"
 msgid "Power indicator"
 msgstr "Straum-indikator"
 
-#: src/Utils.vala:88
+#: src/Utils.vala:92
 msgid "Battery"
 msgstr "Batteri"
 
-#: src/Utils.vala:89
+#: src/Utils.vala:93
 msgid "UPS"
 msgstr "UPS"
 
-#: src/Utils.vala:90
+#: src/Utils.vala:94
 msgid "Display"
 msgstr "Skjerm"
 
-#: src/Utils.vala:91
+#: src/Utils.vala:95
 msgid "Mouse"
 msgstr "Mus"
 
-#: src/Utils.vala:92
+#: src/Utils.vala:96
 msgid "Keyboard"
 msgstr "Tastatur"
 
-#: src/Utils.vala:93
+#: src/Utils.vala:97
 msgid "PDA"
 msgstr "PDA"
 
-#: src/Utils.vala:94
+#: src/Utils.vala:98
 msgid "Phone"
 msgstr "Telefon"
 
-#: src/Utils.vala:95
+#: src/Utils.vala:99
+msgid "Media Player"
+msgstr ""
+
+#: src/Utils.vala:100
+msgid "Tablet"
+msgstr ""
+
+#: src/Utils.vala:101
+msgid "Computer"
+msgstr ""
+
+#: src/Utils.vala:102
 msgid "Device"
 msgstr "Eining"
 
-#: src/Utils.vala:110
+#: src/Utils.vala:121
 msgid "Calculating…"
 msgstr "Reknar ut…"
 
-#: src/Utils.vala:116
+#: src/Utils.vala:127
 #, c-format
 msgid "%i%% charged"
 msgstr "%i%% lada"
 
-#: src/Utils.vala:124 src/Utils.vala:162
+#: src/Utils.vala:135 src/Utils.vala:173
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "%lld dag til fullt opplada"
 msgstr[1] "%lld dagar til fullt opplada"
 
-#: src/Utils.vala:127 src/Utils.vala:163
+#: src/Utils.vala:138 src/Utils.vala:174
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld time til fullt opplada"
 msgstr[1] "%lld timar til fullt opplada"
 
-#: src/Utils.vala:130 src/Utils.vala:164
+#: src/Utils.vala:141 src/Utils.vala:175
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld minutt til fult opplada"
 msgstr[1] "%lld minuttar til fullt opplada"
 
-#: src/Utils.vala:132 src/Utils.vala:165
+#: src/Utils.vala:143 src/Utils.vala:176
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld sekund til fullt opplada"
 msgstr[1] "%lld sekunder til fullt opplada"
 
-#: src/Utils.vala:136
+#: src/Utils.vala:147
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% gjenstår"
 
-#: src/Utils.vala:144 src/Utils.vala:166
+#: src/Utils.vala:155 src/Utils.vala:177
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "%lld dag til det er tomt"
 msgstr[1] "%lld dagar til det er tomt"
 
-#: src/Utils.vala:147 src/Utils.vala:167
+#: src/Utils.vala:158 src/Utils.vala:178
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld time til det er tomt"
 msgstr[1] "%lld timar til det er tomt"
 
-#: src/Utils.vala:150 src/Utils.vala:168
+#: src/Utils.vala:161 src/Utils.vala:179
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld minutt til det er tomt"
 msgstr[1] "%lld minutter til det er tomt"
 
-#: src/Utils.vala:152 src/Utils.vala:169
+#: src/Utils.vala:163 src/Utils.vala:180
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-05 05:22-0500\n"
+"POT-Creation-Date: 2018-06-21 09:31-0700\n"
 "PO-Revision-Date: 2017-04-18 07:39+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/wingpanel/"
@@ -23,95 +23,107 @@ msgstr "전력"
 msgid "Power indicator"
 msgstr "전력 표시기"
 
-#: src/Utils.vala:88
+#: src/Utils.vala:92
 msgid "Battery"
 msgstr "배터리"
 
-#: src/Utils.vala:89
+#: src/Utils.vala:93
 msgid "UPS"
 msgstr "UPS"
 
-#: src/Utils.vala:90
+#: src/Utils.vala:94
 msgid "Display"
 msgstr "디스플레이"
 
-#: src/Utils.vala:91
+#: src/Utils.vala:95
 msgid "Mouse"
 msgstr "마우스"
 
-#: src/Utils.vala:92
+#: src/Utils.vala:96
 msgid "Keyboard"
 msgstr "키보드"
 
-#: src/Utils.vala:93
+#: src/Utils.vala:97
 msgid "PDA"
 msgstr "PDA"
 
-#: src/Utils.vala:94
+#: src/Utils.vala:98
 msgid "Phone"
 msgstr "전화"
 
-#: src/Utils.vala:95
+#: src/Utils.vala:99
+msgid "Media Player"
+msgstr ""
+
+#: src/Utils.vala:100
+msgid "Tablet"
+msgstr ""
+
+#: src/Utils.vala:101
+msgid "Computer"
+msgstr ""
+
+#: src/Utils.vala:102
 msgid "Device"
 msgstr "장치"
 
-#: src/Utils.vala:110
+#: src/Utils.vala:121
 msgid "Calculating…"
 msgstr "계산 중…"
 
-#: src/Utils.vala:116
+#: src/Utils.vala:127
 #, c-format
 msgid "%i%% charged"
 msgstr "%i%% 충전됨"
 
-#: src/Utils.vala:124 src/Utils.vala:162
+#: src/Utils.vala:135 src/Utils.vala:173
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "완전 충전까지 %lld 일 남음"
 
-#: src/Utils.vala:127 src/Utils.vala:163
+#: src/Utils.vala:138 src/Utils.vala:174
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "완전 충전까지 %lld 시간 남음"
 
-#: src/Utils.vala:130 src/Utils.vala:164
+#: src/Utils.vala:141 src/Utils.vala:175
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "완전 충전까지 %lld 분 남음"
 
-#: src/Utils.vala:132 src/Utils.vala:165
+#: src/Utils.vala:143 src/Utils.vala:176
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "완전 충전까지 %lld 초 남음"
 
-#: src/Utils.vala:136
+#: src/Utils.vala:147
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% 남음"
 
-#: src/Utils.vala:144 src/Utils.vala:166
+#: src/Utils.vala:155 src/Utils.vala:177
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "완전 방전까지 %lld 일 남음"
 
-#: src/Utils.vala:147 src/Utils.vala:167
+#: src/Utils.vala:158 src/Utils.vala:178
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "완전 방전까지 %lld 시간 남음"
 
-#: src/Utils.vala:150 src/Utils.vala:168
+#: src/Utils.vala:161 src/Utils.vala:179
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "완전 방전까지 %lld 분 남음"
 
-#: src/Utils.vala:152 src/Utils.vala:169
+#: src/Utils.vala:163 src/Utils.vala:180
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"

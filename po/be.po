@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-05 05:22-0500\n"
+"POT-Creation-Date: 2018-06-21 09:31-0700\n"
 "PO-Revision-Date: 2016-02-14 10:01+0000\n"
 "Last-Translator: Dmitry Taranovich <vorbissmcgregor@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,48 +23,60 @@ msgstr "Сілкаванне"
 msgid "Power indicator"
 msgstr "Індыкатар сілкавання"
 
-#: src/Utils.vala:88
+#: src/Utils.vala:92
 msgid "Battery"
 msgstr "Батарэя"
 
-#: src/Utils.vala:89
+#: src/Utils.vala:93
 msgid "UPS"
 msgstr "UPS"
 
-#: src/Utils.vala:90
+#: src/Utils.vala:94
 msgid "Display"
 msgstr ""
 
-#: src/Utils.vala:91
+#: src/Utils.vala:95
 msgid "Mouse"
 msgstr "Мыш"
 
-#: src/Utils.vala:92
+#: src/Utils.vala:96
 msgid "Keyboard"
 msgstr "Клавіятура"
 
-#: src/Utils.vala:93
+#: src/Utils.vala:97
 msgid "PDA"
 msgstr "Смартфон"
 
-#: src/Utils.vala:94
+#: src/Utils.vala:98
 msgid "Phone"
 msgstr "Тэлефон"
 
-#: src/Utils.vala:95
+#: src/Utils.vala:99
+msgid "Media Player"
+msgstr ""
+
+#: src/Utils.vala:100
+msgid "Tablet"
+msgstr ""
+
+#: src/Utils.vala:101
+msgid "Computer"
+msgstr ""
+
+#: src/Utils.vala:102
 msgid "Device"
 msgstr "Прылада"
 
-#: src/Utils.vala:110
+#: src/Utils.vala:121
 msgid "Calculating…"
 msgstr "Вылічэнне..."
 
-#: src/Utils.vala:116
+#: src/Utils.vala:127
 #, c-format
 msgid "%i%% charged"
 msgstr "%i%% зараджана"
 
-#: src/Utils.vala:124 src/Utils.vala:162
+#: src/Utils.vala:135 src/Utils.vala:173
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
@@ -72,7 +84,7 @@ msgstr[0] "%lld дзень да зарадкі"
 msgstr[1] "%lld дні да зарадкі"
 msgstr[2] "%lld дзён да зарадкі"
 
-#: src/Utils.vala:127 src/Utils.vala:163
+#: src/Utils.vala:138 src/Utils.vala:174
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
@@ -80,7 +92,7 @@ msgstr[0] "%lld гадзіну да зарадкі"
 msgstr[1] "%lld гадзіны да зарадкі"
 msgstr[2] "%lld гадзін да зарадкі"
 
-#: src/Utils.vala:130 src/Utils.vala:164
+#: src/Utils.vala:141 src/Utils.vala:175
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
@@ -88,7 +100,7 @@ msgstr[0] "%lld хвіліну да зарадкі"
 msgstr[1] "%lld хвіліны да зарадкі"
 msgstr[2] "%lld хвілін да зарадкі"
 
-#: src/Utils.vala:132 src/Utils.vala:165
+#: src/Utils.vala:143 src/Utils.vala:176
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
@@ -96,12 +108,12 @@ msgstr[0] "%lld секунду да зарадкі"
 msgstr[1] "%lld секунды да зарадкі"
 msgstr[2] "%lld секунд да зарадкі"
 
-#: src/Utils.vala:136
+#: src/Utils.vala:147
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% rзасталося"
 
-#: src/Utils.vala:144 src/Utils.vala:166
+#: src/Utils.vala:155 src/Utils.vala:177
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
@@ -109,7 +121,7 @@ msgstr[0] "%lld дзень да разрадкі"
 msgstr[1] "%lld дні да разрадкі"
 msgstr[2] "%lld дзён да разрадкі"
 
-#: src/Utils.vala:147 src/Utils.vala:167
+#: src/Utils.vala:158 src/Utils.vala:178
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
@@ -117,7 +129,7 @@ msgstr[0] "%lld гадзіну да разрадкі"
 msgstr[1] "%lld гадзіны да разрадкі"
 msgstr[2] "%lld гадзін да разрадкі"
 
-#: src/Utils.vala:150 src/Utils.vala:168
+#: src/Utils.vala:161 src/Utils.vala:179
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
@@ -125,7 +137,7 @@ msgstr[0] "%lld хвіліну да разрадкі"
 msgstr[1] "%lld хвіліны да разрадкі"
 msgstr[2] "%lld хвілін да разрадкі"
 
-#: src/Utils.vala:152 src/Utils.vala:169
+#: src/Utils.vala:163 src/Utils.vala:180
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
