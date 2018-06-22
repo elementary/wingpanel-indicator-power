@@ -3,17 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-21 09:31-0700\n"
-"PO-Revision-Date: 2017-04-18 21:38+0000\n"
+"PO-Revision-Date: 2018-06-22 00:11+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
-"Language-Team: Lithuanian <https://l10n.elementary.io/projects/wingpanel/"
-"wingpanel-indicator-power/lt/>\n"
+"Language-Team: Lithuanian <https://weblate.elementary.io/projects/wingpanel"
+"/wingpanel-indicator-power/lt/>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
-"%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || "
+"n%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: src/Indicator.vala:32
@@ -54,15 +54,15 @@ msgstr "Telefonas"
 
 #: src/Utils.vala:99
 msgid "Media Player"
-msgstr ""
+msgstr "Medijos leistuvė"
 
 #: src/Utils.vala:100
 msgid "Tablet"
-msgstr ""
+msgstr "Planšetė"
 
 #: src/Utils.vala:101
 msgid "Computer"
-msgstr ""
+msgstr "Kompiuteris"
 
 #: src/Utils.vala:102
 msgid "Device"
@@ -84,6 +84,7 @@ msgid_plural "%lld days until full"
 msgstr[0] "%lld diena iki pilnos"
 msgstr[1] "%lld dienos iki pilnos"
 msgstr[2] "%lld dienų iki pilnos"
+msgstr[3] "%lld diena iki pilnos"
 
 #: src/Utils.vala:138 src/Utils.vala:174
 #, c-format
@@ -92,6 +93,7 @@ msgid_plural "%lld hours until full"
 msgstr[0] "%lld valanda iki pilnos"
 msgstr[1] "%lld valandos iki pilnos"
 msgstr[2] "%lld valandų iki pilnos"
+msgstr[3] "%lld valanda iki pilnos"
 
 #: src/Utils.vala:141 src/Utils.vala:175
 #, c-format
@@ -100,6 +102,7 @@ msgid_plural "%lld minutes until full"
 msgstr[0] "%lld minutė iki pilnos"
 msgstr[1] "%lld minutės iki pilnos"
 msgstr[2] "%lld minučių iki pilnos"
+msgstr[3] "%lld minutė iki pilnos"
 
 #: src/Utils.vala:143 src/Utils.vala:176
 #, c-format
@@ -108,6 +111,7 @@ msgid_plural "%lld seconds until full"
 msgstr[0] "%lld sekundė iki pilnos"
 msgstr[1] "%lld sekundės iki pilnos"
 msgstr[2] "%lld sekundžių iki pilnos"
+msgstr[3] "%lld sekundė iki pilnos"
 
 #: src/Utils.vala:147
 #, c-format
@@ -121,6 +125,7 @@ msgid_plural "%lld days until empty"
 msgstr[0] "%lld diena iki tuščios"
 msgstr[1] "%lld dienos iki tuščios"
 msgstr[2] "%lld dienų iki tuščios"
+msgstr[3] "%lld diena iki tuščios"
 
 #: src/Utils.vala:158 src/Utils.vala:178
 #, c-format
@@ -129,6 +134,7 @@ msgid_plural "%lld hours until empty"
 msgstr[0] "%lld valanda iki tuščios"
 msgstr[1] "%lld valandos iki tuščios"
 msgstr[2] "%lld valandų iki tuščios"
+msgstr[3] "%lld valanda iki tuščios"
 
 #: src/Utils.vala:161 src/Utils.vala:179
 #, c-format
@@ -137,6 +143,7 @@ msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld minutė iki tuščios"
 msgstr[1] "%lld minutės iki tuščios"
 msgstr[2] "%lld minučių iki tuščios"
+msgstr[3] "%lld minutė iki tuščios"
 
 #: src/Utils.vala:163 src/Utils.vala:180
 #, c-format
@@ -145,6 +152,7 @@ msgid_plural "%lld seconds until empty"
 msgstr[0] "%lld sekundė iki tuščios"
 msgstr[1] "%lld sekundės iki tuščios"
 msgstr[2] "%lld sekundžių iki tuščios"
+msgstr[3] "%lld sekundė iki tuščios"
 
 #: src/Widgets/AppList.vala:52
 msgid "Apps Using Lots of Power"
