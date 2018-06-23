@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-21 09:31-0700\n"
-"PO-Revision-Date: 2018-05-30 00:06+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Hungarian <https://weblate.elementary.io/projects/wingpanel/"
-"wingpanel-indicator-power/hu/>\n"
+"PO-Revision-Date: 2018-06-23 08:06+0000\n"
+"Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
+"Language-Team: Hungarian <https://weblate.elementary.io/projects/wingpanel"
+"/wingpanel-indicator-power/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -53,15 +53,15 @@ msgstr "Telefon"
 
 #: src/Utils.vala:99
 msgid "Media Player"
-msgstr ""
+msgstr "Médialejátszó"
 
 #: src/Utils.vala:100
 msgid "Tablet"
-msgstr ""
+msgstr "Tablet"
 
 #: src/Utils.vala:101
 msgid "Computer"
-msgstr ""
+msgstr "Számítógép"
 
 #: src/Utils.vala:102
 msgid "Device"
