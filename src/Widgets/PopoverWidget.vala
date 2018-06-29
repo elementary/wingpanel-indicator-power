@@ -21,7 +21,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
     public bool is_in_session { get; construct; default = false; }
     private DeviceList device_list;
     private Wingpanel.Widgets.Separator device_separator = null;
-    private ScreenBrightness screen_brightness;
+    private ScreenBrightness? screen_brightness;
     private AppList app_list;
     private Wingpanel.Widgets.Separator last_separator = null;
 
@@ -76,7 +76,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
         dm.notify["has-battery"].connect((s, p) => {
             bool had_separator = last_separator != null;
             bool has_separator = is_in_session || dm.has_battery;
-            
+
             if (has_separator != had_separator) {
                 if (has_separator) {
                     this.pack_start (last_separator = new Wingpanel.Widgets.Separator ());
@@ -120,7 +120,9 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
     }
 
     public void update_brightness_slider () {
-        screen_brightness.update_slider ();
+        if (screen_brightness != null) {
+            screen_brightness.update_slider ();
+        }
     }
 
     private void show_settings () {
