@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-21 09:31-0700\n"
-"PO-Revision-Date: 2018-07-02 00:07+0000\n"
+"PO-Revision-Date: 2018-07-08 06:03+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/fi/>\n"
@@ -57,7 +57,7 @@ msgstr "Mediasoitin"
 
 #: src/Utils.vala:100
 msgid "Tablet"
-msgstr ""
+msgstr "Tabletti"
 
 #: src/Utils.vala:101
 msgid "Computer"
