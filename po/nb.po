@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-21 09:31-0700\n"
-"PO-Revision-Date: 2018-07-19 22:01+0000\n"
+"PO-Revision-Date: 2018-07-20 00:07+0000\n"
 "Last-Translator: Nils K <slx@nilsk.net>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
 "wingpanel/wingpanel-indicator-power/nb/>\n"
@@ -113,33 +113,33 @@ msgstr "%i%% gjenstår"
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
-msgstr[0] "%lld dag til tomt"
-msgstr[1] "%lld dager til tomt"
+msgstr[0] "%lld dag til det er tomt"
+msgstr[1] "%lld dager til det er tomt"
 
 #: src/Utils.vala:158 src/Utils.vala:178
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
-msgstr[0] "%lld time til tomt"
-msgstr[1] "%lld timer til tomt"
+msgstr[0] "%lld time til det er tomt"
+msgstr[1] "%lld timer til det er tomt"
 
 #: src/Utils.vala:161 src/Utils.vala:179
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
-msgstr[0] "%lld minutt til tomt"
-msgstr[1] "%lld minutter til tomt"
+msgstr[0] "%lld minutt til det er tomt"
+msgstr[1] "%lld minutter til det er tomt"
 
 #: src/Utils.vala:163 src/Utils.vala:180
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
-msgstr[0] "%lld sekund til tomt"
-msgstr[1] "%lld sekunder til tomt"
+msgstr[0] "%lld sekund til det er tomt"
+msgstr[1] "%lld sekunder til det er tomt"
 
 #: src/Widgets/AppList.vala:52
 msgid "Apps Using Lots of Power"
-msgstr "Applikasjoner som bruker mye strøm"
+msgstr "Apper som bruker mye strøm"
 
 #: src/Widgets/PopoverWidget.vala:55
 msgid "Show Percentage"
@@ -147,4 +147,4 @@ msgstr "Vis prosent"
 
 #: src/Widgets/PopoverWidget.vala:58
 msgid "Power Settings…"
-msgstr "Innstillinger for strøm…"
+msgstr "Strøm innstillinger…"
