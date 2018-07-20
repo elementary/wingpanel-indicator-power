@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-21 09:31-0700\n"
-"PO-Revision-Date: 2018-07-19 00:08+0000\n"
+"PO-Revision-Date: 2018-07-20 11:50+0000\n"
 "Last-Translator: Christophe Silva <Christophesilva80@gmail.com>\n"
 "Language-Team: Portuguese <https://weblate.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/pt/>\n"
@@ -53,15 +53,15 @@ msgstr "Telemóvel"
 
 #: src/Utils.vala:99
 msgid "Media Player"
-msgstr ""
+msgstr "Reprodutor multimédia"
 
 #: src/Utils.vala:100
 msgid "Tablet"
-msgstr ""
+msgstr "Tablet"
 
 #: src/Utils.vala:101
 msgid "Computer"
-msgstr ""
+msgstr "Computador"
 
 #: src/Utils.vala:102
 msgid "Device"
