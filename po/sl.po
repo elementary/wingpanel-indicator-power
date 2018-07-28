@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-21 09:31-0700\n"
-"PO-Revision-Date: 2018-07-05 19:31+0000\n"
+"PO-Revision-Date: 2018-07-29 00:02+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://weblate.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/sl/>\n"
@@ -122,37 +122,37 @@ msgstr "%i% % ostalo"
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
-msgstr[0] "%lld dni do izpraznjenja"
-msgstr[1] "%lld dan do izpraznjenja"
-msgstr[2] "%lld dneva do izpraznjenja"
-msgstr[3] "%lld dnevi do izpraznjenja"
+msgstr[0] "%lld dan do izpraznjenja"
+msgstr[1] "%lld dneva do izpraznjenja"
+msgstr[2] "%lld dnevi do izpraznjenja"
+msgstr[3] "%lld dni do izpraznjenja"
 
 #: src/Utils.vala:158 src/Utils.vala:178
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
-msgstr[0] "%lld ur do izpraznjenja"
-msgstr[1] "%lld ura do izpraznjenja"
-msgstr[2] "%lld uri do izpraznjenja"
-msgstr[3] "%lld ure do izpraznjenja"
+msgstr[0] "%lld ura do izpraznjenja"
+msgstr[1] "%lld uri do izpraznjenja"
+msgstr[2] "%lld ure do izpraznjenja"
+msgstr[3] "%lld ur do izpraznjenja"
 
 #: src/Utils.vala:161 src/Utils.vala:179
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
-msgstr[0] "%lld minut do izpraznjenja"
-msgstr[1] "%lld minuta do izpraznjenja"
-msgstr[2] "%lld minuti do izpraznjenja"
-msgstr[3] "%lld minute do izpraznjenja"
+msgstr[0] "%lld minuta do izpraznjenja"
+msgstr[1] "%lld minuti do izpraznjenja"
+msgstr[2] "%lld minute do izpraznjenja"
+msgstr[3] "%lld minut do izpraznjenja"
 
 #: src/Utils.vala:163 src/Utils.vala:180
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
-msgstr[0] "%lld sekund do izpraznjenja"
-msgstr[1] "%lld sekunda do izpraznjenja"
-msgstr[2] "%lld sekundi do izpraznjenja"
-msgstr[3] "%lld sekunde do izpraznjenja"
+msgstr[0] "%lld sekunda do izpraznjenja"
+msgstr[1] "%lld sekundi do izpraznjenja"
+msgstr[2] "%lld sekunde do izpraznjenja"
+msgstr[3] "%lld sekund do izpraznjenja"
 
 #: src/Widgets/AppList.vala:52
 msgid "Apps Using Lots of Power"
