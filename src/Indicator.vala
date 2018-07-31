@@ -63,7 +63,6 @@ public class Power.Indicator : Wingpanel.Indicator {
 
     public override void opened () {
         Services.ProcessMonitor.Monitor.get_default ().update ();
-        popover_widget.update_brightness_slider ();
     }
 
     public override void closed () {

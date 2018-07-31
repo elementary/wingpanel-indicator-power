@@ -45,6 +45,8 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
             on_scale_value_changed.begin ();
         });
 
+        (iscreen as DBusProxy).g_properties_changed.connect (on_screen_properties_changed);
+
       #if OLD_GSD
         brightness_slider.set_value (iscreen.get_percentage ());
       #else
@@ -54,12 +56,18 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
         attach (brightness_slider, 1, 0, 1, 1);
     }
 
-    public void update_slider () {
-      #if OLD_GSD
-        brightness_slider.set_value (iscreen.get_percentage ());
-      #else
-        brightness_slider.set_value (iscreen.brightness);
-      #endif
+    private void on_screen_properties_changed (Variant changed_properties, string[] invalidated_properties) {
+        var changed_brightness = changed_properties.lookup_value ("Brightness", new VariantType ("i"));
+        if (changed_brightness != null) {
+          #if OLD_GSD
+            var val = iscreen.get_percentage ();
+          #else
+            var val = iscreen.brightness;
+          #endif
+            brightness_slider.value_changed.disconnect (on_scale_value_changed);
+            brightness_slider.set_value (val);
+            brightness_slider.value_changed.connect (on_scale_value_changed);
+        }
     }
 
     private async void init_bus () {
