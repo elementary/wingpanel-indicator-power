@@ -33,10 +33,6 @@ namespace Power.Utils {
         return get_icon_name_for_battery (battery) + "-symbolic";
     }
 
-    public string get_symbolic_icon_name_for_backlight () {
-        return "display-brightness-symbolic";
-    }
-
     public string get_icon_name_for_battery (Services.Device battery) {
         if (battery.percentage == 100 && is_charging (battery.state) == true) {
             return "battery-full-charged";
