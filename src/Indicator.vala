@@ -122,12 +122,7 @@ public class Power.Indicator : Wingpanel.Indicator {
 
     private void show_backlight_data () {
         if (display_widget != null) {
-            var icon_name = Utils.get_symbolic_icon_name_for_backlight ();
-
-            display_widget.set_icon_name (icon_name, false);
-
-            /* Debug output for designers */
-            debug ("Icon changed to \"%s\"", icon_name);
+            display_widget.set_icon_name ("display-brightness-symbolic", false);
         }
     }
 }
