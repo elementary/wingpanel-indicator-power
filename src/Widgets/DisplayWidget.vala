@@ -43,7 +43,6 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
         add (percent_revealer);
 
         settings = new GLib.Settings ("io.elementary.desktop.wingpanel.power");
-
         settings.changed.connect (update_revealer);
 
         this.button_press_event.connect ((e) => {
