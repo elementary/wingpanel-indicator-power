@@ -35,7 +35,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
     construct {
         var dm = Services.DeviceManager.get_default ();
-        var sm = Services.SettingsManager.get_default ();
+        var settings = new GLib.Settings ("io.elementary.desktop.wingpanel.power");
 
         device_list = new DeviceList ();
         //debug ("show list of batteries");
@@ -52,7 +52,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
             pack_start (screen_brightness);
         }
 
-        show_percent_switch = new Wingpanel.Widgets.Switch (_("Show Percentage"), sm.show_percentage);
+        show_percent_switch = new Wingpanel.Widgets.Switch (_("Show Percentage"), settings.get_boolean ("show-percentage"));
 
         var show_settings_button = new Gtk.ModelButton ();
         show_settings_button.text = _("Power Settings…");
@@ -108,7 +108,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
             }
         });
 
-        sm.schema.bind ("show-percentage", show_percent_switch.get_switch (), "active", SettingsBindFlags.DEFAULT);
+        settings.bind ("show-percentage", show_percent_switch.get_switch (), "active", SettingsBindFlags.DEFAULT);
 
         show_settings_button.clicked.connect (show_settings);
     }
