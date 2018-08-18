@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-21 09:31-0700\n"
 "PO-Revision-Date: 2018-08-19 00:10+0000\n"
-"Last-Translator: Tucan Holmes <tucan.web.swiss@gmail.com>\n"
+"Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
 "Language-Team: German <https://weblate.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/de/>\n"
 "Language: de\n"
@@ -69,7 +69,7 @@ msgstr "Gerät"
 
 #: src/Utils.vala:121
 msgid "Calculating…"
-msgstr "Berechnung läuft …"
+msgstr "Berechnung läuft…"
 
 #: src/Utils.vala:127
 #, c-format
@@ -147,4 +147,4 @@ msgstr "Prozentanzeige"
 
 #: src/Widgets/PopoverWidget.vala:58
 msgid "Power Settings…"
-msgstr "Energieeinstellungen …"
+msgstr "Energieeinstellungen…"
