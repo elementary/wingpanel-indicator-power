@@ -3,16 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-21 09:31-0700\n"
-"PO-Revision-Date: 2016-05-06 20:30+0000\n"
-"Last-Translator: Melih Güçlü <melihguclu@hotmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-08-30 15:21+0000\n"
+"Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
+"Language-Team: Turkish <https://weblate.elementary.io/projects/wingpanel/"
+"wingpanel-indicator-power/tr/>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
 
 #: src/Indicator.vala:32
 msgid "Power"
@@ -52,15 +53,15 @@ msgstr "Telefon"
 
 #: src/Utils.vala:99
 msgid "Media Player"
-msgstr ""
+msgstr "Medya Oynatıcı"
 
 #: src/Utils.vala:100
 msgid "Tablet"
-msgstr ""
+msgstr "Tablet"
 
 #: src/Utils.vala:101
 msgid "Computer"
-msgstr ""
+msgstr "Bilgisayar"
 
 #: src/Utils.vala:102
 msgid "Device"
