@@ -10,7 +10,6 @@ src/Services/DeviceManager.vala
 src/Services/Device.vala
 src/Services/ProcessMonitor/Monitor.vala
 src/Services/ProcessMonitor/Process.vala
-src/Services/SettingsManager.vala
 src/Widgets/AppList.vala
 src/Widgets/DeviceList.vala
 src/Widgets/DisplayWidget.vala

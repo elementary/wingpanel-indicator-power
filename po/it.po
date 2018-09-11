@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-21 09:31-0700\n"
-"PO-Revision-Date: 2017-11-04 20:15+0000\n"
-"Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
+"PO-Revision-Date: 2018-09-06 04:23+0000\n"
+"Last-Translator: strozzascotte <marco.depaolini@gmail.com>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/it/>\n"
 "Language: it\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.16\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: src/Indicator.vala:32
@@ -53,15 +53,15 @@ msgstr "Telefono"
 
 #: src/Utils.vala:99
 msgid "Media Player"
-msgstr ""
+msgstr "Riproduttore multimedia"
 
 #: src/Utils.vala:100
 msgid "Tablet"
-msgstr ""
+msgstr "Tablet"
 
 #: src/Utils.vala:101
 msgid "Computer"
-msgstr ""
+msgstr "Computer"
 
 #: src/Utils.vala:102
 msgid "Device"

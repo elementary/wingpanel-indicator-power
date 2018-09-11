@@ -22,7 +22,6 @@ files = files(
     'Services/DeviceManager.vala',
     'Services/ProcessMonitor/Monitor.vala',
     'Services/ProcessMonitor/Process.vala',
-    'Services/SettingsManager.vala',
     'Widgets/AppList.vala',
     'Widgets/DeviceList.vala',
     'Widgets/DisplayWidget.vala',
