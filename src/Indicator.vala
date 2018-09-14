@@ -110,19 +110,20 @@ public class Power.Indicator : Wingpanel.Indicator {
     private void show_display_device_data () {
         if (display_device != null && display_widget != null) {
             var icon_name = Utils.get_symbolic_icon_name_for_battery (display_device);
-            
-            display_widget.set_icon_name (icon_name, true);
+            display_widget.icon_name = icon_name;
+            display_widget.allow_percent = true;
 
             /* Debug output for designers */
             debug ("Icon changed to \"%s\"", icon_name);
 
-            display_widget.set_percent ((int)Math.round (display_device.percentage));
+            display_widget.percentage = (int)Math.round (display_device.percentage);
         }
     }
 
     private void show_backlight_data () {
         if (display_widget != null) {
-            display_widget.set_icon_name ("display-brightness-symbolic", false);
+            display_widget.icon_name = "display-brightness-symbolic";
+            display_widget.allow_percent = false;
         }
     }
 }

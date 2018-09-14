@@ -18,11 +18,21 @@
  */
 
 public class Power.Widgets.DisplayWidget : Gtk.Grid {
-    private Gtk.Image image;
-    private Gtk.Revealer percent_revealer;
+    public string icon_name {
+        set {
+            image.icon_name = value;
+        }
+    }
+
+    public bool allow_percent { get; set; default = false; }
+    public int percentage {
+        set {
+            percent_label.label = "%i%%".printf (value);
+        }
+    }
+
     private Gtk.Label percent_label;
-    private bool allow_percent = false;
-    private GLib.Settings settings;
+    private Gtk.Image image;
 
     construct {
         valign = Gtk.Align.CENTER;
@@ -31,43 +41,27 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
         image.icon_name = "content-loading-symbolic";
         image.pixel_size = 24;
 
-        percent_label = new Gtk.Label ("");
+        percent_label = new Gtk.Label (null);
         percent_label.margin_start = 6;
 
-        percent_revealer = new Gtk.Revealer ();
-        update_revealer ();
+        var percent_revealer = new Gtk.Revealer ();
         percent_revealer.transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT;
         percent_revealer.add (percent_label);
 
         add (image);
         add (percent_revealer);
 
-        settings = new GLib.Settings ("io.elementary.desktop.wingpanel.power");
-        settings.changed.connect (update_revealer);
+        var settings = new GLib.Settings ("io.elementary.desktop.wingpanel.power");
+        settings.bind ("show-percentage", percent_revealer, "reveal-child", GLib.SettingsBindFlags.GET);
+        bind_property ("allow-percent", percent_revealer, "visible", GLib.BindingFlags.SYNC_CREATE);
 
-        this.button_press_event.connect ((e) => {
+        button_press_event.connect ((e) => {
             if (allow_percent && e.button == Gdk.BUTTON_MIDDLE) {
                 settings.set_boolean ("show-percentage", !(settings.get_boolean ("show-percentage")));
                 return true;
             }
+
             return false;
         });
-    }
-
-    public void set_icon_name (string icon_name, bool allow_percent) {
-        image.icon_name = icon_name;
-        
-        if (this.allow_percent != allow_percent) {
-            this.allow_percent = allow_percent;
-            update_revealer ();
-        }
-    }
-
-    public void set_percent (int percentage) {
-        percent_label.set_label ("%i%%".printf (percentage));
-    }
-
-    private void update_revealer () {
-        percent_revealer.reveal_child = settings.get_boolean ("show-percentage") && allow_percent;
     }
 }

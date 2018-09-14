@@ -52,7 +52,7 @@ namespace Power.Utils {
         }
     }
 
-    private string get_battery_icon (double percentage, int64 remaining_time) {
+    private unowned string get_battery_icon (double percentage, int64 remaining_time) {
         if (percentage <= 0) {
             return "battery-good";
         }
