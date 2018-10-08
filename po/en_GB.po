@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-21 09:31-0700\n"
 "PO-Revision-Date: 2018-10-09 00:02+0000\n"
-"Last-Translator: Dominik Hnízdo <dominik.hnizdo@gmail.com>\n"
+"Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://weblate.elementary.io/"
 "projects/wingpanel/wingpanel-indicator-power/en_GB/>\n"
 "Language: en_GB\n"
@@ -61,7 +61,7 @@ msgstr "Tablet"
 
 #: src/Utils.vala:101
 msgid "Computer"
-msgstr ""
+msgstr "Computer"
 
 #: src/Utils.vala:102
 msgid "Device"
