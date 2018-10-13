@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-21 09:31-0700\n"
+"POT-Creation-Date: 2018-10-13 14:53-0700\n"
 "PO-Revision-Date: 2016-12-27 03:05+0000\n"
 "Last-Translator: Timothy <timothy.wong@rocketmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,114 +22,116 @@ msgstr "Kuasa"
 msgid "Power indicator"
 msgstr "Penunjuk kuasa"
 
-#: src/Utils.vala:92
+#. TODO: Do we want to differentiate between batteries and rechargeable batteries? (See German: Batterie <-> Akku)
+#: src/Utils.vala:88
 msgid "Battery"
 msgstr "Bateri"
 
-#: src/Utils.vala:93
+#: src/Utils.vala:89
 msgid "UPS"
 msgstr "UPS"
 
-#: src/Utils.vala:94
+#: src/Utils.vala:90
 msgid "Display"
 msgstr "Paparan"
 
-#: src/Utils.vala:95
+#: src/Utils.vala:91
 msgid "Mouse"
 msgstr "Tetikus"
 
-#: src/Utils.vala:96
+#: src/Utils.vala:92
 msgid "Keyboard"
 msgstr "Papan Kekunci"
 
-#: src/Utils.vala:97
+#: src/Utils.vala:93
 msgid "PDA"
 msgstr "PDA"
 
-#: src/Utils.vala:98
+#: src/Utils.vala:94
 msgid "Phone"
 msgstr "Telefon"
 
-#: src/Utils.vala:99
+#: src/Utils.vala:95
 msgid "Media Player"
 msgstr ""
 
-#: src/Utils.vala:100
+#: src/Utils.vala:96
 msgid "Tablet"
 msgstr ""
 
-#: src/Utils.vala:101
+#: src/Utils.vala:97
 msgid "Computer"
 msgstr ""
 
-#: src/Utils.vala:102
+#: src/Utils.vala:98
 msgid "Device"
 msgstr "Peranti"
 
-#: src/Utils.vala:121
+#: src/Utils.vala:117
 msgid "Calculating…"
 msgstr "Mengira..."
 
-#: src/Utils.vala:127
+#: src/Utils.vala:123
 #, c-format
 msgid "%i%% charged"
 msgstr "%i%% dicas"
 
-#: src/Utils.vala:135 src/Utils.vala:173
+#. TODO: Replace this and above with P_ when https://bugzilla.gnome.org/show_bug.cgi?id=758000 is fixed.
+#: src/Utils.vala:131 src/Utils.vala:169
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "%lld hari sehingga penuh"
 msgstr[1] "%lld hari sehingga penuh"
 
-#: src/Utils.vala:138 src/Utils.vala:174
+#: src/Utils.vala:134 src/Utils.vala:170
 #, fuzzy, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lls jam sehingga penuh"
 msgstr[1] "%lld jam sehingga penuh"
 
-#: src/Utils.vala:141 src/Utils.vala:175
+#: src/Utils.vala:137 src/Utils.vala:171
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld minit sehingga penuh"
 msgstr[1] "%lld minit sehingga penuh"
 
-#: src/Utils.vala:143 src/Utils.vala:176
+#: src/Utils.vala:139 src/Utils.vala:172
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld saat sehingga penuh"
 msgstr[1] "%lld saat sehingga penuh"
 
-#: src/Utils.vala:147
+#: src/Utils.vala:143
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% berbaki"
 
-#: src/Utils.vala:155 src/Utils.vala:177
+#: src/Utils.vala:151 src/Utils.vala:173
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "%lld hari sehingga kosong"
 msgstr[1] "%lld hari sehingga kosong"
 
-#: src/Utils.vala:158 src/Utils.vala:178
+#: src/Utils.vala:154 src/Utils.vala:174
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld jam sehingga kosong"
 msgstr[1] "%lld jam sehingga kosong"
 
-#: src/Utils.vala:161 src/Utils.vala:179
+#: src/Utils.vala:157 src/Utils.vala:175
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld minit sehingga kosong"
 msgstr[1] "%lld minit sehingga kosong"
 
-#: src/Utils.vala:163 src/Utils.vala:180
+#: src/Utils.vala:159 src/Utils.vala:176
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"

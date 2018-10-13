@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: power-indicator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-21 09:31-0700\n"
+"POT-Creation-Date: 2018-10-13 14:53-0700\n"
 "PO-Revision-Date: 2018-06-05 05:22-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -25,60 +25,62 @@ msgstr ""
 msgid "Power indicator"
 msgstr ""
 
-#: src/Utils.vala:92
+#. TODO: Do we want to differentiate between batteries and rechargeable batteries? (See German: Batterie <-> Akku)
+#: src/Utils.vala:88
 msgid "Battery"
 msgstr ""
 
-#: src/Utils.vala:93
+#: src/Utils.vala:89
 msgid "UPS"
 msgstr ""
 
-#: src/Utils.vala:94
+#: src/Utils.vala:90
 msgid "Display"
 msgstr ""
 
-#: src/Utils.vala:95
+#: src/Utils.vala:91
 msgid "Mouse"
 msgstr ""
 
-#: src/Utils.vala:96
+#: src/Utils.vala:92
 msgid "Keyboard"
 msgstr ""
 
-#: src/Utils.vala:97
+#: src/Utils.vala:93
 msgid "PDA"
 msgstr ""
 
-#: src/Utils.vala:98
+#: src/Utils.vala:94
 msgid "Phone"
 msgstr ""
 
-#: src/Utils.vala:99
+#: src/Utils.vala:95
 msgid "Media Player"
 msgstr ""
 
-#: src/Utils.vala:100
+#: src/Utils.vala:96
 msgid "Tablet"
 msgstr ""
 
-#: src/Utils.vala:101
+#: src/Utils.vala:97
 msgid "Computer"
 msgstr ""
 
-#: src/Utils.vala:102
+#: src/Utils.vala:98
 msgid "Device"
 msgstr ""
 
-#: src/Utils.vala:121
+#: src/Utils.vala:117
 msgid "Calculating…"
 msgstr ""
 
-#: src/Utils.vala:127
+#: src/Utils.vala:123
 #, c-format
 msgid "%i%% charged"
 msgstr ""
 
-#: src/Utils.vala:135 src/Utils.vala:173
+#. TODO: Replace this and above with P_ when https://bugzilla.gnome.org/show_bug.cgi?id=758000 is fixed.
+#: src/Utils.vala:131 src/Utils.vala:169
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
@@ -86,7 +88,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: src/Utils.vala:138 src/Utils.vala:174
+#: src/Utils.vala:134 src/Utils.vala:170
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
@@ -94,7 +96,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: src/Utils.vala:141 src/Utils.vala:175
+#: src/Utils.vala:137 src/Utils.vala:171
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
@@ -102,7 +104,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: src/Utils.vala:143 src/Utils.vala:176
+#: src/Utils.vala:139 src/Utils.vala:172
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
@@ -110,12 +112,12 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: src/Utils.vala:147
+#: src/Utils.vala:143
 #, c-format
 msgid "%i%% remaining"
 msgstr ""
 
-#: src/Utils.vala:155 src/Utils.vala:177
+#: src/Utils.vala:151 src/Utils.vala:173
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
@@ -123,7 +125,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: src/Utils.vala:158 src/Utils.vala:178
+#: src/Utils.vala:154 src/Utils.vala:174
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
@@ -131,7 +133,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: src/Utils.vala:161 src/Utils.vala:179
+#: src/Utils.vala:157 src/Utils.vala:175
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
@@ -139,7 +141,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: src/Utils.vala:163 src/Utils.vala:180
+#: src/Utils.vala:159 src/Utils.vala:176
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
