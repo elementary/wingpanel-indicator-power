@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 14:53-0700\n"
-"PO-Revision-Date: 2018-08-30 15:21+0000\n"
-"Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
+"PO-Revision-Date: 2018-11-01 00:03+0000\n"
+"Last-Translator: Sinan Decron <intenfinitia@gmail.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/tr/>\n"
 "Language: tr\n"
@@ -70,7 +70,7 @@ msgstr "Cihaz"
 
 #: src/Utils.vala:117
 msgid "Calculating…"
-msgstr "Hesaplanıyor..."
+msgstr "Hesaplanıyor…"
 
 #: src/Utils.vala:123
 #, c-format
@@ -149,4 +149,4 @@ msgstr "Yüzdeyi Göster"
 
 #: src/Widgets/PopoverWidget.vala:58
 msgid "Power Settings…"
-msgstr "Güç Ayarları..."
+msgstr "Güç Ayarları…"
