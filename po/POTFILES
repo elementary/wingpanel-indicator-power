@@ -12,6 +12,7 @@ src/Services/ProcessMonitor/Monitor.vala
 src/Services/ProcessMonitor/Process.vala
 src/Widgets/AppList.vala
 src/Widgets/DeviceList.vala
+src/Widgets/DeviceRow.vala
 src/Widgets/DisplayWidget.vala
 src/Widgets/PopoverWidget.vala
 src/Widgets/ScreenBrightness.vala
