@@ -41,12 +41,12 @@ public class Power.Widgets.DeviceRow : Gtk.Grid {
         overlay.add (device_image);
         overlay.add_overlay (battery_image);
 
-        var title_label = new Gtk.Label (_("Battery"));
+        var title_label = new Gtk.Label (get_title ());
         title_label.use_markup = true;
         title_label.halign = Gtk.Align.START;
         title_label.valign = Gtk.Align.END;
 
-        var info_label = new Gtk.Label (_("Calculating…"));
+        var info_label = new Gtk.Label (get_info ());
         info_label.halign = Gtk.Align.START;
         info_label.valign = Gtk.Align.START;
 
@@ -57,6 +57,8 @@ public class Power.Widgets.DeviceRow : Gtk.Grid {
         attach (overlay, 0, 0, 1, 2);
         attach (title_label, 1, 0);
         attach (info_label, 1, 1);
+
+        update_icons ();
 
         battery.properties_updated.connect (() => {
             update_icons ();
