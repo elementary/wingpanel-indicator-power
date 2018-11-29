@@ -28,7 +28,7 @@ public class Power.Widgets.DeviceRow : Gtk.Grid {
     }
 
     construct {
-        device_image = new Gtk.Image ();
+        device_image = new Gtk.Image.from_icon_name ("battery", Gtk.IconSize.DIALOG);
         device_image.pixel_size = 48;
         device_image.margin_end = 3;
 
@@ -37,18 +37,16 @@ public class Power.Widgets.DeviceRow : Gtk.Grid {
         battery_image.halign = Gtk.Align.END;
         battery_image.valign = Gtk.Align.END;
 
-        update_icons ();
-
         var overlay = new Gtk.Overlay ();
         overlay.add (device_image);
         overlay.add_overlay (battery_image);
 
-        var title_label = new Gtk.Label (get_title ());
+        var title_label = new Gtk.Label (_("Battery"));
         title_label.use_markup = true;
         title_label.halign = Gtk.Align.START;
         title_label.valign = Gtk.Align.END;
 
-        var info_label = new Gtk.Label (get_info ());
+        var info_label = new Gtk.Label (_("Calculating…"));
         info_label.halign = Gtk.Align.START;
         info_label.valign = Gtk.Align.START;
 
