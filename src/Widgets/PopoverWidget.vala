@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2016 elementary LLC. (https://elementary.io)
+ * Copyright (c) 2011-2018 elementary LLC. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -25,8 +25,6 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
     private AppList app_list;
     private Wingpanel.Widgets.Separator last_separator = null;
 
-    private Wingpanel.Widgets.Switch show_percent_switch;
-
     public PopoverWidget (bool is_in_session) {
         Object (is_in_session: is_in_session, orientation: Gtk.Orientation.VERTICAL);
     }
@@ -50,7 +48,10 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
             pack_start (screen_brightness);
         }
 
-        show_percent_switch = new Wingpanel.Widgets.Switch (_("Show Percentage"), settings.get_boolean ("show-percentage"));
+        var show_percent_switch = new Wingpanel.Widgets.Switch (_("Show Percentage"), settings.get_boolean ("show-percentage"));
+
+        var show_percent_revealer = new Gtk.Revealer ();
+        show_percent_revealer.add (show_percent_switch);
 
         var show_settings_button = new Gtk.ModelButton ();
         show_settings_button.text = _("Power Settings…");
@@ -63,11 +64,9 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
         if (is_in_session || dm.has_battery) {
             last_separator = new Wingpanel.Widgets.Separator ();
             this.pack_start (last_separator);
+            add (show_percent_revealer);
             if (is_in_session) {
                 this.pack_end (show_settings_button);
-            }
-            if (dm.has_battery) {
-                this.pack_end (show_percent_switch);
             }
         }
 
@@ -83,11 +82,6 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
                     this.remove (last_separator);
                     last_separator = null;
                 }
-            }
-
-            this.remove (show_percent_switch);
-            if (dm.has_battery) {
-                this.pack_end (show_percent_switch);
             }
 
             if (dm.backlight.present) {
@@ -107,6 +101,8 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
         });
 
         settings.bind ("show-percentage", show_percent_switch.get_switch (), "active", SettingsBindFlags.DEFAULT);
+
+        dm.bind_property ("has-battery", show_percent_revealer, "reveal-child", GLib.BindingFlags.DEFAULT | GLib.BindingFlags.SYNC_CREATE);
 
         show_settings_button.clicked.connect (() => {
             try {
