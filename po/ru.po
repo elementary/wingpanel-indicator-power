@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-21 09:31-0700\n"
+"POT-Creation-Date: 2018-11-30 09:00-0800\n"
 "PO-Revision-Date: 2018-06-22 20:55+0000\n"
 "Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
-"Language-Team: Russian <https://weblate.elementary.io/projects/wingpanel"
-"/wingpanel-indicator-power/ru/>\n"
+"Language-Team: Russian <https://weblate.elementary.io/projects/wingpanel/"
+"wingpanel-indicator-power/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
@@ -24,60 +24,61 @@ msgstr "Питание"
 msgid "Power indicator"
 msgstr "Индикатор питания"
 
-#: src/Utils.vala:92
+#: src/Services/Device.vala:63
 msgid "Battery"
 msgstr "Батарея"
 
-#: src/Utils.vala:93
+#: src/Services/Device.vala:65
 msgid "UPS"
 msgstr "ИБП"
 
-#: src/Utils.vala:94
+#: src/Services/Device.vala:67
 msgid "Display"
 msgstr "Дисплей"
 
-#: src/Utils.vala:95
+#: src/Services/Device.vala:69
 msgid "Mouse"
 msgstr "Мышь"
 
-#: src/Utils.vala:96
+#: src/Services/Device.vala:71
 msgid "Keyboard"
 msgstr "Клавиатура"
 
-#: src/Utils.vala:97
+#: src/Services/Device.vala:73
 msgid "PDA"
 msgstr "КПК"
 
-#: src/Utils.vala:98
+#: src/Services/Device.vala:75
 msgid "Phone"
 msgstr "Телефон"
 
-#: src/Utils.vala:99
+#: src/Services/Device.vala:77
 msgid "Media Player"
 msgstr "Медиаплеер"
 
-#: src/Utils.vala:100
+#: src/Services/Device.vala:79
 msgid "Tablet"
 msgstr "Планшет"
 
-#: src/Utils.vala:101
+#: src/Services/Device.vala:81
 msgid "Computer"
 msgstr "Компьютер"
 
-#: src/Utils.vala:102
-msgid "Device"
-msgstr "Устройство"
+#: src/Widgets/AppList.vala:52
+msgid "Apps Using Lots of Power"
+msgstr "Энергозатратные приложения"
 
-#: src/Utils.vala:121
+#: src/Widgets/DeviceRow.vala:86
 msgid "Calculating…"
 msgstr "Вычисление…"
 
-#: src/Utils.vala:127
+#: src/Widgets/DeviceRow.vala:92
 #, c-format
 msgid "%i%% charged"
 msgstr "%i%% заряжено"
 
-#: src/Utils.vala:135 src/Utils.vala:173
+#. TODO: Replace this and above with P_ when https://bugzilla.gnome.org/show_bug.cgi?id=758000 is fixed.
+#: src/Widgets/DeviceRow.vala:100 src/Widgets/DeviceRow.vala:154
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
@@ -85,7 +86,7 @@ msgstr[0] "%lld день до полной зарядки"
 msgstr[1] "%lld дня до полной зарядки"
 msgstr[2] "%lld дней до полной зарядки"
 
-#: src/Utils.vala:138 src/Utils.vala:174
+#: src/Widgets/DeviceRow.vala:103 src/Widgets/DeviceRow.vala:155
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
@@ -93,7 +94,7 @@ msgstr[0] "%lld час до полной зарядки"
 msgstr[1] "%lld часа до полной зарядки"
 msgstr[2] "%lld часов до полной зарядки"
 
-#: src/Utils.vala:141 src/Utils.vala:175
+#: src/Widgets/DeviceRow.vala:106 src/Widgets/DeviceRow.vala:156
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
@@ -101,7 +102,7 @@ msgstr[0] "%lld минута до полной зарядки"
 msgstr[1] "%lld минуты до полной зарядки"
 msgstr[2] "%lld минут до полной зарядки"
 
-#: src/Utils.vala:143 src/Utils.vala:176
+#: src/Widgets/DeviceRow.vala:108 src/Widgets/DeviceRow.vala:157
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
@@ -109,12 +110,12 @@ msgstr[0] "%lld секунда до полной зарядки"
 msgstr[1] "%lld секунды до полной зарядки"
 msgstr[2] "%lld секунд до полной зарядки"
 
-#: src/Utils.vala:147
+#: src/Widgets/DeviceRow.vala:112
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% осталось"
 
-#: src/Utils.vala:155 src/Utils.vala:177
+#: src/Widgets/DeviceRow.vala:120 src/Widgets/DeviceRow.vala:158
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
@@ -122,7 +123,7 @@ msgstr[0] "%lld день до разрядки"
 msgstr[1] "%lld дня до разрядки"
 msgstr[2] "%lld дней до разрядки"
 
-#: src/Utils.vala:158 src/Utils.vala:178
+#: src/Widgets/DeviceRow.vala:123 src/Widgets/DeviceRow.vala:159
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
@@ -130,7 +131,7 @@ msgstr[0] "%lld час до разрядки"
 msgstr[1] "%lld часа до разрядки"
 msgstr[2] "%lld часов до разрядки"
 
-#: src/Utils.vala:161 src/Utils.vala:179
+#: src/Widgets/DeviceRow.vala:126 src/Widgets/DeviceRow.vala:160
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
@@ -138,7 +139,7 @@ msgstr[0] "%lld минута до разрядки"
 msgstr[1] "%lld минуты до разрядки"
 msgstr[2] "%lld минут до разрядки"
 
-#: src/Utils.vala:163 src/Utils.vala:180
+#: src/Widgets/DeviceRow.vala:128 src/Widgets/DeviceRow.vala:161
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -146,9 +147,9 @@ msgstr[0] "%lld секунда до разрядки"
 msgstr[1] "%lld секунды до разрядки"
 msgstr[2] "%lld секунд до разрядки"
 
-#: src/Widgets/AppList.vala:52
-msgid "Apps Using Lots of Power"
-msgstr "Энергозатратные приложения"
+#: src/Widgets/DeviceRow.vala:147
+msgid "Device"
+msgstr "Устройство"
 
 #: src/Widgets/PopoverWidget.vala:55
 msgid "Show Percentage"

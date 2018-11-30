@@ -18,16 +18,14 @@
  */
 
 public class Power.Widgets.DeviceList : Gtk.Box {
-    public Gee.HashMap<string, Gtk.Grid> entries;
-
-    public DeviceList () {
-        Object (orientation: Gtk.Orientation.VERTICAL);
-    }
+    public Gee.HashMap<string, Power.Widgets.DeviceRow> entries;
 
     construct {
-        entries = new Gee.HashMap<string, Gtk.Grid> ();
-        var dm = Services.DeviceManager.get_default ();
+        orientation = Gtk.Orientation.VERTICAL;
 
+        entries = new Gee.HashMap<string, Power.Widgets.DeviceRow> ();
+
+        var dm = Services.DeviceManager.get_default ();
         dm.battery_registered.connect (add_battery);
         dm.battery_deregistered.connect (remove_battery);
 
@@ -35,63 +33,16 @@ public class Power.Widgets.DeviceList : Gtk.Box {
         dm.read_devices ();
     }
 
-    private void update_icons (Services.Device battery, Gtk.Image device_image, Gtk.Image battery_image) {
-        if (Utils.type_has_device_icon (battery.device_type)) {
-            device_image.set_from_icon_name (Utils.get_icon_name_for_device (battery), Gtk.IconSize.DIALOG);
-            battery_image.set_from_icon_name (Utils.get_icon_name_for_battery (battery), Gtk.IconSize.DND);
-        } else {
-            device_image.set_from_icon_name (Utils.get_icon_name_for_battery (battery), Gtk.IconSize.DIALOG);
-            battery_image.clear ();
-        }
-    }
-
     private void add_battery (string device_path, Services.Device battery) {
-        var device_image = new Gtk.Image ();
-        device_image.margin_end = 3;
+        var device_row = new Power.Widgets.DeviceRow (battery);
 
-        var battery_image = new Gtk.Image ();
-        battery_image.halign = Gtk.Align.END;
-        battery_image.valign = Gtk.Align.END;
+        entries.@set (device_path, device_row);
 
-        update_icons (battery, device_image, battery_image);
-
-        var overlay = new Gtk.Overlay ();
-        overlay.add (device_image);
-        overlay.add_overlay (battery_image);
-
-        var title_label = new Gtk.Label (Utils.get_title_for_battery (battery));
-        title_label.use_markup = true;
-        title_label.halign = Gtk.Align.START;
-        title_label.valign = Gtk.Align.END;
-        title_label.margin_end = 6;
-
-        var info_label = new Gtk.Label (Utils.get_info_for_battery (battery));
-        info_label.halign = Gtk.Align.START;
-        info_label.valign = Gtk.Align.START;
-        info_label.margin_end = 6;
-
-        var grid = new Gtk.Grid ();
-        grid.column_spacing = 3;
-        grid.margin = 6;
-        grid.margin_top = 3;
-        grid.margin_bottom = 3;
-        grid.attach (overlay, 0, 0, 1, 2);
-        grid.attach (title_label, 1, 0, 1, 1);
-        grid.attach (info_label, 1, 1, 1, 1);
-
-        entries.@set (device_path, grid);
-
-        if (battery.device_type == DEVICE_TYPE_BATTERY) {
-            this.pack_start (grid);
+        if (battery.device_type == Power.Services.Device.Type.BATTERY) {
+            this.pack_start (device_row);
         } else {
-            this.pack_end (grid);
+            this.pack_end (device_row);
         }
-
-        battery.properties_updated.connect (() => {
-            update_icons (battery, device_image, battery_image);
-            title_label.set_markup (Utils.get_title_for_battery (battery));
-            info_label.set_label (Utils.get_info_for_battery (battery));
-        });
 
         this.show_all ();
     }

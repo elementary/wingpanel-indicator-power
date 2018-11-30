@@ -11,7 +11,6 @@ config_in = configure_file(
 
 files = files(
     'Indicator.vala',
-    'Utils.vala',
     'Services/AppManager.vala',
     'Services/Backlight/Backlight.vala',
     'Services/DBusInterfaces/Device.vala',
@@ -24,6 +23,7 @@ files = files(
     'Services/ProcessMonitor/Process.vala',
     'Widgets/AppList.vala',
     'Widgets/DeviceList.vala',
+    'Widgets/DeviceRow.vala',
     'Widgets/DisplayWidget.vala',
     'Widgets/PopoverWidget.vala',
     'Widgets/ScreenBrightness.vala'

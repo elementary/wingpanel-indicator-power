@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-21 09:31-0700\n"
+"POT-Creation-Date: 2018-11-30 09:00-0800\n"
 "PO-Revision-Date: 2017-12-20 00:11+0000\n"
 "Last-Translator: Вагиф Кязым <vaqif134@gmail.com>\n"
 "Language-Team: Azerbaijani <https://weblate.elementary.io/projects/wingpanel/"
@@ -23,123 +23,124 @@ msgstr "Təchiz"
 msgid "Power indicator"
 msgstr "Təchiz indikatoru"
 
-#: src/Utils.vala:92
+#: src/Services/Device.vala:63
 msgid "Battery"
 msgstr "Batareya"
 
-#: src/Utils.vala:93
+#: src/Services/Device.vala:65
 msgid "UPS"
 msgstr "STM"
 
-#: src/Utils.vala:94
+#: src/Services/Device.vala:67
 msgid "Display"
 msgstr "Ekran"
 
-#: src/Utils.vala:95
+#: src/Services/Device.vala:69
 msgid "Mouse"
 msgstr "Siçan"
 
-#: src/Utils.vala:96
+#: src/Services/Device.vala:71
 msgid "Keyboard"
 msgstr "Klaviatura"
 
-#: src/Utils.vala:97
+#: src/Services/Device.vala:73
 msgid "PDA"
 msgstr "PDA"
 
-#: src/Utils.vala:98
+#: src/Services/Device.vala:75
 msgid "Phone"
 msgstr "Telefon"
 
-#: src/Utils.vala:99
+#: src/Services/Device.vala:77
 msgid "Media Player"
 msgstr ""
 
-#: src/Utils.vala:100
+#: src/Services/Device.vala:79
 msgid "Tablet"
 msgstr ""
 
-#: src/Utils.vala:101
+#: src/Services/Device.vala:81
 msgid "Computer"
 msgstr ""
 
-#: src/Utils.vala:102
-msgid "Device"
-msgstr "Cihaz"
+#: src/Widgets/AppList.vala:52
+msgid "Apps Using Lots of Power"
+msgstr "Çox enerji sərf edən tətbiqlər"
 
-#: src/Utils.vala:121
+#: src/Widgets/DeviceRow.vala:86
 msgid "Calculating…"
 msgstr "Hesablanır…"
 
-#: src/Utils.vala:127
+#: src/Widgets/DeviceRow.vala:92
 #, c-format
 msgid "%i%% charged"
 msgstr "%i%% doldurulub"
 
-#: src/Utils.vala:135 src/Utils.vala:173
+#. TODO: Replace this and above with P_ when https://bugzilla.gnome.org/show_bug.cgi?id=758000 is fixed.
+#: src/Widgets/DeviceRow.vala:100 src/Widgets/DeviceRow.vala:154
 #, fuzzy, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "dolmasına %lld gün qalıb"
 msgstr[1] "dolmasına %lld gün qalıb"
 
-#: src/Utils.vala:138 src/Utils.vala:174
+#: src/Widgets/DeviceRow.vala:103 src/Widgets/DeviceRow.vala:155
 #, fuzzy, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "dolmasına %lld saat qalıb"
 msgstr[1] "dolmasına %lld saat qalıb"
 
-#: src/Utils.vala:141 src/Utils.vala:175
+#: src/Widgets/DeviceRow.vala:106 src/Widgets/DeviceRow.vala:156
 #, fuzzy, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "dolmasına %lld dəqiqə qalıb"
 msgstr[1] "dolmasına %lld dəqiqə qalıb"
 
-#: src/Utils.vala:143 src/Utils.vala:176
+#: src/Widgets/DeviceRow.vala:108 src/Widgets/DeviceRow.vala:157
 #, fuzzy, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "dolmasına %lld saniyə qalıb"
 msgstr[1] "dolmasına %lld saniyə qalıb"
 
-#: src/Utils.vala:147
+#: src/Widgets/DeviceRow.vala:112
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% qalıb"
 
-#: src/Utils.vala:155 src/Utils.vala:177
+#: src/Widgets/DeviceRow.vala:120 src/Widgets/DeviceRow.vala:158
 #, fuzzy, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "bitməsinə %lld gün qalıb"
 msgstr[1] "bitməsinə %lld gün qalıb"
 
-#: src/Utils.vala:158 src/Utils.vala:178
+#: src/Widgets/DeviceRow.vala:123 src/Widgets/DeviceRow.vala:159
 #, fuzzy, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "bitməsinə %lld saat qalıb"
 msgstr[1] "bitməsinə %lld saat qalıb"
 
-#: src/Utils.vala:161 src/Utils.vala:179
+#: src/Widgets/DeviceRow.vala:126 src/Widgets/DeviceRow.vala:160
 #, fuzzy, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "bitməsinə %lld dəqiqə qalıb"
 msgstr[1] "bitməsinə %lld dəqiqə qalıb"
 
-#: src/Utils.vala:163 src/Utils.vala:180
+#: src/Widgets/DeviceRow.vala:128 src/Widgets/DeviceRow.vala:161
 #, fuzzy, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
 msgstr[0] "bitməsinə %lld saniyə qalıb"
 msgstr[1] "bitməsinə %lld saniyə qalıb"
 
-#: src/Widgets/AppList.vala:52
-msgid "Apps Using Lots of Power"
-msgstr "Çox enerji sərf edən tətbiqlər"
+#: src/Widgets/DeviceRow.vala:147
+msgid "Device"
+msgstr "Cihaz"
 
 #: src/Widgets/PopoverWidget.vala:55
 msgid "Show Percentage"

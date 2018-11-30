@@ -2,16 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-21 09:31-0700\n"
-"PO-Revision-Date: 2017-07-06 15:03+0700\n"
-"Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2018-11-30 09:00-0800\n"
+"PO-Revision-Date: 2018-10-21 12:03+0000\n"
+"Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
+"Language-Team: Indonesian <https://weblate.elementary.io/projects/wingpanel/"
+"wingpanel-indicator-power/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.2\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: src/Indicator.vala:32
@@ -22,115 +23,116 @@ msgstr "Daya"
 msgid "Power indicator"
 msgstr "Indikator daya"
 
-#: src/Utils.vala:92
+#: src/Services/Device.vala:63
 msgid "Battery"
 msgstr "Baterai"
 
-#: src/Utils.vala:93
+#: src/Services/Device.vala:65
 msgid "UPS"
 msgstr "UPS"
 
-#: src/Utils.vala:94
+#: src/Services/Device.vala:67
 msgid "Display"
 msgstr "Tampilan"
 
-#: src/Utils.vala:95
+#: src/Services/Device.vala:69
 msgid "Mouse"
 msgstr "Tetikus"
 
-#: src/Utils.vala:96
+#: src/Services/Device.vala:71
 msgid "Keyboard"
 msgstr "Papan Tik"
 
-#: src/Utils.vala:97
+#: src/Services/Device.vala:73
 msgid "PDA"
 msgstr "PDA"
 
-#: src/Utils.vala:98
+#: src/Services/Device.vala:75
 msgid "Phone"
 msgstr "Telepon"
 
-#: src/Utils.vala:99
+#: src/Services/Device.vala:77
 msgid "Media Player"
-msgstr ""
+msgstr "Media Pemutar"
 
-#: src/Utils.vala:100
+#: src/Services/Device.vala:79
 msgid "Tablet"
-msgstr ""
+msgstr "Tablet"
 
-#: src/Utils.vala:101
+#: src/Services/Device.vala:81
 msgid "Computer"
-msgstr ""
+msgstr "Komputer"
 
-#: src/Utils.vala:102
-msgid "Device"
-msgstr "Perangkat"
+#: src/Widgets/AppList.vala:52
+msgid "Apps Using Lots of Power"
+msgstr "Aplikasi Menggunakan Banyak Daya"
 
-#: src/Utils.vala:121
+#: src/Widgets/DeviceRow.vala:86
 msgid "Calculating…"
 msgstr "Menghitung…"
 
-#: src/Utils.vala:127
+#: src/Widgets/DeviceRow.vala:92
 #, c-format
 msgid "%i%% charged"
 msgstr "%i%% terisi"
 
-#: src/Utils.vala:135 src/Utils.vala:173
+#. TODO: Replace this and above with P_ when https://bugzilla.gnome.org/show_bug.cgi?id=758000 is fixed.
+#: src/Widgets/DeviceRow.vala:100 src/Widgets/DeviceRow.vala:154
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "%lld hari sampai penuh"
 
-#: src/Utils.vala:138 src/Utils.vala:174
+#: src/Widgets/DeviceRow.vala:103 src/Widgets/DeviceRow.vala:155
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld jam sampai penuh"
 
-#: src/Utils.vala:141 src/Utils.vala:175
+#: src/Widgets/DeviceRow.vala:106 src/Widgets/DeviceRow.vala:156
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld menit sampai penuh"
 
-#: src/Utils.vala:143 src/Utils.vala:176
+#: src/Widgets/DeviceRow.vala:108 src/Widgets/DeviceRow.vala:157
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld detik sampai penuh"
 
-#: src/Utils.vala:147
+#: src/Widgets/DeviceRow.vala:112
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% tersisa"
 
-#: src/Utils.vala:155 src/Utils.vala:177
+#: src/Widgets/DeviceRow.vala:120 src/Widgets/DeviceRow.vala:158
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "%lld hari sampai kosong"
 
-#: src/Utils.vala:158 src/Utils.vala:178
+#: src/Widgets/DeviceRow.vala:123 src/Widgets/DeviceRow.vala:159
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld jam sampai kosong"
 
-#: src/Utils.vala:161 src/Utils.vala:179
+#: src/Widgets/DeviceRow.vala:126 src/Widgets/DeviceRow.vala:160
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld menit sampai kosong"
 
-#: src/Utils.vala:163 src/Utils.vala:180
+#: src/Widgets/DeviceRow.vala:128 src/Widgets/DeviceRow.vala:161
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
 msgstr[0] "%lld detik sampai kosong"
 
-#: src/Widgets/AppList.vala:52
-msgid "Apps Using Lots of Power"
-msgstr "Aplikasi Menggunakan Banyak Daya"
+#: src/Widgets/DeviceRow.vala:147
+msgid "Device"
+msgstr "Perangkat"
 
 #: src/Widgets/PopoverWidget.vala:55
 msgid "Show Percentage"

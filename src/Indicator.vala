@@ -55,7 +55,6 @@ public class Power.Indicator : Wingpanel.Indicator {
     public override Gtk.Widget? get_widget () {
         if (popover_widget == null) {
             popover_widget = new Widgets.PopoverWidget (is_in_session);
-            popover_widget.settings_shown.connect (() => this.close ());
         }
 
         return popover_widget;
@@ -109,20 +108,20 @@ public class Power.Indicator : Wingpanel.Indicator {
 
     private void show_display_device_data () {
         if (display_device != null && display_widget != null) {
-            var icon_name = Utils.get_symbolic_icon_name_for_battery (display_device);
-
+            var icon_name = display_device.get_symbolic_icon_name_for_battery ();
             display_widget.set_icon_name (icon_name, true);
 
             /* Debug output for designers */
             debug ("Icon changed to \"%s\"", icon_name);
 
-            display_widget.set_percent ((int)Math.round (display_device.percentage));
+            display_widget.percentage = (int)Math.round (display_device.percentage);
         }
     }
 
     private void show_backlight_data () {
         if (display_widget != null) {
-            display_widget.set_icon_name ("display-brightness-symbolic", false);
+            display_widget.icon_name = "display-brightness-symbolic";
+            display_widget.allow_percent = false;
         }
     }
 }
