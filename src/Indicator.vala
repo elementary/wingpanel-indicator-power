@@ -109,7 +109,7 @@ public class Power.Indicator : Wingpanel.Indicator {
 
     private void show_display_device_data () {
         if (display_device != null && display_widget != null) {
-            var icon_name = Utils.get_symbolic_icon_name_for_battery (display_device);
+            var icon_name = display_device.get_symbolic_icon_name_for_battery ();
             display_widget.icon_name = icon_name;
             display_widget.allow_percent = true;
 

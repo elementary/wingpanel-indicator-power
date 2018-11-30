@@ -17,37 +17,100 @@
  * Boston, MA 02110-1301, USA.
  */
 
-const uint32 DEVICE_STATE_UNKNOWN = 0;
-const uint32 DEVICE_STATE_CHARGING = 1;
-const uint32 DEVICE_STATE_DISCHARGING = 2;
-const uint32 DEVICE_STATE_EMPTY = 3;
-const uint32 DEVICE_STATE_FULLY_CHARGED = 4;
-const uint32 DEVICE_STATE_PENDING_CHARGE = 5;
-const uint32 DEVICE_STATE_PENDING_DISCHARGE = 6;
-
-const uint32 DEVICE_TECHNOLOGY_UNKNOWN = 0;
-const uint32 DEVICE_TECHNOLOGY_LITHIUM_ION = 1;
-const uint32 DEVICE_TECHNOLOGY_LITHIUM_POLYMER = 2;
-const uint32 DEVICE_TECHNOLOGY_LITHIUM_IRON_PHOSPHATE = 3;
-const uint32 DEVICE_TECHNOLOGY_LEAD_ACID = 4;
-const uint32 DEVICE_TECHNOLOGY_NICKEL_CADMIUM = 5;
-const uint32 DEVICE_TECHNOLOGY_NICKEL_METAL_HYDRIDE = 6;
-
-const uint32 DEVICE_TYPE_UNKNOWN = 0;
-const uint32 DEVICE_TYPE_LINE_POWER = 1;
-const uint32 DEVICE_TYPE_BATTERY = 2;
-const uint32 DEVICE_TYPE_UPS = 3;
-const uint32 DEVICE_TYPE_MONITOR = 4;
-const uint32 DEVICE_TYPE_MOUSE = 5;
-const uint32 DEVICE_TYPE_KEYBOARD = 6;
-const uint32 DEVICE_TYPE_PDA = 7;
-const uint32 DEVICE_TYPE_PHONE = 8;
-const uint32 DEVICE_TYPE_MEDIA_PLAYER = 9;
-const uint32 DEVICE_TYPE_TABLET = 10;
-const uint32 DEVICE_TYPE_COMPUTER = 11;
-
 public class Power.Services.Device : Object {
     private const string DEVICE_INTERFACE = "org.freedesktop.UPower";
+
+    [CCode (type_signature = "u")]
+    public enum State {
+        UNKNOWN = 0,
+        CHARGING = 1,
+        DISCHARGING = 2,
+        EMPTY = 3,
+        FULLY_CHARGED = 4,
+        PENDING_CHARGE = 5,
+        PENDING_DISCHARGE = 6
+    }
+
+    [CCode (type_signature = "u")]
+    public enum Technology {
+        UNKNOWN = 0,
+        LITHIUM_ION = 1,
+        LITHIUM_POLYMER = 2,
+        LITHIUM_IRON_PHOSPHATE = 3,
+        LEAD_ACID = 4,
+        NICKEL_CADMIUM = 5,
+        NICKEL_METAL_HYDRIDE = 6
+    }
+
+    [CCode (type_signature = "u")]
+    public enum Type {
+        UNKNOWN = 0,
+        LINE_POWER = 1,
+        BATTERY = 2,
+        UPS = 3,
+        MONITOR = 4,
+        MOUSE = 5,
+        KEYBOARD = 6,
+        PDA = 7,
+        PHONE = 8,
+        MEDIA_PLAYER = 9,
+        TABLET = 10,
+        COMPUTER = 11;
+        public unowned string? get_name () {
+            switch (this) {
+                /* TODO: Do we want to differentiate between batteries and rechargeable batteries? (See German: Batterie <-> Akku) */
+                case BATTERY:
+                    return _("Battery");
+                case UPS:
+                    return _("UPS");
+                case MONITOR:
+                    return _("Display");
+                case MOUSE:
+                    return _("Mouse");
+                case KEYBOARD:
+                    return _("Keyboard");
+                case PDA:
+                    return _("PDA");
+                case PHONE:
+                    return _("Phone");
+                case MEDIA_PLAYER:
+                    return _("Media Player");
+                case TABLET:
+                    return _("Tablet");
+                case COMPUTER:
+                    return _("Computer");
+                case LINE_POWER:
+                case UNKNOWN:
+                default:
+                    return null;
+            }
+        }
+
+        public unowned string? get_icon_name () {
+            switch (this) {
+                case UPS:
+                    return "uninterruptible-power-supply";
+                case MOUSE:
+                    return "input-mouse";
+                case KEYBOARD:
+                    return "input-keyboard";
+                case PDA:
+                case PHONE:
+                    return "phone";
+                case MEDIA_PLAYER:
+                    return "multimedia-player";
+                case TABLET:
+                    return "input-tablet";
+                case COMPUTER:
+                case MONITOR:
+                case UNKNOWN:
+                case BATTERY:
+                case LINE_POWER:
+                default:
+                    return null;
+            }
+        }
+    }
 
     private string device_path = "";
 
@@ -75,10 +138,14 @@ public class Power.Services.Device : Object {
     public string native_path { get; private set; }
     public string serial { get; private set; }
     public string vendor { get; private set; }
-    public uint32 state { get; private set; }
-    public uint32 technology { get; private set; }
-    public uint32 device_type { get; private set; }
+    public Power.Services.Device.State state { get; private set; }
+    public Power.Services.Device.Technology technology { get; private set; }
+    public Power.Services.Device.Type device_type { get; private set; }
     public uint64 update_time { get; private set; }
+
+    // Extra property
+    public bool is_charging { get; private set; }
+    public bool is_a_battery { get; private set; }
 
     public signal void properties_updated ();
 
@@ -136,11 +203,55 @@ public class Power.Services.Device : Object {
         native_path = device.native_path;
         serial = device.serial;
         vendor = device.vendor;
-        device_type = device.Type;
-        state = device.state;
-        technology = device.technology;
+        device_type = (Power.Services.Device.Type) device.Type;
+        state = (Power.Services.Device.State) device.state;
+        technology = (Power.Services.Device.Technology) device.technology;
         update_time = device.update_time;
 
+        is_charging = state == Power.Services.Device.State.FULLY_CHARGED || state == Power.Services.Device.State.CHARGING;
+        is_a_battery = device_type != Power.Services.Device.Type.UNKNOWN && device_type != Power.Services.Device.Type.LINE_POWER;
+
         properties_updated ();
+    }
+
+    public string get_symbolic_icon_name_for_battery () {
+        return get_icon_name_for_battery () + "-symbolic";
+    }
+
+    public string get_icon_name_for_battery () {
+        if (percentage == 100 && is_charging) {
+            return "battery-full-charged";
+        } else {
+            unowned string battery_icon = get_battery_icon ();
+            if (is_charging) {
+                return battery_icon + "-charging";
+            } else {
+                return battery_icon;
+            }
+        }
+    }
+
+    private unowned string get_battery_icon () {
+        if (percentage <= 0) {
+            return "battery-good";
+        }
+
+        if (percentage < 10 && (time_to_empty == 0 || time_to_empty < 30 * 60)) {
+            return "battery-empty";
+        }
+
+        if (percentage < 30) {
+            return "battery-caution";
+        }
+
+        if (percentage < 60) {
+            return "battery-low";
+        }
+
+        if (percentage < 80) {
+            return "battery-good";
+        }
+
+        return "battery-full";
     }
 }
