@@ -55,7 +55,6 @@ public class Power.Indicator : Wingpanel.Indicator {
     public override Gtk.Widget? get_widget () {
         if (popover_widget == null) {
             popover_widget = new Widgets.PopoverWidget (is_in_session);
-            popover_widget.settings_shown.connect (() => this.close ());
         }
 
         return popover_widget;

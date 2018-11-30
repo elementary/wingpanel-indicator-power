@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2016 elementary LLC. (https://elementary.io)
+ * Copyright (c) 2011-2018 elementary LLC. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -24,8 +24,6 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
     private ScreenBrightness? screen_brightness;
     private AppList app_list;
     private Wingpanel.Widgets.Separator last_separator = null;
-
-    public signal void settings_shown ();
 
     public PopoverWidget (bool is_in_session) {
         Object (is_in_session: is_in_session, orientation: Gtk.Orientation.VERTICAL);
@@ -106,22 +104,18 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
         dm.bind_property ("has-battery", show_percent_revealer, "reveal-child", GLib.BindingFlags.DEFAULT | GLib.BindingFlags.SYNC_CREATE);
 
-        show_settings_button.clicked.connect (show_settings);
+        show_settings_button.clicked.connect (() => {
+            try {
+                AppInfo.launch_default_for_uri ("settings://power", null);
+            } catch (Error e) {
+                warning ("Failed to open power settings: %s", e.message);
+            }
+        });
     }
 
     public void slim_down () {
         if (is_in_session) {
             app_list.clear_list ();
         }
-    }
-
-    private void show_settings () {
-        try {
-            AppInfo.launch_default_for_uri ("settings://power", null);
-        } catch (Error e) {
-            warning ("Failed to open power settings: %s", e.message);
-        }
-
-        settings_shown ();
     }
 }
