@@ -11,7 +11,6 @@ config_in = configure_file(
 
 files = files(
     'Indicator.vala',
-    'Utils.vala',
     'Services/AppManager.vala',
     'Services/Backlight/Backlight.vala',
     'Services/DBusInterfaces/Device.vala',

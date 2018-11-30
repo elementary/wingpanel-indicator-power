@@ -113,7 +113,7 @@ public class Power.Services.DeviceManager : Object {
         batteries = devices.filter ((entry) => {
             var device = entry.value;
 
-            return Utils.type_is_battery (device.device_type);
+            return device.is_a_battery;
         });
 
         has_battery = batteries.has_next ();
@@ -126,7 +126,7 @@ public class Power.Services.DeviceManager : Object {
         debug ("Device \"%s\" registered", device_path);
         update_batteries ();
 
-        if (Utils.type_is_battery (device.device_type)) {
+        if (device.is_a_battery) {
             battery_registered (device_path, device);
         }
     }
@@ -145,7 +145,7 @@ public class Power.Services.DeviceManager : Object {
         debug ("Device \"%s\" deregistered", device_path);
         update_batteries ();
 
-        if (Utils.type_is_battery (device.device_type)) {
+        if (device.is_a_battery) {
             battery_deregistered (device_path);
         }
     }

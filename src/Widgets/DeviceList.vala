@@ -38,7 +38,7 @@ public class Power.Widgets.DeviceList : Gtk.Box {
 
         entries.@set (device_path, device_row);
 
-        if (battery.device_type == DEVICE_TYPE_BATTERY) {
+        if (battery.device_type == Power.Services.Device.Type.BATTERY) {
             this.pack_start (device_row);
         } else {
             this.pack_end (device_row);

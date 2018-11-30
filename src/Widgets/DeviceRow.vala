@@ -68,36 +68,19 @@ public class Power.Widgets.DeviceRow : Gtk.Grid {
     }
 
     private void update_icons () {
-        bool use_battery_image = true;
-
-        switch (battery.device_type) {
-            case DEVICE_TYPE_PHONE:
-                device_image.icon_name = "phone";
-                break;
-            case DEVICE_TYPE_MOUSE:
-                device_image.icon_name = "input-mouse";
-                break;
-            case DEVICE_TYPE_KEYBOARD:
-                device_image.icon_name = "input-keyboard";
-                break;
-            case DEVICE_TYPE_TABLET:
-                device_image.icon_name = "input-tablet";
-                break;
-            default:
-                use_battery_image = false;
-                battery_image.clear ();
-                device_image.icon_name = Utils.get_icon_name_for_battery (battery);
-                break;
-        }
-
-        if (use_battery_image) {
-            battery_image.icon_name = Utils.get_icon_name_for_battery (battery);
+        unowned string? icon_name = battery.device_type.get_icon_name ();
+        if (icon_name != null) {
+            device_image.icon_name = icon_name;
+            battery_image.icon_name = battery.get_icon_name_for_battery ();
+        } else {
+            battery_image.clear ();
+            device_image.icon_name = battery.get_icon_name_for_battery ();
         }
     }
 
     private string get_info () {
         var percent = (int)Math.round (battery.percentage);
-        var charging = Utils.is_charging (battery.state);
+        var charging = battery.is_charging;
 
         if (percent <= 0) {
             return _("Calculating…");
@@ -151,53 +134,29 @@ public class Power.Widgets.DeviceRow : Gtk.Grid {
     }
 
     private string get_title () {
-        var title = "";
-
-        switch (battery.device_type) {
-            /* TODO: Do we want to differentiate between batteries and rechargeable batteries? (See German: Batterie <-> Akku) */
-            case DEVICE_TYPE_BATTERY:
-                title = _("Battery");
-                break;
-            case DEVICE_TYPE_UPS:
-                title = _("UPS");
-                break;
-            case DEVICE_TYPE_MONITOR:
-                title = _("Display");
-                break;
-            case DEVICE_TYPE_MOUSE:
-                title = _("Mouse");
-                break;
-            case DEVICE_TYPE_KEYBOARD:
-                title = _("Keyboard");
-                break;
-            case DEVICE_TYPE_PDA:
-                title = _("PDA");
-                break;
-            case DEVICE_TYPE_PHONE:
-                if (battery.model != "") {
-                    title = battery.model;
-                } else {
-                    title = _("Phone");
-                }
-                break;
-            case DEVICE_TYPE_MEDIA_PLAYER:
-                title = _("Media Player");
-                break;
-            case DEVICE_TYPE_TABLET:
-                if (battery.model != "") {
-                    title = battery.model;
-                } else {
-                    title = _("Tablet");
-                }
-                break;
-            case DEVICE_TYPE_COMPUTER:
-                title = _("Computer");
-                break;
-            default:
-                title = "%s %s".printf (battery.vendor, _("Device"));
-                break;
+        unowned string? type_string = battery.device_type.get_name ();
+        if (battery.model != "" && (
+                battery.device_type == Power.Services.Device.Type.PHONE ||
+                battery.device_type == Power.Services.Device.Type.TABLET)) {
+            type_string = battery.model;
         }
 
-        return "<b>%s</b>".printf (title);
+        if (type_string != null) {
+            return "<b>%s</b>".printf (type_string);
+        } else {
+            return "<b>%s %s</b>".printf (battery.vendor, _("Device"));
+        }
     }
+}
+
+// TODO: Replace this and above with P_ when https://bugzilla.gnome.org/show_bug.cgi?id=758000 is fixed.
+private void translations () {
+    ngettext ("%lld day until full", "%lld days until full", 0);
+    ngettext ("%lld hour until full", "%lld hours until full", 0);
+    ngettext ("%lld minute until full", "%lld minutes until full", 0);
+    ngettext ("%lld second until full", "%lld seconds until full", 0);
+    ngettext ("%lld day until empty", "%lld days until empty", 0);
+    ngettext ("%lld hour until empty", "%lld hours until empty", 0);
+    ngettext ("%lld minute until empty", "%lld minutes until empty", 0);
+    ngettext ("%lld second until empty", "%lld seconds until empty", 0);
 }
