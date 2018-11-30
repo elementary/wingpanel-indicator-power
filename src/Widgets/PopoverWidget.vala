@@ -27,8 +27,6 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
     private Wingpanel.Widgets.Switch show_percent_switch;
 
-    public signal void settings_shown ();
-
     public PopoverWidget (bool is_in_session) {
         Object (is_in_session: is_in_session, orientation: Gtk.Orientation.VERTICAL);
     }
@@ -110,22 +108,18 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
 
         settings.bind ("show-percentage", show_percent_switch.get_switch (), "active", SettingsBindFlags.DEFAULT);
 
-        show_settings_button.clicked.connect (show_settings);
+        show_settings_button.clicked.connect (() => {
+            try {
+                AppInfo.launch_default_for_uri ("settings://power", null);
+            } catch (Error e) {
+                warning ("Failed to open power settings: %s", e.message);
+            }
+        });
     }
 
     public void slim_down () {
         if (is_in_session) {
             app_list.clear_list ();
         }
-    }
-
-    private void show_settings () {
-        try {
-            AppInfo.launch_default_for_uri ("settings://power", null);
-        } catch (Error e) {
-            warning ("Failed to open power settings: %s", e.message);
-        }
-
-        settings_shown ();
     }
 }
