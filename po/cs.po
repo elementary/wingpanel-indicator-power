@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 14:53-0700\n"
+"POT-Creation-Date: 2018-11-30 09:00-0800\n"
 "PO-Revision-Date: 2018-06-21 16:44+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/wingpanel/"
@@ -23,62 +23,61 @@ msgstr "Napájení"
 msgid "Power indicator"
 msgstr "Indikátor napájení"
 
-#. TODO: Do we want to differentiate between batteries and rechargeable batteries? (See German: Batterie <-> Akku)
-#: src/Utils.vala:88
+#: src/Services/Device.vala:63
 msgid "Battery"
 msgstr "Baterie"
 
-#: src/Utils.vala:89
+#: src/Services/Device.vala:65
 msgid "UPS"
 msgstr "Zdroj nepřerušovaného napájení (UPS)"
 
-#: src/Utils.vala:90
+#: src/Services/Device.vala:67
 msgid "Display"
 msgstr "Displej"
 
-#: src/Utils.vala:91
+#: src/Services/Device.vala:69
 msgid "Mouse"
 msgstr "Myš"
 
-#: src/Utils.vala:92
+#: src/Services/Device.vala:71
 msgid "Keyboard"
 msgstr "Klávesnice"
 
-#: src/Utils.vala:93
+#: src/Services/Device.vala:73
 msgid "PDA"
 msgstr "PDA"
 
-#: src/Utils.vala:94
+#: src/Services/Device.vala:75
 msgid "Phone"
 msgstr "Telefon"
 
-#: src/Utils.vala:95
+#: src/Services/Device.vala:77
 msgid "Media Player"
 msgstr "Přehrávač medií"
 
-#: src/Utils.vala:96
+#: src/Services/Device.vala:79
 msgid "Tablet"
 msgstr "Tablet"
 
-#: src/Utils.vala:97
+#: src/Services/Device.vala:81
 msgid "Computer"
 msgstr "Počítač"
 
-#: src/Utils.vala:98
-msgid "Device"
-msgstr "Zařízení"
+#: src/Widgets/AppList.vala:52
+msgid "Apps Using Lots of Power"
+msgstr "Aplikace spotřebovávají mnoho energie"
 
-#: src/Utils.vala:117
+#: src/Widgets/DeviceRow.vala:86
 msgid "Calculating…"
 msgstr "Probíhá výpočet…"
 
-#: src/Utils.vala:123
+#: src/Widgets/DeviceRow.vala:92
 #, c-format
 msgid "%i%% charged"
 msgstr "%i%% nabito"
 
 #. TODO: Replace this and above with P_ when https://bugzilla.gnome.org/show_bug.cgi?id=758000 is fixed.
-#: src/Utils.vala:131 src/Utils.vala:169
+#: src/Widgets/DeviceRow.vala:100 src/Widgets/DeviceRow.vala:154
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
@@ -86,7 +85,7 @@ msgstr[0] "%lld den do nabití"
 msgstr[1] "%lld dny do nabití"
 msgstr[2] "%lld dnů do nabití"
 
-#: src/Utils.vala:134 src/Utils.vala:170
+#: src/Widgets/DeviceRow.vala:103 src/Widgets/DeviceRow.vala:155
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
@@ -94,7 +93,7 @@ msgstr[0] "%lld hodina do nabití"
 msgstr[1] "%lld hodiny do nabití"
 msgstr[2] "%lld hodin do nabití"
 
-#: src/Utils.vala:137 src/Utils.vala:171
+#: src/Widgets/DeviceRow.vala:106 src/Widgets/DeviceRow.vala:156
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
@@ -102,7 +101,7 @@ msgstr[0] "%lld minuta do nabití"
 msgstr[1] "%lld minuty do nabití"
 msgstr[2] "%lld minut do nabití"
 
-#: src/Utils.vala:139 src/Utils.vala:172
+#: src/Widgets/DeviceRow.vala:108 src/Widgets/DeviceRow.vala:157
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
@@ -110,12 +109,12 @@ msgstr[0] "%lld sekunda do nabití"
 msgstr[1] "%lld sekundy do nabití"
 msgstr[2] "%lld sekund do nabití"
 
-#: src/Utils.vala:143
+#: src/Widgets/DeviceRow.vala:112
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% zbývá"
 
-#: src/Utils.vala:151 src/Utils.vala:173
+#: src/Widgets/DeviceRow.vala:120 src/Widgets/DeviceRow.vala:158
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
@@ -123,7 +122,7 @@ msgstr[0] "%lld den do vybití"
 msgstr[1] "%lld dny do vybití"
 msgstr[2] "%lld dnů do vybití"
 
-#: src/Utils.vala:154 src/Utils.vala:174
+#: src/Widgets/DeviceRow.vala:123 src/Widgets/DeviceRow.vala:159
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
@@ -131,7 +130,7 @@ msgstr[0] "%lld hodina do vybití"
 msgstr[1] "%lld hodiny do vybití"
 msgstr[2] "%lld hodin do vybití"
 
-#: src/Utils.vala:157 src/Utils.vala:175
+#: src/Widgets/DeviceRow.vala:126 src/Widgets/DeviceRow.vala:160
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
@@ -139,7 +138,7 @@ msgstr[0] "%lld minuta do vybití"
 msgstr[1] "%lld minuty do vybití"
 msgstr[2] "%lld minut do vybití"
 
-#: src/Utils.vala:159 src/Utils.vala:176
+#: src/Widgets/DeviceRow.vala:128 src/Widgets/DeviceRow.vala:161
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -147,9 +146,9 @@ msgstr[0] "%lld sekunda do vybití"
 msgstr[1] "%lld sekundy do vybití"
 msgstr[2] "%lld sekund do vybití"
 
-#: src/Widgets/AppList.vala:52
-msgid "Apps Using Lots of Power"
-msgstr "Aplikace spotřebovávají mnoho energie"
+#: src/Widgets/DeviceRow.vala:147
+msgid "Device"
+msgstr "Zařízení"
 
 #: src/Widgets/PopoverWidget.vala:55
 msgid "Show Percentage"

@@ -1,5 +1,4 @@
 src/Indicator.vala
-src/Utils.vala
 src/Services/AppManager.vala
 src/Services/Backlight/Backlight.vala
 src/Services/DBusInterfaces/Device.vala

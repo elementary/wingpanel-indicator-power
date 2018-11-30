@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 14:53-0700\n"
+"POT-Creation-Date: 2018-11-30 09:00-0800\n"
 "PO-Revision-Date: 2018-11-04 22:38+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/wingpanel/"
@@ -11,8 +11,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
@@ -24,62 +24,61 @@ msgstr "Napajanje"
 msgid "Power indicator"
 msgstr "Indikator napajanja"
 
-#. TODO: Do we want to differentiate between batteries and rechargeable batteries? (See German: Batterie <-> Akku)
-#: src/Utils.vala:88
+#: src/Services/Device.vala:63
 msgid "Battery"
 msgstr "Baterija"
 
-#: src/Utils.vala:89
+#: src/Services/Device.vala:65
 msgid "UPS"
 msgstr "Napajanje bez prekida (UPS)"
 
-#: src/Utils.vala:90
+#: src/Services/Device.vala:67
 msgid "Display"
 msgstr "Ekran"
 
-#: src/Utils.vala:91
+#: src/Services/Device.vala:69
 msgid "Mouse"
 msgstr "Miš"
 
-#: src/Utils.vala:92
+#: src/Services/Device.vala:71
 msgid "Keyboard"
 msgstr "Tastatura"
 
-#: src/Utils.vala:93
+#: src/Services/Device.vala:73
 msgid "PDA"
 msgstr "Lični digitalni pomoćnik (PDA)"
 
-#: src/Utils.vala:94
+#: src/Services/Device.vala:75
 msgid "Phone"
 msgstr "Telefon"
 
-#: src/Utils.vala:95
+#: src/Services/Device.vala:77
 msgid "Media Player"
 msgstr "Medijski plejer"
 
-#: src/Utils.vala:96
+#: src/Services/Device.vala:79
 msgid "Tablet"
 msgstr "Tablet"
 
-#: src/Utils.vala:97
+#: src/Services/Device.vala:81
 msgid "Computer"
 msgstr "Računar"
 
-#: src/Utils.vala:98
-msgid "Device"
-msgstr "Uređaj"
+#: src/Widgets/AppList.vala:52
+msgid "Apps Using Lots of Power"
+msgstr "Aplikacije koje troše puno energije"
 
-#: src/Utils.vala:117
+#: src/Widgets/DeviceRow.vala:86
 msgid "Calculating…"
 msgstr "Izračunavanje…"
 
-#: src/Utils.vala:123
+#: src/Widgets/DeviceRow.vala:92
 #, c-format
 msgid "%i%% charged"
 msgstr "%i%% napunjeno"
 
 #. TODO: Replace this and above with P_ when https://bugzilla.gnome.org/show_bug.cgi?id=758000 is fixed.
-#: src/Utils.vala:131 src/Utils.vala:169
+#: src/Widgets/DeviceRow.vala:100 src/Widgets/DeviceRow.vala:154
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
@@ -87,7 +86,7 @@ msgstr[0] "%lld dan do napunjenosti"
 msgstr[1] "%lld dana do napunjenosti"
 msgstr[2] "%lld dana do napunjenosti"
 
-#: src/Utils.vala:134 src/Utils.vala:170
+#: src/Widgets/DeviceRow.vala:103 src/Widgets/DeviceRow.vala:155
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
@@ -95,7 +94,7 @@ msgstr[0] "%lld sat do napunjenosti"
 msgstr[1] "%lld sata do napunjenosti"
 msgstr[2] "%lld sati do napunjenosti"
 
-#: src/Utils.vala:137 src/Utils.vala:171
+#: src/Widgets/DeviceRow.vala:106 src/Widgets/DeviceRow.vala:156
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
@@ -103,7 +102,7 @@ msgstr[0] "%lld minuta do napunjenosti"
 msgstr[1] "%lld minute do napunjenosti"
 msgstr[2] "%lld minuta do napunjenosti"
 
-#: src/Utils.vala:139 src/Utils.vala:172
+#: src/Widgets/DeviceRow.vala:108 src/Widgets/DeviceRow.vala:157
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
@@ -111,12 +110,12 @@ msgstr[0] "%lld sekunda do napunjenosti"
 msgstr[1] "%lld sekunde do napunjenosti"
 msgstr[2] "%lld sekundi do napunjenosti"
 
-#: src/Utils.vala:143
+#: src/Widgets/DeviceRow.vala:112
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% preostalo"
 
-#: src/Utils.vala:151 src/Utils.vala:173
+#: src/Widgets/DeviceRow.vala:120 src/Widgets/DeviceRow.vala:158
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
@@ -124,7 +123,7 @@ msgstr[0] "%lld dan do ispražnjenja"
 msgstr[1] "%lld dana do ispražnjenja"
 msgstr[2] "%lld dana do ispražnjenja"
 
-#: src/Utils.vala:154 src/Utils.vala:174
+#: src/Widgets/DeviceRow.vala:123 src/Widgets/DeviceRow.vala:159
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
@@ -132,7 +131,7 @@ msgstr[0] "%lld sat do ispražnjenja"
 msgstr[1] "%lld sata do ispražnjenja"
 msgstr[2] "%lld sati do ispražnjenja"
 
-#: src/Utils.vala:157 src/Utils.vala:175
+#: src/Widgets/DeviceRow.vala:126 src/Widgets/DeviceRow.vala:160
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
@@ -140,7 +139,7 @@ msgstr[0] "%lld minuta do ispražnjenja"
 msgstr[1] "%lld minute do ispražnjenja"
 msgstr[2] "%lld minuta do ispražnjenja"
 
-#: src/Utils.vala:159 src/Utils.vala:176
+#: src/Widgets/DeviceRow.vala:128 src/Widgets/DeviceRow.vala:161
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -148,9 +147,9 @@ msgstr[0] "%lld sekunda do ispražnjenja"
 msgstr[1] "%lld sekunde do ispražnjenja"
 msgstr[2] "%lld sekunda do ispražnjenja"
 
-#: src/Widgets/AppList.vala:52
-msgid "Apps Using Lots of Power"
-msgstr "Aplikacije koje troše puno energije"
+#: src/Widgets/DeviceRow.vala:147
+msgid "Device"
+msgstr "Uređaj"
 
 #: src/Widgets/PopoverWidget.vala:55
 msgid "Show Percentage"
