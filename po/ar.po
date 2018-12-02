@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 09:00-0800\n"
 "PO-Revision-Date: 2018-12-02 19:29+0000\n"
-"Last-Translator: Mohelm97 <mohelm97@gmail.com>\n"
+"Last-Translator: Yassine MRABET <yassine.mrabet@gmail.com>\n"
 "Language-Team: Arabic <https://weblate.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ar/>\n"
 "Language: ar\n"
@@ -30,7 +30,7 @@ msgstr "البطارية"
 
 #: src/Services/Device.vala:65
 msgid "UPS"
-msgstr ""
+msgstr "مزود الطاقة اللامنقطعة"
 
 #: src/Services/Device.vala:67
 msgid "Display"
@@ -38,7 +38,7 @@ msgstr ""
 
 #: src/Services/Device.vala:69
 msgid "Mouse"
-msgstr ""
+msgstr "الفأرة"
 
 #: src/Services/Device.vala:71
 msgid "Keyboard"
@@ -50,7 +50,7 @@ msgstr ""
 
 #: src/Services/Device.vala:75
 msgid "Phone"
-msgstr ""
+msgstr "هاتف"
 
 #: src/Services/Device.vala:77
 msgid "Media Player"
