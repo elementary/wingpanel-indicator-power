@@ -21,18 +21,15 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
     private const string DBUS_PATH = "/org/gnome/SettingsDaemon/Power";
     private const string DBUS_NAME = "org.gnome.SettingsDaemon.Power";
 
-    private Gtk.Image image;
     private Gtk.Scale brightness_slider;
     private Services.DBusInterfaces.PowerSettings iscreen;
 
     construct {
-        orientation = Gtk.Orientation.HORIZONTAL;
         column_spacing = 6;
         init_bus.begin ();
 
-        image = new Gtk.Image.from_icon_name ("brightness-display-symbolic", Gtk.IconSize.DIALOG);
+        var image = new Gtk.Image.from_icon_name ("brightness-display-symbolic", Gtk.IconSize.DIALOG);
         image.margin_start = 6;
-        attach (image, 0, 0, 1, 1);
 
         brightness_slider = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 10);
         brightness_slider.adjustment.page_increment = 10;
@@ -53,7 +50,8 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
         brightness_slider.set_value (iscreen.brightness);
       #endif
 
-        attach (brightness_slider, 1, 0, 1, 1);
+        attach (image, 0, 0);
+        attach (brightness_slider, 1, 0);
     }
 
     private void on_screen_properties_changed (Variant changed_properties, string[] invalidated_properties) {
