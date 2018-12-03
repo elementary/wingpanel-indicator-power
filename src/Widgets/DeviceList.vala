@@ -17,11 +17,12 @@
  * Boston, MA 02110-1301, USA.
  */
 
-public class Power.Widgets.DeviceList : Gtk.Box {
+public class Power.Widgets.DeviceList : Gtk.ListBox {
     public Gee.HashMap<string, Power.Widgets.DeviceRow> entries;
 
     construct {
-        orientation = Gtk.Orientation.VERTICAL;
+        selection_mode = Gtk.SelectionMode.NONE;
+        set_sort_func (sort_function);
 
         entries = new Gee.HashMap<string, Power.Widgets.DeviceRow> ();
 
@@ -38,13 +39,9 @@ public class Power.Widgets.DeviceList : Gtk.Box {
 
         entries.@set (device_path, device_row);
 
-        if (battery.device_type == Power.Services.Device.Type.BATTERY) {
-            this.pack_start (device_row);
-        } else {
-            this.pack_end (device_row);
-        }
-
-        this.show_all ();
+        add (device_row);
+        show_all ();
+        invalidate_sort ();
     }
 
     private void remove_battery (string device_path) {
@@ -52,8 +49,22 @@ public class Power.Widgets.DeviceList : Gtk.Box {
             return;
         }
 
-        this.remove (entries.@get (device_path));
+        remove (entries.@get (device_path));
 
         entries.unset (device_path);
+    }
+
+    [CCode (instance_pos = -1)]
+    private int sort_function (Gtk.ListBoxRow row1, Gtk.ListBoxRow row2) {
+        var battery1 = ((Power.Widgets.DeviceRow) row1).battery;
+        var battery2 = ((Power.Widgets.DeviceRow) row2).battery;
+
+        if (battery1.device_type == battery2.device_type) {
+            return 0;
+        } else if (battery1.device_type == Power.Services.Device.Type.BATTERY) {
+            return -1;
+        } else {
+            return 1;
+        }
     }
 }

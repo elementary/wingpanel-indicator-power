@@ -17,7 +17,7 @@
  * Boston, MA 02110-1301, USA.
  */
 
-public class Power.Widgets.DeviceRow : Gtk.Grid {
+public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
     public Services.Device battery { get; construct; }
 
     private Gtk.Image battery_image;
@@ -50,13 +50,16 @@ public class Power.Widgets.DeviceRow : Gtk.Grid {
         info_label.halign = Gtk.Align.START;
         info_label.valign = Gtk.Align.START;
 
-        column_spacing = 3;
-        margin = 3;
-        margin_start = 6;
-        margin_end = 12;
-        attach (overlay, 0, 0, 1, 2);
-        attach (title_label, 1, 0);
-        attach (info_label, 1, 1);
+        var grid = new Gtk.Grid ();
+        grid.column_spacing = 3;
+        grid.margin = 3;
+        grid.margin_start = 6;
+        grid.margin_end = 12;
+        grid.attach (overlay, 0, 0, 1, 2);
+        grid.attach (title_label, 1, 0);
+        grid.attach (info_label, 1, 1);
+
+        add (grid);
 
         update_icons ();
 
