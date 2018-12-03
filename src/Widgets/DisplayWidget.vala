@@ -18,11 +18,7 @@
  */
 
 public class Power.Widgets.DisplayWidget : Gtk.Grid {
-    public string icon_name {
-        set {
-            image.icon_name = value;
-        }
-    }
+    public string icon_name { get; set; default = "content-loading-symbolic"; }
 
     public bool allow_percent { get; set; default = false; }
     public int percentage {
@@ -32,13 +28,11 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
     }
 
     private Gtk.Label percent_label;
-    private Gtk.Image image;
 
     construct {
         valign = Gtk.Align.CENTER;
 
-        image = new Gtk.Image ();
-        image.icon_name = "content-loading-symbolic";
+        var image = new Gtk.Image ();
         image.pixel_size = 24;
 
         percent_label = new Gtk.Label (null);
@@ -53,7 +47,9 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
 
         var settings = new GLib.Settings ("io.elementary.desktop.wingpanel.power");
         settings.bind ("show-percentage", percent_revealer, "reveal-child", GLib.SettingsBindFlags.GET);
+
         bind_property ("allow-percent", percent_revealer, "visible", GLib.BindingFlags.SYNC_CREATE);
+        bind_property ("icon-name", image, "icon-name", GLib.BindingFlags.SYNC_CREATE);
 
         button_press_event.connect ((e) => {
             if (allow_percent && e.button == Gdk.BUTTON_MIDDLE) {
