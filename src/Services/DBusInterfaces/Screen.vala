@@ -20,12 +20,6 @@
 namespace Power.Services.DBusInterfaces {
   [DBus (name = "org.gnome.SettingsDaemon.Power.Screen")]
   interface PowerSettings : GLib.Object {
-    #if OLD_GSD
-    public abstract uint get_percentage () throws GLib.Error;
-    public abstract uint set_percentage (uint percentage) throws GLib.Error;
-    #else
-    // use the Brightness property after updateing g-s-d to 3.10 or above
     public abstract int brightness { get; set; }
-    #endif
   }
 }
