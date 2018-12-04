@@ -49,7 +49,7 @@ public class Power.Widgets.DeviceList : Gtk.ListBox {
             return;
         }
 
-        remove (entries.@get (device_path));
+        entries.@get (device_path).destroy ();
 
         entries.unset (device_path);
     }
