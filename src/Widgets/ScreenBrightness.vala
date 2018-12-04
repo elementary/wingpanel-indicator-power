@@ -47,11 +47,7 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
 
         (iscreen as DBusProxy).g_properties_changed.connect (on_screen_properties_changed);
 
-      #if OLD_GSD
-        brightness_slider.set_value (iscreen.get_percentage ());
-      #else
         brightness_slider.set_value (iscreen.brightness);
-      #endif
 
         attach (brightness_slider, 1, 0, 1, 1);
     }
@@ -59,11 +55,8 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
     private void on_screen_properties_changed (Variant changed_properties, string[] invalidated_properties) {
         var changed_brightness = changed_properties.lookup_value ("Brightness", new VariantType ("i"));
         if (changed_brightness != null) {
-          #if OLD_GSD
-            var val = iscreen.get_percentage ();
-          #else
             var val = iscreen.brightness;
-          #endif
+
             brightness_slider.value_changed.disconnect (on_scale_value_changed);
             brightness_slider.set_value (val);
             brightness_slider.value_changed.connect (on_scale_value_changed);
@@ -81,15 +74,9 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
     private async void on_scale_value_changed () {
         int val = (int) brightness_slider.get_value ();
         try {
-          #if OLD_GSD
-            if (iscreen.get_percentage () != val) {
-                iscreen.set_percentage (val);
-            }
-          #else
             if (iscreen.brightness != val) {
                 iscreen.brightness = val;
             }
-          #endif
         } catch (IOError e) {
             warning ("screen brightness error %s", e.message);
         }
