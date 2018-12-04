@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 09:00-0800\n"
-"PO-Revision-Date: 2018-12-02 19:29+0000\n"
+"PO-Revision-Date: 2018-12-04 07:10+0000\n"
 "Last-Translator: Yassine MRABET <yassine.mrabet@gmail.com>\n"
 "Language-Team: Arabic <https://weblate.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ar/>\n"
@@ -50,19 +50,19 @@ msgstr ""
 
 #: src/Services/Device.vala:75
 msgid "Phone"
-msgstr "هاتف"
+msgstr "الهاتف"
 
 #: src/Services/Device.vala:77
 msgid "Media Player"
-msgstr ""
+msgstr "مشغل الموسيقى"
 
 #: src/Services/Device.vala:79
 msgid "Tablet"
-msgstr ""
+msgstr "جهاز لوحي"
 
 #: src/Services/Device.vala:81
 msgid "Computer"
-msgstr ""
+msgstr "حاسوب"
 
 #: src/Widgets/AppList.vala:52
 msgid "Apps Using Lots of Power"
