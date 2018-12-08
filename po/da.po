@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 09:00-0800\n"
-"PO-Revision-Date: 2018-06-22 00:11+0000\n"
+"PO-Revision-Date: 2018-12-12 22:03+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/da/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:49+0000\n"
 
 #: src/Indicator.vala:32
@@ -65,7 +65,7 @@ msgstr "Computer"
 
 #: src/Widgets/AppList.vala:52
 msgid "Apps Using Lots of Power"
-msgstr "Programmer der bruger meget strøm"
+msgstr "Apps der bruger meget strøm"
 
 #: src/Widgets/DeviceRow.vala:86
 msgid "Calculating…"
