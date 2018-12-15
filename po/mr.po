@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 09:00-0800\n"
-"PO-Revision-Date: 2018-12-15 16:07+0000\n"
+"PO-Revision-Date: 2018-12-18 00:02+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/mr/>\n"
@@ -69,7 +69,7 @@ msgstr "भरपूर ऊर्जा वापरणारे अॅप्स
 
 #: src/Widgets/DeviceRow.vala:86
 msgid "Calculating…"
-msgstr "गणना करत आहे ..."
+msgstr "गणना करत आहे …"
 
 #: src/Widgets/DeviceRow.vala:92
 #, c-format
@@ -148,4 +148,4 @@ msgstr "टक्केवारी दर्शवा"
 
 #: src/Widgets/PopoverWidget.vala:58
 msgid "Power Settings…"
-msgstr "उर्जा सेटिंग्ज ..."
+msgstr "उर्जा सेटिंग्ज …"
