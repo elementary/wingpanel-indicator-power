@@ -3,111 +3,112 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 09:00-0800\n"
-"PO-Revision-Date: 2015-05-23 21:47+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-12-15 13:31+0000\n"
+"Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
+"Language-Team: Marathi <https://weblate.elementary.io/projects/wingpanel/"
+"wingpanel-indicator-power/mr/>\n"
+"Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
 
 #: src/Indicator.vala:32
 msgid "Power"
-msgstr ""
+msgstr "उर्जा"
 
 #: src/Indicator.vala:33
 msgid "Power indicator"
-msgstr ""
+msgstr "उर्जा सूचक"
 
 #: src/Services/Device.vala:63
 msgid "Battery"
-msgstr ""
+msgstr "बॅटरी"
 
 #: src/Services/Device.vala:65
 msgid "UPS"
-msgstr ""
+msgstr "यूपीएस"
 
 #: src/Services/Device.vala:67
 msgid "Display"
-msgstr ""
+msgstr "प्रदर्शन"
 
 #: src/Services/Device.vala:69
 msgid "Mouse"
-msgstr ""
+msgstr "माऊस"
 
 #: src/Services/Device.vala:71
 msgid "Keyboard"
-msgstr ""
+msgstr "कीबोर्ड"
 
 #: src/Services/Device.vala:73
 msgid "PDA"
-msgstr ""
+msgstr "पीडीए"
 
 #: src/Services/Device.vala:75
 msgid "Phone"
-msgstr ""
+msgstr "फोन"
 
 #: src/Services/Device.vala:77
 msgid "Media Player"
-msgstr ""
+msgstr "मीडिया प्लेयर"
 
 #: src/Services/Device.vala:79
 msgid "Tablet"
-msgstr ""
+msgstr "टॅब्लेट"
 
 #: src/Services/Device.vala:81
 msgid "Computer"
-msgstr ""
+msgstr "संगणक"
 
 #: src/Widgets/AppList.vala:52
 msgid "Apps Using Lots of Power"
-msgstr ""
+msgstr "भरपूर ऊर्जा वापरणारे अॅप्स"
 
 #: src/Widgets/DeviceRow.vala:86
 msgid "Calculating…"
-msgstr ""
+msgstr "गणना करत आहे ..."
 
 #: src/Widgets/DeviceRow.vala:92
 #, c-format
 msgid "%i%% charged"
-msgstr ""
+msgstr "%i%% चार्ज झाले"
 
 #. TODO: Replace this and above with P_ when https://bugzilla.gnome.org/show_bug.cgi?id=758000 is fixed.
 #: src/Widgets/DeviceRow.vala:100 src/Widgets/DeviceRow.vala:154
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "पूर्ण होण्यास %lld दिवस"
+msgstr[1] "पूर्ण होण्यास %lld दिवस"
 
 #: src/Widgets/DeviceRow.vala:103 src/Widgets/DeviceRow.vala:155
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "पूर्ण होण्यास %lld तास"
+msgstr[1] "पूर्ण होण्यास %lld तास"
 
 #: src/Widgets/DeviceRow.vala:106 src/Widgets/DeviceRow.vala:156
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "पूर्ण होण्यास %lld मिनीट"
+msgstr[1] "पूर्ण होण्यास %lld मिनीटे"
 
 #: src/Widgets/DeviceRow.vala:108 src/Widgets/DeviceRow.vala:157
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "पूर्ण होण्यास %lld सेकंद"
+msgstr[1] "पूर्ण होण्यास %lld सेकंद"
 
 #: src/Widgets/DeviceRow.vala:112
 #, c-format
 msgid "%i%% remaining"
-msgstr ""
+msgstr "%i%% बाकी"
 
 #: src/Widgets/DeviceRow.vala:120 src/Widgets/DeviceRow.vala:158
 #, c-format
@@ -139,12 +140,12 @@ msgstr[1] ""
 
 #: src/Widgets/DeviceRow.vala:147
 msgid "Device"
-msgstr ""
+msgstr "डिव्हाइस"
 
 #: src/Widgets/PopoverWidget.vala:55
 msgid "Show Percentage"
-msgstr ""
+msgstr "टक्केवारी दर्शवा"
 
 #: src/Widgets/PopoverWidget.vala:58
 msgid "Power Settings…"
-msgstr ""
+msgstr "उर्जा सेटिंग्ज ..."
