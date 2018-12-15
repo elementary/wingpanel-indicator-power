@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 09:00-0800\n"
-"PO-Revision-Date: 2018-12-15 13:31+0000\n"
+"PO-Revision-Date: 2018-12-15 16:07+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/mr/>\n"
@@ -114,29 +114,29 @@ msgstr "%i%% बाकी"
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "रिकामे होण्यास %lld दिवस बाकी"
+msgstr[1] "रिकामे होण्यास %lld दिवस बाकी"
 
 #: src/Widgets/DeviceRow.vala:123 src/Widgets/DeviceRow.vala:159
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "रिकामे होण्यास %lld तास बाकी"
+msgstr[1] "रिकामे होण्यास %lld तास बाकी"
 
 #: src/Widgets/DeviceRow.vala:126 src/Widgets/DeviceRow.vala:160
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "रिकामे होण्यास %lld मिनीट बाकी"
+msgstr[1] "रिकामे होण्यास %lld मिनीटे बाकी"
 
 #: src/Widgets/DeviceRow.vala:128 src/Widgets/DeviceRow.vala:161
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "रिकामे होण्यास %lld सेकंद बाकी"
+msgstr[1] "रिकामे होण्यास %lld सेकंद बाकी"
 
 #: src/Widgets/DeviceRow.vala:147
 msgid "Device"
