@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 09:00-0800\n"
 "PO-Revision-Date: 2018-12-21 07:20+0000\n"
-"Last-Translator: Yassine MRABET <yassine.mrabet@gmail.com>\n"
+"Last-Translator: Mohelm97 <mohelm97@gmail.com>\n"
 "Language-Team: Arabic <https://weblate.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ar/>\n"
 "Language: ar\n"
@@ -70,7 +70,7 @@ msgstr "تطبيقات تستهلك الطاقة"
 
 #: src/Widgets/DeviceRow.vala:86
 msgid "Calculating…"
-msgstr "جاري الحساب..."
+msgstr "جاري الحساب…"
 
 #: src/Widgets/DeviceRow.vala:92
 #, c-format
@@ -82,29 +82,45 @@ msgstr "%i%% مشحون"
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "البطارية ممتلئة"
+msgstr[1] "يوم واحد  حتى الإمتلاء"
+msgstr[2] "يومين  حتى الإمتلاء"
+msgstr[3] "%lld أيام حتى الإمتلاء"
+msgstr[4] "%lld يوم حتى الإمتلاء"
+msgstr[5] "%lld يوم حتى الإمتلاء"
 
 #: src/Widgets/DeviceRow.vala:103 src/Widgets/DeviceRow.vala:155
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "البطارية ممتلئة"
+msgstr[1] "ساعة واحد حتى الإمتلاء"
+msgstr[2] "ساعتان حتى الإمتلاء"
+msgstr[3] "%lld ساعات حتى الإمتلاء"
+msgstr[4] "%lld ساعة حتى الإمتلاء"
+msgstr[5] "%lld ساعة حتى الإمتلاء"
 
 #: src/Widgets/DeviceRow.vala:106 src/Widgets/DeviceRow.vala:156
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "البطارية ممتلئة"
+msgstr[1] "دقيقة واحدة حتى الإمتلاء"
+msgstr[2] "دقيقتين حتى الإمتلاء"
+msgstr[3] "%lld دقائق حتى الإمتلاء"
+msgstr[4] "%lld دقيقة حتى الإمتلاء"
+msgstr[5] "%lld دقيقة حتى الإمتلاء"
 
 #: src/Widgets/DeviceRow.vala:108 src/Widgets/DeviceRow.vala:157
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "البطارية ممتئلة"
+msgstr[1] "ثانية واحدة حتى الإمتلاء"
+msgstr[2] "ثانيتين حتى الإمتلاء"
+msgstr[3] "%lld ثواني حتى الإمتلاء"
+msgstr[4] "%lld ثانية حتى الإمتلاء"
+msgstr[5] "%lld ثانية حتى الإمتلاء"
 
 #: src/Widgets/DeviceRow.vala:112
 #, c-format
@@ -115,29 +131,45 @@ msgstr "%i%% متبقي"
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "البطارية فارغة"
+msgstr[1] "يوم واحد حتى تفرغ"
+msgstr[2] "يومين حتى تفرغ"
+msgstr[3] "%lld أيام حتى تفرغ"
+msgstr[4] "%lld يوم حتى تفرغ"
+msgstr[5] "%lld يوم حتى تفرغ"
 
 #: src/Widgets/DeviceRow.vala:123 src/Widgets/DeviceRow.vala:159
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "البطارية فارغة"
+msgstr[1] "ساعة واحدة حتى تفرغ"
+msgstr[2] "ساعتان حتى تفرغ"
+msgstr[3] "%lld ساعات حتى تفرغ"
+msgstr[4] "%lld ساعة حتى تفرغ"
+msgstr[5] "%lld ساعة حتى تفرغ"
 
 #: src/Widgets/DeviceRow.vala:126 src/Widgets/DeviceRow.vala:160
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "البطارية فارغة"
+msgstr[1] "دقيقة واحدة حتى تفرغ"
+msgstr[2] "دقايقتين حتى تفرغ"
+msgstr[3] "%lld دقائق حتى تفرغ"
+msgstr[4] "%lld دقيقة حتى تفرغ"
+msgstr[5] "%lld دقيقة حتى تفرغ"
 
 #: src/Widgets/DeviceRow.vala:128 src/Widgets/DeviceRow.vala:161
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "البطارية فارغة"
+msgstr[1] "ثانية واحدة حتى تفرغ"
+msgstr[2] "ثانيتين حتى تفرغ"
+msgstr[3] "%lld ثواني حتى تفرغ"
+msgstr[4] "%lld ثانية حتى تفرغ"
+msgstr[5] "%lld ثانية حتى تفرغ"
 
 #: src/Widgets/DeviceRow.vala:147
 msgid "Device"
