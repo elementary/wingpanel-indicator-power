@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 09:00-0800\n"
-"PO-Revision-Date: 2018-12-04 07:10+0000\n"
+"PO-Revision-Date: 2018-12-21 07:20+0000\n"
 "Last-Translator: Yassine MRABET <yassine.mrabet@gmail.com>\n"
 "Language-Team: Arabic <https://weblate.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ar/>\n"
@@ -34,7 +34,7 @@ msgstr "مزود الطاقة اللامنقطعة"
 
 #: src/Services/Device.vala:67
 msgid "Display"
-msgstr ""
+msgstr "اظهار"
 
 #: src/Services/Device.vala:69
 msgid "Mouse"
@@ -46,7 +46,7 @@ msgstr "لوحة المفاتيح"
 
 #: src/Services/Device.vala:73
 msgid "PDA"
-msgstr ""
+msgstr "مساعد رقمي شخصي"
 
 #: src/Services/Device.vala:75
 msgid "Phone"
@@ -141,7 +141,7 @@ msgstr[1] ""
 
 #: src/Widgets/DeviceRow.vala:147
 msgid "Device"
-msgstr ""
+msgstr "جهاز"
 
 #: src/Widgets/PopoverWidget.vala:55
 msgid "Show Percentage"
