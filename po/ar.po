@@ -181,4 +181,4 @@ msgstr "إظهار النسبة المئوية"
 
 #: src/Widgets/PopoverWidget.vala:58
 msgid "Power Settings…"
-msgstr ""
+msgstr "إعدادات الطاقة…"
