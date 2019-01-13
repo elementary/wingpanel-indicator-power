@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 09:00-0800\n"
-"PO-Revision-Date: 2018-06-21 20:05+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementary.io>\n"
+"PO-Revision-Date: 2019-01-14 00:11+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/fr/>\n"
 "Language: fr\n"
@@ -12,16 +12,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: src/Indicator.vala:32
 msgid "Power"
-msgstr "Consomation d'énergie"
+msgstr "Alimentation"
 
 #: src/Indicator.vala:33
 msgid "Power indicator"
-msgstr "Indicateur de consomation d'énergie"
+msgstr "Indicateur d'alimentation"
 
 #: src/Services/Device.vala:63
 msgid "Battery"
@@ -53,7 +53,7 @@ msgstr "Téléphone"
 
 #: src/Services/Device.vala:77
 msgid "Media Player"
-msgstr "Lecteur multimedia"
+msgstr "Lecteur multimédia"
 
 #: src/Services/Device.vala:79
 msgid "Tablet"
@@ -148,4 +148,4 @@ msgstr "Afficher le pourcentage"
 
 #: src/Widgets/PopoverWidget.vala:58
 msgid "Power Settings…"
-msgstr "Gestion de l’énergie…"
+msgstr "Paramètres d'alimentation…"
