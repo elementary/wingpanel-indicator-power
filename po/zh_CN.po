@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 09:00-0800\n"
-"PO-Revision-Date: 2018-08-12 14:14+0000\n"
+"PO-Revision-Date: 2019-01-16 00:04+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
 "wingpanel/wingpanel-indicator-power/zh_Hans/>\n"
@@ -69,7 +69,7 @@ msgstr "耗电较多的程序"
 
 #: src/Widgets/DeviceRow.vala:86
 msgid "Calculating…"
-msgstr "正在计算..."
+msgstr "正在计算…"
 
 #: src/Widgets/DeviceRow.vala:92
 #, c-format
