@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 09:00-0800\n"
-"PO-Revision-Date: 2018-11-01 00:03+0000\n"
-"Last-Translator: Sinan Decron <intenfinitia@gmail.com>\n"
-"Language-Team: Turkish <https://weblate.elementary.io/projects/wingpanel/"
+"PO-Revision-Date: 2019-04-11 13:11+0000\n"
+"Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
+"Language-Team: Turkish <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.5.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: src/Indicator.vala:32
@@ -21,7 +21,7 @@ msgstr "Güç"
 
 #: src/Indicator.vala:33
 msgid "Power indicator"
-msgstr "Güç Göstergesi"
+msgstr "Güç göstergesi"
 
 #: src/Services/Device.vala:63
 msgid "Battery"
@@ -65,7 +65,7 @@ msgstr "Bilgisayar"
 
 #: src/Widgets/AppList.vala:52
 msgid "Apps Using Lots of Power"
-msgstr "Uygulama Çok Fazla Güç Kullanıyor"
+msgstr "Çok Güç Kullanan Uygulamalar"
 
 #: src/Widgets/DeviceRow.vala:86
 msgid "Calculating…"
@@ -74,69 +74,69 @@ msgstr "Hesaplanıyor…"
 #: src/Widgets/DeviceRow.vala:92
 #, c-format
 msgid "%i%% charged"
-msgstr "%i%% şarj edildi"
+msgstr "%%%i şarj edildi"
 
 #. TODO: Replace this and above with P_ when https://bugzilla.gnome.org/show_bug.cgi?id=758000 is fixed.
 #: src/Widgets/DeviceRow.vala:100 src/Widgets/DeviceRow.vala:154
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
-msgstr[0] "dolmasına %lld gün"
-msgstr[1] "dolmasına %lld gün"
+msgstr[0] "dolmasına %lld gün kaldı"
+msgstr[1] "dolmasına %lld gün kaldı"
 
 #: src/Widgets/DeviceRow.vala:103 src/Widgets/DeviceRow.vala:155
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
-msgstr[0] "dolmasına %lld saat"
-msgstr[1] "dolmasına %lld saat"
+msgstr[0] "dolmasına %lld saat kaldı"
+msgstr[1] "dolmasına %lld saat kaldı"
 
 #: src/Widgets/DeviceRow.vala:106 src/Widgets/DeviceRow.vala:156
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
-msgstr[0] "dolmasına %lld dakika"
-msgstr[1] "dolmasına %lld dakika"
+msgstr[0] "dolmasına %lld dakika kaldı"
+msgstr[1] "dolmasına %lld dakika kaldı"
 
 #: src/Widgets/DeviceRow.vala:108 src/Widgets/DeviceRow.vala:157
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
-msgstr[0] "dolmasına %lld saniye"
-msgstr[1] "dolmasına %lld saniye"
+msgstr[0] "dolmasına %lld saniye kaldı"
+msgstr[1] "dolmasına %lld saniye kaldı"
 
 #: src/Widgets/DeviceRow.vala:112
 #, c-format
 msgid "%i%% remaining"
-msgstr "Kalan %i%%"
+msgstr "%%%i kaldı"
 
 #: src/Widgets/DeviceRow.vala:120 src/Widgets/DeviceRow.vala:158
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
-msgstr[0] "bitmesine %lld gün"
-msgstr[1] "bitmesine önce %lld gün"
+msgstr[0] "bitmesine %lld gün kaldı"
+msgstr[1] "bitmesine %lld gün kaldı"
 
 #: src/Widgets/DeviceRow.vala:123 src/Widgets/DeviceRow.vala:159
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
-msgstr[0] "bitmesine %lld saat"
-msgstr[1] "bitmesine %lld saat"
+msgstr[0] "bitmesine %lld saat kaldı"
+msgstr[1] "bitmesine %lld saat kaldı"
 
 #: src/Widgets/DeviceRow.vala:126 src/Widgets/DeviceRow.vala:160
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
-msgstr[0] "bitmesine %lld dakika"
-msgstr[1] "bitmesine %lld dakika"
+msgstr[0] "bitmesine %lld dakika kaldı"
+msgstr[1] "bitmesine %lld dakika kaldı"
 
 #: src/Widgets/DeviceRow.vala:128 src/Widgets/DeviceRow.vala:161
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
-msgstr[0] "bitmesine %lld saniye"
-msgstr[1] "bitmesine %lld saniye"
+msgstr[0] "bitmesine %lld saniye kaldı"
+msgstr[1] "bitmesine %lld saniye kaldı"
 
 #: src/Widgets/DeviceRow.vala:147
 msgid "Device"
