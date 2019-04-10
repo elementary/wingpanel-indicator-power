@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 09:00-0800\n"
-"PO-Revision-Date: 2018-12-18 00:02+0000\n"
+"PO-Revision-Date: 2019-04-11 13:11+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
-"Language-Team: Marathi <https://weblate.elementary.io/projects/wingpanel/"
+"Language-Team: Marathi <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/mr/>\n"
 "Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.5.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: src/Indicator.vala:32
@@ -81,15 +81,15 @@ msgstr "%i%% चार्ज झाले"
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
-msgstr[0] "पूर्ण होण्यास %lld दिवस"
-msgstr[1] "पूर्ण होण्यास %lld दिवस"
+msgstr[0] "पूर्ण होण्यास %ll दिवस"
+msgstr[1] "पूर्ण होण्यास %ll दिवस"
 
 #: src/Widgets/DeviceRow.vala:103 src/Widgets/DeviceRow.vala:155
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
-msgstr[0] "पूर्ण होण्यास %lld तास"
-msgstr[1] "पूर्ण होण्यास %lld तास"
+msgstr[0] "पूर्ण होण्यास %ll तास"
+msgstr[1] "पूर्ण होण्यास %ll तास"
 
 #: src/Widgets/DeviceRow.vala:106 src/Widgets/DeviceRow.vala:156
 #, c-format
@@ -102,8 +102,8 @@ msgstr[1] "पूर्ण होण्यास %lld मिनीटे"
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
-msgstr[0] "पूर्ण होण्यास %lld सेकंद"
-msgstr[1] "पूर्ण होण्यास %lld सेकंद"
+msgstr[0] "पूर्ण होण्यास %ll सेकंद"
+msgstr[1] "पूर्ण होण्यास %ll सेकंद"
 
 #: src/Widgets/DeviceRow.vala:112
 #, c-format
@@ -114,15 +114,15 @@ msgstr "%i%% बाकी"
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
-msgstr[0] "रिकामे होण्यास %lld दिवस बाकी"
-msgstr[1] "रिकामे होण्यास %lld दिवस बाकी"
+msgstr[0] "रिकामे होण्यास %ll दिवस बाकी"
+msgstr[1] "रिकामे होण्यास %ll दिवस बाकी"
 
 #: src/Widgets/DeviceRow.vala:123 src/Widgets/DeviceRow.vala:159
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
-msgstr[0] "रिकामे होण्यास %lld तास बाकी"
-msgstr[1] "रिकामे होण्यास %lld तास बाकी"
+msgstr[0] "रिकामे होण्यास %ll तास बाकी"
+msgstr[1] "रिकामे होण्यास %ll तास बाकी"
 
 #: src/Widgets/DeviceRow.vala:126 src/Widgets/DeviceRow.vala:160
 #, c-format
@@ -135,8 +135,8 @@ msgstr[1] "रिकामे होण्यास %lld मिनीटे ब�
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
-msgstr[0] "रिकामे होण्यास %lld सेकंद बाकी"
-msgstr[1] "रिकामे होण्यास %lld सेकंद बाकी"
+msgstr[0] "रिकामे होण्यास %ll d सेकंद बाकी"
+msgstr[1] "रिकामे होण्यास %ll d सेकंद बाकी"
 
 #: src/Widgets/DeviceRow.vala:147
 msgid "Device"
