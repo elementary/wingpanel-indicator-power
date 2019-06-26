@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-30 09:00-0800\n"
+"POT-Creation-Date: 2019-06-26 22:47+0200\n"
 "PO-Revision-Date: 2019-03-05 02:27+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/wingpanel/"
@@ -15,11 +15,11 @@ msgstr ""
 "X-Generator: Weblate 3.4\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:32
+#: src/Indicator.vala:33
 msgid "Power"
 msgstr "電源"
 
-#: src/Indicator.vala:33
+#: src/Indicator.vala:34
 msgid "Power indicator"
 msgstr "パワーインジケーター"
 
@@ -67,74 +67,74 @@ msgstr "コンピューター"
 msgid "Apps Using Lots of Power"
 msgstr "電力の消費が激しいアプリ"
 
-#: src/Widgets/DeviceRow.vala:86
+#: src/Widgets/DeviceRow.vala:89
 msgid "Calculating…"
 msgstr "計算しています…"
 
-#: src/Widgets/DeviceRow.vala:92
+#: src/Widgets/DeviceRow.vala:95
 #, c-format
 msgid "%i%% charged"
 msgstr "%i%% 充電済"
 
 #. TODO: Replace this and above with P_ when https://bugzilla.gnome.org/show_bug.cgi?id=758000 is fixed.
-#: src/Widgets/DeviceRow.vala:100 src/Widgets/DeviceRow.vala:154
+#: src/Widgets/DeviceRow.vala:103 src/Widgets/DeviceRow.vala:157
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "充電完了まで %lld 日"
 
-#: src/Widgets/DeviceRow.vala:103 src/Widgets/DeviceRow.vala:155
+#: src/Widgets/DeviceRow.vala:106 src/Widgets/DeviceRow.vala:158
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "充電完了まで %lld 時間"
 
-#: src/Widgets/DeviceRow.vala:106 src/Widgets/DeviceRow.vala:156
+#: src/Widgets/DeviceRow.vala:109 src/Widgets/DeviceRow.vala:159
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "充電完了まで %lld 分"
 
-#: src/Widgets/DeviceRow.vala:108 src/Widgets/DeviceRow.vala:157
+#: src/Widgets/DeviceRow.vala:111 src/Widgets/DeviceRow.vala:160
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "充電完了まで %lld 秒"
 
-#: src/Widgets/DeviceRow.vala:112
+#: src/Widgets/DeviceRow.vala:115
 #, c-format
 msgid "%i%% remaining"
 msgstr "残り %i%%"
 
-#: src/Widgets/DeviceRow.vala:120 src/Widgets/DeviceRow.vala:158
+#: src/Widgets/DeviceRow.vala:123 src/Widgets/DeviceRow.vala:161
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "残り %lld 日"
 
-#: src/Widgets/DeviceRow.vala:123 src/Widgets/DeviceRow.vala:159
+#: src/Widgets/DeviceRow.vala:126 src/Widgets/DeviceRow.vala:162
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "残り %lld 時間"
 
-#: src/Widgets/DeviceRow.vala:126 src/Widgets/DeviceRow.vala:160
+#: src/Widgets/DeviceRow.vala:129 src/Widgets/DeviceRow.vala:163
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "残り %lld 分"
 
-#: src/Widgets/DeviceRow.vala:128 src/Widgets/DeviceRow.vala:161
+#: src/Widgets/DeviceRow.vala:131 src/Widgets/DeviceRow.vala:164
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
 msgstr[0] "残り %lld 秒"
 
-#: src/Widgets/DeviceRow.vala:147
+#: src/Widgets/DeviceRow.vala:150
 msgid "Device"
 msgstr "デバイス"
 
-#: src/Widgets/PopoverWidget.vala:55
+#: src/Widgets/PopoverWidget.vala:52
 msgid "Show Percentage"
 msgstr "割合を表示"
 
