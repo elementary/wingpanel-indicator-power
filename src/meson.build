@@ -1,4 +1,5 @@
 wingpanel_dep = dependency('wingpanel-2.0')
+wingpanel_indicatorsdir = wingpanel_dep.get_pkgconfig_variable('indicatorsdir', define_variable: ['libdir', libdir])
 
 conf_data = configuration_data()
 conf_data.set('GETTEXT_PACKAGE', gettext_name)
@@ -47,5 +48,5 @@ shared_module(
     config_in,
     dependencies: dependencies,
     install: true,
-    install_dir : wingpanel_dep.get_pkgconfig_variable('indicatorsdir')
+    install_dir : wingpanel_indicatorsdir
 )
