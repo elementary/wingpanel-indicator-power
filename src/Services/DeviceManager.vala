@@ -77,11 +77,11 @@ public class Power.Services.DeviceManager : Object {
     public void read_devices () {
         try {
             // Add Display Device for Panel display
-            var display_device_path = upower.GetDisplayDevice ();
+            var display_device_path = upower.get_display_device ();
             display_device = new Device (display_device_path);
 
             // Fetch other devices for Detail in Panel
-            var devices = upower.EnumerateDevices ();
+            var devices = upower.enumerate_devices ();
 
             foreach (ObjectPath device_path in devices) {
                 register_device (device_path);
@@ -103,7 +103,7 @@ public class Power.Services.DeviceManager : Object {
 
     private void update_properties () {
         try {
-            on_battery = upower_properties.Get (UPOWER_INTERFACE, "OnBattery").get_boolean ();
+            on_battery = upower_properties.get (UPOWER_INTERFACE, "OnBattery").get_boolean ();
         } catch (Error e) {
             critical ("Updating UPower properties failed: %s", e.message);
         }

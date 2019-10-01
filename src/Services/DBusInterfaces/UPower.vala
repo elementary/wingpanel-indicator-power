@@ -20,8 +20,8 @@
 namespace Power.Services.DBusInterfaces {
     [DBus (name = "org.freedesktop.UPower")]
     public interface UPower : Object {
-        public abstract ObjectPath[] EnumerateDevices () throws GLib.Error;
-        public abstract ObjectPath GetDisplayDevice () throws GLib.Error;
+        public abstract ObjectPath[] enumerate_devices () throws GLib.Error;
+        public abstract ObjectPath get_display_device () throws GLib.Error;
 
         public signal void DeviceAdded (ObjectPath device_path);
         public signal void DeviceRemoved (ObjectPath device_path);

@@ -63,7 +63,12 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
 
     private async void init_bus () {
         try {
-            iscreen = Bus.get_proxy_sync (BusType.SESSION, DBUS_NAME, DBUS_PATH, DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
+            iscreen = Bus.get_proxy_sync (
+                BusType.SESSION,
+                DBUS_NAME,
+                DBUS_PATH,
+                DBusProxyFlags.GET_INVALIDATED_PROPERTIES
+            );
         } catch (IOError e) {
             warning ("screen brightness error %s", e.message);
         }

@@ -77,7 +77,7 @@ public class Power.Indicator : Wingpanel.Indicator {
             /* NOTE: popover closes every time you set visibility, so change property only when needed */
             visible = should_be_visible;
         }
-        
+
         if (visible) {
             if (dm.has_battery) {
                 update_display_device ();

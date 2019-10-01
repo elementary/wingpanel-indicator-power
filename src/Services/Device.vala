@@ -176,7 +176,7 @@ public class Power.Services.Device : Object {
 
     private void update_properties () {
         try {
-            device.Refresh ();
+            device.refresh ();
         } catch (Error e) {
             critical ("Updating the upower device parameters failed: %s", e.message);
         }
