@@ -49,7 +49,10 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         last_separator_revealer = new Gtk.Revealer ();
         last_separator_revealer.add (last_separator);
 
-        var show_percent_switch = new Wingpanel.Widgets.Switch (_("Show Percentage"), settings.get_boolean ("show-percentage"));
+        var show_percent_switch = new Wingpanel.Widgets.Switch (
+            _("Show Percentage"),
+            settings.get_boolean ("show-percentage")
+        );
 
         var show_percent_revealer = new Gtk.Revealer ();
         show_percent_revealer.add (show_percent_switch);
@@ -77,14 +80,19 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         update_device_seperator_revealer ();
         update_last_seperator_revealer ();
 
-        dm.notify["has-battery"].connect((s, p) => {
+        dm.notify["has-battery"].connect ((s, p) => {
             update_device_seperator_revealer ();
             update_last_seperator_revealer ();
         });
 
         settings.bind ("show-percentage", show_percent_switch.get_switch (), "active", SettingsBindFlags.DEFAULT);
 
-        dm.bind_property ("has-battery", show_percent_revealer, "reveal-child", GLib.BindingFlags.DEFAULT | GLib.BindingFlags.SYNC_CREATE);
+        dm.bind_property (
+            "has-battery",
+            show_percent_revealer,
+            "reveal-child",
+            GLib.BindingFlags.DEFAULT | GLib.BindingFlags.SYNC_CREATE
+        );
 
         show_settings_button.clicked.connect (() => {
             try {

@@ -99,16 +99,36 @@ public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
             if (seconds > 0) {
                 info += " - ";
                 if (seconds >= 86400) {
-                    var days = seconds/86400;
-                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld day until full", "%lld days until full", (ulong) days).printf (days);
+                    var days = seconds / 86400;
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld day until full",
+                        "%lld days until full",
+                        (ulong) days
+                    ).printf (days);
                 } else if (seconds >= 3600) {
-                    var hours = seconds/3600;
-                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld hour until full", "%lld hours until full", (ulong) hours).printf (hours);
+                    var hours = seconds / 3600;
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld hour until full",
+                        "%lld hours until full",
+                        (ulong) hours
+                    ).printf (hours);
                 } else if (seconds >= 60) {
-                    var minutes = seconds/60;
-                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld minute until full", "%lld minutes until full", (ulong) minutes).printf (minutes);
+                    var minutes = seconds / 60;
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld minute until full",
+                        "%lld minutes until full",
+                        (ulong) minutes
+                    ).printf (minutes);
                 } else {
-                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld second until full", "%lld seconds until full", (ulong) seconds).printf (seconds);
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld second until full",
+                        "%lld seconds until full",
+                        (ulong) seconds
+                    ).printf (seconds);
                 }
             }
         } else {
@@ -119,16 +139,36 @@ public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
             if (seconds > 0) {
                 info += " - ";
                 if (seconds >= 86400) {
-                    var days = seconds/86400;
-                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld day until empty", "%lld days until empty", (ulong) days).printf (days);
+                    var days = seconds / 86400;
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld day until empty",
+                        "%lld days until empty",
+                        (ulong) days
+                    ).printf (days);
                 } else if (seconds >= 3600) {
-                    var hours = seconds/3600;
-                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld hour until empty", "%lld hours until empty", (ulong) hours).printf (hours);
+                    var hours = seconds / 3600;
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld hour until empty",
+                        "%lld hours until empty",
+                        (ulong) hours
+                    ).printf (hours);
                 } else if (seconds >= 60) {
-                    var minutes = seconds/60;
-                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld minute until empty", "%lld minutes until empty", (ulong) minutes).printf (minutes);
+                    var minutes = seconds / 60;
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld minute until empty",
+                        "%lld minutes until empty",
+                        (ulong) minutes
+                    ).printf (minutes);
                 } else {
-                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld second until empty", "%lld seconds until empty", (ulong) seconds).printf (seconds);
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld second until empty",
+                        "%lld seconds until empty",
+                        (ulong) seconds
+                    ).printf (seconds);
                 }
             }
         }

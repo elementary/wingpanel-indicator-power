@@ -20,8 +20,8 @@
 namespace Power.Services.DBusInterfaces {
     [DBus (name = "org.freedesktop.DBus.Properties")]
     public interface Properties : Object {
-        public abstract Variant Get (string interface, string propname) throws GLib.Error;
-        public abstract void Set (string interface, string propname, Variant value) throws GLib.Error;
+        public abstract Variant Get (string interface, string propname) throws GLib.Error; // vala-lint=naming-convention
+        public abstract void Set (string interface, string propname, Variant value) throws GLib.Error; // vala-lint=naming-convention
         public signal void PropertiesChanged (string changed, HashTable<string, Variant> propertiesm, string[] array);
     }
 }
