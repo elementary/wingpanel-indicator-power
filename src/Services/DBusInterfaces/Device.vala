@@ -37,10 +37,10 @@ namespace Power.Services.DBusInterfaces {
 
     [DBus (name = "org.freedesktop.UPower.Device")]
     public interface Device : DBusProxy {
-        public abstract HistoryDataPoint[] GetHistory (string type, uint32 timespan, uint32 resolution) throws GLib.Error;
+        public abstract HistoryDataPoint[] get_history (string type, uint32 timespan, uint32 resolution) throws GLib.Error;
 
-        public abstract StatisticsDataPoint[] GetStatistics (string type) throws GLib.Error;
-        public abstract void Refresh () throws GLib.Error;
+        public abstract StatisticsDataPoint[] get_statistics (string type) throws GLib.Error;
+        public abstract void refresh () throws GLib.Error;
 
         public abstract bool has_history { public owned get; public set; }
         public abstract bool has_statistics { public owned get; public set; }
@@ -67,6 +67,6 @@ namespace Power.Services.DBusInterfaces {
         public abstract uint32 state { public owned get; public set; }
         public abstract uint32 technology { public owned get; public set; }
         public abstract uint32 Type { public owned get; public set; }
-        public abstract uint64 update_time  { public owned get; public set; }
+        public abstract uint64 update_time { public owned get; public set; }
     }
 }
