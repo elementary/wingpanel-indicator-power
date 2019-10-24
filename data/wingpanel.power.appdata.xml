@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2015-2019 elementary, Inc. <contact@elementary.io> -->
+<component type="desktop-application">
+  <id>io.elementary.wingpanel.power</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_group>elementary</project_group>
+  <project_license>GPL-3.0+</project_license>
+  <name>Wingpanel Power Indicator </name>
+  <summary>Get information about battery and display brigthness</summary>
+  <description>
+    <p></p>
+  </description>
+  <provides>
+    <binary>wingpanel</binary>
+  </provides>
+  <compulsory_for_desktop>Pantheon</compulsory_for_desktop>
+  <developer_name>elementary, Inc.</developer_name>
+  <url type="homepage">https://elementary.io/</url>
+  <url type="bugtracker">https://github.com/elementary/wingpanel-indicator-power/issues</url>
+  <url type="donation">https://elementary.io/get-involved#funding</url>
+  <url type="help">https://elementaryos.stackexchange.com/questions/tagged/settings</url>
+  <url type="translate">https://l10n.elementary.io/projects/wingpanel/wingpanel-indicator-power</url>
+  <update_contact>contact_AT_elementary.io</update_contact>
+</component>
