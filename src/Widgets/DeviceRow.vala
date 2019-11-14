@@ -17,7 +17,7 @@
  * Boston, MA 02110-1301, USA.
  */
 
-public class Power.Widgets.DeviceRow : Gtk.Grid {
+public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
     public Services.Device battery { get; construct; }
 
     private Gtk.Image battery_image;
@@ -50,13 +50,16 @@ public class Power.Widgets.DeviceRow : Gtk.Grid {
         info_label.halign = Gtk.Align.START;
         info_label.valign = Gtk.Align.START;
 
-        column_spacing = 3;
-        margin = 3;
-        margin_start = 6;
-        margin_end = 12;
-        attach (overlay, 0, 0, 1, 2);
-        attach (title_label, 1, 0);
-        attach (info_label, 1, 1);
+        var grid = new Gtk.Grid ();
+        grid.column_spacing = 3;
+        grid.margin = 3;
+        grid.margin_start = 6;
+        grid.margin_end = 12;
+        grid.attach (overlay, 0, 0, 1, 2);
+        grid.attach (title_label, 1, 0);
+        grid.attach (info_label, 1, 1);
+
+        add (grid);
 
         update_icons ();
 
@@ -96,16 +99,36 @@ public class Power.Widgets.DeviceRow : Gtk.Grid {
             if (seconds > 0) {
                 info += " - ";
                 if (seconds >= 86400) {
-                    var days = seconds/86400;
-                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld day until full", "%lld days until full", (ulong) days).printf (days);
+                    var days = seconds / 86400;
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld day until full",
+                        "%lld days until full",
+                        (ulong) days
+                    ).printf (days);
                 } else if (seconds >= 3600) {
-                    var hours = seconds/3600;
-                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld hour until full", "%lld hours until full", (ulong) hours).printf (hours);
+                    var hours = seconds / 3600;
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld hour until full",
+                        "%lld hours until full",
+                        (ulong) hours
+                    ).printf (hours);
                 } else if (seconds >= 60) {
-                    var minutes = seconds/60;
-                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld minute until full", "%lld minutes until full", (ulong) minutes).printf (minutes);
+                    var minutes = seconds / 60;
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld minute until full",
+                        "%lld minutes until full",
+                        (ulong) minutes
+                    ).printf (minutes);
                 } else {
-                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld second until full", "%lld seconds until full", (ulong) seconds).printf (seconds);
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld second until full",
+                        "%lld seconds until full",
+                        (ulong) seconds
+                    ).printf (seconds);
                 }
             }
         } else {
@@ -116,16 +139,36 @@ public class Power.Widgets.DeviceRow : Gtk.Grid {
             if (seconds > 0) {
                 info += " - ";
                 if (seconds >= 86400) {
-                    var days = seconds/86400;
-                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld day until empty", "%lld days until empty", (ulong) days).printf (days);
+                    var days = seconds / 86400;
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld day until empty",
+                        "%lld days until empty",
+                        (ulong) days
+                    ).printf (days);
                 } else if (seconds >= 3600) {
-                    var hours = seconds/3600;
-                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld hour until empty", "%lld hours until empty", (ulong) hours).printf (hours);
+                    var hours = seconds / 3600;
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld hour until empty",
+                        "%lld hours until empty",
+                        (ulong) hours
+                    ).printf (hours);
                 } else if (seconds >= 60) {
-                    var minutes = seconds/60;
-                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld minute until empty", "%lld minutes until empty", (ulong) minutes).printf (minutes);
+                    var minutes = seconds / 60;
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld minute until empty",
+                        "%lld minutes until empty",
+                        (ulong) minutes
+                    ).printf (minutes);
                 } else {
-                    info += dngettext (Constants.GETTEXT_PACKAGE, "%lld second until empty", "%lld seconds until empty", (ulong) seconds).printf (seconds);
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld second until empty",
+                        "%lld seconds until empty",
+                        (ulong) seconds
+                    ).printf (seconds);
                 }
             }
         }

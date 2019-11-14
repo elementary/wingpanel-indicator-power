@@ -18,7 +18,7 @@
  */
 
 public class Power.Indicator : Wingpanel.Indicator {
-    private bool is_in_session = false;
+    public bool is_in_session { get; construct; default = false; }
 
     private Widgets.DisplayWidget? display_widget = null;
 
@@ -28,11 +28,12 @@ public class Power.Indicator : Wingpanel.Indicator {
     private bool notify_battery = false;
 
     public Indicator (bool is_in_session) {
-        Object (code_name : Wingpanel.Indicator.POWER,
-                display_name : _("Power"),
-                description: _("Power indicator"));
-
-        this.is_in_session = is_in_session;
+        Object (
+            code_name : Wingpanel.Indicator.POWER,
+            display_name : _("Power"),
+            description: _("Power indicator"),
+            is_in_session: is_in_session
+        );
     }
 
     public override Gtk.Widget get_display_widget () {
