@@ -8,29 +8,33 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 11:57-0800\n"
-"PO-Revision-Date: 2019-11-07 11:57-0800\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2019-11-19 16:52+0000\n"
+"Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
+"Language-Team: Esperanto <https://l10n.elementary.io/projects/wingpanel/"
+"indicator-power-extra/eo/>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.7.1\n"
 
 #: data/power.appdata.xml.in:6
 msgid "Power Indicator"
-msgstr ""
+msgstr "Energia indikilo"
 
 #: data/power.appdata.xml.in:7
 msgid ""
 "View battery levels, adjust display brightness, and see apps using lots of "
 "power"
 msgstr ""
+"Vidi bateriajn nivelojn, alĝustigi ekranan brilecon, kaj vidi aplikaĵojn "
+"ĉerpantaj energion"
 
 #: data/power.appdata.xml.in:11
 msgid "Updated translations"
-msgstr ""
+msgstr "Ĝisdatigitaj tradukoj"
 
 #: data/power.appdata.xml.in:20
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
