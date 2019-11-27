@@ -8,28 +8,32 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 11:57-0800\n"
-"PO-Revision-Date: 2019-11-07 11:57-0800\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2019-11-28 19:24+0000\n"
+"Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
+"Language-Team: Marathi <https://l10n.elementary.io/projects/wingpanel/"
+"indicator-power-extra/mr/>\n"
 "Language: mr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.7.1\n"
 
 #: data/power.appdata.xml.in:6
 msgid "Power Indicator"
-msgstr ""
+msgstr "पॉवर सूचक"
 
 #: data/power.appdata.xml.in:7
 msgid ""
 "View battery levels, adjust display brightness, and see apps using lots of "
 "power"
 msgstr ""
+"बॅटरीचे स्तर पहा, प्रदर्शन चमक समायोजित करा आणि बरीच पॉवर वापरणारे अ‍ॅप पहा"
 
 #: data/power.appdata.xml.in:11
 msgid "Updated translations"
-msgstr ""
+msgstr "अद्ययावत भाषांतर"
 
 #: data/power.appdata.xml.in:20
 msgid "elementary, Inc."
-msgstr ""
+msgstr "एलिमेंटरी, Inc."
