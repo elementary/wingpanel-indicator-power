@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the power-indicator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: power-indicator\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-26 22:47+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ca@valencia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: src/Indicator.vala:33
+msgid "Power"
+msgstr ""
+
+#: src/Indicator.vala:34
+msgid "Power indicator"
+msgstr ""
+
+#: src/Services/Device.vala:63
+msgid "Battery"
+msgstr ""
+
+#: src/Services/Device.vala:65
+msgid "UPS"
+msgstr ""
+
+#: src/Services/Device.vala:67
+msgid "Display"
+msgstr ""
+
+#: src/Services/Device.vala:69
+msgid "Mouse"
+msgstr ""
+
+#: src/Services/Device.vala:71
+msgid "Keyboard"
+msgstr ""
+
+#: src/Services/Device.vala:73
+msgid "PDA"
+msgstr ""
+
+#: src/Services/Device.vala:75
+msgid "Phone"
+msgstr ""
+
+#: src/Services/Device.vala:77
+msgid "Media Player"
+msgstr ""
+
+#: src/Services/Device.vala:79
+msgid "Tablet"
+msgstr ""
+
+#: src/Services/Device.vala:81
+msgid "Computer"
+msgstr ""
+
+#: src/Widgets/AppList.vala:52
+msgid "Apps Using Lots of Power"
+msgstr ""
+
+#: src/Widgets/DeviceRow.vala:89
+msgid "Calculating…"
+msgstr ""
+
+#: src/Widgets/DeviceRow.vala:95
+#, c-format
+msgid "%i%% charged"
+msgstr ""
+
+#. TODO: Replace this and above with P_ when https://bugzilla.gnome.org/show_bug.cgi?id=758000 is fixed.
+#: src/Widgets/DeviceRow.vala:103 src/Widgets/DeviceRow.vala:157
+#, c-format
+msgid "%lld day until full"
+msgid_plural "%lld days until full"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Widgets/DeviceRow.vala:106 src/Widgets/DeviceRow.vala:158
+#, c-format
+msgid "%lld hour until full"
+msgid_plural "%lld hours until full"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Widgets/DeviceRow.vala:109 src/Widgets/DeviceRow.vala:159
+#, c-format
+msgid "%lld minute until full"
+msgid_plural "%lld minutes until full"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Widgets/DeviceRow.vala:111 src/Widgets/DeviceRow.vala:160
+#, c-format
+msgid "%lld second until full"
+msgid_plural "%lld seconds until full"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Widgets/DeviceRow.vala:115
+#, c-format
+msgid "%i%% remaining"
+msgstr ""
+
+#: src/Widgets/DeviceRow.vala:123 src/Widgets/DeviceRow.vala:161
+#, c-format
+msgid "%lld day until empty"
+msgid_plural "%lld days until empty"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Widgets/DeviceRow.vala:126 src/Widgets/DeviceRow.vala:162
+#, c-format
+msgid "%lld hour until empty"
+msgid_plural "%lld hours until empty"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Widgets/DeviceRow.vala:129 src/Widgets/DeviceRow.vala:163
+#, c-format
+msgid "%lld minute until empty"
+msgid_plural "%lld minutes until empty"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Widgets/DeviceRow.vala:131 src/Widgets/DeviceRow.vala:164
+#, c-format
+msgid "%lld second until empty"
+msgid_plural "%lld seconds until empty"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Widgets/DeviceRow.vala:150
+msgid "Device"
+msgstr ""
+
+#: src/Widgets/PopoverWidget.vala:52
+msgid "Show Percentage"
+msgstr ""
+
+#: src/Widgets/PopoverWidget.vala:58
+msgid "Power Settings…"
+msgstr ""
