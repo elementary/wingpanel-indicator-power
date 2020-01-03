@@ -225,7 +225,6 @@ public class Power.Services.Device : Object {
         if (percentage == 100 && is_charging) {
             return "battery-full-charged";
         }
-        
         unowned string battery_icon = get_battery_icon ();
         if (is_charging) {
             return battery_icon + "-charging";
