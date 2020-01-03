@@ -219,15 +219,18 @@ public class Power.Services.Device : Object {
     }
 
     public string get_icon_name_for_battery () {
+        if (!is_a_battery) {
+            return "battery-full-charging";
+        }
         if (percentage == 100 && is_charging) {
             return "battery-full-charged";
+        }
+        
+        unowned string battery_icon = get_battery_icon ();
+        if (is_charging) {
+            return battery_icon + "-charging";
         } else {
-            unowned string battery_icon = get_battery_icon ();
-            if (is_charging) {
-                return battery_icon + "-charging";
-            } else {
-                return battery_icon;
-            }
+            return battery_icon;
         }
     }
 
