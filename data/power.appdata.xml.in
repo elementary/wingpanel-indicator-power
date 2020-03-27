@@ -6,7 +6,7 @@
   <name>Power Indicator</name>
   <summary>View battery levels, adjust display brightness, and see apps using lots of power</summary>
   <releases>
-    <release version="2.1.5" date="2019-11-06" urgency="medium">
+    <release version="2.1.5" date="2020-03-27" urgency="medium">
       <description>
         <p>Updated translations</p>
       </description>
