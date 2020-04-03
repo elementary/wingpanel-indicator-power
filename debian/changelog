@@ -1,3 +1,21 @@
+wingpanel-indicator-power (2.1.5) bionic; urgency=medium
+
+  * Release 2.1.5 (#133)
+  * Add AppData (#126)
+  * Add Release to Actions
+  * Add Gettext Updates to Actions
+  * run installation in CI (#122)
+  * Add Lint to CI (#120)
+  * lint src files with vala-lint (#121)
+  * Test with GitHub CI (#119)
+  * Delete CODE_OF_CONDUCT.md
+  * Delete FUNDING.yml
+  * build: fix install path for wingpanel indicator (#115)
+  * Add Silesian and update translation template
+  * Create FUNDING.yml
+
+ -- Cody Garver <cody@elementary.io>  Fri, 03 Apr 2020 18:41:00 +0000
+
 wingpanel-indicator-power (2.1.4) bionic; urgency=medium
 
   * New upstream release.
