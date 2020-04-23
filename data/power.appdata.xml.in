@@ -5,6 +5,14 @@
   <extends>io.elementary.wingpanel</extends>
   <name>Power Indicator</name>
   <summary>View battery levels, adjust display brightness, and see apps using lots of power</summary>
+    <releases>
+    <release version="2.1.6" date="2020-04-22" urgency="medium">
+      <description>
+        <p>Reduce spacing when percentage is shown</p>
+        <p>Updated translations</p>
+      </description>
+    </release>
+  </releases>
   <releases>
     <release version="2.1.5" date="2020-03-27" urgency="medium">
       <description>
