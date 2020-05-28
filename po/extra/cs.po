@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-23 07:53+0000\n"
-"PO-Revision-Date: 2020-05-08 13:10+0000\n"
+"PO-Revision-Date: 2020-05-29 15:11+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/cs/>\n"
@@ -21,17 +21,19 @@ msgstr ""
 
 #: data/power.appdata.xml.in:6
 msgid "Power Indicator"
-msgstr ""
+msgstr "Indikátor napájení"
 
 #: data/power.appdata.xml.in:7
 msgid ""
 "View battery levels, adjust display brightness, and see apps using lots of "
 "power"
 msgstr ""
+"Zobrazit úroveň nabití akumulátoru, upravení intenzity podsvícení a "
+"zobrazení aplikací, výrazně vybíjejících akumulátor"
 
 #: data/power.appdata.xml.in:11
 msgid "Reduce spacing when percentage is shown"
-msgstr ""
+msgstr "Zmenšena mezera mezi zobrazovanými procenty"
 
 #: data/power.appdata.xml.in:12 data/power.appdata.xml.in:19
 msgid "Updated translations"
@@ -39,4 +41,4 @@ msgstr "Aktualizovány překlady"
 
 #: data/power.appdata.xml.in:28
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
