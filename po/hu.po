@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 07:53+0000\n"
+"POT-Creation-Date: 2020-07-14 15:49+0000\n"
 "PO-Revision-Date: 2018-06-23 08:06+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/wingpanel/"
@@ -14,14 +14,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
-
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "Energiakezelő"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "Energiakezelő indikátor"
 
 #: src/Services/Device.vala:63
 msgid "Battery"
@@ -149,3 +141,9 @@ msgstr "Százalékérték megjelenítése"
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "Energiakezelő beállítások…"
+
+#~ msgid "Power"
+#~ msgstr "Energiakezelő"
+
+#~ msgid "Power indicator"
+#~ msgstr "Energiakezelő indikátor"

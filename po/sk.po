@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 07:53+0000\n"
+"POT-Creation-Date: 2020-07-14 15:49+0000\n"
 "PO-Revision-Date: 2016-05-08 22:05+0000\n"
 "Last-Translator: Ľubomír Hlavko <5lubo555@azet.sk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,14 +13,6 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 "X-Generator: Launchpad (build 18246)\n"
-
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "Napájanie"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "Indikátor napájania"
 
 #: src/Services/Device.vala:63
 msgid "Battery"
@@ -156,3 +148,9 @@ msgstr "Zobraziť percentá"
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "Nastavenia napájania…"
+
+#~ msgid "Power"
+#~ msgstr "Napájanie"
+
+#~ msgid "Power indicator"
+#~ msgstr "Indikátor napájania"

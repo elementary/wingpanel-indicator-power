@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 07:53+0000\n"
+"POT-Creation-Date: 2020-07-14 15:49+0000\n"
 "PO-Revision-Date: 2017-03-18 13:08+0000\n"
 "Last-Translator: Beqa Arabuli <arabulibeqa@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,14 +13,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:49+0000\n"
 "X-Generator: Launchpad (build 18332)\n"
-
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "ელკვება"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "ელკვების მაჩვენებელი"
 
 #: src/Services/Device.vala:63
 msgid "Battery"
@@ -140,3 +132,9 @@ msgstr "პროცენტის ჩვენება"
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "ელკვების პარამეტრები..."
+
+#~ msgid "Power"
+#~ msgstr "ელკვება"
+
+#~ msgid "Power indicator"
+#~ msgstr "ელკვების მაჩვენებელი"

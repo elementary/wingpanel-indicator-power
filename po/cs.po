@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 07:53+0000\n"
+"POT-Creation-Date: 2020-07-14 15:49+0000\n"
 "PO-Revision-Date: 2020-05-29 15:11+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/wingpanel/"
@@ -14,14 +14,6 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
-
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "Napájení"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "Indikátor napájení"
 
 #: src/Services/Device.vala:63
 msgid "Battery"
@@ -157,3 +149,9 @@ msgstr "Zobrazit procenta"
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "Nastavení napájení…"
+
+#~ msgid "Power"
+#~ msgstr "Napájení"
+
+#~ msgid "Power indicator"
+#~ msgstr "Indikátor napájení"

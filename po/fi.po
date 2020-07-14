@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 07:53+0000\n"
+"POT-Creation-Date: 2020-07-14 15:49+0000\n"
 "PO-Revision-Date: 2018-07-09 00:10+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/wingpanel/"
@@ -14,14 +14,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
-
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "Virta"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "Virtailmaisin"
 
 #: src/Services/Device.vala:63
 msgid "Battery"
@@ -149,3 +141,9 @@ msgstr "Näytä prosentit"
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "Virranhallinnan asetukset…"
+
+#~ msgid "Power"
+#~ msgstr "Virta"
+
+#~ msgid "Power indicator"
+#~ msgstr "Virtailmaisin"

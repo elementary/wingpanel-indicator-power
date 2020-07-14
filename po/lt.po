@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 07:53+0000\n"
+"POT-Creation-Date: 2020-07-14 15:49+0000\n"
 "PO-Revision-Date: 2018-06-22 00:11+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/wingpanel/"
@@ -15,14 +15,6 @@ msgstr ""
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
-
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "Maitinimas"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "Maitinimo indikatorius"
 
 #: src/Services/Device.vala:63
 msgid "Battery"
@@ -166,3 +158,9 @@ msgstr "Rodyti procentinę dalį"
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "Maitinimo nustatymai…"
+
+#~ msgid "Power"
+#~ msgstr "Maitinimas"
+
+#~ msgid "Power indicator"
+#~ msgstr "Maitinimo indikatorius"

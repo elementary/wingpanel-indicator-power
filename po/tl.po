@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wingpanel-indicator-power\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 07:53+0000\n"
+"POT-Creation-Date: 2020-07-14 15:49+0000\n"
 "PO-Revision-Date: 2016-05-24 20:19+0000\n"
 "Last-Translator: yavinfour <anjelo.passionist@gmail.com>\n"
 "Language-Team: Tagalog <tl@li.org>\n"
@@ -18,14 +18,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 "X-Generator: Launchpad (build 18246)\n"
-
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "Kuryente"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "Tagapakita ng Kuryente"
 
 #: src/Services/Device.vala:63
 msgid "Battery"
@@ -153,3 +145,9 @@ msgstr "Ipakita ang Porsyento"
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "Settings sa Kuryente..."
+
+#~ msgid "Power"
+#~ msgstr "Kuryente"
+
+#~ msgid "Power indicator"
+#~ msgstr "Tagapakita ng Kuryente"

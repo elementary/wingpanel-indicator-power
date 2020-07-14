@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 07:53+0000\n"
+"POT-Creation-Date: 2020-07-14 15:49+0000\n"
 "PO-Revision-Date: 2017-04-26 15:35+0000\n"
 "Last-Translator: Володимир Білошицький <volbilnexus@gmail.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/wingpanel/"
@@ -15,14 +15,6 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
-
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "Живлення"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "Індикатор живлення"
 
 #: src/Services/Device.vala:63
 msgid "Battery"
@@ -158,3 +150,9 @@ msgstr "Показати відсотки"
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "Параметри живлення…"
+
+#~ msgid "Power"
+#~ msgstr "Живлення"
+
+#~ msgid "Power indicator"
+#~ msgstr "Індикатор живлення"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 07:53+0000\n"
+"POT-Creation-Date: 2020-07-14 15:49+0000\n"
 "PO-Revision-Date: 2019-01-16 00:04+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
@@ -14,14 +14,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
-
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "电源"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "电源指示器"
 
 #: src/Services/Device.vala:63
 msgid "Battery"
@@ -141,3 +133,9 @@ msgstr "显示电量"
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "电源设置…"
+
+#~ msgid "Power"
+#~ msgstr "电源"
+
+#~ msgid "Power indicator"
+#~ msgstr "电源指示器"

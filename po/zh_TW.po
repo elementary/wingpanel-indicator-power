@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 07:53+0000\n"
+"POT-Creation-Date: 2020-07-14 15:49+0000\n"
 "PO-Revision-Date: 2016-08-06 15:11+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,14 +13,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 "X-Generator: Launchpad (build 18246)\n"
-
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "電源"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "電源通知"
 
 #: src/Services/Device.vala:63
 msgid "Battery"
@@ -140,3 +132,9 @@ msgstr "顯示百分比"
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "電源設定值…"
+
+#~ msgid "Power"
+#~ msgstr "電源"
+
+#~ msgid "Power indicator"
+#~ msgstr "電源通知"

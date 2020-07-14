@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 07:53+0000\n"
+"POT-Creation-Date: 2020-07-14 15:49+0000\n"
 "PO-Revision-Date: 2016-07-13 15:33+0000\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,14 +14,6 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 "X-Generator: Launchpad (build 18246)\n"
-
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "Energija"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "Indikator energije"
 
 #: src/Services/Device.vala:63
 msgid "Battery"
@@ -157,3 +149,9 @@ msgstr "Prikaži postotak"
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "Postavke napajanja…"
+
+#~ msgid "Power"
+#~ msgstr "Energija"
+
+#~ msgid "Power indicator"
+#~ msgstr "Indikator energije"

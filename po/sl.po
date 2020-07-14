@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 07:53+0000\n"
+"POT-Creation-Date: 2020-07-14 15:49+0000\n"
 "PO-Revision-Date: 2018-09-23 00:06+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://weblate.elementary.io/projects/wingpanel/"
@@ -15,14 +15,6 @@ msgstr ""
 "%100==4 ? 2 : 3;\n"
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
-
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "Napajanje"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "Indikator za napajanje"
 
 #: src/Services/Device.vala:63
 msgid "Battery"
@@ -166,3 +158,9 @@ msgstr "Pokaži odstotke v menijski vrstici"
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "Nastavitve porabe energije…"
+
+#~ msgid "Power"
+#~ msgstr "Napajanje"
+
+#~ msgid "Power indicator"
+#~ msgstr "Indikator za napajanje"

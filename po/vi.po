@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 07:53+0000\n"
+"POT-Creation-Date: 2020-07-14 15:49+0000\n"
 "PO-Revision-Date: 2017-12-27 15:59+0000\n"
 "Last-Translator: Hải Hồ <hochihai1997@gmail.com>\n"
 "Language-Team: Vietnamese <https://weblate.elementary.io/projects/wingpanel/"
@@ -14,14 +14,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
-
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "Năng lượng"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "Chỉ thị năng lượng"
 
 #: src/Services/Device.vala:63
 msgid "Battery"
@@ -141,3 +133,9 @@ msgstr "Hiển thị phần trăm"
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "Cài đặt Năng lượng…"
+
+#~ msgid "Power"
+#~ msgstr "Năng lượng"
+
+#~ msgid "Power indicator"
+#~ msgstr "Chỉ thị năng lượng"

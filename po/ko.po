@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 07:53+0000\n"
+"POT-Creation-Date: 2020-07-14 15:49+0000\n"
 "PO-Revision-Date: 2019-05-20 00:03+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/wingpanel/"
@@ -14,14 +14,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 3.6.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
-
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "전력"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "전력 표시기"
 
 #: src/Services/Device.vala:63
 msgid "Battery"
@@ -141,3 +133,9 @@ msgstr "백분율 표시"
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "전력 설정…"
+
+#~ msgid "Power"
+#~ msgstr "전력"
+
+#~ msgid "Power indicator"
+#~ msgstr "전력 표시기"

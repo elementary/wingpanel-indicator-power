@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 07:53+0000\n"
+"POT-Creation-Date: 2020-07-14 15:49+0000\n"
 "PO-Revision-Date: 2017-03-22 12:29+0000\n"
 "Last-Translator: Oto Rudovics <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,14 +13,6 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2;\n"
 "X-Launchpad-Export-Date: 2017-03-24 06:32+0000\n"
 "X-Generator: Launchpad (build 18334)\n"
-
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "Barošana"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "Barošanas indikators"
 
 #: src/Services/Device.vala:63
 msgid "Battery"
@@ -156,3 +148,9 @@ msgstr "Rādīt procentus"
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "Barošanas iestatījumi…"
+
+#~ msgid "Power"
+#~ msgstr "Barošana"
+
+#~ msgid "Power indicator"
+#~ msgstr "Barošanas indikators"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 07:53+0000\n"
+"POT-Creation-Date: 2020-07-14 15:49+0000\n"
 "PO-Revision-Date: 2017-12-28 00:18+0000\n"
 "Last-Translator: Subhadeep Jasu <subhajasu@gmail.com>\n"
 "Language-Team: Bengali <https://weblate.elementary.io/projects/wingpanel/"
@@ -14,14 +14,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
-
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "পাওয়ার"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "পাওয়ার সূচক"
 
 #: src/Services/Device.vala:63
 msgid "Battery"
@@ -149,3 +141,9 @@ msgstr "শতাংশ দেখান"
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "পাওয়ার সেটিংস…"
+
+#~ msgid "Power"
+#~ msgstr "পাওয়ার"
+
+#~ msgid "Power indicator"
+#~ msgstr "পাওয়ার সূচক"

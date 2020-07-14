@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 07:53+0000\n"
+"POT-Creation-Date: 2020-07-14 15:49+0000\n"
 "PO-Revision-Date: 2019-04-25 11:26+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/wingpanel/"
@@ -14,14 +14,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.6\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
-
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "उर्जा"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "उर्जा सूचक"
 
 #: src/Services/Device.vala:63
 msgid "Battery"
@@ -149,3 +141,9 @@ msgstr "टक्केवारी दर्शवा"
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "उर्जा सेटिंग्ज …"
+
+#~ msgid "Power"
+#~ msgstr "उर्जा"
+
+#~ msgid "Power indicator"
+#~ msgstr "उर्जा सूचक"
