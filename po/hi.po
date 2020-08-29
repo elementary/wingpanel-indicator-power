@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-14 15:49+0000\n"
+"POT-Creation-Date: 2020-08-29 15:50+0000\n"
 "PO-Revision-Date: 2018-10-18 00:11+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Hindi <https://weblate.elementary.io/projects/wingpanel/"
@@ -15,45 +15,53 @@ msgstr ""
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Services/Device.vala:63
+#: src/Services/Device.vala:65
 msgid "Battery"
 msgstr "बैटरी"
 
-#: src/Services/Device.vala:65
+#: src/Services/Device.vala:67
 msgid "UPS"
 msgstr "यू.पी.एस."
 
-#: src/Services/Device.vala:67
+#: src/Services/Device.vala:69
 msgid "Display"
 msgstr "प्रदर्शक"
 
-#: src/Services/Device.vala:69
+#: src/Services/Device.vala:71
 msgid "Mouse"
 msgstr "माउस"
 
-#: src/Services/Device.vala:71
+#: src/Services/Device.vala:73
 msgid "Keyboard"
 msgstr "कुंजीपटल"
 
-#: src/Services/Device.vala:73
+#: src/Services/Device.vala:75
 msgid "PDA"
 msgstr "पी डी ऐ"
 
-#: src/Services/Device.vala:75
+#: src/Services/Device.vala:77
 msgid "Phone"
 msgstr "दूरभाष"
 
-#: src/Services/Device.vala:77
+#: src/Services/Device.vala:79
 msgid "Media Player"
 msgstr "मीडिया प्लेयर"
 
-#: src/Services/Device.vala:79
+#: src/Services/Device.vala:81
 msgid "Tablet"
 msgstr "टैबलेट"
 
-#: src/Services/Device.vala:81
+#: src/Services/Device.vala:83
 msgid "Computer"
 msgstr "कम्प्यूटर"
+
+#: src/Services/Device.vala:85
+msgid "Controller"
+msgstr ""
+
+#: src/Services/Device.vala:87
+msgid "Pen"
+msgstr ""
 
 #: src/Widgets/AppList.vala:52
 msgid "Apps Using Lots of Power"

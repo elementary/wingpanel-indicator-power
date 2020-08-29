@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-14 15:49+0000\n"
+"POT-Creation-Date: 2020-08-29 15:50+0000\n"
 "PO-Revision-Date: 2017-04-27 14:36+0000\n"
 "Last-Translator: marius.a <marius.albina@gmail.com>\n"
 "Language-Team: Romanian <https://l10n.elementary.io/projects/wingpanel/"
@@ -16,44 +16,52 @@ msgstr ""
 "X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-12-14 05:38+0000\n"
 
-#: src/Services/Device.vala:63
+#: src/Services/Device.vala:65
 msgid "Battery"
 msgstr "Baterie"
 
-#: src/Services/Device.vala:65
+#: src/Services/Device.vala:67
 msgid "UPS"
 msgstr "UPS"
 
-#: src/Services/Device.vala:67
+#: src/Services/Device.vala:69
 msgid "Display"
 msgstr "Afișare"
 
-#: src/Services/Device.vala:69
+#: src/Services/Device.vala:71
 msgid "Mouse"
 msgstr "Cursor"
 
-#: src/Services/Device.vala:71
+#: src/Services/Device.vala:73
 msgid "Keyboard"
 msgstr "Tastatură"
 
-#: src/Services/Device.vala:73
+#: src/Services/Device.vala:75
 msgid "PDA"
 msgstr "Asistent Personal Digital"
 
-#: src/Services/Device.vala:75
+#: src/Services/Device.vala:77
 msgid "Phone"
 msgstr "Telefon"
 
-#: src/Services/Device.vala:77
+#: src/Services/Device.vala:79
 msgid "Media Player"
 msgstr ""
 
-#: src/Services/Device.vala:79
+#: src/Services/Device.vala:81
 msgid "Tablet"
 msgstr ""
 
-#: src/Services/Device.vala:81
+#: src/Services/Device.vala:83
 msgid "Computer"
+msgstr ""
+
+#: src/Services/Device.vala:85
+msgid "Controller"
+msgstr ""
+
+#: src/Services/Device.vala:87
+msgid "Pen"
 msgstr ""
 
 #: src/Widgets/AppList.vala:52

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-14 15:49+0000\n"
+"POT-Creation-Date: 2020-08-29 15:50+0000\n"
 "PO-Revision-Date: 2016-08-05 08:36+0000\n"
 "Last-Translator: Адмирал АнимЕ <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,44 +14,52 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 "X-Generator: Launchpad (build 18246)\n"
 
-#: src/Services/Device.vala:63
+#: src/Services/Device.vala:65
 msgid "Battery"
 msgstr "Батерия"
 
-#: src/Services/Device.vala:65
+#: src/Services/Device.vala:67
 msgid "UPS"
 msgstr "Непрекъсваемо токозахранване"
 
-#: src/Services/Device.vala:67
+#: src/Services/Device.vala:69
 msgid "Display"
 msgstr "Екран"
 
-#: src/Services/Device.vala:69
+#: src/Services/Device.vala:71
 msgid "Mouse"
 msgstr "Мишка"
 
-#: src/Services/Device.vala:71
+#: src/Services/Device.vala:73
 msgid "Keyboard"
 msgstr "Клавиатура"
 
-#: src/Services/Device.vala:73
+#: src/Services/Device.vala:75
 msgid "PDA"
 msgstr "Цифров помощник"
 
-#: src/Services/Device.vala:75
+#: src/Services/Device.vala:77
 msgid "Phone"
 msgstr "Телефон"
 
-#: src/Services/Device.vala:77
+#: src/Services/Device.vala:79
 msgid "Media Player"
 msgstr ""
 
-#: src/Services/Device.vala:79
+#: src/Services/Device.vala:81
 msgid "Tablet"
 msgstr ""
 
-#: src/Services/Device.vala:81
+#: src/Services/Device.vala:83
 msgid "Computer"
+msgstr ""
+
+#: src/Services/Device.vala:85
+msgid "Controller"
+msgstr ""
+
+#: src/Services/Device.vala:87
+msgid "Pen"
 msgstr ""
 
 #: src/Widgets/AppList.vala:52

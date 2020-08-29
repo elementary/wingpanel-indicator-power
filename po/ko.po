@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-14 15:49+0000\n"
+"POT-Creation-Date: 2020-08-29 15:50+0000\n"
 "PO-Revision-Date: 2019-05-20 00:03+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/wingpanel/"
@@ -15,45 +15,53 @@ msgstr ""
 "X-Generator: Weblate 3.6.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Services/Device.vala:63
+#: src/Services/Device.vala:65
 msgid "Battery"
 msgstr "배터리"
 
-#: src/Services/Device.vala:65
+#: src/Services/Device.vala:67
 msgid "UPS"
 msgstr "UPS"
 
-#: src/Services/Device.vala:67
+#: src/Services/Device.vala:69
 msgid "Display"
 msgstr "디스플레이"
 
-#: src/Services/Device.vala:69
+#: src/Services/Device.vala:71
 msgid "Mouse"
 msgstr "마우스"
 
-#: src/Services/Device.vala:71
+#: src/Services/Device.vala:73
 msgid "Keyboard"
 msgstr "키보드"
 
-#: src/Services/Device.vala:73
+#: src/Services/Device.vala:75
 msgid "PDA"
 msgstr "PDA"
 
-#: src/Services/Device.vala:75
+#: src/Services/Device.vala:77
 msgid "Phone"
 msgstr "전화"
 
-#: src/Services/Device.vala:77
+#: src/Services/Device.vala:79
 msgid "Media Player"
 msgstr "미디어 플레이어"
 
-#: src/Services/Device.vala:79
+#: src/Services/Device.vala:81
 msgid "Tablet"
 msgstr "태블릿"
 
-#: src/Services/Device.vala:81
+#: src/Services/Device.vala:83
 msgid "Computer"
 msgstr "컴퓨터"
+
+#: src/Services/Device.vala:85
+msgid "Controller"
+msgstr ""
+
+#: src/Services/Device.vala:87
+msgid "Pen"
+msgstr ""
 
 #: src/Widgets/AppList.vala:52
 msgid "Apps Using Lots of Power"
