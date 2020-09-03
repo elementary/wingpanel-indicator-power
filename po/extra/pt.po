@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 07:53+0000\n"
+"POT-Creation-Date: 2020-09-03 17:28+0000\n"
 "PO-Revision-Date: 2020-04-25 11:10+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/wingpanel/"
@@ -31,11 +31,15 @@ msgstr ""
 "Veja os níveis da bateria, ajuste o brilho do ecrã e veja aplicações que "
 "usam muita energia"
 
-#: data/power.appdata.xml.in:11
+#: data/power.appdata.xml.in:12
+msgid "Support for Controllers and Pens"
+msgstr ""
+
+#: data/power.appdata.xml.in:13
 msgid "Reduce spacing when percentage is shown"
 msgstr "Reduzir o espaço quando a percentagem é indicada"
 
-#: data/power.appdata.xml.in:12 data/power.appdata.xml.in:19
+#: data/power.appdata.xml.in:14 data/power.appdata.xml.in:19
 msgid "Updated translations"
 msgstr "Traduções atualizadas"
 

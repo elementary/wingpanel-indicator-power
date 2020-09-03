@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 07:53+0000\n"
+"POT-Creation-Date: 2020-09-03 17:28+0000\n"
 "PO-Revision-Date: 2020-04-27 00:10+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -31,11 +31,15 @@ msgstr ""
 "Verifica os níveis da bateria, ajuste o brilho da tela e veja aplicativos "
 "usando muita energia"
 
-#: data/power.appdata.xml.in:11
+#: data/power.appdata.xml.in:12
+msgid "Support for Controllers and Pens"
+msgstr ""
+
+#: data/power.appdata.xml.in:13
 msgid "Reduce spacing when percentage is shown"
 msgstr "Reduza o espaçamento quando a porcentagem for mostrada"
 
-#: data/power.appdata.xml.in:12 data/power.appdata.xml.in:19
+#: data/power.appdata.xml.in:14 data/power.appdata.xml.in:19
 msgid "Updated translations"
 msgstr "Traduções atualizadas"
 

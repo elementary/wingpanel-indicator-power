@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 07:53+0000\n"
+"POT-Creation-Date: 2020-09-03 17:28+0000\n"
 "PO-Revision-Date: 2019-11-19 16:52+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/wingpanel/"
@@ -31,11 +31,15 @@ msgstr ""
 "Vidi bateriajn nivelojn, alĝustigi ekranan brilecon, kaj vidi aplikaĵojn "
 "ĉerpantaj energion"
 
-#: data/power.appdata.xml.in:11
+#: data/power.appdata.xml.in:12
+msgid "Support for Controllers and Pens"
+msgstr ""
+
+#: data/power.appdata.xml.in:13
 msgid "Reduce spacing when percentage is shown"
 msgstr ""
 
-#: data/power.appdata.xml.in:12 data/power.appdata.xml.in:19
+#: data/power.appdata.xml.in:14 data/power.appdata.xml.in:19
 msgid "Updated translations"
 msgstr "Ĝisdatigitaj tradukoj"
 
