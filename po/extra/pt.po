@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-03 17:28+0000\n"
-"PO-Revision-Date: 2020-04-25 11:10+0000\n"
+"PO-Revision-Date: 2020-09-06 11:13+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/pt/>\n"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: data/power.appdata.xml.in:12
 msgid "Support for Controllers and Pens"
-msgstr ""
+msgstr "Suporte para controladores e canetas"
 
 #: data/power.appdata.xml.in:13
 msgid "Reduce spacing when percentage is shown"
