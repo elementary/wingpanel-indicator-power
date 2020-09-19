@@ -191,4 +191,3 @@ public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
         }
     }
 }
-
