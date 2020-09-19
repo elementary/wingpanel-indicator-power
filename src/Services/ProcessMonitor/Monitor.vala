@@ -19,7 +19,7 @@
 
 public class Power.Services.ProcessMonitor.Monitor : Object {
     public double cpu_load { get; private set; }
-    public double[] cpu_loads { get; private set; }
+    private double[] cpu_loads;
 
     uint64 cpu_last_used = 0;
     uint64 cpu_last_total = 0;
@@ -56,6 +56,11 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
 
             return false;
         });
+    }
+
+    // This not appear to be used within elementaryos - can be removed?
+    public unowned double[] get_cpu_loads () {
+        return cpu_loads;
     }
 
     public static Monitor get_default () {

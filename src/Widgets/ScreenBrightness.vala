@@ -42,7 +42,7 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
             on_scale_value_changed.begin ();
         });
 
-        (iscreen as DBusProxy).g_properties_changed.connect (on_screen_properties_changed);
+        ((DBusProxy)iscreen).g_properties_changed.connect (on_screen_properties_changed);
 
         brightness_slider.set_value (iscreen.brightness);
 
@@ -76,12 +76,8 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
 
     private async void on_scale_value_changed () {
         int val = (int) brightness_slider.get_value ();
-        try {
-            if (iscreen.brightness != val) {
-                iscreen.brightness = val;
-            }
-        } catch (IOError e) {
-            warning ("screen brightness error %s", e.message);
+        if (iscreen.brightness != val) {
+            iscreen.brightness = val;
         }
     }
 }
