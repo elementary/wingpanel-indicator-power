@@ -117,7 +117,7 @@ public class Power.Indicator : Wingpanel.Indicator {
 
             if (percent <= 0) {
                 display_widget.percentage = percent;
-                display_widget.allow_percent = true;                
+                display_widget.allow_percent = true;
             } else {
                 display_widget.allow_percent = false;
             }
