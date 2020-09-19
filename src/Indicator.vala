@@ -116,10 +116,10 @@ public class Power.Indicator : Wingpanel.Indicator {
             var percent = (int)Math.round (display_device.percentage);
 
             if (percent <= 0) {
+                display_widget.allow_percent = false;
+            } else {
                 display_widget.percentage = percent;
                 display_widget.allow_percent = true;
-            } else {
-                display_widget.allow_percent = false;
             }
         }
     }
