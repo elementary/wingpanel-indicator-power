@@ -58,11 +58,6 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
         });
     }
 
-    // This not appear to be used within elementaryos - can be removed?
-    public unowned double[] get_cpu_loads () {
-        return cpu_loads;
-    }
-
     public static Monitor get_default () {
         if (instance == null) {
             instance = new Monitor ();
