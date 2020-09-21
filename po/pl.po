@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-29 15:50+0000\n"
+"POT-Creation-Date: 2020-09-20 18:29+0000\n"
 "PO-Revision-Date: 2018-08-08 00:02+0000\n"
 "Last-Translator: Kuba Kowalczyk <kuba.bruno.kowalczyk@gmail.com>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/wingpanel/"
@@ -77,8 +77,7 @@ msgstr "Obliczanie…"
 msgid "%i%% charged"
 msgstr "%i%% naładowania"
 
-#. TODO: Replace this and above with P_ when https://bugzilla.gnome.org/show_bug.cgi?id=758000 is fixed.
-#: src/Widgets/DeviceRow.vala:105 src/Widgets/DeviceRow.vala:197
+#: src/Widgets/DeviceRow.vala:105
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
@@ -86,7 +85,7 @@ msgstr[0] "%lld dzień do pełnego naładowania"
 msgstr[1] "%lld dni do pełnego naładowania"
 msgstr[2] "%lld dni do pełnego naładowania"
 
-#: src/Widgets/DeviceRow.vala:113 src/Widgets/DeviceRow.vala:198
+#: src/Widgets/DeviceRow.vala:113
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
@@ -94,7 +93,7 @@ msgstr[0] "%lld godzina do pełnego naładowania"
 msgstr[1] "%lld godziny do pełnego naładowania"
 msgstr[2] "%lld godzin do pełnego naładowania"
 
-#: src/Widgets/DeviceRow.vala:121 src/Widgets/DeviceRow.vala:199
+#: src/Widgets/DeviceRow.vala:121
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
@@ -102,7 +101,7 @@ msgstr[0] "%lld minuta do pełnego naładowania"
 msgstr[1] "%lld minuty do pełnego naładowania"
 msgstr[2] "%lld minut do pełnego naładowania"
 
-#: src/Widgets/DeviceRow.vala:128 src/Widgets/DeviceRow.vala:200
+#: src/Widgets/DeviceRow.vala:128
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
@@ -115,7 +114,7 @@ msgstr[2] "%lld sekund do pełnego naładowania"
 msgid "%i%% remaining"
 msgstr "Pozostało %i%%"
 
-#: src/Widgets/DeviceRow.vala:145 src/Widgets/DeviceRow.vala:201
+#: src/Widgets/DeviceRow.vala:145
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
@@ -123,7 +122,7 @@ msgstr[0] "%lld dzień do pełnego rozładowania"
 msgstr[1] "%lld dni do pełnego rozładowania"
 msgstr[2] "%lld dni do pełnego rozładowania"
 
-#: src/Widgets/DeviceRow.vala:153 src/Widgets/DeviceRow.vala:202
+#: src/Widgets/DeviceRow.vala:153
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
@@ -131,7 +130,7 @@ msgstr[0] "%lld godzina do pełnego rozładowania"
 msgstr[1] "%lld godziny do pełnego rozładowania"
 msgstr[2] "%lld godzin do pełnego rozładowania"
 
-#: src/Widgets/DeviceRow.vala:161 src/Widgets/DeviceRow.vala:203
+#: src/Widgets/DeviceRow.vala:161
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
@@ -139,7 +138,7 @@ msgstr[0] "%lld minuta do pełnego rozładowania"
 msgstr[1] "%lld minuty do pełnego rozładowania"
 msgstr[2] "%lld minut do pełnego rozładowania"
 
-#: src/Widgets/DeviceRow.vala:168 src/Widgets/DeviceRow.vala:204
+#: src/Widgets/DeviceRow.vala:168
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"

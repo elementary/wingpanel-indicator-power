@@ -191,15 +191,3 @@ public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
         }
     }
 }
-
-// TODO: Replace this and above with P_ when https://bugzilla.gnome.org/show_bug.cgi?id=758000 is fixed.
-private void translations () {
-    ngettext ("%lld day until full", "%lld days until full", 0);
-    ngettext ("%lld hour until full", "%lld hours until full", 0);
-    ngettext ("%lld minute until full", "%lld minutes until full", 0);
-    ngettext ("%lld second until full", "%lld seconds until full", 0);
-    ngettext ("%lld day until empty", "%lld days until empty", 0);
-    ngettext ("%lld hour until empty", "%lld hours until empty", 0);
-    ngettext ("%lld minute until empty", "%lld minutes until empty", 0);
-    ngettext ("%lld second until empty", "%lld seconds until empty", 0);
-}

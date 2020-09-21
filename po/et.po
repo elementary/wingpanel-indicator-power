@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-29 15:50+0000\n"
+"POT-Creation-Date: 2020-09-20 18:29+0000\n"
 "PO-Revision-Date: 2016-05-22 05:42+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,29 +75,28 @@ msgstr "Arvutamine…"
 msgid "%i%% charged"
 msgstr "%i%% laetud"
 
-#. TODO: Replace this and above with P_ when https://bugzilla.gnome.org/show_bug.cgi?id=758000 is fixed.
-#: src/Widgets/DeviceRow.vala:105 src/Widgets/DeviceRow.vala:197
+#: src/Widgets/DeviceRow.vala:105
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "%lld päev täislaadimiseni"
 msgstr[1] "%lld päeva täislaadimiseni"
 
-#: src/Widgets/DeviceRow.vala:113 src/Widgets/DeviceRow.vala:198
+#: src/Widgets/DeviceRow.vala:113
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld tund täislaadimiseni"
 msgstr[1] "%lld tundi täislaadimiseni"
 
-#: src/Widgets/DeviceRow.vala:121 src/Widgets/DeviceRow.vala:199
+#: src/Widgets/DeviceRow.vala:121
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld minut täislaadimiseni"
 msgstr[1] "%lld minutit täislaadimiseni"
 
-#: src/Widgets/DeviceRow.vala:128 src/Widgets/DeviceRow.vala:200
+#: src/Widgets/DeviceRow.vala:128
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
@@ -109,28 +108,28 @@ msgstr[1] "%lld sekundit täislaadimiseni"
 msgid "%i%% remaining"
 msgstr "%i%% jäänud"
 
-#: src/Widgets/DeviceRow.vala:145 src/Widgets/DeviceRow.vala:201
+#: src/Widgets/DeviceRow.vala:145
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "%lld päev aku tühjenemiseni"
 msgstr[1] "%lld päeva aku tühjenemiseni"
 
-#: src/Widgets/DeviceRow.vala:153 src/Widgets/DeviceRow.vala:202
+#: src/Widgets/DeviceRow.vala:153
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld tund aku tühjenemiseni"
 msgstr[1] "%lld tundi aku tühjenemiseni"
 
-#: src/Widgets/DeviceRow.vala:161 src/Widgets/DeviceRow.vala:203
+#: src/Widgets/DeviceRow.vala:161
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld minut aku tühjenemiseni"
 msgstr[1] "%lld minutit aku tühjenemiseni"
 
-#: src/Widgets/DeviceRow.vala:168 src/Widgets/DeviceRow.vala:204
+#: src/Widgets/DeviceRow.vala:168
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
