@@ -8,36 +8,41 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-03 17:28+0000\n"
-"PO-Revision-Date: 2019-11-07 11:57-0800\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-09-22 13:14+0000\n"
+"Last-Translator: Shukrullo <shukrullo@umail.uz>\n"
+"Language-Team: Uzbek <https://l10n.elementary.io/projects/wingpanel/"
+"indicator-power-extra/uz/>\n"
 "Language: uz\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/power.appdata.xml.in:6
 msgid "Power Indicator"
-msgstr ""
+msgstr "Quvvat indikatori"
 
 #: data/power.appdata.xml.in:7
 msgid ""
 "View battery levels, adjust display brightness, and see apps using lots of "
 "power"
 msgstr ""
+"Batareya darajalarini ko'rish, ekran yorqinligini sozlash va quvvatni ko'p "
+"ishlatayotgan dasturlashni ko'rish"
 
 #: data/power.appdata.xml.in:12
 msgid "Support for Controllers and Pens"
-msgstr ""
+msgstr "Boshqaruvchilar va Ruchkalarni qo'llab quvvatlash"
 
 #: data/power.appdata.xml.in:13
 msgid "Reduce spacing when percentage is shown"
-msgstr ""
+msgstr "Agar foiz ko'rinayotgan bo'lsa oradagi bo'shliqni kamaytirish"
 
 #: data/power.appdata.xml.in:14 data/power.appdata.xml.in:19
 msgid "Updated translations"
-msgstr ""
+msgstr "Yangilangan tarjimalar"
 
 #: data/power.appdata.xml.in:28
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary Inc."
