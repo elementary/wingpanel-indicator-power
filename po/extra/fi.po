@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 11:57-0800\n"
+"POT-Creation-Date: 2020-09-03 17:28+0000\n"
 "PO-Revision-Date: 2019-12-04 21:24+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/wingpanel/"
@@ -31,10 +31,18 @@ msgstr ""
 "Katso akkutasot, säädä näytön kirkkautta ja katso mitkä sovellukset "
 "tarvitsevat eniten tehoa"
 
-#: data/power.appdata.xml.in:11
+#: data/power.appdata.xml.in:12
+msgid "Support for Controllers and Pens"
+msgstr ""
+
+#: data/power.appdata.xml.in:13
+msgid "Reduce spacing when percentage is shown"
+msgstr ""
+
+#: data/power.appdata.xml.in:14 data/power.appdata.xml.in:19
 msgid "Updated translations"
 msgstr "Päivitetyt käännökset"
 
-#: data/power.appdata.xml.in:20
+#: data/power.appdata.xml.in:28
 msgid "elementary, Inc."
 msgstr "elementary, Inc."

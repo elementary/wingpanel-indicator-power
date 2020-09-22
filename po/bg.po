@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:47+0200\n"
+"POT-Creation-Date: 2020-09-20 18:29+0000\n"
 "PO-Revision-Date: 2016-08-05 08:36+0000\n"
 "Last-Translator: Адмирал АнимЕ <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,52 +14,52 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 "X-Generator: Launchpad (build 18246)\n"
 
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "Захранване"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "Показател на захранването"
-
-#: src/Services/Device.vala:63
+#: src/Services/Device.vala:65
 msgid "Battery"
 msgstr "Батерия"
 
-#: src/Services/Device.vala:65
+#: src/Services/Device.vala:67
 msgid "UPS"
 msgstr "Непрекъсваемо токозахранване"
 
-#: src/Services/Device.vala:67
+#: src/Services/Device.vala:69
 msgid "Display"
 msgstr "Екран"
 
-#: src/Services/Device.vala:69
+#: src/Services/Device.vala:71
 msgid "Mouse"
 msgstr "Мишка"
 
-#: src/Services/Device.vala:71
+#: src/Services/Device.vala:73
 msgid "Keyboard"
 msgstr "Клавиатура"
 
-#: src/Services/Device.vala:73
+#: src/Services/Device.vala:75
 msgid "PDA"
 msgstr "Цифров помощник"
 
-#: src/Services/Device.vala:75
+#: src/Services/Device.vala:77
 msgid "Phone"
 msgstr "Телефон"
 
-#: src/Services/Device.vala:77
+#: src/Services/Device.vala:79
 msgid "Media Player"
 msgstr ""
 
-#: src/Services/Device.vala:79
+#: src/Services/Device.vala:81
 msgid "Tablet"
 msgstr ""
 
-#: src/Services/Device.vala:81
+#: src/Services/Device.vala:83
 msgid "Computer"
+msgstr ""
+
+#: src/Services/Device.vala:85
+msgid "Controller"
+msgstr ""
+
+#: src/Services/Device.vala:87
+msgid "Pen"
 msgstr ""
 
 #: src/Widgets/AppList.vala:52
@@ -75,76 +75,81 @@ msgstr "Изчисляване…"
 msgid "%i%% charged"
 msgstr "%i%% заредено"
 
-#. TODO: Replace this and above with P_ when https://bugzilla.gnome.org/show_bug.cgi?id=758000 is fixed.
-#: src/Widgets/DeviceRow.vala:103 src/Widgets/DeviceRow.vala:157
+#: src/Widgets/DeviceRow.vala:105
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "%lld ден до пълно зареждане"
 msgstr[1] "%lld дни до пълно зареждане"
 
-#: src/Widgets/DeviceRow.vala:106 src/Widgets/DeviceRow.vala:158
+#: src/Widgets/DeviceRow.vala:113
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld час до пълно зареждане"
 msgstr[1] "%lld часа до пълно зареждане"
 
-#: src/Widgets/DeviceRow.vala:109 src/Widgets/DeviceRow.vala:159
+#: src/Widgets/DeviceRow.vala:121
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld минута до пълно зареждане"
 msgstr[1] "%lld минути до пълно зареждане"
 
-#: src/Widgets/DeviceRow.vala:111 src/Widgets/DeviceRow.vala:160
+#: src/Widgets/DeviceRow.vala:128
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld секунда до пълно зареждане"
 msgstr[1] "%lld секунди до пълно зареждане"
 
-#: src/Widgets/DeviceRow.vala:115
+#: src/Widgets/DeviceRow.vala:135
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% оставащо"
 
-#: src/Widgets/DeviceRow.vala:123 src/Widgets/DeviceRow.vala:161
+#: src/Widgets/DeviceRow.vala:145
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "%lld ден до пълно разреждане"
 msgstr[1] "%lld дни до пълно разреждане"
 
-#: src/Widgets/DeviceRow.vala:126 src/Widgets/DeviceRow.vala:162
+#: src/Widgets/DeviceRow.vala:153
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld час до пълно разреждане"
 msgstr[1] "%lld часа до пълно разреждане"
 
-#: src/Widgets/DeviceRow.vala:129 src/Widgets/DeviceRow.vala:163
+#: src/Widgets/DeviceRow.vala:161
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld минута до пълно разреждане"
 msgstr[1] "%lld минути до пълно разреждане"
 
-#: src/Widgets/DeviceRow.vala:131 src/Widgets/DeviceRow.vala:164
+#: src/Widgets/DeviceRow.vala:168
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
 msgstr[0] "%lld секунда до пълно разреждане"
 msgstr[1] "%lld секунди до пълно разреждане"
 
-#: src/Widgets/DeviceRow.vala:150
+#: src/Widgets/DeviceRow.vala:190
 msgid "Device"
 msgstr "Устройство"
 
-#: src/Widgets/PopoverWidget.vala:52
+#: src/Widgets/PopoverWidget.vala:53
 msgid "Show Percentage"
 msgstr "Показване на проценти"
 
-#: src/Widgets/PopoverWidget.vala:58
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "Настройки на захранването..."
+
+#~ msgid "Power"
+#~ msgstr "Захранване"
+
+#~ msgid "Power indicator"
+#~ msgstr "Показател на захранването"

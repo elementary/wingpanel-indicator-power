@@ -55,7 +55,9 @@ public class Power.Services.Device : Object {
         PHONE = 8,
         MEDIA_PLAYER = 9,
         TABLET = 10,
-        COMPUTER = 11;
+        COMPUTER = 11,
+        GAMING_INPUT = 12,
+        PEN = 13;
         public unowned string? get_name () {
             switch (this) {
                 /* TODO: Do we want to differentiate between batteries and rechargeable batteries? (See German: Batterie <-> Akku) */
@@ -79,6 +81,10 @@ public class Power.Services.Device : Object {
                     return _("Tablet");
                 case COMPUTER:
                     return _("Computer");
+                case GAMING_INPUT:
+                    return _("Controller");
+                case PEN:
+                    return _("Pen");
                 case LINE_POWER:
                 case UNKNOWN:
                 default:
@@ -100,7 +106,10 @@ public class Power.Services.Device : Object {
                 case MEDIA_PLAYER:
                     return "multimedia-player";
                 case TABLET:
+                case PEN:
                     return "input-tablet";
+                case GAMING_INPUT:
+                    return "input-gaming";
                 case COMPUTER:
                 case MONITOR:
                 case UNKNOWN:

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2016 elementary LLC. (https://elementary.io)
+ * Copyright (c) 2011-2020 elementary, Inc. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -42,7 +42,6 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
         image.pixel_size = 24;
 
         percent_label = new Gtk.Label (null);
-        percent_label.margin_start = 6;
 
         var percent_revealer = new Gtk.Revealer ();
         percent_revealer.transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT;

@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 11:57-0800\n"
-"PO-Revision-Date: 2019-11-14 15:24+0000\n"
-"Last-Translator: Daniel R. <riesp@pm.me>\n"
+"POT-Creation-Date: 2020-09-03 17:28+0000\n"
+"PO-Revision-Date: 2020-09-16 14:14+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/es/>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/power.appdata.xml.in:6
 msgid "Power Indicator"
@@ -31,10 +31,18 @@ msgstr ""
 "Vea los niveles de batería, ajuste el brillo de la pantalla y vea las "
 "aplicaciones que consumen mucha energía"
 
-#: data/power.appdata.xml.in:11
+#: data/power.appdata.xml.in:12
+msgid "Support for Controllers and Pens"
+msgstr "Se admiten mandos y lápices"
+
+#: data/power.appdata.xml.in:13
+msgid "Reduce spacing when percentage is shown"
+msgstr "Se reduce el espaciado cuando se muestra el porcentaje"
+
+#: data/power.appdata.xml.in:14 data/power.appdata.xml.in:19
 msgid "Updated translations"
 msgstr "Traducciones actualizadas"
 
-#: data/power.appdata.xml.in:20
+#: data/power.appdata.xml.in:28
 msgid "elementary, Inc."
 msgstr "elementary, Inc."

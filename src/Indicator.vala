@@ -30,8 +30,6 @@ public class Power.Indicator : Wingpanel.Indicator {
     public Indicator (bool is_in_session) {
         Object (
             code_name : Wingpanel.Indicator.POWER,
-            display_name : _("Power"),
-            description: _("Power indicator"),
             is_in_session: is_in_session
         );
     }
@@ -111,12 +109,18 @@ public class Power.Indicator : Wingpanel.Indicator {
         if (display_device != null && display_widget != null) {
             var icon_name = display_device.get_symbolic_icon_name_for_battery ();
             display_widget.icon_name = icon_name;
-            display_widget.allow_percent = true;
 
             /* Debug output for designers */
             debug ("Icon changed to \"%s\"", icon_name);
 
-            display_widget.percentage = (int)Math.round (display_device.percentage);
+            var percent = (int)Math.round (display_device.percentage);
+
+            if (percent <= 0) {
+                display_widget.allow_percent = false;
+            } else {
+                display_widget.percentage = percent;
+                display_widget.allow_percent = true;
+            }
         }
     }
 

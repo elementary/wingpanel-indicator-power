@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:47+0200\n"
+"POT-Creation-Date: 2020-09-20 18:29+0000\n"
 "PO-Revision-Date: 2018-06-05 10:21+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: French (Canada) <https://weblate.elementary.io/projects/"
@@ -15,52 +15,52 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-19 06:17+0000\n"
 
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "Charge"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "Charge restante"
-
-#: src/Services/Device.vala:63
+#: src/Services/Device.vala:65
 msgid "Battery"
 msgstr "Pile"
 
-#: src/Services/Device.vala:65
+#: src/Services/Device.vala:67
 msgid "UPS"
 msgstr "UPS"
 
-#: src/Services/Device.vala:67
+#: src/Services/Device.vala:69
 msgid "Display"
 msgstr "Affichage"
 
-#: src/Services/Device.vala:69
+#: src/Services/Device.vala:71
 msgid "Mouse"
 msgstr "Souris"
 
-#: src/Services/Device.vala:71
+#: src/Services/Device.vala:73
 msgid "Keyboard"
 msgstr "Clavier"
 
-#: src/Services/Device.vala:73
+#: src/Services/Device.vala:75
 msgid "PDA"
 msgstr "Assistant personnel"
 
-#: src/Services/Device.vala:75
+#: src/Services/Device.vala:77
 msgid "Phone"
 msgstr "Téléphone"
 
-#: src/Services/Device.vala:77
+#: src/Services/Device.vala:79
 msgid "Media Player"
 msgstr ""
 
-#: src/Services/Device.vala:79
+#: src/Services/Device.vala:81
 msgid "Tablet"
 msgstr ""
 
-#: src/Services/Device.vala:81
+#: src/Services/Device.vala:83
 msgid "Computer"
+msgstr ""
+
+#: src/Services/Device.vala:85
+msgid "Controller"
+msgstr ""
+
+#: src/Services/Device.vala:87
+msgid "Pen"
 msgstr ""
 
 #: src/Widgets/AppList.vala:52
@@ -76,76 +76,81 @@ msgstr "Calcul…"
 msgid "%i%% charged"
 msgstr "%i%% chargé"
 
-#. TODO: Replace this and above with P_ when https://bugzilla.gnome.org/show_bug.cgi?id=758000 is fixed.
-#: src/Widgets/DeviceRow.vala:103 src/Widgets/DeviceRow.vala:157
+#: src/Widgets/DeviceRow.vala:105
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "%lld jour avant pleine charge"
 msgstr[1] "%lld jours avant pleine charge"
 
-#: src/Widgets/DeviceRow.vala:106 src/Widgets/DeviceRow.vala:158
+#: src/Widgets/DeviceRow.vala:113
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld heure avant pleine charge"
 msgstr[1] "%lld heures avant pleine charge"
 
-#: src/Widgets/DeviceRow.vala:109 src/Widgets/DeviceRow.vala:159
+#: src/Widgets/DeviceRow.vala:121
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld minute avant pleine charge"
 msgstr[1] "%lld minutes avant pleine charge"
 
-#: src/Widgets/DeviceRow.vala:111 src/Widgets/DeviceRow.vala:160
+#: src/Widgets/DeviceRow.vala:128
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld seconde avant pleine charge"
 msgstr[1] "%lld secondes avant pleine charge"
 
-#: src/Widgets/DeviceRow.vala:115
+#: src/Widgets/DeviceRow.vala:135
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% restants"
 
-#: src/Widgets/DeviceRow.vala:123 src/Widgets/DeviceRow.vala:161
+#: src/Widgets/DeviceRow.vala:145
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "%lld jour restant"
 msgstr[1] "%lld jours restants"
 
-#: src/Widgets/DeviceRow.vala:126 src/Widgets/DeviceRow.vala:162
+#: src/Widgets/DeviceRow.vala:153
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld heure restante"
 msgstr[1] "%lld heures restantes"
 
-#: src/Widgets/DeviceRow.vala:129 src/Widgets/DeviceRow.vala:163
+#: src/Widgets/DeviceRow.vala:161
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld minute restante"
 msgstr[1] "%lld minutes restantes"
 
-#: src/Widgets/DeviceRow.vala:131 src/Widgets/DeviceRow.vala:164
+#: src/Widgets/DeviceRow.vala:168
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
 msgstr[0] "%lld seconde restante"
 msgstr[1] "%lld secondes restantes"
 
-#: src/Widgets/DeviceRow.vala:150
+#: src/Widgets/DeviceRow.vala:190
 msgid "Device"
 msgstr "Appareil"
 
-#: src/Widgets/PopoverWidget.vala:52
+#: src/Widgets/PopoverWidget.vala:53
 msgid "Show Percentage"
 msgstr "Afficher le pourcentage"
 
-#: src/Widgets/PopoverWidget.vala:58
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "Paramètres d'alimentation …"
+
+#~ msgid "Power"
+#~ msgstr "Charge"
+
+#~ msgid "Power indicator"
+#~ msgstr "Charge restante"

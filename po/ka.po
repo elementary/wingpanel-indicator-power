@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:47+0200\n"
+"POT-Creation-Date: 2020-09-20 18:29+0000\n"
 "PO-Revision-Date: 2017-03-18 13:08+0000\n"
 "Last-Translator: Beqa Arabuli <arabulibeqa@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,52 +14,52 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-19 06:49+0000\n"
 "X-Generator: Launchpad (build 18332)\n"
 
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "ელკვება"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "ელკვების მაჩვენებელი"
-
-#: src/Services/Device.vala:63
+#: src/Services/Device.vala:65
 msgid "Battery"
 msgstr "ელემენტი"
 
-#: src/Services/Device.vala:65
+#: src/Services/Device.vala:67
 msgid "UPS"
 msgstr "უკბ"
 
-#: src/Services/Device.vala:67
+#: src/Services/Device.vala:69
 msgid "Display"
 msgstr "დისპლეი"
 
-#: src/Services/Device.vala:69
+#: src/Services/Device.vala:71
 msgid "Mouse"
 msgstr "მაუსი"
 
-#: src/Services/Device.vala:71
+#: src/Services/Device.vala:73
 msgid "Keyboard"
 msgstr "კლავიატურა"
 
-#: src/Services/Device.vala:73
+#: src/Services/Device.vala:75
 msgid "PDA"
 msgstr "PDA"
 
-#: src/Services/Device.vala:75
+#: src/Services/Device.vala:77
 msgid "Phone"
 msgstr "ტელეფონი"
 
-#: src/Services/Device.vala:77
+#: src/Services/Device.vala:79
 msgid "Media Player"
 msgstr ""
 
-#: src/Services/Device.vala:79
+#: src/Services/Device.vala:81
 msgid "Tablet"
 msgstr ""
 
-#: src/Services/Device.vala:81
+#: src/Services/Device.vala:83
 msgid "Computer"
+msgstr ""
+
+#: src/Services/Device.vala:85
+msgid "Controller"
+msgstr ""
+
+#: src/Services/Device.vala:87
+msgid "Pen"
 msgstr ""
 
 #: src/Widgets/AppList.vala:52
@@ -75,68 +75,73 @@ msgstr "ითვლება..."
 msgid "%i%% charged"
 msgstr "%i%% დამუხტული"
 
-#. TODO: Replace this and above with P_ when https://bugzilla.gnome.org/show_bug.cgi?id=758000 is fixed.
-#: src/Widgets/DeviceRow.vala:103 src/Widgets/DeviceRow.vala:157
+#: src/Widgets/DeviceRow.vala:105
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "%lld დღე დასამუხტად"
 
-#: src/Widgets/DeviceRow.vala:106 src/Widgets/DeviceRow.vala:158
+#: src/Widgets/DeviceRow.vala:113
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld საათი დასამუხტად"
 
-#: src/Widgets/DeviceRow.vala:109 src/Widgets/DeviceRow.vala:159
+#: src/Widgets/DeviceRow.vala:121
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld წუთი დასამუხტად"
 
-#: src/Widgets/DeviceRow.vala:111 src/Widgets/DeviceRow.vala:160
+#: src/Widgets/DeviceRow.vala:128
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld წამი დასამუხტად"
 
-#: src/Widgets/DeviceRow.vala:115
+#: src/Widgets/DeviceRow.vala:135
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% დარჩენილი"
 
-#: src/Widgets/DeviceRow.vala:123 src/Widgets/DeviceRow.vala:161
+#: src/Widgets/DeviceRow.vala:145
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "%lld დღე დასაცლელად"
 
-#: src/Widgets/DeviceRow.vala:126 src/Widgets/DeviceRow.vala:162
+#: src/Widgets/DeviceRow.vala:153
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld საათი დასაცლელად"
 
-#: src/Widgets/DeviceRow.vala:129 src/Widgets/DeviceRow.vala:163
+#: src/Widgets/DeviceRow.vala:161
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld წუთი დასაცლელად"
 
-#: src/Widgets/DeviceRow.vala:131 src/Widgets/DeviceRow.vala:164
+#: src/Widgets/DeviceRow.vala:168
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
 msgstr[0] "%lld წამი დასაცლელად"
 
-#: src/Widgets/DeviceRow.vala:150
+#: src/Widgets/DeviceRow.vala:190
 msgid "Device"
 msgstr "მოწყობილობა"
 
-#: src/Widgets/PopoverWidget.vala:52
+#: src/Widgets/PopoverWidget.vala:53
 msgid "Show Percentage"
 msgstr "პროცენტის ჩვენება"
 
-#: src/Widgets/PopoverWidget.vala:58
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "ელკვების პარამეტრები..."
+
+#~ msgid "Power"
+#~ msgstr "ელკვება"
+
+#~ msgid "Power indicator"
+#~ msgstr "ელკვების მაჩვენებელი"

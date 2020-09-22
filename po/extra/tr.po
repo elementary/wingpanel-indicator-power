@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 11:57-0800\n"
-"PO-Revision-Date: 2019-12-19 13:07+0000\n"
-"Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
+"POT-Creation-Date: 2020-09-03 17:28+0000\n"
+"PO-Revision-Date: 2020-07-16 21:12+0000\n"
+"Last-Translator: Sinan Decron <intenfinitia@gmail.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/tr/>\n"
 "Language: tr\n"
@@ -31,10 +31,18 @@ msgstr ""
 "Pil seviyelerini görüntüleyin, ekran parlaklığını ayarlayın ve çok fazla güç "
 "kullanan uygulamaları görün"
 
-#: data/power.appdata.xml.in:11
+#: data/power.appdata.xml.in:12
+msgid "Support for Controllers and Pens"
+msgstr ""
+
+#: data/power.appdata.xml.in:13
+msgid "Reduce spacing when percentage is shown"
+msgstr "Yüzde olarak gösterildiğinde aralığı azalt"
+
+#: data/power.appdata.xml.in:14 data/power.appdata.xml.in:19
 msgid "Updated translations"
 msgstr "Çeviriler güncellendi"
 
-#: data/power.appdata.xml.in:20
+#: data/power.appdata.xml.in:28
 msgid "elementary, Inc."
 msgstr "elementary, Inc."

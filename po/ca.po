@@ -2,66 +2,66 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:47+0200\n"
-"PO-Revision-Date: 2018-06-25 14:15+0000\n"
+"POT-Creation-Date: 2020-09-20 18:29+0000\n"
+"PO-Revision-Date: 2020-09-02 23:11+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://weblate.elementary.io/projects/wingpanel/"
+"Language-Team: Catalan <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-11-19 06:17+0000\n"
 
-#: src/Indicator.vala:33
-msgid "Power"
-msgstr "Energia"
-
-#: src/Indicator.vala:34
-msgid "Power indicator"
-msgstr "Indicador d’energia"
-
-#: src/Services/Device.vala:63
+#: src/Services/Device.vala:65
 msgid "Battery"
 msgstr "Bateria"
 
-#: src/Services/Device.vala:65
+#: src/Services/Device.vala:67
 msgid "UPS"
 msgstr "SAI"
 
-#: src/Services/Device.vala:67
+#: src/Services/Device.vala:69
 msgid "Display"
 msgstr "Pantalla"
 
-#: src/Services/Device.vala:69
+#: src/Services/Device.vala:71
 msgid "Mouse"
 msgstr "Ratolí"
 
-#: src/Services/Device.vala:71
+#: src/Services/Device.vala:73
 msgid "Keyboard"
 msgstr "Teclat"
 
-#: src/Services/Device.vala:73
+#: src/Services/Device.vala:75
 msgid "PDA"
 msgstr "PDA"
 
-#: src/Services/Device.vala:75
+#: src/Services/Device.vala:77
 msgid "Phone"
 msgstr "Telèfon"
 
-#: src/Services/Device.vala:77
+#: src/Services/Device.vala:79
 msgid "Media Player"
 msgstr "Reproductor multimèdia"
 
-#: src/Services/Device.vala:79
+#: src/Services/Device.vala:81
 msgid "Tablet"
 msgstr "Tauleta"
 
-#: src/Services/Device.vala:81
+#: src/Services/Device.vala:83
 msgid "Computer"
 msgstr "Ordinador"
+
+#: src/Services/Device.vala:85
+msgid "Controller"
+msgstr "Controlador"
+
+#: src/Services/Device.vala:87
+msgid "Pen"
+msgstr "Bolígraf"
 
 #: src/Widgets/AppList.vala:52
 msgid "Apps Using Lots of Power"
@@ -76,76 +76,81 @@ msgstr "S’està calculant…"
 msgid "%i%% charged"
 msgstr "%i %% carregat"
 
-#. TODO: Replace this and above with P_ when https://bugzilla.gnome.org/show_bug.cgi?id=758000 is fixed.
-#: src/Widgets/DeviceRow.vala:103 src/Widgets/DeviceRow.vala:157
+#: src/Widgets/DeviceRow.vala:105
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "%lld dia per carregar-se"
 msgstr[1] "%lld dies per carregar-se"
 
-#: src/Widgets/DeviceRow.vala:106 src/Widgets/DeviceRow.vala:158
+#: src/Widgets/DeviceRow.vala:113
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld hora per carregar-se"
 msgstr[1] "%lld hores per carregar-se"
 
-#: src/Widgets/DeviceRow.vala:109 src/Widgets/DeviceRow.vala:159
+#: src/Widgets/DeviceRow.vala:121
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld minut per carregar-se"
 msgstr[1] "%lld minuts per carregar-se"
 
-#: src/Widgets/DeviceRow.vala:111 src/Widgets/DeviceRow.vala:160
+#: src/Widgets/DeviceRow.vala:128
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld segon per carregar-se"
 msgstr[1] "%lld segons per carregar-se"
 
-#: src/Widgets/DeviceRow.vala:115
+#: src/Widgets/DeviceRow.vala:135
 #, c-format
 msgid "%i%% remaining"
 msgstr "Queda un %i %%"
 
-#: src/Widgets/DeviceRow.vala:123 src/Widgets/DeviceRow.vala:161
+#: src/Widgets/DeviceRow.vala:145
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "%lld dia fins que es buidi"
 msgstr[1] "%lld dies fins que es buidi"
 
-#: src/Widgets/DeviceRow.vala:126 src/Widgets/DeviceRow.vala:162
+#: src/Widgets/DeviceRow.vala:153
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld hora fins que es buidi"
 msgstr[1] "%lld hores fins que es buidi"
 
-#: src/Widgets/DeviceRow.vala:129 src/Widgets/DeviceRow.vala:163
+#: src/Widgets/DeviceRow.vala:161
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld minut fins que es buidi"
 msgstr[1] "%lld minuts fins que es buidi"
 
-#: src/Widgets/DeviceRow.vala:131 src/Widgets/DeviceRow.vala:164
+#: src/Widgets/DeviceRow.vala:168
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
 msgstr[0] "%lld segon fins que es buidi"
 msgstr[1] "%lld segons fins que es buidi"
 
-#: src/Widgets/DeviceRow.vala:150
+#: src/Widgets/DeviceRow.vala:190
 msgid "Device"
 msgstr "Dispositiu"
 
-#: src/Widgets/PopoverWidget.vala:52
+#: src/Widgets/PopoverWidget.vala:53
 msgid "Show Percentage"
 msgstr "Mostra'n el percentatge"
 
-#: src/Widgets/PopoverWidget.vala:58
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "Paràmetres de l'energia…"
+
+#~ msgid "Power"
+#~ msgstr "Energia"
+
+#~ msgid "Power indicator"
+#~ msgstr "Indicador d’energia"
