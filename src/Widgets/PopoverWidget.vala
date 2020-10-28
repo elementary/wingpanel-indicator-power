@@ -55,14 +55,8 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         );
         show_percent_switch.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
-        var show_percent_sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
-            margin_top = 3,
-            margin_bottom = 3
-        };
-
         var battery_grid = new Gtk.Grid ();
         battery_grid.attach (show_percent_switch, 0, 0);
-        // battery_grid.attach (show_percent_sep, 0, 1);
         battery_grid.attach (device_list, 0, 2);
 
         var show_percent_revealer = new Gtk.Revealer ();
