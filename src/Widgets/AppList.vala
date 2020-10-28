@@ -49,18 +49,17 @@ public class Power.Widgets.AppList : Gtk.Grid {
         var eaters = app_manager.get_top_power_eaters (12);
 
         if (eaters.size > 0) {
-            var title_label = new Gtk.Label (_("Apps Using Lots of Power"));
-            title_label.get_style_context ().add_class ("h4");
-            title_label.halign = Gtk.Align.START;
-            title_label.margin_start = 12;
-            title_label.margin_end = 12;
-            title_label.margin_bottom = 6;
+            var title_label = new Gtk.Label (_("Apps Using Lots of Power")) {
+                halign = Gtk.Align.START,
+                margin_start = 12,
+                margin_end = 12,
+                margin_bottom = 6,
+                margin_top = 6
+            };
+            title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
-            var separator = new Wingpanel.Widgets.Separator ();
-            separator.hexpand = true;
 
-            this.add (separator);
-            this.add (title_label);
+            add (title_label);
         }
 
         eaters.@foreach ((power_eater) => {
