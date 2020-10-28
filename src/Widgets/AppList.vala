@@ -58,7 +58,6 @@ public class Power.Widgets.AppList : Gtk.Grid {
             };
             title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
-
             add (title_label);
         }
 
