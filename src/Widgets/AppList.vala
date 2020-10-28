@@ -51,8 +51,7 @@ public class Power.Widgets.AppList : Gtk.Grid {
         if (eaters.size > 0) {
             var title_label = new Gtk.Label (_("Apps Using Lots of Power")) {
                 halign = Gtk.Align.START,
-                margin_start = 12,
-                margin_end = 12,
+                margin = 12,
                 margin_bottom = 6,
                 margin_top = 6
             };
