@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-20 18:29+0000\n"
-"PO-Revision-Date: 2019-01-16 00:04+0000\n"
+"PO-Revision-Date: 2020-10-24 07:15+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
-"Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
+"Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "wingpanel/wingpanel-indicator-power/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: src/Services/Device.vala:65
@@ -57,11 +57,11 @@ msgstr "计算机"
 
 #: src/Services/Device.vala:85
 msgid "Controller"
-msgstr ""
+msgstr "控制器"
 
 #: src/Services/Device.vala:87
 msgid "Pen"
-msgstr ""
+msgstr "触控笔"
 
 #: src/Widgets/AppList.vala:52
 msgid "Apps Using Lots of Power"
