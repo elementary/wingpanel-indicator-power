@@ -96,7 +96,7 @@ public class Power.Services.DeviceManager : Object {
             var devices = upower.enumerate_devices ();
 
             foreach (ObjectPath device_path in devices) {
-                if (determine_attached_device(device_path) == true) {
+                if (determine_attached_device (device_path) == true) {
                     register_device (device_path);
                 }
             }
