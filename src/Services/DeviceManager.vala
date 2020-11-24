@@ -74,6 +74,18 @@ public class Power.Services.DeviceManager : Object {
         }
     }
 
+    private bool determine_attached_device (ObjectPath device_path) {
+        var device = new Device (device_path);
+
+        // this prevents from showing weird devices to show up.
+        // such as a laptops track pad pointer to show up as wacom tablet with no battery.
+        if ((device.technology == Device.Technology.UNKNOWN) &&
+            (device.state == Device.State.UNKNOWN)) {
+            return false;
+        }
+        return true;
+    }
+
     public void read_devices () {
         try {
             // Add Display Device for Panel display
@@ -84,7 +96,9 @@ public class Power.Services.DeviceManager : Object {
             var devices = upower.enumerate_devices ();
 
             foreach (ObjectPath device_path in devices) {
-                register_device (device_path);
+                if (determine_attached_device (device_path) == true) {
+                    register_device (device_path);
+                }
             }
         } catch (Error e) {
             critical ("Reading UPower devices failed: %s", e.message);
