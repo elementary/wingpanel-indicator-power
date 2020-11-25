@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-20 18:29+0000\n"
-"PO-Revision-Date: 2020-10-24 07:15+0000\n"
+"PO-Revision-Date: 2020-11-20 09:15+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "wingpanel/wingpanel-indicator-power/zh_Hans/>\n"
@@ -25,7 +25,7 @@ msgstr "外接电源"
 
 #: src/Services/Device.vala:69
 msgid "Display"
-msgstr "显示"
+msgstr "显示器"
 
 #: src/Services/Device.vala:71
 msgid "Mouse"
@@ -49,7 +49,7 @@ msgstr "媒体播放器"
 
 #: src/Services/Device.vala:81
 msgid "Tablet"
-msgstr "平板电脑"
+msgstr "写字板"
 
 #: src/Services/Device.vala:83
 msgid "Computer"
