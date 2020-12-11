@@ -25,6 +25,7 @@ public class Power.Indicator : Wingpanel.Indicator {
     private Widgets.PopoverWidget? popover_widget = null;
 
     private Services.Device display_device;
+    public Services.Device battery { get; construct; }
     private bool notify_battery = false;
 
     public Indicator (bool is_in_session) {
@@ -91,6 +92,8 @@ public class Power.Indicator : Wingpanel.Indicator {
                 }
             }
         }
+
+        update_tooltip ();
     }
 
     private void update_display_device () {
@@ -121,6 +124,8 @@ public class Power.Indicator : Wingpanel.Indicator {
                 display_widget.percentage = percent;
                 display_widget.allow_percent = true;
             }
+
+            update_tooltip ();
         }
     }
 
@@ -129,6 +134,17 @@ public class Power.Indicator : Wingpanel.Indicator {
             display_widget.icon_name = "display-brightness-symbolic";
             display_widget.allow_percent = false;
         }
+    }
+
+    private void update_tooltip () {
+        var battery_percent = (int)Math.round (display_device.percentage);
+        // TODO : get brightness_percent
+        var brightness_percent = 50;
+
+        display_widget.tooltip_markup = Granite.markup_tooltip_with_string (
+            _("Middle-click to snooze"),
+            _("Battery: %i%% charged, Brightness: %i%%".printf (battery_percent, brightness_percent))
+        );
     }
 }
 
