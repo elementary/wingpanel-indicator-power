@@ -25,7 +25,6 @@ public class Power.Indicator : Wingpanel.Indicator {
     private Widgets.PopoverWidget? popover_widget = null;
 
     private Services.Device display_device;
-    public Services.Device battery { get; construct; }
     private bool notify_battery = false;
 
     public Indicator (bool is_in_session) {
