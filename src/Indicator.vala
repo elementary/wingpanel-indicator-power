@@ -141,7 +141,7 @@ public class Power.Indicator : Wingpanel.Indicator {
         var brightness_percent = 50;
 
         display_widget.tooltip_markup = Granite.markup_tooltip_with_string (
-            _("Middle-click to snooze"),
+            _("Middle-click to show battery percent in panel"),
             _("Battery: %i%% charged, Brightness: %i%%".printf (battery_percent, brightness_percent))
         );
     }
