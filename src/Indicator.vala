@@ -18,6 +18,8 @@
  */
 
 public class Power.Indicator : Wingpanel.Indicator {
+    private const string DBUS_PATH = "/org/gnome/SettingsDaemon/Power";
+    private const string DBUS_NAME = "org.gnome.SettingsDaemon.Power";
     public bool is_in_session { get; construct; default = false; }
 
     private Widgets.DisplayWidget? display_widget = null;
@@ -25,6 +27,7 @@ public class Power.Indicator : Wingpanel.Indicator {
     private Widgets.PopoverWidget? popover_widget = null;
 
     private Services.Device display_device;
+    private Services.DBusInterfaces.PowerSettings iscreen;
     private bool notify_battery = false;
 
     public Indicator (bool is_in_session) {
@@ -32,6 +35,22 @@ public class Power.Indicator : Wingpanel.Indicator {
             code_name : Wingpanel.Indicator.POWER,
             is_in_session: is_in_session
         );
+
+        init_bus.begin ();
+        ((DBusProxy)iscreen).g_properties_changed.connect (update_tooltip);
+    }
+
+    private async void init_bus () {
+        try {
+            iscreen = Bus.get_proxy_sync (
+                BusType.SESSION,
+                DBUS_NAME,
+                DBUS_PATH,
+                DBusProxyFlags.GET_INVALIDATED_PROPERTIES
+            );
+        } catch (IOError e) {
+            warning ("screen brightness error %s", e.message);
+        }
     }
 
     public override Gtk.Widget get_display_widget () {
@@ -137,10 +156,9 @@ public class Power.Indicator : Wingpanel.Indicator {
 
     private void update_tooltip () {
         var battery_percent = (int)Math.round (display_device.percentage);
-        // TODO : get brightness_percent
-        var brightness_percent = 50;
+        var brightness_percent = iscreen.brightness;
 
-        display_widget.tooltip_markup = Granite.markup_tooltip_with_string (
+        display_widget.tooltip_markup = Granite.markup_contextual_tooltip (
             _("Middle-click to show battery percent in panel"),
             _("Battery: %i%% charged, Brightness: %i%%".printf (battery_percent, brightness_percent))
         );
