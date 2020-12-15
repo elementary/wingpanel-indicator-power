@@ -32,7 +32,6 @@ public class Power.Indicator : Wingpanel.Indicator {
             code_name : Wingpanel.Indicator.POWER,
             is_in_session: is_in_session
         );
-
     }
 
     public override Gtk.Widget get_display_widget () {
@@ -139,7 +138,7 @@ public class Power.Indicator : Wingpanel.Indicator {
     private void update_tooltip () {
         var battery_percent = (int)Math.round (display_device.percentage);
         var secondary_text = _("Middle-click to toggle percentage");
-        
+
         display_widget.tooltip_markup = "%s\n%s".printf (
             _("Battery: %i%%".printf (battery_percent)),
             Granite.TOOLTIP_SECONDARY_TEXT_MARKUP.printf (secondary_text)
