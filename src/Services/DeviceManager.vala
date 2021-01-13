@@ -24,7 +24,6 @@ public class Power.Services.DeviceManager : Object {
     private static DeviceManager? instance = null;
 
     private DBusInterfaces.UPower? upower = null;
-    private DBusInterfaces.Properties? upower_properties = null;
 
     public Services.Backlight backlight { get; construct; }
     public Gee.HashMap<string, Device> devices { get; private set; }
@@ -40,12 +39,14 @@ public class Power.Services.DeviceManager : Object {
     construct {
         backlight = new Services.Backlight ();
 
-        if (connect_to_bus ()) {
-            update_properties ();
-            read_devices ();
-            update_batteries ();
-            connect_signals ();
-        }
+        connect_to_bus.begin ((obj, res) => {
+            if (connect_to_bus.end (res)) {
+                update_properties ();
+                read_devices ();
+                update_batteries ();
+                connect_signals ();
+            }
+        });
     }
 
     // singleton one class object in memory. use instance to get data.
@@ -57,16 +58,15 @@ public class Power.Services.DeviceManager : Object {
         return instance;
     }
 
-    private bool connect_to_bus () {
+    private async bool connect_to_bus () {
         devices = new Gee.HashMap<string, Device> ();
 
         try {
-            upower = Bus.get_proxy_sync (BusType.SYSTEM, UPOWER_INTERFACE, UPOWER_PATH, DBusProxyFlags.NONE);
-            upower_properties = Bus.get_proxy_sync (BusType.SYSTEM, UPOWER_INTERFACE, UPOWER_PATH, DBusProxyFlags.NONE);
+            upower = yield Bus.get_proxy (BusType.SYSTEM, UPOWER_INTERFACE, UPOWER_PATH, DBusProxyFlags.NONE);
 
             debug ("Connection to UPower bus established");
 
-            return upower != null & upower_properties != null;
+            return upower != null;
         } catch (Error e) {
             critical ("Connecting to UPower bus failed: %s", e.message);
 
@@ -106,7 +106,7 @@ public class Power.Services.DeviceManager : Object {
     }
 
     private void connect_signals () {
-        upower_properties.PropertiesChanged.connect ((name, directory, array) => {
+        upower.g_properties_changed.connect (() => {
             update_properties ();
             update_batteries ();
         });
@@ -116,11 +116,7 @@ public class Power.Services.DeviceManager : Object {
     }
 
     private void update_properties () {
-        try {
-            on_battery = upower_properties.get (UPOWER_INTERFACE, "OnBattery").get_boolean ();
-        } catch (Error e) {
-            critical ("Updating UPower properties failed: %s", e.message);
-        }
+        on_battery = upower.on_battery;
     }
 
     private void update_batteries () {
