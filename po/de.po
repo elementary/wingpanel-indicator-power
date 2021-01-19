@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-20 18:29+0000\n"
-"PO-Revision-Date: 2020-10-27 10:15+0000\n"
+"PO-Revision-Date: 2021-01-19 22:56+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/de/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: src/Services/Device.vala:65
@@ -41,7 +41,7 @@ msgstr "PDA"
 
 #: src/Services/Device.vala:77
 msgid "Phone"
-msgstr "Telefon"
+msgstr "Mobiltelefon"
 
 #: src/Services/Device.vala:79
 msgid "Media Player"
@@ -56,6 +56,7 @@ msgid "Computer"
 msgstr "Computer"
 
 #: src/Services/Device.vala:85
+#, fuzzy
 msgid "Controller"
 msgstr "Controller"
 
