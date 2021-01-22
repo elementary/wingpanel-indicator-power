@@ -19,6 +19,7 @@
 
 public class Power.Widgets.PopoverWidget : Gtk.Grid {
     public bool is_in_session { get; construct; default = false; }
+    public bool inhibit { get; set; default = false; }
 
     private static Services.DeviceManager dm;
 
@@ -57,6 +58,11 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         var show_percent_revealer = new Gtk.Revealer ();
         show_percent_revealer.add (show_percent_switch);
 
+        var inhibit_standby_switch = new Wingpanel.Widgets.Switch (
+            _("Inhibit Standby"),
+            inhibit
+        );
+
         var show_settings_button = new Gtk.ModelButton ();
         show_settings_button.text = _("Power Settings…");
 
@@ -70,11 +76,12 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
 
         attach (last_separator_revealer, 0, 4);
         attach (show_percent_revealer, 0, 5);
+        attach (inhibit_standby_switch, 0, 6);
 
         if (is_in_session) {
             app_list = new AppList ();
             attach (app_list, 0, 3); /* The app-list contains an own separator that is displayed if necessary. */
-            attach (show_settings_button, 0, 6);
+            attach (show_settings_button, 0, 7);
         }
 
         update_device_seperator_revealer ();
@@ -93,6 +100,16 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
             "reveal-child",
             GLib.BindingFlags.DEFAULT | GLib.BindingFlags.SYNC_CREATE
         );
+
+        inhibit_standby_switch.get_switch ().bind_property ("active", this, "inhibit", GLib.BindingFlags.DEFAULT);
+
+        notify["inhibit"].connect ((s, p) => {
+            if (inhibit) {
+                Inhibitor.get_instance ().inhibit ();
+            } else {
+                Inhibitor.get_instance ().uninhibit ();
+            }
+        });
 
         show_settings_button.clicked.connect (() => {
             try {
