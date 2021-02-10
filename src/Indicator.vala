@@ -91,6 +91,8 @@ public class Power.Indicator : Wingpanel.Indicator {
                 }
             }
         }
+
+        update_tooltip ();
     }
 
     private void update_display_device () {
@@ -121,6 +123,8 @@ public class Power.Indicator : Wingpanel.Indicator {
                 display_widget.percentage = percent;
                 display_widget.allow_percent = true;
             }
+
+            update_tooltip ();
         }
     }
 
@@ -129,6 +133,16 @@ public class Power.Indicator : Wingpanel.Indicator {
             display_widget.icon_name = "display-brightness-symbolic";
             display_widget.allow_percent = false;
         }
+    }
+
+    private void update_tooltip () {
+        var battery_percent = (int)Math.round (display_device.percentage);
+        var secondary_text = _("Middle-click to toggle percentage");
+
+        display_widget.tooltip_markup = "%s\n%s".printf (
+            _("Battery: %i%%".printf (battery_percent)),
+            Granite.TOOLTIP_SECONDARY_TEXT_MARKUP.printf (secondary_text)
+        );
     }
 }
 
