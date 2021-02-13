@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-20 18:29+0000\n"
-"PO-Revision-Date: 2021-01-21 20:13+0000\n"
+"PO-Revision-Date: 2021-02-14 05:24+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "wingpanel/wingpanel-indicator-power/nb/>\n"
@@ -60,8 +60,9 @@ msgid "Controller"
 msgstr "Kontroller"
 
 #: src/Services/Device.vala:87
+#, fuzzy
 msgid "Pen"
-msgstr ""
+msgstr "Penn"
 
 #: src/Widgets/AppList.vala:52
 msgid "Apps Using Lots of Power"
@@ -147,7 +148,7 @@ msgstr "Vis prosent"
 
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
-msgstr "Strøm innstillinger…"
+msgstr "Strøminnstillinger …"
 
 #~ msgid "Power"
 #~ msgstr "Strøm"
