@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-16 19:55+0000\n"
-"PO-Revision-Date: 2020-09-02 23:11+0000\n"
+"PO-Revision-Date: 2021-02-17 14:18+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/es/>\n"
@@ -12,18 +12,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-01-06 06:28+0000\n"
 
 #: src/Indicator.vala:140
 msgid "Middle-click to toggle percentage"
-msgstr ""
+msgstr "Pulse con el botón central del ratón para conmutar el porcentaje"
 
 #: src/Indicator.vala:143
-#, fuzzy, c-format
-#| msgid "Battery"
+#, c-format
 msgid "Battery: %i%%"
-msgstr "Batería"
+msgstr "Batería: %i %%"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -63,7 +62,7 @@ msgstr "Tableta"
 
 #: src/Services/Device.vala:83
 msgid "Computer"
-msgstr "Ordenador"
+msgstr "PC"
 
 #: src/Services/Device.vala:85
 msgid "Controller"
