@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-16 19:55+0000\n"
+"POT-Creation-Date: 2021-02-19 18:05+0000\n"
 "PO-Revision-Date: 2018-06-22 20:55+0000\n"
 "Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
 "Language-Team: Russian <https://weblate.elementary.io/projects/wingpanel/"
@@ -159,6 +159,12 @@ msgstr[2] "%lld секунд до разрядки"
 #: src/Widgets/DeviceRow.vala:190
 msgid "Device"
 msgstr "Устройство"
+
+#. /Translators: This represents battery charge precentage with `%i` representing the number and `%%` representing the percent symbol
+#: src/Widgets/DisplayWidget.vala:31
+#, c-format
+msgid "%i%%"
+msgstr ""
 
 #: src/Widgets/PopoverWidget.vala:53
 msgid "Show Percentage"
