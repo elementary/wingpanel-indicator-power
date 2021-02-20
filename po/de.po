@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-19 18:05+0000\n"
-"PO-Revision-Date: 2021-01-19 22:56+0000\n"
+"PO-Revision-Date: 2021-02-21 03:39+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/de/>\n"
@@ -17,13 +17,12 @@ msgstr ""
 
 #: src/Indicator.vala:140
 msgid "Middle-click to toggle percentage"
-msgstr ""
+msgstr "Prozentanzeige umschalten mit Mittelklick"
 
 #: src/Indicator.vala:143
-#, fuzzy, c-format
-#| msgid "Battery"
+#, c-format
 msgid "Battery: %i%%"
-msgstr "Akku"
+msgstr "Akku: %i%%"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -59,14 +58,13 @@ msgstr "Mediaplayer"
 
 #: src/Services/Device.vala:81
 msgid "Tablet"
-msgstr "Tablet"
+msgstr "Tablett"
 
 #: src/Services/Device.vala:83
 msgid "Computer"
-msgstr "Computer"
+msgstr "Rechner"
 
 #: src/Services/Device.vala:85
-#, fuzzy
 msgid "Controller"
 msgstr "Controller"
 
@@ -76,11 +74,11 @@ msgstr "Stift"
 
 #: src/Widgets/AppList.vala:52
 msgid "Apps Using Lots of Power"
-msgstr "Anwendungen mit großem Energieverbrauch"
+msgstr "Anwendungen mit hohem Energieverbrauch"
 
 #: src/Widgets/DeviceRow.vala:89
 msgid "Calculating…"
-msgstr "Berechnung läuft…"
+msgstr "Berechnen …"
 
 #: src/Widgets/DeviceRow.vala:95
 #, c-format
@@ -131,8 +129,8 @@ msgstr[1] "Entladen in %lld Tagen"
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
-msgstr[0] "Vollständig entladen in %lld Stunde"
-msgstr[1] "Vollständig entladen in %lld Stunden"
+msgstr[0] "Entladen in %lld Stunde"
+msgstr[1] "Entladen in %lld Stunden"
 
 #: src/Widgets/DeviceRow.vala:161
 #, c-format
@@ -156,7 +154,7 @@ msgstr "Gerät"
 #: src/Widgets/DisplayWidget.vala:31
 #, c-format
 msgid "%i%%"
-msgstr ""
+msgstr "%i%%"
 
 #: src/Widgets/PopoverWidget.vala:53
 msgid "Show Percentage"
