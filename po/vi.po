@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-20 18:29+0000\n"
+"POT-Creation-Date: 2021-02-19 18:05+0000\n"
 "PO-Revision-Date: 2017-12-27 15:59+0000\n"
 "Last-Translator: Hải Hồ <hochihai1997@gmail.com>\n"
 "Language-Team: Vietnamese <https://weblate.elementary.io/projects/wingpanel/"
@@ -14,6 +14,16 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
+
+#: src/Indicator.vala:140
+msgid "Middle-click to toggle percentage"
+msgstr ""
+
+#: src/Indicator.vala:143
+#, fuzzy, c-format
+#| msgid "Battery"
+msgid "Battery: %i%%"
+msgstr "Pin"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -132,6 +142,12 @@ msgstr[0] "%lld giây cho đến khi cạn"
 #: src/Widgets/DeviceRow.vala:190
 msgid "Device"
 msgstr "Thiết bị"
+
+#. /Translators: This represents battery charge precentage with `%i` representing the number and `%%` representing the percent symbol
+#: src/Widgets/DisplayWidget.vala:31
+#, c-format
+msgid "%i%%"
+msgstr ""
 
 #: src/Widgets/PopoverWidget.vala:53
 msgid "Show Percentage"

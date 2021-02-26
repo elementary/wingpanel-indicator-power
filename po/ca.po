@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-20 18:29+0000\n"
-"PO-Revision-Date: 2020-09-02 23:11+0000\n"
+"POT-Creation-Date: 2021-02-19 18:05+0000\n"
+"PO-Revision-Date: 2021-02-22 23:33+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ca/>\n"
@@ -12,8 +12,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-19 06:17+0000\n"
+
+#: src/Indicator.vala:140
+msgid "Middle-click to toggle percentage"
+msgstr "Clic del mig per commutar el percentatge"
+
+#: src/Indicator.vala:143
+#, c-format
+msgid "Battery: %i%%"
+msgstr "Bateria: %i%%"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -140,6 +149,12 @@ msgstr[1] "%lld segons fins que es buidi"
 #: src/Widgets/DeviceRow.vala:190
 msgid "Device"
 msgstr "Dispositiu"
+
+#. /Translators: This represents battery charge precentage with `%i` representing the number and `%%` representing the percent symbol
+#: src/Widgets/DisplayWidget.vala:31
+#, c-format
+msgid "%i%%"
+msgstr "%i %%"
 
 #: src/Widgets/PopoverWidget.vala:53
 msgid "Show Percentage"

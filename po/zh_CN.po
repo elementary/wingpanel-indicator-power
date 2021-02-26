@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-20 18:29+0000\n"
-"PO-Revision-Date: 2020-10-24 07:15+0000\n"
+"POT-Creation-Date: 2021-02-19 18:05+0000\n"
+"PO-Revision-Date: 2021-02-19 18:06+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "wingpanel/wingpanel-indicator-power/zh_Hans/>\n"
@@ -12,8 +12,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
+
+#: src/Indicator.vala:140
+msgid "Middle-click to toggle percentage"
+msgstr "单击鼠标中键显示百分比"
+
+#: src/Indicator.vala:143
+#, c-format
+msgid "Battery: %i%%"
+msgstr "电池： %i%%"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -25,7 +34,7 @@ msgstr "外接电源"
 
 #: src/Services/Device.vala:69
 msgid "Display"
-msgstr "显示"
+msgstr "显示器"
 
 #: src/Services/Device.vala:71
 msgid "Mouse"
@@ -49,7 +58,7 @@ msgstr "媒体播放器"
 
 #: src/Services/Device.vala:81
 msgid "Tablet"
-msgstr "平板电脑"
+msgstr "写字板"
 
 #: src/Services/Device.vala:83
 msgid "Computer"
@@ -132,6 +141,12 @@ msgstr[0] "还剩 %lld 秒用尽"
 #: src/Widgets/DeviceRow.vala:190
 msgid "Device"
 msgstr "设备"
+
+#. /Translators: This represents battery charge precentage with `%i` representing the number and `%%` representing the percent symbol
+#: src/Widgets/DisplayWidget.vala:31
+#, c-format
+msgid "%i%%"
+msgstr ""
 
 #: src/Widgets/PopoverWidget.vala:53
 msgid "Show Percentage"

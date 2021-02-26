@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-03 17:28+0000\n"
-"PO-Revision-Date: 2020-07-16 21:12+0000\n"
-"Last-Translator: Ciarán Ainsworth <ciaranainsworth@posteo.net>\n"
+"POT-Creation-Date: 2021-02-19 18:05+0000\n"
+"PO-Revision-Date: 2021-02-14 15:57+0000\n"
+"Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "wingpanel/indicator-power-extra/en_GB/>\n"
 "Language: en_GB\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/power.appdata.xml.in:6
 msgid "Power Indicator"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: data/power.appdata.xml.in:12
 msgid "Support for Controllers and Pens"
-msgstr ""
+msgstr "Support for Controllers and Pens"
 
 #: data/power.appdata.xml.in:13
 msgid "Reduce spacing when percentage is shown"

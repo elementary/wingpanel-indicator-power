@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-20 18:29+0000\n"
+"POT-Creation-Date: 2021-02-19 18:05+0000\n"
 "PO-Revision-Date: 2018-08-30 00:09+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
@@ -14,6 +14,16 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
+
+#: src/Indicator.vala:140
+msgid "Middle-click to toggle percentage"
+msgstr ""
+
+#: src/Indicator.vala:143
+#, fuzzy, c-format
+#| msgid "Battery"
+msgid "Battery: %i%%"
+msgstr "Bateria"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -140,6 +150,12 @@ msgstr[1] "%lld segundos até acabar"
 #: src/Widgets/DeviceRow.vala:190
 msgid "Device"
 msgstr "Dispositivo"
+
+#. /Translators: This represents battery charge precentage with `%i` representing the number and `%%` representing the percent symbol
+#: src/Widgets/DisplayWidget.vala:31
+#, c-format
+msgid "%i%%"
+msgstr ""
 
 #: src/Widgets/PopoverWidget.vala:53
 msgid "Show Percentage"

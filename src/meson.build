@@ -1,4 +1,4 @@
-wingpanel_dep = dependency('wingpanel-2.0')
+wingpanel_dep = dependency('wingpanel')
 wingpanel_indicatorsdir = wingpanel_dep.get_pkgconfig_variable('indicatorsdir', define_variable: ['libdir', libdir])
 
 conf_data = configuration_data()
@@ -33,7 +33,7 @@ files = files(
 dependencies = [
     dependency('glib-2.0'),
     dependency('gobject-2.0'),
-    dependency('granite'),
+    dependency('granite', version: '>=6.0.0'),
     dependency('gtk+-3.0'),
     dependency('libbamf3'),
     dependency('libgtop-2.0'),

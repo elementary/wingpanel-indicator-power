@@ -10,7 +10,7 @@ You'll need the following dependencies:
 * libgranite-dev
 * libgtop2-dev
 * libudev-dev
-* libwingpanel-2.0-dev
+* libwingpanel-dev
 * meson
 * valac
 
