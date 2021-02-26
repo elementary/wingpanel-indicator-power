@@ -35,10 +35,15 @@ public class Power.Widgets.AppList : Gtk.ListBox {
             });
         });
 
+        unowned Gtk.Popover popover = null;
+
         row_activated.connect ((row) => {
             try {
                 ((AppRow) row).app_info.launch (null, null);
-                ((Gtk.Popover) parent.parent.parent).popdown ();
+                if (popover == null) {
+                    popover = (Gtk.Popover) get_ancestor (typeof (Gtk.Popover));
+                }
+                popover.popdown ();
             } catch (Error e) {
                 critical (e.message);
             }
