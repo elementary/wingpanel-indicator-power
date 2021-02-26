@@ -139,7 +139,7 @@ public class Power.Indicator : Wingpanel.Indicator {
         var secondary_text = _("Middle-click to toggle percentage");
 
         display_widget.tooltip_markup = "%s\n%s".printf (
-            _("Battery: %s").printf (display_device.get_info ()),
+            _("%s: %s").printf (display_device.device_type.get_name (), display_device.get_info ()),
             Granite.TOOLTIP_SECONDARY_TEXT_MARKUP.printf (secondary_text)
         );
     }
