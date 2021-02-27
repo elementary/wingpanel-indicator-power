@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wingpanel-indicator-power\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-19 18:05+0000\n"
+"POT-Creation-Date: 2021-02-27 15:09+0000\n"
 "PO-Revision-Date: 2016-06-24 05:29+0000\n"
 "Last-Translator: Bone Pyae Sone <bone.burma@gmail.com>\n"
 "Language-Team: Burmese <my@li.org>\n"
@@ -77,9 +77,13 @@ msgstr ""
 msgid "Pen"
 msgstr ""
 
-#: src/Widgets/AppList.vala:52
+#: src/Widgets/AppList.vala:63
 msgid "Apps Using Lots of Power"
 msgstr "အားအသုံးများသည့် App များ"
+
+#: src/Widgets/AppList.vala:109
+msgid "Unknown App"
+msgstr ""
 
 #: src/Widgets/DeviceRow.vala:89
 msgid "Calculating…"
