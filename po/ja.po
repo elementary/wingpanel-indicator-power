@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-27 15:09+0000\n"
-"PO-Revision-Date: 2021-02-21 03:39+0000\n"
+"PO-Revision-Date: 2021-02-28 14:56+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ja/>\n"
@@ -78,7 +78,7 @@ msgstr "電力の消費が激しいアプリ"
 
 #: src/Widgets/AppList.vala:109
 msgid "Unknown App"
-msgstr ""
+msgstr "不明なアプリ"
 
 #: src/Widgets/DeviceRow.vala:89
 msgid "Calculating…"
