@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-20 18:29+0000\n"
-"PO-Revision-Date: 2020-10-27 10:15+0000\n"
+"POT-Creation-Date: 2021-02-27 15:09+0000\n"
+"PO-Revision-Date: 2021-02-28 14:56+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/de/>\n"
@@ -12,8 +12,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
+
+#: src/Indicator.vala:140
+msgid "Middle-click to toggle percentage"
+msgstr "Prozentanzeige umschalten mit Mittelklick"
+
+#: src/Indicator.vala:143
+#, c-format
+msgid "Battery: %i%%"
+msgstr "Akku: %i%%"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -41,7 +50,7 @@ msgstr "PDA"
 
 #: src/Services/Device.vala:77
 msgid "Phone"
-msgstr "Telefon"
+msgstr "Mobiltelefon"
 
 #: src/Services/Device.vala:79
 msgid "Media Player"
@@ -49,11 +58,11 @@ msgstr "Mediaplayer"
 
 #: src/Services/Device.vala:81
 msgid "Tablet"
-msgstr "Tablet"
+msgstr "Grafiktablett"
 
 #: src/Services/Device.vala:83
 msgid "Computer"
-msgstr "Computer"
+msgstr "Rechner"
 
 #: src/Services/Device.vala:85
 msgid "Controller"
@@ -63,13 +72,17 @@ msgstr "Controller"
 msgid "Pen"
 msgstr "Stift"
 
-#: src/Widgets/AppList.vala:52
+#: src/Widgets/AppList.vala:63
 msgid "Apps Using Lots of Power"
-msgstr "Anwendungen mit großem Energieverbrauch"
+msgstr "Anwendungen mit hohem Energieverbrauch"
+
+#: src/Widgets/AppList.vala:109
+msgid "Unknown App"
+msgstr "Unbekannte Anwendung"
 
 #: src/Widgets/DeviceRow.vala:89
 msgid "Calculating…"
-msgstr "Berechnung läuft…"
+msgstr "Berechnen …"
 
 #: src/Widgets/DeviceRow.vala:95
 #, c-format
@@ -120,8 +133,8 @@ msgstr[1] "Entladen in %lld Tagen"
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
-msgstr[0] "Vollständig entladen in %lld Stunde"
-msgstr[1] "Vollständig entladen in %lld Stunden"
+msgstr[0] "Entladen in %lld Stunde"
+msgstr[1] "Entladen in %lld Stunden"
 
 #: src/Widgets/DeviceRow.vala:161
 #, c-format
@@ -140,6 +153,12 @@ msgstr[1] "Entladen in %lld Sekunden"
 #: src/Widgets/DeviceRow.vala:190
 msgid "Device"
 msgstr "Gerät"
+
+#. /Translators: This represents battery charge precentage with `%i` representing the number and `%%` representing the percent symbol
+#: src/Widgets/DisplayWidget.vala:31
+#, c-format
+msgid "%i%%"
+msgstr "%i%%"
 
 #: src/Widgets/PopoverWidget.vala:53
 msgid "Show Percentage"

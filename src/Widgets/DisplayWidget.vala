@@ -27,7 +27,8 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
     public bool allow_percent { get; set; default = false; }
     public int percentage {
         set {
-            percent_label.label = "%i%%".printf (value);
+            ///Translators: This represents battery charge precentage with `%i` representing the number and `%%` representing the percent symbol
+            percent_label.label = _("%i%%").printf (value);
         }
     }
 

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-20 18:29+0000\n"
-"PO-Revision-Date: 2020-09-12 20:14+0000\n"
+"POT-Creation-Date: 2021-02-27 15:09+0000\n"
+"PO-Revision-Date: 2021-02-27 18:49+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/uk/>\n"
@@ -13,8 +13,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
+
+#: src/Indicator.vala:140
+msgid "Middle-click to toggle percentage"
+msgstr "Клацнути середньою клавішею, щоб перемкнути відсотки"
+
+#: src/Indicator.vala:143
+#, c-format
+msgid "Battery: %i%%"
+msgstr "Батарея: %i%%"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -64,9 +73,13 @@ msgstr "Контролер"
 msgid "Pen"
 msgstr "Електронний олівець"
 
-#: src/Widgets/AppList.vala:52
+#: src/Widgets/AppList.vala:63
 msgid "Apps Using Lots of Power"
 msgstr "Застосунки, що використовують забагато енергії"
+
+#: src/Widgets/AppList.vala:109
+msgid "Unknown App"
+msgstr "Невідомий застосунок"
 
 #: src/Widgets/DeviceRow.vala:89
 msgid "Calculating…"
@@ -149,6 +162,12 @@ msgstr[2] "%lld секунд до повного розряду"
 #: src/Widgets/DeviceRow.vala:190
 msgid "Device"
 msgstr "Пристрій"
+
+#. /Translators: This represents battery charge precentage with `%i` representing the number and `%%` representing the percent symbol
+#: src/Widgets/DisplayWidget.vala:31
+#, c-format
+msgid "%i%%"
+msgstr "%i%%"
 
 #: src/Widgets/PopoverWidget.vala:53
 msgid "Show Percentage"

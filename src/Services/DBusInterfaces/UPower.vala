@@ -19,7 +19,9 @@
 
 namespace Power.Services.DBusInterfaces {
     [DBus (name = "org.freedesktop.UPower")]
-    public interface UPower : Object {
+    public interface UPower : GLib.DBusProxy {
+        public abstract bool on_battery { get; }
+
         public abstract ObjectPath[] enumerate_devices () throws GLib.Error;
         public abstract ObjectPath get_display_device () throws GLib.Error;
 

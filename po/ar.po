@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-20 18:29+0000\n"
+"POT-Creation-Date: 2021-02-27 15:09+0000\n"
 "PO-Revision-Date: 2019-04-11 13:11+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/wingpanel/"
@@ -15,6 +15,16 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Generator: Weblate 3.5.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
+
+#: src/Indicator.vala:140
+msgid "Middle-click to toggle percentage"
+msgstr ""
+
+#: src/Indicator.vala:143
+#, fuzzy, c-format
+#| msgid "Battery"
+msgid "Battery: %i%%"
+msgstr "البطارية"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -64,9 +74,13 @@ msgstr ""
 msgid "Pen"
 msgstr ""
 
-#: src/Widgets/AppList.vala:52
+#: src/Widgets/AppList.vala:63
 msgid "Apps Using Lots of Power"
 msgstr "تطبيقات تستهلك الطاقة"
+
+#: src/Widgets/AppList.vala:109
+msgid "Unknown App"
+msgstr ""
 
 #: src/Widgets/DeviceRow.vala:89
 msgid "Calculating…"
@@ -173,6 +187,12 @@ msgstr[5] "%lld ثانية حتى تفرغ"
 #: src/Widgets/DeviceRow.vala:190
 msgid "Device"
 msgstr "جهاز"
+
+#. /Translators: This represents battery charge precentage with `%i` representing the number and `%%` representing the percent symbol
+#: src/Widgets/DisplayWidget.vala:31
+#, c-format
+msgid "%i%%"
+msgstr ""
 
 #: src/Widgets/PopoverWidget.vala:53
 msgid "Show Percentage"

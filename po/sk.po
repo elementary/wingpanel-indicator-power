@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-20 18:29+0000\n"
+"POT-Creation-Date: 2021-02-27 15:09+0000\n"
 "PO-Revision-Date: 2016-05-08 22:05+0000\n"
 "Last-Translator: Ľubomír Hlavko <5lubo555@azet.sk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,6 +13,16 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 "X-Generator: Launchpad (build 18246)\n"
+
+#: src/Indicator.vala:140
+msgid "Middle-click to toggle percentage"
+msgstr ""
+
+#: src/Indicator.vala:143
+#, fuzzy, c-format
+#| msgid "Battery"
+msgid "Battery: %i%%"
+msgstr "Batéria"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -62,9 +72,13 @@ msgstr ""
 msgid "Pen"
 msgstr ""
 
-#: src/Widgets/AppList.vala:52
+#: src/Widgets/AppList.vala:63
 msgid "Apps Using Lots of Power"
 msgstr "Aplikácie spotrebuvávajúce veľa energie"
+
+#: src/Widgets/AppList.vala:109
+msgid "Unknown App"
+msgstr ""
 
 #: src/Widgets/DeviceRow.vala:89
 msgid "Calculating…"
@@ -147,6 +161,12 @@ msgstr[2] "%lld sekundy pred prázdným"
 #: src/Widgets/DeviceRow.vala:190
 msgid "Device"
 msgstr "Zariadenie"
+
+#. /Translators: This represents battery charge precentage with `%i` representing the number and `%%` representing the percent symbol
+#: src/Widgets/DisplayWidget.vala:31
+#, c-format
+msgid "%i%%"
+msgstr ""
 
 #: src/Widgets/PopoverWidget.vala:53
 msgid "Show Percentage"
