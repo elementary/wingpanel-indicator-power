@@ -39,6 +39,9 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
 
         var device_list = new DeviceList ();
 
+        var device_list_revealer = new Gtk.Revealer ();
+        device_list_revealer.add (device_list);
+
         var device_separator = new Wingpanel.Widgets.Separator ();
 
         device_separator_revealer = new Gtk.Revealer ();
@@ -55,17 +58,13 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         );
         show_percent_switch.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
-        var battery_grid = new Gtk.Grid ();
-        battery_grid.attach (show_percent_switch, 0, 0);
-        battery_grid.attach (device_list, 0, 2);
-
         var show_percent_revealer = new Gtk.Revealer ();
-        show_percent_revealer.add (battery_grid);
+        show_percent_revealer.add (show_percent_switch);
 
         var show_settings_button = new Gtk.ModelButton ();
         show_settings_button.text = _("Power Settings…");
 
-        attach (show_percent_revealer, 0, 0);
+        attach (device_list_revealer, 0, 0);
         attach (device_separator_revealer, 0, 2);
 
         if (dm.backlight.present) {
@@ -93,6 +92,13 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
 
         dm.bind_property (
             "has-battery",
+            device_list_revealer,
+            "reveal-child",
+            GLib.BindingFlags.DEFAULT | GLib.BindingFlags.SYNC_CREATE
+        );
+
+        dm.display_device.bind_property (
+            "is-a-battery",
             show_percent_revealer,
             "reveal-child",
             GLib.BindingFlags.DEFAULT | GLib.BindingFlags.SYNC_CREATE
