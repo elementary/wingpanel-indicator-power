@@ -64,7 +64,8 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         var show_settings_button = new Gtk.ModelButton ();
         show_settings_button.text = _("Power Settings…");
 
-        attach (device_list_revealer, 0, 0);
+        attach (show_percent_revealer, 0, 0);
+        attach (device_list_revealer, 0, 1);
         attach (device_separator_revealer, 0, 2);
 
         if (dm.backlight.present) {
