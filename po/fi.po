@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-19 18:05+0000\n"
+"POT-Creation-Date: 2021-02-27 15:09+0000\n"
 "PO-Revision-Date: 2021-02-09 14:06+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/wingpanel/"
@@ -73,9 +73,13 @@ msgstr "Ohjain"
 msgid "Pen"
 msgstr "Kynä"
 
-#: src/Widgets/AppList.vala:52
+#: src/Widgets/AppList.vala:63
 msgid "Apps Using Lots of Power"
 msgstr "Paljon virtaa käyttävät sovellukset"
+
+#: src/Widgets/AppList.vala:109
+msgid "Unknown App"
+msgstr ""
 
 #: src/Widgets/DeviceRow.vala:89
 msgid "Calculating…"

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-19 18:05+0000\n"
-"PO-Revision-Date: 2021-02-22 23:33+0000\n"
+"POT-Creation-Date: 2021-02-27 15:09+0000\n"
+"PO-Revision-Date: 2021-03-02 14:54+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ca/>\n"
@@ -72,9 +72,13 @@ msgstr "Controlador"
 msgid "Pen"
 msgstr "Bolígraf"
 
-#: src/Widgets/AppList.vala:52
+#: src/Widgets/AppList.vala:63
 msgid "Apps Using Lots of Power"
 msgstr "Aplicacions que consumeixen molta energia"
+
+#: src/Widgets/AppList.vala:109
+msgid "Unknown App"
+msgstr "Aplicació desconeguda"
 
 #: src/Widgets/DeviceRow.vala:89
 msgid "Calculating…"

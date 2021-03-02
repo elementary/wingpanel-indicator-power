@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-19 18:05+0000\n"
+"POT-Creation-Date: 2021-02-27 15:09+0000\n"
 "PO-Revision-Date: 2015-05-23 21:47+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,8 +71,12 @@ msgstr ""
 msgid "Pen"
 msgstr ""
 
-#: src/Widgets/AppList.vala:52
+#: src/Widgets/AppList.vala:63
 msgid "Apps Using Lots of Power"
+msgstr ""
+
+#: src/Widgets/AppList.vala:109
+msgid "Unknown App"
 msgstr ""
 
 #: src/Widgets/DeviceRow.vala:89

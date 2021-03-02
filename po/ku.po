@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wingpanel-indicator-power\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-19 18:05+0000\n"
+"POT-Creation-Date: 2021-02-27 15:09+0000\n"
 "PO-Revision-Date: 2017-05-04 20:05+0000\n"
 "Last-Translator: Rokar <rokartv10@gmail.com>\n"
 "Language-Team: ku (generated) <https://l10n.elementary.io/projects/wingpanel/"
@@ -78,9 +78,13 @@ msgstr ""
 msgid "Pen"
 msgstr ""
 
-#: src/Widgets/AppList.vala:52
+#: src/Widgets/AppList.vala:63
 msgid "Apps Using Lots of Power"
 msgstr "Bername ev zîtik ax hêz bi kar dike"
+
+#: src/Widgets/AppList.vala:109
+msgid "Unknown App"
+msgstr ""
 
 #: src/Widgets/DeviceRow.vala:89
 msgid "Calculating…"
