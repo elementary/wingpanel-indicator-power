@@ -97,12 +97,9 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
             GLib.BindingFlags.DEFAULT | GLib.BindingFlags.SYNC_CREATE
         );
 
-        dm.display_device.bind_property (
-            "is-a-battery",
-            show_percent_revealer,
-            "reveal-child",
-            GLib.BindingFlags.DEFAULT | GLib.BindingFlags.SYNC_CREATE
-        );
+        if (dm.has_battery && dm.display_device.is_a_battery) {
+            show_percent_revealer.reveal_child = true;
+        }
 
         show_settings_button.clicked.connect (() => {
             try {
