@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2016 elementary LLC. (https://elementary.io)
+ * Copyright 2011-2021 elementary, Inc. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -17,45 +17,52 @@
  * Boston, MA 02110-1301, USA.
  */
 
-public class Power.Widgets.AppList : Gtk.Grid {
+public class Power.Widgets.AppList : Gtk.ListBox {
     private Services.AppManager app_manager;
 
-    public AppList () {
-        Object (orientation: Gtk.Orientation.VERTICAL);
-    }
-
     construct {
+        activate_on_single_click = true;
+
         app_manager = Services.AppManager.get_default ();
 
         Services.ProcessMonitor.Monitor.get_default ().updated.connect (() => {
             /* Don't block the ui while updating the data */
             Idle.add (() => {
+                clear_list ();
                 update_list ();
 
                 return false;
             });
         });
+
+        unowned Gtk.Popover popover = null;
+
+        row_activated.connect ((row) => {
+            try {
+                ((AppRow) row).app_info.launch (null, null);
+                if (popover == null) {
+                    popover = (Gtk.Popover) get_ancestor (typeof (Gtk.Popover));
+                }
+                popover.popdown ();
+            } catch (Error e) {
+                critical (e.message);
+            }
+        });
     }
 
     public void clear_list () {
-        foreach (var child in this.get_children ()) {
-            this.remove (child);
+        foreach (unowned var child in this.get_children ()) {
+            remove (child);
         }
     }
 
     private void update_list () {
-        clear_list ();
-
         var eaters = app_manager.get_top_power_eaters (12);
 
         if (eaters.size > 0) {
-            var title_label = new Gtk.Label (_("Apps Using Lots of Power")) {
-                halign = Gtk.Align.START,
-                margin = 12,
-                margin_bottom = 6,
-                margin_top = 6
+            var title_label = new Granite.HeaderLabel (_("Apps Using Lots of Power")) {
+                margin_start = 6
             };
-            title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
             add (title_label);
         }
@@ -67,14 +74,7 @@ public class Power.Widgets.AppList : Gtk.Grid {
                 return false;
             }
 
-            var app_icon = desktop_app_info.get_icon ();
-            var app_name = desktop_app_info.get_name ();
-
-            if (app_icon == null || app_name == null) {
-                return false;
-            }
-
-            var app_row = new AppRow (app_icon, app_name);
+            var app_row = new AppRow (desktop_app_info);
             add (app_row);
 
             return true;
@@ -83,20 +83,44 @@ public class Power.Widgets.AppList : Gtk.Grid {
         show_all ();
     }
 
-    private class AppRow : Gtk.Grid {
-        public AppRow (GLib.Icon app_icon, string app_name) {
-            var app_icon_image = new Gtk.Image.from_gicon (app_icon, Gtk.IconSize.LARGE_TOOLBAR);
-            app_icon_image.pixel_size = 24;
+    private class AppRow : Gtk.ListBoxRow {
+        public DesktopAppInfo app_info { get; construct; }
 
-            var app_name_label = new Gtk.Label (app_name);
-            app_name_label.halign = Gtk.Align.START;
+        public AppRow (DesktopAppInfo app_info) {
+            Object (app_info: app_info);
+        }
 
-            column_spacing = 18;
-            margin_start = 18;
-            margin_end = 12;
-            margin_bottom = 12;
-            attach (app_icon_image, 0, 0, 1, 1);
-            attach (app_name_label, 1, 0, 1, 1);
+        class construct {
+            set_css_name (Gtk.STYLE_CLASS_MENUITEM);
+        }
+
+        construct {
+            var app_icon_image = new Gtk.Image.from_icon_name ("application-default-icon", Gtk.IconSize.DND) {
+                pixel_size = 32
+            };
+
+            var app_name_label = new Gtk.Label (_("Unknown App")) {
+                halign = Gtk.Align.START
+            };
+
+            var app_icon = app_info.get_icon ();
+            if (app_icon != null) {
+                app_icon_image.gicon = app_icon;
+            }
+
+            var app_name = app_info.get_name ();
+            if (app_name != null) {
+                app_name_label.label = app_name;
+            }
+
+            var grid = new Gtk.Grid () {
+                column_spacing = 9,
+                margin_start = 3
+            };
+            grid.attach (app_icon_image, 0, 0);
+            grid.attach (app_name_label, 1, 0);
+
+            add (grid);
         }
     }
 }
