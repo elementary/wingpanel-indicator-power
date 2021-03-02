@@ -3,21 +3,21 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-27 15:09+0000\n"
-"PO-Revision-Date: 2018-10-24 13:49+0000\n"
-"Last-Translator: Pablo Varela <pablovarela182@gmail.com>\n"
-"Language-Team: Galician <https://weblate.elementary.io/projects/wingpanel/"
+"PO-Revision-Date: 2021-03-02 04:42+0000\n"
+"Last-Translator: david <dcardelleg@gmail.com>\n"
+"Language-Team: Galician <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/gl/>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: src/Indicator.vala:140
 msgid "Middle-click to toggle percentage"
-msgstr ""
+msgstr "Pulse o botón central do rato para conmutar a porcentaxe"
 
 #: src/Indicator.vala:143
 #, fuzzy, c-format
