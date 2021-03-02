@@ -77,7 +77,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
 
         if (is_in_session) {
             app_list = new AppList ();
-            attach (app_list, 0, 1);
+            attach (app_list, 0, 2);
             attach (show_settings_button, 0, 6);
         }
 
