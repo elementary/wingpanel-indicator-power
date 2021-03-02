@@ -268,7 +268,6 @@ public class Power.Services.Device : Object {
 
     public string get_info () {
         var percent = (int)Math.round (percentage);
-        var charging = is_charging;
 
         if (percent <= 0) {
             return _("Calculating…");
@@ -276,31 +275,29 @@ public class Power.Services.Device : Object {
 
         var info = "";
 
-        if (charging) {
+        if (is_charging) {
             info += _("%i%% charged").printf (percent);
 
-            var seconds = time_to_full;
-
-            if (seconds > 0) {
+            if (time_to_full > 0) {
                 info += " - ";
-                if (seconds >= 86400) {
-                    var days = seconds / 86400;
+                if (time_to_full >= 86400) {
+                    var days = time_to_full / 86400;
                     info += dngettext (
                         Constants.GETTEXT_PACKAGE,
                         "%lld day until full",
                         "%lld days until full",
                         (ulong) days
                     ).printf (days);
-                } else if (seconds >= 3600) {
-                    var hours = seconds / 3600;
+                } else if (time_to_full >= 3600) {
+                    var hours = time_to_full / 3600;
                     info += dngettext (
                         Constants.GETTEXT_PACKAGE,
                         "%lld hour until full",
                         "%lld hours until full",
                         (ulong) hours
                     ).printf (hours);
-                } else if (seconds >= 60) {
-                    var minutes = seconds / 60;
+                } else if (time_to_full >= 60) {
+                    var minutes = time_to_full / 60;
                     info += dngettext (
                         Constants.GETTEXT_PACKAGE,
                         "%lld minute until full",
@@ -312,35 +309,33 @@ public class Power.Services.Device : Object {
                         Constants.GETTEXT_PACKAGE,
                         "%lld second until full",
                         "%lld seconds until full",
-                        (ulong) seconds
-                    ).printf (seconds);
+                        (ulong) time_to_full
+                    ).printf (time_to_full);
                 }
             }
         } else {
             info += _("%i%% remaining").printf (percent);
 
-            var seconds = time_to_empty;
-
-            if (seconds > 0) {
+            if (time_to_empty > 0) {
                 info += " - ";
-                if (seconds >= 86400) {
-                    var days = seconds / 86400;
+                if (time_to_empty >= 86400) {
+                    var days = time_to_empty / 86400;
                     info += dngettext (
                         Constants.GETTEXT_PACKAGE,
                         "%lld day until empty",
                         "%lld days until empty",
                         (ulong) days
                     ).printf (days);
-                } else if (seconds >= 3600) {
-                    var hours = seconds / 3600;
+                } else if (time_to_empty >= 3600) {
+                    var hours = time_to_empty / 3600;
                     info += dngettext (
                         Constants.GETTEXT_PACKAGE,
                         "%lld hour until empty",
                         "%lld hours until empty",
                         (ulong) hours
                     ).printf (hours);
-                } else if (seconds >= 60) {
-                    var minutes = seconds / 60;
+                } else if (time_to_empty >= 60) {
+                    var minutes = time_to_empty / 60;
                     info += dngettext (
                         Constants.GETTEXT_PACKAGE,
                         "%lld minute until empty",
@@ -352,8 +347,8 @@ public class Power.Services.Device : Object {
                         Constants.GETTEXT_PACKAGE,
                         "%lld second until empty",
                         "%lld seconds until empty",
-                        (ulong) seconds
-                    ).printf (seconds);
+                        (ulong) time_to_empty
+                    ).printf (time_to_empty);
                 }
             }
         }
