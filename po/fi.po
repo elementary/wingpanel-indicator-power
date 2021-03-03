@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-27 15:09+0000\n"
-"PO-Revision-Date: 2021-02-09 14:06+0000\n"
+"PO-Revision-Date: 2021-03-03 11:01+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/fi/>\n"
@@ -18,12 +18,12 @@ msgstr ""
 #: src/Indicator.vala:140
 msgid "Middle-click to toggle percentage"
 msgstr ""
+"Näytä tai piilota prosentit hiiren keskimmäisen painikkeen napsautuksella"
 
 #: src/Indicator.vala:143
-#, fuzzy, c-format
-#| msgid "Battery"
+#, c-format
 msgid "Battery: %i%%"
-msgstr "Akku"
+msgstr "Akku: %i%%"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -79,7 +79,7 @@ msgstr "Paljon virtaa käyttävät sovellukset"
 
 #: src/Widgets/AppList.vala:109
 msgid "Unknown App"
-msgstr ""
+msgstr "Tuntematon sovellus"
 
 #: src/Widgets/DeviceRow.vala:89
 msgid "Calculating…"
