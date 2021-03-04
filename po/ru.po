@@ -3,9 +3,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-27 15:09+0000\n"
-"PO-Revision-Date: 2018-06-22 20:55+0000\n"
-"Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
-"Language-Team: Russian <https://weblate.elementary.io/projects/wingpanel/"
+"PO-Revision-Date: 2021-03-05 00:17+0000\n"
+"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
+"Language-Team: Russian <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -13,18 +13,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: src/Indicator.vala:140
 msgid "Middle-click to toggle percentage"
-msgstr ""
+msgstr "Нажмите средней кнопкой мыши, чтобы переключить проценты"
 
 #: src/Indicator.vala:143
-#, fuzzy, c-format
-#| msgid "Battery"
+#, c-format
 msgid "Battery: %i%%"
-msgstr "Батарея"
+msgstr "Батарея: %i%%"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -68,11 +67,11 @@ msgstr "Компьютер"
 
 #: src/Services/Device.vala:85
 msgid "Controller"
-msgstr ""
+msgstr "Контроллер"
 
 #: src/Services/Device.vala:87
 msgid "Pen"
-msgstr ""
+msgstr "Перо"
 
 #: src/Widgets/AppList.vala:63
 msgid "Apps Using Lots of Power"
@@ -80,7 +79,7 @@ msgstr "Энергозатратные приложения"
 
 #: src/Widgets/AppList.vala:109
 msgid "Unknown App"
-msgstr ""
+msgstr "Неизвестное приложение"
 
 #: src/Widgets/DeviceRow.vala:89
 msgid "Calculating…"
@@ -168,7 +167,7 @@ msgstr "Устройство"
 #: src/Widgets/DisplayWidget.vala:31
 #, c-format
 msgid "%i%%"
-msgstr ""
+msgstr "%i%%"
 
 #: src/Widgets/PopoverWidget.vala:53
 msgid "Show Percentage"
