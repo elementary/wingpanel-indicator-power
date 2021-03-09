@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-27 15:09+0000\n"
+"POT-Creation-Date: 2021-03-09 16:55+0000\n"
 "PO-Revision-Date: 2017-04-27 14:36+0000\n"
 "Last-Translator: marius.a <marius.albina@gmail.com>\n"
 "Language-Team: Romanian <https://l10n.elementary.io/projects/wingpanel/"
@@ -16,15 +16,14 @@ msgstr ""
 "X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-12-14 05:38+0000\n"
 
-#: src/Indicator.vala:140
+#: src/Indicator.vala:139
 msgid "Middle-click to toggle percentage"
 msgstr ""
 
-#: src/Indicator.vala:143
-#, fuzzy, c-format
-#| msgid "Battery"
-msgid "Battery: %i%%"
-msgstr "Baterie"
+#: src/Indicator.vala:142
+#, c-format
+msgid "%s: %s"
+msgstr ""
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -74,6 +73,84 @@ msgstr ""
 msgid "Pen"
 msgstr ""
 
+#: src/Services/Device.vala:273
+msgid "Calculating…"
+msgstr "Se calculează…"
+
+#: src/Services/Device.vala:279
+#, c-format
+msgid "%i%% charged"
+msgstr "%i%% încărcat"
+
+#: src/Services/Device.vala:287
+#, c-format
+msgid "%lld day until full"
+msgid_plural "%lld days until full"
+msgstr[0] "%lld zi până la încărcare completă"
+msgstr[1] "%lld zile până la încărcare completă"
+msgstr[2] "%lld de zile până la încărcare completă"
+
+#: src/Services/Device.vala:295
+#, c-format
+msgid "%lld hour until full"
+msgid_plural "%lld hours until full"
+msgstr[0] "%lld oră până la încărcare completă"
+msgstr[1] "%lld ore până la încărcare completă"
+msgstr[2] "%lld de ore până la încărcare completă"
+
+#: src/Services/Device.vala:303
+#, c-format
+msgid "%lld minute until full"
+msgid_plural "%lld minutes until full"
+msgstr[0] "%lld minut până la încărcare completă"
+msgstr[1] "%lld minute până la încărcare completă"
+msgstr[2] "%lld de minute până la încărcare completă"
+
+#: src/Services/Device.vala:310
+#, c-format
+msgid "%lld second until full"
+msgid_plural "%lld seconds until full"
+msgstr[0] "%lld secundă până la încărcare completă"
+msgstr[1] "%lld secunde până la încărcare completă"
+msgstr[2] "%lld de secunde până la încărcare completă"
+
+#: src/Services/Device.vala:317
+#, c-format
+msgid "%i%% remaining"
+msgstr "%i%% rămas"
+
+#: src/Services/Device.vala:325
+#, c-format
+msgid "%lld day until empty"
+msgid_plural "%lld days until empty"
+msgstr[0] "%lld zi până la golire"
+msgstr[1] "%lld zile până la golire"
+msgstr[2] "%lld de zile până la golire"
+
+#: src/Services/Device.vala:333
+#, c-format
+msgid "%lld hour until empty"
+msgid_plural "%lld hours until empty"
+msgstr[0] "%lld ora până la golire"
+msgstr[1] "%lld ore până la golire"
+msgstr[2] "%lld de ore până la golire"
+
+#: src/Services/Device.vala:341
+#, c-format
+msgid "%lld minute until empty"
+msgid_plural "%lld minutes until empty"
+msgstr[0] "%lld minut până la golire"
+msgstr[1] "%lld minute până la golire"
+msgstr[2] "%lld de minute până la golire"
+
+#: src/Services/Device.vala:348
+#, c-format
+msgid "%lld second until empty"
+msgid_plural "%lld seconds until empty"
+msgstr[0] "%lld secundă până la golire"
+msgstr[1] "%lld secunde până la golire"
+msgstr[2] "%lld de secunde până la golire"
+
 #: src/Widgets/AppList.vala:63
 msgid "Apps Using Lots of Power"
 msgstr "Aplicații ce utilizează multă energie"
@@ -82,85 +159,7 @@ msgstr "Aplicații ce utilizează multă energie"
 msgid "Unknown App"
 msgstr ""
 
-#: src/Widgets/DeviceRow.vala:89
-msgid "Calculating…"
-msgstr "Se calculează…"
-
 #: src/Widgets/DeviceRow.vala:95
-#, c-format
-msgid "%i%% charged"
-msgstr "%i%% încărcat"
-
-#: src/Widgets/DeviceRow.vala:105
-#, c-format
-msgid "%lld day until full"
-msgid_plural "%lld days until full"
-msgstr[0] "%lld zi până la încărcare completă"
-msgstr[1] "%lld zile până la încărcare completă"
-msgstr[2] "%lld de zile până la încărcare completă"
-
-#: src/Widgets/DeviceRow.vala:113
-#, c-format
-msgid "%lld hour until full"
-msgid_plural "%lld hours until full"
-msgstr[0] "%lld oră până la încărcare completă"
-msgstr[1] "%lld ore până la încărcare completă"
-msgstr[2] "%lld de ore până la încărcare completă"
-
-#: src/Widgets/DeviceRow.vala:121
-#, c-format
-msgid "%lld minute until full"
-msgid_plural "%lld minutes until full"
-msgstr[0] "%lld minut până la încărcare completă"
-msgstr[1] "%lld minute până la încărcare completă"
-msgstr[2] "%lld de minute până la încărcare completă"
-
-#: src/Widgets/DeviceRow.vala:128
-#, c-format
-msgid "%lld second until full"
-msgid_plural "%lld seconds until full"
-msgstr[0] "%lld secundă până la încărcare completă"
-msgstr[1] "%lld secunde până la încărcare completă"
-msgstr[2] "%lld de secunde până la încărcare completă"
-
-#: src/Widgets/DeviceRow.vala:135
-#, c-format
-msgid "%i%% remaining"
-msgstr "%i%% rămas"
-
-#: src/Widgets/DeviceRow.vala:145
-#, c-format
-msgid "%lld day until empty"
-msgid_plural "%lld days until empty"
-msgstr[0] "%lld zi până la golire"
-msgstr[1] "%lld zile până la golire"
-msgstr[2] "%lld de zile până la golire"
-
-#: src/Widgets/DeviceRow.vala:153
-#, c-format
-msgid "%lld hour until empty"
-msgid_plural "%lld hours until empty"
-msgstr[0] "%lld ora până la golire"
-msgstr[1] "%lld ore până la golire"
-msgstr[2] "%lld de ore până la golire"
-
-#: src/Widgets/DeviceRow.vala:161
-#, c-format
-msgid "%lld minute until empty"
-msgid_plural "%lld minutes until empty"
-msgstr[0] "%lld minut până la golire"
-msgstr[1] "%lld minute până la golire"
-msgstr[2] "%lld de minute până la golire"
-
-#: src/Widgets/DeviceRow.vala:168
-#, c-format
-msgid "%lld second until empty"
-msgid_plural "%lld seconds until empty"
-msgstr[0] "%lld secundă până la golire"
-msgstr[1] "%lld secunde până la golire"
-msgstr[2] "%lld de secunde până la golire"
-
-#: src/Widgets/DeviceRow.vala:190
 msgid "Device"
 msgstr "Dispozitiv"
 
@@ -177,6 +176,11 @@ msgstr "Arată procentaj"
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "Setări alimentare…"
+
+#, fuzzy
+#~| msgid "Battery"
+#~ msgid "Battery: %i%%"
+#~ msgstr "Baterie"
 
 #~ msgid "Power"
 #~ msgstr "Alimentare"

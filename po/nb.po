@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-27 15:09+0000\n"
+"POT-Creation-Date: 2021-03-09 16:55+0000\n"
 "PO-Revision-Date: 2021-02-21 03:39+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -15,15 +15,15 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:140
+#: src/Indicator.vala:139
 #, fuzzy
 msgid "Middle-click to toggle percentage"
 msgstr "Midt-klikk for å veksle prosentvisning"
 
-#: src/Indicator.vala:143
+#: src/Indicator.vala:142
 #, c-format
-msgid "Battery: %i%%"
-msgstr "Batteri: %i%%"
+msgid "%s: %s"
+msgstr ""
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -74,6 +74,76 @@ msgstr "Kontroller"
 msgid "Pen"
 msgstr "Penn"
 
+#: src/Services/Device.vala:273
+msgid "Calculating…"
+msgstr "Beregner …"
+
+#: src/Services/Device.vala:279
+#, c-format
+msgid "%i%% charged"
+msgstr "%i%% oppladet"
+
+#: src/Services/Device.vala:287
+#, c-format
+msgid "%lld day until full"
+msgid_plural "%lld days until full"
+msgstr[0] "%lld dag til fullt"
+msgstr[1] "%lld dager til fullt"
+
+#: src/Services/Device.vala:295
+#, c-format
+msgid "%lld hour until full"
+msgid_plural "%lld hours until full"
+msgstr[0] "%lld time til fullt"
+msgstr[1] "%lld timer til fullt"
+
+#: src/Services/Device.vala:303
+#, c-format
+msgid "%lld minute until full"
+msgid_plural "%lld minutes until full"
+msgstr[0] "%lld minutt til fullt"
+msgstr[1] "%lld minutter til fullt"
+
+#: src/Services/Device.vala:310
+#, c-format
+msgid "%lld second until full"
+msgid_plural "%lld seconds until full"
+msgstr[0] "%lld sekund til fullt"
+msgstr[1] "%lld sekunder til fullt"
+
+#: src/Services/Device.vala:317
+#, c-format
+msgid "%i%% remaining"
+msgstr "%i%% gjenstår"
+
+#: src/Services/Device.vala:325
+#, c-format
+msgid "%lld day until empty"
+msgid_plural "%lld days until empty"
+msgstr[0] "%lld dag til det er tomt"
+msgstr[1] "%lld dager til det er tomt"
+
+#: src/Services/Device.vala:333
+#, c-format
+msgid "%lld hour until empty"
+msgid_plural "%lld hours until empty"
+msgstr[0] "%lld time til det er tomt"
+msgstr[1] "%lld timer til det er tomt"
+
+#: src/Services/Device.vala:341
+#, c-format
+msgid "%lld minute until empty"
+msgid_plural "%lld minutes until empty"
+msgstr[0] "%lld minutt til det er tomt"
+msgstr[1] "%lld minutter til det er tomt"
+
+#: src/Services/Device.vala:348
+#, c-format
+msgid "%lld second until empty"
+msgid_plural "%lld seconds until empty"
+msgstr[0] "%lld sekund til det er tomt"
+msgstr[1] "%lld sekunder til det er tomt"
+
 #: src/Widgets/AppList.vala:63
 msgid "Apps Using Lots of Power"
 msgstr "Apper som bruker mye strøm"
@@ -82,77 +152,7 @@ msgstr "Apper som bruker mye strøm"
 msgid "Unknown App"
 msgstr ""
 
-#: src/Widgets/DeviceRow.vala:89
-msgid "Calculating…"
-msgstr "Beregner …"
-
 #: src/Widgets/DeviceRow.vala:95
-#, c-format
-msgid "%i%% charged"
-msgstr "%i%% oppladet"
-
-#: src/Widgets/DeviceRow.vala:105
-#, c-format
-msgid "%lld day until full"
-msgid_plural "%lld days until full"
-msgstr[0] "%lld dag til fullt"
-msgstr[1] "%lld dager til fullt"
-
-#: src/Widgets/DeviceRow.vala:113
-#, c-format
-msgid "%lld hour until full"
-msgid_plural "%lld hours until full"
-msgstr[0] "%lld time til fullt"
-msgstr[1] "%lld timer til fullt"
-
-#: src/Widgets/DeviceRow.vala:121
-#, c-format
-msgid "%lld minute until full"
-msgid_plural "%lld minutes until full"
-msgstr[0] "%lld minutt til fullt"
-msgstr[1] "%lld minutter til fullt"
-
-#: src/Widgets/DeviceRow.vala:128
-#, c-format
-msgid "%lld second until full"
-msgid_plural "%lld seconds until full"
-msgstr[0] "%lld sekund til fullt"
-msgstr[1] "%lld sekunder til fullt"
-
-#: src/Widgets/DeviceRow.vala:135
-#, c-format
-msgid "%i%% remaining"
-msgstr "%i%% gjenstår"
-
-#: src/Widgets/DeviceRow.vala:145
-#, c-format
-msgid "%lld day until empty"
-msgid_plural "%lld days until empty"
-msgstr[0] "%lld dag til det er tomt"
-msgstr[1] "%lld dager til det er tomt"
-
-#: src/Widgets/DeviceRow.vala:153
-#, c-format
-msgid "%lld hour until empty"
-msgid_plural "%lld hours until empty"
-msgstr[0] "%lld time til det er tomt"
-msgstr[1] "%lld timer til det er tomt"
-
-#: src/Widgets/DeviceRow.vala:161
-#, c-format
-msgid "%lld minute until empty"
-msgid_plural "%lld minutes until empty"
-msgstr[0] "%lld minutt til det er tomt"
-msgstr[1] "%lld minutter til det er tomt"
-
-#: src/Widgets/DeviceRow.vala:168
-#, c-format
-msgid "%lld second until empty"
-msgid_plural "%lld seconds until empty"
-msgstr[0] "%lld sekund til det er tomt"
-msgstr[1] "%lld sekunder til det er tomt"
-
-#: src/Widgets/DeviceRow.vala:190
 msgid "Device"
 msgstr "Enhet"
 
@@ -169,6 +169,9 @@ msgstr "Vis prosent"
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
 msgstr "Strøminnstillinger …"
+
+#~ msgid "Battery: %i%%"
+#~ msgstr "Batteri: %i%%"
 
 #~ msgid "Power"
 #~ msgstr "Strøm"
