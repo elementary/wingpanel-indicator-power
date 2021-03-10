@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-09 16:55+0000\n"
-"PO-Revision-Date: 2021-02-28 14:56+0000\n"
+"PO-Revision-Date: 2021-03-10 15:38+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/de/>\n"
@@ -22,7 +22,7 @@ msgstr "Prozentanzeige umschalten mit Mittelklick"
 #: src/Indicator.vala:142
 #, c-format
 msgid "%s: %s"
-msgstr ""
+msgstr "%s: %s"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
