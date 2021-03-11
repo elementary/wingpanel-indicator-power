@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-09 16:55+0000\n"
-"PO-Revision-Date: 2021-02-17 14:18+0000\n"
+"PO-Revision-Date: 2021-03-11 10:13+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/sr/>\n"
@@ -23,7 +23,7 @@ msgstr "Средњи клик за окидање процената"
 #: src/Indicator.vala:142
 #, c-format
 msgid "%s: %s"
-msgstr ""
+msgstr "%s: %s"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -157,7 +157,7 @@ msgstr "Програми који троше много енергије"
 
 #: src/Widgets/AppList.vala:109
 msgid "Unknown App"
-msgstr ""
+msgstr "Непознат програм"
 
 #: src/Widgets/DeviceRow.vala:95
 msgid "Device"
@@ -167,7 +167,7 @@ msgstr "Уређај"
 #: src/Widgets/DisplayWidget.vala:31
 #, c-format
 msgid "%i%%"
-msgstr ""
+msgstr "%i%%"
 
 #: src/Widgets/PopoverWidget.vala:53
 msgid "Show Percentage"
