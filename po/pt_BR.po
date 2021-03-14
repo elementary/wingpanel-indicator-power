@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-09 16:55+0000\n"
-"PO-Revision-Date: 2021-03-12 20:18+0000\n"
+"PO-Revision-Date: 2021-03-14 16:45+0000\n"
 "Last-Translator: Leonardo <leonardo@elementary.io>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "wingpanel/wingpanel-indicator-power/pt_BR/>\n"
@@ -166,7 +166,7 @@ msgstr "Mostrar porcentagem"
 
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
-msgstr "Configurações de Energia…"
+msgstr "Configurações de energia…"
 
 #, fuzzy
 #~| msgid "Battery"
