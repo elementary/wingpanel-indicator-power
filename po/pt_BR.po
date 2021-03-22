@@ -2,28 +2,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-27 15:09+0000\n"
-"PO-Revision-Date: 2018-08-30 00:09+0000\n"
-"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
+"POT-Creation-Date: 2021-03-09 16:55+0000\n"
+"PO-Revision-Date: 2021-03-14 16:45+0000\n"
+"Last-Translator: Leonardo <leonardo@elementary.io>\n"
+"Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "wingpanel/wingpanel-indicator-power/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:140
+#: src/Indicator.vala:139
 msgid "Middle-click to toggle percentage"
 msgstr ""
 
-#: src/Indicator.vala:143
-#, fuzzy, c-format
-#| msgid "Battery"
-msgid "Battery: %i%%"
-msgstr "Bateria"
+#: src/Indicator.vala:142
+#, c-format
+msgid "%s: %s"
+msgstr ""
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -67,11 +66,81 @@ msgstr "Computador"
 
 #: src/Services/Device.vala:85
 msgid "Controller"
-msgstr ""
+msgstr "Controlador"
 
 #: src/Services/Device.vala:87
 msgid "Pen"
 msgstr ""
+
+#: src/Services/Device.vala:273
+msgid "Calculating…"
+msgstr "Calculando…"
+
+#: src/Services/Device.vala:279
+#, c-format
+msgid "%i%% charged"
+msgstr "%i%% carregado"
+
+#: src/Services/Device.vala:287
+#, c-format
+msgid "%lld day until full"
+msgid_plural "%lld days until full"
+msgstr[0] "%lld dia até completo"
+msgstr[1] "%lld dias até completo"
+
+#: src/Services/Device.vala:295
+#, c-format
+msgid "%lld hour until full"
+msgid_plural "%lld hours until full"
+msgstr[0] "%lld hora até completo"
+msgstr[1] "%lld horas até completo"
+
+#: src/Services/Device.vala:303
+#, c-format
+msgid "%lld minute until full"
+msgid_plural "%lld minutes until full"
+msgstr[0] "%lld minuto até completo"
+msgstr[1] "%lld minutos até completo"
+
+#: src/Services/Device.vala:310
+#, c-format
+msgid "%lld second until full"
+msgid_plural "%lld seconds until full"
+msgstr[0] "%lld segundo até completo"
+msgstr[1] "%lld segundos até completo"
+
+#: src/Services/Device.vala:317
+#, c-format
+msgid "%i%% remaining"
+msgstr "%i%% restantes"
+
+#: src/Services/Device.vala:325
+#, c-format
+msgid "%lld day until empty"
+msgid_plural "%lld days until empty"
+msgstr[0] "%lld dia até acabar"
+msgstr[1] "%lld dias até acabar"
+
+#: src/Services/Device.vala:333
+#, c-format
+msgid "%lld hour until empty"
+msgid_plural "%lld hours until empty"
+msgstr[0] "%lld hora até acabar"
+msgstr[1] "%lld horas até acabar"
+
+#: src/Services/Device.vala:341
+#, c-format
+msgid "%lld minute until empty"
+msgid_plural "%lld minutes until empty"
+msgstr[0] "%lld minuto até acabar"
+msgstr[1] "%lld minutos até acabar"
+
+#: src/Services/Device.vala:348
+#, c-format
+msgid "%lld second until empty"
+msgid_plural "%lld seconds until empty"
+msgstr[0] "%lld segundo até acabar"
+msgstr[1] "%lld segundos até acabar"
 
 #: src/Widgets/AppList.vala:63
 msgid "Apps Using Lots of Power"
@@ -81,77 +150,7 @@ msgstr "Aplicativos gastando muita energia"
 msgid "Unknown App"
 msgstr ""
 
-#: src/Widgets/DeviceRow.vala:89
-msgid "Calculating…"
-msgstr "Calculando…"
-
 #: src/Widgets/DeviceRow.vala:95
-#, c-format
-msgid "%i%% charged"
-msgstr "%i%% carregado"
-
-#: src/Widgets/DeviceRow.vala:105
-#, c-format
-msgid "%lld day until full"
-msgid_plural "%lld days until full"
-msgstr[0] "%lld dia até completo"
-msgstr[1] "%lld dias até completo"
-
-#: src/Widgets/DeviceRow.vala:113
-#, c-format
-msgid "%lld hour until full"
-msgid_plural "%lld hours until full"
-msgstr[0] "%lld hora até completo"
-msgstr[1] "%lld horas até completo"
-
-#: src/Widgets/DeviceRow.vala:121
-#, c-format
-msgid "%lld minute until full"
-msgid_plural "%lld minutes until full"
-msgstr[0] "%lld minuto até completo"
-msgstr[1] "%lld minutos até completo"
-
-#: src/Widgets/DeviceRow.vala:128
-#, c-format
-msgid "%lld second until full"
-msgid_plural "%lld seconds until full"
-msgstr[0] "%lld segundo até completo"
-msgstr[1] "%lld segundos até completo"
-
-#: src/Widgets/DeviceRow.vala:135
-#, c-format
-msgid "%i%% remaining"
-msgstr "%i%% restantes"
-
-#: src/Widgets/DeviceRow.vala:145
-#, c-format
-msgid "%lld day until empty"
-msgid_plural "%lld days until empty"
-msgstr[0] "%lld dia até acabar"
-msgstr[1] "%lld dias até acabar"
-
-#: src/Widgets/DeviceRow.vala:153
-#, c-format
-msgid "%lld hour until empty"
-msgid_plural "%lld hours until empty"
-msgstr[0] "%lld hora até acabar"
-msgstr[1] "%lld horas até acabar"
-
-#: src/Widgets/DeviceRow.vala:161
-#, c-format
-msgid "%lld minute until empty"
-msgid_plural "%lld minutes until empty"
-msgstr[0] "%lld minuto até acabar"
-msgstr[1] "%lld minutos até acabar"
-
-#: src/Widgets/DeviceRow.vala:168
-#, c-format
-msgid "%lld second until empty"
-msgid_plural "%lld seconds until empty"
-msgstr[0] "%lld segundo até acabar"
-msgstr[1] "%lld segundos até acabar"
-
-#: src/Widgets/DeviceRow.vala:190
 msgid "Device"
 msgstr "Dispositivo"
 
@@ -167,7 +166,12 @@ msgstr "Mostrar porcentagem"
 
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Power Settings…"
-msgstr "Configurações de Energia…"
+msgstr "Configurações de energia…"
+
+#, fuzzy
+#~| msgid "Battery"
+#~ msgid "Battery: %i%%"
+#~ msgstr "Bateria"
 
 #~ msgid "Power"
 #~ msgstr "Energia"

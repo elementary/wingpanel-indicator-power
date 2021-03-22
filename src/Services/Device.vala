@@ -229,7 +229,7 @@ public class Power.Services.Device : Object {
 
     public string get_icon_name_for_battery () {
         if (!is_a_battery) {
-            return "battery-ac-adapter";
+            return "preferences-system-power-symbolic";
         }
         if (percentage == 100 && is_charging) {
             return "battery-full-charged";
@@ -264,5 +264,95 @@ public class Power.Services.Device : Object {
         }
 
         return "battery-full";
+    }
+
+    public string get_info () {
+        var percent = (int)Math.round (percentage);
+
+        if (percent <= 0) {
+            return _("Calculating…");
+        }
+
+        var info = "";
+
+        if (is_charging) {
+            info += _("%i%% charged").printf (percent);
+
+            if (time_to_full > 0) {
+                info += " - ";
+                if (time_to_full >= 86400) {
+                    var days = time_to_full / 86400;
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld day until full",
+                        "%lld days until full",
+                        (ulong) days
+                    ).printf (days);
+                } else if (time_to_full >= 3600) {
+                    var hours = time_to_full / 3600;
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld hour until full",
+                        "%lld hours until full",
+                        (ulong) hours
+                    ).printf (hours);
+                } else if (time_to_full >= 60) {
+                    var minutes = time_to_full / 60;
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld minute until full",
+                        "%lld minutes until full",
+                        (ulong) minutes
+                    ).printf (minutes);
+                } else {
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld second until full",
+                        "%lld seconds until full",
+                        (ulong) time_to_full
+                    ).printf (time_to_full);
+                }
+            }
+        } else {
+            info += _("%i%% remaining").printf (percent);
+
+            if (time_to_empty > 0) {
+                info += " - ";
+                if (time_to_empty >= 86400) {
+                    var days = time_to_empty / 86400;
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld day until empty",
+                        "%lld days until empty",
+                        (ulong) days
+                    ).printf (days);
+                } else if (time_to_empty >= 3600) {
+                    var hours = time_to_empty / 3600;
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld hour until empty",
+                        "%lld hours until empty",
+                        (ulong) hours
+                    ).printf (hours);
+                } else if (time_to_empty >= 60) {
+                    var minutes = time_to_empty / 60;
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld minute until empty",
+                        "%lld minutes until empty",
+                        (ulong) minutes
+                    ).printf (minutes);
+                } else {
+                    info += dngettext (
+                        Constants.GETTEXT_PACKAGE,
+                        "%lld second until empty",
+                        "%lld seconds until empty",
+                        (ulong) time_to_empty
+                    ).printf (time_to_empty);
+                }
+            }
+        }
+
+        return info;
     }
 }
