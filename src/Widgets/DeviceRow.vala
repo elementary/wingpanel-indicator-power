@@ -83,9 +83,10 @@ public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
 
     private string get_title () {
         unowned string? type_string = battery.device_type.get_name ();
-        if (battery.model != "" && (
-                battery.device_type == Power.Services.Device.Type.PHONE ||
-                battery.device_type == Power.Services.Device.Type.TABLET)) {
+        if (  ( battery.device_type == Power.Services.Device.Type.PHONE ||
+                battery.device_type == Power.Services.Device.Type.TABLET ||
+                battery.device_type == Power.Services.Device.Type.COMPUTER )
+                 && battery.model != "" ) {
             type_string = battery.model;
         }
 
