@@ -223,7 +223,6 @@ public class Power.Services.Device : Object {
         properties_updated ();
     }
 
-
     public string get_symbolic_icon_name_for_battery () {
         return get_icon_name_for_battery () + "-symbolic";
     }
