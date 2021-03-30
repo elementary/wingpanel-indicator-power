@@ -91,11 +91,21 @@ public class Power.Services.DeviceManager : Object {
             // Add Display Device for Panel display
             var display_device_path = upower.get_display_device ();
             display_device = new Device (display_device_path);
+            /* For some reason line AC power does not appear here */
+            bool display_device_unknown = display_device.device_type.get_name () == null;
 
             // Fetch other devices for Detail in Panel
             var devices = upower.enumerate_devices ();
 
             foreach (ObjectPath device_path in devices) {
+                if (display_device_unknown) {
+                    var tmp_device = new Device (device_path);
+                    if (tmp_device.power_supply) { // Includes Line AC Power
+                        display_device = tmp_device;
+                        display_device_unknown = false;
+                    }
+                }
+
                 if (determine_attached_device (device_path) == true) {
                     register_device (device_path);
                 }

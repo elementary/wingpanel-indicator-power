@@ -24,8 +24,7 @@ public class Power.Indicator : Wingpanel.Indicator {
 
     private Widgets.PopoverWidget? popover_widget = null;
 
-    private Services.Device display_device;
-    private bool notify_battery = false;
+    private Services.Device? display_device = null;
 
     public Indicator (bool is_in_session) {
         Object (
@@ -39,13 +38,13 @@ public class Power.Indicator : Wingpanel.Indicator {
             display_widget = new Widgets.DisplayWidget ();
 
             var dm = Services.DeviceManager.get_default ();
-
             /* No need to display the indicator when the device is completely in AC mode */
             if (dm.has_battery || dm.backlight.present) {
                 update_visibility ();
             }
 
             dm.notify["has-battery"].connect (update_visibility);
+            dm.notify["display-device"].connect (update_display_device);
         }
 
         return display_widget;
@@ -79,16 +78,8 @@ public class Power.Indicator : Wingpanel.Indicator {
         if (visible) {
             if (dm.has_battery) {
                 update_display_device ();
-                if (!notify_battery) {
-                    dm.notify["display-device"].connect (update_display_device);
-                    notify_battery = true;
-                }
             } else {
                 show_backlight_data ();
-                if (notify_battery) {
-                    dm.notify["display-device"].disconnect (update_display_device);
-                    notify_battery = false;
-                }
             }
         }
 
@@ -105,6 +96,8 @@ public class Power.Indicator : Wingpanel.Indicator {
             show_display_device_data ();
             display_device.properties_updated.connect (show_display_device_data);
         }
+
+        update_tooltip ();
     }
 
     private void show_display_device_data () {
@@ -115,12 +108,10 @@ public class Power.Indicator : Wingpanel.Indicator {
             /* Debug output for designers */
             debug ("Icon changed to \"%s\"", icon_name);
 
-            var percent = (int)Math.round (display_device.percentage);
-
-            if (percent <= 0) {
+            if (display_device.percentage <= 0) {
                 display_widget.allow_percent = false;
             } else {
-                display_widget.percentage = percent;
+                display_widget.percentage = (int)Math.round (display_device.percentage);
                 display_widget.allow_percent = true;
             }
 
@@ -136,10 +127,20 @@ public class Power.Indicator : Wingpanel.Indicator {
     }
 
     private void update_tooltip () {
-        var secondary_text = _("Middle-click to toggle percentage");
+        string primary_text;
+        string secondary_text;
+
+        if (display_device.is_a_battery) {
+            primary_text = _("%s: %s").printf (display_device.device_type.get_name (), display_device.get_info ());
+            secondary_text = _("Middle-click to toggle percentage");
+
+        } else {
+            primary_text = display_device.device_type.get_name ();
+            secondary_text = _("Using an external power source");
+        }
 
         display_widget.tooltip_markup = "%s\n%s".printf (
-            _("%s: %s").printf (display_device.device_type.get_name (), display_device.get_info ()),
+            primary_text,
             Granite.TOOLTIP_SECONDARY_TEXT_MARKUP.printf (secondary_text)
         );
     }
