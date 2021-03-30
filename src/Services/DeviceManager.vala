@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2015 elementary LLC. (https://elementary.io)
+ * Copyright (c) 2011-2021 elementary LLC. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -21,9 +21,13 @@ public class Power.Services.DeviceManager : Object {
     private const string UPOWER_INTERFACE = "org.freedesktop.UPower";
     private const string UPOWER_PATH = "/org/freedesktop/UPower";
 
+    private const string POWER_SETTINGS_INTERFACE = "org.gnome.SettingsDaemon.Power";
+    private const string POWER_SETTINGS_PATH = "/org/gnome/SettingsDaemon/Power";
+
     private static DeviceManager? instance = null;
 
     private DBusInterfaces.UPower? upower = null;
+    private DBusInterfaces.PowerSettings? iscreen = null;
 
     public Services.Backlight backlight { get; construct; }
     public Gee.HashMap<string, Device> devices { get; private set; }
@@ -32,9 +36,25 @@ public class Power.Services.DeviceManager : Object {
     public bool has_battery { get; private set; }
     public bool on_battery { get; private set; }
     public bool on_low_battery { get; private set; }
+    public int brightness {
+        get {
+            if (backlight.present && iscreen != null) {
+                return iscreen.brightness;
+            } else {
+                return -1;
+            }
+        }
+
+        set {
+            if (backlight.present && iscreen != null) {
+                iscreen.brightness = value.clamp (0, 100);
+            }
+        }
+    }
 
     public signal void battery_registered (string device_path, Device battery);
     public signal void battery_deregistered (string device_path);
+    public signal void brightness_changed (int brightness);
 
     construct {
         backlight = new Services.Backlight ();
@@ -62,13 +82,25 @@ public class Power.Services.DeviceManager : Object {
         devices = new Gee.HashMap<string, Device> ();
 
         try {
-            upower = yield Bus.get_proxy (BusType.SYSTEM, UPOWER_INTERFACE, UPOWER_PATH, DBusProxyFlags.NONE);
-
+            upower = yield Bus.get_proxy (
+                BusType.SYSTEM,
+                UPOWER_INTERFACE,
+                UPOWER_PATH,
+                DBusProxyFlags.NONE
+            );
             debug ("Connection to UPower bus established");
 
-            return upower != null;
+            iscreen = yield Bus.get_proxy (
+                BusType.SESSION,
+                POWER_SETTINGS_INTERFACE,
+                POWER_SETTINGS_PATH,
+                DBusProxyFlags.GET_INVALIDATED_PROPERTIES
+            );
+            debug ("Connection to Power Settings bus established");
+
+            return true;
         } catch (Error e) {
-            critical ("Connecting to UPower bus failed: %s", e.message);
+            critical ("Connecting to UPower or PowerSettings bus failed: %s", e.message);
 
             return false;
         }
@@ -87,6 +119,10 @@ public class Power.Services.DeviceManager : Object {
     }
 
     public void read_devices () {
+        if (upower == null) {
+            return;
+        }
+
         try {
             // Add Display Device for Panel display
             var display_device_path = upower.get_display_device ();
@@ -105,7 +141,7 @@ public class Power.Services.DeviceManager : Object {
         }
     }
 
-    private void connect_signals () {
+    private void connect_signals () requires upower != null && iscreen != null {
         upower.g_properties_changed.connect (() => {
             update_properties ();
             update_batteries ();
@@ -113,9 +149,16 @@ public class Power.Services.DeviceManager : Object {
 
         upower.DeviceAdded.connect (register_device);
         upower.DeviceRemoved.connect (deregister_device);
+
+        ((DBusProxy)iscreen).g_properties_changed.connect ((changed_properties, invalidated_properties) => {
+            var changed_brightness = changed_properties.lookup_value ("Brightness", new VariantType ("i"));
+            if (changed_brightness != null) {
+                brightness_changed (changed_brightness.get_int32 ());
+            }
+        });
     }
 
-    private void update_properties () {
+    private void update_properties () requires upower != null {
         on_battery = upower.on_battery;
     }
 
@@ -157,6 +200,14 @@ public class Power.Services.DeviceManager : Object {
 
         if (device.is_a_battery) {
             battery_deregistered (device_path);
+        }
+    }
+
+    public void change_brightness (int change) {
+        if (iscreen != null) {
+            if (change.abs () > 1) {
+                brightness = iscreen.brightness + change;
+            }
         }
     }
 }
