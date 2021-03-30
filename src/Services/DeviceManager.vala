@@ -141,7 +141,7 @@ public class Power.Services.DeviceManager : Object {
         }
     }
 
-    private void connect_signals () requires upower != null && iscreen != null {
+    private void connect_signals () requires (upower != null && iscreen != null) {
         upower.g_properties_changed.connect (() => {
             update_properties ();
             update_batteries ();
@@ -158,7 +158,7 @@ public class Power.Services.DeviceManager : Object {
         });
     }
 
-    private void update_properties () requires upower != null {
+    private void update_properties () requires (upower != null) {
         on_battery = upower.on_battery;
     }
 
