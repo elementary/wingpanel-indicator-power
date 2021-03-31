@@ -225,6 +225,7 @@ public class Power.Services.Device : Object {
 
     private Power.Services.Device.Type determine_device_type () {
         // In case a all-in-one keyboard is clasified as mouse because of a mouse pointer. we should show it as keyboard.
+        // referenced upstream issue https://gitlab.freedesktop.org/upower/upower/-/issues/139
         if (device.Type == Type.MOUSE && device.model.contains ("keyboard")) {
             return (Power.Services.Device.Type) Type.KEYBOARD;
         }
