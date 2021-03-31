@@ -82,17 +82,22 @@ public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
     }
 
     private string get_title () {
-        unowned string? type_string = battery.device_type.get_name ();
-        if (battery.model != "" && (
-                battery.device_type == Power.Services.Device.Type.PHONE ||
-                battery.device_type == Power.Services.Device.Type.TABLET)) {
-            type_string = battery.model;
+        string? type_string = battery.device_type.get_name ();
+
+        switch (battery.device_type) {
+            case Power.Services.Device.Type.COMPUTER:
+            case Power.Services.Device.Type.PHONE:
+            case Power.Services.Device.Type.TABLET:
+                if (battery.model != "") {
+                    type_string = battery.model;
+                }
+                break;
         }
 
-        if (type_string != null) {
-            return "<b>%s</b>".printf (type_string);
-        } else {
-            return "<b>%s %s</b>".printf (battery.vendor, _("Device"));
+        if (type_string == null) {
+            type_string = "%s %s".printf (battery.vendor, _("Device"));
         }
+
+        return "<b>%s</b>".printf (type_string);
     }
 }
