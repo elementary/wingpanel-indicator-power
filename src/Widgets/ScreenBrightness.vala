@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2016 elementary LLC. (https://elementary.io)
+ * Copyright (c) 2011-2021 elementary LLC. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -18,15 +18,12 @@
  */
 
 public class Power.Widgets.ScreenBrightness : Gtk.Grid {
-    private const string DBUS_PATH = "/org/gnome/SettingsDaemon/Power";
-    private const string DBUS_NAME = "org.gnome.SettingsDaemon.Power";
-
     private Gtk.Scale brightness_slider;
-    private Services.DBusInterfaces.PowerSettings iscreen;
+    private Power.Services.DeviceManager dm;
 
     construct {
+        dm = Power.Services.DeviceManager.get_default ();
         column_spacing = 6;
-        init_bus.begin ();
 
         var image = new Gtk.Image.from_icon_name ("brightness-display-symbolic", Gtk.IconSize.DIALOG);
         image.margin_start = 6;
@@ -42,42 +39,19 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
             on_scale_value_changed.begin ();
         });
 
-        ((DBusProxy)iscreen).g_properties_changed.connect (on_screen_properties_changed);
+        dm.brightness_changed.connect ((brightness) => {
+            brightness_slider.value_changed.disconnect (on_scale_value_changed);
+            brightness_slider.set_value ((double)brightness);
+            brightness_slider.value_changed.connect (on_scale_value_changed);
+        });
 
-        brightness_slider.set_value (iscreen.brightness);
+        brightness_slider.set_value (dm.brightness);
 
         attach (image, 0, 0);
         attach (brightness_slider, 1, 0);
     }
 
-    private void on_screen_properties_changed (Variant changed_properties, string[] invalidated_properties) {
-        var changed_brightness = changed_properties.lookup_value ("Brightness", new VariantType ("i"));
-        if (changed_brightness != null) {
-            var val = iscreen.brightness;
-
-            brightness_slider.value_changed.disconnect (on_scale_value_changed);
-            brightness_slider.set_value (val);
-            brightness_slider.value_changed.connect (on_scale_value_changed);
-        }
-    }
-
-    private async void init_bus () {
-        try {
-            iscreen = Bus.get_proxy_sync (
-                BusType.SESSION,
-                DBUS_NAME,
-                DBUS_PATH,
-                DBusProxyFlags.GET_INVALIDATED_PROPERTIES
-            );
-        } catch (IOError e) {
-            warning ("screen brightness error %s", e.message);
-        }
-    }
-
     private async void on_scale_value_changed () {
-        int val = (int) brightness_slider.get_value ();
-        if (iscreen.brightness != val) {
-            iscreen.brightness = val;
-        }
+        dm.brightness = (int) brightness_slider.get_value ();
     }
 }
