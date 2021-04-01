@@ -212,7 +212,7 @@ public class Power.Services.Device : Object {
         native_path = device.native_path;
         serial = device.serial;
         vendor = device.vendor;
-        device_type = (Power.Services.Device.Type) device.Type;
+        device_type = determine_device_type ();
         state = (Power.Services.Device.State) device.state;
         technology = (Power.Services.Device.Technology) device.technology;
         update_time = device.update_time;
@@ -221,6 +221,15 @@ public class Power.Services.Device : Object {
         is_a_battery = device_type != Power.Services.Device.Type.UNKNOWN && device_type != Power.Services.Device.Type.LINE_POWER;
 
         properties_updated ();
+    }
+
+    private Power.Services.Device.Type determine_device_type () {
+        // In case a all-in-one keyboard is clasified as mouse because of a mouse pointer. we should show it as keyboard.
+        // referenced upstream issue https://gitlab.freedesktop.org/upower/upower/-/issues/139
+        if (device.Type == Type.MOUSE && device.model.contains ("keyboard")) {
+            return (Power.Services.Device.Type) Type.KEYBOARD;
+        }
+        return (Power.Services.Device.Type) device.Type;
     }
 
     public string get_symbolic_icon_name_for_battery () {
