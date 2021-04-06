@@ -192,6 +192,11 @@ public class Power.Indicator : Wingpanel.Indicator {
     }
 
     private void update_tooltip () {
+        if (display_device == null) {
+            display_widget.tooltip_markup = null;
+            return;
+        }
+
         string primary_text;
         string secondary_text;
 
@@ -201,13 +206,19 @@ public class Power.Indicator : Wingpanel.Indicator {
 
         } else {
             primary_text = display_device.device_type.get_name ();
-            secondary_text = _("Using an external power source");
+            secondary_text = null; //Just display the name.
         }
 
-        display_widget.tooltip_markup = "%s\n%s".printf (
-            primary_text,
-            Granite.TOOLTIP_SECONDARY_TEXT_MARKUP.printf (secondary_text)
-        );
+        if (primary_text == null) {
+            display_widget.tooltip_markup = null; //If there is no known display device no useful info can be shown?
+        } else if (secondary_text == null) {
+            display_widget.tooltip_markup = primary_text;
+        } else {
+            display_widget.tooltip_markup = "%s\n%s".printf (
+                primary_text,
+                Granite.TOOLTIP_SECONDARY_TEXT_MARKUP.printf (secondary_text)
+            );
+        }
     }
 }
 

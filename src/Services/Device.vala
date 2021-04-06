@@ -86,7 +86,7 @@ public class Power.Services.Device : Object {
                 case PEN:
                     return _("Pen");
                 case LINE_POWER:
-                    return _("Line Power");
+                    return _("Plugged In");
                 default:
                     return null;
             }
