@@ -58,15 +58,25 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         );
         show_percent_switch.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
+        var show_percent_sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
+             hexpand = true,
+             margin_top = 3,
+             margin_bottom = 3
+         };
+
+        var show_percent_grid = new Gtk.Grid ();
+        show_percent_grid.attach (show_percent_switch, 0, 0);
+        show_percent_grid.attach (show_percent_sep, 0, 1);
+
         var show_percent_revealer = new Gtk.Revealer ();
-        show_percent_revealer.add (show_percent_switch);
+        show_percent_revealer.add (show_percent_grid);
 
         var show_settings_button = new Gtk.ModelButton ();
         show_settings_button.text = _("Power Settings…");
 
         attach (show_percent_revealer, 0, 0);
         attach (device_list_revealer, 0, 1);
-        attach (device_separator_revealer, 0, 2);
+        attach (device_separator_revealer, 0, 3);
 
         if (dm.backlight.present) {
             var screen_brightness = new ScreenBrightness ();

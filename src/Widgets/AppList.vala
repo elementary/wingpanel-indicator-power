@@ -60,10 +60,7 @@ public class Power.Widgets.AppList : Gtk.ListBox {
         var eaters = app_manager.get_top_power_eaters (12);
 
         if (eaters.size > 0) {
-            var title_label = new Granite.HeaderLabel (_("Apps Using Lots of Power")) {
-                margin_start = 6
-            };
-
+            var title_label = new Granite.HeaderLabel (_("Apps Using Lots of Power"));
             add (title_label);
         }
 
