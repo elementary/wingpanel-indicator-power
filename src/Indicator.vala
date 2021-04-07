@@ -69,6 +69,8 @@ public class Power.Indicator : Wingpanel.Indicator {
 
                     return false;
                 });
+
+                dm.brightness_changed.connect (update_tooltip);
             }
         }
 
@@ -192,25 +194,25 @@ public class Power.Indicator : Wingpanel.Indicator {
     }
 
     private void update_tooltip () {
-        if (display_device == null) {
-            display_widget.tooltip_markup = null;
-            return;
+        string? primary_text = null;
+        string? secondary_text = null;
+        if (display_device != null) {
+            if (display_device.is_a_battery) {
+                primary_text = _("%s: %s").printf (display_device.device_type.get_name (), display_device.get_info ());
+                secondary_text = _("Middle-click to toggle percentage");
+
+            } else {
+                primary_text = display_device.device_type.get_name ();
+            }
         }
 
-        string primary_text;
-        string secondary_text;
-
-        if (display_device.is_a_battery) {
-            primary_text = _("%s: %s").printf (display_device.device_type.get_name (), display_device.get_info ());
-            secondary_text = _("Middle-click to toggle percentage");
-
-        } else {
-            primary_text = display_device.device_type.get_name ();
-            secondary_text = null; //Just display the name.
+        if (primary_text == null && dm.backlight.present) {
+            primary_text = _("Screen brightness: %i").printf ((int)(dm.brightness));
+            secondary_text = _("Scroll to change screen brightness");
         }
 
         if (primary_text == null) {
-            display_widget.tooltip_markup = null; //If there is no known display device no useful info can be shown?
+            display_widget.tooltip_markup = null;
         } else if (secondary_text == null) {
             display_widget.tooltip_markup = primary_text;
         } else {

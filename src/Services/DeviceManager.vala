@@ -127,35 +127,12 @@ public class Power.Services.DeviceManager : Object {
             // Add Display Device for Panel display
             var display_device_path = upower.get_display_device ();
             display_device = new Device (display_device_path);
-            /* For some reason line AC power does not appear here */
-            bool display_device_unknown = display_device.device_type.get_name () == null;
             // Fetch other devices for Detail in Panel
             var devices = upower.enumerate_devices ();
-            Device? power_supply = null;
-            Device? other_battery = null;
             foreach (ObjectPath device_path in devices) {
-                var tmp_device = new Device (device_path);
-                if (display_device_unknown) {
-                    if (tmp_device.device_type == Device.Type.BATTERY) {
-                        other_battery = tmp_device;
-                    } else if (tmp_device.power_supply) { // Includes Line AC Power
-                        power_supply = tmp_device;
-                    } else if (display_device_unknown) {
-                        display_device = tmp_device;
-                        display_device_unknown = false;
-                    }
-                }
-
                 if (determine_attached_device (device_path) == true) {
                     register_device (device_path);
                 }
-            }
-
-            //Prioritize showing batteries over power supplies
-            if (other_battery != null) {
-                display_device = other_battery;
-            } else if (power_supply != null) {
-                display_device = power_supply;
             }
         } catch (Error e) {
             critical ("Reading UPower devices failed: %s", e.message);
