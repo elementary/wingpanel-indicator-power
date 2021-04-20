@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-20 21:51+0000\n"
-"PO-Revision-Date: 2021-03-21 13:45+0000\n"
+"PO-Revision-Date: 2021-04-21 00:48+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/uk/>\n"
@@ -28,11 +28,11 @@ msgstr "Клацніть середньою клавішею, щоб показ�
 #: src/Indicator.vala:210
 #, c-format
 msgid "Screen brightness: %i"
-msgstr ""
+msgstr "Яскравість екрана: %i"
 
 #: src/Indicator.vala:211
 msgid "Scroll to change screen brightness"
-msgstr ""
+msgstr "Прокрутіть, щоб змінити яскравість екрана"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -84,7 +84,7 @@ msgstr "Електронний олівець"
 
 #: src/Services/Device.vala:89
 msgid "Plugged In"
-msgstr ""
+msgstr "Підключено"
 
 #: src/Services/Device.vala:286
 msgid "Calculating…"
