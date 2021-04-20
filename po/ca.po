@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 16:55+0000\n"
+"POT-Creation-Date: 2021-04-20 21:51+0000\n"
 "PO-Revision-Date: 2021-03-10 15:38+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/wingpanel/"
@@ -15,14 +15,23 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-19 06:17+0000\n"
 
-#: src/Indicator.vala:139
-msgid "Middle-click to toggle percentage"
-msgstr "Clic del mig per commutar el percentatge"
-
-#: src/Indicator.vala:142
+#: src/Indicator.vala:201
 #, c-format
 msgid "%s: %s"
 msgstr "%s: %s"
+
+#: src/Indicator.vala:202
+msgid "Middle-click to toggle percentage"
+msgstr "Clic del mig per commutar el percentatge"
+
+#: src/Indicator.vala:210
+#, c-format
+msgid "Screen brightness: %i"
+msgstr ""
+
+#: src/Indicator.vala:211
+msgid "Scroll to change screen brightness"
+msgstr ""
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -72,70 +81,74 @@ msgstr "Controlador"
 msgid "Pen"
 msgstr "Bolígraf"
 
-#: src/Services/Device.vala:273
+#: src/Services/Device.vala:89
+msgid "Plugged In"
+msgstr ""
+
+#: src/Services/Device.vala:286
 msgid "Calculating…"
 msgstr "S’està calculant…"
 
-#: src/Services/Device.vala:279
+#: src/Services/Device.vala:292
 #, c-format
 msgid "%i%% charged"
 msgstr "%i %% carregat"
 
-#: src/Services/Device.vala:287
+#: src/Services/Device.vala:300
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "%lld dia per carregar-se"
 msgstr[1] "%lld dies per carregar-se"
 
-#: src/Services/Device.vala:295
+#: src/Services/Device.vala:308
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld hora per carregar-se"
 msgstr[1] "%lld hores per carregar-se"
 
-#: src/Services/Device.vala:303
+#: src/Services/Device.vala:316
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld minut per carregar-se"
 msgstr[1] "%lld minuts per carregar-se"
 
-#: src/Services/Device.vala:310
+#: src/Services/Device.vala:323
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld segon per carregar-se"
 msgstr[1] "%lld segons per carregar-se"
 
-#: src/Services/Device.vala:317
+#: src/Services/Device.vala:330
 #, c-format
 msgid "%i%% remaining"
 msgstr "Queda un %i %%"
 
-#: src/Services/Device.vala:325
+#: src/Services/Device.vala:338
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "%lld dia fins que es buidi"
 msgstr[1] "%lld dies fins que es buidi"
 
-#: src/Services/Device.vala:333
+#: src/Services/Device.vala:346
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld hora fins que es buidi"
 msgstr[1] "%lld hores fins que es buidi"
 
-#: src/Services/Device.vala:341
+#: src/Services/Device.vala:354
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld minut fins que es buidi"
 msgstr[1] "%lld minuts fins que es buidi"
 
-#: src/Services/Device.vala:348
+#: src/Services/Device.vala:361
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -146,11 +159,11 @@ msgstr[1] "%lld segons fins que es buidi"
 msgid "Apps Using Lots of Power"
 msgstr "Aplicacions que consumeixen molta energia"
 
-#: src/Widgets/AppList.vala:109
+#: src/Widgets/AppList.vala:99
 msgid "Unknown App"
 msgstr "Aplicació desconeguda"
 
-#: src/Widgets/DeviceRow.vala:95
+#: src/Widgets/DeviceRow.vala:98
 msgid "Device"
 msgstr "Dispositiu"
 
@@ -160,11 +173,11 @@ msgstr "Dispositiu"
 msgid "%i%%"
 msgstr "%i %%"
 
-#: src/Widgets/PopoverWidget.vala:53
+#: src/Widgets/PopoverWidget.vala:56
 msgid "Show Percentage"
 msgstr "Mostra'n el percentatge"
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:75
 msgid "Power Settings…"
 msgstr "Paràmetres de l'energia…"
 

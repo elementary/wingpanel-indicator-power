@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 16:55+0000\n"
+"POT-Creation-Date: 2021-04-20 21:51+0000\n"
 "PO-Revision-Date: 2021-03-02 04:42+0000\n"
 "Last-Translator: david <dcardelleg@gmail.com>\n"
 "Language-Team: Galician <https://l10n.elementary.io/projects/wingpanel/"
@@ -15,13 +15,22 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:139
+#: src/Indicator.vala:201
+#, c-format
+msgid "%s: %s"
+msgstr ""
+
+#: src/Indicator.vala:202
 msgid "Middle-click to toggle percentage"
 msgstr "Pulse o botón central do rato para conmutar a porcentaxe"
 
-#: src/Indicator.vala:142
+#: src/Indicator.vala:210
 #, c-format
-msgid "%s: %s"
+msgid "Screen brightness: %i"
+msgstr ""
+
+#: src/Indicator.vala:211
+msgid "Scroll to change screen brightness"
 msgstr ""
 
 #: src/Services/Device.vala:65
@@ -72,70 +81,74 @@ msgstr ""
 msgid "Pen"
 msgstr ""
 
-#: src/Services/Device.vala:273
+#: src/Services/Device.vala:89
+msgid "Plugged In"
+msgstr ""
+
+#: src/Services/Device.vala:286
 msgid "Calculating…"
 msgstr "Calculando …"
 
-#: src/Services/Device.vala:279
+#: src/Services/Device.vala:292
 #, c-format
 msgid "%i%% charged"
 msgstr "%i%% cargados"
 
-#: src/Services/Device.vala:287
+#: src/Services/Device.vala:300
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "%lld día ata cheo"
 msgstr[1] "%lld días ata cheos"
 
-#: src/Services/Device.vala:295
+#: src/Services/Device.vala:308
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld hora ata chea"
 msgstr[1] "%lld horas ata cheas"
 
-#: src/Services/Device.vala:303
+#: src/Services/Device.vala:316
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld minuto ata cheo"
 msgstr[1] "%lld minutos ata completar"
 
-#: src/Services/Device.vala:310
+#: src/Services/Device.vala:323
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld segundo ata cheo"
 msgstr[1] "%lld segundos ata completar"
 
-#: src/Services/Device.vala:317
+#: src/Services/Device.vala:330
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% restantes"
 
-#: src/Services/Device.vala:325
+#: src/Services/Device.vala:338
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "%lld día ata que estea baleiro"
 msgstr[1] "%lld días ata que estea baleiro"
 
-#: src/Services/Device.vala:333
+#: src/Services/Device.vala:346
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld hora ata que estea baleira"
 msgstr[1] "%lld horas ata que estea baleira"
 
-#: src/Services/Device.vala:341
+#: src/Services/Device.vala:354
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld minuto ata que estea baleiro"
 msgstr[1] "%lld minutos ata que estea baleiro"
 
-#: src/Services/Device.vala:348
+#: src/Services/Device.vala:361
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -146,11 +159,11 @@ msgstr[1] "%lld segundos ata que estea baleiro"
 msgid "Apps Using Lots of Power"
 msgstr "Aplicacións que usan moito poder"
 
-#: src/Widgets/AppList.vala:109
+#: src/Widgets/AppList.vala:99
 msgid "Unknown App"
 msgstr ""
 
-#: src/Widgets/DeviceRow.vala:95
+#: src/Widgets/DeviceRow.vala:98
 msgid "Device"
 msgstr "Dispositivo"
 
@@ -160,11 +173,11 @@ msgstr "Dispositivo"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:53
+#: src/Widgets/PopoverWidget.vala:56
 msgid "Show Percentage"
 msgstr "Mostrar porcentaxe"
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:75
 msgid "Power Settings…"
 msgstr "Configuración de enerxía …"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 16:55+0000\n"
+"POT-Creation-Date: 2021-04-20 21:51+0000\n"
 "PO-Revision-Date: 2021-03-21 13:45+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/wingpanel/"
@@ -16,14 +16,23 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:139
-msgid "Middle-click to toggle percentage"
-msgstr "Клацніть середньою клавішею, щоб показати/сховати відсотки"
-
-#: src/Indicator.vala:142
+#: src/Indicator.vala:201
 #, c-format
 msgid "%s: %s"
 msgstr "%s: %s"
+
+#: src/Indicator.vala:202
+msgid "Middle-click to toggle percentage"
+msgstr "Клацніть середньою клавішею, щоб показати/сховати відсотки"
+
+#: src/Indicator.vala:210
+#, c-format
+msgid "Screen brightness: %i"
+msgstr ""
+
+#: src/Indicator.vala:211
+msgid "Scroll to change screen brightness"
+msgstr ""
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -73,16 +82,20 @@ msgstr "Контролер"
 msgid "Pen"
 msgstr "Електронний олівець"
 
-#: src/Services/Device.vala:273
+#: src/Services/Device.vala:89
+msgid "Plugged In"
+msgstr ""
+
+#: src/Services/Device.vala:286
 msgid "Calculating…"
 msgstr "Обчислення…"
 
-#: src/Services/Device.vala:279
+#: src/Services/Device.vala:292
 #, c-format
 msgid "%i%% charged"
 msgstr "%i%% заряджено"
 
-#: src/Services/Device.vala:287
+#: src/Services/Device.vala:300
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
@@ -90,7 +103,7 @@ msgstr[0] "%lld день до повного заряду"
 msgstr[1] "%lld дні до повного заряду"
 msgstr[2] "%lld днів до повного заряду"
 
-#: src/Services/Device.vala:295
+#: src/Services/Device.vala:308
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
@@ -98,7 +111,7 @@ msgstr[0] "%lld година до повного заряду"
 msgstr[1] "%lld години до повного заряду"
 msgstr[2] "%lld годин до повного заряду"
 
-#: src/Services/Device.vala:303
+#: src/Services/Device.vala:316
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
@@ -106,7 +119,7 @@ msgstr[0] "%lld хвилина до повного заряду"
 msgstr[1] "%lld хвилини до повного заряду"
 msgstr[2] "%lld хвилин до повного заряду"
 
-#: src/Services/Device.vala:310
+#: src/Services/Device.vala:323
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
@@ -114,12 +127,12 @@ msgstr[0] "%lld секунда до повного заряду"
 msgstr[1] "%lld секунди до повного заряду"
 msgstr[2] "%lld секунд до повного заряду"
 
-#: src/Services/Device.vala:317
+#: src/Services/Device.vala:330
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% залишилось"
 
-#: src/Services/Device.vala:325
+#: src/Services/Device.vala:338
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
@@ -127,7 +140,7 @@ msgstr[0] "%lld день до повного розрядження"
 msgstr[1] "%lld дні до повного розрядження"
 msgstr[2] "%lld днів до повного розрядження"
 
-#: src/Services/Device.vala:333
+#: src/Services/Device.vala:346
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
@@ -135,7 +148,7 @@ msgstr[0] "%lld година до повного розряду"
 msgstr[1] "%lld години до повного розряду"
 msgstr[2] "%lld годин до повного розряду"
 
-#: src/Services/Device.vala:341
+#: src/Services/Device.vala:354
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
@@ -143,7 +156,7 @@ msgstr[0] "%lld хвилина до повного розряду"
 msgstr[1] "%lld хвилини до повного розряду"
 msgstr[2] "%lld хвилин до повного розряду"
 
-#: src/Services/Device.vala:348
+#: src/Services/Device.vala:361
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -155,11 +168,11 @@ msgstr[2] "%lld секунд до повного розряду"
 msgid "Apps Using Lots of Power"
 msgstr "Застосунки, що використовують забагато енергії"
 
-#: src/Widgets/AppList.vala:109
+#: src/Widgets/AppList.vala:99
 msgid "Unknown App"
 msgstr "Невідомий застосунок"
 
-#: src/Widgets/DeviceRow.vala:95
+#: src/Widgets/DeviceRow.vala:98
 msgid "Device"
 msgstr "Пристрій"
 
@@ -169,11 +182,11 @@ msgstr "Пристрій"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:53
+#: src/Widgets/PopoverWidget.vala:56
 msgid "Show Percentage"
 msgstr "Показати відсотки"
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:75
 msgid "Power Settings…"
 msgstr "Параметри живлення…"
 
