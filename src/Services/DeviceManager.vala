@@ -127,10 +127,8 @@ public class Power.Services.DeviceManager : Object {
             // Add Display Device for Panel display
             var display_device_path = upower.get_display_device ();
             display_device = new Device (display_device_path);
-
             // Fetch other devices for Detail in Panel
             var devices = upower.enumerate_devices ();
-
             foreach (ObjectPath device_path in devices) {
                 if (determine_attached_device (device_path) == true) {
                     register_device (device_path);
@@ -165,7 +163,6 @@ public class Power.Services.DeviceManager : Object {
     private void update_batteries () {
         batteries = devices.filter ((entry) => {
             var device = entry.value;
-
             return device.is_a_battery;
         });
 
