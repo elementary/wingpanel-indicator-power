@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-20 21:51+0000\n"
-"PO-Revision-Date: 2021-03-09 21:18+0000\n"
+"PO-Revision-Date: 2021-04-21 06:36+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/he/>\n"
@@ -27,11 +27,11 @@ msgstr "יש ללחוץ לחיצה ימנית כדי להחליף מצב אחו�
 #: src/Indicator.vala:210
 #, c-format
 msgid "Screen brightness: %i"
-msgstr ""
+msgstr "בהירות המסך: %i"
 
 #: src/Indicator.vala:211
 msgid "Scroll to change screen brightness"
-msgstr ""
+msgstr "שינוי בהירות המסך בגלילה"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -83,7 +83,7 @@ msgstr "עט"
 
 #: src/Services/Device.vala:89
 msgid "Plugged In"
-msgstr ""
+msgstr "חיבור לחשמל"
 
 #: src/Services/Device.vala:286
 msgid "Calculating…"
