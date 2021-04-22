@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-20 21:51+0000\n"
-"PO-Revision-Date: 2021-03-10 15:38+0000\n"
+"PO-Revision-Date: 2021-04-22 11:55+0000\n"
 "Last-Translator: Alvaro <alvaroaraoz_92@hotmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/es/>\n"
@@ -27,11 +27,11 @@ msgstr "Pulse con el botón central del ratón para conmutar el porcentaje"
 #: src/Indicator.vala:210
 #, c-format
 msgid "Screen brightness: %i"
-msgstr ""
+msgstr "Brillo de la pantalla: %i"
 
 #: src/Indicator.vala:211
 msgid "Scroll to change screen brightness"
-msgstr ""
+msgstr "Desplácese para cambiar el brillo de la pantalla"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -83,7 +83,7 @@ msgstr "Lápiz"
 
 #: src/Services/Device.vala:89
 msgid "Plugged In"
-msgstr ""
+msgstr "Conectado"
 
 #: src/Services/Device.vala:286
 msgid "Calculating…"
