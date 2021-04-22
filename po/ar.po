@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 16:55+0000\n"
+"POT-Creation-Date: 2021-04-20 21:51+0000\n"
 "PO-Revision-Date: 2019-04-11 13:11+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/wingpanel/"
@@ -16,13 +16,22 @@ msgstr ""
 "X-Generator: Weblate 3.5.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:139
+#: src/Indicator.vala:201
+#, c-format
+msgid "%s: %s"
+msgstr ""
+
+#: src/Indicator.vala:202
 msgid "Middle-click to toggle percentage"
 msgstr ""
 
-#: src/Indicator.vala:142
+#: src/Indicator.vala:210
 #, c-format
-msgid "%s: %s"
+msgid "Screen brightness: %i"
+msgstr ""
+
+#: src/Indicator.vala:211
+msgid "Scroll to change screen brightness"
 msgstr ""
 
 #: src/Services/Device.vala:65
@@ -73,16 +82,20 @@ msgstr ""
 msgid "Pen"
 msgstr ""
 
-#: src/Services/Device.vala:273
+#: src/Services/Device.vala:89
+msgid "Plugged In"
+msgstr ""
+
+#: src/Services/Device.vala:286
 msgid "Calculating…"
 msgstr "جاري الحساب…"
 
-#: src/Services/Device.vala:279
+#: src/Services/Device.vala:292
 #, c-format
 msgid "%i%% charged"
 msgstr "%i%% مشحون"
 
-#: src/Services/Device.vala:287
+#: src/Services/Device.vala:300
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
@@ -93,7 +106,7 @@ msgstr[3] "%lld أيام حتى الإمتلاء"
 msgstr[4] "%lld يوم حتى الإمتلاء"
 msgstr[5] "%lld يوم حتى الإمتلاء"
 
-#: src/Services/Device.vala:295
+#: src/Services/Device.vala:308
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
@@ -104,7 +117,7 @@ msgstr[3] "%lld ساعات حتى الإمتلاء"
 msgstr[4] "%lld ساعة حتى الإمتلاء"
 msgstr[5] "%lld ساعة حتى الإمتلاء"
 
-#: src/Services/Device.vala:303
+#: src/Services/Device.vala:316
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
@@ -115,7 +128,7 @@ msgstr[3] "%lld دقائق حتى الإمتلاء"
 msgstr[4] "%lld دقيقة حتى الإمتلاء"
 msgstr[5] "%lld دقيقة حتى الإمتلاء"
 
-#: src/Services/Device.vala:310
+#: src/Services/Device.vala:323
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
@@ -126,12 +139,12 @@ msgstr[3] "%lld ثواني حتى الإمتلاء"
 msgstr[4] "%lld ثانية حتى الإمتلاء"
 msgstr[5] "%lld ثانية حتى الإمتلاء"
 
-#: src/Services/Device.vala:317
+#: src/Services/Device.vala:330
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% متبقي"
 
-#: src/Services/Device.vala:325
+#: src/Services/Device.vala:338
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
@@ -142,7 +155,7 @@ msgstr[3] "%lld أيام حتى تفرغ"
 msgstr[4] "%lld يوم حتى تفرغ"
 msgstr[5] "%lld يوم حتى تفرغ"
 
-#: src/Services/Device.vala:333
+#: src/Services/Device.vala:346
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
@@ -153,7 +166,7 @@ msgstr[3] "%lld ساعات حتى تفرغ"
 msgstr[4] "%lld ساعة حتى تفرغ"
 msgstr[5] "%lld ساعة حتى تفرغ"
 
-#: src/Services/Device.vala:341
+#: src/Services/Device.vala:354
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
@@ -164,7 +177,7 @@ msgstr[3] "%lld دقائق حتى تفرغ"
 msgstr[4] "%lld دقيقة حتى تفرغ"
 msgstr[5] "%lld دقيقة حتى تفرغ"
 
-#: src/Services/Device.vala:348
+#: src/Services/Device.vala:361
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -179,11 +192,11 @@ msgstr[5] "%lld ثانية حتى تفرغ"
 msgid "Apps Using Lots of Power"
 msgstr "تطبيقات تستهلك الطاقة"
 
-#: src/Widgets/AppList.vala:109
+#: src/Widgets/AppList.vala:99
 msgid "Unknown App"
 msgstr ""
 
-#: src/Widgets/DeviceRow.vala:95
+#: src/Widgets/DeviceRow.vala:98
 msgid "Device"
 msgstr "جهاز"
 
@@ -193,11 +206,11 @@ msgstr "جهاز"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:53
+#: src/Widgets/PopoverWidget.vala:56
 msgid "Show Percentage"
 msgstr "إظهار النسبة المئوية"
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:75
 msgid "Power Settings…"
 msgstr "إعدادات الطاقة…"
 

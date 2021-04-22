@@ -86,7 +86,7 @@ public class Power.Services.Device : Object {
                 case PEN:
                     return _("Pen");
                 case LINE_POWER:
-                case UNKNOWN:
+                    return _("Plugged In");
                 default:
                     return null;
             }
@@ -277,6 +277,10 @@ public class Power.Services.Device : Object {
 
     public string get_info () {
         var percent = (int)Math.round (percentage);
+
+        if (!is_a_battery) {
+            return "";
+        }
 
         if (percent <= 0) {
             return _("Calculating…");

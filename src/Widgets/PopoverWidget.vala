@@ -62,10 +62,9 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         show_percent_switch.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
         var show_percent_sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
-             hexpand = true,
-             margin_top = 3,
-             margin_bottom = 3
-         };
+            margin_top = 3,
+            margin_bottom = 3
+        };
 
         var show_percent_grid = new Gtk.Grid ();
         show_percent_grid.attach (show_percent_switch, 0, 0);
