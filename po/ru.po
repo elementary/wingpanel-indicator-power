@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-20 21:51+0000\n"
-"PO-Revision-Date: 2021-03-09 21:18+0000\n"
+"PO-Revision-Date: 2021-04-22 11:55+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ru/>\n"
@@ -28,11 +28,11 @@ msgstr "Нажмите средней кнопкой мыши, чтобы пер
 #: src/Indicator.vala:210
 #, c-format
 msgid "Screen brightness: %i"
-msgstr ""
+msgstr "Яркость экрана: %i"
 
 #: src/Indicator.vala:211
 msgid "Scroll to change screen brightness"
-msgstr ""
+msgstr "Прокрутите, чтобы изменить яркость экрана"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -84,7 +84,7 @@ msgstr "Перо"
 
 #: src/Services/Device.vala:89
 msgid "Plugged In"
-msgstr ""
+msgstr "Подключен"
 
 #: src/Services/Device.vala:286
 msgid "Calculating…"
