@@ -42,27 +42,29 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         var device_list_revealer = new Gtk.Revealer ();
         device_list_revealer.add (device_list);
 
-        var device_separator = new Wingpanel.Widgets.Separator ();
+        var device_separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
+            margin_top = 3,
+            margin_bottom = 3
+        };
 
         device_separator_revealer = new Gtk.Revealer ();
         device_separator_revealer.add (device_separator);
 
-        var last_separator = new Wingpanel.Widgets.Separator ();
+        var last_separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
+            margin_top = 3,
+            margin_bottom = 3
+        };
 
         last_separator_revealer = new Gtk.Revealer ();
         last_separator_revealer.add (last_separator);
 
-        var show_percent_switch = new Wingpanel.Widgets.Switch (
-            _("Show Percentage"),
-            settings.get_boolean ("show-percentage")
-        );
+        var show_percent_switch = new Granite.SwitchModelButton (_("Show Percentage"));
         show_percent_switch.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
         var show_percent_sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
-             hexpand = true,
-             margin_top = 3,
-             margin_bottom = 3
-         };
+            margin_top = 3,
+            margin_bottom = 3
+        };
 
         var show_percent_grid = new Gtk.Grid ();
         show_percent_grid.attach (show_percent_switch, 0, 0);
@@ -99,7 +101,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
             update_last_seperator_revealer ();
         });
 
-        settings.bind ("show-percentage", show_percent_switch.get_switch (), "active", SettingsBindFlags.DEFAULT);
+        settings.bind ("show-percentage", show_percent_switch, "active", SettingsBindFlags.DEFAULT);
 
         dm.bind_property (
             "has-battery",
