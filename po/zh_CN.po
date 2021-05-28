@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-20 21:51+0000\n"
-"PO-Revision-Date: 2021-02-19 18:06+0000\n"
+"PO-Revision-Date: 2021-05-28 11:31+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "wingpanel/wingpanel-indicator-power/zh_Hans/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 #: src/Indicator.vala:201
 #, c-format
 msgid "%s: %s"
-msgstr ""
+msgstr "%s: %s"
 
 #: src/Indicator.vala:202
 msgid "Middle-click to toggle percentage"
@@ -27,11 +27,11 @@ msgstr "单击鼠标中键显示百分比"
 #: src/Indicator.vala:210
 #, c-format
 msgid "Screen brightness: %i"
-msgstr ""
+msgstr "屏幕亮度： %i"
 
 #: src/Indicator.vala:211
 msgid "Scroll to change screen brightness"
-msgstr ""
+msgstr "调整滚动条更改屏幕亮度"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -83,7 +83,7 @@ msgstr "触控笔"
 
 #: src/Services/Device.vala:89
 msgid "Plugged In"
-msgstr ""
+msgstr "电源已接入"
 
 #: src/Services/Device.vala:286
 msgid "Calculating…"
@@ -153,7 +153,7 @@ msgstr "耗电较多的程序"
 
 #: src/Widgets/AppList.vala:99
 msgid "Unknown App"
-msgstr ""
+msgstr "未知应用"
 
 #: src/Widgets/DeviceRow.vala:98
 msgid "Device"
@@ -163,7 +163,7 @@ msgstr "设备"
 #: src/Widgets/DisplayWidget.vala:31
 #, c-format
 msgid "%i%%"
-msgstr ""
+msgstr "%i%%"
 
 #: src/Widgets/PopoverWidget.vala:56
 msgid "Show Percentage"
