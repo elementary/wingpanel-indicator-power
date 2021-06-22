@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-20 21:51+0000\n"
-"PO-Revision-Date: 2021-03-09 22:36+0000\n"
+"PO-Revision-Date: 2021-04-23 13:46+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "wingpanel/wingpanel-indicator-power/en_GB/>\n"
@@ -27,11 +27,11 @@ msgstr "Middle-click to toggle percentage"
 #: src/Indicator.vala:210
 #, c-format
 msgid "Screen brightness: %i"
-msgstr ""
+msgstr "Screen brightness: %i"
 
 #: src/Indicator.vala:211
 msgid "Scroll to change screen brightness"
-msgstr ""
+msgstr "Scroll to change screen brightness"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -83,7 +83,7 @@ msgstr "Pen"
 
 #: src/Services/Device.vala:89
 msgid "Plugged In"
-msgstr ""
+msgstr "Plugged In"
 
 #: src/Services/Device.vala:286
 msgid "Calculating…"
