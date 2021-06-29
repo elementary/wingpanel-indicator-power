@@ -29,55 +29,55 @@ public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
 
     construct {
         device_image = new Gtk.Image.from_icon_name ("battery", Gtk.IconSize.DIALOG) {
-					pixel_size = 48,
-					margin_end = 3
-				};
+          pixel_size = 48,
+          margin_end = 3
+        };
 
         battery_image = new Gtk.Image () {
-					pixel_size = 32,
-					halign = Gtk.Align.END,
-					valign = Gtk.Align.END
-				};
+          pixel_size = 32,
+          halign = Gtk.Align.END,
+          valign = Gtk.Align.END
+        };
 
         var overlay = new Gtk.Overlay ();
         overlay.add (device_image);
         overlay.add_overlay (battery_image);
 
         var title_label = new Gtk.Label (get_title ()) {
-					use_markup = true,
-					halign = Gtk.Align.START,
-					valign = Gtk.Align.END
-				};
+          use_markup = true,
+          halign = Gtk.Align.START,
+          valign = Gtk.Align.END
+        };
 
 
         var info_label = new Gtk.Label (battery.get_info ()) {
-					halign = Gtk.Align.START,
-					valign = Gtk.Align.START
-				};
+          halign = Gtk.Align.START,
+          valign = Gtk.Align.START
+        };
 
         var grid = new Gtk.Grid () {
-					column_spacing = 3,
-					margin = 3,
-					margin_start = 6,
-					margin_end = 12
-				};
+          column_spacing = 3,
+          margin = 3,
+          margin_start = 6,
+          margin_end = 12
+        };
         grid.attach (overlay, 0, 0, 1, 2);
         grid.attach (title_label, 1, 0);
         grid.attach (info_label, 1, 1);
 
-				var row = new Gtk.ModelButton();
-				row.add(grid);
+        var row = new Gtk.ModelButton();
+        row.add(grid);
 
-				add (row);
+        add (row);
 
         update_icons ();
-				row.clicked.connect((value) => {
-					try {
-						Process.spawn_command_line_async ("gnome-power-statistics");
-					} catch (SpawnError e) {
-						print ("Error opening Gnome Power Statistics: %s\n", e.message);
-					}
-				});
+        row.clicked.connect((value) => {
+          try {
+            Process.spawn_command_line_async ("gnome-power-statistics");
+          } catch (SpawnError e) {
+            print ("Error opening Gnome Power Statistics: %s\n", e.message);
+          }
+        });
 
         battery.properties_updated.connect (() => {
             update_icons ();
