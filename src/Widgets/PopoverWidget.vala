@@ -42,13 +42,8 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         var device_list_revealer = new Gtk.Revealer ();
         device_list_revealer.add (device_list);
 
-        var device_separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
-            margin_top = 3,
-            margin_bottom = 3
-        };
 
         device_separator_revealer = new Gtk.Revealer ();
-        device_separator_revealer.add (device_separator);
 
         var last_separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
             margin_top = 3,
