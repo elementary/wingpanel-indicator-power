@@ -65,13 +65,13 @@ public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
         grid.attach (title_label, 1, 0);
         grid.attach (info_label, 1, 1);
 
-        var row = new Gtk.ModelButton ();
-        row.add (grid);
+        var battery_button = new Gtk.Button ();
+        battery_button.add (grid);
 
-        add (row);
+        add (battery_button);
 
         update_icons ();
-        row.clicked.connect ((value) => {
+        battery_button.clicked.connect ((value) => {
           try {
             Process.spawn_command_line_async ("gnome-power-statistics");
           } catch (SpawnError e) {
