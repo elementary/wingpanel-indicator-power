@@ -32,6 +32,15 @@ public class Power.Widgets.DeviceList : Gtk.ListBox {
 
         // load all battery information.
         dm.read_devices ();
+
+				this.row_activated.connect ((value) => {
+					try {
+							AppInfo statistics_app = AppInfo.create_from_commandline ("gnome-power-statistics", "", AppInfoCreateFlags.NONE);
+							statistics_app.launch (null,null);
+					} catch (Error e) {
+							print ("Error opening Gnome Power Statistics: %s\n", e.message);
+					}
+				});
     }
 
     private void add_battery (string device_path, Services.Device battery) {
