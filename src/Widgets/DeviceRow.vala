@@ -72,11 +72,12 @@ public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
 
         update_icons ();
         battery_button.clicked.connect ((value) => {
-          try {
-            Process.spawn_command_line_async ("gnome-power-statistics");
-          } catch (SpawnError e) {
-            print ("Error opening Gnome Power Statistics: %s\n", e.message);
-          }
+            try {
+                AppInfo statistics_app = AppInfo.create_from_commandline ("gnome-power-statistics", "", AppInfoCreateFlags.NONE);
+                statistics_app.launch(null,null);
+            } catch (Error e) {
+                print ("Error opening Gnome Power Statistics: %s\n", e.message);
+            }
         });
 
         battery.properties_updated.connect (() => {
