@@ -42,13 +42,13 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         var device_list_revealer = new Gtk.Revealer ();
         device_list_revealer.add (device_list);
 
-				var device_separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
-				    margin_top = 3,
-				    margin_bottom = 3
-				};
+        var device_separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
+            margin_top = 3,
+            margin_bottom = 3
+        };
 
         device_separator_revealer = new Gtk.Revealer ();
-				device_separator_revealer.add (device_separator);
+        device_separator_revealer.add (device_separator);
 
         var last_separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
             margin_top = 3,
@@ -61,14 +61,14 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         var show_percent_switch = new Granite.SwitchModelButton (_("Show Percentage"));
         show_percent_switch.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
-				var show_percent_sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
-						margin_top = 3,
-						margin_bottom = 3
-				};
+        var show_percent_sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
+            margin_top = 3,
+            margin_bottom = 3
+        };
 
         var show_percent_grid = new Gtk.Grid ();
         show_percent_grid.attach (show_percent_switch, 0, 0);
-				show_percent_grid.attach (show_percent_sep, 0, 1);
+        show_percent_grid.attach (show_percent_sep, 0, 1);
 
         var show_percent_revealer = new Gtk.Revealer ();
         show_percent_revealer.add (show_percent_grid);
