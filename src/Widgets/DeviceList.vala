@@ -36,7 +36,7 @@ public class Power.Widgets.DeviceList : Gtk.ListBox {
         this.row_activated.connect ((value) => {
           try {
               AppInfo statistics_app = AppInfo.create_from_commandline ("gnome-power-statistics", "", AppInfoCreateFlags.NONE);
-              statistics_app.launch (null,null);
+              statistics_app.launch (null, null);
           } catch (Error e) {
               print ("Error opening Gnome Power Statistics: %s\n", e.message);
           }
