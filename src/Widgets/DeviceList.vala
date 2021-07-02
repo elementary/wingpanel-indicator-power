@@ -19,12 +19,14 @@
 
 public class Power.Widgets.DeviceList : Gtk.ListBox {
     public Gee.HashMap<string, Power.Widgets.DeviceRow> entries;
+    public Gee.HashMap<Gtk.ListBoxRow, string> path_entries;
 
     construct {
         selection_mode = Gtk.SelectionMode.NONE;
         set_sort_func (sort_function);
 
         entries = new Gee.HashMap<string, Power.Widgets.DeviceRow> ();
+        path_entries = new Gee.HashMap<Gtk.ListBoxRow, string> ();
 
         var dm = Services.DeviceManager.get_default ();
         dm.battery_registered.connect (add_battery);
@@ -34,8 +36,13 @@ public class Power.Widgets.DeviceList : Gtk.ListBox {
         dm.read_devices ();
 
         this.row_activated.connect ((value) => {
+          string device_path = path_entries.@get (value);
           try {
-              AppInfo statistics_app = AppInfo.create_from_commandline ("gnome-power-statistics", "", AppInfoCreateFlags.NONE);
+              AppInfo statistics_app = AppInfo.create_from_commandline (
+                "gnome-power-statistics --device " + device_path,
+                "",
+                AppInfoCreateFlags.NONE
+              );
               statistics_app.launch (null, null);
           } catch (Error e) {
               print ("Error opening Gnome Power Statistics: %s\n", e.message);
@@ -47,6 +54,7 @@ public class Power.Widgets.DeviceList : Gtk.ListBox {
         var device_row = new Power.Widgets.DeviceRow (battery);
 
         entries.@set (device_path, device_row);
+        path_entries.@set (device_row, device_path);
 
         add (device_row);
         show_all ();
