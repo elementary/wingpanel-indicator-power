@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-20 21:51+0000\n"
-"PO-Revision-Date: 2021-04-21 00:48+0000\n"
+"PO-Revision-Date: 2021-07-03 19:21+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/uk/>\n"
@@ -188,7 +188,7 @@ msgstr "Показати відсотки"
 
 #: src/Widgets/PopoverWidget.vala:75
 msgid "Power Settings…"
-msgstr "Параметри живлення…"
+msgstr "Налаштування живлення…"
 
 #~ msgid "Battery: %i%%"
 #~ msgstr "Батарея: %i%%"
