@@ -44,6 +44,8 @@ public class Power.Widgets.DeviceList : Gtk.ListBox {
                 AppInfoCreateFlags.NONE
               );
               statistics_app.launch (null, null);
+
+              (Gtk.Popover) get_ancestor (typeof (Gtk.Popover)).popdown ();
           } catch (Error e) {
               print ("Error opening Gnome Power Statistics: %s\n", e.message);
           }
