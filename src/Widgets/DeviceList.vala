@@ -36,19 +36,20 @@ public class Power.Widgets.DeviceList : Gtk.ListBox {
         dm.read_devices ();
 
         this.row_activated.connect ((value) => {
-          string device_path = path_entries.@get (value);
-          try {
-              AppInfo statistics_app = AppInfo.create_from_commandline (
-                "gnome-power-statistics --device " + device_path,
-                "",
-                AppInfoCreateFlags.NONE
-              );
-              statistics_app.launch (null, null);
+            string device_path = path_entries.@get (value);
+            try {
+                AppInfo statistics_app = AppInfo.create_from_commandline (
+                    "gnome-power-statistics --device " + device_path,
+                    "",
+                    AppInfoCreateFlags.NONE
+                );
+                statistics_app.launch (null, null);
 
-              (Gtk.Popover) get_ancestor (typeof (Gtk.Popover)).popdown ();
-          } catch (Error e) {
-              print ("Error opening Gnome Power Statistics: %s\n", e.message);
-          }
+                Gtk.Popover popover = (Gtk.Popover) get_ancestor (typeof (Gtk.Popover));
+                popover.popdown ();
+            } catch (Error e) {
+                print ("Error opening Gnome Power Statistics: %s\n", e.message);
+            }
         });
     }
 
