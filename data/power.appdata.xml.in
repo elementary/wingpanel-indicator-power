@@ -7,6 +7,24 @@
   <summary>View battery levels, adjust display brightness, and see apps using lots of power</summary>
   <icon type="stock">preferences-system-power</icon>
   <releases>
+    <release version="6.0.0" date="2021-07-14" urgency="medium">
+      <description>
+        <p>New features:</p>
+        <ul>
+          <li>Show battery statistics when selected</li>
+          <li>Launch apps using power when selected</li>
+          <li>Control display brightness by scrolling the indicator</li>
+        </ul>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Improvements for desktops with peripherals</li>
+          <li>Filter out internal devices</li>
+          <li>Show tooltip on hover</li>
+          <li>Performance improvements</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.2.0" date="2020-09-02" urgency="medium">
       <description>
         <p>Support for Controllers and Pens</p>
