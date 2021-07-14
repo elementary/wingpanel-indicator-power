@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-20 21:51+0000\n"
+"POT-Creation-Date: 2021-07-14 20:21+0000\n"
 "PO-Revision-Date: 2019-04-11 13:11+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/wingpanel/"
@@ -196,7 +196,7 @@ msgstr "تطبيقات تستهلك الطاقة"
 msgid "Unknown App"
 msgstr ""
 
-#: src/Widgets/DeviceRow.vala:98
+#: src/Widgets/DeviceRow.vala:104
 msgid "Device"
 msgstr "جهاز"
 
@@ -206,11 +206,11 @@ msgstr "جهاز"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:56
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "إظهار النسبة المئوية"
 
-#: src/Widgets/PopoverWidget.vala:75
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "إعدادات الطاقة…"
 

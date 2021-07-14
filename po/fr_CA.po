@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-20 21:51+0000\n"
+"POT-Creation-Date: 2021-07-14 20:21+0000\n"
 "PO-Revision-Date: 2018-06-05 10:21+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: French (Canada) <https://weblate.elementary.io/projects/"
@@ -163,7 +163,7 @@ msgstr "Applications utilisant beaucoup d'énergie"
 msgid "Unknown App"
 msgstr ""
 
-#: src/Widgets/DeviceRow.vala:98
+#: src/Widgets/DeviceRow.vala:104
 msgid "Device"
 msgstr "Appareil"
 
@@ -173,11 +173,11 @@ msgstr "Appareil"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:56
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "Afficher le pourcentage"
 
-#: src/Widgets/PopoverWidget.vala:75
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "Paramètres d'alimentation …"
 

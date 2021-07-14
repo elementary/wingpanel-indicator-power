@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wingpanel-indicator-power\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-20 21:51+0000\n"
+"POT-Creation-Date: 2021-07-14 20:21+0000\n"
 "PO-Revision-Date: 2017-05-04 20:05+0000\n"
 "Last-Translator: Rokar <rokartv10@gmail.com>\n"
 "Language-Team: ku (generated) <https://l10n.elementary.io/projects/wingpanel/"
@@ -168,7 +168,7 @@ msgstr "Bername ev zîtik ax hêz bi kar dike"
 msgid "Unknown App"
 msgstr ""
 
-#: src/Widgets/DeviceRow.vala:98
+#: src/Widgets/DeviceRow.vala:104
 msgid "Device"
 msgstr "Cîhaz"
 
@@ -178,11 +178,11 @@ msgstr "Cîhaz"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:56
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "rêjeya sedî nîşan bike"
 
-#: src/Widgets/PopoverWidget.vala:75
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "sekinandina Hêz…"
 

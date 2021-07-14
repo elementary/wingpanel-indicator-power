@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-20 21:51+0000\n"
+"POT-Creation-Date: 2021-07-14 20:21+0000\n"
 "PO-Revision-Date: 2021-03-14 16:45+0000\n"
 "Last-Translator: Leonardo <leonardo@elementary.io>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -163,7 +163,7 @@ msgstr "Aplicativos gastando muita energia"
 msgid "Unknown App"
 msgstr ""
 
-#: src/Widgets/DeviceRow.vala:98
+#: src/Widgets/DeviceRow.vala:104
 msgid "Device"
 msgstr "Dispositivo"
 
@@ -173,11 +173,11 @@ msgstr "Dispositivo"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:56
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "Mostrar porcentagem"
 
-#: src/Widgets/PopoverWidget.vala:75
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "Configurações de energia…"
 

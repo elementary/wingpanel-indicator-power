@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-20 21:51+0000\n"
+"POT-Creation-Date: 2021-07-14 20:21+0000\n"
 "PO-Revision-Date: 2021-03-11 10:13+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/wingpanel/"
@@ -172,7 +172,7 @@ msgstr "Програми који троше много енергије"
 msgid "Unknown App"
 msgstr "Непознат програм"
 
-#: src/Widgets/DeviceRow.vala:98
+#: src/Widgets/DeviceRow.vala:104
 msgid "Device"
 msgstr "Уређај"
 
@@ -182,11 +182,11 @@ msgstr "Уређај"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:56
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "Прикажи проценте"
 
-#: src/Widgets/PopoverWidget.vala:75
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "Подешавање напајања…"
 
