@@ -1,3 +1,33 @@
+wingpanel-indicator-power (6.0.0) bionic; urgency=medium
+
+  * Release 6.0.0 (#191)
+  * Show battery details on activate (#190)
+  * Define log domain (#188)
+  * PopoverWidget: Fix deprecation warnings (#184)
+  * Update translation files
+  * Update translation template
+  * Correct tooltip when no battery (#181)
+  * PopoverWidget: Move percent switch to top (#148)
+  * When All-in-one keyboards are used. redirect to kayboard type
+    instead of mouse type (#178)
+  * Implement scroll on indicator (#180)
+  * Use switch for legibility
+  * Move battery info to device and use in tooltip (#171)
+  * Device: Use prefs system power on AC (#173)
+  * Different icon for ac only (#129)
+  * AppList: Launch apps using power when clicked (#170)
+  * Indicator: Fix gettext syntax (#169)
+  * DisplayWidget: Make battery percentage label translatable (#167)
+  * Update for libwingpanel transition (#164)
+  * Add tooltip to indicator (#153)
+  * LINGUAS: sort, remove en_US
+  * Use async version of Bus.get_proxy (#160)
+  * Filter out weird devices (#151)
+  * Hide percentage in panel when indicator shows calculating (#146)
+  * Fix terminal warnings (#147)
+
+ -- elementary, Inc. <builds@elementary.io>  Wed, 14 Jul 2021 20:21:07 +0000
+
 wingpanel-indicator-power (2.2.0) bionic; urgency=medium
 
   * Release 2.2.0 (#143)
