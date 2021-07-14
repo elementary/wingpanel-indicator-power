@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 20:21+0000\n"
-"PO-Revision-Date: 2020-09-12 20:14+0000\n"
+"PO-Revision-Date: 2021-07-15 06:10+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/uk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/power.appdata.xml.in:6
 msgid "Power Indicator"
@@ -34,39 +34,40 @@ msgstr ""
 
 #: data/power.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Нові можливості:"
 
 #: data/power.appdata.xml.in:14
 msgid "Show battery statistics when selected"
-msgstr ""
+msgstr "Показ статистики заряду, якщо вибрано"
 
 #: data/power.appdata.xml.in:15
 msgid "Launch apps using power when selected"
-msgstr ""
+msgstr "Запуск застосунків, які використовують живлення, якщо вибрано"
 
 #: data/power.appdata.xml.in:16
 msgid "Control display brightness by scrolling the indicator"
 msgstr ""
+"Керування яскравістю дисплея, прокручуванням коліщатка миші на індикаторі"
 
 #: data/power.appdata.xml.in:18
 msgid "Minor updates:"
-msgstr ""
+msgstr "Незначні оновлення:"
 
 #: data/power.appdata.xml.in:20
 msgid "Improvements for desktops with peripherals"
-msgstr ""
+msgstr "Удосконалення для настільних ПК з периферійними пристроями"
 
 #: data/power.appdata.xml.in:21
 msgid "Filter out internal devices"
-msgstr ""
+msgstr "Фільтрування внутрішніх пристроїв"
 
 #: data/power.appdata.xml.in:22
 msgid "Show tooltip on hover"
-msgstr ""
+msgstr "Додано підказку під час наведення"
 
 #: data/power.appdata.xml.in:23
 msgid "Performance improvements"
-msgstr ""
+msgstr "Поліпшення швидкодії"
 
 #: data/power.appdata.xml.in:24 data/power.appdata.xml.in:32
 #: data/power.appdata.xml.in:37
