@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 20:21+0000\n"
-"PO-Revision-Date: 2020-12-29 08:16+0000\n"
+"PO-Revision-Date: 2021-07-15 06:10+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/he/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/power.appdata.xml.in:6
 msgid "Power Indicator"
@@ -63,7 +63,7 @@ msgstr ""
 
 #: data/power.appdata.xml.in:23
 msgid "Performance improvements"
-msgstr ""
+msgstr "שיפורי ביצועים"
 
 #: data/power.appdata.xml.in:24 data/power.appdata.xml.in:32
 #: data/power.appdata.xml.in:37
