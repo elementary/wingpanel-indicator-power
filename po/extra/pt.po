@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 20:21+0000\n"
-"PO-Revision-Date: 2020-09-06 11:13+0000\n"
+"PO-Revision-Date: 2021-07-15 21:31+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/power.appdata.xml.in:6
 msgid "Power Indicator"
@@ -33,39 +33,39 @@ msgstr ""
 
 #: data/power.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Novas funcionalidades:"
 
 #: data/power.appdata.xml.in:14
 msgid "Show battery statistics when selected"
-msgstr ""
+msgstr "Mostrar estatísticas de bateria quando selecionado"
 
 #: data/power.appdata.xml.in:15
 msgid "Launch apps using power when selected"
-msgstr ""
+msgstr "Inicia aplicações usando energia quando selecionadas"
 
 #: data/power.appdata.xml.in:16
 msgid "Control display brightness by scrolling the indicator"
-msgstr ""
+msgstr "Controla a luminosidade do visor, percorrendo o indicador"
 
 #: data/power.appdata.xml.in:18
 msgid "Minor updates:"
-msgstr ""
+msgstr "Pequenas atualizações:"
 
 #: data/power.appdata.xml.in:20
 msgid "Improvements for desktops with peripherals"
-msgstr ""
+msgstr "Melhoramentos para computadores de secretária com periféricos"
 
 #: data/power.appdata.xml.in:21
 msgid "Filter out internal devices"
-msgstr ""
+msgstr "Filtra os dispositivos internos"
 
 #: data/power.appdata.xml.in:22
 msgid "Show tooltip on hover"
-msgstr ""
+msgstr "Mostra dica ao pairar o rato"
 
 #: data/power.appdata.xml.in:23
 msgid "Performance improvements"
-msgstr ""
+msgstr "Melhorias de desempenho"
 
 #: data/power.appdata.xml.in:24 data/power.appdata.xml.in:32
 #: data/power.appdata.xml.in:37
