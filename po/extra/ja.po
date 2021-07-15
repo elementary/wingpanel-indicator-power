@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 20:21+0000\n"
-"PO-Revision-Date: 2020-09-05 08:13+0000\n"
+"PO-Revision-Date: 2021-07-15 06:10+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/power.appdata.xml.in:6
 msgid "Power Indicator"
@@ -33,39 +33,39 @@ msgstr ""
 
 #: data/power.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "新機能:"
 
 #: data/power.appdata.xml.in:14
 msgid "Show battery statistics when selected"
-msgstr ""
+msgstr "デバイス選択時にバッテリーの統計情報を表示するように変更"
 
 #: data/power.appdata.xml.in:15
 msgid "Launch apps using power when selected"
-msgstr ""
+msgstr "電力消費が激しいアプリを選択するとそのアプリを起動できるように変更"
 
 #: data/power.appdata.xml.in:16
 msgid "Control display brightness by scrolling the indicator"
-msgstr ""
+msgstr "インジケーター上でスクロールするとディスプレイの輝度を変更できるように変更"
 
 #: data/power.appdata.xml.in:18
 msgid "Minor updates:"
-msgstr ""
+msgstr "軽微なアップデート:"
 
 #: data/power.appdata.xml.in:20
 msgid "Improvements for desktops with peripherals"
-msgstr ""
+msgstr "周辺機器を接続したデスクトップPCでの表示を改善"
 
 #: data/power.appdata.xml.in:21
 msgid "Filter out internal devices"
-msgstr ""
+msgstr "内部デバイスを表示しないように修正"
 
 #: data/power.appdata.xml.in:22
 msgid "Show tooltip on hover"
-msgstr ""
+msgstr "ホバー時にツールチップを表示するように変更"
 
 #: data/power.appdata.xml.in:23
 msgid "Performance improvements"
-msgstr ""
+msgstr "パフォーマンスの改善"
 
 #: data/power.appdata.xml.in:24 data/power.appdata.xml.in:32
 #: data/power.appdata.xml.in:37
