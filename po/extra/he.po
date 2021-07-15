@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 20:21+0000\n"
-"PO-Revision-Date: 2021-07-15 06:10+0000\n"
+"PO-Revision-Date: 2021-07-15 21:31+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/he/>\n"
@@ -31,35 +31,35 @@ msgstr "הצגת רמות סוללה, כוונון בהירות התצוגה ו�
 
 #: data/power.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "יכולות חדשות:"
 
 #: data/power.appdata.xml.in:14
 msgid "Show battery statistics when selected"
-msgstr ""
+msgstr "סטטיסטיקת הסוללה תוצג כאשר היא נבחרת"
 
 #: data/power.appdata.xml.in:15
 msgid "Launch apps using power when selected"
-msgstr ""
+msgstr "ניתן להפעיל יישומים באמצעות יישומון החשמל כשהם נבחרים"
 
 #: data/power.appdata.xml.in:16
 msgid "Control display brightness by scrolling the indicator"
-msgstr ""
+msgstr "אפשר לשלוט בבהירות התצוגה בעת גלילת המחוון"
 
 #: data/power.appdata.xml.in:18
 msgid "Minor updates:"
-msgstr ""
+msgstr "עדכונים משניים:"
 
 #: data/power.appdata.xml.in:20
 msgid "Improvements for desktops with peripherals"
-msgstr ""
+msgstr "שיפורים לשולחנות עבודה עם תוספות חיצוניות"
 
 #: data/power.appdata.xml.in:21
 msgid "Filter out internal devices"
-msgstr ""
+msgstr "סינון התקנים פנימיים"
 
 #: data/power.appdata.xml.in:22
 msgid "Show tooltip on hover"
-msgstr ""
+msgstr "נוספה חלונית עצה בעת מעבר עם העכבר"
 
 #: data/power.appdata.xml.in:23
 msgid "Performance improvements"
