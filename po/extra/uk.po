@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 20:21+0000\n"
-"PO-Revision-Date: 2021-07-15 06:10+0000\n"
+"PO-Revision-Date: 2021-07-15 21:31+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/uk/>\n"
@@ -67,7 +67,7 @@ msgstr "Додано підказку під час наведення"
 
 #: data/power.appdata.xml.in:23
 msgid "Performance improvements"
-msgstr "Поліпшення швидкодії"
+msgstr "Поліпшено швидкодію"
 
 #: data/power.appdata.xml.in:24 data/power.appdata.xml.in:32
 #: data/power.appdata.xml.in:37
