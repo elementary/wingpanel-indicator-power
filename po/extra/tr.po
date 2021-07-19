@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 20:21+0000\n"
-"PO-Revision-Date: 2021-07-15 21:31+0000\n"
+"PO-Revision-Date: 2021-07-20 11:25+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/tr/>\n"
@@ -41,23 +41,24 @@ msgstr "Seçildiğinde pil istatistiklerini göster"
 
 #: data/power.appdata.xml.in:15
 msgid "Launch apps using power when selected"
-msgstr ""
+msgstr "Seçildiğinde gücü kullanarak uygulamaları başlatın"
 
 #: data/power.appdata.xml.in:16
 msgid "Control display brightness by scrolling the indicator"
-msgstr ""
+msgstr "Göstergeyi kaydırarak ekran parlaklığını kontrol edin"
 
 #: data/power.appdata.xml.in:18
 msgid "Minor updates:"
-msgstr "Küçük düzeltmeler:"
+msgstr "Küçük güncellemeler:"
 
 #: data/power.appdata.xml.in:20
 msgid "Improvements for desktops with peripherals"
 msgstr ""
+"Çevre birimlerine sahip masaüstü bilgisayarlar için iyileştirmeler yapıldı"
 
 #: data/power.appdata.xml.in:21
 msgid "Filter out internal devices"
-msgstr ""
+msgstr "Dahili cihazları filtreleyin"
 
 #: data/power.appdata.xml.in:22
 msgid "Show tooltip on hover"
