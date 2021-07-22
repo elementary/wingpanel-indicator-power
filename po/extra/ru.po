@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 20:21+0000\n"
-"PO-Revision-Date: 2021-04-05 00:38+0000\n"
+"PO-Revision-Date: 2021-07-22 13:59+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/ru/>\n"
@@ -50,7 +50,7 @@ msgstr ""
 
 #: data/power.appdata.xml.in:18
 msgid "Minor updates:"
-msgstr ""
+msgstr "Незначительные обновления:"
 
 #: data/power.appdata.xml.in:20
 msgid "Improvements for desktops with peripherals"
@@ -62,11 +62,11 @@ msgstr ""
 
 #: data/power.appdata.xml.in:22
 msgid "Show tooltip on hover"
-msgstr ""
+msgstr "Появление всплывающих подсказкок при наведении"
 
 #: data/power.appdata.xml.in:23
 msgid "Performance improvements"
-msgstr ""
+msgstr "Улучшения производительности"
 
 #: data/power.appdata.xml.in:24 data/power.appdata.xml.in:32
 #: data/power.appdata.xml.in:37
