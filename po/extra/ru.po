@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 20:21+0000\n"
-"PO-Revision-Date: 2021-07-22 13:59+0000\n"
+"PO-Revision-Date: 2021-07-23 14:46+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/ru/>\n"
@@ -34,19 +34,19 @@ msgstr ""
 
 #: data/power.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Новые возможности:"
 
 #: data/power.appdata.xml.in:14
 msgid "Show battery statistics when selected"
-msgstr ""
+msgstr "Отображение статистики батареи при выборе"
 
 #: data/power.appdata.xml.in:15
 msgid "Launch apps using power when selected"
-msgstr ""
+msgstr "Запуск приложений с использованием питания, при выборе"
 
 #: data/power.appdata.xml.in:16
 msgid "Control display brightness by scrolling the indicator"
-msgstr ""
+msgstr "Управление яркостью дисплея путем прокрутки колесом мыши по индикатору"
 
 #: data/power.appdata.xml.in:18
 msgid "Minor updates:"
@@ -54,11 +54,11 @@ msgstr "Незначительные обновления:"
 
 #: data/power.appdata.xml.in:20
 msgid "Improvements for desktops with peripherals"
-msgstr ""
+msgstr "Улучшения для настольных компьютеров с периферийными устройствами"
 
 #: data/power.appdata.xml.in:21
 msgid "Filter out internal devices"
-msgstr ""
+msgstr "Фильтрация внутренних устройств"
 
 #: data/power.appdata.xml.in:22
 msgid "Show tooltip on hover"
