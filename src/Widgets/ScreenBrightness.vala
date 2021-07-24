@@ -28,21 +28,22 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
         var image = new Gtk.Image.from_icon_name ("brightness-display-symbolic", Gtk.IconSize.DIALOG);
         image.margin_start = 6;
 
-        brightness_slider = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 10);
+        brightness_slider = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 10) {
+            draw_value = false,
+            margin_end = 12,
+            hexpand = true,
+            width_request = 175 
+        };
+        
         brightness_slider.adjustment.page_increment = 10;
-        brightness_slider.margin_end = 12;
-        brightness_slider.hexpand = true;
-        brightness_slider.draw_value = false;
-        brightness_slider.width_request = 175;
-
-        brightness_slider.value_changed.connect (() => {
-            on_scale_value_changed.begin ();
+        
+        brightness_slider.value_changed.connect ((value) => {
+            brightness_slider.set_value (value.get_value ());
+            dm.brightness = (int) value.get_value ();
         });
 
         dm.brightness_changed.connect ((brightness) => {
-            brightness_slider.value_changed.disconnect (on_scale_value_changed);
             brightness_slider.set_value ((double)brightness);
-            brightness_slider.value_changed.connect (on_scale_value_changed);
         });
 
         brightness_slider.set_value (dm.brightness);
@@ -51,7 +52,5 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
         attach (brightness_slider, 1, 0);
     }
 
-    private async void on_scale_value_changed () {
-        dm.brightness = (int) brightness_slider.get_value ();
-    }
+    
 }
