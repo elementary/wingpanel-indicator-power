@@ -54,7 +54,6 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
 
         add (grid);
 
-        //brightness_slider.adjustment.page_increment = 10;
         brightness_slider.set_value (dm.brightness);
 
         brightness_slider.value_changed.connect ((value) => {
@@ -68,7 +67,6 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
 
         brightness_slider.scroll_event.connect ((e) => {
             /* Re-emit the signal on the eventbox instead of using native handler */
-            //scroll_event (e);
             on_scroll_event (e);
             return true;
         });
