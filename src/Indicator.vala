@@ -31,6 +31,8 @@ public class Power.Indicator : Wingpanel.Indicator {
     private Services.Device? display_device = null;
     private Services.DeviceManager dm;
 
+    private Notify.Notification? notification;
+
     public Indicator (bool is_in_session) {
         Object (
             code_name : Wingpanel.Indicator.POWER,
@@ -65,6 +67,7 @@ public class Power.Indicator : Wingpanel.Indicator {
                         double change = 0.0;
                         if (handle_scroll_event (e, out change)) {
                             dm.change_brightness ((int)(change * BRIGHTNESS_STEP));
+                            show_notification ();
                             return true;
                         }
                     }
@@ -224,6 +227,20 @@ public class Power.Indicator : Wingpanel.Indicator {
             );
         }
     }
+
+    private bool show_notification () {
+        notification = new Notify.Notification ("indicator-power", "", "display-brightness-symbolic");
+        notification.set_hint ("x-canonical-private-synchronous", new Variant.string ("indicator-power"));
+        notification.set_hint ("value", new Variant.int32 (dm.brightness));
+        try {
+            notification.show ();
+        } catch (Error e) {
+            warning ("Unable to show notification: %s", e.message);
+            notification = null;
+            return false;
+        }
+        return true;
+  }
 }
 
 public Wingpanel.Indicator get_indicator (Module module, Wingpanel.IndicatorManager.ServerType server_type) {
