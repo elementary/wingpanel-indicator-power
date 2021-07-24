@@ -146,5 +146,4 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
 
         return false;
     }
-    
 }
