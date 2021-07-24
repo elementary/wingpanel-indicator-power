@@ -32,11 +32,11 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
             draw_value = false,
             margin_end = 12,
             hexpand = true,
-            width_request = 175 
+            width_request = 175
         };
-        
+
         brightness_slider.adjustment.page_increment = 10;
-        
+
         brightness_slider.value_changed.connect ((value) => {
             brightness_slider.set_value (value.get_value ());
             dm.brightness = (int) value.get_value ();
@@ -51,6 +51,4 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
         attach (image, 0, 0);
         attach (brightness_slider, 1, 0);
     }
-
-    
 }
