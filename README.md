@@ -11,6 +11,7 @@ You'll need the following dependencies:
 * libgtop2-dev
 * libudev-dev
 * libwingpanel-dev
+* libnotify-dev
 * meson
 * valac
 
