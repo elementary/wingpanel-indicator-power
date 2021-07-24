@@ -41,7 +41,9 @@ public class Power.Indicator : Wingpanel.Indicator {
     construct {
         dm = Power.Services.DeviceManager.get_default ();
         var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
+        var touchpad_settings = new GLib.Settings ("org.gnome.desktop.peripherals.touchpad");
         mouse_settings.bind ("natural-scroll", this, "natural-scroll-mouse", SettingsBindFlags.DEFAULT);
+        touchpad_settings.bind ("natural-scroll", this, "natural-scroll-touchpad", SettingsBindFlags.DEFAULT);
     }
 
     public override Gtk.Widget get_display_widget () {
@@ -95,7 +97,7 @@ public class Power.Indicator : Wingpanel.Indicator {
         } else if (event_source == Gdk.InputSource.TOUCHPAD) {
             natural_scroll = natural_scroll_touchpad;
         } else {
-            natural_scroll = false;
+            natural_scroll = true;
         }
 
         switch (e.direction) {
