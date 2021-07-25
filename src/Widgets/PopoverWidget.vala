@@ -58,25 +58,9 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         last_separator_revealer = new Gtk.Revealer ();
         last_separator_revealer.add (last_separator);
 
-        var show_percent_switch = new Granite.SwitchModelButton (_("Show Percentage"));
-        show_percent_switch.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
-
-        var show_percent_sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
-            margin_top = 3,
-            margin_bottom = 3
-        };
-
-        var show_percent_grid = new Gtk.Grid ();
-        show_percent_grid.attach (show_percent_switch, 0, 0);
-        show_percent_grid.attach (show_percent_sep, 0, 1);
-
-        var show_percent_revealer = new Gtk.Revealer ();
-        show_percent_revealer.add (show_percent_grid);
-
         var show_settings_button = new Gtk.ModelButton ();
         show_settings_button.text = _("Power Settings…");
 
-        attach (show_percent_revealer, 0, 0);
         attach (device_list_revealer, 0, 1);
         attach (device_separator_revealer, 0, 3);
 
@@ -101,18 +85,12 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
             update_last_seperator_revealer ();
         });
 
-        settings.bind ("show-percentage", show_percent_switch, "active", SettingsBindFlags.DEFAULT);
-
         dm.bind_property (
             "has-battery",
             device_list_revealer,
             "reveal-child",
             GLib.BindingFlags.DEFAULT | GLib.BindingFlags.SYNC_CREATE
         );
-
-        if (dm.has_battery && dm.display_device.is_a_battery) {
-            show_percent_revealer.reveal_child = true;
-        }
 
         show_settings_button.clicked.connect (() => {
             try {
