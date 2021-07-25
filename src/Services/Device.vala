@@ -286,6 +286,9 @@ public class Power.Services.Device : Object {
             return _("Calculating…");
         }
 
+        if (percent == 100 ) {
+            return _("Charged");
+        }
         var info = "";
 
         if (is_charging) {
