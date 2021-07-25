@@ -201,7 +201,7 @@ public class Power.Indicator : Wingpanel.Indicator {
         string? primary_text = null;
         string? secondary_text = null;
         if (display_device != null) {
-            if (display_device.percentage <= LOW_BATTERY_PERCENTAGE) {
+            if (display_device.percentage == LOW_BATTERY_PERCENTAGE && !display_device.is_charging) {
                 settings.set_boolean ("show-percentage", true);
             }
             if (display_device.is_a_battery) {
