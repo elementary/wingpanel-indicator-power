@@ -18,6 +18,7 @@
  */
 
 public class Power.Widgets.DisplayWidget : Gtk.Grid {
+    private Gtk.Revealer percent_revealer;
     public string icon_name {
         set {
             image.icon_name = value;
@@ -44,7 +45,7 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
 
         percent_label = new Gtk.Label (null);
 
-        var percent_revealer = new Gtk.Revealer ();
+        percent_revealer = new Gtk.Revealer ();
         percent_revealer.transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT;
         percent_revealer.add (percent_label);
 
@@ -54,7 +55,6 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
         var settings = new GLib.Settings ("io.elementary.desktop.wingpanel.power");
         settings.bind ("show-percentage", percent_revealer, "reveal-child", GLib.SettingsBindFlags.GET);
         bind_property ("allow-percent", percent_revealer, "visible", GLib.BindingFlags.SYNC_CREATE);
-
         button_press_event.connect ((e) => {
             if (allow_percent && e.button == Gdk.BUTTON_MIDDLE) {
                 settings.set_boolean ("show-percentage", !(settings.get_boolean ("show-percentage")));
@@ -63,5 +63,11 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
 
             return false;
         });
+    }
+
+    public bool show_percentage () {
+        percent_revealer.reveal_child = true;
+        percent_revealer.visible = true;
+        return true;
     }
 }

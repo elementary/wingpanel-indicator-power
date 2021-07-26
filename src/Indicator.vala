@@ -204,10 +204,12 @@ public class Power.Indicator : Wingpanel.Indicator {
         if (display_device != null) {
             if (display_device.percentage == LOW_BATTERY_PERCENTAGE && !display_device.is_charging) {
                 is_showing_low_battery_percent = true;
-                settings.set_boolean ("show-percentage", true);
+                display_widget.show_percentage ();
             }
+
             /* Hide low battery percentage after plug charger */
-            if (is_showing_low_battery_percent && display_device.is_charging) {
+            var is_showing_percent = settings.get_boolean ("show-percentage");
+            if (is_showing_low_battery_percent && display_device.is_charging && !is_showing_percent) {
                 settings.set_boolean ("show-percentage", false);
                 is_showing_low_battery_percent = false;
             }
