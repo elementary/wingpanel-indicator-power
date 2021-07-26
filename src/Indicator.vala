@@ -24,7 +24,6 @@ public class Power.Indicator : Wingpanel.Indicator {
     public bool is_in_session { get; construct; default = false; }
     public bool natural_scroll_touchpad { get; set; }
     public bool natural_scroll_mouse { get; set; }
-    private bool is_showing_low_battery_percent {get; set; default = false;}
 
     private Widgets.DisplayWidget? display_widget = null;
 
@@ -203,15 +202,13 @@ public class Power.Indicator : Wingpanel.Indicator {
         string? secondary_text = null;
         if (display_device != null) {
             if (display_device.percentage == LOW_BATTERY_PERCENTAGE && !display_device.is_charging) {
-                is_showing_low_battery_percent = true;
-                display_widget.show_percentage ();
+                display_widget.show_percentage (true);
             }
 
             /* Hide low battery percentage after plug charger if user is not showing percentage */
             var is_showing_percent = settings.get_boolean ("show-percentage");
-            if (is_showing_low_battery_percent && display_device.is_charging && !is_showing_percent) {
-                settings.set_boolean ("show-percentage", false);
-                is_showing_low_battery_percent = false;
+            if (display_device.is_charging && !is_showing_percent) {
+                display_widget.show_percentage (false);
             }
             if (display_device.is_a_battery) {
                 primary_text = _("%s: %s").printf (display_device.device_type.get_name (), display_device.get_info ());

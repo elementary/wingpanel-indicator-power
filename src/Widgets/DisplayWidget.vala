@@ -65,9 +65,9 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
         });
     }
 
-    public bool show_percentage () {
-        percent_revealer.reveal_child = true;
-        percent_revealer.visible = true;
+    public bool show_percentage (bool show) {
+        percent_revealer.reveal_child = show;
+        percent_revealer.visible = show;
         return true;
     }
 }
