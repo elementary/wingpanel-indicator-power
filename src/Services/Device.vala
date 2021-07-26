@@ -289,6 +289,7 @@ public class Power.Services.Device : Object {
         if (percent == 100 && is_charging) {
             return _("Fully charged");
         }
+
         var info = "";
 
         if (is_charging) {
