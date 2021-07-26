@@ -207,7 +207,7 @@ public class Power.Indicator : Wingpanel.Indicator {
                 display_widget.show_percentage ();
             }
 
-            /* Hide low battery percentage after plug charger */
+            /* Hide low battery percentage after plug charger if user is not showing percentage */
             var is_showing_percent = settings.get_boolean ("show-percentage");
             if (is_showing_low_battery_percent && display_device.is_charging && !is_showing_percent) {
                 settings.set_boolean ("show-percentage", false);
