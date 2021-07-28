@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-28 06:51+0000\n"
-"PO-Revision-Date: 2021-07-03 19:21+0000\n"
+"PO-Revision-Date: 2021-07-28 11:58+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/uk/>\n"
@@ -91,10 +91,8 @@ msgid "Calculating…"
 msgstr "Обчислення…"
 
 #: src/Services/Device.vala:290
-#, fuzzy
-#| msgid "%i%% charged"
 msgid "Fully charged"
-msgstr "%i%% заряджено"
+msgstr "Повністю заряджено"
 
 #: src/Services/Device.vala:296
 #, c-format
