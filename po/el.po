@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 20:21+0000\n"
+"POT-Creation-Date: 2021-07-28 06:51+0000\n"
 "PO-Revision-Date: 2017-02-05 13:54+0000\n"
 "Last-Translator: Christos Iatropoulos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,66 +88,72 @@ msgstr ""
 msgid "Calculating…"
 msgstr "Γίνεται υπολογισμός..."
 
-#: src/Services/Device.vala:292
+#: src/Services/Device.vala:290
+#, fuzzy
+#| msgid "%i%% charged"
+msgid "Fully charged"
+msgstr "%i%% φορτίστηκε"
+
+#: src/Services/Device.vala:296
 #, c-format
 msgid "%i%% charged"
 msgstr "%i%% φορτίστηκε"
 
-#: src/Services/Device.vala:300
+#: src/Services/Device.vala:304
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "%lld μέρα μέχρι την πλήρη φόρτιση"
 msgstr[1] "%lld μέρες μέχρι την πλήρη φόρτιση"
 
-#: src/Services/Device.vala:308
+#: src/Services/Device.vala:312
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld ώρα μέχρι την πλήρη φόρτιση"
 msgstr[1] "%lld ώρες μέχρι την πλήρη φόρτιση"
 
-#: src/Services/Device.vala:316
+#: src/Services/Device.vala:320
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld λεπτό μέχρι την πλήρη φόρτιση"
 msgstr[1] "%lld λεπτά μέχρι την πλήρη φόρτιση"
 
-#: src/Services/Device.vala:323
+#: src/Services/Device.vala:327
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld δευτερόλεπτο μέχρι την πλήρη φόρτιση"
 msgstr[1] "%lld δευτερόλεπτα μέχρι την πλήρη φόρτιση"
 
-#: src/Services/Device.vala:330
+#: src/Services/Device.vala:334
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% απομένει"
 
-#: src/Services/Device.vala:338
+#: src/Services/Device.vala:342
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "%lld μέρα μέχρι την αποφόρτιση"
 msgstr[1] "%lld μέρες μέχρι την αποφόρτιση"
 
-#: src/Services/Device.vala:346
+#: src/Services/Device.vala:350
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld ώρα μέχρι την αποφόρτιση"
 msgstr[1] "%lld ώρες μέχρι την αποφόρτιση"
 
-#: src/Services/Device.vala:354
+#: src/Services/Device.vala:358
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld λεπτό μέχρι την αποφόρτιση"
 msgstr[1] "%lld λεπτά μέχρι την αποφόρτιση"
 
-#: src/Services/Device.vala:361
+#: src/Services/Device.vala:365
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
