@@ -19,6 +19,7 @@
 
 public class Power.Indicator : Wingpanel.Indicator {
     private const double BRIGHTNESS_STEP = 5;
+    private const double LOW_BATTERY_PERCENTAGE = 20;
 
     public bool is_in_session { get; construct; default = false; }
     public bool natural_scroll_touchpad { get; set; }
@@ -31,6 +32,8 @@ public class Power.Indicator : Wingpanel.Indicator {
     private Services.Device? display_device = null;
     private Services.DeviceManager dm;
 
+    private Settings settings;
+
     public Indicator (bool is_in_session) {
         Object (
             code_name : Wingpanel.Indicator.POWER,
@@ -42,6 +45,7 @@ public class Power.Indicator : Wingpanel.Indicator {
         dm = Power.Services.DeviceManager.get_default ();
         var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
         mouse_settings.bind ("natural-scroll", this, "natural-scroll-mouse", SettingsBindFlags.DEFAULT);
+        settings = new GLib.Settings ("io.elementary.desktop.wingpanel.power");
     }
 
     public override Gtk.Widget get_display_widget () {
@@ -154,7 +158,7 @@ public class Power.Indicator : Wingpanel.Indicator {
     }
 
     private void update_display_device () {
-       if (display_device != null) {
+        if (display_device != null) {
             display_device.properties_updated.disconnect (show_display_device_data);
         }
 
@@ -197,6 +201,15 @@ public class Power.Indicator : Wingpanel.Indicator {
         string? primary_text = null;
         string? secondary_text = null;
         if (display_device != null) {
+            if (display_device.percentage <= LOW_BATTERY_PERCENTAGE && !display_device.is_charging) {
+                display_widget.show_percentage (true);
+            }
+
+            /* Hide low battery percentage after plug charger if user is not showing percentage */
+            var is_showing_percent = settings.get_boolean ("show-percentage");
+            if (display_device.is_charging && !is_showing_percent) {
+                display_widget.show_percentage (false);
+            }
             if (display_device.is_a_battery) {
                 primary_text = _("%s: %s").printf (display_device.device_type.get_name (), display_device.get_info ());
                 secondary_text = _("Middle-click to toggle percentage");
