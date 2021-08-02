@@ -33,6 +33,8 @@ public class Power.Indicator : Wingpanel.Indicator {
     private Services.DeviceManager dm;
 
     private Settings settings;
+    private Notify.Notification? notification;
+
 
     public Indicator (bool is_in_session) {
         Object (
@@ -67,6 +69,7 @@ public class Power.Indicator : Wingpanel.Indicator {
                         double change = 0.0;
                         if (handle_scroll_event (e, out change)) {
                             dm.change_brightness ((int)(change * BRIGHTNESS_STEP));
+                            show_notification ();
                             return true;
                         }
                     }
@@ -234,6 +237,20 @@ public class Power.Indicator : Wingpanel.Indicator {
                 Granite.TOOLTIP_SECONDARY_TEXT_MARKUP.printf (secondary_text)
             );
         }
+    }
+
+    private bool show_notification () {
+        notification = new Notify.Notification ("indicator-power", "", "display-brightness-symbolic");
+        notification.set_hint ("x-canonical-private-synchronous", new Variant.string ("indicator-power"));
+        notification.set_hint ("value", new Variant.int32 (dm.brightness));
+        try {
+            notification.show ();
+        } catch (Error e) {
+            warning ("Unable to show notification: %s", e.message);
+            notification = null;
+            return false;
+        }
+        return true;
     }
 }
 
