@@ -71,7 +71,9 @@ public class Power.Indicator : Wingpanel.Indicator {
                         double change = 0.0;
                         if (handle_scroll_event (e, out change)) {
                             dm.change_brightness ((int)(change * BRIGHTNESS_STEP));
-                            show_notification ();
+                            if (!popover_widget.is_visible ()) {
+                              show_notification ();
+                            }
                             return true;
                         }
                     }
