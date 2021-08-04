@@ -66,18 +66,14 @@ public class Power.Indicator : Wingpanel.Indicator {
 
             if (dm.backlight.present) {
                 display_widget.scroll_event.connect ((e) => {
-                /* Ignore horizontal scrolling on wingpanel indicator */
-                    if (e.direction != Gdk.ScrollDirection.LEFT && e.direction != Gdk.ScrollDirection.RIGHT) {
-                        double change = 0.0;
-                        if (handle_scroll_event (e, out change)) {
-                            dm.change_brightness ((int)(change * BRIGHTNESS_STEP));
-                            if (!popover_widget.is_visible ()) {
-                              show_notification ();
-                            }
-                            return true;
+                    double change = 0.0;
+                    if (handle_scroll_event (e, out change)) {
+                        dm.change_brightness ((int)(change * BRIGHTNESS_STEP));
+                        if (!popover_widget.is_visible ()) {
+                          show_notification ();
                         }
+                        return true;
                     }
-
                     return false;
                 });
 
@@ -95,10 +91,12 @@ public class Power.Indicator : Wingpanel.Indicator {
 
         return popover_widget;
     }
+
     /* Smooth scrolling vertical support. Accumulate delta_y until threshold exceeded before actioning */
-    private double total_y_delta= 0;
-    private bool handle_scroll_event (Gdk.EventScroll e, out double change) {
-        change = 0.0;
+    private double total_y_delta = 0;
+    private double total_x_delta = 0;
+    private bool handle_scroll_event (Gdk.EventScroll e, out double dir) {
+        dir = 0.0;
         bool natural_scroll;
         var event_source = e.get_source_device ().input_source;
         if (event_source == Gdk.InputSource.MOUSE) {
@@ -106,30 +104,46 @@ public class Power.Indicator : Wingpanel.Indicator {
         } else if (event_source == Gdk.InputSource.TOUCHPAD) {
             natural_scroll = natural_scroll_touchpad;
         } else {
-            natural_scroll = true;
+            natural_scroll = false;
         }
 
         switch (e.direction) {
             case Gdk.ScrollDirection.SMOOTH:
-                total_y_delta += e.delta_y;
-                break;
+                var abs_x = double.max (e.delta_x.abs (), 0.0001);
+                var abs_y = double.max (e.delta_y.abs (), 0.0001);
 
+                if (abs_y / abs_x > 2.0) {
+                    total_y_delta += e.delta_y;
+                } else if (abs_x / abs_y > 2.0) {
+                    total_x_delta += e.delta_x;
+                }
+
+                break;
             case Gdk.ScrollDirection.UP:
                 total_y_delta = -1.0;
                 break;
             case Gdk.ScrollDirection.DOWN:
                 total_y_delta = 1.0;
                 break;
+            case Gdk.ScrollDirection.LEFT:
+                total_x_delta = -1.0;
+                break;
+            case Gdk.ScrollDirection.RIGHT:
+                total_x_delta = 1.0;
+                break;
             default:
                 break;
         }
 
         if (total_y_delta.abs () > 0.5) {
-            change = natural_scroll ? total_y_delta : -total_y_delta;
+            dir = natural_scroll ? total_y_delta : -total_y_delta;
+        } else if (total_x_delta.abs () > 0.5) {
+            dir = natural_scroll ? -total_x_delta : total_x_delta;
         }
 
-        if (change.abs () > 0.0) {
+        if (dir.abs () > 0.0) {
             total_y_delta = 0.0;
+            total_x_delta = 0.0;
             return true;
         }
 
