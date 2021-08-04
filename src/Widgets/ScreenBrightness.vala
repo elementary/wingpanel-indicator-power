@@ -41,7 +41,7 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
             margin_end = 12,
             hexpand = true,
             draw_value = false,
-            width_request = 175,
+            width_request = 175
         };
 
         var grid = new Gtk.Grid () {
