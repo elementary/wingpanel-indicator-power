@@ -54,9 +54,15 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
         grid.add (image);
         grid.add (brightness_slider);
 
-        add (grid);
+        var show_brightness_slider = new Gtk.Revealer ();
+        show_brightness_slider.add (grid);
 
-        brightness_slider.set_value (dm.brightness);
+        add (show_brightness_slider);
+
+        if (dm.brightness != -1) {
+            brightness_slider.set_value (dm.brightness);
+            show_brightness_slider.reveal_child = true;
+        }
 
         brightness_slider.scroll_event.connect ((e) => {
           /* Re-emit the signal on the eventbox instead of using native handler */
@@ -69,9 +75,13 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
             dm.brightness = (int) value.get_value ();
         });
 
-
         dm.brightness_changed.connect ((brightness) => {
-            brightness_slider.set_value ((double)brightness);
+            if (brightness != -1) {
+                brightness_slider.set_value ((double)brightness);
+                show_brightness_slider.reveal_child = true;
+            } else {
+                show_brightness_slider.reveal_child = false;
+            }
         });
     }
 

@@ -121,6 +121,14 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
                 warning ("Failed to open power settings: %s", e.message);
             }
         });
+
+        dm.brightness_changed.connect ((brightness) => {
+            if (brightness != -1) {
+                last_separator_revealer.reveal_child = true;
+            } else {
+                last_separator_revealer.reveal_child = false;
+            }
+        });
     }
 
     private void update_device_seperator_revealer () {
