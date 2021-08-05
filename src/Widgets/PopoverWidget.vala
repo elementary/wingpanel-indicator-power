@@ -94,11 +94,9 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         }
 
         update_device_seperator_revealer ();
-        update_last_seperator_revealer ();
 
         dm.notify["has-battery"].connect ((s, p) => {
             update_device_seperator_revealer ();
-            update_last_seperator_revealer ();
         });
 
         settings.bind ("show-percentage", show_percent_switch, "active", SettingsBindFlags.DEFAULT);
@@ -133,10 +131,6 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
 
     private void update_device_seperator_revealer () {
         device_separator_revealer.reveal_child = dm.backlight.present && dm.has_battery;
-    }
-
-    private void update_last_seperator_revealer () {
-        last_separator_revealer.reveal_child = is_in_session;
     }
 
     public void slim_down () {
