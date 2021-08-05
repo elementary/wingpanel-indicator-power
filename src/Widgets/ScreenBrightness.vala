@@ -78,7 +78,7 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
     private bool on_scroll_event (Gdk.EventScroll e) {
         double change = 0.0;
         if (handle_scroll_event (e, out change)) {
-            dm.change_brightness ((int)(change * BRIGHTNESS_STEP));
+            dm.change_brightness ((int) (Math.round (change) * BRIGHTNESS_STEP));
             return true;
         }
         return false;
