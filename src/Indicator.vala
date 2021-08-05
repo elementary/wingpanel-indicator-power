@@ -69,7 +69,7 @@ public class Power.Indicator : Wingpanel.Indicator {
                 /* Ignore horizontal scrolling on wingpanel indicator */
                     if (e.direction != Gdk.ScrollDirection.LEFT && e.direction != Gdk.ScrollDirection.RIGHT) {
                         double change = 0.0;
-                        /* Ignore scrolling events on desktop or when laptop is displays only on externar display*/   
+                        /* Ignore scrolling events on desktop or when laptop is displays only on externar display*/
                         if (dm.brightness != -1) {
                           if (handle_scroll_event (e, out change)) {
                               dm.change_brightness ((int)(change * BRIGHTNESS_STEP));
