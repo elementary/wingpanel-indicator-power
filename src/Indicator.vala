@@ -69,13 +69,19 @@ public class Power.Indicator : Wingpanel.Indicator {
                 /* Ignore horizontal scrolling on wingpanel indicator */
                     if (e.direction != Gdk.ScrollDirection.LEFT && e.direction != Gdk.ScrollDirection.RIGHT) {
                         double change = 0.0;
-                        if (handle_scroll_event (e, out change)) {
-                            dm.change_brightness ((int)(change * BRIGHTNESS_STEP));
-                            if (!popover_widget.is_visible ()) {
-                              show_notification ();
-                            }
-                            return true;
+                        /* Ignore scrolling events on desktop or when laptop is displays only on externar display*/   
+                        if (dm.brightness != -1) {
+                          if (handle_scroll_event (e, out change)) {
+                              dm.change_brightness ((int)(change * BRIGHTNESS_STEP));
+                              if (!popover_widget.is_visible ()) {
+                                show_notification (false);
+                              }
+                              return true;
+                          }
+                        } else {
+                          show_notification (true);
                         }
+                        return false;
                     }
 
                     return false;
@@ -243,10 +249,15 @@ public class Power.Indicator : Wingpanel.Indicator {
         }
     }
 
-    private bool show_notification () {
-        notification = new Notify.Notification ("indicator-power", "", "display-brightness-symbolic");
-        notification.set_hint ("x-canonical-private-synchronous", new Variant.string ("indicator-power"));
-        notification.set_hint ("value", new Variant.int32 (dm.brightness));
+    private bool show_notification (bool is_desktop) {
+        if (is_desktop) {
+            notification = new Notify.Notification ("indicator-power", "", "application-exit");
+            notification.set_hint ("x-canonical-private-synchronous", new Variant.string ("indicator-power"));
+        } else {
+            notification = new Notify.Notification ("indicator-power", "", "display-brightness-symbolic");
+            notification.set_hint ("x-canonical-private-synchronous", new Variant.string ("indicator-power"));
+            notification.set_hint ("value", new Variant.int32 (dm.brightness));
+        }
         try {
             notification.show ();
         } catch (Error e) {
