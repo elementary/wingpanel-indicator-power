@@ -25,7 +25,10 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
     public bool natural_scroll_touchpad { get; set; }
     public bool natural_scroll_mouse { get; set; }
 
+    private Utils utils;
+
     construct {
+        utils = new Utils ();
         dm = Power.Services.DeviceManager.get_default ();
 
         var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
@@ -77,73 +80,11 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
 
     private bool on_scroll_event (Gdk.EventScroll e) {
         double change = 0.0;
-        if (handle_scroll_event (e, out change)) {
+        if (utils.handle_scroll_event (e, out change, natural_scroll_mouse, natural_scroll_touchpad)) {
             dm.change_brightness ((int)(change * BRIGHTNESS_STEP));
             return true;
         }
         return false;
     }
 
-    /* Handles both SMOOTH and non-SMOOTH events.
-     * * accumulates very small changes until they become significant.
-     * * ignores rapid changes in direction.
-     * * responds to both horizontal and vertical scrolling.
-     * In the case of diagonal scrolling, it ignores the event unless movement in one direction
-     * is more than twice the movement in the other direction.
-     */
-    private double total_y_delta= 0;
-    private double total_x_delta= 0;
-    private bool handle_scroll_event (Gdk.EventScroll e, out double change) {
-        change = 0.0;
-        bool natural_scroll;
-        var event_source = e.get_source_device ().input_source;
-        if (event_source == Gdk.InputSource.MOUSE) {
-            natural_scroll = natural_scroll_mouse;
-        } else if (event_source == Gdk.InputSource.TOUCHPAD) {
-            natural_scroll = natural_scroll_touchpad;
-        } else {
-            natural_scroll = true;
-        }
-
-        switch (e.direction) {
-            case Gdk.ScrollDirection.SMOOTH:
-                var abs_x = double.max (e.delta_x.abs (), 0.0001);
-                var abs_y = double.max (e.delta_y.abs (), 0.0001);
-
-                if (abs_y / abs_x > 2.0) {
-                    total_y_delta += e.delta_y;
-                } else if (abs_x / abs_y > 2.0) {
-                    total_x_delta += e.delta_x;
-                }
-                break;
-            case Gdk.ScrollDirection.UP:
-                total_y_delta = -1.0;
-                break;
-            case Gdk.ScrollDirection.DOWN:
-                total_y_delta = 1.0;
-                break;
-            case Gdk.ScrollDirection.LEFT:
-                total_x_delta = -1.0;
-                break;
-            case Gdk.ScrollDirection.RIGHT:
-                total_x_delta = 1.0;
-                break;
-            default:
-                break;
-        }
-
-        if (total_y_delta.abs () > 0.5) {
-            change = natural_scroll ? total_y_delta : -total_y_delta;
-        } else if (total_x_delta.abs () > 0.5) {
-            change = natural_scroll ? -total_x_delta : total_x_delta;
-        }
-
-        if (change.abs () > 0.0) {
-            total_y_delta = 0.0;
-            total_x_delta = 0.0;
-            return true;
-        }
-
-        return false;
-    }
 }
