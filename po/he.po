@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-28 06:51+0000\n"
+"POT-Creation-Date: 2021-08-06 23:02+0000\n"
 "PO-Revision-Date: 2021-07-28 11:58+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/wingpanel/"
@@ -15,21 +15,21 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:201
+#: src/Indicator.vala:221
 #, c-format
 msgid "%s: %s"
 msgstr "%s: %s"
 
-#: src/Indicator.vala:202
+#: src/Indicator.vala:222
 msgid "Middle-click to toggle percentage"
 msgstr "יש ללחוץ לחיצה ימנית כדי להחליף מצב אחוזים"
 
-#: src/Indicator.vala:210
+#: src/Indicator.vala:230
 #, c-format
 msgid "Screen brightness: %i"
 msgstr "בהירות המסך: %i"
 
-#: src/Indicator.vala:211
+#: src/Indicator.vala:231
 msgid "Scroll to change screen brightness"
 msgstr "שינוי בהירות המסך בגלילה"
 
@@ -172,7 +172,7 @@ msgid "Device"
 msgstr "התקן"
 
 #. /Translators: This represents battery charge precentage with `%i` representing the number and `%%` representing the percent symbol
-#: src/Widgets/DisplayWidget.vala:31
+#: src/Widgets/DisplayWidget.vala:32
 #, c-format
 msgid "%i%%"
 msgstr "%i%%"
