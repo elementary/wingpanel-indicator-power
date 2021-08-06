@@ -18,7 +18,6 @@
  */
 
 public class Power.Indicator : Wingpanel.Indicator {
-    private const double BRIGHTNESS_STEP = 5;
     private const double LOW_BATTERY_PERCENTAGE = 20;
 
     public bool is_in_session { get; construct; default = false; }
@@ -70,12 +69,15 @@ public class Power.Indicator : Wingpanel.Indicator {
                 display_widget.scroll_event.connect ((e) => {
                     double change = 0.0;
                     if (utils.handle_scroll_event (e, out change, natural_scroll_mouse, natural_scroll_touchpad )) {
-                        dm.change_brightness ((int)(change * BRIGHTNESS_STEP));
+                        utils.change_brightness (change);
+
                         if (!popover_widget.is_visible ()) {
                           show_notification ();
                         }
+
                         return true;
                     }
+
                     return false;
                 });
 

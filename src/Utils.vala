@@ -1,7 +1,14 @@
-public class Power.Utils {
+public class Power.Utils : GLib.Object {
 
-    public double total_y_delta = 0;
-    public double total_x_delta = 0;
+    private const double BRIGHTNESS_STEP = 5;
+    private double total_y_delta = 0;
+    private double total_x_delta = 0;
+
+    private Services.DeviceManager dm;
+
+    construct {
+        dm = Power.Services.DeviceManager.get_default ();
+    }
 
     /* Smooth scrolling vertical support. Accumulate delta_y until threshold exceeded before actioning */
     public bool handle_scroll_event (Gdk.EventScroll e, out double dir, bool natural_scroll_mouse, bool natural_scroll_touchpad) {
@@ -57,5 +64,9 @@ public class Power.Utils {
         }
 
         return false;
+    }
+
+    public void change_brightness (double value) {
+        dm.change_brightness ((int)(value * BRIGHTNESS_STEP));
     }
 }

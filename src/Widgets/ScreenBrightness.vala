@@ -21,7 +21,6 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
     private Gtk.Scale brightness_slider;
     private Power.Services.DeviceManager dm;
 
-    private const double BRIGHTNESS_STEP = 5;
     public bool natural_scroll_touchpad { get; set; }
     public bool natural_scroll_mouse { get; set; }
 
@@ -81,7 +80,7 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
     private bool on_scroll_event (Gdk.EventScroll e) {
         double change = 0.0;
         if (utils.handle_scroll_event (e, out change, natural_scroll_mouse, natural_scroll_touchpad)) {
-            dm.change_brightness ((int)(change * BRIGHTNESS_STEP));
+            utils.change_brightness (change);
             return true;
         }
         return false;
