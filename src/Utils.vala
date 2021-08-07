@@ -67,6 +67,6 @@ public class Power.Utils : GLib.Object {
     }
 
     public void change_brightness (double value) {
-        dm.change_brightness ((int)(value * BRIGHTNESS_STEP));
+        dm.change_brightness ((int) (Math.round (value) * BRIGHTNESS_STEP));
     }
 }
