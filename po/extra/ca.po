@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-28 06:51+0000\n"
-"PO-Revision-Date: 2021-07-19 13:33+0000\n"
+"POT-Creation-Date: 2021-08-06 23:02+0000\n"
+"PO-Revision-Date: 2021-08-07 10:29+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/ca/>\n"
@@ -32,54 +32,58 @@ msgstr ""
 "les aplicacions que gasten molta energia."
 
 #: data/power.appdata.xml.in:12
-msgid "New features:"
-msgstr "Característiques noves:"
+msgid "Show brightness level when scrolled"
+msgstr "Es mostra el nivell de brillantor amb el desplaçament."
 
-#: data/power.appdata.xml.in:14
-msgid "Show battery statistics when selected"
-msgstr "Es mostren les estadístiques de la bateria quan se selecciona."
-
-#: data/power.appdata.xml.in:15
-msgid "Launch apps using power when selected"
-msgstr "Inici d'aplicacions amb corrent quan se selecciona"
-
-#: data/power.appdata.xml.in:16
-msgid "Control display brightness by scrolling the indicator"
-msgstr "Control de la brillantor de la pantalla desplaçant-vos per l’indicador"
-
-#: data/power.appdata.xml.in:18
-msgid "Minor updates:"
-msgstr "Actualitzacions menors:"
-
-#: data/power.appdata.xml.in:20
-msgid "Improvements for desktops with peripherals"
-msgstr "Millores per a ordinadors de sobretaula amb perifèrics"
-
-#: data/power.appdata.xml.in:21
-msgid "Filter out internal devices"
-msgstr "Filtre dels dispositius interns"
-
-#: data/power.appdata.xml.in:22
-msgid "Show tooltip on hover"
-msgstr "Mostra la descripció emergent en passar-hi"
-
-#: data/power.appdata.xml.in:23
-msgid "Performance improvements"
-msgstr "Millores de rendiment"
-
-#: data/power.appdata.xml.in:24 data/power.appdata.xml.in:32
-#: data/power.appdata.xml.in:37
+#: data/power.appdata.xml.in:13 data/power.appdata.xml.in:30
+#: data/power.appdata.xml.in:38 data/power.appdata.xml.in:43
 msgid "Updated translations"
 msgstr "Traduccions actualitzades"
 
-#: data/power.appdata.xml.in:30
+#: data/power.appdata.xml.in:18
+msgid "New features:"
+msgstr "Característiques noves:"
+
+#: data/power.appdata.xml.in:20
+msgid "Show battery statistics when selected"
+msgstr "Es mostren les estadístiques de la bateria quan se selecciona."
+
+#: data/power.appdata.xml.in:21
+msgid "Launch apps using power when selected"
+msgstr "Inici d'aplicacions amb corrent quan se selecciona"
+
+#: data/power.appdata.xml.in:22
+msgid "Control display brightness by scrolling the indicator"
+msgstr "Control de la brillantor de la pantalla desplaçant-vos per l’indicador"
+
+#: data/power.appdata.xml.in:24
+msgid "Minor updates:"
+msgstr "Actualitzacions menors:"
+
+#: data/power.appdata.xml.in:26
+msgid "Improvements for desktops with peripherals"
+msgstr "Millores per a ordinadors de sobretaula amb perifèrics"
+
+#: data/power.appdata.xml.in:27
+msgid "Filter out internal devices"
+msgstr "Filtre dels dispositius interns"
+
+#: data/power.appdata.xml.in:28
+msgid "Show tooltip on hover"
+msgstr "Mostra la descripció emergent en passar-hi"
+
+#: data/power.appdata.xml.in:29
+msgid "Performance improvements"
+msgstr "Millores de rendiment"
+
+#: data/power.appdata.xml.in:36
 msgid "Support for Controllers and Pens"
 msgstr "Suport per a controladors i llapis"
 
-#: data/power.appdata.xml.in:31
+#: data/power.appdata.xml.in:37
 msgid "Reduce spacing when percentage is shown"
 msgstr "Reducció de l'espaiat quan es mostra el percentatge"
 
-#: data/power.appdata.xml.in:46
+#: data/power.appdata.xml.in:52
 msgid "elementary, Inc."
 msgstr "elementary, Inc."

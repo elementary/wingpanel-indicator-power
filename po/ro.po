@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-28 06:51+0000\n"
+"POT-Creation-Date: 2021-08-06 23:02+0000\n"
 "PO-Revision-Date: 2017-04-27 14:36+0000\n"
 "Last-Translator: marius.a <marius.albina@gmail.com>\n"
 "Language-Team: Romanian <https://l10n.elementary.io/projects/wingpanel/"
@@ -16,21 +16,21 @@ msgstr ""
 "X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-12-14 05:38+0000\n"
 
-#: src/Indicator.vala:201
+#: src/Indicator.vala:221
 #, c-format
 msgid "%s: %s"
 msgstr ""
 
-#: src/Indicator.vala:202
+#: src/Indicator.vala:222
 msgid "Middle-click to toggle percentage"
 msgstr ""
 
-#: src/Indicator.vala:210
+#: src/Indicator.vala:230
 #, c-format
 msgid "Screen brightness: %i"
 msgstr ""
 
-#: src/Indicator.vala:211
+#: src/Indicator.vala:231
 msgid "Scroll to change screen brightness"
 msgstr ""
 
@@ -183,7 +183,7 @@ msgid "Device"
 msgstr "Dispozitiv"
 
 #. /Translators: This represents battery charge precentage with `%i` representing the number and `%%` representing the percent symbol
-#: src/Widgets/DisplayWidget.vala:31
+#: src/Widgets/DisplayWidget.vala:32
 #, c-format
 msgid "%i%%"
 msgstr ""
