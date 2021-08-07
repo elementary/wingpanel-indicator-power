@@ -70,7 +70,7 @@ public class Power.Indicator : Wingpanel.Indicator {
                     if (e.direction != Gdk.ScrollDirection.LEFT && e.direction != Gdk.ScrollDirection.RIGHT) {
                         double change = 0.0;
                         if (handle_scroll_event (e, out change)) {
-                            dm.change_brightness ((int)(change * BRIGHTNESS_STEP));
+                            dm.change_brightness ((int) (Math.round (change) * BRIGHTNESS_STEP));
                             if (!popover_widget.is_visible ()) {
                               show_notification ();
                             }
