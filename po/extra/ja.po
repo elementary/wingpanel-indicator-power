@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-28 06:51+0000\n"
+"POT-Creation-Date: 2021-08-06 23:02+0000\n"
 "PO-Revision-Date: 2021-07-18 04:52+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/wingpanel/"
@@ -32,55 +32,59 @@ msgstr ""
 "いアプリを確認したりします"
 
 #: data/power.appdata.xml.in:12
+msgid "Show brightness level when scrolled"
+msgstr ""
+
+#: data/power.appdata.xml.in:13 data/power.appdata.xml.in:30
+#: data/power.appdata.xml.in:38 data/power.appdata.xml.in:43
+msgid "Updated translations"
+msgstr "翻訳の更新"
+
+#: data/power.appdata.xml.in:18
 msgid "New features:"
 msgstr "新機能:"
 
-#: data/power.appdata.xml.in:14
+#: data/power.appdata.xml.in:20
 msgid "Show battery statistics when selected"
 msgstr "デバイス選択時にバッテリーの統計情報を表示できる機能を追加"
 
-#: data/power.appdata.xml.in:15
+#: data/power.appdata.xml.in:21
 msgid "Launch apps using power when selected"
 msgstr "電力消費が激しいアプリを選択するとそのアプリを起動できる機能を追加"
 
-#: data/power.appdata.xml.in:16
+#: data/power.appdata.xml.in:22
 msgid "Control display brightness by scrolling the indicator"
 msgstr ""
 "インジケーター上でスクロールするとディスプレイの輝度を変更できる機能を追加"
 
-#: data/power.appdata.xml.in:18
+#: data/power.appdata.xml.in:24
 msgid "Minor updates:"
 msgstr "軽微なアップデート:"
 
-#: data/power.appdata.xml.in:20
+#: data/power.appdata.xml.in:26
 msgid "Improvements for desktops with peripherals"
 msgstr "周辺機器を接続したデスクトップPCでの表示を改善"
 
-#: data/power.appdata.xml.in:21
+#: data/power.appdata.xml.in:27
 msgid "Filter out internal devices"
 msgstr "内部デバイスを表示しないように修正"
 
-#: data/power.appdata.xml.in:22
+#: data/power.appdata.xml.in:28
 msgid "Show tooltip on hover"
 msgstr "ホバー時にツールチップを表示するように変更"
 
-#: data/power.appdata.xml.in:23
+#: data/power.appdata.xml.in:29
 msgid "Performance improvements"
 msgstr "パフォーマンスの改善"
 
-#: data/power.appdata.xml.in:24 data/power.appdata.xml.in:32
-#: data/power.appdata.xml.in:37
-msgid "Updated translations"
-msgstr "翻訳の更新"
-
-#: data/power.appdata.xml.in:30
+#: data/power.appdata.xml.in:36
 msgid "Support for Controllers and Pens"
 msgstr "コントローラーとペンに対応"
 
-#: data/power.appdata.xml.in:31
+#: data/power.appdata.xml.in:37
 msgid "Reduce spacing when percentage is shown"
 msgstr "残量の割合表示の余白を削減"
 
-#: data/power.appdata.xml.in:46
+#: data/power.appdata.xml.in:52
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
