@@ -1,17 +1,14 @@
-public class Power.Utils : GLib.Object {
+public class Power.Utils {
 
     private const double BRIGHTNESS_STEP = 5;
-    private double total_y_delta = 0;
-    private double total_x_delta = 0;
-
-    private Services.DeviceManager dm;
-
-    construct {
-        dm = Power.Services.DeviceManager.get_default ();
-    }
+    private static double total_y_delta = 0;
+    private static double total_x_delta = 0;
 
     /* Smooth scrolling vertical support. Accumulate delta_y until threshold exceeded before actioning */
-    public bool handle_scroll_event (Gdk.EventScroll e, out double dir, bool natural_scroll_mouse, bool natural_scroll_touchpad) {
+    public static bool handle_scroll_event (Gdk.EventScroll e,
+                                            out double dir,
+                                            bool natural_scroll_mouse,
+                                            bool natural_scroll_touchpad) {
         dir = 0.0;
         bool natural_scroll;
         var event_source_device = e.get_source_device ();
@@ -70,7 +67,7 @@ public class Power.Utils : GLib.Object {
         return false;
     }
 
-    public void change_brightness (double value) {
-        dm.change_brightness ((int) (Math.round (value) * BRIGHTNESS_STEP));
+    public static void change_brightness (double value) {
+        Power.Services.DeviceManager.get_default ().change_brightness ((int) (Math.round (value) * BRIGHTNESS_STEP));
     }
 }

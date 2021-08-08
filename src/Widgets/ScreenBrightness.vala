@@ -24,10 +24,7 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
     public bool natural_scroll_touchpad { get; set; }
     public bool natural_scroll_mouse { get; set; }
 
-    private Utils utils;
-
     construct {
-        utils = new Utils ();
         dm = Power.Services.DeviceManager.get_default ();
 
         var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
@@ -79,8 +76,8 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
 
     private bool on_scroll_event (Gdk.EventScroll e) {
         double change = 0.0;
-        if (utils.handle_scroll_event (e, out change, natural_scroll_mouse, natural_scroll_touchpad)) {
-            utils.change_brightness (change);
+        if (Utils.handle_scroll_event (e, out change, natural_scroll_mouse, natural_scroll_touchpad)) {
+            Utils.change_brightness (change);
             return true;
         }
         return false;
