@@ -6,10 +6,9 @@ public class Power.Utils {
 
     /* Smooth scrolling vertical support. Accumulate delta_y until threshold exceeded before actioning */
     public static bool handle_scroll_event (Gdk.EventScroll e,
-                                            out double dir,
                                             bool natural_scroll_mouse,
                                             bool natural_scroll_touchpad) {
-        dir = 0.0;
+        var dir = 0.0;
         bool natural_scroll;
         var event_source_device = e.get_source_device ();
         if (event_source_device == null) {
@@ -61,13 +60,11 @@ public class Power.Utils {
         if (dir.abs () > 0.0) {
             total_y_delta = 0.0;
             total_x_delta = 0.0;
+            Power.Services.DeviceManager.get_default ()
+                .change_brightness ((int) (Math.round (dir) * BRIGHTNESS_STEP));
             return true;
+        } else {
+            return false;
         }
-
-        return false;
-    }
-
-    public static void change_brightness (double value) {
-        Power.Services.DeviceManager.get_default ().change_brightness ((int) (Math.round (value) * BRIGHTNESS_STEP));
     }
 }

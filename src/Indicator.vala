@@ -63,11 +63,8 @@ public class Power.Indicator : Wingpanel.Indicator {
 
             if (dm.backlight.present) {
                 display_widget.scroll_event.connect ((e) => {
-                    double change = 0.0;
-                    if (Utils.handle_scroll_event (e, out change, natural_scroll_mouse, natural_scroll_touchpad )) {
-                        Utils.change_brightness (change);
-
-                        if (popover_widget != null && !popover_widget.is_visible ()) {
+                    if (Utils.handle_scroll_event (e, natural_scroll_mouse, natural_scroll_touchpad )) {
+                        if (popover_widget == null || !popover_widget.is_visible ()) {
                           show_notification ();
                         }
 
