@@ -70,7 +70,7 @@ public class Power.Indicator : Wingpanel.Indicator {
                     if (utils.handle_scroll_event (e, out change, natural_scroll_mouse, natural_scroll_touchpad )) {
                         utils.change_brightness (change);
 
-                        if (popover_widget != null && !popover_widget.is_visible ()) {
+                        if (popover_widget == null || !popover_widget.is_visible ()) {
                           show_notification ();
                         }
 
