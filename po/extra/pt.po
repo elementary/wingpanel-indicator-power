@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-06 23:02+0000\n"
-"PO-Revision-Date: 2021-07-15 21:31+0000\n"
+"PO-Revision-Date: 2021-08-08 20:06+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/pt/>\n"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: data/power.appdata.xml.in:12
 msgid "Show brightness level when scrolled"
-msgstr ""
+msgstr "Mostrar nível de luminosidade quando roda com o rato"
 
 #: data/power.appdata.xml.in:13 data/power.appdata.xml.in:30
 #: data/power.appdata.xml.in:38 data/power.appdata.xml.in:43
