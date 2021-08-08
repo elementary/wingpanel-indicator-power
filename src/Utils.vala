@@ -14,13 +14,17 @@ public class Power.Utils : GLib.Object {
     public bool handle_scroll_event (Gdk.EventScroll e, out double dir, bool natural_scroll_mouse, bool natural_scroll_touchpad) {
         dir = 0.0;
         bool natural_scroll;
-        var event_source = e.get_source_device ().input_source;
-        if (event_source == Gdk.InputSource.MOUSE) {
+        var event_source_device = e.get_source_device ();
+        if (event_source_device == null) {
+            return false;
+        }
+
+        if (event_source_device.input_source == Gdk.InputSource.MOUSE) {
             natural_scroll = natural_scroll_mouse;
-        } else if (event_source == Gdk.InputSource.TOUCHPAD) {
+        } else if (event_source_device.input_source == Gdk.InputSource.TOUCHPAD) {
             natural_scroll = natural_scroll_touchpad;
         } else {
-            natural_scroll = false;
+            natural_scroll = true;
         }
 
         switch (e.direction) {

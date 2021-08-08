@@ -32,7 +32,6 @@ public class Power.Indicator : Wingpanel.Indicator {
     private Services.DeviceManager dm;
 
     private Settings settings;
-    private Notify.Notification? notification;
 
     private Utils utils;
 
@@ -71,7 +70,7 @@ public class Power.Indicator : Wingpanel.Indicator {
                     if (utils.handle_scroll_event (e, out change, natural_scroll_mouse, natural_scroll_touchpad )) {
                         utils.change_brightness (change);
 
-                        if (!popover_widget.is_visible ()) {
+                        if (popover_widget != null && !popover_widget.is_visible ()) {
                           show_notification ();
                         }
 
@@ -204,17 +203,20 @@ public class Power.Indicator : Wingpanel.Indicator {
     }
 
     private bool show_notification () {
-        notification = new Notify.Notification ("indicator-power", "", "display-brightness-symbolic");
-        notification.set_hint ("x-canonical-private-synchronous", new Variant.string ("indicator-power"));
-        notification.set_hint ("value", new Variant.int32 (dm.brightness));
-        try {
-            notification.show ();
-        } catch (Error e) {
-            warning ("Unable to show notification: %s", e.message);
-            notification = null;
-            return false;
+        if (is_in_session) {
+            var notification = new Notify.Notification ("indicator-power", "", "display-brightness-symbolic");
+            notification.set_hint ("x-canonical-private-synchronous", new Variant.string ("indicator-power"));
+            notification.set_hint ("value", new Variant.int32 (dm.brightness));
+            try {
+                notification.show ();
+                return true;
+            } catch (Error e) {
+                warning ("Unable to show notification: %s", e.message);
+            }
+
         }
-        return true;
+
+        return false;
     }
 }
 
