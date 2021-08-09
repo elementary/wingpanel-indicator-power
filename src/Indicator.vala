@@ -33,8 +33,6 @@ public class Power.Indicator : Wingpanel.Indicator {
     private Services.DeviceManager dm;
 
     private Settings settings;
-    private Notify.Notification? notification;
-
 
     public Indicator (bool is_in_session) {
         Object (
@@ -71,7 +69,7 @@ public class Power.Indicator : Wingpanel.Indicator {
                         double change = 0.0;
                         if (handle_scroll_event (e, out change)) {
                             dm.change_brightness ((int)(change * BRIGHTNESS_STEP));
-                            if (!popover_widget.is_visible ()) {
+                            if (popover_widget != null && !popover_widget.is_visible ()) {
                               show_notification ();
                             }
                             return true;
@@ -100,10 +98,14 @@ public class Power.Indicator : Wingpanel.Indicator {
     private bool handle_scroll_event (Gdk.EventScroll e, out double change) {
         change = 0.0;
         bool natural_scroll;
-        var event_source = e.get_source_device ().input_source;
-        if (event_source == Gdk.InputSource.MOUSE) {
+        var event_source_device = e.get_source_device ();
+        if (event_source_device == null) {
+            return false;
+        }
+
+        if (event_source_device.input_source == Gdk.InputSource.MOUSE) {
             natural_scroll = natural_scroll_mouse;
-        } else if (event_source == Gdk.InputSource.TOUCHPAD) {
+        } else if (event_source_device.input_source == Gdk.InputSource.TOUCHPAD) {
             natural_scroll = natural_scroll_touchpad;
         } else {
             natural_scroll = true;
@@ -244,17 +246,20 @@ public class Power.Indicator : Wingpanel.Indicator {
     }
 
     private bool show_notification () {
-        notification = new Notify.Notification ("indicator-power", "", "display-brightness-symbolic");
-        notification.set_hint ("x-canonical-private-synchronous", new Variant.string ("indicator-power"));
-        notification.set_hint ("value", new Variant.int32 (dm.brightness));
-        try {
-            notification.show ();
-        } catch (Error e) {
-            warning ("Unable to show notification: %s", e.message);
-            notification = null;
-            return false;
+        if (is_in_session) {
+            var notification = new Notify.Notification ("indicator-power", "", "display-brightness-symbolic");
+            notification.set_hint ("x-canonical-private-synchronous", new Variant.string ("indicator-power"));
+            notification.set_hint ("value", new Variant.int32 (dm.brightness));
+            try {
+                notification.show ();
+                return true;
+            } catch (Error e) {
+                warning ("Unable to show notification: %s", e.message);
+            }
+
         }
-        return true;
+
+        return false;
     }
 }
 
