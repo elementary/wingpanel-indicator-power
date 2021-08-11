@@ -20,6 +20,7 @@
 public class Power.Indicator : Wingpanel.Indicator {
     private const double BRIGHTNESS_STEP = 5;
     private const double LOW_BATTERY_PERCENTAGE = 20;
+    private bool is_desktop { get; set; default = false; }
 
     public bool is_in_session { get; construct; default = false; }
     public bool natural_scroll_touchpad { get; set; }
@@ -43,6 +44,13 @@ public class Power.Indicator : Wingpanel.Indicator {
 
     construct {
         dm = Power.Services.DeviceManager.get_default ();
+        dm.brightness_changed.connect (brightness => {
+            if (brightness == -1) {
+                is_desktop = true;
+            } else {
+                is_desktop = false;
+            }
+        });
         var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
         mouse_settings.bind ("natural-scroll", this, "natural-scroll-mouse", SettingsBindFlags.DEFAULT);
         var touchpad_settings = new GLib.Settings ("org.gnome.desktop.peripherals.touchpad");
@@ -67,7 +75,7 @@ public class Power.Indicator : Wingpanel.Indicator {
                 /* Ignore horizontal scrolling on wingpanel indicator */
                     if (e.direction != Gdk.ScrollDirection.LEFT && e.direction != Gdk.ScrollDirection.RIGHT) {
                         double change = 0.0;
-                        if (dm.brightness != -1) {
+                        if (!is_desktop) {
                             if (handle_scroll_event (e, out change)) {
                                 dm.change_brightness ((int)(change * BRIGHTNESS_STEP));
                                 if (popover_widget != null && !popover_widget.is_visible ()) {
@@ -75,6 +83,8 @@ public class Power.Indicator : Wingpanel.Indicator {
                                 }
                                 return true;
                             }
+                        } else if (popover_widget != null && !popover_widget.is_visible ()) {
+                            show_notification ();
                         }
                         return false;
                     }
@@ -250,9 +260,16 @@ public class Power.Indicator : Wingpanel.Indicator {
 
     private bool show_notification () {
         if (is_in_session) {
-            var notification = new Notify.Notification ("indicator-power", "", "display-brightness-symbolic");
-            notification.set_hint ("x-canonical-private-synchronous", new Variant.string ("indicator-power"));
-            notification.set_hint ("value", new Variant.int32 (dm.brightness));
+            var notification = new Notify.Notification ("", "", "");
+            if (is_desktop) {
+                notification = new Notify.Notification ("indicator-power", "", "application-exit");
+                notification.set_hint ("x-canonical-private-synchronous", new Variant.string ("indicator-power"));
+            } else {
+                notification = new Notify.Notification ("indicator-power", "", "display-brightness-symbolic");
+                notification.set_hint ("x-canonical-private-synchronous", new Variant.string ("indicator-power"));
+                notification.set_hint ("value", new Variant.int32 (dm.brightness));
+            }
+
             try {
                 notification.show ();
                 return true;
