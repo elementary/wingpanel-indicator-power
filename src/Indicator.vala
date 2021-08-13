@@ -42,6 +42,9 @@ public class Power.Indicator : Wingpanel.Indicator {
     }
 
     construct {
+        GLib.Intl.bindtextdomain (Constants.GETTEXT_PACKAGE, Constants.LOCALEDIR);
+        GLib.Intl.bind_textdomain_codeset (Constants.GETTEXT_PACKAGE, "UTF-8");
+
         dm = Power.Services.DeviceManager.get_default ();
         var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
         mouse_settings.bind ("natural-scroll", this, "natural-scroll-mouse", SettingsBindFlags.DEFAULT);
