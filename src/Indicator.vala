@@ -43,6 +43,9 @@ public class Power.Indicator : Wingpanel.Indicator {
     }
 
     construct {
+        GLib.Intl.bindtextdomain (Constants.GETTEXT_PACKAGE, Constants.LOCALEDIR);
+        GLib.Intl.bind_textdomain_codeset (Constants.GETTEXT_PACKAGE, "UTF-8");
+
         dm = Power.Services.DeviceManager.get_default ();
         dm.brightness_changed.connect (brightness => {
             if (brightness == -1) {
