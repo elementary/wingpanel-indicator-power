@@ -3,6 +3,7 @@ wingpanel_indicatorsdir = wingpanel_dep.get_pkgconfig_variable('indicatorsdir', 
 
 conf_data = configuration_data()
 conf_data.set('GETTEXT_PACKAGE', gettext_name)
+conf_data.set('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
 
 config_in = configure_file(
     input: 'config.vala.in',
