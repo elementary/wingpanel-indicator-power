@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-06 23:02+0000\n"
-"PO-Revision-Date: 2021-07-25 13:49+0000\n"
+"PO-Revision-Date: 2021-08-16 07:29+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/fi/>\n"
@@ -70,11 +70,11 @@ msgstr ""
 
 #: data/power.appdata.xml.in:28
 msgid "Show tooltip on hover"
-msgstr ""
+msgstr "Näytä työkaluvihje osoittaessa"
 
 #: data/power.appdata.xml.in:29
 msgid "Performance improvements"
-msgstr ""
+msgstr "Parannuksia suorituskykyyn"
 
 #: data/power.appdata.xml.in:36
 msgid "Support for Controllers and Pens"
