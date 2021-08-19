@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-06 23:02+0000\n"
-"PO-Revision-Date: 2019-11-07 11:57-0800\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-08-20 01:13+0000\n"
+"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
+"Language-Team: Slovak <https://l10n.elementary.io/projects/wingpanel/"
+"indicator-power-extra/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/power.appdata.xml.in:6
 msgid "Power Indicator"
@@ -34,7 +36,7 @@ msgstr ""
 #: data/power.appdata.xml.in:13 data/power.appdata.xml.in:30
 #: data/power.appdata.xml.in:38 data/power.appdata.xml.in:43
 msgid "Updated translations"
-msgstr ""
+msgstr "Aktualizované preklady"
 
 #: data/power.appdata.xml.in:18
 msgid "New features:"
@@ -54,7 +56,7 @@ msgstr ""
 
 #: data/power.appdata.xml.in:24
 msgid "Minor updates:"
-msgstr ""
+msgstr "Menšie aktualizácie:"
 
 #: data/power.appdata.xml.in:26
 msgid "Improvements for desktops with peripherals"
@@ -66,11 +68,11 @@ msgstr ""
 
 #: data/power.appdata.xml.in:28
 msgid "Show tooltip on hover"
-msgstr ""
+msgstr "Zobrazovať popis po umiestnení kurzora"
 
 #: data/power.appdata.xml.in:29
 msgid "Performance improvements"
-msgstr ""
+msgstr "Vylepšenia výkonu"
 
 #: data/power.appdata.xml.in:36
 msgid "Support for Controllers and Pens"
@@ -82,4 +84,4 @@ msgstr ""
 
 #: data/power.appdata.xml.in:52
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
