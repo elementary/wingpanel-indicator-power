@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-06 23:02+0000\n"
-"PO-Revision-Date: 2021-08-20 11:19+0000\n"
+"PO-Revision-Date: 2021-08-20 14:25+0000\n"
 "Last-Translator: janko mrkvicka <6aby74rto@relay.firefox.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/sk/>\n"
@@ -76,11 +76,11 @@ msgstr "Vylepšenia výkonu"
 
 #: data/power.appdata.xml.in:36
 msgid "Support for Controllers and Pens"
-msgstr ""
+msgstr "Podpora pre ovládače a perá"
 
 #: data/power.appdata.xml.in:37
 msgid "Reduce spacing when percentage is shown"
-msgstr ""
+msgstr "Zmenšiť medzery pri zobrazení percent"
 
 #: data/power.appdata.xml.in:52
 msgid "elementary, Inc."
