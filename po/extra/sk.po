@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-06 23:02+0000\n"
+"POT-Creation-Date: 2021-08-20 21:42+0000\n"
 "PO-Revision-Date: 2021-08-20 14:25+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/wingpanel/"
@@ -31,59 +31,63 @@ msgstr ""
 "Zobrazte si úroveň nabitia batérie, upravte jas obrazovky a skontrolujte "
 "aplikácie, ktoré spotrebúvajú veľa energie"
 
-#: data/power.appdata.xml.in:12
-msgid "Show brightness level when scrolled"
-msgstr "Otáčaním kolieska ovládajte jas obrazovky"
-
-#: data/power.appdata.xml.in:13 data/power.appdata.xml.in:30
-#: data/power.appdata.xml.in:38 data/power.appdata.xml.in:43
-msgid "Updated translations"
-msgstr "Aktualizované preklady"
-
-#: data/power.appdata.xml.in:18
+#: data/power.appdata.xml.in:12 data/power.appdata.xml.in:25
 msgid "New features:"
 msgstr "Nové funkcie:"
 
-#: data/power.appdata.xml.in:20
-msgid "Show battery statistics when selected"
-msgstr "Po označení zobrazuje štatistiky batérie"
+#: data/power.appdata.xml.in:14
+msgid "Show brightness level when scrolled"
+msgstr "Otáčaním kolieska ovládajte jas obrazovky"
 
-#: data/power.appdata.xml.in:21
-msgid "Launch apps using power when selected"
-msgstr "Po označení sa dajú spustiť aplikácie využívajúce energiu"
-
-#: data/power.appdata.xml.in:22
-msgid "Control display brightness by scrolling the indicator"
-msgstr "Otáčaním kolieska nastavujte jas obrazovky"
-
-#: data/power.appdata.xml.in:24
+#: data/power.appdata.xml.in:16 data/power.appdata.xml.in:31
 msgid "Minor updates:"
 msgstr "Menšie aktualizácie:"
 
-#: data/power.appdata.xml.in:26
+#: data/power.appdata.xml.in:18
+msgid "Match scroll direction with Sound indicator"
+msgstr ""
+
+#: data/power.appdata.xml.in:19 data/power.appdata.xml.in:37
+#: data/power.appdata.xml.in:45 data/power.appdata.xml.in:50
+msgid "Updated translations"
+msgstr "Aktualizované preklady"
+
+#: data/power.appdata.xml.in:27
+msgid "Show battery statistics when selected"
+msgstr "Po označení zobrazuje štatistiky batérie"
+
+#: data/power.appdata.xml.in:28
+msgid "Launch apps using power when selected"
+msgstr "Po označení sa dajú spustiť aplikácie využívajúce energiu"
+
+#: data/power.appdata.xml.in:29
+msgid "Control display brightness by scrolling the indicator"
+msgstr "Otáčaním kolieska nastavujte jas obrazovky"
+
+#: data/power.appdata.xml.in:33
 msgid "Improvements for desktops with peripherals"
 msgstr "Vylepšenia pre počítače s perifériami"
 
-#: data/power.appdata.xml.in:27
+#: data/power.appdata.xml.in:34
 msgid "Filter out internal devices"
 msgstr "Odfiltrujte vnútorné zariadenia"
 
-#: data/power.appdata.xml.in:28
+#: data/power.appdata.xml.in:35
 msgid "Show tooltip on hover"
 msgstr "Zobrazovať popis po umiestnení kurzora"
 
-#: data/power.appdata.xml.in:29
+#: data/power.appdata.xml.in:36
 msgid "Performance improvements"
 msgstr "Vylepšenia výkonu"
 
-#: data/power.appdata.xml.in:36
+#: data/power.appdata.xml.in:43
 msgid "Support for Controllers and Pens"
 msgstr "Podpora pre ovládače a perá"
 
-#: data/power.appdata.xml.in:37
+#: data/power.appdata.xml.in:44
 msgid "Reduce spacing when percentage is shown"
 msgstr "Zmenšiť medzery pri zobrazení percent"
 
-#: data/power.appdata.xml.in:52
+#: data/power.appdata.xml.in:59
 msgid "elementary, Inc."
 msgstr "elementary, Inc."

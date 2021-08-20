@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-06 23:02+0000\n"
+"POT-Creation-Date: 2021-08-20 21:42+0000\n"
 "PO-Revision-Date: 2021-07-28 11:58+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/wingpanel/"
@@ -15,21 +15,21 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-19 06:17+0000\n"
 
-#: src/Indicator.vala:221
+#: src/Indicator.vala:226
 #, c-format
 msgid "%s: %s"
 msgstr "%s: %s"
 
-#: src/Indicator.vala:222
+#: src/Indicator.vala:227
 msgid "Middle-click to toggle percentage"
 msgstr "Clic del mig per commutar el percentatge"
 
-#: src/Indicator.vala:230
+#: src/Indicator.vala:235
 #, c-format
 msgid "Screen brightness: %i"
 msgstr "Brillantor de la pantalla: %i"
 
-#: src/Indicator.vala:231
+#: src/Indicator.vala:236
 msgid "Scroll to change screen brightness"
 msgstr "Per canviar-ne la brillantor: amunt i avall"
 

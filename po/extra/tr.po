@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-06 23:02+0000\n"
+"POT-Creation-Date: 2021-08-20 21:42+0000\n"
 "PO-Revision-Date: 2021-08-14 00:39+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/wingpanel/"
@@ -31,60 +31,64 @@ msgstr ""
 "Pil seviyelerini görüntüleyin, ekran parlaklığını ayarlayın ve çok fazla güç "
 "kullanan uygulamaları görün"
 
-#: data/power.appdata.xml.in:12
-msgid "Show brightness level when scrolled"
-msgstr " "
-
-#: data/power.appdata.xml.in:13 data/power.appdata.xml.in:30
-#: data/power.appdata.xml.in:38 data/power.appdata.xml.in:43
-msgid "Updated translations"
-msgstr "Çeviriler güncellendi"
-
-#: data/power.appdata.xml.in:18
+#: data/power.appdata.xml.in:12 data/power.appdata.xml.in:25
 msgid "New features:"
 msgstr "Yeni özellikler:"
 
-#: data/power.appdata.xml.in:20
-msgid "Show battery statistics when selected"
-msgstr "Seçildiğinde pil istatistiklerini göster"
+#: data/power.appdata.xml.in:14
+msgid "Show brightness level when scrolled"
+msgstr " "
 
-#: data/power.appdata.xml.in:21
-msgid "Launch apps using power when selected"
-msgstr "Seçildiğinde gücü kullanarak uygulamaları başlatın"
-
-#: data/power.appdata.xml.in:22
-msgid "Control display brightness by scrolling the indicator"
-msgstr "Göstergeyi kaydırarak ekran parlaklığını kontrol edin"
-
-#: data/power.appdata.xml.in:24
+#: data/power.appdata.xml.in:16 data/power.appdata.xml.in:31
 msgid "Minor updates:"
 msgstr "Küçük güncellemeler:"
 
-#: data/power.appdata.xml.in:26
+#: data/power.appdata.xml.in:18
+msgid "Match scroll direction with Sound indicator"
+msgstr ""
+
+#: data/power.appdata.xml.in:19 data/power.appdata.xml.in:37
+#: data/power.appdata.xml.in:45 data/power.appdata.xml.in:50
+msgid "Updated translations"
+msgstr "Çeviriler güncellendi"
+
+#: data/power.appdata.xml.in:27
+msgid "Show battery statistics when selected"
+msgstr "Seçildiğinde pil istatistiklerini göster"
+
+#: data/power.appdata.xml.in:28
+msgid "Launch apps using power when selected"
+msgstr "Seçildiğinde gücü kullanarak uygulamaları başlatın"
+
+#: data/power.appdata.xml.in:29
+msgid "Control display brightness by scrolling the indicator"
+msgstr "Göstergeyi kaydırarak ekran parlaklığını kontrol edin"
+
+#: data/power.appdata.xml.in:33
 msgid "Improvements for desktops with peripherals"
 msgstr ""
 "Çevre birimlerine sahip masaüstü bilgisayarlar için iyileştirmeler yapıldı"
 
-#: data/power.appdata.xml.in:27
+#: data/power.appdata.xml.in:34
 msgid "Filter out internal devices"
 msgstr "Dahili cihazları filtreleyin"
 
-#: data/power.appdata.xml.in:28
+#: data/power.appdata.xml.in:35
 msgid "Show tooltip on hover"
 msgstr "Üzerine gelindiğinde araç ipucunu göster"
 
-#: data/power.appdata.xml.in:29
+#: data/power.appdata.xml.in:36
 msgid "Performance improvements"
 msgstr "Performans iyileştirmeleri"
 
-#: data/power.appdata.xml.in:36
+#: data/power.appdata.xml.in:43
 msgid "Support for Controllers and Pens"
 msgstr "Denetleyiciler ve Kalemler için destek eklendi"
 
-#: data/power.appdata.xml.in:37
+#: data/power.appdata.xml.in:44
 msgid "Reduce spacing when percentage is shown"
 msgstr "Yüzde olarak gösterildiğinde aralığı azalt"
 
-#: data/power.appdata.xml.in:52
+#: data/power.appdata.xml.in:59
 msgid "elementary, Inc."
 msgstr "elementary, Inc."

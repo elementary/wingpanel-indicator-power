@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-06 23:02+0000\n"
+"POT-Creation-Date: 2021-08-20 21:42+0000\n"
 "PO-Revision-Date: 2020-09-22 13:14+0000\n"
 "Last-Translator: Shukrullo <shukrullo@umail.uz>\n"
 "Language-Team: Uzbek <https://l10n.elementary.io/projects/wingpanel/"
@@ -31,59 +31,63 @@ msgstr ""
 "Batareya darajalarini ko'rish, ekran yorqinligini sozlash va quvvatni ko'p "
 "ishlatayotgan dasturlashni ko'rish"
 
-#: data/power.appdata.xml.in:12
-msgid "Show brightness level when scrolled"
-msgstr ""
-
-#: data/power.appdata.xml.in:13 data/power.appdata.xml.in:30
-#: data/power.appdata.xml.in:38 data/power.appdata.xml.in:43
-msgid "Updated translations"
-msgstr "Yangilangan tarjimalar"
-
-#: data/power.appdata.xml.in:18
+#: data/power.appdata.xml.in:12 data/power.appdata.xml.in:25
 msgid "New features:"
 msgstr ""
 
-#: data/power.appdata.xml.in:20
-msgid "Show battery statistics when selected"
+#: data/power.appdata.xml.in:14
+msgid "Show brightness level when scrolled"
 msgstr ""
 
-#: data/power.appdata.xml.in:21
-msgid "Launch apps using power when selected"
-msgstr ""
-
-#: data/power.appdata.xml.in:22
-msgid "Control display brightness by scrolling the indicator"
-msgstr ""
-
-#: data/power.appdata.xml.in:24
+#: data/power.appdata.xml.in:16 data/power.appdata.xml.in:31
 msgid "Minor updates:"
 msgstr ""
 
-#: data/power.appdata.xml.in:26
-msgid "Improvements for desktops with peripherals"
+#: data/power.appdata.xml.in:18
+msgid "Match scroll direction with Sound indicator"
 msgstr ""
 
+#: data/power.appdata.xml.in:19 data/power.appdata.xml.in:37
+#: data/power.appdata.xml.in:45 data/power.appdata.xml.in:50
+msgid "Updated translations"
+msgstr "Yangilangan tarjimalar"
+
 #: data/power.appdata.xml.in:27
-msgid "Filter out internal devices"
+msgid "Show battery statistics when selected"
 msgstr ""
 
 #: data/power.appdata.xml.in:28
-msgid "Show tooltip on hover"
+msgid "Launch apps using power when selected"
 msgstr ""
 
 #: data/power.appdata.xml.in:29
-msgid "Performance improvements"
+msgid "Control display brightness by scrolling the indicator"
+msgstr ""
+
+#: data/power.appdata.xml.in:33
+msgid "Improvements for desktops with peripherals"
+msgstr ""
+
+#: data/power.appdata.xml.in:34
+msgid "Filter out internal devices"
+msgstr ""
+
+#: data/power.appdata.xml.in:35
+msgid "Show tooltip on hover"
 msgstr ""
 
 #: data/power.appdata.xml.in:36
+msgid "Performance improvements"
+msgstr ""
+
+#: data/power.appdata.xml.in:43
 msgid "Support for Controllers and Pens"
 msgstr "Boshqaruvchilar va Ruchkalarni qo'llab quvvatlash"
 
-#: data/power.appdata.xml.in:37
+#: data/power.appdata.xml.in:44
 msgid "Reduce spacing when percentage is shown"
 msgstr "Agar foiz ko'rinayotgan bo'lsa oradagi bo'shliqni kamaytirish"
 
-#: data/power.appdata.xml.in:52
+#: data/power.appdata.xml.in:59
 msgid "elementary, Inc."
 msgstr "elementary Inc."
