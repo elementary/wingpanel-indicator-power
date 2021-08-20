@@ -272,7 +272,7 @@ public class Power.Indicator : Wingpanel.Indicator {
     private bool battery_charged_notification () {
       if (is_in_session) {
           try {
-              var notification = new Notify.Notification (_("Battery Charged"), _("Consider unplug the charger"), "battery-full-charged");
+              var notification = new Notify.Notification (_("Battery Charged"), _("Consider unplug the charger"), "battery-full-charged-symbolic");
               notification.set_urgency (Notify.Urgency.NORMAL);
               notification.show ();
               return true;
