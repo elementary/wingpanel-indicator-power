@@ -213,7 +213,7 @@ public class Power.Indicator : Wingpanel.Indicator {
         string? primary_text = null;
         string? secondary_text = null;
         if (display_device != null) {
-            if (display_device.percentage == 100) {
+            if (display_device.percentage == 100 && display_device.is_charging) {
                 battery_charged_notification ();
             }
 
