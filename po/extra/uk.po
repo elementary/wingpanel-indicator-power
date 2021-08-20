@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-06 23:02+0000\n"
+"POT-Creation-Date: 2021-08-20 21:42+0000\n"
 "PO-Revision-Date: 2021-08-07 11:43+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/wingpanel/"
@@ -32,60 +32,64 @@ msgstr ""
 "Переглядайте рівень заряду акумулятора, регулюйте рівень яскравості екрана "
 "та переглядайте, які з застосунків використовують забагато енергії"
 
-#: data/power.appdata.xml.in:12
-msgid "Show brightness level when scrolled"
-msgstr "Показ рівня яскравості прокручуванням коліщатка миші"
-
-#: data/power.appdata.xml.in:13 data/power.appdata.xml.in:30
-#: data/power.appdata.xml.in:38 data/power.appdata.xml.in:43
-msgid "Updated translations"
-msgstr "Оновлено переклади"
-
-#: data/power.appdata.xml.in:18
+#: data/power.appdata.xml.in:12 data/power.appdata.xml.in:25
 msgid "New features:"
 msgstr "Нові можливості:"
 
-#: data/power.appdata.xml.in:20
+#: data/power.appdata.xml.in:14
+msgid "Show brightness level when scrolled"
+msgstr "Показ рівня яскравості прокручуванням коліщатка миші"
+
+#: data/power.appdata.xml.in:16 data/power.appdata.xml.in:31
+msgid "Minor updates:"
+msgstr "Незначні оновлення:"
+
+#: data/power.appdata.xml.in:18
+msgid "Match scroll direction with Sound indicator"
+msgstr ""
+
+#: data/power.appdata.xml.in:19 data/power.appdata.xml.in:37
+#: data/power.appdata.xml.in:45 data/power.appdata.xml.in:50
+msgid "Updated translations"
+msgstr "Оновлено переклади"
+
+#: data/power.appdata.xml.in:27
 msgid "Show battery statistics when selected"
 msgstr "Показ статистики заряду, якщо вибрано"
 
-#: data/power.appdata.xml.in:21
+#: data/power.appdata.xml.in:28
 msgid "Launch apps using power when selected"
 msgstr "Запуск застосунків, які використовують живлення, якщо вибрано"
 
-#: data/power.appdata.xml.in:22
+#: data/power.appdata.xml.in:29
 msgid "Control display brightness by scrolling the indicator"
 msgstr ""
 "Керування яскравістю дисплея, прокручуванням коліщатка миші на індикаторі"
 
-#: data/power.appdata.xml.in:24
-msgid "Minor updates:"
-msgstr "Незначні оновлення:"
-
-#: data/power.appdata.xml.in:26
+#: data/power.appdata.xml.in:33
 msgid "Improvements for desktops with peripherals"
 msgstr "Удосконалення для настільних ПК з периферійними пристроями"
 
-#: data/power.appdata.xml.in:27
+#: data/power.appdata.xml.in:34
 msgid "Filter out internal devices"
 msgstr "Фільтрування внутрішніх пристроїв"
 
-#: data/power.appdata.xml.in:28
+#: data/power.appdata.xml.in:35
 msgid "Show tooltip on hover"
 msgstr "Показ підказок під час наведення"
 
-#: data/power.appdata.xml.in:29
+#: data/power.appdata.xml.in:36
 msgid "Performance improvements"
 msgstr "Поліпшення швидкодії"
 
-#: data/power.appdata.xml.in:36
+#: data/power.appdata.xml.in:43
 msgid "Support for Controllers and Pens"
 msgstr "Підтримка контролерів та електронних олівців (стилусів)"
 
-#: data/power.appdata.xml.in:37
+#: data/power.appdata.xml.in:44
 msgid "Reduce spacing when percentage is shown"
 msgstr "Зменшено відстань між елементами, коли показано відсоток заряду"
 
-#: data/power.appdata.xml.in:52
+#: data/power.appdata.xml.in:59
 msgid "elementary, Inc."
 msgstr "elementary, Inc."

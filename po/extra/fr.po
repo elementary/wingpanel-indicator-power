@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-06 23:02+0000\n"
+"POT-Creation-Date: 2021-08-20 21:42+0000\n"
 "PO-Revision-Date: 2021-08-15 05:33+0000\n"
 "Last-Translator: roxfr <roxfr@outlook.fr>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/wingpanel/"
@@ -31,61 +31,65 @@ msgstr ""
 "Voir le niveau de batterie, ajuster la luminosité de l'écran et voir les "
 "applications utilisant beaucoup d'énergie"
 
-#: data/power.appdata.xml.in:12
-msgid "Show brightness level when scrolled"
-msgstr "Affichage du niveau de luminosité lors du défilement"
-
-#: data/power.appdata.xml.in:13 data/power.appdata.xml.in:30
-#: data/power.appdata.xml.in:38 data/power.appdata.xml.in:43
-msgid "Updated translations"
-msgstr "Mise à jour des traductions"
-
-#: data/power.appdata.xml.in:18
+#: data/power.appdata.xml.in:12 data/power.appdata.xml.in:25
 msgid "New features:"
 msgstr "Nouvelles fonctionnalités :"
 
-#: data/power.appdata.xml.in:20
+#: data/power.appdata.xml.in:14
+msgid "Show brightness level when scrolled"
+msgstr "Affichage du niveau de luminosité lors du défilement"
+
+#: data/power.appdata.xml.in:16 data/power.appdata.xml.in:31
+msgid "Minor updates:"
+msgstr "Mises à jour mineures :"
+
+#: data/power.appdata.xml.in:18
+msgid "Match scroll direction with Sound indicator"
+msgstr ""
+
+#: data/power.appdata.xml.in:19 data/power.appdata.xml.in:37
+#: data/power.appdata.xml.in:45 data/power.appdata.xml.in:50
+msgid "Updated translations"
+msgstr "Mise à jour des traductions"
+
+#: data/power.appdata.xml.in:27
 msgid "Show battery statistics when selected"
 msgstr "Affichage des statistiques de la batterie lorsque sélectionné"
 
-#: data/power.appdata.xml.in:21
+#: data/power.appdata.xml.in:28
 msgid "Launch apps using power when selected"
 msgstr ""
 "Lancer des applications en utilisant l'alimentation lorsqu'il est sélectionné"
 
-#: data/power.appdata.xml.in:22
+#: data/power.appdata.xml.in:29
 msgid "Control display brightness by scrolling the indicator"
 msgstr ""
 "Contrôlez la luminosité de l'affichage en défilant la souris sur l'indicateur"
 
-#: data/power.appdata.xml.in:24
-msgid "Minor updates:"
-msgstr "Mises à jour mineures :"
-
-#: data/power.appdata.xml.in:26
+#: data/power.appdata.xml.in:33
 msgid "Improvements for desktops with peripherals"
 msgstr "Améliorations pour les appareils avec des périphériques"
 
-#: data/power.appdata.xml.in:27
+#: data/power.appdata.xml.in:34
 msgid "Filter out internal devices"
 msgstr "Filtrage des périphériques internes"
 
-#: data/power.appdata.xml.in:28
+#: data/power.appdata.xml.in:35
 msgid "Show tooltip on hover"
 msgstr "Affichage d'une infobulle au survol"
 
-#: data/power.appdata.xml.in:29
+#: data/power.appdata.xml.in:36
 msgid "Performance improvements"
 msgstr "Améliorations des performances"
 
-#: data/power.appdata.xml.in:36
+#: data/power.appdata.xml.in:43
 msgid "Support for Controllers and Pens"
 msgstr "Prise en charge des manettes et des stylets"
 
-#: data/power.appdata.xml.in:37
+#: data/power.appdata.xml.in:44
 msgid "Reduce spacing when percentage is shown"
 msgstr "Diminution de l'espacement lorsque le pourcentage est affiché"
 
-#: data/power.appdata.xml.in:52
+#: data/power.appdata.xml.in:59
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
