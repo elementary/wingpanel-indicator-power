@@ -7,7 +7,7 @@
   <summary>View battery levels, adjust display brightness, and see apps using lots of power</summary>
   <icon type="stock">preferences-system-power</icon>
   <releases>
-    <release version="6.1.0" date="2020-08-04" urgency="medium">
+    <release version="6.1.0" date="2020-08-20" urgency="medium">
       <description>
         <p>New features:</p>
         <ul>
