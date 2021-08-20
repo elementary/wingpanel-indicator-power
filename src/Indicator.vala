@@ -213,6 +213,10 @@ public class Power.Indicator : Wingpanel.Indicator {
         string? primary_text = null;
         string? secondary_text = null;
         if (display_device != null) {
+            if (display_device.percentage == 100) {
+                battery_charged_notification ();
+            }
+
             if (display_device.percentage <= LOW_BATTERY_PERCENTAGE && !display_device.is_charging) {
                 display_widget.show_percentage (true);
             }
@@ -264,6 +268,22 @@ public class Power.Indicator : Wingpanel.Indicator {
 
         return false;
     }
+
+    private bool battery_charged_notification () {
+      if (is_in_session) {
+          try {
+              var notification = new Notify.Notification (_("Battery Charged"), _("Consider unplug the charger"), "battery-full-charged-symbolic");
+              notification.set_urgency (Notify.Urgency.NORMAL);
+              notification.show ();
+              return true;
+          } catch (Error e) {
+              warning ("Unable to show notification: %s", e.message);
+              return false;
+          }
+      }
+
+      return false;
+  }
 }
 
 public Wingpanel.Indicator get_indicator (Module module, Wingpanel.IndicatorManager.ServerType server_type) {
