@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-20 21:42+0000\n"
-"PO-Revision-Date: 2021-08-20 14:25+0000\n"
+"PO-Revision-Date: 2021-08-23 17:40+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/sk/>\n"
@@ -45,7 +45,7 @@ msgstr "Menšie aktualizácie:"
 
 #: data/power.appdata.xml.in:18
 msgid "Match scroll direction with Sound indicator"
-msgstr ""
+msgstr "Smer otáčania kolieska zladený s Indikátorom zvuku"
 
 #: data/power.appdata.xml.in:19 data/power.appdata.xml.in:37
 #: data/power.appdata.xml.in:45 data/power.appdata.xml.in:50
