@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-20 21:42+0000\n"
-"PO-Revision-Date: 2021-08-08 20:06+0000\n"
+"PO-Revision-Date: 2021-08-23 07:35+0000\n"
 "Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/de/>\n"
@@ -46,6 +46,8 @@ msgstr "Kleinere Aktualisierungen:"
 #: data/power.appdata.xml.in:18
 msgid "Match scroll direction with Sound indicator"
 msgstr ""
+"Sorgt dafür, dass Scrollrichtung und Tonanzeige miteinander abgeglichen "
+"werden"
 
 #: data/power.appdata.xml.in:19 data/power.appdata.xml.in:37
 #: data/power.appdata.xml.in:45 data/power.appdata.xml.in:50
