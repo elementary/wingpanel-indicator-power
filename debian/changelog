@@ -1,3 +1,19 @@
+wingpanel-indicator-power (6.1.0) bionic; urgency=medium
+
+  * Release 6.1.0 (#216)
+  * Update translation files
+  * Update translation template
+  * l10n: Correctly setup the locales (#214)
+  * Check possible nulls; no notification in greeter (#210)
+  * Show scale popover when scroll on icon (#199)
+  * ScreenBrightness: Fix unwanted comma (#203)
+  * Improve support for Smooth and Non-Smooth scroll events. (#200)
+  * feat: fix touchpad scroll direction in indicator (#198)
+  * Show percentage at or below 20% (#194)
+  * Show charged (#196)
+
+ -- elementary, Inc. <builds@elementary.io>  Mon, 23 Aug 2021 17:39:54 +0000
+
 wingpanel-indicator-power (6.0.0) bionic; urgency=medium
 
   * Release 6.0.0 (#191)
