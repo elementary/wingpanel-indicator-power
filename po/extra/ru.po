@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 17:39+0000\n"
-"PO-Revision-Date: 2021-08-22 10:13+0000\n"
+"PO-Revision-Date: 2021-08-23 19:43+0000\n"
 "Last-Translator: asdffdsdaf <asdffdsdaf@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/ru/>\n"
@@ -43,6 +43,8 @@ msgstr "Отображение уровня яркости при прокрут
 #: data/power.appdata.xml.in:15
 msgid "Show battery percentage automatically at 20% or lower"
 msgstr ""
+"Отображение процента заряда аккумулятора автоматически если заряд равен 20% "
+"или ниже"
 
 #: data/power.appdata.xml.in:17 data/power.appdata.xml.in:33
 msgid "Minor updates:"
@@ -55,6 +57,8 @@ msgstr "Соответствие направления прокрутки с и
 #: data/power.appdata.xml.in:20
 msgid "Show \"Fully Charged\" at 100% when plugged in"
 msgstr ""
+"Отображение опповещения о полной зарядке при достижении 100% заряда "
+"аккумулятора"
 
 #: data/power.appdata.xml.in:21 data/power.appdata.xml.in:39
 #: data/power.appdata.xml.in:47 data/power.appdata.xml.in:52
