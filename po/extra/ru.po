@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-20 21:42+0000\n"
-"PO-Revision-Date: 2021-08-12 17:52+0000\n"
-"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
+"POT-Creation-Date: 2021-08-23 17:39+0000\n"
+"PO-Revision-Date: 2021-08-23 19:43+0000\n"
+"Last-Translator: asdffdsdaf <asdffdsdaf@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/ru/>\n"
 "Language: ru\n"
@@ -32,7 +32,7 @@ msgstr ""
 "Просматривайте уровень заряда аккумулятора, регулируйте уровень яркости "
 "экрана, а также смотрите, какие из приложений используют много энергии"
 
-#: data/power.appdata.xml.in:12 data/power.appdata.xml.in:25
+#: data/power.appdata.xml.in:12 data/power.appdata.xml.in:27
 msgid "New features:"
 msgstr "Новые возможности:"
 
@@ -40,55 +40,67 @@ msgstr "Новые возможности:"
 msgid "Show brightness level when scrolled"
 msgstr "Отображение уровня яркости при прокрутке колесом мыши"
 
-#: data/power.appdata.xml.in:16 data/power.appdata.xml.in:31
+#: data/power.appdata.xml.in:15
+msgid "Show battery percentage automatically at 20% or lower"
+msgstr ""
+"Отображение процента заряда аккумулятора автоматически если заряд равен 20% "
+"или ниже"
+
+#: data/power.appdata.xml.in:17 data/power.appdata.xml.in:33
 msgid "Minor updates:"
 msgstr "Незначительные обновления:"
 
-#: data/power.appdata.xml.in:18
+#: data/power.appdata.xml.in:19
 msgid "Match scroll direction with Sound indicator"
-msgstr ""
+msgstr "Соответствие направления прокрутки с индикатором звука"
 
-#: data/power.appdata.xml.in:19 data/power.appdata.xml.in:37
-#: data/power.appdata.xml.in:45 data/power.appdata.xml.in:50
+#: data/power.appdata.xml.in:20
+msgid "Show \"Fully Charged\" at 100% when plugged in"
+msgstr ""
+"Отображение опповещения о полной зарядке при достижении 100% заряда "
+"аккумулятора"
+
+#: data/power.appdata.xml.in:21 data/power.appdata.xml.in:39
+#: data/power.appdata.xml.in:47 data/power.appdata.xml.in:52
 msgid "Updated translations"
 msgstr "Обновлены переводы"
 
-#: data/power.appdata.xml.in:27
+#: data/power.appdata.xml.in:29
 msgid "Show battery statistics when selected"
 msgstr "Отображение статистики батареи при выборе"
 
-#: data/power.appdata.xml.in:28
+#: data/power.appdata.xml.in:30
 msgid "Launch apps using power when selected"
 msgstr "Запуск приложений с использованием питания, при выборе"
 
-#: data/power.appdata.xml.in:29
+#: data/power.appdata.xml.in:31
 msgid "Control display brightness by scrolling the indicator"
 msgstr "Управление яркостью дисплея путем прокрутки колесом мыши по индикатору"
 
-#: data/power.appdata.xml.in:33
+#: data/power.appdata.xml.in:35
 msgid "Improvements for desktops with peripherals"
 msgstr "Улучшения для настольных компьютеров с периферийными устройствами"
 
-#: data/power.appdata.xml.in:34
+#: data/power.appdata.xml.in:36
 msgid "Filter out internal devices"
 msgstr "Фильтрация внутренних устройств"
 
-#: data/power.appdata.xml.in:35
+#: data/power.appdata.xml.in:37
 msgid "Show tooltip on hover"
 msgstr "Появление всплывающих подсказкок при наведении"
 
-#: data/power.appdata.xml.in:36
+#: data/power.appdata.xml.in:38
 msgid "Performance improvements"
 msgstr "Улучшения производительности"
 
-#: data/power.appdata.xml.in:43
+#: data/power.appdata.xml.in:45
 msgid "Support for Controllers and Pens"
 msgstr "Поддержка контроллеров и стилусов"
 
-#: data/power.appdata.xml.in:44
+#: data/power.appdata.xml.in:46
 msgid "Reduce spacing when percentage is shown"
 msgstr "Уменьшено расстояние между элементами, когда показан процент заряда"
 
-#: data/power.appdata.xml.in:59
+#: data/power.appdata.xml.in:61
 msgid "elementary, Inc."
 msgstr "elementary, Inc."

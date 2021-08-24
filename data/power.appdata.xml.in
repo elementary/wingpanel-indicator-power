@@ -7,15 +7,17 @@
   <summary>View battery levels, adjust display brightness, and see apps using lots of power</summary>
   <icon type="stock">preferences-system-power</icon>
   <releases>
-    <release version="6.1.0" date="2020-08-04" urgency="medium">
+    <release version="6.1.0" date="2020-08-23" urgency="medium">
       <description>
         <p>New features:</p>
         <ul>
           <li>Show brightness level when scrolled</li>
+          <li>Show battery percentage automatically at 20% or lower</li>
         </ul>
         <p>Minor updates:</p>
         <ul>
           <li>Match scroll direction with Sound indicator</li>
+          <li>Show "Fully Charged" at 100% when plugged in</li>
           <li>Updated translations</li>
         </ul>
       </description>
