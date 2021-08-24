@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 17:39+0000\n"
-"PO-Revision-Date: 2021-08-23 17:40+0000\n"
+"PO-Revision-Date: 2021-08-24 17:46+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/sk/>\n"
@@ -28,7 +28,7 @@ msgid ""
 "View battery levels, adjust display brightness, and see apps using lots of "
 "power"
 msgstr ""
-"Zobrazte si úroveň nabitia batérie, upravte jas obrazovky a skontrolujte "
+"Zobrazte úroveň nabitia batérie, upravte jas obrazovky a skontrolujte "
 "aplikácie, ktoré spotrebúvajú veľa energie"
 
 #: data/power.appdata.xml.in:12 data/power.appdata.xml.in:27
@@ -41,7 +41,7 @@ msgstr "Otáčaním kolieska ovládajte jas obrazovky"
 
 #: data/power.appdata.xml.in:15
 msgid "Show battery percentage automatically at 20% or lower"
-msgstr ""
+msgstr "Zobrazovať percentá batérie automaticky pri 20% alebo nižšie"
 
 #: data/power.appdata.xml.in:17 data/power.appdata.xml.in:33
 msgid "Minor updates:"
@@ -53,7 +53,7 @@ msgstr "Smer otáčania kolieska zladený s Indikátorom zvuku"
 
 #: data/power.appdata.xml.in:20
 msgid "Show \"Fully Charged\" at 100% when plugged in"
-msgstr ""
+msgstr "Zobrazovať „Plne nabité“ pri 100% s pripojenou nabíjačkou"
 
 #: data/power.appdata.xml.in:21 data/power.appdata.xml.in:39
 #: data/power.appdata.xml.in:47 data/power.appdata.xml.in:52
