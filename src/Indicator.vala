@@ -33,8 +33,6 @@ public class Power.Indicator : Wingpanel.Indicator {
 
     private Settings settings;
 
-    private Utils utils;
-
     public Indicator (bool is_in_session) {
         Object (
             code_name : Wingpanel.Indicator.POWER,
@@ -43,7 +41,6 @@ public class Power.Indicator : Wingpanel.Indicator {
     }
 
     construct {
-        utils = new Utils ();
         GLib.Intl.bindtextdomain (Constants.GETTEXT_PACKAGE, Constants.LOCALEDIR);
         GLib.Intl.bind_textdomain_codeset (Constants.GETTEXT_PACKAGE, "UTF-8");
         dm = Power.Services.DeviceManager.get_default ();
@@ -68,10 +65,7 @@ public class Power.Indicator : Wingpanel.Indicator {
 
             if (dm.backlight.present) {
                 display_widget.scroll_event.connect ((e) => {
-                    double change = 0.0;
-                    if (utils.handle_scroll_event (e, out change, natural_scroll_mouse, natural_scroll_touchpad )) {
-                        utils.change_brightness (change);
-
+                    if (Utils.handle_scroll_event (e, natural_scroll_mouse, natural_scroll_touchpad )) {
                         if (popover_widget == null || !popover_widget.is_visible ()) {
                           show_notification ();
                         }
