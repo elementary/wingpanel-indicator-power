@@ -224,7 +224,7 @@ public class Power.Indicator : Wingpanel.Indicator {
           try {
               var notification = new Notify.Notification (
                   _("%s fully charged").printf (display_device.device_type.get_name ()),
-                  _("Unplugging the device now can extend battery health"), "battery-full-charged");
+                  _("Unplugging the device now can improve battery health"), "battery-full-charged");
               notification.set_urgency (Notify.Urgency.NORMAL);
               notification.show ();
               return true;
