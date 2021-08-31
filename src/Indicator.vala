@@ -78,14 +78,14 @@ public class Power.Indicator : Wingpanel.Indicator {
                             if (popover_widget == null || !popover_widget.is_visible ()) {
                               show_notification ();
                             }
-        
+
                             return true;
-                        } 
-                            
+                        }
+   
                     } else if (popover_widget != null && !popover_widget.is_visible ()) {
                         show_notification ();
                     }
-    
+
                     return false;
                 });
 
