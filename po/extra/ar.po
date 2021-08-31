@@ -7,78 +7,96 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-06 23:02+0000\n"
-"PO-Revision-Date: 2019-11-07 11:57-0800\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2021-08-23 17:39+0000\n"
+"PO-Revision-Date: 2021-08-27 13:57+0000\n"
+"Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
+"Language-Team: Arabic <https://l10n.elementary.io/projects/wingpanel/"
+"indicator-power-extra/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/power.appdata.xml.in:6
 msgid "Power Indicator"
-msgstr ""
+msgstr "مؤشر الطاقة"
 
 #: data/power.appdata.xml.in:7
 msgid ""
 "View battery levels, adjust display brightness, and see apps using lots of "
 "power"
 msgstr ""
+"قم برؤية مستوى البطارية، وضبط سطوع شاشة العرض، ورؤية التطبيقات التي تستهلك "
+"طاقة كبيرة"
 
-#: data/power.appdata.xml.in:12
-msgid "Show brightness level when scrolled"
-msgstr ""
-
-#: data/power.appdata.xml.in:13 data/power.appdata.xml.in:30
-#: data/power.appdata.xml.in:38 data/power.appdata.xml.in:43
-msgid "Updated translations"
-msgstr ""
-
-#: data/power.appdata.xml.in:18
+#: data/power.appdata.xml.in:12 data/power.appdata.xml.in:27
 msgid "New features:"
-msgstr ""
+msgstr "ميزات جديدة:"
+
+#: data/power.appdata.xml.in:14
+msgid "Show brightness level when scrolled"
+msgstr "إظهار مستوى سطوع الشاشة عند التمرير"
+
+#: data/power.appdata.xml.in:15
+msgid "Show battery percentage automatically at 20% or lower"
+msgstr "إظهار النسبة المئوية بشكل تلقائي عندما يصبح شحن البطارية 20% أو أقل"
+
+#: data/power.appdata.xml.in:17 data/power.appdata.xml.in:33
+msgid "Minor updates:"
+msgstr "تحديثات طفيفة:"
+
+#: data/power.appdata.xml.in:19
+msgid "Match scroll direction with Sound indicator"
+msgstr "تطابق اتجاه التمرير مع مؤشر الصوت"
 
 #: data/power.appdata.xml.in:20
-msgid "Show battery statistics when selected"
-msgstr ""
+msgid "Show \"Fully Charged\" at 100% when plugged in"
+msgstr "إظهار \"مشحون بالكامل\" عند مستوى 100% عند وصل الجهاز بالكهرباء"
 
-#: data/power.appdata.xml.in:21
-msgid "Launch apps using power when selected"
-msgstr ""
-
-#: data/power.appdata.xml.in:22
-msgid "Control display brightness by scrolling the indicator"
-msgstr ""
-
-#: data/power.appdata.xml.in:24
-msgid "Minor updates:"
-msgstr ""
-
-#: data/power.appdata.xml.in:26
-msgid "Improvements for desktops with peripherals"
-msgstr ""
-
-#: data/power.appdata.xml.in:27
-msgid "Filter out internal devices"
-msgstr ""
-
-#: data/power.appdata.xml.in:28
-msgid "Show tooltip on hover"
-msgstr ""
+#: data/power.appdata.xml.in:21 data/power.appdata.xml.in:39
+#: data/power.appdata.xml.in:47 data/power.appdata.xml.in:52
+msgid "Updated translations"
+msgstr "تحديثات على الترجمة"
 
 #: data/power.appdata.xml.in:29
-msgid "Performance improvements"
-msgstr ""
+msgid "Show battery statistics when selected"
+msgstr "إظهار إحصائيات البطارية عند اختيار المؤشر"
+
+#: data/power.appdata.xml.in:30
+msgid "Launch apps using power when selected"
+msgstr "فتح التطبيقات التي تستخدم الطاقة عند اختيار المؤشر"
+
+#: data/power.appdata.xml.in:31
+msgid "Control display brightness by scrolling the indicator"
+msgstr "التحكم بسطوع شاشة العرض عن طريق التمرير على المؤشر"
+
+#: data/power.appdata.xml.in:35
+msgid "Improvements for desktops with peripherals"
+msgstr "تحسينات للأجهزة المكتبية التي تستخدم أجهزة طرفية"
 
 #: data/power.appdata.xml.in:36
-msgid "Support for Controllers and Pens"
-msgstr ""
+msgid "Filter out internal devices"
+msgstr "تصفية الأجهزة الداخلية"
 
 #: data/power.appdata.xml.in:37
-msgid "Reduce spacing when percentage is shown"
-msgstr ""
+msgid "Show tooltip on hover"
+msgstr "إظهار تلميح عند التمرير"
 
-#: data/power.appdata.xml.in:52
+#: data/power.appdata.xml.in:38
+msgid "Performance improvements"
+msgstr "تحسينات على الأداء"
+
+#: data/power.appdata.xml.in:45
+msgid "Support for Controllers and Pens"
+msgstr "دعم أجهزة التحكم والأقلام"
+
+#: data/power.appdata.xml.in:46
+msgid "Reduce spacing when percentage is shown"
+msgstr "تقليل المساحة عند إظهار النسبة المئوية"
+
+#: data/power.appdata.xml.in:61
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
