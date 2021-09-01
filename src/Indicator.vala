@@ -46,11 +46,7 @@ public class Power.Indicator : Wingpanel.Indicator {
         GLib.Intl.bind_textdomain_codeset (Constants.GETTEXT_PACKAGE, "UTF-8");
         dm = Power.Services.DeviceManager.get_default ();
         dm.brightness_changed.connect (brightness => {
-            if (brightness == -1) {
-                is_desktop = true;
-            } else {
-                is_desktop = false;
-            }
+            is_desktop = (brightness == -1);
         });
         var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
         mouse_settings.bind ("natural-scroll", this, "natural-scroll-mouse", SettingsBindFlags.DEFAULT);
