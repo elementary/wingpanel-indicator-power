@@ -81,7 +81,6 @@ public class Power.Indicator : Wingpanel.Indicator {
 
                             return true;
                         }
-
                     } else if (popover_widget != null && !popover_widget.is_visible ()) {
                         show_notification ();
                     }
