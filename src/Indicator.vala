@@ -208,7 +208,7 @@ public class Power.Indicator : Wingpanel.Indicator {
 
     private bool show_notification () {
         if (is_in_session) {
-            var notification = new Notify.Notification ("", "", "");
+            Notify.Notification notification;
             if (is_desktop) {
                 notification = new Notify.Notification ("indicator-power", "", "application-exit");
                 notification.set_hint ("x-canonical-private-synchronous", new Variant.string ("indicator-power"));
