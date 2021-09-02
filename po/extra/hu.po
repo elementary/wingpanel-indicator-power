@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 17:39+0000\n"
-"PO-Revision-Date: 2021-09-02 21:23+0000\n"
+"PO-Revision-Date: 2021-09-02 21:53+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/hu/>\n"
@@ -29,7 +29,7 @@ msgid ""
 "power"
 msgstr ""
 "Akkumulátor töltöttségi szintjének beállítása, a képernyő fényerejének "
-"módosítása, sok energiát fogyasztó alkalmazások  megtekintése"
+"módosítása, sok energiát fogyasztó alkalmazások megtekintése"
 
 #: data/power.appdata.xml.in:12 data/power.appdata.xml.in:27
 msgid "New features:"
@@ -58,7 +58,7 @@ msgstr ""
 #: data/power.appdata.xml.in:21 data/power.appdata.xml.in:39
 #: data/power.appdata.xml.in:47 data/power.appdata.xml.in:52
 msgid "Updated translations"
-msgstr "Fordítás frissítések"
+msgstr "Frissített fordítások"
 
 #: data/power.appdata.xml.in:29
 msgid "Show battery statistics when selected"
