@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 17:39+0000\n"
-"PO-Revision-Date: 2021-08-27 13:57+0000\n"
+"PO-Revision-Date: 2021-09-04 23:27+0000\n"
 "Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ar/>\n"
@@ -108,7 +108,7 @@ msgstr[1] "يوم واحد حتى الامتلاء"
 msgstr[2] "يومان حتى الامتلاء"
 msgstr[3] "%lld أيام حتى الامتلاء"
 msgstr[4] "%lld يوماً حتى الامتلاء"
-msgstr[5] "عدد %lld من الأيام حتى الامتلاء"
+msgstr[5] "%lld يوم حتى الامتلاء"
 
 #: src/Services/Device.vala:312
 #, c-format
@@ -119,7 +119,7 @@ msgstr[1] "ساعة واحدة حتى الامتلاء"
 msgstr[2] "ساعتان حتى الامتلاء"
 msgstr[3] "%lld ساعات حتى الامتلاء"
 msgstr[4] "%lld ساعة حتى الامتلاء"
-msgstr[5] "عدد %lld من الساعات حتى الامتلاء"
+msgstr[5] "%lld ساعة حتى الامتلاء"
 
 #: src/Services/Device.vala:320
 #, c-format
@@ -130,7 +130,7 @@ msgstr[1] "دقيقة واحدة حتى الامتلاء"
 msgstr[2] "دقيقتان حتى الامتلاء"
 msgstr[3] "%lld دقائق حتى الامتلاء"
 msgstr[4] "%lld دقيقة حتى الامتلاء"
-msgstr[5] "عدد %lld من الدقائق حتى الامتلاء"
+msgstr[5] "%lld دقيقة حتى الامتلاء"
 
 #: src/Services/Device.vala:327
 #, c-format
@@ -141,7 +141,7 @@ msgstr[1] "ثانية واحدة حتى الامتلاء"
 msgstr[2] "ثانيتان حتى الامتلاء"
 msgstr[3] "%lld ثوان حتى الامتلاء"
 msgstr[4] "%lld ثانية حتى الامتلاء"
-msgstr[5] "عدد %lld من الثواني حتى الامتلاء"
+msgstr[5] "%lld ثانية حتى الامتلاء"
 
 #: src/Services/Device.vala:334
 #, c-format
@@ -157,7 +157,7 @@ msgstr[1] "يوم واحد حتى الإفراغ"
 msgstr[2] "يومان حتى الإفراغ"
 msgstr[3] "%lld أيام حتى الإفراغ"
 msgstr[4] "%lld يوماً حتى الإفراغ"
-msgstr[5] "عدد %lld من الأيام حتى الإفراغ"
+msgstr[5] "%lld يوم حتى الإفراغ"
 
 #: src/Services/Device.vala:350
 #, c-format
@@ -168,7 +168,7 @@ msgstr[1] "ساعة واحدة حتى الإفراغ"
 msgstr[2] "ساعتان حتى الإفراغ"
 msgstr[3] "%lld ساعات حتى الإفراغ"
 msgstr[4] "%lld ساعة حتى الإفراغ"
-msgstr[5] "عدد %lld من الساعات حتى الإفراغ"
+msgstr[5] "%lld ساعة حتى الإفراغ"
 
 #: src/Services/Device.vala:358
 #, c-format
@@ -179,7 +179,7 @@ msgstr[1] "دقيقة واحدة حتى الإفراغ"
 msgstr[2] "دقيقتان حتى الإفراغ"
 msgstr[3] "%lld دقائق حتى الإفراغ"
 msgstr[4] "%lld دقيقة حتى الإفراغ"
-msgstr[5] "عدد %lld من الدقائق حتى الإفراغ"
+msgstr[5] "%lld دقيقة حتى الإفراغ"
 
 #: src/Services/Device.vala:365
 #, c-format
@@ -190,7 +190,7 @@ msgstr[1] "ثانية واحدة حتى الإفراغ"
 msgstr[2] "ثانيتان حتى الإفراغ"
 msgstr[3] "%lld ثوان حتى الإفراغ"
 msgstr[4] "%lld ثانية حتى الإفراغ"
-msgstr[5] "عدد %lld من الثواني حتى الإفراغ"
+msgstr[5] "%lld ثانية حتى الإفراغ"
 
 #: src/Widgets/AppList.vala:63
 msgid "Apps Using Lots of Power"
