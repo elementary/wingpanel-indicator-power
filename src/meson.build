@@ -3,6 +3,7 @@ wingpanel_indicatorsdir = wingpanel_dep.get_pkgconfig_variable('indicatorsdir', 
 
 conf_data = configuration_data()
 conf_data.set('GETTEXT_PACKAGE', gettext_name)
+conf_data.set('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
 
 config_in = configure_file(
     input: 'config.vala.in',
@@ -12,6 +13,7 @@ config_in = configure_file(
 
 files = files(
     'Indicator.vala',
+    'Utils.vala',
     'Services/AppManager.vala',
     'Services/Backlight/Backlight.vala',
     'Services/DBusInterfaces/Device.vala',
@@ -38,6 +40,7 @@ dependencies = [
     dependency('libbamf3'),
     dependency('libgtop-2.0'),
     dependency('libudev'),
+    dependency('libnotify'),
     meson.get_compiler('vala').find_library('posix'),
     wingpanel_dep
 ]

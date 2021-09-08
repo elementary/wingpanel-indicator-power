@@ -18,7 +18,7 @@
  */
 
 public class Power.Indicator : Wingpanel.Indicator {
-    private const double BRIGHTNESS_STEP = 5;
+    private const double LOW_BATTERY_PERCENTAGE = 20;
 
     public bool is_in_session { get; construct; default = false; }
     public bool natural_scroll_touchpad { get; set; }
@@ -31,6 +31,8 @@ public class Power.Indicator : Wingpanel.Indicator {
     private Services.Device? display_device = null;
     private Services.DeviceManager dm;
 
+    private Settings settings;
+
     public Indicator (bool is_in_session) {
         Object (
             code_name : Wingpanel.Indicator.POWER,
@@ -39,9 +41,14 @@ public class Power.Indicator : Wingpanel.Indicator {
     }
 
     construct {
+        GLib.Intl.bindtextdomain (Constants.GETTEXT_PACKAGE, Constants.LOCALEDIR);
+        GLib.Intl.bind_textdomain_codeset (Constants.GETTEXT_PACKAGE, "UTF-8");
         dm = Power.Services.DeviceManager.get_default ();
         var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
         mouse_settings.bind ("natural-scroll", this, "natural-scroll-mouse", SettingsBindFlags.DEFAULT);
+        var touchpad_settings = new GLib.Settings ("org.gnome.desktop.peripherals.touchpad");
+        touchpad_settings.bind ("natural-scroll", this, "natural-scroll-touchpad", SettingsBindFlags.DEFAULT);
+        settings = new GLib.Settings ("io.elementary.desktop.wingpanel.power");
     }
 
     public override Gtk.Widget get_display_widget () {
@@ -58,13 +65,12 @@ public class Power.Indicator : Wingpanel.Indicator {
 
             if (dm.backlight.present) {
                 display_widget.scroll_event.connect ((e) => {
-                /* Ignore horizontal scrolling on wingpanel indicator */
-                    if (e.direction != Gdk.ScrollDirection.LEFT && e.direction != Gdk.ScrollDirection.RIGHT) {
-                        double change = 0.0;
-                        if (handle_scroll_event (e, out change)) {
-                            dm.change_brightness ((int)(change * BRIGHTNESS_STEP));
-                            return true;
+                    if (Utils.handle_scroll_event (e, natural_scroll_mouse, natural_scroll_touchpad )) {
+                        if (popover_widget == null || !popover_widget.is_visible ()) {
+                          show_notification ();
                         }
+
+                        return true;
                     }
 
                     return false;
@@ -83,46 +89,6 @@ public class Power.Indicator : Wingpanel.Indicator {
         }
 
         return popover_widget;
-    }
-    /* Smooth scrolling vertical support. Accumulate delta_y until threshold exceeded before actioning */
-    private double total_y_delta= 0;
-    private bool handle_scroll_event (Gdk.EventScroll e, out double change) {
-        change = 0.0;
-        bool natural_scroll;
-        var event_source = e.get_source_device ().input_source;
-        if (event_source == Gdk.InputSource.MOUSE) {
-            natural_scroll = natural_scroll_mouse;
-        } else if (event_source == Gdk.InputSource.TOUCHPAD) {
-            natural_scroll = natural_scroll_touchpad;
-        } else {
-            natural_scroll = false;
-        }
-
-        switch (e.direction) {
-            case Gdk.ScrollDirection.SMOOTH:
-                total_y_delta += e.delta_y;
-                break;
-
-            case Gdk.ScrollDirection.UP:
-                total_y_delta = -1.0;
-                break;
-            case Gdk.ScrollDirection.DOWN:
-                total_y_delta = 1.0;
-                break;
-            default:
-                break;
-        }
-
-        if (total_y_delta.abs () > 0.5) {
-            change = natural_scroll ? total_y_delta : -total_y_delta;
-        }
-
-        if (change.abs () > 0.0) {
-            total_y_delta = 0.0;
-            return true;
-        }
-
-        return false;
     }
 
     public override void opened () {
@@ -154,7 +120,7 @@ public class Power.Indicator : Wingpanel.Indicator {
     }
 
     private void update_display_device () {
-       if (display_device != null) {
+        if (display_device != null) {
             display_device.properties_updated.disconnect (show_display_device_data);
         }
 
@@ -197,6 +163,15 @@ public class Power.Indicator : Wingpanel.Indicator {
         string? primary_text = null;
         string? secondary_text = null;
         if (display_device != null) {
+            if (display_device.percentage <= LOW_BATTERY_PERCENTAGE && !display_device.is_charging) {
+                display_widget.show_percentage (true);
+            }
+
+            /* Hide low battery percentage after plug charger if user is not showing percentage */
+            var is_showing_percent = settings.get_boolean ("show-percentage");
+            if (display_device.is_charging && !is_showing_percent) {
+                display_widget.show_percentage (false);
+            }
             if (display_device.is_a_battery) {
                 primary_text = _("%s: %s").printf (display_device.device_type.get_name (), display_device.get_info ());
                 secondary_text = _("Middle-click to toggle percentage");
@@ -221,6 +196,23 @@ public class Power.Indicator : Wingpanel.Indicator {
                 Granite.TOOLTIP_SECONDARY_TEXT_MARKUP.printf (secondary_text)
             );
         }
+    }
+
+    private bool show_notification () {
+        if (is_in_session) {
+            var notification = new Notify.Notification ("indicator-power", "", "display-brightness-symbolic");
+            notification.set_hint ("x-canonical-private-synchronous", new Variant.string ("indicator-power"));
+            notification.set_hint ("value", new Variant.int32 (dm.brightness));
+            try {
+                notification.show ();
+                return true;
+            } catch (Error e) {
+                warning ("Unable to show notification: %s", e.message);
+            }
+
+        }
+
+        return false;
     }
 }
 

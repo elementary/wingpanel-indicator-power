@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-20 21:51+0000\n"
+"POT-Creation-Date: 2021-08-23 17:39+0000\n"
 "PO-Revision-Date: 2021-03-11 10:13+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/wingpanel/"
@@ -16,21 +16,21 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-01-06 06:28+0000\n"
 
-#: src/Indicator.vala:201
+#: src/Indicator.vala:226
 #, c-format
 msgid "%s: %s"
 msgstr "%s: %s"
 
-#: src/Indicator.vala:202
+#: src/Indicator.vala:227
 msgid "Middle-click to toggle percentage"
 msgstr "Средњи клик за окидање процената"
 
-#: src/Indicator.vala:210
+#: src/Indicator.vala:235
 #, c-format
 msgid "Screen brightness: %i"
 msgstr ""
 
-#: src/Indicator.vala:211
+#: src/Indicator.vala:236
 msgid "Scroll to change screen brightness"
 msgstr ""
 
@@ -90,12 +90,18 @@ msgstr ""
 msgid "Calculating…"
 msgstr "Израчунавам…"
 
-#: src/Services/Device.vala:292
+#: src/Services/Device.vala:290
+#, fuzzy
+#| msgid "%i%% charged"
+msgid "Fully charged"
+msgstr "%i%% је напуњеност"
+
+#: src/Services/Device.vala:296
 #, c-format
 msgid "%i%% charged"
 msgstr "%i%% је напуњеност"
 
-#: src/Services/Device.vala:300
+#: src/Services/Device.vala:304
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
@@ -103,7 +109,7 @@ msgstr[0] "%lld дан до напуњености"
 msgstr[1] "%lld дана до напуњености"
 msgstr[2] "%lld дана до напуњености"
 
-#: src/Services/Device.vala:308
+#: src/Services/Device.vala:312
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
@@ -111,7 +117,7 @@ msgstr[0] "%lld сат до напуњености"
 msgstr[1] "%lld сата до напуњености"
 msgstr[2] "%lld сати до напуњености"
 
-#: src/Services/Device.vala:316
+#: src/Services/Device.vala:320
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
@@ -119,7 +125,7 @@ msgstr[0] "%lld минут до напуњености"
 msgstr[1] "%lld минута до напуњености"
 msgstr[2] "%lld минута до напуњености"
 
-#: src/Services/Device.vala:323
+#: src/Services/Device.vala:327
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
@@ -127,12 +133,12 @@ msgstr[0] "%lld секунда до напуњености"
 msgstr[1] "%lld секунде до напуњености"
 msgstr[2] "%lld секунди до напуњености"
 
-#: src/Services/Device.vala:330
+#: src/Services/Device.vala:334
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% преостаје"
 
-#: src/Services/Device.vala:338
+#: src/Services/Device.vala:342
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
@@ -140,7 +146,7 @@ msgstr[0] "%lld дан до испражњености"
 msgstr[1] "%lld дана до испражњености"
 msgstr[2] "%lld дана до испражњености"
 
-#: src/Services/Device.vala:346
+#: src/Services/Device.vala:350
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
@@ -148,7 +154,7 @@ msgstr[0] "%lld сат до испражњености"
 msgstr[1] "%lld сата до испражњености"
 msgstr[2] "%lld сати до испражњености"
 
-#: src/Services/Device.vala:354
+#: src/Services/Device.vala:358
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
@@ -156,7 +162,7 @@ msgstr[0] "%lld минут до испражњености"
 msgstr[1] "%lld минута до испражњености"
 msgstr[2] "%lld минута до испражњености"
 
-#: src/Services/Device.vala:361
+#: src/Services/Device.vala:365
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -172,21 +178,21 @@ msgstr "Програми који троше много енергије"
 msgid "Unknown App"
 msgstr "Непознат програм"
 
-#: src/Widgets/DeviceRow.vala:98
+#: src/Widgets/DeviceRow.vala:104
 msgid "Device"
 msgstr "Уређај"
 
 #. /Translators: This represents battery charge precentage with `%i` representing the number and `%%` representing the percent symbol
-#: src/Widgets/DisplayWidget.vala:31
+#: src/Widgets/DisplayWidget.vala:32
 #, c-format
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:56
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "Прикажи проценте"
 
-#: src/Widgets/PopoverWidget.vala:75
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "Подешавање напајања…"
 
