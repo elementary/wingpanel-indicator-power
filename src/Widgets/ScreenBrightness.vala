@@ -17,26 +17,50 @@
  * Boston, MA 02110-1301, USA.
  */
 
-public class Power.Widgets.ScreenBrightness : Gtk.Grid {
+public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
     private Gtk.Scale brightness_slider;
     private Power.Services.DeviceManager dm;
 
+    public bool natural_scroll_touchpad { get; set; }
+    public bool natural_scroll_mouse { get; set; }
+
     construct {
         dm = Power.Services.DeviceManager.get_default ();
-        column_spacing = 6;
 
-        var image = new Gtk.Image.from_icon_name ("brightness-display-symbolic", Gtk.IconSize.DIALOG);
-        image.margin_start = 6;
+        var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
+        mouse_settings.bind ("natural-scroll", this, "natural-scroll-mouse", SettingsBindFlags.DEFAULT);
+        var touchpad_settings = new GLib.Settings ("org.gnome.desktop.peripherals.touchpad");
+        touchpad_settings.bind ("natural-scroll", this, "natural-scroll-touchpad", SettingsBindFlags.DEFAULT);
 
-        brightness_slider = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 10);
-        brightness_slider.adjustment.page_increment = 10;
-        brightness_slider.margin_end = 12;
-        brightness_slider.hexpand = true;
-        brightness_slider.draw_value = false;
-        brightness_slider.width_request = 175;
+        var image = new Gtk.Image.from_icon_name ("brightness-display-symbolic", Gtk.IconSize.DIALOG) {
+            margin_start = 6
+        };
 
-        brightness_slider.value_changed.connect (() => {
-            on_scale_value_changed.begin ();
+        brightness_slider = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 10) {
+            margin_end = 12,
+            hexpand = true,
+            draw_value = false,
+            width_request = 175
+        };
+
+        var grid = new Gtk.Grid () {
+            column_spacing = 6,
+            hexpand = true,
+            margin_start = 6,
+            margin_end = 12
+        };
+
+        grid.add (image);
+        grid.add (brightness_slider);
+
+        add (grid);
+
+        brightness_slider.set_value (dm.brightness);
+
+        brightness_slider.scroll_event.connect ((e) => {
+          /* Re-emit the signal on the eventbox instead of using native handler */
+          on_scroll_event (e);
+          return true;
         });
 
         dm.brightness_changed.connect ((brightness) => {
@@ -47,13 +71,13 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
             brightness_slider.value_changed.connect (on_scale_value_changed);
         });
 
-        brightness_slider.set_value (dm.brightness);
 
-        attach (image, 0, 0);
-        attach (brightness_slider, 1, 0);
+        dm.brightness_changed.connect ((brightness) => {
+            brightness_slider.set_value ((double)brightness);
+        });
     }
 
-    private async void on_scale_value_changed () {
-        dm.brightness = (int) brightness_slider.get_value ();
+    private bool on_scroll_event (Gdk.EventScroll e) {
+        return Utils.handle_scroll_event (e, natural_scroll_mouse, natural_scroll_touchpad);
     }
 }

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-20 21:51+0000\n"
-"PO-Revision-Date: 2020-09-06 11:13+0000\n"
+"POT-Creation-Date: 2021-08-23 17:39+0000\n"
+"PO-Revision-Date: 2021-08-08 20:06+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/power.appdata.xml.in:6
 msgid "Power Indicator"
@@ -31,18 +31,71 @@ msgstr ""
 "Veja os níveis da bateria, ajuste o brilho do ecrã e veja aplicações que "
 "usam muita energia"
 
-#: data/power.appdata.xml.in:12
-msgid "Support for Controllers and Pens"
-msgstr "Suporte para controladores e canetas"
+#: data/power.appdata.xml.in:12 data/power.appdata.xml.in:27
+msgid "New features:"
+msgstr "Novas funcionalidades:"
 
-#: data/power.appdata.xml.in:13
-msgid "Reduce spacing when percentage is shown"
-msgstr "Reduzir o espaço quando a percentagem é indicada"
+#: data/power.appdata.xml.in:14
+msgid "Show brightness level when scrolled"
+msgstr "Mostrar nível de luminosidade quando roda com o rato"
 
-#: data/power.appdata.xml.in:14 data/power.appdata.xml.in:19
+#: data/power.appdata.xml.in:15
+msgid "Show battery percentage automatically at 20% or lower"
+msgstr ""
+
+#: data/power.appdata.xml.in:17 data/power.appdata.xml.in:33
+msgid "Minor updates:"
+msgstr "Pequenas atualizações:"
+
+#: data/power.appdata.xml.in:19
+msgid "Match scroll direction with Sound indicator"
+msgstr ""
+
+#: data/power.appdata.xml.in:20
+msgid "Show \"Fully Charged\" at 100% when plugged in"
+msgstr ""
+
+#: data/power.appdata.xml.in:21 data/power.appdata.xml.in:39
+#: data/power.appdata.xml.in:47 data/power.appdata.xml.in:52
 msgid "Updated translations"
 msgstr "Traduções atualizadas"
 
-#: data/power.appdata.xml.in:28
+#: data/power.appdata.xml.in:29
+msgid "Show battery statistics when selected"
+msgstr "Mostrar estatísticas de bateria quando selecionado"
+
+#: data/power.appdata.xml.in:30
+msgid "Launch apps using power when selected"
+msgstr "Inicia aplicações usando energia quando selecionadas"
+
+#: data/power.appdata.xml.in:31
+msgid "Control display brightness by scrolling the indicator"
+msgstr "Controla a luminosidade do visor, percorrendo o indicador"
+
+#: data/power.appdata.xml.in:35
+msgid "Improvements for desktops with peripherals"
+msgstr "Melhoramentos para computadores de secretária com periféricos"
+
+#: data/power.appdata.xml.in:36
+msgid "Filter out internal devices"
+msgstr "Filtra os dispositivos internos"
+
+#: data/power.appdata.xml.in:37
+msgid "Show tooltip on hover"
+msgstr "Mostra dica ao pairar o rato"
+
+#: data/power.appdata.xml.in:38
+msgid "Performance improvements"
+msgstr "Melhorias de desempenho"
+
+#: data/power.appdata.xml.in:45
+msgid "Support for Controllers and Pens"
+msgstr "Suporte para controladores e canetas"
+
+#: data/power.appdata.xml.in:46
+msgid "Reduce spacing when percentage is shown"
+msgstr "Reduzir o espaço quando a percentagem é indicada"
+
+#: data/power.appdata.xml.in:61
 msgid "elementary, Inc."
 msgstr "elementary, Inc."

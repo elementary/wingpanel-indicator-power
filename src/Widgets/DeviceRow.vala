@@ -28,39 +28,45 @@ public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
     }
 
     construct {
-        device_image = new Gtk.Image.from_icon_name ("battery", Gtk.IconSize.DIALOG);
-        device_image.pixel_size = 48;
-        device_image.margin_end = 3;
+        device_image = new Gtk.Image.from_icon_name ("battery", Gtk.IconSize.DIALOG) {
+            pixel_size = 48,
+            margin_end = 3
+        };
 
-        battery_image = new Gtk.Image ();
-        battery_image.pixel_size = 32;
-        battery_image.halign = Gtk.Align.END;
-        battery_image.valign = Gtk.Align.END;
+        battery_image = new Gtk.Image () {
+            pixel_size = 32,
+            halign = Gtk.Align.END,
+            valign = Gtk.Align.END
+        };
 
         var overlay = new Gtk.Overlay ();
         overlay.add (device_image);
         overlay.add_overlay (battery_image);
 
-        var title_label = new Gtk.Label (get_title ());
-        title_label.use_markup = true;
-        title_label.halign = Gtk.Align.START;
-        title_label.valign = Gtk.Align.END;
+        var title_label = new Gtk.Label (get_title ()) {
+            use_markup = true,
+            halign = Gtk.Align.START,
+            valign = Gtk.Align.END
+        };
 
-        var info_label = new Gtk.Label (battery.get_info ());
-        info_label.halign = Gtk.Align.START;
-        info_label.valign = Gtk.Align.START;
 
-        var grid = new Gtk.Grid ();
-        grid.column_spacing = 3;
-        grid.margin = 3;
-        grid.margin_start = 6;
-        grid.margin_end = 12;
+        var info_label = new Gtk.Label (battery.get_info ()) {
+            halign = Gtk.Align.START,
+            valign = Gtk.Align.START
+        };
+
+        var grid = new Gtk.Grid () {
+            column_spacing = 3,
+            margin = 3,
+            margin_start = 6,
+            margin_end = 12
+        };
         grid.attach (overlay, 0, 0, 1, 2);
         grid.attach (title_label, 1, 0);
         grid.attach (info_label, 1, 1);
 
-        add (grid);
 
+        add (grid);
         update_icons ();
 
         battery.properties_updated.connect (() => {
