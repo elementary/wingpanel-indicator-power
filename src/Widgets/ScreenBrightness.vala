@@ -71,7 +71,6 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
             }
         });
 
-
         dm.brightness_changed.connect ((brightness) => {
             if (brightness > 0) {
                 brightness_slider.set_value ((double)brightness);
