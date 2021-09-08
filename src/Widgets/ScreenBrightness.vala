@@ -41,7 +41,9 @@ public class Power.Widgets.ScreenBrightness : Gtk.Grid {
 
         dm.brightness_changed.connect ((brightness) => {
             brightness_slider.value_changed.disconnect (on_scale_value_changed);
-            brightness_slider.set_value ((double)brightness);
+            if (brightness > 0) {
+                brightness_slider.set_value ((double)brightness);
+            }
             brightness_slider.value_changed.connect (on_scale_value_changed);
         });
 
