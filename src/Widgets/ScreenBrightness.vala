@@ -64,15 +64,18 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
         });
 
         brightness_slider.value_changed.connect ((value) => {
-            if (value > 0) {
-                brightness_slider.set_value (value.get_value ());
-                dm.brightness = (int) value.get_value ();
+            var brightness = value.get_value ();
+            if (brightness > 0) {
+                brightness_slider.set_value (brightness);
+                dm.brightness = (int) brightness;
             }
         });
 
 
         dm.brightness_changed.connect ((brightness) => {
-            brightness_slider.set_value ((double)brightness);
+            if (brightness > 0) {
+                brightness_slider.set_value ((double)brightness);
+            }
         });
     }
 
