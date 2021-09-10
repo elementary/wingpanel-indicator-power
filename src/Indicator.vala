@@ -19,7 +19,7 @@
 
 public class Power.Indicator : Wingpanel.Indicator {
     private const double LOW_BATTERY_PERCENTAGE = 20;
-    private bool is_desktop { get; set; default = false; }
+    private bool is_desktop = false;
 
     public bool is_in_session { get; construct; default = false; }
     public bool natural_scroll_touchpad { get; set; }
