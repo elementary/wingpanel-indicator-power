@@ -21,10 +21,13 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
     public bool is_in_session { get; construct; default = false; }
 
     private static Services.DeviceManager dm;
+    private static Services.PowerProfileManager ppm;
 
     private AppList app_list;
     private Gtk.Revealer device_separator_revealer;
+    private Gtk.Revealer power_profiles_separator_revealer;
     private Gtk.Revealer last_separator_revealer;
+    
 
     public PopoverWidget (bool is_in_session) {
         Object (is_in_session: is_in_session);
@@ -32,12 +35,14 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
 
     static construct {
         dm = Services.DeviceManager.get_default ();
+        ppm = Services.PowerProfileManager.get_default ();
     }
 
     construct {
         var settings = new GLib.Settings ("io.elementary.desktop.wingpanel.power");
 
         var device_list = new DeviceList ();
+        var power_profile_list = new PowerProfileList ();
 
         var device_list_revealer = new Gtk.Revealer ();
         device_list_revealer.add (device_list);
@@ -49,12 +54,20 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
 
         device_separator_revealer = new Gtk.Revealer ();
         device_separator_revealer.add (device_separator);
+        
+        var power_profiles_separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
+            margin_top = 3,
+            margin_bottom = 3
+        };
+        
+        power_profiles_separator_revealer = new Gtk.Revealer ();
+        power_profiles_separator_revealer.add (power_profiles_separator);
 
         var last_separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
             margin_top = 3,
             margin_bottom = 3
         };
-
+        
         last_separator_revealer = new Gtk.Revealer ();
         last_separator_revealer.add (last_separator);
 
@@ -85,16 +98,20 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
             attach (screen_brightness, 0, 4);
         }
 
-        attach (last_separator_revealer, 0, 5);
+        attach (power_profiles_separator_revealer, 0, 5);
+        attach (power_profile_list, 0, 6);
+
+        attach (last_separator_revealer, 0, 7);
 
         if (is_in_session) {
             app_list = new AppList ();
             attach (app_list, 0, 2);
-            attach (show_settings_button, 0, 6);
+            attach (show_settings_button, 0, 8);
         }
 
         update_device_seperator_revealer ();
         update_last_seperator_revealer ();
+        update_power_profile_seperator_revealer ();
 
         dm.notify["has-battery"].connect ((s, p) => {
             update_device_seperator_revealer ();
@@ -121,6 +138,10 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
                 warning ("Failed to open power settings: %s", e.message);
             }
         });
+        
+        ppm.profile_added.connect ((profile) => {
+            update_power_profile_seperator_revealer ();
+        });
     }
 
     private void update_device_seperator_revealer () {
@@ -129,6 +150,10 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
 
     private void update_last_seperator_revealer () {
         last_separator_revealer.reveal_child = is_in_session;
+    }
+    
+    private void update_power_profile_seperator_revealer () {
+        power_profiles_separator_revealer.reveal_child = ppm.profiles.size > 0;
     }
 
     public void slim_down () {

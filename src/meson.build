@@ -17,11 +17,14 @@ files = files(
     'Services/AppManager.vala',
     'Services/Backlight/Backlight.vala',
     'Services/DBusInterfaces/Device.vala',
+    'Services/DBusInterfaces/PowerProfiles.vala',
     'Services/DBusInterfaces/Properties.vala',
     'Services/DBusInterfaces/Screen.vala',
     'Services/DBusInterfaces/UPower.vala',
     'Services/Device.vala',
     'Services/DeviceManager.vala',
+    'Services/PowerProfile.vala',
+    'Services/PowerProfileManager.vala',
     'Services/ProcessMonitor/Monitor.vala',
     'Services/ProcessMonitor/Process.vala',
     'Widgets/AppList.vala',
@@ -29,6 +32,8 @@ files = files(
     'Widgets/DeviceRow.vala',
     'Widgets/DisplayWidget.vala',
     'Widgets/PopoverWidget.vala',
+    'Widgets/PowerProfileList.vala',
+    'Widgets/PowerProfileRow.vala',
     'Widgets/ScreenBrightness.vala'
 )
 
