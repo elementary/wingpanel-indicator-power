@@ -30,4 +30,3 @@ namespace Power.Services.DBusInterfaces {
         public abstract string active_profile { owned get; set; }
     }
 }
-
