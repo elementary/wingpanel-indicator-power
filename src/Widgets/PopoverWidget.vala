@@ -25,6 +25,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
     private AppList app_list;
     private Gtk.Revealer device_separator_revealer;
     private Gtk.Revealer last_separator_revealer;
+    public PowerModeButton power_mode_button;
 
     public PopoverWidget (bool is_in_session) {
         Object (is_in_session: is_in_session);
@@ -73,6 +74,9 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         var show_percent_revealer = new Gtk.Revealer ();
         show_percent_revealer.add (show_percent_grid);
 
+        power_mode_button = new PowerModeButton ();
+        power_mode_button.margin = 8;
+
         var show_settings_button = new Gtk.ModelButton ();
         show_settings_button.text = _("Power Settings…");
 
@@ -85,12 +89,15 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
             attach (screen_brightness, 0, 4);
         }
 
-        attach (last_separator_revealer, 0, 5);
+        attach (last_separator_revealer, 0, 6);
 
         if (is_in_session) {
             app_list = new AppList ();
             attach (app_list, 0, 2);
-            attach (show_settings_button, 0, 6);
+            if (power_mode_button.profiles_available) {
+                attach (power_mode_button, 0, 5);
+            }
+            attach (show_settings_button, 0, 7);
         }
 
         update_device_seperator_revealer ();

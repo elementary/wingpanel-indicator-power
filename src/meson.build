@@ -20,6 +20,7 @@ files = files(
     'Services/DBusInterfaces/Properties.vala',
     'Services/DBusInterfaces/Screen.vala',
     'Services/DBusInterfaces/UPower.vala',
+    'Services/DBusInterfaces/PowerProfile.vala',
     'Services/Device.vala',
     'Services/DeviceManager.vala',
     'Services/ProcessMonitor/Monitor.vala',
@@ -29,7 +30,8 @@ files = files(
     'Widgets/DeviceRow.vala',
     'Widgets/DisplayWidget.vala',
     'Widgets/PopoverWidget.vala',
-    'Widgets/ScreenBrightness.vala'
+    'Widgets/ScreenBrightness.vala',
+    'Widgets/PowerModeButton.vala'
 )
 
 dependencies = [
