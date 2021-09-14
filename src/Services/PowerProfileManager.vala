@@ -68,12 +68,12 @@ public class Power.Services.PowerProfileManager : Object {
                 DBusProxyFlags.NONE
             );
 
-            properties_bus.PropertiesChanged.connect((changed, propertiesm, array) => {
+            properties_bus.PropertiesChanged.connect ((changed, propertiesm, array) => {
                if (changed == POWERPROFILE_INTERFACE) {
-                   if(propertiesm.contains ("ActiveProfile")) {
+                   if (propertiesm.contains ("ActiveProfile")) {
                         var active_profile_name = propertiesm["ActiveProfile"].get_string ();
                         var profile = profiles[active_profile_name];
-                        profile_changed(profile);
+                        profile_changed (profile);
                    }
                }
             });
@@ -91,13 +91,13 @@ public class Power.Services.PowerProfileManager : Object {
     private void read_profiles () {
 
         if (power_profile_bus != null) {
-            foreach(var profile in power_profile_bus.profiles) {
+            foreach (var profile in power_profile_bus.profiles) {
                 var profile_name = profile["Profile"].get_string ();
                 var driver_name = profile["Driver"].get_string ();
 
                 var power_profile = new PowerProfile (profile_name, driver_name);
                 profiles[profile_name] = power_profile;
-                profile_added(power_profile);
+                profile_added (power_profile);
             }
         }
     }

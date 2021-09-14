@@ -22,7 +22,7 @@ public class Power.Services.PowerProfile : Object {
     public string driver { get; construct; }
 
     public PowerProfile (string profile, string driver) {
-        Object(profile: profile, driver: driver);
+        Object (profile: profile, driver: driver);
     }
 
     public unowned string get_name () {
