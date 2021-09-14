@@ -27,7 +27,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
     private Gtk.Revealer device_separator_revealer;
     private Gtk.Revealer power_profiles_separator_revealer;
     private Gtk.Revealer last_separator_revealer;
-    
+
 
     public PopoverWidget (bool is_in_session) {
         Object (is_in_session: is_in_session);
@@ -54,12 +54,12 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
 
         device_separator_revealer = new Gtk.Revealer ();
         device_separator_revealer.add (device_separator);
-        
+
         var power_profiles_separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
             margin_top = 3,
             margin_bottom = 3
         };
-        
+
         power_profiles_separator_revealer = new Gtk.Revealer ();
         power_profiles_separator_revealer.add (power_profiles_separator);
 
@@ -67,7 +67,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
             margin_top = 3,
             margin_bottom = 3
         };
-        
+
         last_separator_revealer = new Gtk.Revealer ();
         last_separator_revealer.add (last_separator);
 
@@ -138,7 +138,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
                 warning ("Failed to open power settings: %s", e.message);
             }
         });
-        
+
         ppm.profile_added.connect ((profile) => {
             update_power_profile_seperator_revealer ();
         });
@@ -151,7 +151,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
     private void update_last_seperator_revealer () {
         last_separator_revealer.reveal_child = is_in_session;
     }
-    
+
     private void update_power_profile_seperator_revealer () {
         power_profiles_separator_revealer.reveal_child = ppm.profiles.size > 0;
     }

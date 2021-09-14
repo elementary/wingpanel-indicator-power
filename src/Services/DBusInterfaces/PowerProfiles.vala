@@ -16,11 +16,11 @@
  * Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,
  * Boston, MA 02110-1301, USA.
  */
- 
- namespace Power.Services.DBusInterfaces {
+
+namespace Power.Services.DBusInterfaces {
     [DBus (name = "net.hadess.PowerProfiles")]
     public interface PowerProfiles : GLib.DBusProxy {
         public abstract HashTable<string,Variant>[] profiles { owned get; }
         public abstract string active_profile { owned get; owned set; }
     }
- }
+}

@@ -16,18 +16,17 @@
  * Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,
  * Boston, MA 02110-1301, USA.
  */
- 
- public class Power.Services.PowerProfile : Object { 
- 
+
+public class Power.Services.PowerProfile : Object {
     public string profile { get; construct; }
     public string driver { get; construct; }
-    
+
     public PowerProfile (string profile, string driver) {
         Object(profile: profile, driver: driver);
     }
-    
+
     public unowned string get_name () {
-        
+
         switch ( profile ) {
             case "power-saver":
                 return _("Power Saver");
@@ -36,7 +35,7 @@
             case "performance":
                 return _("Performance");
         }
-        
+
         return "";
     }
- }
+}

@@ -19,48 +19,48 @@
 
 public class Power.Widgets.PowerProfileRow : Gtk.ListBoxRow {
     public Services.PowerProfile profile { get; construct; }
-    
+
     private Gtk.RadioButton radio_button;
     private Gtk.Label label;
-    
+
     public signal void toggled ();
 
     public PowerProfileRow (Services.PowerProfile profile, PowerProfileRow? previous = null) {
-        Object(profile: profile);
-        
+        Object (profile: profile);
+
         var profile_name = profile.get_name ();
-    
+
         label = new Gtk.Label (null) {
             ellipsize = Pango.EllipsizeMode.MIDDLE,
             label = profile_name
         };
-        
+
         if (previous == null) {
             radio_button = new Gtk.RadioButton (null) {
                 hexpand = true
             };
         } else {
-            radio_button = new Gtk.RadioButton ( previous.get_group ()) {
+            radio_button = new Gtk.RadioButton (previous.get_group ()) {
                 hexpand = true
             };
         }
 
         radio_button.add (label);
-        
+
         add (radio_button);
-        
-        radio_button.toggled.connect (() => toggled ());;
+
+        radio_button.toggled.connect (() => toggled ());
     }
-    
+
     class construct {
         set_css_name (Gtk.STYLE_CLASS_MENUITEM);
     }
-    
+
     public bool active {
         get { return radio_button.active; }
         set { radio_button.active = true; }
     }
-    
+
     private unowned SList get_group () {
         return radio_button.get_group ();
     }

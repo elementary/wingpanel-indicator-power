@@ -16,32 +16,32 @@
  * Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,
  * Boston, MA 02110-1301, USA.
  */
- 
- public class Power.Services.PowerProfileManager : Object {
+
+public class Power.Services.PowerProfileManager : Object {
     private const string POWERPROFILE_INTERFACE = "net.hadess.PowerProfiles";
     private const string PROPERTIES_INTERFACE = "org.freedesktop.DBus.Properties";
     private const string POWERPROFILE_PATH = "/net/hadess/PowerProfiles";
-    
+
     private static PowerProfileManager? instance = null;
 
     private DBusInterfaces.PowerProfiles? power_profile_bus = null;
     private DBusInterfaces.Properties? properties_bus = null;
-    
+
     public Gee.Map<string, PowerProfile> profiles { get; private set; }
-    
+
     public signal void profile_added (PowerProfile profile);
     public signal void profile_changed (PowerProfile profile);
-    
+
     construct {
         profiles = new Gee.HashMap<string, PowerProfile> ();
-    
+
         connect_to_bus.begin ((obj, res) => {
             if (connect_to_bus.end (res)) {
                 read_profiles ();
             }
         });
     }
-    
+
         // singleton one class object in memory. use instance to get data.
     public static unowned PowerProfileManager get_default () {
         if (instance == null) {
@@ -50,7 +50,7 @@
 
         return instance;
     }
-    
+
     private async bool connect_to_bus () {
 
         try {
@@ -60,14 +60,14 @@
                 POWERPROFILE_PATH,
                 DBusProxyFlags.NONE
             );
-            
+
             properties_bus = yield Bus.get_proxy (
                 BusType.SYSTEM,
                 PROPERTIES_INTERFACE,
                 POWERPROFILE_PATH,
                 DBusProxyFlags.NONE
             );
-            
+
             properties_bus.PropertiesChanged.connect((changed, propertiesm, array) => {
                if (changed == POWERPROFILE_INTERFACE) {
                    if(propertiesm.contains ("ActiveProfile")) {
@@ -75,9 +75,9 @@
                         var profile = profiles[active_profile_name];
                         profile_changed(profile);
                    }
-               } 
+               }
             });
-            
+
             debug ("Connection to Power Profiles bus established");
 
             return true;
@@ -87,34 +87,34 @@
             return false;
         }
     }
-    
+
     private void read_profiles () {
-    
+
         if (power_profile_bus != null) {
             foreach(var profile in power_profile_bus.profiles) {
                 var profile_name = profile["Profile"].get_string ();
                 var driver_name = profile["Driver"].get_string ();
-                
+
                 var power_profile = new PowerProfile (profile_name, driver_name);
                 profiles[profile_name] = power_profile;
                 profile_added(power_profile);
             }
         }
     }
-    
+
     public PowerProfile? active_profile {
         owned get {
             if (power_profile_bus != null) {
                 var active_profile_from_bus = power_profile_bus.active_profile;
                 return profiles[active_profile_from_bus];
             }
-            
+
             return null;
         }
-        
+
         set {
             var active_profile_name = value.profile;
             power_profile_bus.active_profile = active_profile_name;
         }
     }
- }
+}
