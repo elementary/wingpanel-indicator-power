@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 17:39+0000\n"
-"PO-Revision-Date: 2021-08-27 11:29+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"PO-Revision-Date: 2021-09-21 18:27+0000\n"
+"Last-Translator: Rafael Bautista Martínez <iuninefrendor@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/es/>\n"
 "Language: es\n"
@@ -37,15 +37,15 @@ msgstr "Nuevas características:"
 
 #: data/power.appdata.xml.in:14
 msgid "Show brightness level when scrolled"
-msgstr ""
+msgstr "Muestrar el nivel de brillo cuando se desplaza"
 
 #: data/power.appdata.xml.in:15
 msgid "Show battery percentage automatically at 20% or lower"
-msgstr ""
+msgstr "Mostrar el porcentaje de batería automáticamente al 20% o menos"
 
 #: data/power.appdata.xml.in:17 data/power.appdata.xml.in:33
 msgid "Minor updates:"
-msgstr ""
+msgstr "Actualizaciones menores:"
 
 #: data/power.appdata.xml.in:19
 msgid "Match scroll direction with Sound indicator"
