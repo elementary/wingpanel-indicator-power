@@ -3,9 +3,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 17:39+0000\n"
-"PO-Revision-Date: 2018-08-08 00:02+0000\n"
-"Last-Translator: Kuba Kowalczyk <kuba.bruno.kowalczyk@gmail.com>\n"
-"Language-Team: Polish <https://weblate.elementary.io/projects/wingpanel/"
+"PO-Revision-Date: 2021-11-02 09:29+0000\n"
+"Last-Translator: DarkKnightComes <darkknightcomes@gmail.com>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -13,26 +13,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: src/Indicator.vala:226
 #, c-format
 msgid "%s: %s"
-msgstr ""
+msgstr "%s: %s"
 
 #: src/Indicator.vala:227
 msgid "Middle-click to toggle percentage"
-msgstr ""
+msgstr "Kliknij środkowy przycisk myszy, aby przełączyć wyświetlanie procentów"
 
 #: src/Indicator.vala:235
 #, c-format
 msgid "Screen brightness: %i"
-msgstr ""
+msgstr "Jasność ekranu: %i"
 
 #: src/Indicator.vala:236
 msgid "Scroll to change screen brightness"
-msgstr ""
+msgstr "Przewiń, aby zmienić jasność ekranu"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -76,25 +76,23 @@ msgstr "Komputer"
 
 #: src/Services/Device.vala:85
 msgid "Controller"
-msgstr ""
+msgstr "Kontroler"
 
 #: src/Services/Device.vala:87
 msgid "Pen"
-msgstr ""
+msgstr "Długopis"
 
 #: src/Services/Device.vala:89
 msgid "Plugged In"
-msgstr ""
+msgstr "Podłączony"
 
 #: src/Services/Device.vala:286
 msgid "Calculating…"
 msgstr "Obliczanie…"
 
 #: src/Services/Device.vala:290
-#, fuzzy
-#| msgid "%i%% charged"
 msgid "Fully charged"
-msgstr "%i%% naładowania"
+msgstr "W pełni naładowany"
 
 #: src/Services/Device.vala:296
 #, c-format
@@ -176,7 +174,7 @@ msgstr "Programy zużywające mnóstwo prądu"
 
 #: src/Widgets/AppList.vala:99
 msgid "Unknown App"
-msgstr ""
+msgstr "Nieznana aplikacja"
 
 #: src/Widgets/DeviceRow.vala:104
 msgid "Device"
@@ -186,7 +184,7 @@ msgstr "Urządzenie"
 #: src/Widgets/DisplayWidget.vala:32
 #, c-format
 msgid "%i%%"
-msgstr ""
+msgstr "%i%%"
 
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
