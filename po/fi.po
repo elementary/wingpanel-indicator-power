@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 17:39+0000\n"
-"PO-Revision-Date: 2021-08-04 15:05+0000\n"
+"PO-Revision-Date: 2021-11-25 19:58+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/fi/>\n"
@@ -176,7 +176,7 @@ msgstr "Laite"
 #: src/Widgets/DisplayWidget.vala:32
 #, c-format
 msgid "%i%%"
-msgstr ""
+msgstr "%i %%"
 
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"

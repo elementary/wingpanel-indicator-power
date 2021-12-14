@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 17:39+0000\n"
-"PO-Revision-Date: 2021-08-16 07:29+0000\n"
+"PO-Revision-Date: 2021-10-08 17:10+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/fi/>\n"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: data/power.appdata.xml.in:17 data/power.appdata.xml.in:33
 msgid "Minor updates:"
-msgstr "Pienet päivitykset:"
+msgstr "Pieniä päivityksiä:"
 
 #: data/power.appdata.xml.in:19
 msgid "Match scroll direction with Sound indicator"
@@ -58,7 +58,7 @@ msgstr ""
 #: data/power.appdata.xml.in:21 data/power.appdata.xml.in:39
 #: data/power.appdata.xml.in:47 data/power.appdata.xml.in:52
 msgid "Updated translations"
-msgstr "Päivitetyt käännökset"
+msgstr "Päivitetyt kielikäännökset"
 
 #: data/power.appdata.xml.in:29
 msgid "Show battery statistics when selected"

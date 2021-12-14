@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 17:39+0000\n"
-"PO-Revision-Date: 2021-08-23 19:43+0000\n"
+"PO-Revision-Date: 2021-12-13 20:43+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/tr/>\n"
@@ -37,11 +37,11 @@ msgstr "Yeni özellikler:"
 
 #: data/power.appdata.xml.in:14
 msgid "Show brightness level when scrolled"
-msgstr " "
+msgstr ""
 
 #: data/power.appdata.xml.in:15
 msgid "Show battery percentage automatically at 20% or lower"
-msgstr " "
+msgstr ""
 
 #: data/power.appdata.xml.in:17 data/power.appdata.xml.in:33
 msgid "Minor updates:"
@@ -49,11 +49,11 @@ msgstr "Küçük güncellemeler:"
 
 #: data/power.appdata.xml.in:19
 msgid "Match scroll direction with Sound indicator"
-msgstr " "
+msgstr ""
 
 #: data/power.appdata.xml.in:20
 msgid "Show \"Fully Charged\" at 100% when plugged in"
-msgstr " "
+msgstr ""
 
 #: data/power.appdata.xml.in:21 data/power.appdata.xml.in:39
 #: data/power.appdata.xml.in:47 data/power.appdata.xml.in:52
