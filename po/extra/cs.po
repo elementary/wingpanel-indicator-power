@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 17:39+0000\n"
-"PO-Revision-Date: 2020-06-07 21:11+0000\n"
+"PO-Revision-Date: 2022-01-10 01:06+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/cs/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/power.appdata.xml.in:6
 msgid "Power Indicator"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: data/power.appdata.xml.in:17 data/power.appdata.xml.in:33
 msgid "Minor updates:"
-msgstr ""
+msgstr "Drobné aktualizace:"
 
 #: data/power.appdata.xml.in:19
 msgid "Match scroll direction with Sound indicator"
@@ -86,7 +86,7 @@ msgstr ""
 
 #: data/power.appdata.xml.in:38
 msgid "Performance improvements"
-msgstr ""
+msgstr "Vylepšení výkonu"
 
 #: data/power.appdata.xml.in:45
 msgid "Support for Controllers and Pens"
