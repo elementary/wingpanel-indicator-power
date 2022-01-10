@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 17:39+0000\n"
-"PO-Revision-Date: 2020-05-29 15:11+0000\n"
+"PO-Revision-Date: 2022-01-10 17:06+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/cs/>\n"
@@ -12,26 +12,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: src/Indicator.vala:226
 #, c-format
 msgid "%s: %s"
-msgstr ""
+msgstr "%s: %s"
 
 #: src/Indicator.vala:227
 msgid "Middle-click to toggle percentage"
-msgstr ""
+msgstr "Klikněte kolečkem pro zobrazení či skrytí procent"
 
 #: src/Indicator.vala:235
 #, c-format
 msgid "Screen brightness: %i"
-msgstr ""
+msgstr "Jas obrazovky: %i"
 
 #: src/Indicator.vala:236
 msgid "Scroll to change screen brightness"
-msgstr ""
+msgstr "Rolujte kolečkem pro změnu jasu obrazovky"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -75,25 +75,23 @@ msgstr "Počítač"
 
 #: src/Services/Device.vala:85
 msgid "Controller"
-msgstr ""
+msgstr "Ovladač"
 
 #: src/Services/Device.vala:87
 msgid "Pen"
-msgstr ""
+msgstr "Pero"
 
 #: src/Services/Device.vala:89
 msgid "Plugged In"
-msgstr ""
+msgstr "Zapojené"
 
 #: src/Services/Device.vala:286
 msgid "Calculating…"
 msgstr "Probíhá výpočet…"
 
 #: src/Services/Device.vala:290
-#, fuzzy
-#| msgid "%i%% charged"
 msgid "Fully charged"
-msgstr "%i%% nabito"
+msgstr "Plně nabito"
 
 #: src/Services/Device.vala:296
 #, c-format
@@ -175,7 +173,7 @@ msgstr "Aplikace spotřebovávají mnoho energie"
 
 #: src/Widgets/AppList.vala:99
 msgid "Unknown App"
-msgstr ""
+msgstr "Neznámá aplikace"
 
 #: src/Widgets/DeviceRow.vala:104
 msgid "Device"
@@ -185,7 +183,7 @@ msgstr "Zařízení"
 #: src/Widgets/DisplayWidget.vala:32
 #, c-format
 msgid "%i%%"
-msgstr ""
+msgstr "%i%%"
 
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"

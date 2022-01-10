@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 17:39+0000\n"
-"PO-Revision-Date: 2021-11-01 08:22+0000\n"
+"PO-Revision-Date: 2021-11-21 02:09+0000\n"
 "Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "wingpanel/indicator-power-extra/zh_Hans/>\n"
@@ -80,7 +80,7 @@ msgstr ""
 
 #: data/power.appdata.xml.in:37
 msgid "Show tooltip on hover"
-msgstr "在悬停时显示工具提示"
+msgstr "悬停时显示工具提示"
 
 #: data/power.appdata.xml.in:38
 msgid "Performance improvements"
