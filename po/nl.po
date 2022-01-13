@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 17:39+0000\n"
-"PO-Revision-Date: 2020-01-03 22:07+0000\n"
-"Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
+"PO-Revision-Date: 2022-01-13 21:09+0000\n"
+"Last-Translator: Niels Van Laerhoven <niels1995@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/nl/>\n"
 "Language: nl\n"
@@ -12,26 +12,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: src/Indicator.vala:226
 #, c-format
 msgid "%s: %s"
-msgstr ""
+msgstr "%s: %s"
 
 #: src/Indicator.vala:227
 msgid "Middle-click to toggle percentage"
-msgstr ""
+msgstr "Middelklik om percentage te schakelen"
 
 #: src/Indicator.vala:235
 #, c-format
 msgid "Screen brightness: %i"
-msgstr ""
+msgstr "Scherm helderheid: %i"
 
 #: src/Indicator.vala:236
 msgid "Scroll to change screen brightness"
-msgstr ""
+msgstr "Scroll om de schermhelderheid aan te passen"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -79,11 +79,11 @@ msgstr ""
 
 #: src/Services/Device.vala:87
 msgid "Pen"
-msgstr ""
+msgstr "Pen"
 
 #: src/Services/Device.vala:89
 msgid "Plugged In"
-msgstr ""
+msgstr "Ingeplugd"
 
 #: src/Services/Device.vala:286
 msgid "Calculating…"
@@ -167,7 +167,7 @@ msgstr "Applicaties die veel energie verbruiken"
 
 #: src/Widgets/AppList.vala:99
 msgid "Unknown App"
-msgstr ""
+msgstr "Onbekende App"
 
 #: src/Widgets/DeviceRow.vala:104
 msgid "Device"
@@ -177,7 +177,7 @@ msgstr "Apparaat"
 #: src/Widgets/DisplayWidget.vala:32
 #, c-format
 msgid "%i%%"
-msgstr ""
+msgstr "%i%%"
 
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
