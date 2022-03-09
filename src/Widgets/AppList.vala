@@ -61,7 +61,11 @@ public class Power.Widgets.AppList : Gtk.ListBox {
 
         if (eaters.size > 0) {
             var title_label = new Granite.HeaderLabel (_("Apps Using Lots of Power"));
-            add (title_label);
+            set_header_func ((row, before) => {
+                if (row.get_index () == 0) {
+                    row.set_header (title_label);
+                }
+            });
         }
 
         eaters.@foreach ((power_eater) => {
