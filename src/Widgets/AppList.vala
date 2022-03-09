@@ -71,6 +71,7 @@ public class Power.Widgets.AppList : Gtk.ListBox {
             return true;
         });
 
+        // Add the header label if we acually have row(s)
         if (get_row_at_index (0) != null) {
             var title_label = new Granite.HeaderLabel (_("Apps Using Lots of Power"));
             set_header_func ((row, before) => {
