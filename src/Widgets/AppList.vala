@@ -109,7 +109,7 @@ public class Power.Widgets.AppList : Gtk.ListBox {
             }
 
             var app_name = app_info.get_name ();
-            if (app_name != null || app_name != "") {
+            if (app_name != null) {
                 app_name_label.label = app_name;
             }
 
