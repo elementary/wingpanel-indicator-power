@@ -58,8 +58,21 @@ public class Power.Widgets.AppList : Gtk.ListBox {
 
     private void update_list () {
         var eaters = app_manager.get_top_power_eaters (12);
+        eaters.@foreach ((power_eater) => {
+            var power_eater_desktop_file = power_eater.application.get_desktop_file ();
+            if (power_eater_desktop_file == null) {
+                return false;
+            }
 
-        if (eaters.size > 0) {
+            var desktop_app_info = new DesktopAppInfo.from_filename (power_eater_desktop_file);
+            var app_row = new AppRow (desktop_app_info);
+            add (app_row);
+
+            return true;
+        });
+
+        // Add the header label if we acually have row(s)
+        if (get_row_at_index (0) != null) {
             var title_label = new Granite.HeaderLabel (_("Apps Using Lots of Power"));
             set_header_func ((row, before) => {
                 if (row.get_index () == 0) {
@@ -67,19 +80,6 @@ public class Power.Widgets.AppList : Gtk.ListBox {
                 }
             });
         }
-
-        eaters.@foreach ((power_eater) => {
-            var desktop_app_info = new DesktopAppInfo.from_filename (power_eater.application.get_desktop_file ());
-
-            if (desktop_app_info == null) {
-                return false;
-            }
-
-            var app_row = new AppRow (desktop_app_info);
-            add (app_row);
-
-            return true;
-        });
 
         show_all ();
     }
