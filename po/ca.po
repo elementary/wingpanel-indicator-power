@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-23 17:39+0000\n"
+"POT-Creation-Date: 2022-03-11 10:47+0000\n"
 "PO-Revision-Date: 2021-07-28 11:58+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/wingpanel/"
@@ -15,21 +15,21 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-19 06:17+0000\n"
 
-#: src/Indicator.vala:226
+#: src/Indicator.vala:176
 #, c-format
 msgid "%s: %s"
 msgstr "%s: %s"
 
-#: src/Indicator.vala:227
+#: src/Indicator.vala:177
 msgid "Middle-click to toggle percentage"
 msgstr "Clic del mig per commutar el percentatge"
 
-#: src/Indicator.vala:235
+#: src/Indicator.vala:185
 #, c-format
 msgid "Screen brightness: %i"
 msgstr "Brillantor de la pantalla: %i"
 
-#: src/Indicator.vala:236
+#: src/Indicator.vala:186
 msgid "Scroll to change screen brightness"
 msgstr "Per canviar-ne la brillantor: amunt i avall"
 
@@ -159,11 +159,12 @@ msgid_plural "%lld seconds until empty"
 msgstr[0] "%lld segon fins que es buidi"
 msgstr[1] "%lld segons fins que es buidi"
 
-#: src/Widgets/AppList.vala:63
+#. Add the header label if we acually have row(s)
+#: src/Widgets/AppList.vala:76
 msgid "Apps Using Lots of Power"
 msgstr "Aplicacions que consumeixen molta energia"
 
-#: src/Widgets/AppList.vala:99
+#: src/Widgets/AppList.vala:103
 msgid "Unknown App"
 msgstr "Aplicació desconeguda"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-23 17:39+0000\n"
+"POT-Creation-Date: 2022-03-11 10:47+0000\n"
 "PO-Revision-Date: 2017-03-22 12:29+0000\n"
 "Last-Translator: Oto Rudovics <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,21 +14,21 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-24 06:32+0000\n"
 "X-Generator: Launchpad (build 18334)\n"
 
-#: src/Indicator.vala:226
+#: src/Indicator.vala:176
 #, c-format
 msgid "%s: %s"
 msgstr ""
 
-#: src/Indicator.vala:227
+#: src/Indicator.vala:177
 msgid "Middle-click to toggle percentage"
 msgstr ""
 
-#: src/Indicator.vala:235
+#: src/Indicator.vala:185
 #, c-format
 msgid "Screen brightness: %i"
 msgstr ""
 
-#: src/Indicator.vala:236
+#: src/Indicator.vala:186
 msgid "Scroll to change screen brightness"
 msgstr ""
 
@@ -168,11 +168,12 @@ msgstr[0] "%lld sekunde līdz izlādei"
 msgstr[1] "%lld sekundes līdz izlādei"
 msgstr[2] "%lld sekundes līdz izlādei"
 
-#: src/Widgets/AppList.vala:63
+#. Add the header label if we acually have row(s)
+#: src/Widgets/AppList.vala:76
 msgid "Apps Using Lots of Power"
 msgstr "Aplikācijas izmanto ļoti daudz enerģijas"
 
-#: src/Widgets/AppList.vala:99
+#: src/Widgets/AppList.vala:103
 msgid "Unknown App"
 msgstr ""
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: power-indicator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-23 17:39+0000\n"
+"POT-Creation-Date: 2022-03-11 10:47+0000\n"
 "PO-Revision-Date: 2021-08-01 17:35+0000\n"
 "Last-Translator: elSolus <tumbleweed@tuta.io>\n"
 "Language-Team: Punjabi <https://l10n.elementary.io/projects/wingpanel/"
@@ -19,21 +19,21 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: src/Indicator.vala:226
+#: src/Indicator.vala:176
 #, c-format
 msgid "%s: %s"
 msgstr "%s: %s"
 
-#: src/Indicator.vala:227
+#: src/Indicator.vala:177
 msgid "Middle-click to toggle percentage"
 msgstr "ਫ਼ੀਸਦ ਚਾਲੂ ਜਾਂ ਬੰਦ ਕਰਨ ਲਈ ਵਿਚਕਾਰਲੀ-ਕਲਿੱਕ"
 
-#: src/Indicator.vala:235
+#: src/Indicator.vala:185
 #, c-format
 msgid "Screen brightness: %i"
 msgstr "ਸਕਰੀਨ ਦੀ ਚਮਕ: %i"
 
-#: src/Indicator.vala:236
+#: src/Indicator.vala:186
 msgid "Scroll to change screen brightness"
 msgstr "ਸਕਰੀਨ ਦੀ ਚਮਕ ਬਦਲਣ ਲਈ ਸਕਰੋਲ ਕਰੋ"
 
@@ -163,11 +163,12 @@ msgid_plural "%lld seconds until empty"
 msgstr[0] "ਖ਼ਾਲੀ ਹੋਣ ਵਿੱਚ %lld ਸਕਿੰਟ"
 msgstr[1] "ਖ਼ਾਲੀ ਹੋਣ ਵਿੱਚ %lld ਸਕਿੰਟ"
 
-#: src/Widgets/AppList.vala:63
+#. Add the header label if we acually have row(s)
+#: src/Widgets/AppList.vala:76
 msgid "Apps Using Lots of Power"
 msgstr "ਜ਼ਿਆਦਾ ਊਰਜਾ ਵਰਤਣ ਵਾਲ਼ੀਆਂ ਐਪਾਂ"
 
-#: src/Widgets/AppList.vala:99
+#: src/Widgets/AppList.vala:103
 msgid "Unknown App"
 msgstr "ਅਣਜਾਣ ਐਪ"
 

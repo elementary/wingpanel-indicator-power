@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-23 17:39+0000\n"
+"POT-Creation-Date: 2022-03-11 10:47+0000\n"
 "PO-Revision-Date: 2021-07-28 11:58+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/wingpanel/"
@@ -16,21 +16,21 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:226
+#: src/Indicator.vala:176
 #, c-format
 msgid "%s: %s"
 msgstr "%s: %s"
 
-#: src/Indicator.vala:227
+#: src/Indicator.vala:177
 msgid "Middle-click to toggle percentage"
 msgstr "Клацніть середньою клавішею, щоб показати/сховати відсотки"
 
-#: src/Indicator.vala:235
+#: src/Indicator.vala:185
 #, c-format
 msgid "Screen brightness: %i"
 msgstr "Яскравість екрана: %i"
 
-#: src/Indicator.vala:236
+#: src/Indicator.vala:186
 msgid "Scroll to change screen brightness"
 msgstr "Прокрутіть, щоб змінити яскравість екрана"
 
@@ -168,11 +168,12 @@ msgstr[0] "%lld секунда до повного розряду"
 msgstr[1] "%lld секунди до повного розряду"
 msgstr[2] "%lld секунд до повного розряду"
 
-#: src/Widgets/AppList.vala:63
+#. Add the header label if we acually have row(s)
+#: src/Widgets/AppList.vala:76
 msgid "Apps Using Lots of Power"
 msgstr "Застосунки, що використовують забагато енергії"
 
-#: src/Widgets/AppList.vala:99
+#: src/Widgets/AppList.vala:103
 msgid "Unknown App"
 msgstr "Невідомий застосунок"
 
