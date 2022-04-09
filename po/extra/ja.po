@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-11 10:47+0000\n"
-"PO-Revision-Date: 2021-08-24 01:25+0000\n"
+"PO-Revision-Date: 2022-04-09 01:03+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/ja/>\n"
@@ -47,7 +47,7 @@ msgstr "バッテリー残量が 20% を切ると自動的に割合を表示す�
 
 #: data/power.appdata.xml.in:17 data/power.appdata.xml.in:33
 msgid "Minor updates:"
-msgstr "軽微なアップデート:"
+msgstr "そのほかのアップデート:"
 
 #: data/power.appdata.xml.in:19
 msgid "Match scroll direction with Sound indicator"
