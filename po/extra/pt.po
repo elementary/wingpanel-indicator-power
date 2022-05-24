@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-11 10:47+0000\n"
-"PO-Revision-Date: 2021-08-08 20:06+0000\n"
+"PO-Revision-Date: 2022-05-24 18:54+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/pt/>\n"
@@ -41,7 +41,7 @@ msgstr "Mostrar nível de luminosidade quando roda com o rato"
 
 #: data/power.appdata.xml.in:15
 msgid "Show battery percentage automatically at 20% or lower"
-msgstr ""
+msgstr "Mostra automaticamente a percentagem de bateria a 20% ou inferior"
 
 #: data/power.appdata.xml.in:17 data/power.appdata.xml.in:33
 msgid "Minor updates:"
@@ -49,11 +49,11 @@ msgstr "Pequenas atualizações:"
 
 #: data/power.appdata.xml.in:19
 msgid "Match scroll direction with Sound indicator"
-msgstr ""
+msgstr "Combina a direção de deslocamento com o indicador de Som"
 
 #: data/power.appdata.xml.in:20
 msgid "Show \"Fully Charged\" at 100% when plugged in"
-msgstr ""
+msgstr "Mostra \"Totalmente carregado\" a 100% quando ligado à corrente"
 
 #: data/power.appdata.xml.in:21 data/power.appdata.xml.in:39
 #: data/power.appdata.xml.in:47 data/power.appdata.xml.in:52
