@@ -163,7 +163,7 @@ public class Power.Services.Device : Object {
 
         if (connect_to_bus ()) {
             update_properties ();
-            connect_signals ();
+            device.g_properties_changed.connect (update_properties);
         }
     }
 
@@ -177,10 +177,6 @@ public class Power.Services.Device : Object {
         }
 
         return device != null;
-    }
-
-    private void connect_signals () {
-        device.g_properties_changed.connect (update_properties);
     }
 
     private void update_properties () {
@@ -296,7 +292,7 @@ public class Power.Services.Device : Object {
             info += _("%i%% charged").printf (percent);
 
             if (time_to_full > 0) {
-                info += " - ";
+                info += " — ";
                 if (time_to_full >= 86400) {
                     var days = time_to_full / 86400;
                     info += dngettext (
@@ -334,7 +330,7 @@ public class Power.Services.Device : Object {
             info += _("%i%% remaining").printf (percent);
 
             if (time_to_empty > 0) {
-                info += " - ";
+                info += " — ";
                 if (time_to_empty >= 86400) {
                     var days = time_to_empty / 86400;
                     info += dngettext (
