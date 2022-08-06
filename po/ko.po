@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-11 10:47+0000\n"
-"PO-Revision-Date: 2019-05-20 00:03+0000\n"
+"PO-Revision-Date: 2022-08-06 10:54+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ko/>\n"
@@ -12,26 +12,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: src/Indicator.vala:176
 #, c-format
 msgid "%s: %s"
-msgstr ""
+msgstr "%s: %s"
 
 #: src/Indicator.vala:177
 msgid "Middle-click to toggle percentage"
-msgstr ""
+msgstr "마우스 가운데 버튼 클릭으로 백분율로 전환"
 
 #: src/Indicator.vala:185
 #, c-format
 msgid "Screen brightness: %i"
-msgstr ""
+msgstr "화면 밝기: %i"
 
 #: src/Indicator.vala:186
 msgid "Scroll to change screen brightness"
-msgstr ""
+msgstr "스크롤 하여 화면 밝기 변경"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -75,25 +75,23 @@ msgstr "컴퓨터"
 
 #: src/Services/Device.vala:85
 msgid "Controller"
-msgstr ""
+msgstr "제어 장치"
 
 #: src/Services/Device.vala:87
 msgid "Pen"
-msgstr ""
+msgstr "펜"
 
 #: src/Services/Device.vala:89
 msgid "Plugged In"
-msgstr ""
+msgstr "플러그 연결"
 
 #: src/Services/Device.vala:286
 msgid "Calculating…"
 msgstr "계산 중…"
 
 #: src/Services/Device.vala:290
-#, fuzzy
-#| msgid "%i%% charged"
 msgid "Fully charged"
-msgstr "%i%% 충전됨"
+msgstr "완충됨"
 
 #: src/Services/Device.vala:296
 #, c-format
@@ -160,7 +158,7 @@ msgstr "전력을 많이 사용하는 앱"
 
 #: src/Widgets/AppList.vala:103
 msgid "Unknown App"
-msgstr ""
+msgstr "알 수 없는 앱"
 
 #: src/Widgets/DeviceRow.vala:104
 msgid "Device"
@@ -170,7 +168,7 @@ msgstr "장치"
 #: src/Widgets/DisplayWidget.vala:32
 #, c-format
 msgid "%i%%"
-msgstr ""
+msgstr "%i%%"
 
 #: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
