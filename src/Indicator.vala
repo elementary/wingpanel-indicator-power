@@ -18,6 +18,7 @@
  */
 
 public class Power.Indicator : Wingpanel.Indicator {
+    private const double CRITICAL_BATTERY_PERCENTAGE = 10;
     private const double LOW_BATTERY_PERCENTAGE = 20;
 
     public bool is_in_session { get; construct; default = false; }
@@ -32,6 +33,9 @@ public class Power.Indicator : Wingpanel.Indicator {
     private Services.DeviceManager dm;
 
     private Settings settings;
+
+    private bool notification_low_sent = false;
+    private bool notification_critical_sent = false;
 
     public Indicator (bool is_in_session) {
         Object (
@@ -148,7 +152,50 @@ public class Power.Indicator : Wingpanel.Indicator {
                 display_widget.allow_percent = true;
             }
 
+            if (display_device.is_charging) {
+                if (display_device.percentage >= CRITICAL_BATTERY_PERCENTAGE) {
+                    notification_critical_sent = false;
+
+                    if (display_device.percentage >= LOW_BATTERY_PERCENTAGE) {
+                        notification_low_sent = false;
+                    }
+                }
+            } else if (display_device.percentage <= LOW_BATTERY_PERCENTAGE) {
+                send_power_notification ();
+            }
+
             update_tooltip ();
+        }
+    }
+
+    private void send_power_notification () {
+        var notification = new Notify.Notification (
+            _("Low Power"),
+            display_device.get_info (),
+            display_device.get_icon_name_for_battery ()
+        ) {
+            id = int.parse ("io.elementary.low-power")
+        };
+
+        if (display_device.percentage <= CRITICAL_BATTERY_PERCENTAGE) {
+            if (notification_critical_sent) {
+                return;
+            }
+
+            notification.set_urgency (Notify.Urgency.CRITICAL);
+            notification_critical_sent = true;
+        } else {
+            if (notification_low_sent) {
+                return;
+            }
+
+            notification_low_sent = true;
+        }
+
+        try {
+            notification.show ();
+        } catch (Error e) {
+            critical ("Unable to show lower power notification: %s", e.message);
         }
     }
 
