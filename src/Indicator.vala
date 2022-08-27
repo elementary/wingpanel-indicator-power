@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2021 elementary LLC. (https://elementary.io)
+ * Copyright 2011-2021 elementary, Inc. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -18,7 +18,7 @@
  */
 
 public class Power.Indicator : Wingpanel.Indicator {
-    private const double LOW_BATTERY_PERCENTAGE = 20;
+    private const double LOW_BATTERY_PERCENTAGE = 20.0;
 
     public bool is_in_session { get; construct; default = false; }
     public bool natural_scroll_touchpad { get; set; }
@@ -43,11 +43,14 @@ public class Power.Indicator : Wingpanel.Indicator {
     construct {
         GLib.Intl.bindtextdomain (Constants.GETTEXT_PACKAGE, Constants.LOCALEDIR);
         GLib.Intl.bind_textdomain_codeset (Constants.GETTEXT_PACKAGE, "UTF-8");
+
         dm = Power.Services.DeviceManager.get_default ();
+
         var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
         mouse_settings.bind ("natural-scroll", this, "natural-scroll-mouse", SettingsBindFlags.DEFAULT);
         var touchpad_settings = new GLib.Settings ("org.gnome.desktop.peripherals.touchpad");
         touchpad_settings.bind ("natural-scroll", this, "natural-scroll-touchpad", SettingsBindFlags.DEFAULT);
+
         settings = new GLib.Settings ("io.elementary.desktop.wingpanel.power");
     }
 
@@ -144,7 +147,7 @@ public class Power.Indicator : Wingpanel.Indicator {
             if (display_device.percentage <= 0) {
                 display_widget.allow_percent = false;
             } else {
-                display_widget.percentage = (int)Math.round (display_device.percentage);
+                display_widget.percentage = (int) Math.round (display_device.percentage);
                 display_widget.allow_percent = true;
             }
 

@@ -114,14 +114,13 @@ public class Power.Widgets.AppList : Gtk.ListBox {
                 app_name_label.label = app_name;
             }
 
-            var grid = new Gtk.Grid () {
-                column_spacing = 9,
+            var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 9) {
                 margin_start = 3
             };
-            grid.attach (app_icon_image, 0, 0);
-            grid.attach (app_name_label, 1, 0);
+            box.add (app_icon_image);
+            box.add (app_name_label);
 
-            add (grid);
+            add (box);
         }
     }
 }

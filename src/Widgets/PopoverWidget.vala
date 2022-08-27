@@ -24,7 +24,6 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
 
     private AppList app_list;
     private Gtk.Revealer device_separator_revealer;
-    private Gtk.Revealer last_separator_revealer;
 
     public PopoverWidget (bool is_in_session) {
         Object (is_in_session: is_in_session);
@@ -55,7 +54,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
             margin_bottom = 3
         };
 
-        last_separator_revealer = new Gtk.Revealer ();
+        var last_separator_revealer = new Gtk.Revealer ();
         last_separator_revealer.add (last_separator);
 
         var show_percent_switch = new Granite.SwitchModelButton (_("Show Percentage"));
@@ -66,15 +65,16 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
             margin_bottom = 3
         };
 
-        var show_percent_grid = new Gtk.Grid ();
-        show_percent_grid.attach (show_percent_switch, 0, 0);
-        show_percent_grid.attach (show_percent_sep, 0, 1);
+        var show_percent_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+        show_percent_box.add (show_percent_switch);
+        show_percent_box.add (show_percent_sep);
 
         var show_percent_revealer = new Gtk.Revealer ();
-        show_percent_revealer.add (show_percent_grid);
+        show_percent_revealer.add (show_percent_box);
 
-        var show_settings_button = new Gtk.ModelButton ();
-        show_settings_button.text = _("Power Settings…");
+        var show_settings_button = new Gtk.ModelButton () {
+            text = _("Power Settings…")
+        };
 
         attach (show_percent_revealer, 0, 0);
         attach (device_list_revealer, 0, 1);

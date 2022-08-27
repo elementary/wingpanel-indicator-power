@@ -1,6 +1,6 @@
 public class Power.Utils {
 
-    private const double BRIGHTNESS_STEP = 5;
+    private const double BRIGHTNESS_STEP = 5.0;
     private static double total_y_delta = 0;
     private static double total_x_delta = 0;
 

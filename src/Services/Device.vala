@@ -276,7 +276,7 @@ public class Power.Services.Device : Object {
     }
 
     public string get_info () {
-        var percent = (int)Math.round (percentage);
+        var percent = (int) Math.round (percentage);
 
         if (!is_a_battery) {
             return "";

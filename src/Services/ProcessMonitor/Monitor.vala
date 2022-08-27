@@ -121,7 +121,7 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
         GTop.Cpu cpu_data;
         GTop.get_cpu (out cpu_data);
         var used = cpu_data.user + cpu_data.nice + cpu_data.sys;
-        cpu_load = ((double)(used - cpu_last_used)) / (cpu_data.total - cpu_last_total);
+        cpu_load = ((double) (used - cpu_last_used)) / (cpu_data.total - cpu_last_total);
         cpu_loads = new double[cpu_data.xcpu_user.length];
         var useds = new uint64[cpu_data.xcpu_user.length];
 
@@ -130,7 +130,7 @@ public class Power.Services.ProcessMonitor.Monitor : Object {
         }
 
         for (int i = 0; i < cpu_data.xcpu_user.length; i++) {
-            cpu_loads[i] = ((double)(useds[i] - cpu_last_useds[i])) /
+            cpu_loads[i] = ((double) (useds[i] - cpu_last_useds[i])) /
                            (cpu_data.xcpu_total[i] - cpu_last_totals[i]);
         }
 

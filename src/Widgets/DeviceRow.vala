@@ -57,7 +57,8 @@ public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
 
         var grid = new Gtk.Grid () {
             column_spacing = 3,
-            margin = 3,
+            margin_top = 3,
+            margin_bottom = 3,
             margin_start = 6,
             margin_end = 12
         };
