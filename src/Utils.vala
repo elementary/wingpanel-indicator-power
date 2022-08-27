@@ -62,7 +62,6 @@ public class Power.Utils {
             total_x_delta = 0.0;
             Power.Services.DeviceManager.get_default ()
                 .change_brightness ((int) (Math.round (dir) * BRIGHTNESS_STEP));
-                warning (dir.to_string ());
             return true;
         } else {
             return false;
