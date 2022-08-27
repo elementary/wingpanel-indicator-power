@@ -36,7 +36,7 @@ public class Power.Services.AppManager : Object {
 
         applications.@foreach ((app) => {
             /* cpu-usage in percent */
-            var cpu_usage = (int)(get_cpu_usage_for_app (app) * 100);
+            var cpu_usage = (int) (get_cpu_usage_for_app (app) * 100);
 
             if (cpu_usage >= 10) {
                 list.add ({ app, cpu_usage });
@@ -65,7 +65,7 @@ public class Power.Services.AppManager : Object {
             var window_type = window.get_window_type ();
 
             if (window_type != Bamf.WindowType.DOCK && window_type != Bamf.WindowType.MENU) {
-                cpu_usage_sum += get_sub_process_cpu_usage_sum ((int)window.get_pid ());
+                cpu_usage_sum += get_sub_process_cpu_usage_sum ((int) window.get_pid ());
             }
         }
 

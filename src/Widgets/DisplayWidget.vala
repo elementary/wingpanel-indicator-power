@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2020 elementary, Inc. (https://elementary.io)
+ * Copyright 2011-2020 elementary, Inc. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -17,7 +17,7 @@
  * Boston, MA 02110-1301, USA.
  */
 
-public class Power.Widgets.DisplayWidget : Gtk.Grid {
+public class Power.Widgets.DisplayWidget : Gtk.Box {
     private Gtk.Revealer percent_revealer;
     public string icon_name {
         set {
@@ -39,14 +39,16 @@ public class Power.Widgets.DisplayWidget : Gtk.Grid {
     construct {
         valign = Gtk.Align.CENTER;
 
-        image = new Gtk.Image ();
-        image.icon_name = "content-loading-symbolic";
-        image.pixel_size = 24;
+        image = new Gtk.Image () {
+            icon_name = "content-loading-symbolic",
+            pixel_size = 24
+        };
 
         percent_label = new Gtk.Label (null);
 
-        percent_revealer = new Gtk.Revealer ();
-        percent_revealer.transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT;
+        percent_revealer = new Gtk.Revealer () {
+            transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT
+        };
         percent_revealer.add (percent_label);
 
         add (image);

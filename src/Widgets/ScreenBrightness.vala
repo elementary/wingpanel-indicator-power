@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2021 elementary LLC. (https://elementary.io)
+ * Copyright 2011-2021 elementary, Inc. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -43,18 +43,17 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
             width_request = 175
         };
 
-        var grid = new Gtk.Grid () {
-            column_spacing = 6,
+        var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
             hexpand = true,
             margin_start = 6,
             margin_end = 12
         };
 
-        grid.add (image);
-        grid.add (brightness_slider);
+        box.add (image);
+        box.add (brightness_slider);
 
         var show_brightness_slider = new Gtk.Revealer ();
-        show_brightness_slider.add (grid);
+        show_brightness_slider.add (box);
 
         add (show_brightness_slider);
 
@@ -66,7 +65,7 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
         brightness_slider.scroll_event.connect ((e) => {
           /* Re-emit the signal on the eventbox instead of using native handler */
           on_scroll_event (e);
-          return true;
+          return Gdk.EVENT_STOP;
         });
 
         brightness_slider.value_changed.connect ((value) => {
@@ -76,7 +75,7 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
 
         dm.brightness_changed.connect ((brightness) => {
             if (brightness != -1) {
-                brightness_slider.set_value ((double)brightness);
+                brightness_slider.set_value ((double) brightness);
                 show_brightness_slider.reveal_child = true;
             } else {
                 show_brightness_slider.reveal_child = false;

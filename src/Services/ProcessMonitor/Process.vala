@@ -113,7 +113,7 @@ public class Power.Services.ProcessMonitor.Process : Object {
 
             GTop.ProcTime proc_time;
             GTop.get_proc_time (out proc_time, pid);
-            cpu_usage = ((double)(proc_time.rtime - cpu_last_used)) / (cpu_total - cpu_last_total);
+            cpu_usage = ((double) (proc_time.rtime - cpu_last_used)) / (cpu_total - cpu_last_total);
             cpu_last_used = proc_time.rtime;
         } catch (Error e) {
             stderr.printf ("Error reading stat file '%s': %s\n", stat_file.get_path (), e.message);
@@ -160,7 +160,7 @@ public class Power.Services.ProcessMonitor.Process : Object {
             }
 
             cmdline_contents_array[size] = '\0';
-            string cmdline_contents = (string)cmdline_contents_array;
+            string cmdline_contents = (string) cmdline_contents_array;
 
             /* TODO: need to make sure that this works */
             command = cmdline_contents;
