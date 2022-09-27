@@ -202,9 +202,7 @@ public class Power.Services.DeviceManager : Object {
 
     public void change_brightness (int change) {
         if (iscreen != null) {
-            if (change.abs () > 1) {
-                brightness = iscreen.brightness + change;
-            }
+            brightness = iscreen.brightness + change;
         }
     }
 }
