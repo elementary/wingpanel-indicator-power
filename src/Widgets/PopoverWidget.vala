@@ -54,7 +54,9 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
             margin_bottom = 3
         };
 
-        var last_separator_revealer = new Gtk.Revealer ();
+        var last_separator_revealer = new Gtk.Revealer () {
+            reveal_child = dm.brightness != -1
+        };
         last_separator_revealer.add (last_separator);
 
         var show_percent_switch = new Granite.SwitchModelButton (_("Show Percentage"));
