@@ -51,9 +51,9 @@ public class Power.Utils {
                 break;
         }
 
-        if (total_y_delta.abs () > 0.5) {
+        if (total_y_delta.abs () * BRIGHTNESS_STEP > 1.0) {
             dir = natural_scroll ? total_y_delta : -total_y_delta;
-        } else if (total_x_delta.abs () > 0.5) {
+        } else if (total_x_delta.abs () * BRIGHTNESS_STEP > 1.0) {
             dir = natural_scroll ? -total_x_delta : total_x_delta;
         }
 
@@ -61,7 +61,7 @@ public class Power.Utils {
             total_y_delta = 0.0;
             total_x_delta = 0.0;
             Power.Services.DeviceManager.get_default ()
-                .change_brightness ((int) (Math.round (dir) * BRIGHTNESS_STEP));
+                .change_brightness ((int) Math.round (dir * BRIGHTNESS_STEP));
             return true;
         } else {
             return false;
