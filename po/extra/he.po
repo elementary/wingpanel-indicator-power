@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-11 10:47+0000\n"
-"PO-Revision-Date: 2021-08-23 19:43+0000\n"
+"PO-Revision-Date: 2022-10-18 15:58+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/he/>\n"
@@ -56,7 +56,7 @@ msgstr "הצגת „טעינה מלאה” כאשר ב־100% ובחיבור לח
 #: data/power.appdata.xml.in:21 data/power.appdata.xml.in:39
 #: data/power.appdata.xml.in:47 data/power.appdata.xml.in:52
 msgid "Updated translations"
-msgstr "התרגומים עודכנו"
+msgstr "עודכנו התרגומים"
 
 #: data/power.appdata.xml.in:29
 msgid "Show battery statistics when selected"
