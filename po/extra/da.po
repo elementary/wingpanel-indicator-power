@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 10:47+0000\n"
+"POT-Creation-Date: 2022-10-19 20:08+0000\n"
 "PO-Revision-Date: 2020-05-27 17:11+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/wingpanel/"
@@ -31,71 +31,90 @@ msgstr ""
 "Se batteriniveauer, juster skærmens lysstyrke og se apps, der bruger masser "
 "af strøm"
 
-#: data/power.appdata.xml.in:12 data/power.appdata.xml.in:27
+#: data/power.appdata.xml.in:12 data/power.appdata.xml.in:30
+#: data/power.appdata.xml.in:45
 msgid "New features:"
 msgstr ""
 
 #: data/power.appdata.xml.in:14
-msgid "Show brightness level when scrolled"
+msgid "Scroll horizontally on the panel icon to change display brightness"
 msgstr ""
 
-#: data/power.appdata.xml.in:15
-msgid "Show battery percentage automatically at 20% or lower"
-msgstr ""
-
-#: data/power.appdata.xml.in:17 data/power.appdata.xml.in:33
+#: data/power.appdata.xml.in:16 data/power.appdata.xml.in:35
+#: data/power.appdata.xml.in:51
 msgid "Minor updates:"
 msgstr ""
 
-#: data/power.appdata.xml.in:19
-msgid "Match scroll direction with Sound indicator"
+#: data/power.appdata.xml.in:18
+msgid "Do a better job hiding the brightness slider on unsupported displays"
 msgstr ""
 
-#: data/power.appdata.xml.in:20
-msgid "Show \"Fully Charged\" at 100% when plugged in"
-msgstr ""
-
-#: data/power.appdata.xml.in:21 data/power.appdata.xml.in:39
-#: data/power.appdata.xml.in:47 data/power.appdata.xml.in:52
+#: data/power.appdata.xml.in:19 data/power.appdata.xml.in:39
+#: data/power.appdata.xml.in:57 data/power.appdata.xml.in:65
+#: data/power.appdata.xml.in:70
 msgid "Updated translations"
 msgstr "Opdaterede oversættelser"
 
-#: data/power.appdata.xml.in:29
-msgid "Show battery statistics when selected"
+#: data/power.appdata.xml.in:22
+msgid "Clicking the \"Apps Using Lots of Power\" header label causes a crash"
 msgstr ""
 
-#: data/power.appdata.xml.in:30
-msgid "Launch apps using power when selected"
+#: data/power.appdata.xml.in:23
+msgid "Don't show the power eater section if failed to get app info"
 msgstr ""
 
-#: data/power.appdata.xml.in:31
-msgid "Control display brightness by scrolling the indicator"
+#: data/power.appdata.xml.in:32
+msgid "Show brightness level when scrolled"
 msgstr ""
 
-#: data/power.appdata.xml.in:35
-msgid "Improvements for desktops with peripherals"
-msgstr ""
-
-#: data/power.appdata.xml.in:36
-msgid "Filter out internal devices"
+#: data/power.appdata.xml.in:33
+msgid "Show battery percentage automatically at 20% or lower"
 msgstr ""
 
 #: data/power.appdata.xml.in:37
-msgid "Show tooltip on hover"
+msgid "Match scroll direction with Sound indicator"
 msgstr ""
 
 #: data/power.appdata.xml.in:38
+msgid "Show \"Fully Charged\" at 100% when plugged in"
+msgstr ""
+
+#: data/power.appdata.xml.in:47
+msgid "Show battery statistics when selected"
+msgstr ""
+
+#: data/power.appdata.xml.in:48
+msgid "Launch apps using power when selected"
+msgstr ""
+
+#: data/power.appdata.xml.in:49
+msgid "Control display brightness by scrolling the indicator"
+msgstr ""
+
+#: data/power.appdata.xml.in:53
+msgid "Improvements for desktops with peripherals"
+msgstr ""
+
+#: data/power.appdata.xml.in:54
+msgid "Filter out internal devices"
+msgstr ""
+
+#: data/power.appdata.xml.in:55
+msgid "Show tooltip on hover"
+msgstr ""
+
+#: data/power.appdata.xml.in:56
 msgid "Performance improvements"
 msgstr ""
 
-#: data/power.appdata.xml.in:45
+#: data/power.appdata.xml.in:63
 msgid "Support for Controllers and Pens"
 msgstr ""
 
-#: data/power.appdata.xml.in:46
+#: data/power.appdata.xml.in:64
 msgid "Reduce spacing when percentage is shown"
 msgstr "Reducer afstand, når procentdelen vises"
 
-#: data/power.appdata.xml.in:61
+#: data/power.appdata.xml.in:79
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
