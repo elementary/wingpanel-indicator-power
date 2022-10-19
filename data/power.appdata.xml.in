@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2019 elementary, Inc. <contact@elementary.io> -->
+<!-- Copyright 2019-2022 elementary, Inc. <contact@elementary.io> -->
 <component type="addon">
   <id>io.elementary.wingpanel.power</id>
   <extends>io.elementary.wingpanel</extends>
@@ -7,7 +7,25 @@
   <summary>View battery levels, adjust display brightness, and see apps using lots of power</summary>
   <icon type="stock">preferences-system-power</icon>
   <releases>
-    <release version="6.1.0" date="2020-08-23" urgency="medium">
+    <release version="6.2.0" date="2022-10-18" urgency="medium">
+      <description>
+        <p>New features:</p>
+        <ul>
+          <li>Scroll horizontally on the panel icon to change display brightness</li>
+        </ul>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Do a better job hiding the brightness slider on unsupported displays</li>
+          <li>Updated translations</li>
+        </ul>
+        <issues>
+          <issue url="https://github.com/elementary/wingpanel-indicator-power/issues/224">Clicking the "Apps Using Lots of Power" header label causes a crash</issue>
+          <issue url="https://github.com/elementary/wingpanel-indicator-power/pull/226">Don't show the power eater section if failed to get app info</issue>
+        </issues>
+      </description>
+    </release>
+
+    <release version="6.1.0" date="2021-08-23" urgency="medium">
       <description>
         <p>New features:</p>
         <ul>
