@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 10:47+0000\n"
+"POT-Creation-Date: 2022-10-19 20:08+0000\n"
 "PO-Revision-Date: 2018-10-21 12:03+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/wingpanel/"
@@ -15,21 +15,21 @@ msgstr ""
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:176
+#: src/Indicator.vala:179
 #, c-format
 msgid "%s: %s"
 msgstr ""
 
-#: src/Indicator.vala:177
+#: src/Indicator.vala:180
 msgid "Middle-click to toggle percentage"
 msgstr ""
 
-#: src/Indicator.vala:185
+#: src/Indicator.vala:188
 #, c-format
 msgid "Screen brightness: %i"
 msgstr ""
 
-#: src/Indicator.vala:186
+#: src/Indicator.vala:189
 msgid "Scroll to change screen brightness"
 msgstr ""
 
@@ -162,7 +162,7 @@ msgstr "Aplikasi Menggunakan Banyak Daya"
 msgid "Unknown App"
 msgstr ""
 
-#: src/Widgets/DeviceRow.vala:104
+#: src/Widgets/DeviceRow.vala:105
 msgid "Device"
 msgstr "Perangkat"
 
@@ -172,11 +172,11 @@ msgstr "Perangkat"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:62
 msgid "Show Percentage"
 msgstr "Tampilkan Persentase"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:78
 msgid "Power Settings…"
 msgstr "Pengaturan Daya…"
 

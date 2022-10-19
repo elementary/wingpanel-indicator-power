@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 10:47+0000\n"
+"POT-Creation-Date: 2022-10-19 20:08+0000\n"
 "PO-Revision-Date: 2020-02-22 19:08+0000\n"
 "Last-Translator: gkkulik <g.kulik@o2.pl>\n"
 "Language-Team: Silesian <https://l10n.elementary.io/projects/wingpanel/"
@@ -14,21 +14,21 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.9.1\n"
 
-#: src/Indicator.vala:176
+#: src/Indicator.vala:179
 #, c-format
 msgid "%s: %s"
 msgstr ""
 
-#: src/Indicator.vala:177
+#: src/Indicator.vala:180
 msgid "Middle-click to toggle percentage"
 msgstr ""
 
-#: src/Indicator.vala:185
+#: src/Indicator.vala:188
 #, c-format
 msgid "Screen brightness: %i"
 msgstr ""
 
-#: src/Indicator.vala:186
+#: src/Indicator.vala:189
 msgid "Scroll to change screen brightness"
 msgstr ""
 
@@ -177,7 +177,7 @@ msgstr "Programy, co używajōm moc ynergije"
 msgid "Unknown App"
 msgstr ""
 
-#: src/Widgets/DeviceRow.vala:104
+#: src/Widgets/DeviceRow.vala:105
 msgid "Device"
 msgstr "Maszina"
 
@@ -187,11 +187,11 @@ msgstr "Maszina"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:62
 msgid "Show Percentage"
 msgstr "Pokoż procynt"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:78
 msgid "Power Settings…"
 msgstr "Sztelōnki ynergije…"
 

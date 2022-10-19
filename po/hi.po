@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 10:47+0000\n"
+"POT-Creation-Date: 2022-10-19 20:08+0000\n"
 "PO-Revision-Date: 2018-10-18 00:11+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Hindi <https://weblate.elementary.io/projects/wingpanel/"
@@ -15,21 +15,21 @@ msgstr ""
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:176
+#: src/Indicator.vala:179
 #, c-format
 msgid "%s: %s"
 msgstr ""
 
-#: src/Indicator.vala:177
+#: src/Indicator.vala:180
 msgid "Middle-click to toggle percentage"
 msgstr ""
 
-#: src/Indicator.vala:185
+#: src/Indicator.vala:188
 #, c-format
 msgid "Screen brightness: %i"
 msgstr ""
 
-#: src/Indicator.vala:186
+#: src/Indicator.vala:189
 msgid "Scroll to change screen brightness"
 msgstr ""
 
@@ -170,7 +170,7 @@ msgstr "एप्प्स ज़्यादा ताक़त ले रहें �
 msgid "Unknown App"
 msgstr ""
 
-#: src/Widgets/DeviceRow.vala:104
+#: src/Widgets/DeviceRow.vala:105
 msgid "Device"
 msgstr "यंत्र"
 
@@ -180,11 +180,11 @@ msgstr "यंत्र"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:62
 msgid "Show Percentage"
 msgstr "प्रतिशत दिखाएँ"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:78
 msgid "Power Settings…"
 msgstr "पावर सेटिंग्स …"
 

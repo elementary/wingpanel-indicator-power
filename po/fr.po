@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 10:47+0000\n"
+"POT-Creation-Date: 2022-10-19 20:08+0000\n"
 "PO-Revision-Date: 2021-08-02 19:43+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/wingpanel/"
@@ -15,21 +15,21 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:176
+#: src/Indicator.vala:179
 #, c-format
 msgid "%s: %s"
 msgstr "%s : %s"
 
-#: src/Indicator.vala:177
+#: src/Indicator.vala:180
 msgid "Middle-click to toggle percentage"
 msgstr "Clic central pour afficher/cacher le pourcentage"
 
-#: src/Indicator.vala:185
+#: src/Indicator.vala:188
 #, c-format
 msgid "Screen brightness: %i"
 msgstr "Luminosité de l'écran : %i"
 
-#: src/Indicator.vala:186
+#: src/Indicator.vala:189
 msgid "Scroll to change screen brightness"
 msgstr "Défilez pour modifier la luminosité de l'écran"
 
@@ -168,7 +168,7 @@ msgstr "Applications utilisant beaucoup d'énergie"
 msgid "Unknown App"
 msgstr "Application inconnue"
 
-#: src/Widgets/DeviceRow.vala:104
+#: src/Widgets/DeviceRow.vala:105
 msgid "Device"
 msgstr "Périphérique"
 
@@ -178,11 +178,11 @@ msgstr "Périphérique"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:62
 msgid "Show Percentage"
 msgstr "Afficher le pourcentage"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:78
 msgid "Power Settings…"
 msgstr "Paramètres d'alimentation…"
 
