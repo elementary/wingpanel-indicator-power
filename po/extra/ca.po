@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-19 20:08+0000\n"
-"PO-Revision-Date: 2021-08-24 08:26+0000\n"
+"PO-Revision-Date: 2022-10-21 19:57+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/ca/>\n"
@@ -39,6 +39,8 @@ msgstr "Característiques noves:"
 #: data/power.appdata.xml.in:14
 msgid "Scroll horizontally on the panel icon to change display brightness"
 msgstr ""
+"Desplaçament horitzontal per la icona del tauler per canviar la brillantor "
+"de la pantalla"
 
 #: data/power.appdata.xml.in:16 data/power.appdata.xml.in:35
 #: data/power.appdata.xml.in:51
@@ -48,6 +50,8 @@ msgstr "Actualitzacions menors:"
 #: data/power.appdata.xml.in:18
 msgid "Do a better job hiding the brightness slider on unsupported displays"
 msgstr ""
+"Feu una feina millor amagant el control lliscant de brillantor en pantalles "
+"no compatibles."
 
 #: data/power.appdata.xml.in:19 data/power.appdata.xml.in:39
 #: data/power.appdata.xml.in:57 data/power.appdata.xml.in:65
@@ -58,10 +62,14 @@ msgstr "Traduccions actualitzades"
 #: data/power.appdata.xml.in:22
 msgid "Clicking the \"Apps Using Lots of Power\" header label causes a crash"
 msgstr ""
+"Si feu clic a l'etiqueta de capçalera \"Aplicacions que fan servir molta "
+"energia\", es produeix un bloqueig."
 
 #: data/power.appdata.xml.in:23
 msgid "Don't show the power eater section if failed to get app info"
 msgstr ""
+"No es mostra la secció de consum alt d'energia si no es pot obtenir la "
+"informació de l'aplicació."
 
 #: data/power.appdata.xml.in:32
 msgid "Show brightness level when scrolled"
