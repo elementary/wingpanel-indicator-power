@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-11 10:47+0000\n"
+"POT-Creation-Date: 2022-10-19 20:08+0000\n"
 "PO-Revision-Date: 2021-11-25 19:58+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/wingpanel/"
@@ -15,22 +15,22 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:176
+#: src/Indicator.vala:179
 #, c-format
 msgid "%s: %s"
 msgstr "%s: %s"
 
-#: src/Indicator.vala:177
+#: src/Indicator.vala:180
 msgid "Middle-click to toggle percentage"
 msgstr ""
 "Näytä tai piilota prosentit hiiren keskimmäisen painikkeen napsautuksella"
 
-#: src/Indicator.vala:185
+#: src/Indicator.vala:188
 #, c-format
 msgid "Screen brightness: %i"
 msgstr "Näytön kirkkaus: %i"
 
-#: src/Indicator.vala:186
+#: src/Indicator.vala:189
 msgid "Scroll to change screen brightness"
 msgstr "Vieritä muuttaaksesi näytön kirkkautta"
 
@@ -169,7 +169,7 @@ msgstr "Paljon virtaa käyttävät sovellukset"
 msgid "Unknown App"
 msgstr "Tuntematon sovellus"
 
-#: src/Widgets/DeviceRow.vala:104
+#: src/Widgets/DeviceRow.vala:105
 msgid "Device"
 msgstr "Laite"
 
@@ -179,11 +179,11 @@ msgstr "Laite"
 msgid "%i%%"
 msgstr "%i %%"
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:62
 msgid "Show Percentage"
 msgstr "Näytä prosentit"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:78
 msgid "Power Settings…"
 msgstr "Virranhallinnan asetukset…"
 
