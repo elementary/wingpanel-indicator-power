@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-19 20:08+0000\n"
-"PO-Revision-Date: 2022-10-19 20:08+0000\n"
+"PO-Revision-Date: 2022-10-20 13:29+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/hu/>\n"
@@ -38,7 +38,7 @@ msgstr "Új funkciók:"
 
 #: data/power.appdata.xml.in:14
 msgid "Scroll horizontally on the panel icon to change display brightness"
-msgstr ""
+msgstr "Fényerő állítása vízszintes görgetéssel a panelikonon"
 
 #: data/power.appdata.xml.in:16 data/power.appdata.xml.in:35
 #: data/power.appdata.xml.in:51
@@ -47,7 +47,7 @@ msgstr "Apróbb frissítések:"
 
 #: data/power.appdata.xml.in:18
 msgid "Do a better job hiding the brightness slider on unsupported displays"
-msgstr ""
+msgstr "Fényerőcsúszka elrejtése még jobban nem támogatott kijelzőkön"
 
 #: data/power.appdata.xml.in:19 data/power.appdata.xml.in:39
 #: data/power.appdata.xml.in:57 data/power.appdata.xml.in:65
@@ -58,10 +58,14 @@ msgstr "Frissített fordítások"
 #: data/power.appdata.xml.in:22
 msgid "Clicking the \"Apps Using Lots of Power\" header label causes a crash"
 msgstr ""
+"Javítva a sok energiát használó alkalmazások címsorára kattintáskor előjövő "
+"összeomlás"
 
 #: data/power.appdata.xml.in:23
 msgid "Don't show the power eater section if failed to get app info"
 msgstr ""
+"Ha nem sikerül alkalmazásinformációkat lekérni, ne jelenjen meg a sokat "
+"fogyasztó alkalmazások szekciója"
 
 #: data/power.appdata.xml.in:32
 msgid "Show brightness level when scrolled"
