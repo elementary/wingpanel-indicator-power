@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-19 20:08+0000\n"
-"PO-Revision-Date: 2021-11-13 19:03+0000\n"
+"PO-Revision-Date: 2022-10-21 19:57+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/pl/>\n"
@@ -39,7 +39,7 @@ msgstr "Nowe funkcje:"
 
 #: data/power.appdata.xml.in:14
 msgid "Scroll horizontally on the panel icon to change display brightness"
-msgstr ""
+msgstr "Przewijanie kółka myszy na ikonie w panelu zmienia jasność wyświetlacza"
 
 #: data/power.appdata.xml.in:16 data/power.appdata.xml.in:35
 #: data/power.appdata.xml.in:51
@@ -48,7 +48,7 @@ msgstr "Mniejsze aktualizacje:"
 
 #: data/power.appdata.xml.in:18
 msgid "Do a better job hiding the brightness slider on unsupported displays"
-msgstr ""
+msgstr "Lepsze ukrywanie suwaka jasności na niewspieranych wyświetlaczach"
 
 #: data/power.appdata.xml.in:19 data/power.appdata.xml.in:39
 #: data/power.appdata.xml.in:57 data/power.appdata.xml.in:65
@@ -58,11 +58,13 @@ msgstr "Zaktualizowano tłumaczenia"
 
 #: data/power.appdata.xml.in:22
 msgid "Clicking the \"Apps Using Lots of Power\" header label causes a crash"
-msgstr ""
+msgstr "Kliknięcie nagłówka „Aplikacje używające sporo mocy” powoduje crash"
 
 #: data/power.appdata.xml.in:23
 msgid "Don't show the power eater section if failed to get app info"
 msgstr ""
+"Sekcja prądożerców nie jest pokazywana gdy nie uda się uzyskać informacji i "
+"aplikacji"
 
 #: data/power.appdata.xml.in:32
 msgid "Show brightness level when scrolled"
