@@ -1,3 +1,21 @@
+wingpanel-indicator-power (6.2.0) bionic; urgency=medium
+
+  * Release 6.2.0 (#236)
+  * Update translation files
+  * Update translation template
+  * Add 6.2.0 release notes to AppData (#235)
+  * Don't attach last separator when not in session (#234)
+  * FIx last separator revealer (#233)
+  * Better smooth scrolling (#232)
+  * Update codestyle (#231)
+  * AppList: Don't show the power eater section if failed to get the app
+    (#226)
+  * AppList: Don't add the header as a row (#225)
+  * Hide brightness slider on desktop experience (#206)
+  * New Horizontal scroll support (#204)
+
+ -- elementary, Inc. <builds@elementary.io>  Thu, 20 Oct 2022 18:44:30 +0000
+
 wingpanel-indicator-power (6.1.0) bionic; urgency=medium
 
   * Release 6.1.0 (#216)
