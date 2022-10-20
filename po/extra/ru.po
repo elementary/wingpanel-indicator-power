@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-19 20:08+0000\n"
-"PO-Revision-Date: 2022-09-30 10:13+0000\n"
+"PO-Revision-Date: 2022-10-21 19:57+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/ru/>\n"
@@ -39,7 +39,7 @@ msgstr "Новые возможности:"
 
 #: data/power.appdata.xml.in:14
 msgid "Scroll horizontally on the panel icon to change display brightness"
-msgstr ""
+msgstr "Горизонтальная прокрутка по значку на панели для изменения яркости"
 
 #: data/power.appdata.xml.in:16 data/power.appdata.xml.in:35
 #: data/power.appdata.xml.in:51
@@ -48,7 +48,7 @@ msgstr "Незначительные обновления:"
 
 #: data/power.appdata.xml.in:18
 msgid "Do a better job hiding the brightness slider on unsupported displays"
-msgstr ""
+msgstr "Улучшено скрытия ползунка яркости на неподдерживаемых дисплеях"
 
 #: data/power.appdata.xml.in:19 data/power.appdata.xml.in:39
 #: data/power.appdata.xml.in:57 data/power.appdata.xml.in:65
@@ -58,11 +58,13 @@ msgstr "Обновлены переводы"
 
 #: data/power.appdata.xml.in:22
 msgid "Clicking the \"Apps Using Lots of Power\" header label causes a crash"
-msgstr ""
+msgstr "Исправлен вылет при нажатии на заголовок «Энергозатратные приложения»"
 
 #: data/power.appdata.xml.in:23
 msgid "Don't show the power eater section if failed to get app info"
 msgstr ""
+"Раздел с энергозатратными приложениями больше не показывается, если не "
+"удалось получить информацию о приложениях"
 
 #: data/power.appdata.xml.in:32
 msgid "Show brightness level when scrolled"
