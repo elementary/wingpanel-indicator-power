@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-19 20:08+0000\n"
-"PO-Revision-Date: 2022-04-09 01:03+0000\n"
+"PO-Revision-Date: 2022-10-29 01:59+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/ja/>\n"
@@ -38,7 +38,7 @@ msgstr "新機能:"
 
 #: data/power.appdata.xml.in:14
 msgid "Scroll horizontally on the panel icon to change display brightness"
-msgstr ""
+msgstr "パネルアイコン上で水平スクロールするとディスプレイの輝度を変更できる機能を追加"
 
 #: data/power.appdata.xml.in:16 data/power.appdata.xml.in:35
 #: data/power.appdata.xml.in:51
@@ -47,7 +47,7 @@ msgstr "そのほかのアップデート:"
 
 #: data/power.appdata.xml.in:18
 msgid "Do a better job hiding the brightness slider on unsupported displays"
-msgstr ""
+msgstr "輝度調整に非対応のディスプレイで調整用のスライダーを表示しないためのロジックを改善"
 
 #: data/power.appdata.xml.in:19 data/power.appdata.xml.in:39
 #: data/power.appdata.xml.in:57 data/power.appdata.xml.in:65
@@ -57,11 +57,11 @@ msgstr "翻訳の更新"
 
 #: data/power.appdata.xml.in:22
 msgid "Clicking the \"Apps Using Lots of Power\" header label causes a crash"
-msgstr ""
+msgstr "\"電力消費が激しいアプリ\" ラベルをクリックするとクラッシュする"
 
 #: data/power.appdata.xml.in:23
 msgid "Don't show the power eater section if failed to get app info"
-msgstr ""
+msgstr "アプリ情報を取得できなかった場合は、\"電力消費が激しいアプリ\" セクションを表示しない"
 
 #: data/power.appdata.xml.in:32
 msgid "Show brightness level when scrolled"
