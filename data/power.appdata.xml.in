@@ -18,11 +18,11 @@
           <li>Do a better job hiding the brightness slider on unsupported displays</li>
           <li>Updated translations</li>
         </ul>
-        <issues>
-          <issue url="https://github.com/elementary/wingpanel-indicator-power/issues/224">Clicking the "Apps Using Lots of Power" header label causes a crash</issue>
-          <issue url="https://github.com/elementary/wingpanel-indicator-power/pull/226">Don't show the power eater section if failed to get app info</issue>
-        </issues>
       </description>
+      <issues>
+        <issue url="https://github.com/elementary/wingpanel-indicator-power/issues/224">Clicking the "Apps Using Lots of Power" header label causes a crash</issue>
+        <issue url="https://github.com/elementary/wingpanel-indicator-power/pull/226">Don't show the power eater section if failed to get app info</issue>
+      </issues>
     </release>
 
     <release version="6.1.0" date="2021-08-23" urgency="medium">
