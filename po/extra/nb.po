@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-19 20:08+0000\n"
+"POT-Creation-Date: 2022-10-31 14:38+0000\n"
 "PO-Revision-Date: 2021-08-21 15:34+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -54,14 +54,6 @@ msgstr ""
 #: data/power.appdata.xml.in:70
 msgid "Updated translations"
 msgstr "Nye oversettelser"
-
-#: data/power.appdata.xml.in:22
-msgid "Clicking the \"Apps Using Lots of Power\" header label causes a crash"
-msgstr ""
-
-#: data/power.appdata.xml.in:23
-msgid "Don't show the power eater section if failed to get app info"
-msgstr ""
 
 #: data/power.appdata.xml.in:32
 #, fuzzy

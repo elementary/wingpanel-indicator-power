@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-19 20:08+0000\n"
+"POT-Creation-Date: 2022-10-31 14:38+0000\n"
 "PO-Revision-Date: 2022-10-21 19:57+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/wingpanel/"
@@ -55,16 +55,6 @@ msgstr "Улучшено скрытия ползунка яркости на н�
 #: data/power.appdata.xml.in:70
 msgid "Updated translations"
 msgstr "Обновлены переводы"
-
-#: data/power.appdata.xml.in:22
-msgid "Clicking the \"Apps Using Lots of Power\" header label causes a crash"
-msgstr "Исправлен вылет при нажатии на заголовок «Энергозатратные приложения»"
-
-#: data/power.appdata.xml.in:23
-msgid "Don't show the power eater section if failed to get app info"
-msgstr ""
-"Раздел с энергозатратными приложениями больше не показывается, если не "
-"удалось получить информацию о приложениях"
 
 #: data/power.appdata.xml.in:32
 msgid "Show brightness level when scrolled"
@@ -125,3 +115,13 @@ msgstr "Уменьшено расстояние между элементами,
 #: data/power.appdata.xml.in:79
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
+
+#~ msgid ""
+#~ "Clicking the \"Apps Using Lots of Power\" header label causes a crash"
+#~ msgstr ""
+#~ "Исправлен вылет при нажатии на заголовок «Энергозатратные приложения»"
+
+#~ msgid "Don't show the power eater section if failed to get app info"
+#~ msgstr ""
+#~ "Раздел с энергозатратными приложениями больше не показывается, если не "
+#~ "удалось получить информацию о приложениях"

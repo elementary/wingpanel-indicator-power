@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-19 20:08+0000\n"
+"POT-Creation-Date: 2022-10-31 14:38+0000\n"
 "PO-Revision-Date: 2022-10-20 13:29+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/wingpanel/"
@@ -54,18 +54,6 @@ msgstr "Fényerőcsúszka elrejtése még jobban nem támogatott kijelzőkön"
 #: data/power.appdata.xml.in:70
 msgid "Updated translations"
 msgstr "Frissített fordítások"
-
-#: data/power.appdata.xml.in:22
-msgid "Clicking the \"Apps Using Lots of Power\" header label causes a crash"
-msgstr ""
-"Javítva a sok energiát használó alkalmazások címsorára kattintáskor előjövő "
-"összeomlás"
-
-#: data/power.appdata.xml.in:23
-msgid "Don't show the power eater section if failed to get app info"
-msgstr ""
-"Ha nem sikerül alkalmazásinformációkat lekérni, ne jelenjen meg a sokat "
-"fogyasztó alkalmazások szekciója"
 
 #: data/power.appdata.xml.in:32
 msgid "Show brightness level when scrolled"
@@ -123,3 +111,14 @@ msgstr "Ikontávolság csökkentése a százalékérték megjelenítésekor"
 #: data/power.appdata.xml.in:79
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
+
+#~ msgid ""
+#~ "Clicking the \"Apps Using Lots of Power\" header label causes a crash"
+#~ msgstr ""
+#~ "Javítva a sok energiát használó alkalmazások címsorára kattintáskor "
+#~ "előjövő összeomlás"
+
+#~ msgid "Don't show the power eater section if failed to get app info"
+#~ msgstr ""
+#~ "Ha nem sikerül alkalmazásinformációkat lekérni, ne jelenjen meg a sokat "
+#~ "fogyasztó alkalmazások szekciója"

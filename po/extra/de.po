@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-19 20:08+0000\n"
+"POT-Creation-Date: 2022-10-31 14:38+0000\n"
 "PO-Revision-Date: 2021-08-24 08:26+0000\n"
 "Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/wingpanel/"
@@ -54,14 +54,6 @@ msgstr ""
 #: data/power.appdata.xml.in:70
 msgid "Updated translations"
 msgstr "Aktualisierte Übersetzungen"
-
-#: data/power.appdata.xml.in:22
-msgid "Clicking the \"Apps Using Lots of Power\" header label causes a crash"
-msgstr ""
-
-#: data/power.appdata.xml.in:23
-msgid "Don't show the power eater section if failed to get app info"
-msgstr ""
 
 #: data/power.appdata.xml.in:32
 msgid "Show brightness level when scrolled"

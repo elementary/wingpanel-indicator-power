@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-19 20:08+0000\n"
+"POT-Creation-Date: 2022-10-31 14:38+0000\n"
 "PO-Revision-Date: 2022-10-21 19:57+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/wingpanel/"
@@ -52,14 +52,6 @@ msgstr "שיפור הסתרת מחוון הבהירות באמצעי תצוגה 
 #: data/power.appdata.xml.in:70
 msgid "Updated translations"
 msgstr "עודכנו התרגומים"
-
-#: data/power.appdata.xml.in:22
-msgid "Clicking the \"Apps Using Lots of Power\" header label causes a crash"
-msgstr "לחיצה על פס הכותרת „יישומים שצורכים חשמל רב” גורמת לקריסה"
-
-#: data/power.appdata.xml.in:23
-msgid "Don't show the power eater section if failed to get app info"
-msgstr "לא להציג את סעיף זוללי החשמל אם קבלת פרטי היישום נכשלה"
 
 #: data/power.appdata.xml.in:32
 msgid "Show brightness level when scrolled"
@@ -116,3 +108,10 @@ msgstr "הקטנת המרווח כאשר מופיעים אחוזים"
 #: data/power.appdata.xml.in:79
 msgid "elementary, Inc."
 msgstr "elementary בע״מ"
+
+#~ msgid ""
+#~ "Clicking the \"Apps Using Lots of Power\" header label causes a crash"
+#~ msgstr "לחיצה על פס הכותרת „יישומים שצורכים חשמל רב” גורמת לקריסה"
+
+#~ msgid "Don't show the power eater section if failed to get app info"
+#~ msgstr "לא להציג את סעיף זוללי החשמל אם קבלת פרטי היישום נכשלה"
