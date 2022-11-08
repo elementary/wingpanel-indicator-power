@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-31 14:38+0000\n"
-"PO-Revision-Date: 2021-08-24 08:26+0000\n"
+"PO-Revision-Date: 2022-11-09 14:29+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: data/power.appdata.xml.in:6
 msgid "Power Indicator"
@@ -39,6 +39,8 @@ msgstr "Nouvelles fonctionnalités :"
 #: data/power.appdata.xml.in:14
 msgid "Scroll horizontally on the panel icon to change display brightness"
 msgstr ""
+"Défilez horizontalement sur l'icône du panneau pour modifier la luminosité "
+"de l'écran"
 
 #: data/power.appdata.xml.in:16 data/power.appdata.xml.in:35
 #: data/power.appdata.xml.in:51
@@ -48,6 +50,8 @@ msgstr "Mises à jour mineures :"
 #: data/power.appdata.xml.in:18
 msgid "Do a better job hiding the brightness slider on unsupported displays"
 msgstr ""
+"Le curseur de luminosité est désormais mieux caché sur les écrans non pris "
+"en charge"
 
 #: data/power.appdata.xml.in:19 data/power.appdata.xml.in:39
 #: data/power.appdata.xml.in:57 data/power.appdata.xml.in:65
