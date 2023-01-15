@@ -65,6 +65,7 @@ public class Power.Indicator : Wingpanel.Indicator {
 
             dm.notify["has-battery"].connect (update_visibility);
             dm.notify["display-device"].connect (update_display_device);
+            settings.changed["show-percentage"].connect (update_tooltip);
 
             if (dm.backlight.present) {
                 display_widget.scroll_event.connect ((e) => {
@@ -177,7 +178,7 @@ public class Power.Indicator : Wingpanel.Indicator {
             }
             if (display_device.is_a_battery) {
                 primary_text = _("%s: %s").printf (display_device.device_type.get_name (), display_device.get_info ());
-                secondary_text = _("Middle-click to toggle percentage");
+                secondary_text = is_showing_percent ? _("Middle-click to hide percentage") : _("Middle-click to show percentage");
 
             } else {
                 primary_text = display_device.device_type.get_name ();
