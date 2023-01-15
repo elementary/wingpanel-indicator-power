@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 14:38+0000\n"
+"POT-Creation-Date: 2023-01-15 05:56+0000\n"
 "PO-Revision-Date: 2021-07-28 11:58+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/wingpanel/"
@@ -15,21 +15,29 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:179
+#: src/Indicator.vala:180
 #, c-format
 msgid "%s: %s"
 msgstr "%s: %s"
 
-#: src/Indicator.vala:180
-msgid "Middle-click to toggle percentage"
+#: src/Indicator.vala:181
+#, fuzzy
+#| msgid "Middle-click to toggle percentage"
+msgid "Middle-click to hide percentage"
 msgstr "יש ללחוץ לחיצה ימנית כדי להחליף מצב אחוזים"
 
-#: src/Indicator.vala:188
+#: src/Indicator.vala:181
+#, fuzzy
+#| msgid "Middle-click to toggle percentage"
+msgid "Middle-click to show percentage"
+msgstr "יש ללחוץ לחיצה ימנית כדי להחליף מצב אחוזים"
+
+#: src/Indicator.vala:189
 #, c-format
 msgid "Screen brightness: %i"
 msgstr "בהירות המסך: %i"
 
-#: src/Indicator.vala:189
+#: src/Indicator.vala:190
 msgid "Scroll to change screen brightness"
 msgstr "שינוי בהירות המסך בגלילה"
 
@@ -85,74 +93,74 @@ msgstr "עט"
 msgid "Plugged In"
 msgstr "חיבור לחשמל"
 
-#: src/Services/Device.vala:286
+#: src/Services/Device.vala:280
 msgid "Calculating…"
 msgstr "מחשב…"
 
-#: src/Services/Device.vala:290
+#: src/Services/Device.vala:284
 msgid "Fully charged"
 msgstr "טעינה מלאה"
 
-#: src/Services/Device.vala:296
+#: src/Services/Device.vala:290
 #, c-format
 msgid "%i%% charged"
 msgstr "נטען %i%%"
 
-#: src/Services/Device.vala:304
+#: src/Services/Device.vala:298
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "יום %lld עד לטעינה מלאה"
 msgstr[1] "%lld ימים עד לטעינה מלאה"
 
-#: src/Services/Device.vala:312
+#: src/Services/Device.vala:306
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "שעה %lld עד לטעינה מלאה"
 msgstr[1] "%lld שעות עד לטעינה מלאה"
 
-#: src/Services/Device.vala:320
+#: src/Services/Device.vala:314
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "דקה %lld עד לטעינה מלאה"
 msgstr[1] "%lld דקות עד לטעינה מלאה"
 
-#: src/Services/Device.vala:327
+#: src/Services/Device.vala:321
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "שניה %lld עד לטעינה מלאה"
 msgstr[1] "%lld שניות עד לטעינה מלאה"
 
-#: src/Services/Device.vala:334
+#: src/Services/Device.vala:328
 #, c-format
 msgid "%i%% remaining"
 msgstr "נותר %i%%"
 
-#: src/Services/Device.vala:342
+#: src/Services/Device.vala:336
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "יום %lld עד שהסוללה מתרוקנת"
 msgstr[1] "%lld ימים עד שהסוללה מתרוקנת"
 
-#: src/Services/Device.vala:350
+#: src/Services/Device.vala:344
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "שעה %lld עד שהסוללה מתרוקנת"
 msgstr[1] "%lld שעות עד שהסוללה מתרוקנת"
 
-#: src/Services/Device.vala:358
+#: src/Services/Device.vala:352
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "דקה %lld עד שהסוללה מתרוקנת"
 msgstr[1] "%lld דקות עד שהסוללה מתרוקנת"
 
-#: src/Services/Device.vala:365
+#: src/Services/Device.vala:359
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"

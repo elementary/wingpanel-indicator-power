@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 14:38+0000\n"
+"POT-Creation-Date: 2023-01-15 05:56+0000\n"
 "PO-Revision-Date: 2021-09-04 23:27+0000\n"
 "Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/wingpanel/"
@@ -16,21 +16,29 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:179
+#: src/Indicator.vala:180
 #, c-format
 msgid "%s: %s"
 msgstr "%s: %s"
 
-#: src/Indicator.vala:180
-msgid "Middle-click to toggle percentage"
+#: src/Indicator.vala:181
+#, fuzzy
+#| msgid "Middle-click to toggle percentage"
+msgid "Middle-click to hide percentage"
 msgstr "اضغط الزر الأوسط لإظهار النسبة المئوية"
 
-#: src/Indicator.vala:188
+#: src/Indicator.vala:181
+#, fuzzy
+#| msgid "Middle-click to toggle percentage"
+msgid "Middle-click to show percentage"
+msgstr "اضغط الزر الأوسط لإظهار النسبة المئوية"
+
+#: src/Indicator.vala:189
 #, c-format
 msgid "Screen brightness: %i"
 msgstr "سطوع الشاشة: %i"
 
-#: src/Indicator.vala:189
+#: src/Indicator.vala:190
 msgid "Scroll to change screen brightness"
 msgstr "قم بالتمرير لتغيير سطوع الشاشة"
 
@@ -86,20 +94,20 @@ msgstr "قلم"
 msgid "Plugged In"
 msgstr "موصول بالكهرباء"
 
-#: src/Services/Device.vala:286
+#: src/Services/Device.vala:280
 msgid "Calculating…"
 msgstr "قيد الحساب…"
 
-#: src/Services/Device.vala:290
+#: src/Services/Device.vala:284
 msgid "Fully charged"
 msgstr "مشحون بالكامل"
 
-#: src/Services/Device.vala:296
+#: src/Services/Device.vala:290
 #, c-format
 msgid "%i%% charged"
 msgstr "مشحون بنسبة %i%%"
 
-#: src/Services/Device.vala:304
+#: src/Services/Device.vala:298
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
@@ -110,7 +118,7 @@ msgstr[3] "%lld أيام حتى الامتلاء"
 msgstr[4] "%lld يوماً حتى الامتلاء"
 msgstr[5] "%lld يوم حتى الامتلاء"
 
-#: src/Services/Device.vala:312
+#: src/Services/Device.vala:306
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
@@ -121,7 +129,7 @@ msgstr[3] "%lld ساعات حتى الامتلاء"
 msgstr[4] "%lld ساعة حتى الامتلاء"
 msgstr[5] "%lld ساعة حتى الامتلاء"
 
-#: src/Services/Device.vala:320
+#: src/Services/Device.vala:314
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
@@ -132,7 +140,7 @@ msgstr[3] "%lld دقائق حتى الامتلاء"
 msgstr[4] "%lld دقيقة حتى الامتلاء"
 msgstr[5] "%lld دقيقة حتى الامتلاء"
 
-#: src/Services/Device.vala:327
+#: src/Services/Device.vala:321
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
@@ -143,12 +151,12 @@ msgstr[3] "%lld ثوان حتى الامتلاء"
 msgstr[4] "%lld ثانية حتى الامتلاء"
 msgstr[5] "%lld ثانية حتى الامتلاء"
 
-#: src/Services/Device.vala:334
+#: src/Services/Device.vala:328
 #, c-format
 msgid "%i%% remaining"
 msgstr "متبق %i%%"
 
-#: src/Services/Device.vala:342
+#: src/Services/Device.vala:336
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
@@ -159,7 +167,7 @@ msgstr[3] "%lld أيام حتى الإفراغ"
 msgstr[4] "%lld يوماً حتى الإفراغ"
 msgstr[5] "%lld يوم حتى الإفراغ"
 
-#: src/Services/Device.vala:350
+#: src/Services/Device.vala:344
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
@@ -170,7 +178,7 @@ msgstr[3] "%lld ساعات حتى الإفراغ"
 msgstr[4] "%lld ساعة حتى الإفراغ"
 msgstr[5] "%lld ساعة حتى الإفراغ"
 
-#: src/Services/Device.vala:358
+#: src/Services/Device.vala:352
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
@@ -181,7 +189,7 @@ msgstr[3] "%lld دقائق حتى الإفراغ"
 msgstr[4] "%lld دقيقة حتى الإفراغ"
 msgstr[5] "%lld دقيقة حتى الإفراغ"
 
-#: src/Services/Device.vala:365
+#: src/Services/Device.vala:359
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
