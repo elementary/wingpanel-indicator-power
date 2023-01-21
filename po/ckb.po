@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 14:38+0000\n"
+"POT-Creation-Date: 2023-01-15 05:56+0000\n"
 "PO-Revision-Date: 2022-09-21 06:14+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -15,21 +15,29 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:179
+#: src/Indicator.vala:180
 #, c-format
 msgid "%s: %s"
 msgstr "%s: %s"
 
-#: src/Indicator.vala:180
-msgid "Middle-click to toggle percentage"
+#: src/Indicator.vala:181
+#, fuzzy
+#| msgid "Middle-click to toggle percentage"
+msgid "Middle-click to hide percentage"
 msgstr "کرتەی ناوەڕاست بکە کردنەوەی ڕێژە"
 
-#: src/Indicator.vala:188
+#: src/Indicator.vala:181
+#, fuzzy
+#| msgid "Middle-click to toggle percentage"
+msgid "Middle-click to show percentage"
+msgstr "کرتەی ناوەڕاست بکە کردنەوەی ڕێژە"
+
+#: src/Indicator.vala:189
 #, c-format
 msgid "Screen brightness: %i"
 msgstr "ڕووناکی ڕوونما: %i"
 
-#: src/Indicator.vala:189
+#: src/Indicator.vala:190
 msgid "Scroll to change screen brightness"
 msgstr "سکرۆڵ بکە بۆ زیاد و کەمکردنی ڕووناکی"
 
@@ -85,74 +93,74 @@ msgstr "قەڵەم"
 msgid "Plugged In"
 msgstr "بارگاوی دەکرێت"
 
-#: src/Services/Device.vala:286
+#: src/Services/Device.vala:280
 msgid "Calculating…"
 msgstr "هەژمارکردن…"
 
-#: src/Services/Device.vala:290
+#: src/Services/Device.vala:284
 msgid "Fully charged"
 msgstr "تەواو بارگاوی بووە"
 
-#: src/Services/Device.vala:296
+#: src/Services/Device.vala:290
 #, c-format
 msgid "%i%% charged"
 msgstr "%i%% بارگاوی بووە"
 
-#: src/Services/Device.vala:304
+#: src/Services/Device.vala:298
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "تەنها %ll ڕۆژی پێویستە تا پڕ دەبێت"
 msgstr[1] "%ll ڕۆژی پێویستە بۆ پڕبوون"
 
-#: src/Services/Device.vala:312
+#: src/Services/Device.vala:306
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "تەنها %ll کاتژمێر ماوە بۆ پڕ بوون"
 msgstr[1] "%ll کاتژمێر ماوە بۆ پڕ بوون"
 
-#: src/Services/Device.vala:320
+#: src/Services/Device.vala:314
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "تەنها %ll خولەک ماوە بۆ پڕ بوون"
 msgstr[1] "%ll خولەک ماوە بۆ پڕ بوون"
 
-#: src/Services/Device.vala:327
+#: src/Services/Device.vala:321
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "تەنها %ll چرکە ماوە بۆ پڕ بوون"
 msgstr[1] "%ll چرکە ماوە بۆ پڕ بوون"
 
-#: src/Services/Device.vala:334
+#: src/Services/Device.vala:328
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% ماوە"
 
-#: src/Services/Device.vala:342
+#: src/Services/Device.vala:336
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "تەنها بای %ll ڕۆژ بارگاوییە"
 msgstr[1] "بای %ll ڕۆژ بارگاوییە"
 
-#: src/Services/Device.vala:350
+#: src/Services/Device.vala:344
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "تەنها بای %ll کاتژمێر بارگاوییە"
 msgstr[1] "بای %ll کاتژمێر بارگاوییە"
 
-#: src/Services/Device.vala:358
+#: src/Services/Device.vala:352
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "تەنها بای %ll خولەک بارگاوییە"
 msgstr[1] "بای %ll خولەک بارگاوییە"
 
-#: src/Services/Device.vala:365
+#: src/Services/Device.vala:359
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"

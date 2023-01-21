@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 14:38+0000\n"
-"PO-Revision-Date: 2022-09-30 10:15+0000\n"
+"POT-Creation-Date: 2023-01-15 05:56+0000\n"
+"PO-Revision-Date: 2023-01-16 14:25+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ru/>\n"
@@ -13,24 +13,28 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:179
+#: src/Indicator.vala:180
 #, c-format
 msgid "%s: %s"
 msgstr "%s: %s"
 
-#: src/Indicator.vala:180
-msgid "Middle-click to toggle percentage"
-msgstr "Нажмите средней кнопкой, чтобы показать/скрыть проценты"
+#: src/Indicator.vala:181
+msgid "Middle-click to hide percentage"
+msgstr "Нажмите средней кнопкой, чтобы скрыть проценты"
 
-#: src/Indicator.vala:188
+#: src/Indicator.vala:181
+msgid "Middle-click to show percentage"
+msgstr "Нажмите средней кнопкой, чтобы показать проценты"
+
+#: src/Indicator.vala:189
 #, c-format
 msgid "Screen brightness: %i"
 msgstr "Яркость экрана: %i"
 
-#: src/Indicator.vala:189
+#: src/Indicator.vala:190
 msgid "Scroll to change screen brightness"
 msgstr "Прокрутите, чтобы изменить яркость экрана"
 
@@ -86,20 +90,20 @@ msgstr "Перо"
 msgid "Plugged In"
 msgstr "Подключён"
 
-#: src/Services/Device.vala:286
+#: src/Services/Device.vala:280
 msgid "Calculating…"
 msgstr "Вычисление…"
 
-#: src/Services/Device.vala:290
+#: src/Services/Device.vala:284
 msgid "Fully charged"
 msgstr "Полностью заряжено"
 
-#: src/Services/Device.vala:296
+#: src/Services/Device.vala:290
 #, c-format
 msgid "%i%% charged"
 msgstr "%i%% заряжено"
 
-#: src/Services/Device.vala:304
+#: src/Services/Device.vala:298
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
@@ -107,7 +111,7 @@ msgstr[0] "%lld день до полной зарядки"
 msgstr[1] "%lld дня до полной зарядки"
 msgstr[2] "%lld дней до полной зарядки"
 
-#: src/Services/Device.vala:312
+#: src/Services/Device.vala:306
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
@@ -115,7 +119,7 @@ msgstr[0] "%lld час до полной зарядки"
 msgstr[1] "%lld часа до полной зарядки"
 msgstr[2] "%lld часов до полной зарядки"
 
-#: src/Services/Device.vala:320
+#: src/Services/Device.vala:314
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
@@ -123,7 +127,7 @@ msgstr[0] "%lld минута до полной зарядки"
 msgstr[1] "%lld минуты до полной зарядки"
 msgstr[2] "%lld минут до полной зарядки"
 
-#: src/Services/Device.vala:327
+#: src/Services/Device.vala:321
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
@@ -131,12 +135,12 @@ msgstr[0] "%lld секунда до полной зарядки"
 msgstr[1] "%lld секунды до полной зарядки"
 msgstr[2] "%lld секунд до полной зарядки"
 
-#: src/Services/Device.vala:334
+#: src/Services/Device.vala:328
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% осталось"
 
-#: src/Services/Device.vala:342
+#: src/Services/Device.vala:336
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
@@ -144,7 +148,7 @@ msgstr[0] "%lld день до разрядки"
 msgstr[1] "%lld дня до разрядки"
 msgstr[2] "%lld дней до разрядки"
 
-#: src/Services/Device.vala:350
+#: src/Services/Device.vala:344
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
@@ -152,7 +156,7 @@ msgstr[0] "%lld час до разрядки"
 msgstr[1] "%lld часа до разрядки"
 msgstr[2] "%lld часов до разрядки"
 
-#: src/Services/Device.vala:358
+#: src/Services/Device.vala:352
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
@@ -160,7 +164,7 @@ msgstr[0] "%lld минута до разрядки"
 msgstr[1] "%lld минуты до разрядки"
 msgstr[2] "%lld минут до разрядки"
 
-#: src/Services/Device.vala:365
+#: src/Services/Device.vala:359
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"

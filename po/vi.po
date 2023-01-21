@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 14:38+0000\n"
+"POT-Creation-Date: 2023-01-15 05:56+0000\n"
 "PO-Revision-Date: 2017-12-27 15:59+0000\n"
 "Last-Translator: Hải Hồ <hochihai1997@gmail.com>\n"
 "Language-Team: Vietnamese <https://weblate.elementary.io/projects/wingpanel/"
@@ -15,21 +15,25 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:179
+#: src/Indicator.vala:180
 #, c-format
 msgid "%s: %s"
 msgstr ""
 
-#: src/Indicator.vala:180
-msgid "Middle-click to toggle percentage"
+#: src/Indicator.vala:181
+msgid "Middle-click to hide percentage"
 msgstr ""
 
-#: src/Indicator.vala:188
+#: src/Indicator.vala:181
+msgid "Middle-click to show percentage"
+msgstr ""
+
+#: src/Indicator.vala:189
 #, c-format
 msgid "Screen brightness: %i"
 msgstr ""
 
-#: src/Indicator.vala:189
+#: src/Indicator.vala:190
 msgid "Scroll to change screen brightness"
 msgstr ""
 
@@ -85,69 +89,69 @@ msgstr ""
 msgid "Plugged In"
 msgstr ""
 
-#: src/Services/Device.vala:286
+#: src/Services/Device.vala:280
 msgid "Calculating…"
 msgstr "Đang tính toán…"
 
-#: src/Services/Device.vala:290
+#: src/Services/Device.vala:284
 #, fuzzy
 #| msgid "%i%% charged"
 msgid "Fully charged"
 msgstr "Đã sạc %i%%"
 
-#: src/Services/Device.vala:296
+#: src/Services/Device.vala:290
 #, c-format
 msgid "%i%% charged"
 msgstr "Đã sạc %i%%"
 
-#: src/Services/Device.vala:304
+#: src/Services/Device.vala:298
 #, c-format
 msgid "%lld day until full"
 msgid_plural "%lld days until full"
 msgstr[0] "%lld ngày cho đến khi đầy"
 
-#: src/Services/Device.vala:312
+#: src/Services/Device.vala:306
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld giờ cho đến khi đầy"
 
-#: src/Services/Device.vala:320
+#: src/Services/Device.vala:314
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld phút cho đến khi đầy"
 
-#: src/Services/Device.vala:327
+#: src/Services/Device.vala:321
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld giây cho đến khi đầy"
 
-#: src/Services/Device.vala:334
+#: src/Services/Device.vala:328
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% còn lại"
 
-#: src/Services/Device.vala:342
+#: src/Services/Device.vala:336
 #, c-format
 msgid "%lld day until empty"
 msgid_plural "%lld days until empty"
 msgstr[0] "%lld ngày cho đến khi cạn"
 
-#: src/Services/Device.vala:350
+#: src/Services/Device.vala:344
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld giờ cho đến khi cạn"
 
-#: src/Services/Device.vala:358
+#: src/Services/Device.vala:352
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld phút cho đến khi cạn"
 
-#: src/Services/Device.vala:365
+#: src/Services/Device.vala:359
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
