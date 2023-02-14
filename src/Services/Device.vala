@@ -254,15 +254,15 @@ public class Power.Services.Device : Object {
             return "battery-empty";
         }
 
-        if (percentage < 30) {
+        if (percentage < 37.5f) {
             return "battery-caution";
         }
 
-        if (percentage < 60) {
+        if (percentage < 62.5f) {
             return "battery-low";
         }
 
-        if (percentage < 80) {
+        if (percentage < 87.5f) {
             return "battery-good";
         }
 
