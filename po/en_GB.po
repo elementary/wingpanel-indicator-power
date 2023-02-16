@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-15 05:56+0000\n"
-"PO-Revision-Date: 2021-07-28 21:54+0000\n"
-"Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
+"PO-Revision-Date: 2023-02-17 14:25+0000\n"
+"Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "wingpanel/wingpanel-indicator-power/en_GB/>\n"
 "Language: en_GB\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: src/Indicator.vala:180
@@ -21,16 +21,12 @@ msgid "%s: %s"
 msgstr "%s: %s"
 
 #: src/Indicator.vala:181
-#, fuzzy
-#| msgid "Middle-click to toggle percentage"
 msgid "Middle-click to hide percentage"
-msgstr "Middle-click to toggle percentage"
+msgstr "Middle-click to hide percentage"
 
 #: src/Indicator.vala:181
-#, fuzzy
-#| msgid "Middle-click to toggle percentage"
 msgid "Middle-click to show percentage"
-msgstr "Middle-click to toggle percentage"
+msgstr "Middle-click to show percentage"
 
 #: src/Indicator.vala:189
 #, c-format
