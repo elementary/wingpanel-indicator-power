@@ -99,6 +99,8 @@ public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
                     type_string = battery.model;
                 }
                 break;
+            default:
+                break;
         }
 
         if (type_string == null) {
