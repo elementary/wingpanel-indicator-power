@@ -291,15 +291,7 @@ public class Power.Services.Device : Object {
 
             if (time_to_full > 0) {
                 info += " - ";
-                if (time_to_full >= 86400) {
-                    var days = time_to_full / 86400;
-                    info += dngettext (
-                        Constants.GETTEXT_PACKAGE,
-                        "%lld day until full",
-                        "%lld days until full",
-                        (ulong) days
-                    ).printf (days);
-                } else if (time_to_full >= 3600) {
+                if (time_to_full >= 3600) {
                     var hours = time_to_full / 3600;
                     info += dngettext (
                         Constants.GETTEXT_PACKAGE,
@@ -329,15 +321,7 @@ public class Power.Services.Device : Object {
 
             if (time_to_empty > 0) {
                 info += " - ";
-                if (time_to_empty >= 86400) {
-                    var days = time_to_empty / 86400;
-                    info += dngettext (
-                        Constants.GETTEXT_PACKAGE,
-                        "%lld day until empty",
-                        "%lld days until empty",
-                        (ulong) days
-                    ).printf (days);
-                } else if (time_to_empty >= 3600) {
+                if (time_to_empty >= 3600) {
                     var hours = time_to_empty / 3600;
                     info += dngettext (
                         Constants.GETTEXT_PACKAGE,
