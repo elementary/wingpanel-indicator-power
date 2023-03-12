@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-15 05:56+0000\n"
 "PO-Revision-Date: 2023-03-12 21:12+0000\n"
-"Last-Translator: Cleiton Floss <cleitonfloss@tutanota.de>\n"
+"Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ka/>\n"
 "Language: ka\n"
@@ -91,7 +91,7 @@ msgstr "შეერთებული"
 
 #: src/Services/Device.vala:280
 msgid "Calculating…"
-msgstr "ითვლება…"
+msgstr "გამოთვლა…"
 
 #: src/Services/Device.vala:284
 msgid "Fully charged"
