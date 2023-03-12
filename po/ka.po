@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-15 05:56+0000\n"
-"PO-Revision-Date: 2023-03-12 21:12+0000\n"
+"PO-Revision-Date: 2023-03-13 21:25+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ka/>\n"
@@ -180,7 +180,7 @@ msgstr "პროცენტული მაჩვენებლის ჩვ�
 
 #: src/Widgets/PopoverWidget.vala:78
 msgid "Power Settings…"
-msgstr "ელკვების პარამეტრები…"
+msgstr "კვების მორგება…"
 
 #, fuzzy
 #~| msgid "Battery"
