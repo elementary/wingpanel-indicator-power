@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-15 05:56+0000\n"
+"POT-Creation-Date: 2023-03-13 22:22+0000\n"
 "PO-Revision-Date: 2017-03-22 12:29+0000\n"
 "Last-Translator: Oto Rudovics <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,21 +105,13 @@ msgstr "%i%% uzlādēts"
 
 #: src/Services/Device.vala:298
 #, c-format
-msgid "%lld day until full"
-msgid_plural "%lld days until full"
-msgstr[0] "%lld diena līdz pilnai uzlādei"
-msgstr[1] "%lld diena līdz pilnai uzlādei"
-msgstr[2] "%lld dienas līdz pilnai uzlādei"
-
-#: src/Services/Device.vala:306
-#, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld stunda līdz pilnai uzlādei"
 msgstr[1] "%lld stundas līdz pilnai uzlādei"
 msgstr[2] "%lld hours until full"
 
-#: src/Services/Device.vala:314
+#: src/Services/Device.vala:306
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
@@ -127,7 +119,7 @@ msgstr[0] "%lld minūte līdz pilnai uzlādei"
 msgstr[1] "%lld minūtes līdz pilnai uzlādei"
 msgstr[2] "%lld minūtes līdz pilnai uzlādei"
 
-#: src/Services/Device.vala:321
+#: src/Services/Device.vala:313
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
@@ -135,20 +127,12 @@ msgstr[0] "%lld sekunde līdz pilnai uzlādei"
 msgstr[1] "%lld sekundes līdz pilnai uzlādei"
 msgstr[2] "%lld sekundes līdz pilnai uzlādei"
 
-#: src/Services/Device.vala:328
+#: src/Services/Device.vala:320
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% atlicis"
 
-#: src/Services/Device.vala:336
-#, c-format
-msgid "%lld day until empty"
-msgid_plural "%lld days until empty"
-msgstr[0] "%lld diena līdz izlādei"
-msgstr[1] "%lld dienas līdz izlādei"
-msgstr[2] "%lld dienas līdz izlādei"
-
-#: src/Services/Device.vala:344
+#: src/Services/Device.vala:328
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
@@ -156,7 +140,7 @@ msgstr[0] "%lld stunda līdz izlādei"
 msgstr[1] "%lld stundas līdz izlādei"
 msgstr[2] "%lld stundas līdz izlādei"
 
-#: src/Services/Device.vala:352
+#: src/Services/Device.vala:336
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
@@ -164,7 +148,7 @@ msgstr[0] "%lld minūte līdz izlādei"
 msgstr[1] "%lld minūtes līdz izlādei"
 msgstr[2] "%lld minūtes līdz izlādei"
 
-#: src/Services/Device.vala:359
+#: src/Services/Device.vala:343
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -181,7 +165,7 @@ msgstr "Aplikācijas izmanto ļoti daudz enerģijas"
 msgid "Unknown App"
 msgstr ""
 
-#: src/Widgets/DeviceRow.vala:105
+#: src/Widgets/DeviceRow.vala:108
 msgid "Device"
 msgstr "Ierīce"
 
@@ -198,6 +182,20 @@ msgstr "Rādīt procentus"
 #: src/Widgets/PopoverWidget.vala:78
 msgid "Power Settings…"
 msgstr "Barošanas iestatījumi…"
+
+#, c-format
+#~ msgid "%lld day until full"
+#~ msgid_plural "%lld days until full"
+#~ msgstr[0] "%lld diena līdz pilnai uzlādei"
+#~ msgstr[1] "%lld diena līdz pilnai uzlādei"
+#~ msgstr[2] "%lld dienas līdz pilnai uzlādei"
+
+#, c-format
+#~ msgid "%lld day until empty"
+#~ msgid_plural "%lld days until empty"
+#~ msgstr[0] "%lld diena līdz izlādei"
+#~ msgstr[1] "%lld dienas līdz izlādei"
+#~ msgstr[2] "%lld dienas līdz izlādei"
 
 #, fuzzy
 #~| msgid "Battery"

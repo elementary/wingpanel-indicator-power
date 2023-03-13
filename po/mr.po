@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-15 05:56+0000\n"
+"POT-Creation-Date: 2023-03-13 22:22+0000\n"
 "PO-Revision-Date: 2020-10-11 18:14+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/wingpanel/"
@@ -106,59 +106,45 @@ msgstr "%i%% चार्ज झाले"
 
 #: src/Services/Device.vala:298
 #, c-format
-msgid "%lld day until full"
-msgid_plural "%lld days until full"
-msgstr[0] "पूर्ण होण्यास %ll दिवस"
-msgstr[1] "पूर्ण होण्यास %ll  दिवस"
-
-#: src/Services/Device.vala:306
-#, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "पूर्ण  होण्यास %ll तास"
 msgstr[1] "पूर्ण होण्यास %ll तास"
 
-#: src/Services/Device.vala:314
+#: src/Services/Device.vala:306
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "पूर्ण होण्यास %lld मिनीट"
 msgstr[1] "पूर्ण होण्यास %lld मिनीटे"
 
-#: src/Services/Device.vala:321
+#: src/Services/Device.vala:313
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "पूर्ण  होण्यास %ll सेकंद"
 msgstr[1] "पूर्ण होण्यास %ll सेकंद"
 
-#: src/Services/Device.vala:328
+#: src/Services/Device.vala:320
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% बाकी"
 
-#: src/Services/Device.vala:336
-#, c-format
-msgid "%lld day until empty"
-msgid_plural "%lld days until empty"
-msgstr[0] "रिकामे  होण्यास %ll दिवस बाकी"
-msgstr[1] "रिकामे होण्यास %ll दिवस बाकी"
-
-#: src/Services/Device.vala:344
+#: src/Services/Device.vala:328
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "रिकामे  होण्यास %ll तास बाकी"
 msgstr[1] "रिकामे होण्यास %ll तास बाकी"
 
-#: src/Services/Device.vala:352
+#: src/Services/Device.vala:336
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "रिकामे होण्यास %lld मिनीट बाकी"
 msgstr[1] "रिकामे होण्यास %lld मिनीटे बाकी"
 
-#: src/Services/Device.vala:359
+#: src/Services/Device.vala:343
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -174,7 +160,7 @@ msgstr "भरपूर ऊर्जा वापरणारे अॅप्स
 msgid "Unknown App"
 msgstr ""
 
-#: src/Widgets/DeviceRow.vala:105
+#: src/Widgets/DeviceRow.vala:108
 msgid "Device"
 msgstr "डिव्हाइस"
 
@@ -191,6 +177,18 @@ msgstr "टक्केवारी दर्शवा"
 #: src/Widgets/PopoverWidget.vala:78
 msgid "Power Settings…"
 msgstr "उर्जा सेटिंग्ज …"
+
+#, c-format
+#~ msgid "%lld day until full"
+#~ msgid_plural "%lld days until full"
+#~ msgstr[0] "पूर्ण होण्यास %ll दिवस"
+#~ msgstr[1] "पूर्ण होण्यास %ll  दिवस"
+
+#, c-format
+#~ msgid "%lld day until empty"
+#~ msgid_plural "%lld days until empty"
+#~ msgstr[0] "रिकामे  होण्यास %ll दिवस बाकी"
+#~ msgstr[1] "रिकामे होण्यास %ll दिवस बाकी"
 
 #, fuzzy
 #~| msgid "Battery"

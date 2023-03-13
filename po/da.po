@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-15 05:56+0000\n"
+"POT-Creation-Date: 2023-03-13 22:22+0000\n"
 "PO-Revision-Date: 2018-12-12 22:03+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/wingpanel/"
@@ -106,59 +106,45 @@ msgstr "%i%% opladt"
 
 #: src/Services/Device.vala:298
 #, c-format
-msgid "%lld day until full"
-msgid_plural "%lld days until full"
-msgstr[0] "%lld dag til fuldt opladt"
-msgstr[1] "%lld dage til fuldt opladt"
-
-#: src/Services/Device.vala:306
-#, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld time til fuldt opladt"
 msgstr[1] "%lld timer til fuldt opladt"
 
-#: src/Services/Device.vala:314
+#: src/Services/Device.vala:306
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld minut til fuldt opladt"
 msgstr[1] "%lld minutter til fuldt opladt"
 
-#: src/Services/Device.vala:321
+#: src/Services/Device.vala:313
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld sekund til fuldt opladt"
 msgstr[1] "%lld sekunder til fuldt opladt"
 
-#: src/Services/Device.vala:328
+#: src/Services/Device.vala:320
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% tilbage"
 
-#: src/Services/Device.vala:336
-#, c-format
-msgid "%lld day until empty"
-msgid_plural "%lld days until empty"
-msgstr[0] "%lld dag til afladt"
-msgstr[1] "%lld dage til afladt"
-
-#: src/Services/Device.vala:344
+#: src/Services/Device.vala:328
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld time til afladt"
 msgstr[1] "%lld timer til afladt"
 
-#: src/Services/Device.vala:352
+#: src/Services/Device.vala:336
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld minut til afladt"
 msgstr[1] "%lld minutter til afladt"
 
-#: src/Services/Device.vala:359
+#: src/Services/Device.vala:343
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -174,7 +160,7 @@ msgstr "Apps der bruger meget strøm"
 msgid "Unknown App"
 msgstr ""
 
-#: src/Widgets/DeviceRow.vala:105
+#: src/Widgets/DeviceRow.vala:108
 msgid "Device"
 msgstr "Enhed"
 
@@ -191,6 +177,18 @@ msgstr "Vis procent"
 #: src/Widgets/PopoverWidget.vala:78
 msgid "Power Settings…"
 msgstr "Strømindstillinger…"
+
+#, c-format
+#~ msgid "%lld day until full"
+#~ msgid_plural "%lld days until full"
+#~ msgstr[0] "%lld dag til fuldt opladt"
+#~ msgstr[1] "%lld dage til fuldt opladt"
+
+#, c-format
+#~ msgid "%lld day until empty"
+#~ msgid_plural "%lld days until empty"
+#~ msgstr[0] "%lld dag til afladt"
+#~ msgstr[1] "%lld dage til afladt"
 
 #, fuzzy
 #~| msgid "Battery"

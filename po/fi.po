@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-15 05:56+0000\n"
+"POT-Creation-Date: 2023-03-13 22:22+0000\n"
 "PO-Revision-Date: 2023-01-26 09:25+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/wingpanel/"
@@ -104,59 +104,45 @@ msgstr "%i%% ladattu"
 
 #: src/Services/Device.vala:298
 #, c-format
-msgid "%lld day until full"
-msgid_plural "%lld days until full"
-msgstr[0] "%lld päivä kunnes täynnä"
-msgstr[1] "%lld päivää kunnes täynnä"
-
-#: src/Services/Device.vala:306
-#, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld tunti kunnes täynnä"
 msgstr[1] "%lld tuntia kunnes täynnä"
 
-#: src/Services/Device.vala:314
+#: src/Services/Device.vala:306
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld minuutti kunnes täynnä"
 msgstr[1] "%lld minuuttia kunnes täynnä"
 
-#: src/Services/Device.vala:321
+#: src/Services/Device.vala:313
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld sekunti kunnes täynnä"
 msgstr[1] "%lld sekuntia kunnes täynnä"
 
-#: src/Services/Device.vala:328
+#: src/Services/Device.vala:320
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% jäljellä"
 
-#: src/Services/Device.vala:336
-#, c-format
-msgid "%lld day until empty"
-msgid_plural "%lld days until empty"
-msgstr[0] "%lld päivä kunnes tyhjä"
-msgstr[1] "%lld päivää kunnes tyhjä"
-
-#: src/Services/Device.vala:344
+#: src/Services/Device.vala:328
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld tunti kunnes tyhjä"
 msgstr[1] "%lld tuntia kunnes tyhjä"
 
-#: src/Services/Device.vala:352
+#: src/Services/Device.vala:336
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld minuutti kunnes tyhjä"
 msgstr[1] "%lld minuuttia kunnes tyhjä"
 
-#: src/Services/Device.vala:359
+#: src/Services/Device.vala:343
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -172,7 +158,7 @@ msgstr "Paljon virtaa käyttävät sovellukset"
 msgid "Unknown App"
 msgstr "Tuntematon sovellus"
 
-#: src/Widgets/DeviceRow.vala:105
+#: src/Widgets/DeviceRow.vala:108
 msgid "Device"
 msgstr "Laite"
 
@@ -189,6 +175,18 @@ msgstr "Näytä prosentit"
 #: src/Widgets/PopoverWidget.vala:78
 msgid "Power Settings…"
 msgstr "Virranhallinnan asetukset…"
+
+#, c-format
+#~ msgid "%lld day until full"
+#~ msgid_plural "%lld days until full"
+#~ msgstr[0] "%lld päivä kunnes täynnä"
+#~ msgstr[1] "%lld päivää kunnes täynnä"
+
+#, c-format
+#~ msgid "%lld day until empty"
+#~ msgid_plural "%lld days until empty"
+#~ msgstr[0] "%lld päivä kunnes tyhjä"
+#~ msgstr[1] "%lld päivää kunnes tyhjä"
 
 #~ msgid "Battery: %i%%"
 #~ msgstr "Akku: %i%%"

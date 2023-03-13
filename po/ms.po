@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-15 05:56+0000\n"
+"POT-Creation-Date: 2023-03-13 22:22+0000\n"
 "PO-Revision-Date: 2016-12-27 03:05+0000\n"
 "Last-Translator: Timothy <timothy.wong@rocketmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,60 +104,46 @@ msgid "%i%% charged"
 msgstr "%i%% dicas"
 
 #: src/Services/Device.vala:298
-#, c-format
-msgid "%lld day until full"
-msgid_plural "%lld days until full"
-msgstr[0] "%lld hari sehingga penuh"
-msgstr[1] "%lld hari sehingga penuh"
-
-#: src/Services/Device.vala:306
 #, fuzzy, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lls jam sehingga penuh"
 msgstr[1] "%lld jam sehingga penuh"
 
-#: src/Services/Device.vala:314
+#: src/Services/Device.vala:306
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld minit sehingga penuh"
 msgstr[1] "%lld minit sehingga penuh"
 
-#: src/Services/Device.vala:321
+#: src/Services/Device.vala:313
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld saat sehingga penuh"
 msgstr[1] "%lld saat sehingga penuh"
 
-#: src/Services/Device.vala:328
+#: src/Services/Device.vala:320
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% berbaki"
 
-#: src/Services/Device.vala:336
-#, c-format
-msgid "%lld day until empty"
-msgid_plural "%lld days until empty"
-msgstr[0] "%lld hari sehingga kosong"
-msgstr[1] "%lld hari sehingga kosong"
-
-#: src/Services/Device.vala:344
+#: src/Services/Device.vala:328
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld jam sehingga kosong"
 msgstr[1] "%lld jam sehingga kosong"
 
-#: src/Services/Device.vala:352
+#: src/Services/Device.vala:336
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld minit sehingga kosong"
 msgstr[1] "%lld minit sehingga kosong"
 
-#: src/Services/Device.vala:359
+#: src/Services/Device.vala:343
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -173,7 +159,7 @@ msgstr "Apl yang Menggunakan Banyak Kuasa"
 msgid "Unknown App"
 msgstr ""
 
-#: src/Widgets/DeviceRow.vala:105
+#: src/Widgets/DeviceRow.vala:108
 msgid "Device"
 msgstr "Peranti"
 
@@ -190,6 +176,18 @@ msgstr "Tunjuk Peratus"
 #: src/Widgets/PopoverWidget.vala:78
 msgid "Power Settings…"
 msgstr "Tetapan Kuasa..."
+
+#, c-format
+#~ msgid "%lld day until full"
+#~ msgid_plural "%lld days until full"
+#~ msgstr[0] "%lld hari sehingga penuh"
+#~ msgstr[1] "%lld hari sehingga penuh"
+
+#, c-format
+#~ msgid "%lld day until empty"
+#~ msgid_plural "%lld days until empty"
+#~ msgstr[0] "%lld hari sehingga kosong"
+#~ msgstr[1] "%lld hari sehingga kosong"
 
 #, fuzzy
 #~| msgid "Battery"

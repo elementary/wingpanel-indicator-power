@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-15 05:56+0000\n"
+"POT-Creation-Date: 2023-03-13 22:22+0000\n"
 "PO-Revision-Date: 2022-01-12 19:06+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/wingpanel/"
@@ -108,21 +108,13 @@ msgstr "%i%% nabito"
 
 #: src/Services/Device.vala:298
 #, c-format
-msgid "%lld day until full"
-msgid_plural "%lld days until full"
-msgstr[0] "%lld den do nabití"
-msgstr[1] "%lld dny do nabití"
-msgstr[2] "%lld dnů do nabití"
-
-#: src/Services/Device.vala:306
-#, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld hodina do nabití"
 msgstr[1] "%lld hodiny do nabití"
 msgstr[2] "%lld hodin do nabití"
 
-#: src/Services/Device.vala:314
+#: src/Services/Device.vala:306
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
@@ -130,7 +122,7 @@ msgstr[0] "%lld minuta do nabití"
 msgstr[1] "%lld minuty do nabití"
 msgstr[2] "%lld minut do nabití"
 
-#: src/Services/Device.vala:321
+#: src/Services/Device.vala:313
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
@@ -138,20 +130,12 @@ msgstr[0] "%lld sekunda do nabití"
 msgstr[1] "%lld sekundy do nabití"
 msgstr[2] "%lld sekund do nabití"
 
-#: src/Services/Device.vala:328
+#: src/Services/Device.vala:320
 #, c-format
 msgid "%i%% remaining"
 msgstr "%i%% zbývá"
 
-#: src/Services/Device.vala:336
-#, c-format
-msgid "%lld day until empty"
-msgid_plural "%lld days until empty"
-msgstr[0] "%lld den do vybití"
-msgstr[1] "%lld dny do vybití"
-msgstr[2] "%lld dnů do vybití"
-
-#: src/Services/Device.vala:344
+#: src/Services/Device.vala:328
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
@@ -159,7 +143,7 @@ msgstr[0] "%lld hodina do vybití"
 msgstr[1] "%lld hodiny do vybití"
 msgstr[2] "%lld hodin do vybití"
 
-#: src/Services/Device.vala:352
+#: src/Services/Device.vala:336
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
@@ -167,7 +151,7 @@ msgstr[0] "%lld minuta do vybití"
 msgstr[1] "%lld minuty do vybití"
 msgstr[2] "%lld minut do vybití"
 
-#: src/Services/Device.vala:359
+#: src/Services/Device.vala:343
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -184,7 +168,7 @@ msgstr "Aplikace spotřebovávající mnoho energie"
 msgid "Unknown App"
 msgstr "Neznámá aplikace"
 
-#: src/Widgets/DeviceRow.vala:105
+#: src/Widgets/DeviceRow.vala:108
 msgid "Device"
 msgstr "Zařízení"
 
@@ -201,6 +185,20 @@ msgstr "Zobrazit procenta"
 #: src/Widgets/PopoverWidget.vala:78
 msgid "Power Settings…"
 msgstr "Nastavení napájení…"
+
+#, c-format
+#~ msgid "%lld day until full"
+#~ msgid_plural "%lld days until full"
+#~ msgstr[0] "%lld den do nabití"
+#~ msgstr[1] "%lld dny do nabití"
+#~ msgstr[2] "%lld dnů do nabití"
+
+#, c-format
+#~ msgid "%lld day until empty"
+#~ msgid_plural "%lld days until empty"
+#~ msgstr[0] "%lld den do vybití"
+#~ msgstr[1] "%lld dny do vybití"
+#~ msgstr[2] "%lld dnů do vybití"
 
 #, fuzzy
 #~| msgid "Battery"
