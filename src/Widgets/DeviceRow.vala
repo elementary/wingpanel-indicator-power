@@ -89,7 +89,7 @@ public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
     }
 
     private string get_title () {
-        string? type_string = battery.device_type.get_name ();
+        string? type_string = null;
 
         switch (battery.device_type) {
             case Power.Services.Device.Type.COMPUTER:
@@ -98,6 +98,9 @@ public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
                 if (battery.model != "") {
                     type_string = battery.model;
                 }
+                break;
+            default:
+                type_string = battery.device_type.get_name ();
                 break;
         }
 
