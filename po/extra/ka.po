@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-13 22:22+0000\n"
+"POT-Creation-Date: 2023-04-04 02:38+0000\n"
 "PO-Revision-Date: 2023-03-12 18:25+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/wingpanel/"
@@ -29,82 +29,82 @@ msgid ""
 "power"
 msgstr ""
 
-#: data/power.appdata.xml.in:12 data/power.appdata.xml.in:30
-#: data/power.appdata.xml.in:45
-msgid "New features:"
-msgstr ""
-
-#: data/power.appdata.xml.in:14
-msgid "Scroll horizontally on the panel icon to change display brightness"
-msgstr ""
-
-#: data/power.appdata.xml.in:16 data/power.appdata.xml.in:35
-#: data/power.appdata.xml.in:51
+#: data/power.appdata.xml.in:13 data/power.appdata.xml.in:30
+#: data/power.appdata.xml.in:49 data/power.appdata.xml.in:66
 msgid "Minor updates:"
 msgstr ""
 
-#: data/power.appdata.xml.in:18
-msgid "Do a better job hiding the brightness slider on unsupported displays"
-msgstr ""
-
-#: data/power.appdata.xml.in:19 data/power.appdata.xml.in:39
-#: data/power.appdata.xml.in:57 data/power.appdata.xml.in:65
-#: data/power.appdata.xml.in:70
+#: data/power.appdata.xml.in:15 data/power.appdata.xml.in:33
+#: data/power.appdata.xml.in:53 data/power.appdata.xml.in:72
+#: data/power.appdata.xml.in:81
 msgid "Updated translations"
 msgstr "განახლებული თარგმანები"
 
+#: data/power.appdata.xml.in:26 data/power.appdata.xml.in:44
+#: data/power.appdata.xml.in:60
+msgid "New features:"
+msgstr ""
+
+#: data/power.appdata.xml.in:28
+msgid "Scroll horizontally on the panel icon to change display brightness"
+msgstr ""
+
 #: data/power.appdata.xml.in:32
+msgid "Do a better job hiding the brightness slider on unsupported displays"
+msgstr ""
+
+#: data/power.appdata.xml.in:46
 msgid "Show brightness level when scrolled"
 msgstr ""
 
-#: data/power.appdata.xml.in:33
+#: data/power.appdata.xml.in:47
 msgid "Show battery percentage automatically at 20% or lower"
 msgstr ""
 
-#: data/power.appdata.xml.in:37
+#: data/power.appdata.xml.in:51
 msgid "Match scroll direction with Sound indicator"
 msgstr ""
 
-#: data/power.appdata.xml.in:38
+#: data/power.appdata.xml.in:52
 msgid "Show \"Fully Charged\" at 100% when plugged in"
 msgstr ""
 
-#: data/power.appdata.xml.in:47
+#: data/power.appdata.xml.in:62
 msgid "Show battery statistics when selected"
 msgstr ""
 
-#: data/power.appdata.xml.in:48
+#: data/power.appdata.xml.in:63
 msgid "Launch apps using power when selected"
 msgstr ""
 
-#: data/power.appdata.xml.in:49
+#: data/power.appdata.xml.in:64
 msgid "Control display brightness by scrolling the indicator"
 msgstr ""
 
-#: data/power.appdata.xml.in:53
+#: data/power.appdata.xml.in:68
 msgid "Improvements for desktops with peripherals"
 msgstr ""
 
-#: data/power.appdata.xml.in:54
+#: data/power.appdata.xml.in:69
 msgid "Filter out internal devices"
 msgstr ""
 
-#: data/power.appdata.xml.in:55
+#: data/power.appdata.xml.in:70
 msgid "Show tooltip on hover"
 msgstr ""
 
-#: data/power.appdata.xml.in:56
+#: data/power.appdata.xml.in:71
 msgid "Performance improvements"
 msgstr ""
 
-#: data/power.appdata.xml.in:63
+#: data/power.appdata.xml.in:79
 msgid "Support for Controllers and Pens"
 msgstr ""
 
-#: data/power.appdata.xml.in:64
+#: data/power.appdata.xml.in:80
 msgid "Reduce spacing when percentage is shown"
 msgstr ""
 
-#: data/power.appdata.xml.in:79
+#: data/power.appdata.xml.in:93
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
