@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-04 02:38+0000\n"
-"PO-Revision-Date: 2023-03-12 18:25+0000\n"
+"PO-Revision-Date: 2023-04-14 00:33+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/ka/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.16.4\n"
 
 #: data/power.appdata.xml.in:6
 msgid "Power Indicator"
@@ -32,7 +32,7 @@ msgstr ""
 #: data/power.appdata.xml.in:13 data/power.appdata.xml.in:30
 #: data/power.appdata.xml.in:49 data/power.appdata.xml.in:66
 msgid "Minor updates:"
-msgstr ""
+msgstr "მცირე განახლებები:"
 
 #: data/power.appdata.xml.in:15 data/power.appdata.xml.in:33
 #: data/power.appdata.xml.in:53 data/power.appdata.xml.in:72
@@ -95,7 +95,7 @@ msgstr ""
 
 #: data/power.appdata.xml.in:71
 msgid "Performance improvements"
-msgstr ""
+msgstr "წარმადობის გაუმჯობესებები"
 
 #: data/power.appdata.xml.in:79
 msgid "Support for Controllers and Pens"
