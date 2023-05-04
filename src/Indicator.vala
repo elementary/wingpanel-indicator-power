@@ -96,11 +96,11 @@ public class Power.Indicator : Wingpanel.Indicator {
     }
 
     public override void opened () {
-        Services.ProcessMonitor.Monitor.get_default ().update ();
+
     }
 
     public override void closed () {
-        popover_widget.slim_down ();
+
     }
 
     private void update_visibility () {

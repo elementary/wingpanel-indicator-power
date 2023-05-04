@@ -14,7 +14,6 @@ config_in = configure_file(
 files = files(
     'Indicator.vala',
     'Utils.vala',
-    'Services/AppManager.vala',
     'Services/Backlight/Backlight.vala',
     'Services/DBusInterfaces/Device.vala',
     'Services/DBusInterfaces/Properties.vala',
@@ -22,9 +21,6 @@ files = files(
     'Services/DBusInterfaces/UPower.vala',
     'Services/Device.vala',
     'Services/DeviceManager.vala',
-    'Services/ProcessMonitor/Monitor.vala',
-    'Services/ProcessMonitor/Process.vala',
-    'Widgets/AppList.vala',
     'Widgets/DeviceList.vala',
     'Widgets/DeviceRow.vala',
     'Widgets/DisplayWidget.vala',

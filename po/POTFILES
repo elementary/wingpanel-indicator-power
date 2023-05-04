@@ -1,5 +1,4 @@
 src/Indicator.vala
-src/Services/AppManager.vala
 src/Services/Backlight/Backlight.vala
 src/Services/DBusInterfaces/Device.vala
 src/Services/DBusInterfaces/Properties.vala
@@ -7,9 +6,6 @@ src/Services/DBusInterfaces/Screen.vala
 src/Services/DBusInterfaces/UPower.vala
 src/Services/DeviceManager.vala
 src/Services/Device.vala
-src/Services/ProcessMonitor/Monitor.vala
-src/Services/ProcessMonitor/Process.vala
-src/Widgets/AppList.vala
 src/Widgets/DeviceList.vala
 src/Widgets/DeviceRow.vala
 src/Widgets/DisplayWidget.vala
