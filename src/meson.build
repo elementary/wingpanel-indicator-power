@@ -33,7 +33,6 @@ dependencies = [
     dependency('gobject-2.0'),
     dependency('granite', version: '>=6.0.0'),
     dependency('gtk+-3.0'),
-    dependency('libbamf3'),
     dependency('libgtop-2.0'),
     dependency('libudev'),
     dependency('libnotify'),
