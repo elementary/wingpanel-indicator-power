@@ -2,7 +2,7 @@ project(
     'power',
     'vala', 'c',
     version: '6.2.0',
-    meson_version: '>=0.58.0'
+    meson_version: '>=0.57.0'
 )
 
 gettext_name = meson.project_name() + '-indicator'
