@@ -18,7 +18,6 @@
  */
 
 public class Power.Widgets.DisplayWidget : Gtk.Box {
-    private Gtk.Revealer percent_revealer;
     public string icon_name {
         set {
             image.icon_name = value;
@@ -28,13 +27,17 @@ public class Power.Widgets.DisplayWidget : Gtk.Box {
     public bool allow_percent { get; set; default = false; }
     public int percentage {
         set {
-            ///Translators: This represents battery charge precentage with `%i` representing the number and `%%` representing the percent symbol
+            /// Translators: This represents battery charge percentage with `%i` representing the number and `%%` representing the percent symbol
             percent_label.label = _("%i%%").printf (value);
         }
     }
 
-    private Gtk.Label percent_label;
+    private Gtk.Revealer image_revealer;
     private Gtk.Image image;
+    private Gtk.Revealer percent_revealer;
+    private Gtk.Label percent_label;
+
+    private GLib.Settings settings;
 
     construct {
         valign = Gtk.Align.CENTER;
@@ -44,30 +47,39 @@ public class Power.Widgets.DisplayWidget : Gtk.Box {
             pixel_size = 24
         };
 
+        image_revealer = new Gtk.Revealer () {
+            transition_type = Gtk.RevealerTransitionType.SLIDE_LEFT,
+            child = image
+        };
+
         percent_label = new Gtk.Label (null);
 
         percent_revealer = new Gtk.Revealer () {
-            transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT
+            transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT,
+            child = percent_label
         };
-        percent_revealer.add (percent_label);
 
-        add (image);
+        add (image_revealer);
         add (percent_revealer);
 
-        var settings = new GLib.Settings ("io.elementary.desktop.wingpanel.power");
-        settings.bind ("show-percentage", percent_revealer, "reveal-child", GLib.SettingsBindFlags.GET);
-        bind_property ("allow-percent", percent_revealer, "visible", GLib.BindingFlags.SYNC_CREATE);
-        button_press_event.connect ((e) => {
-            if (allow_percent && e.button == Gdk.BUTTON_MIDDLE) {
-                settings.set_boolean ("show-percentage", !(settings.get_boolean ("show-percentage")));
-                return true;
-            }
+        settings = new GLib.Settings ("io.elementary.desktop.wingpanel.power");
 
-            return false;
-        });
+        sync_appearance ();
+        settings.changed["appearance"].connect (sync_appearance);
     }
 
-    public void show_percentage (bool show) {
-        percent_revealer.reveal_child = show;
+    private void sync_appearance () {
+        var appearance_value = settings.get_enum ("appearance");
+
+        if (appearance_value == 0) {
+            image_revealer.reveal_child = true;
+            percent_revealer.reveal_child = false;
+        } else if (appearance_value == 1) {
+            image_revealer.reveal_child = true;
+            percent_revealer.reveal_child = true;
+        } else {
+            image_revealer.reveal_child = false;
+            percent_revealer.reveal_child = true;
+        }
     }
 }
