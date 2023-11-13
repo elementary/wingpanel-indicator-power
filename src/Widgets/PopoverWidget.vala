@@ -22,7 +22,6 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
 
     private static Services.DeviceManager dm;
 
-    private AppList app_list;
     private Gtk.Revealer device_separator_revealer;
 
     public PopoverWidget (bool is_in_session) {
@@ -88,16 +87,14 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         }
 
         if (is_in_session) {
-            app_list = new AppList ();
-            attach (app_list, 0, 2);
             attach (last_separator_revealer, 0, 5);
             attach (show_settings_button, 0, 6);
         }
 
-        update_device_seperator_revealer ();
+        update_device_separator_revealer ();
 
         dm.notify["has-battery"].connect ((s, p) => {
-            update_device_seperator_revealer ();
+            update_device_separator_revealer ();
         });
 
         settings.bind ("show-percentage", show_percent_switch, "active", SettingsBindFlags.DEFAULT);
@@ -130,13 +127,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         });
     }
 
-    private void update_device_seperator_revealer () {
+    private void update_device_separator_revealer () {
         device_separator_revealer.reveal_child = dm.backlight.present && dm.has_battery;
-    }
-
-    public void slim_down () {
-        if (is_in_session) {
-            app_list.clear_list ();
-        }
     }
 }
