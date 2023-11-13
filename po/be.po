@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 02:38+0000\n"
+"POT-Creation-Date: 2023-11-13 18:50+0000\n"
 "PO-Revision-Date: 2016-02-14 10:01+0000\n"
 "Last-Translator: Dmitry Taranovich <vorbissmcgregor@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -157,15 +157,6 @@ msgstr[0] "%lld секунду да разрадкі"
 msgstr[1] "%lld секунды да разрадкі"
 msgstr[2] "%lld секунд да разрадкі"
 
-#. Add the header label if we acually have row(s)
-#: src/Widgets/AppList.vala:76
-msgid "Apps Using Lots of Power"
-msgstr "Прыкляданні, якія выкарыстоўваюць шмат энергіі"
-
-#: src/Widgets/AppList.vala:103
-msgid "Unknown App"
-msgstr ""
-
 #: src/Widgets/DeviceRow.vala:108
 msgid "Device"
 msgstr "Прылада"
@@ -176,13 +167,16 @@ msgstr "Прылада"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:62
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "Паказваць у працэнтах"
 
-#: src/Widgets/PopoverWidget.vala:78
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "Налады сілкавання…"
+
+#~ msgid "Apps Using Lots of Power"
+#~ msgstr "Прыкляданні, якія выкарыстоўваюць шмат энергіі"
 
 #, c-format
 #~ msgid "%lld day until full"

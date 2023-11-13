@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 02:38+0000\n"
+"POT-Creation-Date: 2023-11-13 18:50+0000\n"
 "PO-Revision-Date: 2022-01-12 19:06+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/wingpanel/"
@@ -159,15 +159,6 @@ msgstr[0] "%lld sekunda do vybití"
 msgstr[1] "%lld sekundy do vybití"
 msgstr[2] "%lld sekund do vybití"
 
-#. Add the header label if we acually have row(s)
-#: src/Widgets/AppList.vala:76
-msgid "Apps Using Lots of Power"
-msgstr "Aplikace spotřebovávající mnoho energie"
-
-#: src/Widgets/AppList.vala:103
-msgid "Unknown App"
-msgstr "Neznámá aplikace"
-
 #: src/Widgets/DeviceRow.vala:108
 msgid "Device"
 msgstr "Zařízení"
@@ -178,13 +169,19 @@ msgstr "Zařízení"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:62
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "Zobrazit procenta"
 
-#: src/Widgets/PopoverWidget.vala:78
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "Nastavení napájení…"
+
+#~ msgid "Apps Using Lots of Power"
+#~ msgstr "Aplikace spotřebovávající mnoho energie"
+
+#~ msgid "Unknown App"
+#~ msgstr "Neznámá aplikace"
 
 #, c-format
 #~ msgid "%lld day until full"

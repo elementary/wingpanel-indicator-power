@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 02:38+0000\n"
+"POT-Creation-Date: 2023-11-13 18:50+0000\n"
 "PO-Revision-Date: 2019-01-03 18:12+0000\n"
 "Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
@@ -151,15 +151,6 @@ msgid_plural "%lld seconds until empty"
 msgstr[0] "%lld sekund til det er tomt"
 msgstr[1] "%lld sekunder til det er tomt"
 
-#. Add the header label if we acually have row(s)
-#: src/Widgets/AppList.vala:76
-msgid "Apps Using Lots of Power"
-msgstr "Appar som brukar mykje straum"
-
-#: src/Widgets/AppList.vala:103
-msgid "Unknown App"
-msgstr ""
-
 #: src/Widgets/DeviceRow.vala:108
 msgid "Device"
 msgstr "Eining"
@@ -170,13 +161,16 @@ msgstr "Eining"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:62
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "Vis prosentandel"
 
-#: src/Widgets/PopoverWidget.vala:78
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "Strauminstillingar…"
+
+#~ msgid "Apps Using Lots of Power"
+#~ msgstr "Appar som brukar mykje straum"
 
 #, c-format
 #~ msgid "%lld day until full"

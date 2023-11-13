@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 02:38+0000\n"
+"POT-Creation-Date: 2023-11-13 18:50+0000\n"
 "PO-Revision-Date: 2023-01-16 14:25+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -153,15 +153,6 @@ msgid_plural "%lld seconds until empty"
 msgstr[0] "%lld sekund til det er tomt"
 msgstr[1] "%lld sekunder til det er tomt"
 
-#. Add the header label if we acually have row(s)
-#: src/Widgets/AppList.vala:76
-msgid "Apps Using Lots of Power"
-msgstr "Apper som bruker mye strøm"
-
-#: src/Widgets/AppList.vala:103
-msgid "Unknown App"
-msgstr "Ukjent program"
-
 #: src/Widgets/DeviceRow.vala:108
 msgid "Device"
 msgstr "Enhet"
@@ -172,13 +163,19 @@ msgstr "Enhet"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:62
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "Vis prosent"
 
-#: src/Widgets/PopoverWidget.vala:78
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "Strøminnstillinger …"
+
+#~ msgid "Apps Using Lots of Power"
+#~ msgstr "Apper som bruker mye strøm"
+
+#~ msgid "Unknown App"
+#~ msgstr "Ukjent program"
 
 #, c-format
 #~ msgid "%lld day until full"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 02:38+0000\n"
+"POT-Creation-Date: 2023-11-13 18:50+0000\n"
 "PO-Revision-Date: 2018-10-21 12:03+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/wingpanel/"
@@ -145,15 +145,6 @@ msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
 msgstr[0] "%lld detik sampai kosong"
 
-#. Add the header label if we acually have row(s)
-#: src/Widgets/AppList.vala:76
-msgid "Apps Using Lots of Power"
-msgstr "Aplikasi Menggunakan Banyak Daya"
-
-#: src/Widgets/AppList.vala:103
-msgid "Unknown App"
-msgstr ""
-
 #: src/Widgets/DeviceRow.vala:108
 msgid "Device"
 msgstr "Perangkat"
@@ -164,13 +155,16 @@ msgstr "Perangkat"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:62
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "Tampilkan Persentase"
 
-#: src/Widgets/PopoverWidget.vala:78
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "Pengaturan Daya…"
+
+#~ msgid "Apps Using Lots of Power"
+#~ msgstr "Aplikasi Menggunakan Banyak Daya"
 
 #, c-format
 #~ msgid "%lld day until full"

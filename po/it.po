@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 02:38+0000\n"
+"POT-Creation-Date: 2023-11-13 18:50+0000\n"
 "PO-Revision-Date: 2020-10-27 10:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/wingpanel/"
@@ -151,15 +151,6 @@ msgid_plural "%lld seconds until empty"
 msgstr[0] "%lld secondo all'esaurimento"
 msgstr[1] "%lld secondi all'esaurimento"
 
-#. Add the header label if we acually have row(s)
-#: src/Widgets/AppList.vala:76
-msgid "Apps Using Lots of Power"
-msgstr "Applicazioni che usano molta energia"
-
-#: src/Widgets/AppList.vala:103
-msgid "Unknown App"
-msgstr ""
-
 #: src/Widgets/DeviceRow.vala:108
 msgid "Device"
 msgstr "Dispositivo"
@@ -170,13 +161,16 @@ msgstr "Dispositivo"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:62
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "Mostra percentuale"
 
-#: src/Widgets/PopoverWidget.vala:78
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "Impostazioni dell'alimentazione…"
+
+#~ msgid "Apps Using Lots of Power"
+#~ msgstr "Applicazioni che usano molta energia"
 
 #, c-format
 #~ msgid "%lld day until full"

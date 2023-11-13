@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 02:38+0000\n"
+"POT-Creation-Date: 2023-11-13 18:50+0000\n"
 "PO-Revision-Date: 2018-11-04 22:38+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/wingpanel/"
@@ -158,15 +158,6 @@ msgstr[0] "%lld sekunda do ispražnjenja"
 msgstr[1] "%lld sekunde do ispražnjenja"
 msgstr[2] "%lld sekunda do ispražnjenja"
 
-#. Add the header label if we acually have row(s)
-#: src/Widgets/AppList.vala:76
-msgid "Apps Using Lots of Power"
-msgstr "Aplikacije koje troše puno energije"
-
-#: src/Widgets/AppList.vala:103
-msgid "Unknown App"
-msgstr ""
-
 #: src/Widgets/DeviceRow.vala:108
 msgid "Device"
 msgstr "Uređaj"
@@ -177,13 +168,16 @@ msgstr "Uređaj"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:62
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "Prikaži postotak"
 
-#: src/Widgets/PopoverWidget.vala:78
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "Podešavanja napajanja…"
+
+#~ msgid "Apps Using Lots of Power"
+#~ msgstr "Aplikacije koje troše puno energije"
 
 #, c-format
 #~ msgid "%lld day until full"

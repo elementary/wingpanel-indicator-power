@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 02:38+0000\n"
+"POT-Creation-Date: 2023-11-13 18:50+0000\n"
 "PO-Revision-Date: 2023-03-05 12:25+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/wingpanel/"
@@ -156,15 +156,6 @@ msgstr[0] "%lld секунда до разрядки"
 msgstr[1] "%lld секунды до разрядки"
 msgstr[2] "%lld секунд до разрядки"
 
-#. Add the header label if we acually have row(s)
-#: src/Widgets/AppList.vala:76
-msgid "Apps Using Lots of Power"
-msgstr "Энергозатратные приложения"
-
-#: src/Widgets/AppList.vala:103
-msgid "Unknown App"
-msgstr "Неизвестное приложение"
-
 #: src/Widgets/DeviceRow.vala:108
 msgid "Device"
 msgstr "Устройство"
@@ -175,13 +166,19 @@ msgstr "Устройство"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:62
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "Отображать процент заряда"
 
-#: src/Widgets/PopoverWidget.vala:78
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "Параметры питания…"
+
+#~ msgid "Apps Using Lots of Power"
+#~ msgstr "Энергозатратные приложения"
+
+#~ msgid "Unknown App"
+#~ msgstr "Неизвестное приложение"
 
 #, c-format
 #~ msgid "%lld day until full"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 02:38+0000\n"
+"POT-Creation-Date: 2023-11-13 18:50+0000\n"
 "PO-Revision-Date: 2022-09-21 06:14+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -153,15 +153,6 @@ msgid_plural "%lld seconds until empty"
 msgstr[0] "تەنها بای %ll چرکە بارگاوییە"
 msgstr[1] "بای %ll چرکە بارگاوییە"
 
-#. Add the header label if we acually have row(s)
-#: src/Widgets/AppList.vala:76
-msgid "Apps Using Lots of Power"
-msgstr "ئەو ئەپانەی کە وزەی زۆر بەکاردەهێنن"
-
-#: src/Widgets/AppList.vala:103
-msgid "Unknown App"
-msgstr "ئەپ نەزانراوە"
-
 #: src/Widgets/DeviceRow.vala:108
 msgid "Device"
 msgstr "ئامێر"
@@ -172,13 +163,19 @@ msgstr "ئامێر"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:62
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "پشاندانی ڕێژەی پاتری"
 
-#: src/Widgets/PopoverWidget.vala:78
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "ڕێکخستنەکان…"
+
+#~ msgid "Apps Using Lots of Power"
+#~ msgstr "ئەو ئەپانەی کە وزەی زۆر بەکاردەهێنن"
+
+#~ msgid "Unknown App"
+#~ msgstr "ئەپ نەزانراوە"
 
 #, c-format
 #~ msgid "%lld day until full"

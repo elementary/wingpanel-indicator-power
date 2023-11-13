@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 02:38+0000\n"
+"POT-Creation-Date: 2023-11-13 18:50+0000\n"
 "PO-Revision-Date: 2021-03-11 10:13+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/wingpanel/"
@@ -162,15 +162,6 @@ msgstr[0] "%lld секунда до испражњености"
 msgstr[1] "%lld секунде до испражњености"
 msgstr[2] "%lld секунди до испражњености"
 
-#. Add the header label if we acually have row(s)
-#: src/Widgets/AppList.vala:76
-msgid "Apps Using Lots of Power"
-msgstr "Програми који троше много енергије"
-
-#: src/Widgets/AppList.vala:103
-msgid "Unknown App"
-msgstr "Непознат програм"
-
 #: src/Widgets/DeviceRow.vala:108
 msgid "Device"
 msgstr "Уређај"
@@ -181,13 +172,19 @@ msgstr "Уређај"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:62
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "Прикажи проценте"
 
-#: src/Widgets/PopoverWidget.vala:78
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "Подешавање напајања…"
+
+#~ msgid "Apps Using Lots of Power"
+#~ msgstr "Програми који троше много енергије"
+
+#~ msgid "Unknown App"
+#~ msgstr "Непознат програм"
 
 #, c-format
 #~ msgid "%lld day until full"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 02:38+0000\n"
+"POT-Creation-Date: 2023-11-13 18:50+0000\n"
 "PO-Revision-Date: 2023-02-04 12:25+0000\n"
 "Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -143,15 +143,6 @@ msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
 msgstr[0] "还剩 %lld 秒用尽"
 
-#. Add the header label if we acually have row(s)
-#: src/Widgets/AppList.vala:76
-msgid "Apps Using Lots of Power"
-msgstr "耗电较多的程序"
-
-#: src/Widgets/AppList.vala:103
-msgid "Unknown App"
-msgstr "未知应用"
-
 #: src/Widgets/DeviceRow.vala:108
 msgid "Device"
 msgstr "设备"
@@ -162,13 +153,19 @@ msgstr "设备"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:62
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "显示电量"
 
-#: src/Widgets/PopoverWidget.vala:78
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "电源设置…"
+
+#~ msgid "Apps Using Lots of Power"
+#~ msgstr "耗电较多的程序"
+
+#~ msgid "Unknown App"
+#~ msgstr "未知应用"
 
 #, c-format
 #~ msgid "%lld day until full"

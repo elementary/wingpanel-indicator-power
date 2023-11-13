@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 02:38+0000\n"
+"POT-Creation-Date: 2023-11-13 18:50+0000\n"
 "PO-Revision-Date: 2023-01-16 14:25+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/wingpanel/"
@@ -156,15 +156,6 @@ msgstr[0] "%lld sekunda do pełnego rozładowania"
 msgstr[1] "%lld sekundy do pełnego rozładowania"
 msgstr[2] "%lld sekund do pełnego rozładowania"
 
-#. Add the header label if we acually have row(s)
-#: src/Widgets/AppList.vala:76
-msgid "Apps Using Lots of Power"
-msgstr "Programy zużywające mnóstwo prądu"
-
-#: src/Widgets/AppList.vala:103
-msgid "Unknown App"
-msgstr "Nieznana aplikacja"
-
 #: src/Widgets/DeviceRow.vala:108
 msgid "Device"
 msgstr "Urządzenie"
@@ -175,13 +166,19 @@ msgstr "Urządzenie"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:62
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "Pokaż poziom naładowania"
 
-#: src/Widgets/PopoverWidget.vala:78
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "Ustawienia zasilania…"
+
+#~ msgid "Apps Using Lots of Power"
+#~ msgstr "Programy zużywające mnóstwo prądu"
+
+#~ msgid "Unknown App"
+#~ msgstr "Nieznana aplikacja"
 
 #, c-format
 #~ msgid "%lld day until full"

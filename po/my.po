@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wingpanel-indicator-power\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 02:38+0000\n"
+"POT-Creation-Date: 2023-11-13 18:50+0000\n"
 "PO-Revision-Date: 2016-06-24 05:29+0000\n"
 "Last-Translator: Bone Pyae Sone <bone.burma@gmail.com>\n"
 "Language-Team: Burmese <my@li.org>\n"
@@ -149,15 +149,6 @@ msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
 msgstr[0] "အားကုန်ရန် %lld စက္ကန့်လို"
 
-#. Add the header label if we acually have row(s)
-#: src/Widgets/AppList.vala:76
-msgid "Apps Using Lots of Power"
-msgstr "အားအသုံးများသည့် App များ"
-
-#: src/Widgets/AppList.vala:103
-msgid "Unknown App"
-msgstr ""
-
 #: src/Widgets/DeviceRow.vala:108
 msgid "Device"
 msgstr "စက်ပစ္စည်း"
@@ -168,13 +159,16 @@ msgstr "စက်ပစ္စည်း"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:62
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "ရာခိုင်နှုန်းနဲ့ပြ"
 
-#: src/Widgets/PopoverWidget.vala:78
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "ဘထ္ထရီပါဝါ ပြင်ဆင်ရန်"
+
+#~ msgid "Apps Using Lots of Power"
+#~ msgstr "အားအသုံးများသည့် App များ"
 
 #, c-format
 #~ msgid "%lld day until empty"

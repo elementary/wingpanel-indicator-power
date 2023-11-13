@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 02:38+0000\n"
+"POT-Creation-Date: 2023-11-13 18:50+0000\n"
 "PO-Revision-Date: 2021-09-04 23:27+0000\n"
 "Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/wingpanel/"
@@ -178,15 +178,6 @@ msgstr[3] "%lld ثوان حتى الإفراغ"
 msgstr[4] "%lld ثانية حتى الإفراغ"
 msgstr[5] "%lld ثانية حتى الإفراغ"
 
-#. Add the header label if we acually have row(s)
-#: src/Widgets/AppList.vala:76
-msgid "Apps Using Lots of Power"
-msgstr "تطبيقات تستهلك طاقة كبيرة"
-
-#: src/Widgets/AppList.vala:103
-msgid "Unknown App"
-msgstr "تطبيق غير معروف"
-
 #: src/Widgets/DeviceRow.vala:108
 msgid "Device"
 msgstr "الجهاز"
@@ -197,13 +188,19 @@ msgstr "الجهاز"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:62
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "أظهر النسبة المئوية"
 
-#: src/Widgets/PopoverWidget.vala:78
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "إعدادات الطاقة…"
+
+#~ msgid "Apps Using Lots of Power"
+#~ msgstr "تطبيقات تستهلك طاقة كبيرة"
+
+#~ msgid "Unknown App"
+#~ msgstr "تطبيق غير معروف"
 
 #, c-format
 #~ msgid "%lld day until full"
