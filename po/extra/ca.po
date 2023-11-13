@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-15 05:56+0000\n"
+"POT-Creation-Date: 2023-04-04 02:38+0000\n"
 "PO-Revision-Date: 2022-10-21 19:57+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/wingpanel/"
@@ -31,87 +31,87 @@ msgstr ""
 "Vegeu el nivell de la bateria, ajusteu la brillantor de la pantalla i vegeu "
 "les aplicacions que gasten molta energia."
 
-#: data/power.appdata.xml.in:12 data/power.appdata.xml.in:30
-#: data/power.appdata.xml.in:45
+#: data/power.appdata.xml.in:13 data/power.appdata.xml.in:30
+#: data/power.appdata.xml.in:49 data/power.appdata.xml.in:66
+msgid "Minor updates:"
+msgstr "Actualitzacions menors:"
+
+#: data/power.appdata.xml.in:15 data/power.appdata.xml.in:33
+#: data/power.appdata.xml.in:53 data/power.appdata.xml.in:72
+#: data/power.appdata.xml.in:81
+msgid "Updated translations"
+msgstr "Traduccions actualitzades"
+
+#: data/power.appdata.xml.in:26 data/power.appdata.xml.in:44
+#: data/power.appdata.xml.in:60
 msgid "New features:"
 msgstr "Característiques noves:"
 
-#: data/power.appdata.xml.in:14
+#: data/power.appdata.xml.in:28
 msgid "Scroll horizontally on the panel icon to change display brightness"
 msgstr ""
 "Desplaçament horitzontal per la icona del tauler per canviar la brillantor "
 "de la pantalla"
 
-#: data/power.appdata.xml.in:16 data/power.appdata.xml.in:35
-#: data/power.appdata.xml.in:51
-msgid "Minor updates:"
-msgstr "Actualitzacions menors:"
-
-#: data/power.appdata.xml.in:18
+#: data/power.appdata.xml.in:32
 msgid "Do a better job hiding the brightness slider on unsupported displays"
 msgstr ""
 "Feu una feina millor amagant el control lliscant de brillantor en pantalles "
 "no compatibles."
 
-#: data/power.appdata.xml.in:19 data/power.appdata.xml.in:39
-#: data/power.appdata.xml.in:57 data/power.appdata.xml.in:65
-#: data/power.appdata.xml.in:70
-msgid "Updated translations"
-msgstr "Traduccions actualitzades"
-
-#: data/power.appdata.xml.in:32
+#: data/power.appdata.xml.in:46
 msgid "Show brightness level when scrolled"
 msgstr "Es mostra el nivell de brillantor amb el desplaçament."
 
-#: data/power.appdata.xml.in:33
+#: data/power.appdata.xml.in:47
 msgid "Show battery percentage automatically at 20% or lower"
 msgstr "Es mostra el percentatge de la bateria automàticament al 20 % o menys."
 
-#: data/power.appdata.xml.in:37
+#: data/power.appdata.xml.in:51
 msgid "Match scroll direction with Sound indicator"
 msgstr "Coincidència de la direcció del desplaçament amb l'indicador de so"
 
-#: data/power.appdata.xml.in:38
+#: data/power.appdata.xml.in:52
 msgid "Show \"Fully Charged\" at 100% when plugged in"
 msgstr "Es mostra \"Càrrega completa\" al 100 % quan està endollat."
 
-#: data/power.appdata.xml.in:47
+#: data/power.appdata.xml.in:62
 msgid "Show battery statistics when selected"
 msgstr "Es mostren les estadístiques de la bateria quan se selecciona."
 
-#: data/power.appdata.xml.in:48
+#: data/power.appdata.xml.in:63
 msgid "Launch apps using power when selected"
 msgstr "Inici d'aplicacions amb corrent quan se selecciona"
 
-#: data/power.appdata.xml.in:49
+#: data/power.appdata.xml.in:64
 msgid "Control display brightness by scrolling the indicator"
 msgstr "Control de la brillantor de la pantalla desplaçant-vos per l’indicador"
 
-#: data/power.appdata.xml.in:53
+#: data/power.appdata.xml.in:68
 msgid "Improvements for desktops with peripherals"
 msgstr "Millores per a ordinadors de sobretaula amb perifèrics"
 
-#: data/power.appdata.xml.in:54
+#: data/power.appdata.xml.in:69
 msgid "Filter out internal devices"
 msgstr "Filtre dels dispositius interns"
 
-#: data/power.appdata.xml.in:55
+#: data/power.appdata.xml.in:70
 msgid "Show tooltip on hover"
 msgstr "Mostra la descripció emergent en passar-hi"
 
-#: data/power.appdata.xml.in:56
+#: data/power.appdata.xml.in:71
 msgid "Performance improvements"
 msgstr "Millores de rendiment"
 
-#: data/power.appdata.xml.in:63
+#: data/power.appdata.xml.in:79
 msgid "Support for Controllers and Pens"
 msgstr "Suport per a controladors i llapis"
 
-#: data/power.appdata.xml.in:64
+#: data/power.appdata.xml.in:80
 msgid "Reduce spacing when percentage is shown"
 msgstr "Reducció de l'espaiat quan es mostra el percentatge"
 
-#: data/power.appdata.xml.in:79
+#: data/power.appdata.xml.in:93
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

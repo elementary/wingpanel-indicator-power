@@ -6,7 +6,21 @@
   <name>Power Indicator</name>
   <summary>View battery levels, adjust display brightness, and see apps using lots of power</summary>
   <icon type="stock">preferences-system-power</icon>
+
   <releases>
+    <release version="6.2.1" date="2023-08-26" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/wingpanel-indicator-power/issues/223">Using "days" as a unit of remaining time</issue>
+        <issue url="https://github.com/elementary/wingpanel-indicator-power/issues/239">Inaccurate battery level icons</issue>
+      </issues>
+    </release>
+
     <release version="6.2.0" date="2022-10-19" urgency="medium">
       <description>
         <p>New features:</p>
@@ -40,6 +54,7 @@
         </ul>
       </description>
     </release>
+
     <release version="6.0.0" date="2021-07-14" urgency="medium">
       <description>
         <p>New features:</p>
@@ -58,6 +73,7 @@
         </ul>
       </description>
     </release>
+
     <release version="2.2.0" date="2020-09-02" urgency="medium">
       <description>
         <p>Support for Controllers and Pens</p>
@@ -65,15 +81,13 @@
         <p>Updated translations</p>
       </description>
     </release>
-    <release version="2.1.5" date="2020-03-27" urgency="medium">
-      <description>
-        <p>Updated translations</p>
-      </description>
-    </release>
+
+    <release version="2.1.5" date="2020-03-27"/>
   </releases>
+
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/wingpanel-indicator-power/master/data/screenshot.png</image>
+      <image>https://raw.githubusercontent.com/elementary/wingpanel-indicator-power/6.2.1/data/screenshot.png</image>
     </screenshot>
   </screenshots>
   <developer_name>elementary, Inc.</developer_name>
