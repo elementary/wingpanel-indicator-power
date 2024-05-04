@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-13 18:50+0000\n"
+"POT-Creation-Date: 2024-05-04 04:49+0000\n"
 "PO-Revision-Date: 2020-10-11 18:14+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/wingpanel/"
@@ -105,6 +105,5 @@ msgstr "नियंत्रक आणि पेनसाठी समर्थ
 msgid "Reduce spacing when percentage is shown"
 msgstr "टक्केवारी दर्शविली जाते तेव्हा अंतर कमी करा"
 
-#: data/power.appdata.xml.in:93
-msgid "elementary, Inc."
-msgstr "एलिमेंटरी, Inc."
+#~ msgid "elementary, Inc."
+#~ msgstr "एलिमेंटरी, Inc."

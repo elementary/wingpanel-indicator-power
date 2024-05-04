@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-13 18:50+0000\n"
+"POT-Creation-Date: 2024-05-04 04:49+0000\n"
 "PO-Revision-Date: 2019-11-07 11:57-0800\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -102,8 +102,4 @@ msgstr ""
 
 #: data/power.appdata.xml.in:80
 msgid "Reduce spacing when percentage is shown"
-msgstr ""
-
-#: data/power.appdata.xml.in:93
-msgid "elementary, Inc."
 msgstr ""
