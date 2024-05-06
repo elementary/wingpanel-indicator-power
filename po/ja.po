@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-04 04:49+0000\n"
-"PO-Revision-Date: 2023-01-21 11:25+0000\n"
+"PO-Revision-Date: 2024-05-07 05:13+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ja/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: src/Indicator.vala:180
@@ -95,30 +95,30 @@ msgstr "計算しています…"
 
 #: src/Services/Device.vala:284
 msgid "Fully charged"
-msgstr "充電済"
+msgstr "充電済み"
 
 #: src/Services/Device.vala:290
 #, c-format
 msgid "%i%% charged"
-msgstr "%i%% 充電済"
+msgstr "%i%% 充電済み"
 
 #: src/Services/Device.vala:298
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
-msgstr[0] "充電完了まで%lld時間"
+msgstr[0] "充電完了まで %lld 時間"
 
 #: src/Services/Device.vala:306
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
-msgstr[0] "充電完了まで%lld分"
+msgstr[0] "充電完了まで %lld 分"
 
 #: src/Services/Device.vala:313
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
-msgstr[0] "充電完了まで%lld秒"
+msgstr[0] "充電完了まで %lld 秒"
 
 #: src/Services/Device.vala:320
 #, c-format
@@ -129,19 +129,19 @@ msgstr "残り %i%%"
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
-msgstr[0] "残り%lld時間"
+msgstr[0] "残り %lld 時間"
 
 #: src/Services/Device.vala:336
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
-msgstr[0] "残り%lld分"
+msgstr[0] "残り %lld 分"
 
 #: src/Services/Device.vala:343
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
-msgstr[0] "残り%lld秒"
+msgstr[0] "残り %lld 秒"
 
 #: src/Widgets/DeviceRow.vala:108
 msgid "Device"
