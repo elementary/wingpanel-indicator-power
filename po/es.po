@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-04 04:49+0000\n"
-"PO-Revision-Date: 2021-07-28 11:58+0000\n"
-"Last-Translator: Alvaro <alvaroaraoz_92@hotmail.com>\n"
+"PO-Revision-Date: 2024-05-27 12:56+0000\n"
+"Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/es/>\n"
 "Language: es\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2017-01-06 06:28+0000\n"
 
 #: src/Indicator.vala:180
@@ -21,10 +21,8 @@ msgid "%s: %s"
 msgstr "%s: %s"
 
 #: src/Indicator.vala:181
-#, fuzzy
-#| msgid "Middle-click to toggle percentage"
 msgid "Middle-click to hide percentage"
-msgstr "Pulse con el botón central del ratón para conmutar el porcentaje"
+msgstr "Haga clic con el botón central del ratón para ocultar el porcentaje"
 
 #: src/Indicator.vala:181
 #, fuzzy
@@ -83,7 +81,7 @@ msgstr "PC"
 
 #: src/Services/Device.vala:85
 msgid "Controller"
-msgstr "Mando"
+msgstr "Mando de juego"
 
 #: src/Services/Device.vala:87
 msgid "Pen"
