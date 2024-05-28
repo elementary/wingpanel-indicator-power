@@ -69,7 +69,8 @@ msgstr "Se muestra el porcentaje de batería automáticamente al 20 % o menos"
 
 #: data/power.appdata.xml.in:51
 msgid "Match scroll direction with Sound indicator"
-msgstr "Coincidir la dirección de desplazamiento con el indicador de sonido"
+msgstr ""
+"Ahora la dirección de desplazamiento coincide con el indicador de sonido"
 
 #: data/power.appdata.xml.in:52
 msgid "Show \"Fully Charged\" at 100% when plugged in"
