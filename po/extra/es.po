@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-04 04:49+0000\n"
-"PO-Revision-Date: 2024-05-27 12:56+0000\n"
+"PO-Revision-Date: 2024-05-28 19:21+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/es/>\n"
@@ -50,6 +50,8 @@ msgstr "Nuevas características:"
 #: data/power.appdata.xml.in:28
 msgid "Scroll horizontally on the panel icon to change display brightness"
 msgstr ""
+"Se puede desplazar horizontalmente en el icono del panel para cambiar el "
+"brillo de la pantalla"
 
 #: data/power.appdata.xml.in:32
 msgid "Do a better job hiding the brightness slider on unsupported displays"
@@ -93,7 +95,7 @@ msgstr ""
 
 #: data/power.appdata.xml.in:70
 msgid "Show tooltip on hover"
-msgstr "Se muestra una descripción emergente al posar el puntero del ratón"
+msgstr "Se muestra información en pantalla al pasar el cursor"
 
 #: data/power.appdata.xml.in:71
 msgid "Performance improvements"
