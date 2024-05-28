@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-04 04:49+0000\n"
 "PO-Revision-Date: 2024-05-28 19:23+0000\n"
-"Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
+"Last-Translator: Reinaldo <reinaldoplacetas@tutanota.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/es/>\n"
 "Language: es\n"
@@ -78,7 +78,7 @@ msgstr "Se muestra «Completamente Cargado» al 100 % cuando esté conectado"
 
 #: data/power.appdata.xml.in:62
 msgid "Show battery statistics when selected"
-msgstr ""
+msgstr "Muestra la estadística de batería cuando se selecciona"
 
 #: data/power.appdata.xml.in:63
 msgid "Launch apps using power when selected"
