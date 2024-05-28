@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-04 04:49+0000\n"
 "PO-Revision-Date: 2024-05-28 19:21+0000\n"
-"Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
+"Last-Translator: Lucas Cesa <lucascesa455@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/es/>\n"
 "Language: es\n"
@@ -56,6 +56,8 @@ msgstr ""
 #: data/power.appdata.xml.in:32
 msgid "Do a better job hiding the brightness slider on unsupported displays"
 msgstr ""
+"Hacer un mejor trabajo ocultando el indicador de brillo en pantallas no "
+"soportadas"
 
 #: data/power.appdata.xml.in:46
 msgid "Show brightness level when scrolled"
