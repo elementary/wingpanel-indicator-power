@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-04 04:49+0000\n"
-"PO-Revision-Date: 2024-05-28 13:13+0000\n"
+"PO-Revision-Date: 2024-05-28 19:21+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/es/>\n"
@@ -106,22 +106,22 @@ msgstr "%i %% cargado"
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
-msgstr[0] "%lld hora hasta completarse"
-msgstr[1] "%lld horas hasta completarse"
+msgstr[0] "%lld hora hasta completarse la carga"
+msgstr[1] "%lld horas hasta completarse la carga"
 
 #: src/Services/Device.vala:306
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
-msgstr[0] "%lld minuto hasta completarse"
-msgstr[1] "%lld minutos hasta completarse"
+msgstr[0] "%lld minuto hasta completarse la carga"
+msgstr[1] "%lld minutos hasta completarse la carga"
 
 #: src/Services/Device.vala:313
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
-msgstr[0] "%lld segundo hasta completarse"
-msgstr[1] "%lld segundos hasta completarse"
+msgstr[0] "%lld segundo hasta completarse la carga"
+msgstr[1] "%lld segundos hasta completarse la carga"
 
 #: src/Services/Device.vala:320
 #, c-format
@@ -132,22 +132,22 @@ msgstr "%i %% restante"
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
-msgstr[0] "%lld hora hasta vaciarse"
-msgstr[1] "%lld horas hasta vaciarse"
+msgstr[0] "%lld hora hasta que la carga se agote"
+msgstr[1] "%lld horas hasta que la carga se agote"
 
 #: src/Services/Device.vala:336
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
-msgstr[0] "%lld minuto hasta vaciarse"
-msgstr[1] "%lld minutos hasta vaciarse"
+msgstr[0] "%lld minuto hasta que la carga se agote"
+msgstr[1] "%lld minutos hasta que la carga se agote"
 
 #: src/Services/Device.vala:343
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
-msgstr[0] "%lld segundo hasta vaciarse"
-msgstr[1] "%lld segundos hasta vaciarse"
+msgstr[0] "%lld segundo hasta que la carga se agote"
+msgstr[1] "%lld segundos hasta que la carga se agote"
 
 #: src/Widgets/DeviceRow.vala:108
 msgid "Device"
