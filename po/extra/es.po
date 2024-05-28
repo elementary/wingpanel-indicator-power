@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-04 04:49+0000\n"
 "PO-Revision-Date: 2024-05-28 19:24+0000\n"
-"Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
+"Last-Translator: Reinaldo <reinaldoplacetas@tutanota.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/es/>\n"
 "Language: es\n"
@@ -86,7 +86,7 @@ msgstr "Se pueden iniciar aplicaciones usando energía al seleccionar"
 
 #: data/power.appdata.xml.in:64
 msgid "Control display brightness by scrolling the indicator"
-msgstr ""
+msgstr "Controla el brillo de pantalla deslizando sobre el indicador"
 
 #: data/power.appdata.xml.in:68
 msgid "Improvements for desktops with peripherals"
