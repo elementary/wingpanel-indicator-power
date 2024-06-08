@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the power-indicator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: power-indicator\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-04 04:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pap\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: src/Indicator.vala:180
+#, c-format
+msgid "%s: %s"
+msgstr ""
+
+#: src/Indicator.vala:181
+msgid "Middle-click to hide percentage"
+msgstr ""
+
+#: src/Indicator.vala:181
+msgid "Middle-click to show percentage"
+msgstr ""
+
+#: src/Indicator.vala:189
+#, c-format
+msgid "Screen brightness: %i"
+msgstr ""
+
+#: src/Indicator.vala:190
+msgid "Scroll to change screen brightness"
+msgstr ""
+
+#: src/Services/Device.vala:65
+msgid "Battery"
+msgstr ""
+
+#: src/Services/Device.vala:67
+msgid "UPS"
+msgstr ""
+
+#: src/Services/Device.vala:69
+msgid "Display"
+msgstr ""
+
+#: src/Services/Device.vala:71
+msgid "Mouse"
+msgstr ""
+
+#: src/Services/Device.vala:73
+msgid "Keyboard"
+msgstr ""
+
+#: src/Services/Device.vala:75
+msgid "PDA"
+msgstr ""
+
+#: src/Services/Device.vala:77
+msgid "Phone"
+msgstr ""
+
+#: src/Services/Device.vala:79
+msgid "Media Player"
+msgstr ""
+
+#: src/Services/Device.vala:81
+msgid "Tablet"
+msgstr ""
+
+#: src/Services/Device.vala:83
+msgid "Computer"
+msgstr ""
+
+#: src/Services/Device.vala:85
+msgid "Controller"
+msgstr ""
+
+#: src/Services/Device.vala:87
+msgid "Pen"
+msgstr ""
+
+#: src/Services/Device.vala:89
+msgid "Plugged In"
+msgstr ""
+
+#: src/Services/Device.vala:280
+msgid "Calculating…"
+msgstr ""
+
+#: src/Services/Device.vala:284
+msgid "Fully charged"
+msgstr ""
+
+#: src/Services/Device.vala:290
+#, c-format
+msgid "%i%% charged"
+msgstr ""
+
+#: src/Services/Device.vala:298
+#, c-format
+msgid "%lld hour until full"
+msgid_plural "%lld hours until full"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Services/Device.vala:306
+#, c-format
+msgid "%lld minute until full"
+msgid_plural "%lld minutes until full"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Services/Device.vala:313
+#, c-format
+msgid "%lld second until full"
+msgid_plural "%lld seconds until full"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Services/Device.vala:320
+#, c-format
+msgid "%i%% remaining"
+msgstr ""
+
+#: src/Services/Device.vala:328
+#, c-format
+msgid "%lld hour until empty"
+msgid_plural "%lld hours until empty"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Services/Device.vala:336
+#, c-format
+msgid "%lld minute until empty"
+msgid_plural "%lld minutes until empty"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Services/Device.vala:343
+#, c-format
+msgid "%lld second until empty"
+msgid_plural "%lld seconds until empty"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Widgets/DeviceRow.vala:108
+msgid "Device"
+msgstr ""
+
+#. /Translators: This represents battery charge precentage with `%i` representing the number and `%%` representing the percent symbol
+#: src/Widgets/DisplayWidget.vala:32
+#, c-format
+msgid "%i%%"
+msgstr ""
+
+#: src/Widgets/PopoverWidget.vala:61
+msgid "Show Percentage"
+msgstr ""
+
+#: src/Widgets/PopoverWidget.vala:77
+msgid "Power Settings…"
+msgstr ""
