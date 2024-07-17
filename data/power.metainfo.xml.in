@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2019-2022 elementary, Inc. <contact@elementary.io> -->
+<!-- Copyright 2019-2024 elementary, Inc. <contact@elementary.io> -->
 <component type="addon">
   <id>io.elementary.wingpanel.power</id>
   <extends>io.elementary.wingpanel</extends>
+  <translation type="gettext">power-indicator</translation>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+
+  <icon type="stock">preferences-system-power</icon>
   <name>Power Indicator</name>
   <summary>View battery levels, adjust display brightness, and see apps using lots of power</summary>
-  <icon type="stock">preferences-system-power</icon>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/wingpanel-indicator-power/6.2.1/data/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="homepage">https://elementary.io/</url>
+  <url type="bugtracker">https://github.com/elementary/wingpanel-indicator-power/issues</url>
+  <url type="donation">https://elementary.io/get-involved#funding</url>
+  <url type="help">https://github.com/elementary/wingpanel-indicator-power/discussions</url>
+  <url type="translate">https://l10n.elementary.io/engage/switchboard/</url>
+
+  <developer id="org.elementaryos">
+    <name>elementary, Inc.</name>
+  </developer>
+  <project_group>elementary</project_group>
+  <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
     <release version="6.2.1" date="2023-08-26" urgency="medium">
@@ -84,22 +106,4 @@
 
     <release version="2.1.5" date="2020-03-27"/>
   </releases>
-
-  <screenshots>
-    <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/wingpanel-indicator-power/6.2.1/data/screenshot.png</image>
-    </screenshot>
-  </screenshots>
-  <developer id="org.elementaryos">
-    <name>elementary, Inc.</name>
-  </developer>
-  <url type="homepage">https://elementary.io/</url>
-  <url type="bugtracker">https://github.com/elementary/wingpanel-indicator-power/issues</url>
-  <url type="donation">https://elementary.io/get-involved#funding</url>
-  <url type="help">https://elementaryos.stackexchange.com/questions/tagged/wingpanel</url>
-  <url type="translate">https://l10n.elementary.io/projects/wingpanel/wingpanel-indicator-power/</url>
-  <update_contact>contact_AT_elementary.io</update_contact>
-  <metadata_license>CC0-1.0</metadata_license>
-  <project_group>elementary</project_group>
-  <project_license>GPL-3.0+</project_license>
 </component>
