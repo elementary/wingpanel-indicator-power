@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 04:49+0000\n"
+"POT-Creation-Date: 2024-07-17 18:16+0000\n"
 "PO-Revision-Date: 2024-06-16 03:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/wingpanel/"
@@ -35,7 +35,8 @@ msgstr "Brillo de la pantalla: %i"
 
 #: src/Indicator.vala:190
 msgid "Scroll to change screen brightness"
-msgstr "Desplácese con la rueda del ratón para cambiar el brillo de la pantalla"
+msgstr ""
+"Desplácese con la rueda del ratón para cambiar el brillo de la pantalla"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
