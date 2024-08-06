@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-17 18:16+0000\n"
-"PO-Revision-Date: 2020-10-11 18:14+0000\n"
-"Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
+"PO-Revision-Date: 2024-08-07 00:16+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/mr/>\n"
 "Language: mr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/power.metainfo.xml.in:11
 msgid "Power Indicator"
@@ -33,7 +33,7 @@ msgstr "बॅटरीचे स्तर पहा, प्रदर्शन �
 #: data/power.metainfo.xml.in:62 data/power.metainfo.xml.in:81
 #: data/power.metainfo.xml.in:98
 msgid "Minor updates:"
-msgstr ""
+msgstr "किरकोळ अद्यतने:"
 
 #: data/power.metainfo.xml.in:37
 msgid "Drop inaccurate \"Apps using lots of power\" feature"
@@ -100,7 +100,7 @@ msgstr ""
 
 #: data/power.metainfo.xml.in:103
 msgid "Performance improvements"
-msgstr ""
+msgstr "कामगिरी सुधारणा"
 
 #~ msgid "Support for Controllers and Pens"
 #~ msgstr "नियंत्रक आणि पेनसाठी समर्थन"
