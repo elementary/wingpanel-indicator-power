@@ -1,7 +1,7 @@
 project(
     'power',
     'vala', 'c',
-    version: '6.2.1',
+    version: '8.0.0',
     meson_version: '>=0.57.0'
 )
 
