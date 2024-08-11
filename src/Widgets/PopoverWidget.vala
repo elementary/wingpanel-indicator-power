@@ -24,6 +24,8 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
 
     private Gtk.Revealer device_separator_revealer;
 
+    private PowerModeList power_mode_list;
+
     public PopoverWidget (bool is_in_session) {
         Object (is_in_session: is_in_session);
     }
@@ -73,7 +75,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         var show_percent_revealer = new Gtk.Revealer ();
         show_percent_revealer.add (show_percent_box);
 
-        var power_mode_list = new PowerModeList (false);
+        power_mode_list = new PowerModeList (false);
 
         var power_mode_separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
             margin_top = 3,
@@ -141,5 +143,9 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
 
     private void update_device_separator_revealer () {
         device_separator_revealer.reveal_child = dm.backlight.present && dm.has_battery;
+    }
+
+    public void update_power_mode () {
+        power_mode_list?.update_active_profile ();
     }
 }

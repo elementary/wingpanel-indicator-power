@@ -96,7 +96,7 @@ public class Power.Indicator : Wingpanel.Indicator {
     }
 
     public override void opened () {
-
+        popover_widget.update_power_mode ();
     }
 
     public override void closed () {

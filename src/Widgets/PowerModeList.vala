@@ -139,7 +139,7 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
         });
     }
 
-    private void update_active_profile () {
+    public void update_active_profile () {
         if (settings != null) {
             switch (settings.get_string (settings_key)) {
                 case "power-saver":
@@ -153,6 +153,7 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
                     break;
             }
         } else {
+            print (pprofile.active_profile);
             switch (pprofile.active_profile) {
                 case "power-saver":
                     saver_radio.active = true;
