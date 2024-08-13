@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 18:16+0000\n"
+"POT-Creation-Date: 2024-08-13 10:07+0530\n"
 "PO-Revision-Date: 2019-08-30 21:23+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/wingpanel/"
@@ -95,7 +95,6 @@ msgstr "Kalkulanta…"
 
 #: src/Services/Device.vala:284
 #, fuzzy
-#| msgid "%i%% charged"
 msgid "Fully charged"
 msgstr "Ŝargita je %i%%"
 
@@ -161,13 +160,26 @@ msgstr "Aparato"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "Montri elcentaĵon"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "Energiaj agordoj…"
+
+#: src/Widgets/PowerModeList.vala:64
+#, fuzzy
+msgid "Power Saver"
+msgstr "Energio"
+
+#: src/Widgets/PowerModeList.vala:79
+msgid "Balanced"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:94
+msgid "Performance"
+msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Aplikaĵoj energivoraj"
@@ -188,9 +200,6 @@ msgstr "Energiaj agordoj…"
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "Baterio"
-
-#~ msgid "Power"
-#~ msgstr "Energio"
 
 #~ msgid "Power indicator"
 #~ msgstr "Energia indikilo"

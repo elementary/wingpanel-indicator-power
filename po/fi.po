@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 18:16+0000\n"
+"POT-Creation-Date: 2024-08-13 10:07+0530\n"
 "PO-Revision-Date: 2023-01-26 09:25+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/wingpanel/"
@@ -159,13 +159,26 @@ msgstr "Laite"
 msgid "%i%%"
 msgstr "%i %%"
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "Näytä prosentit"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "Virranhallinnan asetukset…"
+
+#: src/Widgets/PowerModeList.vala:64
+#, fuzzy
+msgid "Power Saver"
+msgstr "Virta"
+
+#: src/Widgets/PowerModeList.vala:79
+msgid "Balanced"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:94
+msgid "Performance"
+msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Paljon virtaa käyttävät sovellukset"
@@ -187,9 +200,6 @@ msgstr "Virranhallinnan asetukset…"
 
 #~ msgid "Battery: %i%%"
 #~ msgstr "Akku: %i%%"
-
-#~ msgid "Power"
-#~ msgstr "Virta"
 
 #~ msgid "Power indicator"
 #~ msgstr "Virtailmaisin"

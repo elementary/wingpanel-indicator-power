@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: power-indicator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 18:16+0000\n"
+"POT-Creation-Date: 2024-08-13 10:07+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -161,10 +161,22 @@ msgstr ""
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:64
+msgid "Power Saver"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:79
+msgid "Balanced"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:94
+msgid "Performance"
 msgstr ""

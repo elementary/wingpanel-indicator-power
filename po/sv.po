@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 18:16+0000\n"
+"POT-Creation-Date: 2024-08-13 10:07+0530\n"
 "PO-Revision-Date: 2018-10-23 07:13+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/wingpanel/"
@@ -95,7 +95,6 @@ msgstr "Beräknar…"
 
 #: src/Services/Device.vala:284
 #, fuzzy
-#| msgid "%i%% charged"
 msgid "Fully charged"
 msgstr "%i%% uppladdat"
 
@@ -161,13 +160,26 @@ msgstr "Enhet"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "Visa procent"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "Ströminställningar…"
+
+#: src/Widgets/PowerModeList.vala:64
+#, fuzzy
+msgid "Power Saver"
+msgstr "Ström"
+
+#: src/Widgets/PowerModeList.vala:79
+msgid "Balanced"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:94
+msgid "Performance"
+msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Program som drar mycket ström"
@@ -188,9 +200,6 @@ msgstr "Ströminställningar…"
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "Batteri"
-
-#~ msgid "Power"
-#~ msgstr "Ström"
 
 #~ msgid "Power indicator"
 #~ msgstr "Strömindikator"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: power-indicator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 18:16+0000\n"
+"POT-Creation-Date: 2024-08-13 10:07+0530\n"
 "PO-Revision-Date: 2021-08-01 17:35+0000\n"
 "Last-Translator: elSolus <tumbleweed@tuta.io>\n"
 "Language-Team: Punjabi <https://l10n.elementary.io/projects/wingpanel/"
@@ -26,13 +26,11 @@ msgstr "%s: %s"
 
 #: src/Indicator.vala:181
 #, fuzzy
-#| msgid "Middle-click to toggle percentage"
 msgid "Middle-click to hide percentage"
 msgstr "ਫ਼ੀਸਦ ਚਾਲੂ ਜਾਂ ਬੰਦ ਕਰਨ ਲਈ ਵਿਚਕਾਰਲੀ-ਕਲਿੱਕ"
 
 #: src/Indicator.vala:181
 #, fuzzy
-#| msgid "Middle-click to toggle percentage"
 msgid "Middle-click to show percentage"
 msgstr "ਫ਼ੀਸਦ ਚਾਲੂ ਜਾਂ ਬੰਦ ਕਰਨ ਲਈ ਵਿਚਕਾਰਲੀ-ਕਲਿੱਕ"
 
@@ -167,13 +165,25 @@ msgstr "ਡਿਵਾਈਸ"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "ਫ਼ੀਸਦ ਵਿਖਾਓ"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "ਊਰਜਾ ਸੈਟਿੰਗਾਂ…"
+
+#: src/Widgets/PowerModeList.vala:64
+msgid "Power Saver"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:79
+msgid "Balanced"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:94
+msgid "Performance"
+msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "ਜ਼ਿਆਦਾ ਊਰਜਾ ਵਰਤਣ ਵਾਲ਼ੀਆਂ ਐਪਾਂ"

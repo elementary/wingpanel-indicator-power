@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 18:16+0000\n"
+"POT-Creation-Date: 2024-08-13 10:07+0530\n"
 "PO-Revision-Date: 2018-10-21 12:03+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/wingpanel/"
@@ -95,7 +95,6 @@ msgstr "Menghitung…"
 
 #: src/Services/Device.vala:284
 #, fuzzy
-#| msgid "%i%% charged"
 msgid "Fully charged"
 msgstr "%i%% terisi"
 
@@ -155,13 +154,26 @@ msgstr "Perangkat"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "Tampilkan Persentase"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "Pengaturan Daya…"
+
+#: src/Widgets/PowerModeList.vala:64
+#, fuzzy
+msgid "Power Saver"
+msgstr "Daya"
+
+#: src/Widgets/PowerModeList.vala:79
+msgid "Balanced"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:94
+msgid "Performance"
+msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Aplikasi Menggunakan Banyak Daya"
@@ -180,9 +192,6 @@ msgstr "Pengaturan Daya…"
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "Baterai"
-
-#~ msgid "Power"
-#~ msgstr "Daya"
 
 #~ msgid "Power indicator"
 #~ msgstr "Indikator daya"

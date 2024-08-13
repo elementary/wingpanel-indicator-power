@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wingpanel-indicator-power\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 18:16+0000\n"
+"POT-Creation-Date: 2024-08-13 10:07+0530\n"
 "PO-Revision-Date: 2016-05-24 20:19+0000\n"
 "Last-Translator: yavinfour <anjelo.passionist@gmail.com>\n"
 "Language-Team: Tagalog <tl@li.org>\n"
@@ -99,7 +99,6 @@ msgstr "Kinakalkula..."
 
 #: src/Services/Device.vala:284
 #, fuzzy
-#| msgid "%i%% charged"
 msgid "Fully charged"
 msgstr "%i%% ang nakakarga"
 
@@ -165,13 +164,26 @@ msgstr "Aparato"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "Ipakita ang Porsyento"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "Settings sa Kuryente..."
+
+#: src/Widgets/PowerModeList.vala:64
+#, fuzzy
+msgid "Power Saver"
+msgstr "Kuryente"
+
+#: src/Widgets/PowerModeList.vala:79
+msgid "Balanced"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:94
+msgid "Performance"
+msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Mga Apps na Malakas Gumamit ng Kuryente"
@@ -192,9 +204,6 @@ msgstr "Settings sa Kuryente..."
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "Baterya"
-
-#~ msgid "Power"
-#~ msgstr "Kuryente"
 
 #~ msgid "Power indicator"
 #~ msgstr "Tagapakita ng Kuryente"

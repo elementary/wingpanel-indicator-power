@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 18:16+0000\n"
+"POT-Creation-Date: 2024-08-13 10:07+0530\n"
 "PO-Revision-Date: 2018-06-22 12:53+0000\n"
 "Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
 "Language-Team: English (Canada) <https://weblate.elementary.io/projects/"
@@ -95,7 +95,6 @@ msgstr "Calculating…"
 
 #: src/Services/Device.vala:284
 #, fuzzy
-#| msgid "%i%% charged"
 msgid "Fully charged"
 msgstr "%i%% charged"
 
@@ -161,13 +160,26 @@ msgstr "Device"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "Show Percentage"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "Power Settings…"
+
+#: src/Widgets/PowerModeList.vala:64
+#, fuzzy
+msgid "Power Saver"
+msgstr "Power"
+
+#: src/Widgets/PowerModeList.vala:79
+msgid "Balanced"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:94
+msgid "Performance"
+msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Apps Using Lots of Power"
@@ -188,9 +200,6 @@ msgstr "Power Settings…"
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "Battery"
-
-#~ msgid "Power"
-#~ msgstr "Power"
 
 #~ msgid "Power indicator"
 #~ msgstr "Power indicator"

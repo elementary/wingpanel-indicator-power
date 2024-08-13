@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 18:16+0000\n"
+"POT-Creation-Date: 2024-08-13 10:07+0530\n"
 "PO-Revision-Date: 2023-03-13 21:25+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/wingpanel/"
@@ -153,13 +153,26 @@ msgstr "მოწყობილობა"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "პროცენტული მაჩვენებლის ჩვენება"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "კვების მორგება…"
+
+#: src/Widgets/PowerModeList.vala:64
+#, fuzzy
+msgid "Power Saver"
+msgstr "ელკვება"
+
+#: src/Widgets/PowerModeList.vala:79
+msgid "Balanced"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:94
+msgid "Performance"
+msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "აპები, რომლებიც ბევრ ენერგიას იყენებენ"
@@ -181,9 +194,6 @@ msgstr "კვების მორგება…"
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "ელემენტი"
-
-#~ msgid "Power"
-#~ msgstr "ელკვება"
 
 #~ msgid "Power indicator"
 #~ msgstr "ელკვების მაჩვენებელი"

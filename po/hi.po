@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 18:16+0000\n"
+"POT-Creation-Date: 2024-08-13 10:07+0530\n"
 "PO-Revision-Date: 2018-10-18 00:11+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Hindi <https://weblate.elementary.io/projects/wingpanel/"
@@ -95,7 +95,6 @@ msgstr "गणना में…"
 
 #: src/Services/Device.vala:284
 #, fuzzy
-#| msgid "%i%% charged"
 msgid "Fully charged"
 msgstr "%i%% चार्ज हुआ"
 
@@ -161,13 +160,26 @@ msgstr "यंत्र"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "प्रतिशत दिखाएँ"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "पावर सेटिंग्स …"
+
+#: src/Widgets/PowerModeList.vala:64
+#, fuzzy
+msgid "Power Saver"
+msgstr "पावर"
+
+#: src/Widgets/PowerModeList.vala:79
+msgid "Balanced"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:94
+msgid "Performance"
+msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "एप्प्स ज़्यादा ताक़त ले रहें हैं"
@@ -188,9 +200,6 @@ msgstr "पावर सेटिंग्स …"
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "बैटरी"
-
-#~ msgid "Power"
-#~ msgstr "पावर"
 
 #~ msgid "Power indicator"
 #~ msgstr "शक्ति प्रदर्शक"

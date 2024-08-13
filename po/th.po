@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 18:16+0000\n"
+"POT-Creation-Date: 2024-08-13 10:07+0530\n"
 "PO-Revision-Date: 2016-04-30 11:10+0000\n"
 "Last-Translator: Rockworld <sumoisrock@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,7 +94,6 @@ msgstr "กำลังคำนวณ…"
 
 #: src/Services/Device.vala:284
 #, fuzzy
-#| msgid "%i%% charged"
 msgid "Fully charged"
 msgstr "ชาร์จแล้ว %i%%"
 
@@ -154,13 +153,26 @@ msgstr "อุปกรณ์"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "แสดงค่าร้อยละ"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "ค่าตั้งพลังงาน..."
+
+#: src/Widgets/PowerModeList.vala:64
+#, fuzzy
+msgid "Power Saver"
+msgstr "พลังงาน"
+
+#: src/Widgets/PowerModeList.vala:79
+msgid "Balanced"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:94
+msgid "Performance"
+msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "โปรแกรมที่ใช้พลังงานมาก"
@@ -179,9 +191,6 @@ msgstr "ค่าตั้งพลังงาน..."
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "แบตเตอรี"
-
-#~ msgid "Power"
-#~ msgstr "พลังงาน"
 
 #~ msgid "Power indicator"
 #~ msgstr "ตัวบ่งชี้พลังงาน"

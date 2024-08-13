@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wingpanel-indicator-power\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 18:16+0000\n"
+"POT-Creation-Date: 2024-08-13 10:07+0530\n"
 "PO-Revision-Date: 2017-05-04 20:05+0000\n"
 "Last-Translator: Rokar <rokartv10@gmail.com>\n"
 "Language-Team: ku (generated) <https://l10n.elementary.io/projects/wingpanel/"
@@ -100,7 +100,6 @@ msgstr "Hesibandin…"
 
 #: src/Services/Device.vala:284
 #, fuzzy
-#| msgid "%i%% charged"
 msgid "Fully charged"
 msgstr "%i%% dagirtin"
 
@@ -166,13 +165,26 @@ msgstr "Cîhaz"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "rêjeya sedî nîşan bike"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "sekinandina Hêz…"
+
+#: src/Widgets/PowerModeList.vala:64
+#, fuzzy
+msgid "Power Saver"
+msgstr "Hêz"
+
+#: src/Widgets/PowerModeList.vala:79
+msgid "Balanced"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:94
+msgid "Performance"
+msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Bername ev zîtik ax hêz bi kar dike"
@@ -193,9 +205,6 @@ msgstr "sekinandina Hêz…"
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "Pîl"
-
-#~ msgid "Power"
-#~ msgstr "Hêz"
 
 #~ msgid "Power indicator"
 #~ msgstr "nîşane Hêz"
