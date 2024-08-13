@@ -158,7 +158,6 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
                     break;
             }
         } else {
-            print (pprofile.active_profile);
             switch (pprofile.active_profile) {
                 case "power-saver":
                     saver_radio.active = true;
