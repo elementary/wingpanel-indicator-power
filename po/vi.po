@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-13 10:07+0530\n"
+"POT-Creation-Date: 2024-07-17 18:16+0000\n"
 "PO-Revision-Date: 2017-12-27 15:59+0000\n"
 "Last-Translator: Hải Hồ <hochihai1997@gmail.com>\n"
 "Language-Team: Vietnamese <https://weblate.elementary.io/projects/wingpanel/"
@@ -95,6 +95,7 @@ msgstr "Đang tính toán…"
 
 #: src/Services/Device.vala:284
 #, fuzzy
+#| msgid "%i%% charged"
 msgid "Fully charged"
 msgstr "Đã sạc %i%%"
 
@@ -154,26 +155,13 @@ msgstr "Thiết bị"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:63
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "Hiển thị phần trăm"
 
-#: src/Widgets/PopoverWidget.vala:86
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "Cài đặt Năng lượng…"
-
-#: src/Widgets/PowerModeList.vala:64
-#, fuzzy
-msgid "Power Saver"
-msgstr "Năng lượng"
-
-#: src/Widgets/PowerModeList.vala:79
-msgid "Balanced"
-msgstr ""
-
-#: src/Widgets/PowerModeList.vala:94
-msgid "Performance"
-msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Những ứng dụng đang sử dụng nhiều năng lượng"
@@ -192,6 +180,9 @@ msgstr ""
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "Pin"
+
+#~ msgid "Power"
+#~ msgstr "Năng lượng"
 
 #~ msgid "Power indicator"
 #~ msgstr "Chỉ thị năng lượng"

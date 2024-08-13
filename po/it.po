@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-13 10:07+0530\n"
+"POT-Creation-Date: 2024-07-17 18:16+0000\n"
 "PO-Revision-Date: 2020-10-27 10:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/wingpanel/"
@@ -95,6 +95,7 @@ msgstr "Calcolo…"
 
 #: src/Services/Device.vala:284
 #, fuzzy
+#| msgid "%i%% charged"
 msgid "Fully charged"
 msgstr "%i%% carico"
 
@@ -160,26 +161,13 @@ msgstr "Dispositivo"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:63
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "Mostra percentuale"
 
-#: src/Widgets/PopoverWidget.vala:86
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "Impostazioni dell'alimentazione…"
-
-#: src/Widgets/PowerModeList.vala:64
-#, fuzzy
-msgid "Power Saver"
-msgstr "Alimentazione"
-
-#: src/Widgets/PowerModeList.vala:79
-msgid "Balanced"
-msgstr ""
-
-#: src/Widgets/PowerModeList.vala:94
-msgid "Performance"
-msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Applicazioni che usano molta energia"
@@ -200,6 +188,9 @@ msgstr ""
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "Batteria"
+
+#~ msgid "Power"
+#~ msgstr "Alimentazione"
 
 #~ msgid "Power indicator"
 #~ msgstr "Indicatore dell'alimentazione"

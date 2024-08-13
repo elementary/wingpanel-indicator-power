@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-13 10:07+0530\n"
+"POT-Creation-Date: 2024-07-17 18:16+0000\n"
 "PO-Revision-Date: 2023-01-18 23:25+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/wingpanel/"
@@ -159,26 +159,13 @@ msgstr "Eszköz"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:63
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "Százalékérték megjelenítése"
 
-#: src/Widgets/PopoverWidget.vala:86
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "Energiagazdálkodási beállítások…"
-
-#: src/Widgets/PowerModeList.vala:64
-#, fuzzy
-msgid "Power Saver"
-msgstr "Energiakezelő"
-
-#: src/Widgets/PowerModeList.vala:79
-msgid "Balanced"
-msgstr ""
-
-#: src/Widgets/PowerModeList.vala:94
-msgid "Performance"
-msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Sok energiát használó alkalmazások"
@@ -202,6 +189,9 @@ msgstr ""
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "Akkumulátor"
+
+#~ msgid "Power"
+#~ msgstr "Energiakezelő"
 
 #~ msgid "Power indicator"
 #~ msgstr "Energiakezelő indikátor"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-13 10:07+0530\n"
+"POT-Creation-Date: 2024-07-17 18:16+0000\n"
 "PO-Revision-Date: 2021-09-04 23:27+0000\n"
 "Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/wingpanel/"
@@ -23,11 +23,13 @@ msgstr "%s: %s"
 
 #: src/Indicator.vala:181
 #, fuzzy
+#| msgid "Middle-click to toggle percentage"
 msgid "Middle-click to hide percentage"
 msgstr "اضغط الزر الأوسط لإظهار النسبة المئوية"
 
 #: src/Indicator.vala:181
 #, fuzzy
+#| msgid "Middle-click to toggle percentage"
 msgid "Middle-click to show percentage"
 msgstr "اضغط الزر الأوسط لإظهار النسبة المئوية"
 
@@ -186,26 +188,13 @@ msgstr "الجهاز"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:63
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "أظهر النسبة المئوية"
 
-#: src/Widgets/PopoverWidget.vala:86
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "إعدادات الطاقة…"
-
-#: src/Widgets/PowerModeList.vala:64
-#, fuzzy
-msgid "Power Saver"
-msgstr "الطاقة"
-
-#: src/Widgets/PowerModeList.vala:79
-msgid "Balanced"
-msgstr ""
-
-#: src/Widgets/PowerModeList.vala:94
-msgid "Performance"
-msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "تطبيقات تستهلك طاقة كبيرة"
@@ -237,6 +226,9 @@ msgstr ""
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "البطارية"
+
+#~ msgid "Power"
+#~ msgstr "الطاقة"
 
 #~ msgid "Power indicator"
 #~ msgstr "مؤشر الطاقة"

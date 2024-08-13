@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-13 10:07+0530\n"
+"POT-Creation-Date: 2024-07-17 18:16+0000\n"
 "PO-Revision-Date: 2022-01-12 19:06+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/wingpanel/"
@@ -22,11 +22,13 @@ msgstr "%s: %s"
 
 #: src/Indicator.vala:181
 #, fuzzy
+#| msgid "Middle-click to toggle percentage"
 msgid "Middle-click to hide percentage"
 msgstr "Kliknutím kolečkem myši budou zobrazena/skryta procenta nabití"
 
 #: src/Indicator.vala:181
 #, fuzzy
+#| msgid "Middle-click to toggle percentage"
 msgid "Middle-click to show percentage"
 msgstr "Kliknutím kolečkem myši budou zobrazena/skryta procenta nabití"
 
@@ -167,26 +169,13 @@ msgstr "Zařízení"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:63
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "Zobrazit procenta"
 
-#: src/Widgets/PopoverWidget.vala:86
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "Nastavení napájení…"
-
-#: src/Widgets/PowerModeList.vala:64
-#, fuzzy
-msgid "Power Saver"
-msgstr "Napájení"
-
-#: src/Widgets/PowerModeList.vala:79
-msgid "Balanced"
-msgstr ""
-
-#: src/Widgets/PowerModeList.vala:94
-msgid "Performance"
-msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Aplikace spotřebovávající mnoho energie"
@@ -212,6 +201,9 @@ msgstr ""
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "Akumulátor"
+
+#~ msgid "Power"
+#~ msgstr "Napájení"
 
 #~ msgid "Power indicator"
 #~ msgstr "Indikátor napájení"

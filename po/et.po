@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-13 10:07+0530\n"
+"POT-Creation-Date: 2024-07-17 18:16+0000\n"
 "PO-Revision-Date: 2016-05-22 05:42+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,6 +94,7 @@ msgstr "Arvutamine…"
 
 #: src/Services/Device.vala:284
 #, fuzzy
+#| msgid "%i%% charged"
 msgid "Fully charged"
 msgstr "%i%% laetud"
 
@@ -159,26 +160,13 @@ msgstr "Seade"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:63
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "Protsendi näitamine"
 
-#: src/Widgets/PopoverWidget.vala:86
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "Toite seaded…"
-
-#: src/Widgets/PowerModeList.vala:64
-#, fuzzy
-msgid "Power Saver"
-msgstr "Toide"
-
-#: src/Widgets/PowerModeList.vala:79
-msgid "Balanced"
-msgstr ""
-
-#: src/Widgets/PowerModeList.vala:94
-msgid "Performance"
-msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Rakendused, mis kasutavad palju toidet"
@@ -199,6 +187,9 @@ msgstr ""
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "Aku"
+
+#~ msgid "Power"
+#~ msgstr "Toide"
 
 #~ msgid "Power indicator"
 #~ msgstr "Toite indikaator"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-13 10:07+0530\n"
+"POT-Creation-Date: 2024-07-17 18:16+0000\n"
 "PO-Revision-Date: 2022-08-06 10:54+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/wingpanel/"
@@ -22,11 +22,13 @@ msgstr "%s: %s"
 
 #: src/Indicator.vala:181
 #, fuzzy
+#| msgid "Middle-click to toggle percentage"
 msgid "Middle-click to hide percentage"
 msgstr "마우스 가운데 버튼 클릭으로 백분율로 전환"
 
 #: src/Indicator.vala:181
 #, fuzzy
+#| msgid "Middle-click to toggle percentage"
 msgid "Middle-click to show percentage"
 msgstr "마우스 가운데 버튼 클릭으로 백분율로 전환"
 
@@ -155,26 +157,13 @@ msgstr "장치"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:63
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "백분율 표시"
 
-#: src/Widgets/PopoverWidget.vala:86
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "전력 설정…"
-
-#: src/Widgets/PowerModeList.vala:64
-#, fuzzy
-msgid "Power Saver"
-msgstr "전력"
-
-#: src/Widgets/PowerModeList.vala:79
-msgid "Balanced"
-msgstr ""
-
-#: src/Widgets/PowerModeList.vala:94
-msgid "Performance"
-msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "전력을 많이 사용하는 앱"
@@ -196,6 +185,9 @@ msgstr ""
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "배터리"
+
+#~ msgid "Power"
+#~ msgstr "전력"
 
 #~ msgid "Power indicator"
 #~ msgstr "전력 표시기"

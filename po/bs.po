@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-13 10:07+0530\n"
+"POT-Creation-Date: 2024-07-17 18:16+0000\n"
 "PO-Revision-Date: 2018-11-04 22:38+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/wingpanel/"
@@ -96,6 +96,7 @@ msgstr "Izračunavanje…"
 
 #: src/Services/Device.vala:284
 #, fuzzy
+#| msgid "%i%% charged"
 msgid "Fully charged"
 msgstr "%i%% napunjeno"
 
@@ -167,26 +168,13 @@ msgstr "Uređaj"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:63
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "Prikaži postotak"
 
-#: src/Widgets/PopoverWidget.vala:86
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "Podešavanja napajanja…"
-
-#: src/Widgets/PowerModeList.vala:64
-#, fuzzy
-msgid "Power Saver"
-msgstr "Napajanje"
-
-#: src/Widgets/PowerModeList.vala:79
-msgid "Balanced"
-msgstr ""
-
-#: src/Widgets/PowerModeList.vala:94
-msgid "Performance"
-msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Aplikacije koje troše puno energije"
@@ -209,6 +197,9 @@ msgstr ""
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "Baterija"
+
+#~ msgid "Power"
+#~ msgstr "Napajanje"
 
 #~ msgid "Power indicator"
 #~ msgstr "Indikator napajanja"

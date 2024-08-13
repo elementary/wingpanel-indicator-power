@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wingpanel-indicator-power\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-13 10:07+0530\n"
+"POT-Creation-Date: 2024-07-17 18:16+0000\n"
 "PO-Revision-Date: 2016-06-24 05:29+0000\n"
 "Last-Translator: Bone Pyae Sone <bone.burma@gmail.com>\n"
 "Language-Team: Burmese <my@li.org>\n"
@@ -99,6 +99,7 @@ msgstr "တွက်ချက်နေသည်"
 
 #: src/Services/Device.vala:284
 #, fuzzy
+#| msgid "%i%% charged"
 msgid "Fully charged"
 msgstr "%i%%  အားသွင်းထားသည်"
 
@@ -158,26 +159,13 @@ msgstr "စက်ပစ္စည်း"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:63
+#: src/Widgets/PopoverWidget.vala:61
 msgid "Show Percentage"
 msgstr "ရာခိုင်နှုန်းနဲ့ပြ"
 
-#: src/Widgets/PopoverWidget.vala:86
+#: src/Widgets/PopoverWidget.vala:77
 msgid "Power Settings…"
 msgstr "ဘထ္ထရီပါဝါ ပြင်ဆင်ရန်"
-
-#: src/Widgets/PowerModeList.vala:64
-#, fuzzy
-msgid "Power Saver"
-msgstr "ဘက္ကထရီ ပါဝါ"
-
-#: src/Widgets/PowerModeList.vala:79
-msgid "Balanced"
-msgstr ""
-
-#: src/Widgets/PowerModeList.vala:94
-msgid "Performance"
-msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "အားအသုံးများသည့် App များ"
@@ -191,6 +179,9 @@ msgstr ""
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "ဘက္ကထရီ"
+
+#~ msgid "Power"
+#~ msgstr "ဘက္ကထရီ ပါဝါ"
 
 #~ msgid "Power indicator"
 #~ msgstr "ဘထ္ဌရီအား အခြေအနပြ"
