@@ -3,12 +3,11 @@
  * SPDX-FileCopyrightText: 2024 elementary, Inc. (https://elementary.io)
  */
 
-using Power.Services.DBusInterfaces;
 
 public class Power.Widgets.PowerModeList : Gtk.Box {
     public static bool successfully_initialized { get; private set; default = true; }
 
-    private static PowerProfile? pprofile;
+    private static Services.DBusInterfaces.PowerProfile? pprofile;
     private static GLib.Settings? settings;
 
     public string settings_key { get; construct; }
@@ -23,7 +22,6 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
         Object (
             settings_key: on_battery ? "profile-on-good-battery" : "profile-plugged-in",
             orientation: Gtk.Orientation.VERTICAL,
-            spacing: 0,
             margin: 6
         );
     }
@@ -37,7 +35,12 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
         }
 
         try {
-            pprofile = Bus.get_proxy_sync (BusType.SYSTEM, POWER_PROFILES_DAEMON_NAME, POWER_PROFILES_DAEMON_PATH, DBusProxyFlags.NONE);
+            pprofile = Bus.get_proxy_sync (
+                BusType.SYSTEM,
+                Services.DBusInterfaces.POWER_PROFILES_DAEMON_NAME,
+                Services.DBusInterfaces.POWER_PROFILES_DAEMON_PATH,
+                DBusProxyFlags.NONE
+            );
         } catch (Error e) {
             critical (e.message);
             successfully_initialized = false;
@@ -54,46 +57,48 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
     }
 
     private void build_ui () {
-        var saver_icon = new Gtk.Image.from_resource (ICON_RES + "power-mode-powersaver-symbolic.svg");
+        Gtk.IconTheme.get_default ().add_resource_path ("/io/elementary/desktop/wingpanel/power");
+
+        var saver_icon = new Gtk.Image.from_icon_name ("power-mode-powersaver-symbolic", Gtk.IconSize.BUTTON);
 
         var saver_label = new Gtk.Label (_("Power Saver"));
 
         var saver_button_box = new Gtk.Box (HORIZONTAL, 6) {
             halign = Gtk.Align.START,
-            margin = 4
+            margin = 3
         };
-        saver_button_box.pack_start (saver_icon);
-        saver_button_box.pack_end (saver_label);
+        saver_button_box.add (saver_icon);
+        saver_button_box.add (saver_label);
 
         saver_radio = new Gtk.RadioButton (null);
         saver_radio.get_style_context ().add_class ("image-button");
         saver_radio.add (saver_button_box);
 
-        var balanced_icon = new Gtk.Image.from_resource (ICON_RES + "power-mode-balanced-symbolic.svg");
+        var balanced_icon = new Gtk.Image.from_icon_name ("power-mode-balanced-symbolic", Gtk.IconSize.BUTTON);
 
         var balanced_label = new Gtk.Label (_("Balanced"));
 
         var balanced_button_box = new Gtk.Box (HORIZONTAL, 6) {
             halign = Gtk.Align.START,
-            margin = 4
+            margin = 3
         };
-        balanced_button_box.pack_start (balanced_icon);
-        balanced_button_box.pack_end (balanced_label);
+        balanced_button_box.add (balanced_icon);
+        balanced_button_box.add (balanced_label);
 
         balanced_radio = new Gtk.RadioButton.from_widget (saver_radio);
         balanced_radio.get_style_context ().add_class ("image-button");
         balanced_radio.add (balanced_button_box);
 
-        var performance_icon = new Gtk.Image.from_resource (ICON_RES + "power-mode-performance-symbolic.svg");
+        var performance_icon = new Gtk.Image.from_icon_name ("power-mode-performance-symbolic", Gtk.IconSize.BUTTON);
 
         var performance_label = new Gtk.Label (_("Performance"));
 
         var performance_button_box = new Gtk.Box (HORIZONTAL, 6) {
             halign = Gtk.Align.START,
-            margin = 4
+            margin = 3
         };
-        performance_button_box.pack_start (performance_icon);
-        performance_button_box.pack_end (performance_label);
+        performance_button_box.add (performance_icon);
+        performance_button_box.add (performance_label);
 
         performance_radio = new Gtk.RadioButton.from_widget (saver_radio);
         performance_radio.get_style_context ().add_class ("image-button");
@@ -102,13 +107,13 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
         foreach (unowned var profile in pprofile.profiles) {
             switch (profile.get ("Profile").get_string ()) {
                 case "power-saver":
-                    pack_start (saver_radio);
+                    add (saver_radio);
                     break;
                 case "balanced":
-                    pack_start (balanced_radio);
+                    add (balanced_radio);
                     break;
                 case "performance":
-                    pack_start (performance_radio);
+                    add (performance_radio);
                     break;
             }
         }
