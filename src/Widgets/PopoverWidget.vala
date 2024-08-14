@@ -24,6 +24,8 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
 
     private Gtk.Revealer device_separator_revealer;
 
+    private PowerModeList power_mode_list;
+
     public PopoverWidget (bool is_in_session) {
         Object (is_in_session: is_in_session);
     }
@@ -73,6 +75,13 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         var show_percent_revealer = new Gtk.Revealer ();
         show_percent_revealer.add (show_percent_box);
 
+        power_mode_list = new PowerModeList (dm.on_battery);
+
+        var power_mode_separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
+            margin_top = 3,
+            margin_bottom = 3
+        };
+
         var show_settings_button = new Gtk.ModelButton () {
             text = _("Power Settings…")
         };
@@ -86,9 +95,14 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
             attach (screen_brightness, 0, 4);
         }
 
+        if (PowerModeList.successfully_initialized) {
+            attach (power_mode_separator, 0, 5);
+            attach (power_mode_list, 0, 6);
+        }
+
         if (is_in_session) {
-            attach (last_separator_revealer, 0, 5);
-            attach (show_settings_button, 0, 6);
+            attach (last_separator_revealer, 0, 7);
+            attach (show_settings_button, 0, 8);
         }
 
         update_device_separator_revealer ();
@@ -105,6 +119,10 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
             "reveal-child",
             GLib.BindingFlags.DEFAULT | GLib.BindingFlags.SYNC_CREATE
         );
+
+        dm.notify["on-battery"].connect (() => {
+            power_mode_list.update_on_battery_state (dm.on_battery);
+        });
 
         if (dm.has_battery && dm.display_device.is_a_battery) {
             show_percent_revealer.reveal_child = true;
@@ -129,5 +147,9 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
 
     private void update_device_separator_revealer () {
         device_separator_revealer.reveal_child = dm.backlight.present && dm.has_battery;
+    }
+
+    public void update_power_mode () {
+        power_mode_list?.update_active_profile ();
     }
 }
