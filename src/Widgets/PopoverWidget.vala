@@ -120,7 +120,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
             GLib.BindingFlags.DEFAULT | GLib.BindingFlags.SYNC_CREATE
         );
 
-        dm.notify["on-battery"].connect(() => {
+        dm.notify["on-battery"].connect (() => {
             power_mode_list.update_on_battery_state (dm.on_battery);
         });
 
