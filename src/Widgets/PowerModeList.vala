@@ -85,7 +85,10 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
 
         var balanced_button_box = new Gtk.Box (HORIZONTAL, 6) {
             halign = Gtk.Align.START,
-            margin = 3
+            margin_top = 3,
+            margin_bottom = 3,
+            margin_start = 3,
+            margin_end = 3
         };
         balanced_button_box.add (balanced_icon);
         balanced_button_box.add (balanced_label);
@@ -102,7 +105,10 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
 
         var performance_button_box = new Gtk.Box (HORIZONTAL, 6) {
             halign = Gtk.Align.START,
-            margin = 3
+            margin_top = 3,
+            margin_bottom = 3,
+            margin_start = 3,
+            margin_end = 3
         };
         performance_button_box.add (performance_icon);
         performance_button_box.add (performance_label);
