@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wingpanel-indicator-power\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 18:16+0000\n"
+"POT-Creation-Date: 2024-08-14 17:22+0000\n"
 "PO-Revision-Date: 2016-12-07 10:07+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: Uyghur <ug@li.org>\n"
@@ -19,25 +19,25 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-08 05:10+0000\n"
 "X-Generator: Launchpad (build 18292)\n"
 
-#: src/Indicator.vala:180
+#: src/Indicator.vala:181
 #, c-format
 msgid "%s: %s"
 msgstr ""
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:182
 msgid "Middle-click to hide percentage"
 msgstr ""
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:182
 msgid "Middle-click to show percentage"
 msgstr ""
 
-#: src/Indicator.vala:189
+#: src/Indicator.vala:190
 #, c-format
 msgid "Screen brightness: %i"
 msgstr ""
 
-#: src/Indicator.vala:190
+#: src/Indicator.vala:191
 msgid "Scroll to change screen brightness"
 msgstr ""
 
@@ -159,13 +159,27 @@ msgstr "ئۈسكۈنە"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "پىرسەنتىنى كۆرسىتىش"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "توك مەنبەسى تەڭشىكى…"
+
+#: src/Widgets/PowerModeList.vala:66
+#, fuzzy
+#| msgid "Power"
+msgid "Power Saver"
+msgstr "توك مەنبەسى"
+
+#: src/Widgets/PowerModeList.vala:84
+msgid "Balanced"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:104
+msgid "Performance"
+msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "كۆپ توك ئىشلىتىۋاتقان ئەپلەر"
@@ -184,9 +198,6 @@ msgstr "توك مەنبەسى تەڭشىكى…"
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "باتارىيە"
-
-#~ msgid "Power"
-#~ msgstr "توك مەنبەسى"
 
 #~ msgid "Power indicator"
 #~ msgstr "توك مەنبەسى كۆرسەتكۈچى"

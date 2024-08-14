@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 18:16+0000\n"
+"POT-Creation-Date: 2024-08-14 17:22+0000\n"
 "PO-Revision-Date: 2017-12-20 00:11+0000\n"
 "Last-Translator: Вагиф Кязым <vaqif134@gmail.com>\n"
 "Language-Team: Azerbaijani <https://weblate.elementary.io/projects/wingpanel/"
@@ -15,25 +15,25 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:180
+#: src/Indicator.vala:181
 #, c-format
 msgid "%s: %s"
 msgstr ""
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:182
 msgid "Middle-click to hide percentage"
 msgstr ""
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:182
 msgid "Middle-click to show percentage"
 msgstr ""
 
-#: src/Indicator.vala:189
+#: src/Indicator.vala:190
 #, c-format
 msgid "Screen brightness: %i"
 msgstr ""
 
-#: src/Indicator.vala:190
+#: src/Indicator.vala:191
 msgid "Scroll to change screen brightness"
 msgstr ""
 
@@ -161,13 +161,27 @@ msgstr "Cihaz"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "Faizi göstər"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "Təchizat ayarları…"
+
+#: src/Widgets/PowerModeList.vala:66
+#, fuzzy
+#| msgid "Power"
+msgid "Power Saver"
+msgstr "Təchiz"
+
+#: src/Widgets/PowerModeList.vala:84
+msgid "Balanced"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:104
+msgid "Performance"
+msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Çox enerji sərf edən tətbiqlər"
@@ -188,9 +202,6 @@ msgstr "Təchizat ayarları…"
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "Batareya"
-
-#~ msgid "Power"
-#~ msgstr "Təchiz"
 
 #~ msgid "Power indicator"
 #~ msgstr "Təchiz indikatoru"

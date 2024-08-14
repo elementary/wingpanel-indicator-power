@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 18:16+0000\n"
+"POT-Creation-Date: 2024-08-14 17:22+0000\n"
 "PO-Revision-Date: 2018-10-18 00:11+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Hindi <https://weblate.elementary.io/projects/wingpanel/"
@@ -15,25 +15,25 @@ msgstr ""
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:180
+#: src/Indicator.vala:181
 #, c-format
 msgid "%s: %s"
 msgstr ""
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:182
 msgid "Middle-click to hide percentage"
 msgstr ""
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:182
 msgid "Middle-click to show percentage"
 msgstr ""
 
-#: src/Indicator.vala:189
+#: src/Indicator.vala:190
 #, c-format
 msgid "Screen brightness: %i"
 msgstr ""
 
-#: src/Indicator.vala:190
+#: src/Indicator.vala:191
 msgid "Scroll to change screen brightness"
 msgstr ""
 
@@ -161,13 +161,27 @@ msgstr "यंत्र"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "प्रतिशत दिखाएँ"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "पावर सेटिंग्स …"
+
+#: src/Widgets/PowerModeList.vala:66
+#, fuzzy
+#| msgid "Power"
+msgid "Power Saver"
+msgstr "पावर"
+
+#: src/Widgets/PowerModeList.vala:84
+msgid "Balanced"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:104
+msgid "Performance"
+msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "एप्प्स ज़्यादा ताक़त ले रहें हैं"
@@ -188,9 +202,6 @@ msgstr "पावर सेटिंग्स …"
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "बैटरी"
-
-#~ msgid "Power"
-#~ msgstr "पावर"
 
 #~ msgid "Power indicator"
 #~ msgstr "शक्ति प्रदर्शक"

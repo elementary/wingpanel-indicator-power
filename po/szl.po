@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 18:16+0000\n"
+"POT-Creation-Date: 2024-08-14 17:22+0000\n"
 "PO-Revision-Date: 2020-02-22 19:08+0000\n"
 "Last-Translator: gkkulik <g.kulik@o2.pl>\n"
 "Language-Team: Silesian <https://l10n.elementary.io/projects/wingpanel/"
@@ -14,25 +14,25 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.9.1\n"
 
-#: src/Indicator.vala:180
+#: src/Indicator.vala:181
 #, c-format
 msgid "%s: %s"
 msgstr ""
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:182
 msgid "Middle-click to hide percentage"
 msgstr ""
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:182
 msgid "Middle-click to show percentage"
 msgstr ""
 
-#: src/Indicator.vala:189
+#: src/Indicator.vala:190
 #, c-format
 msgid "Screen brightness: %i"
 msgstr ""
 
-#: src/Indicator.vala:190
+#: src/Indicator.vala:191
 msgid "Scroll to change screen brightness"
 msgstr ""
 
@@ -166,13 +166,27 @@ msgstr "Maszina"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "Pokoż procynt"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "Sztelōnki ynergije…"
+
+#: src/Widgets/PowerModeList.vala:66
+#, fuzzy
+#| msgid "Power"
+msgid "Power Saver"
+msgstr "Ynergijo"
+
+#: src/Widgets/PowerModeList.vala:84
+msgid "Balanced"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:104
+msgid "Performance"
+msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Programy, co używajōm moc ynergije"
@@ -195,9 +209,6 @@ msgstr "Sztelōnki ynergije…"
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "Bateryjo"
-
-#~ msgid "Power"
-#~ msgstr "Ynergijo"
 
 #~ msgid "Power indicator"
 #~ msgstr "Skaźnik ynergije"
