@@ -10,7 +10,7 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
     private static Services.DBusInterfaces.PowerProfile? pprofile;
     private static GLib.Settings? settings;
 
-    public string settings_key { get; construct; }
+    public string settings_key { get; set construct; }
 
     private Gtk.RadioButton saver_radio;
     private Gtk.RadioButton balanced_radio;
@@ -20,9 +20,7 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
 
     public PowerModeList (bool on_battery) {
         Object (
-            settings_key: on_battery ? "profile-on-good-battery" : "profile-plugged-in",
-            orientation: Gtk.Orientation.VERTICAL,
-            margin: 6
+            settings_key: on_battery ? "profile-on-good-battery" : "profile-plugged-in"
         );
     }
 
@@ -57,7 +55,11 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
     }
 
     private void build_ui () {
-        Gtk.IconTheme.get_default ().add_resource_path ("/io/elementary/desktop/wingpanel/power");
+        orientation = Gtk.Orientation.VERTICAL;
+        margin_start = 6;
+        margin_top = 6;
+        margin_bottom = 6;
+        margin_end = 6;
 
         var saver_icon = new Gtk.Image.from_icon_name ("power-mode-powersaver-symbolic", Gtk.IconSize.BUTTON);
 
@@ -65,14 +67,17 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
 
         var saver_button_box = new Gtk.Box (HORIZONTAL, 6) {
             halign = Gtk.Align.START,
-            margin = 3
+            margin_top = 3,
+            margin_end = 3,
+            margin_bottom = 3,
+            margin_start = 3
         };
         saver_button_box.add (saver_icon);
         saver_button_box.add (saver_label);
 
         saver_radio = new Gtk.RadioButton (null);
         saver_radio.get_style_context ().add_class ("image-button");
-        saver_radio.add (saver_button_box);
+        saver_radio.child = saver_button_box;
 
         var balanced_icon = new Gtk.Image.from_icon_name ("power-mode-balanced-symbolic", Gtk.IconSize.BUTTON);
 
@@ -85,7 +90,9 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
         balanced_button_box.add (balanced_icon);
         balanced_button_box.add (balanced_label);
 
-        balanced_radio = new Gtk.RadioButton.from_widget (saver_radio);
+        balanced_radio = new Gtk.RadioButton (null) {
+            group = saver_radio
+        };
         balanced_radio.get_style_context ().add_class ("image-button");
         balanced_radio.add (balanced_button_box);
 
@@ -100,7 +107,9 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
         performance_button_box.add (performance_icon);
         performance_button_box.add (performance_label);
 
-        performance_radio = new Gtk.RadioButton.from_widget (saver_radio);
+        performance_radio = new Gtk.RadioButton (null) {
+            group = saver_radio
+        };
         performance_radio.get_style_context ().add_class ("image-button");
         performance_radio.add (performance_button_box);
 
@@ -124,24 +133,38 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
 
         saver_radio.toggled.connect (() => {
             if (saver_radio.active) {
-                settings?.set_string (settings_key, "power-saver");
-                pprofile.active_profile = "power-saver";
+                if (settings != null) {
+                    settings.set_string (settings_key, "power-saver");
+                } else {
+                    pprofile.active_profile = "power-saver";
+                }
             }
         });
 
         balanced_radio.toggled.connect (() => {
             if (balanced_radio.active) {
-                settings?.set_string (settings_key, "balanced");
-                pprofile.active_profile = "balanced";
+                if (settings != null) {
+                    settings.set_string (settings_key, "balanced");
+                } else {
+                    pprofile.active_profile = "balanced";
+                }
             }
         });
 
         performance_radio.toggled.connect (() => {
             if (performance_radio.active) {
-                settings?.set_string (settings_key, "performance");
-                pprofile.active_profile = "performance";
+                if (settings != null) {
+                    settings.set_string (settings_key, "performance");
+                } else {
+                    pprofile.active_profile = "performance";
+                }
             }
         });
+    }
+
+    public void update_on_battery_state (bool on_battery) {
+        settings_key = on_battery ? "profile-on-good-battery" : "profile-plugged-in";
+        update_active_profile ();
     }
 
     public void update_active_profile () {

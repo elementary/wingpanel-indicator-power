@@ -75,7 +75,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         var show_percent_revealer = new Gtk.Revealer ();
         show_percent_revealer.add (show_percent_box);
 
-        power_mode_list = new PowerModeList (false);
+        power_mode_list = new PowerModeList (dm.on_battery);
 
         var power_mode_separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
             margin_top = 3,
@@ -119,6 +119,10 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
             "reveal-child",
             GLib.BindingFlags.DEFAULT | GLib.BindingFlags.SYNC_CREATE
         );
+
+        dm.notify["on-battery"].connect(() => {
+            power_mode_list.update_on_battery_state (dm.on_battery);
+        });
 
         if (dm.has_battery && dm.display_device.is_a_battery) {
             show_percent_revealer.reveal_child = true;
