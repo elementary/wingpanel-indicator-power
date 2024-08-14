@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-14 17:22+0000\n"
-"PO-Revision-Date: 2023-01-16 14:25+0000\n"
+"PO-Revision-Date: 2024-08-15 20:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/he/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: src/Indicator.vala:181
@@ -168,18 +168,16 @@ msgid "Power Settings…"
 msgstr "הגדרות צריכת חשמל…"
 
 #: src/Widgets/PowerModeList.vala:66
-#, fuzzy
-#| msgid "Power"
 msgid "Power Saver"
-msgstr "צריכת חשמל"
+msgstr "חוסך חשמל"
 
 #: src/Widgets/PowerModeList.vala:84
 msgid "Balanced"
-msgstr ""
+msgstr "מאוזן"
 
 #: src/Widgets/PowerModeList.vala:104
 msgid "Performance"
-msgstr ""
+msgstr "ביצועים"
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "יישומים הצורכים הרבה חשמל"
