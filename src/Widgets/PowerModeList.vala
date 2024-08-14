@@ -3,28 +3,21 @@
  * SPDX-FileCopyrightText: 2024 elementary, Inc. (https://elementary.io)
  */
 
-
 public class Power.Widgets.PowerModeList : Gtk.Box {
     public static bool successfully_initialized { get; private set; default = true; }
 
     private static Services.DBusInterfaces.PowerProfile? pprofile;
+    private static Services.DeviceManager device_manager;
     private static GLib.Settings? settings;
 
-    public string settings_key { get; set construct; }
-
+    private string settings_key;
     private Gtk.RadioButton saver_radio;
     private Gtk.RadioButton balanced_radio;
     private Gtk.RadioButton performance_radio;
 
-    private const string ICON_RES = "/io/elementary/desktop/wingpanel/power/scalable/categories/";
+    class construct {
+        device_manager = Services.DeviceManager.get_default ();
 
-    public PowerModeList (bool on_battery) {
-        Object (
-            settings_key: on_battery ? "profile-on-good-battery" : "profile-plugged-in"
-        );
-    }
-
-    static construct {
         var schema = SettingsSchemaSource.get_default ().lookup ("io.elementary.settings-daemon.power", true);
         if (schema != null && schema.has_key ("profile-plugged-in") && schema.has_key ("profile-on-good-battery")) {
             settings = new GLib.Settings ("io.elementary.settings-daemon.power");
@@ -32,6 +25,7 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
             warning ("settings-daemon schema not found, will connect to power-profiles-daemon directly");
         }
 
+        // Connect always to know which profiles are available on the system
         try {
             pprofile = Bus.get_proxy_sync (
                 BusType.SYSTEM,
@@ -50,74 +44,21 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
             return;
         }
 
-        build_ui ();
-        build_events ();
-    }
-
-    private void build_ui () {
-        orientation = Gtk.Orientation.VERTICAL;
+        orientation = VERTICAL;
         margin_start = 6;
         margin_top = 6;
         margin_bottom = 6;
         margin_end = 6;
 
-        var saver_icon = new Gtk.Image.from_icon_name ("power-mode-powersaver-symbolic", Gtk.IconSize.BUTTON);
+        saver_radio = new PowerModeCheck ("power-mode-powersaver-symbolic", _("Power Saver"));
 
-        var saver_label = new Gtk.Label (_("Power Saver"));
-
-        var saver_button_box = new Gtk.Box (HORIZONTAL, 6) {
-            halign = Gtk.Align.START,
-            margin_top = 3,
-            margin_end = 3,
-            margin_bottom = 3,
-            margin_start = 3
-        };
-        saver_button_box.add (saver_icon);
-        saver_button_box.add (saver_label);
-
-        saver_radio = new Gtk.RadioButton (null);
-        saver_radio.get_style_context ().add_class ("image-button");
-        saver_radio.child = saver_button_box;
-
-        var balanced_icon = new Gtk.Image.from_icon_name ("power-mode-balanced-symbolic", Gtk.IconSize.BUTTON);
-
-        var balanced_label = new Gtk.Label (_("Balanced"));
-
-        var balanced_button_box = new Gtk.Box (HORIZONTAL, 6) {
-            halign = Gtk.Align.START,
-            margin_top = 3,
-            margin_bottom = 3,
-            margin_start = 3,
-            margin_end = 3
-        };
-        balanced_button_box.add (balanced_icon);
-        balanced_button_box.add (balanced_label);
-
-        balanced_radio = new Gtk.RadioButton (null) {
+        balanced_radio = new PowerModeCheck ("power-mode-balanced-symbolic", _("Balanced")) {
             group = saver_radio
         };
-        balanced_radio.get_style_context ().add_class ("image-button");
-        balanced_radio.add (balanced_button_box);
 
-        var performance_icon = new Gtk.Image.from_icon_name ("power-mode-performance-symbolic", Gtk.IconSize.BUTTON);
-
-        var performance_label = new Gtk.Label (_("Performance"));
-
-        var performance_button_box = new Gtk.Box (HORIZONTAL, 6) {
-            halign = Gtk.Align.START,
-            margin_top = 3,
-            margin_bottom = 3,
-            margin_start = 3,
-            margin_end = 3
-        };
-        performance_button_box.add (performance_icon);
-        performance_button_box.add (performance_label);
-
-        performance_radio = new Gtk.RadioButton (null) {
+        performance_radio = new PowerModeCheck ("power-mode-performance-symbolic", _("Performance")) {
             group = saver_radio
         };
-        performance_radio.get_style_context ().add_class ("image-button");
-        performance_radio.add (performance_button_box);
 
         foreach (unowned var profile in pprofile.profiles) {
             switch (profile.get ("Profile").get_string ()) {
@@ -132,10 +73,11 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
                     break;
             }
         }
-    }
 
-    private void build_events () {
-        update_active_profile ();
+        update_on_battery_state ();
+        device_manager.notify["on-battery"].connect (() => {
+            update_on_battery_state ();
+        });
 
         saver_radio.toggled.connect (() => {
             if (saver_radio.active) {
@@ -168,8 +110,8 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
         });
     }
 
-    public void update_on_battery_state (bool on_battery) {
-        settings_key = on_battery ? "profile-on-good-battery" : "profile-plugged-in";
+    private void update_on_battery_state () {
+        settings_key = device_manager.on_battery ? "profile-on-good-battery" : "profile-plugged-in";
         update_active_profile ();
     }
 
@@ -198,6 +140,39 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
                     performance_radio.active = true;
                     break;
             }
+        }
+    }
+
+    private class PowerModeCheck : Gtk.RadioButton {
+        public string icon_name { get; construct; }
+        public new string label { get; construct; }
+
+        public PowerModeCheck (string icon_name, string label) {
+            Object (
+                icon_name: icon_name,
+                label: label
+            );
+        }
+
+        construct {
+            var image = new Gtk.Image.from_icon_name (icon_name, BUTTON);
+
+            var label_widget = new Gtk.Label (label);
+
+            // Kinda funky spacing to center icon between label and radio
+            var box = new Gtk.Box (HORIZONTAL, 1) {
+                halign = START,
+                margin_top = 3,
+                margin_bottom = 3,
+                margin_start = 2,
+                margin_end = 3
+            };
+            box.add (image);
+            box.add (label_widget);
+
+            child = box;
+
+            get_style_context ().add_class ("image-button");
         }
     }
 }
