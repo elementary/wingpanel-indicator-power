@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 18:16+0000\n"
+"POT-Creation-Date: 2024-08-14 17:22+0000\n"
 "PO-Revision-Date: 2017-03-22 12:29+0000\n"
 "Last-Translator: Oto Rudovics <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,25 +14,25 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-24 06:32+0000\n"
 "X-Generator: Launchpad (build 18334)\n"
 
-#: src/Indicator.vala:180
+#: src/Indicator.vala:181
 #, c-format
 msgid "%s: %s"
 msgstr ""
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:182
 msgid "Middle-click to hide percentage"
 msgstr ""
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:182
 msgid "Middle-click to show percentage"
 msgstr ""
 
-#: src/Indicator.vala:189
+#: src/Indicator.vala:190
 #, c-format
 msgid "Screen brightness: %i"
 msgstr ""
 
-#: src/Indicator.vala:190
+#: src/Indicator.vala:191
 msgid "Scroll to change screen brightness"
 msgstr ""
 
@@ -166,13 +166,27 @@ msgstr "Ierīce"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "Rādīt procentus"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "Barošanas iestatījumi…"
+
+#: src/Widgets/PowerModeList.vala:66
+#, fuzzy
+#| msgid "Power"
+msgid "Power Saver"
+msgstr "Barošana"
+
+#: src/Widgets/PowerModeList.vala:84
+msgid "Balanced"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:104
+msgid "Performance"
+msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Aplikācijas izmanto ļoti daudz enerģijas"
@@ -195,9 +209,6 @@ msgstr "Barošanas iestatījumi…"
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "Baterija"
-
-#~ msgid "Power"
-#~ msgstr "Barošana"
 
 #~ msgid "Power indicator"
 #~ msgstr "Barošanas indikators"
