@@ -12,6 +12,7 @@ public class Power.Utils {
         bool natural_scroll;
         var event_source_device = e.get_source_device ();
         if (event_source_device == null) {
+            warning ("NO DEVIC");
             return false;
         }
 
@@ -62,9 +63,8 @@ public class Power.Utils {
             total_x_delta = 0.0;
             Power.Services.DeviceManager.get_default ()
                 .change_brightness ((int) Math.round (dir * BRIGHTNESS_STEP));
-            return true;
-        } else {
-            return false;
         }
+
+        return true;
     }
 }
