@@ -12,7 +12,6 @@ public class Power.Utils {
         bool natural_scroll;
         var event_source_device = e.get_source_device ();
         if (event_source_device == null) {
-            warning ("NO DEVIC");
             return false;
         }
 
