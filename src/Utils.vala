@@ -64,6 +64,6 @@ public class Power.Utils {
                 .change_brightness ((int) Math.round (dir * BRIGHTNESS_STEP));
         }
 
-        return true;
+        return Gdk.EVENT_STOP;
     }
 }
