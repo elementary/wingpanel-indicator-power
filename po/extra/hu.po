@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-14 17:22+0000\n"
-"PO-Revision-Date: 2024-08-07 00:16+0000\n"
+"PO-Revision-Date: 2024-08-22 09:16+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/hu/>\n"
@@ -55,7 +55,7 @@ msgstr "Új funkciók:"
 
 #: data/power.metainfo.xml.in:60
 msgid "Scroll horizontally on the panel icon to change display brightness"
-msgstr "Fényerő állítása vízszintes görgetéssel a panelikonon"
+msgstr "Fényerő állítása vízszintes görgetéssel az állapotsori ikonon"
 
 #: data/power.metainfo.xml.in:64
 msgid "Do a better job hiding the brightness slider on unsupported displays"
