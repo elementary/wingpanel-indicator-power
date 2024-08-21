@@ -19,13 +19,15 @@ files = files(
     'Services/DBusInterfaces/Properties.vala',
     'Services/DBusInterfaces/Screen.vala',
     'Services/DBusInterfaces/UPower.vala',
+    'Services/DBusInterfaces/PowerProfile.vala',
     'Services/Device.vala',
     'Services/DeviceManager.vala',
     'Widgets/DeviceList.vala',
     'Widgets/DeviceRow.vala',
     'Widgets/DisplayWidget.vala',
     'Widgets/PopoverWidget.vala',
-    'Widgets/ScreenBrightness.vala'
+    'Widgets/ScreenBrightness.vala',
+    'Widgets/PowerModeList.vala'
 )
 
 dependencies = [
@@ -43,6 +45,7 @@ dependencies = [
 shared_module(
     meson.project_name(),
     files,
+    indicator_resources,
     config_in,
     dependencies: dependencies,
     install: true,

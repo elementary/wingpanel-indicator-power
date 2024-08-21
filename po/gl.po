@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 04:49+0000\n"
+"POT-Creation-Date: 2024-08-14 17:22+0000\n"
 "PO-Revision-Date: 2021-03-02 04:42+0000\n"
 "Last-Translator: david <dcardelleg@gmail.com>\n"
 "Language-Team: Galician <https://l10n.elementary.io/projects/wingpanel/"
@@ -15,29 +15,29 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:180
+#: src/Indicator.vala:181
 #, c-format
 msgid "%s: %s"
 msgstr ""
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:182
 #, fuzzy
 #| msgid "Middle-click to toggle percentage"
 msgid "Middle-click to hide percentage"
 msgstr "Pulse o botón central do rato para conmutar a porcentaxe"
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:182
 #, fuzzy
 #| msgid "Middle-click to toggle percentage"
 msgid "Middle-click to show percentage"
 msgstr "Pulse o botón central do rato para conmutar a porcentaxe"
 
-#: src/Indicator.vala:189
+#: src/Indicator.vala:190
 #, c-format
 msgid "Screen brightness: %i"
 msgstr ""
 
-#: src/Indicator.vala:190
+#: src/Indicator.vala:191
 msgid "Scroll to change screen brightness"
 msgstr ""
 
@@ -165,13 +165,27 @@ msgstr "Dispositivo"
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "Mostrar porcentaxe"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "Configuración de enerxía …"
+
+#: src/Widgets/PowerModeList.vala:66
+#, fuzzy
+#| msgid "Power"
+msgid "Power Saver"
+msgstr "Poder"
+
+#: src/Widgets/PowerModeList.vala:84
+msgid "Balanced"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:104
+msgid "Performance"
+msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Aplicacións que usan moito poder"
@@ -192,9 +206,6 @@ msgstr "Configuración de enerxía …"
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "Batería"
-
-#~ msgid "Power"
-#~ msgstr "Poder"
 
 #~ msgid "Power indicator"
 #~ msgstr "Indicador de potencia"

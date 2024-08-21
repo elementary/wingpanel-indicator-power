@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 04:49+0000\n"
-"PO-Revision-Date: 2023-01-16 14:25+0000\n"
+"POT-Creation-Date: 2024-08-14 17:22+0000\n"
+"PO-Revision-Date: 2024-08-15 20:16+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/uk/>\n"
@@ -13,28 +13,28 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:180
+#: src/Indicator.vala:181
 #, c-format
 msgid "%s: %s"
 msgstr "%s: %s"
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:182
 msgid "Middle-click to hide percentage"
 msgstr "Клацніть середньою клавішею, щоб сховати відсотки"
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:182
 msgid "Middle-click to show percentage"
 msgstr "Клацніть середньою клавішею, щоб показати відсотки"
 
-#: src/Indicator.vala:189
+#: src/Indicator.vala:190
 #, c-format
 msgid "Screen brightness: %i"
 msgstr "Яскравість екрана: %i"
 
-#: src/Indicator.vala:190
+#: src/Indicator.vala:191
 msgid "Scroll to change screen brightness"
 msgstr "Прокрутіть, щоб змінити яскравість екрана"
 
@@ -166,13 +166,25 @@ msgstr "Пристрій"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "Показати відсотки"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "Налаштування живлення…"
+
+#: src/Widgets/PowerModeList.vala:66
+msgid "Power Saver"
+msgstr "Енергоощадження"
+
+#: src/Widgets/PowerModeList.vala:84
+msgid "Balanced"
+msgstr "Збалансований"
+
+#: src/Widgets/PowerModeList.vala:104
+msgid "Performance"
+msgstr "Швидкодія"
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Застосунки, що використовують забагато енергії"
@@ -196,9 +208,6 @@ msgstr "Налаштування живлення…"
 
 #~ msgid "Battery: %i%%"
 #~ msgstr "Батарея: %i%%"
-
-#~ msgid "Power"
-#~ msgstr "Живлення"
 
 #~ msgid "Power indicator"
 #~ msgstr "Індикатор живлення"

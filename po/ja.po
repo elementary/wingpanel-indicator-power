@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 04:49+0000\n"
-"PO-Revision-Date: 2024-05-07 05:13+0000\n"
+"POT-Creation-Date: 2024-08-14 17:22+0000\n"
+"PO-Revision-Date: 2024-08-15 20:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ja/>\n"
@@ -12,28 +12,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:180
+#: src/Indicator.vala:181
 #, c-format
 msgid "%s: %s"
 msgstr "%s: %s"
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:182
 msgid "Middle-click to hide percentage"
 msgstr "割合を非表示にするには中クリックしてください"
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:182
 msgid "Middle-click to show percentage"
 msgstr "割合を表示するには中クリックしてください"
 
-#: src/Indicator.vala:189
+#: src/Indicator.vala:190
 #, c-format
 msgid "Screen brightness: %i"
 msgstr "画面の輝度: %i"
 
-#: src/Indicator.vala:190
+#: src/Indicator.vala:191
 msgid "Scroll to change screen brightness"
 msgstr "画面の輝度を変更するにはスクロールしてください"
 
@@ -153,13 +153,25 @@ msgstr "デバイス"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "割合を表示"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "電源の設定…"
+
+#: src/Widgets/PowerModeList.vala:66
+msgid "Power Saver"
+msgstr "省電力"
+
+#: src/Widgets/PowerModeList.vala:84
+msgid "Balanced"
+msgstr "バランス"
+
+#: src/Widgets/PowerModeList.vala:104
+msgid "Performance"
+msgstr "パフォーマンス"
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "電力消費が激しいアプリ"
@@ -179,9 +191,6 @@ msgstr "電源の設定…"
 
 #~ msgid "Battery: %i%%"
 #~ msgstr "バッテリー: %i%%"
-
-#~ msgid "Power"
-#~ msgstr "電源"
 
 #~ msgid "Power indicator"
 #~ msgstr "パワーインジケーター"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 04:49+0000\n"
+"POT-Creation-Date: 2024-08-14 17:22+0000\n"
 "PO-Revision-Date: 2023-01-16 14:25+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -15,27 +15,27 @@ msgstr ""
 "X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:180
+#: src/Indicator.vala:181
 #, c-format
 msgid "%s: %s"
 msgstr "%s: %s"
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:182
 #, fuzzy
 msgid "Middle-click to hide percentage"
 msgstr "Midt-klikk for å veksle prosentvisning"
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:182
 #, fuzzy
 msgid "Middle-click to show percentage"
 msgstr "Midt-klikk for å veksle prosentvisning"
 
-#: src/Indicator.vala:189
+#: src/Indicator.vala:190
 #, c-format
 msgid "Screen brightness: %i"
 msgstr "Skjermlysstyrke: %i"
 
-#: src/Indicator.vala:190
+#: src/Indicator.vala:191
 #, fuzzy
 msgid "Scroll to change screen brightness"
 msgstr "Endre skjermlysstyrke ved å rulle"
@@ -163,13 +163,27 @@ msgstr "Enhet"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "Vis prosent"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "Strøminnstillinger …"
+
+#: src/Widgets/PowerModeList.vala:66
+#, fuzzy
+#| msgid "Power"
+msgid "Power Saver"
+msgstr "Strøm"
+
+#: src/Widgets/PowerModeList.vala:84
+msgid "Balanced"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:104
+msgid "Performance"
+msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Apper som bruker mye strøm"
@@ -191,9 +205,6 @@ msgstr "Strøminnstillinger …"
 
 #~ msgid "Battery: %i%%"
 #~ msgstr "Batteri: %i%%"
-
-#~ msgid "Power"
-#~ msgstr "Strøm"
 
 #~ msgid "Power indicator"
 #~ msgstr "Strømindikator"

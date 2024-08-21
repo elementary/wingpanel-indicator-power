@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 04:49+0000\n"
+"POT-Creation-Date: 2024-08-14 17:22+0000\n"
 "PO-Revision-Date: 2022-08-06 10:54+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/wingpanel/"
@@ -15,29 +15,29 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
-#: src/Indicator.vala:180
+#: src/Indicator.vala:181
 #, c-format
 msgid "%s: %s"
 msgstr "%s: %s"
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:182
 #, fuzzy
 #| msgid "Middle-click to toggle percentage"
 msgid "Middle-click to hide percentage"
 msgstr "마우스 가운데 버튼 클릭으로 백분율로 전환"
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:182
 #, fuzzy
 #| msgid "Middle-click to toggle percentage"
 msgid "Middle-click to show percentage"
 msgstr "마우스 가운데 버튼 클릭으로 백분율로 전환"
 
-#: src/Indicator.vala:189
+#: src/Indicator.vala:190
 #, c-format
 msgid "Screen brightness: %i"
 msgstr "화면 밝기: %i"
 
-#: src/Indicator.vala:190
+#: src/Indicator.vala:191
 msgid "Scroll to change screen brightness"
 msgstr "스크롤 하여 화면 밝기 변경"
 
@@ -157,13 +157,27 @@ msgstr "장치"
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:61
+#: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
 msgstr "백분율 표시"
 
-#: src/Widgets/PopoverWidget.vala:77
+#: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "전력 설정…"
+
+#: src/Widgets/PowerModeList.vala:66
+#, fuzzy
+#| msgid "Power"
+msgid "Power Saver"
+msgstr "전력"
+
+#: src/Widgets/PowerModeList.vala:84
+msgid "Balanced"
+msgstr ""
+
+#: src/Widgets/PowerModeList.vala:104
+msgid "Performance"
+msgstr ""
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "전력을 많이 사용하는 앱"
@@ -185,9 +199,6 @@ msgstr "전력 설정…"
 #~| msgid "Battery"
 #~ msgid "Battery: %i%%"
 #~ msgstr "배터리"
-
-#~ msgid "Power"
-#~ msgstr "전력"
 
 #~ msgid "Power indicator"
 #~ msgstr "전력 표시기"
