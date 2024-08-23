@@ -252,6 +252,20 @@ public class Power.Services.Device : Object {
     }
 
     private unowned string get_battery_icon () {
+        if (coarse_battery_level) {
+            if (percentage < 20) {
+                return "battery-empty";
+            } else if (percentage < 40) {
+                return "battery-caution";
+            } else if (percentage < 60) {
+                return "battery-low";
+            } else if (percentage < 80) {
+                return "battery-good";
+            } else {
+                return "battery-full";
+            }
+        }
+
         if (percentage <= 0) {
             return "battery-good";
         }
