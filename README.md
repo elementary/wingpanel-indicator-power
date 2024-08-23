@@ -11,7 +11,7 @@ You'll need the following dependencies:
 * libudev-dev
 * libwingpanel-dev
 * libnotify
-* meson
+* meson >= 0.58.0
 * valac
 
 Run `meson` to configure the build environment and then `ninja` to build

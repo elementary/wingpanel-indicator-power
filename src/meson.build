@@ -1,9 +1,9 @@
 wingpanel_dep = dependency('wingpanel')
-wingpanel_indicatorsdir = wingpanel_dep.get_pkgconfig_variable('indicatorsdir', define_variable: ['libdir', libdir])
+wingpanel_indicatorsdir = wingpanel_dep.get_variable('indicatorsdir', pkgconfig_define: ['libdir', libdir])
 
 conf_data = configuration_data()
 conf_data.set('GETTEXT_PACKAGE', gettext_name)
-conf_data.set('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
+conf_data.set('LOCALEDIR', prefix / get_option('localedir'))
 
 config_in = configure_file(
     input: 'config.vala.in',
