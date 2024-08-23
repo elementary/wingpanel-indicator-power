@@ -4,5 +4,45 @@
     <file alias="scalable/categories/power-mode-balanced-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/balanced.svg</file>
     <file alias="scalable/categories/power-mode-performance-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/performance.svg</file>
     <file alias="scalable/categories/power-mode-powersaver-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/powersaver.svg</file>
+
+    <file alias="24x24/status/battery-100-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-100.svg</file>
+    <file alias="24x24/status/battery-95-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-95.svg</file>
+    <file alias="24x24/status/battery-90-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-90.svg</file>
+    <file alias="24x24/status/battery-85-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-85.svg</file>
+    <file alias="24x24/status/battery-80-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-80.svg</file>
+    <file alias="24x24/status/battery-75-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-75.svg</file>
+    <file alias="24x24/status/battery-70-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-70.svg</file>
+    <file alias="24x24/status/battery-65-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-65.svg</file>
+    <file alias="24x24/status/battery-60-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-60.svg</file>
+    <file alias="24x24/status/battery-55-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-55.svg</file>
+    <file alias="24x24/status/battery-50-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-50.svg</file>
+    <file alias="24x24/status/battery-45-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-45.svg</file>
+    <file alias="24x24/status/battery-40-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-40.svg</file>
+    <file alias="24x24/status/battery-35-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-35.svg</file>
+    <file alias="24x24/status/battery-30-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-30.svg</file>
+    <file alias="24x24/status/battery-25-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-25.svg</file>
+    <file alias="24x24/status/battery-20-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-20.svg</file>
+    <file alias="24x24/status/battery-10-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-10.svg</file>
+    <file alias="24x24/status/battery-0-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-0.svg</file>
+
+    <file alias="24x24/status/battery-100-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-100-charging.svg</file>
+    <file alias="24x24/status/battery-95-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-95-charging.svg</file>
+    <file alias="24x24/status/battery-90-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-90-charging.svg</file>
+    <file alias="24x24/status/battery-85-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-85-charging.svg</file>
+    <file alias="24x24/status/battery-80-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-80-charging.svg</file>
+    <file alias="24x24/status/battery-75-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-75-charging.svg</file>
+    <file alias="24x24/status/battery-70-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-70-charging.svg</file>
+    <file alias="24x24/status/battery-65-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-65-charging.svg</file>
+    <file alias="24x24/status/battery-60-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-60-charging.svg</file>
+    <file alias="24x24/status/battery-55-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-55-charging.svg</file>
+    <file alias="24x24/status/battery-50-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-50-charging.svg</file>
+    <file alias="24x24/status/battery-45-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-45-charging.svg</file>
+    <file alias="24x24/status/battery-40-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-40-charging.svg</file>
+    <file alias="24x24/status/battery-35-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-35-charging.svg</file>
+    <file alias="24x24/status/battery-30-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-30-charging.svg</file>
+    <file alias="24x24/status/battery-25-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-25-charging.svg</file>
+    <file alias="24x24/status/battery-20-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-20-charging.svg</file>
+    <file alias="24x24/status/battery-10-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-10-charging.svg</file>
+    <file alias="24x24/status/battery-0-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-0-charging.svg</file>
   </gresource>
 </gresources>

@@ -227,7 +227,27 @@ public class Power.Services.Device : Object {
     }
 
     public string get_symbolic_icon_name_for_battery () {
-        return get_icon_name_for_battery () + "-symbolic";
+        if (!is_a_battery) {
+            return "preferences-system-power-symbolic";
+        }
+
+        var icon_name = "battery";
+
+        if (percentage >= 20) {
+            icon_name += "-%i".printf ((int) (5 * Math.round (percentage / 5)));
+        } else if (percentage >= 10) {
+            icon_name += "10";
+        } else {
+            icon_name += "-0";
+        }
+
+        if (is_charging) {
+            icon_name += "-charging";
+        } else if (time_to_empty == 0 || time_to_empty < 30 * 60) {
+            icon_name = "battery-0";
+        }
+
+        return icon_name += "-symbolic";
     }
 
     public string get_icon_name_for_battery () {
