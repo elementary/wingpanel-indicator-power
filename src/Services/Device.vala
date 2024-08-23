@@ -313,15 +313,18 @@ public class Power.Services.Device : Object {
                 description = C_("battery-level", "Full");
             }
         } else {
-            if (is_charging && time_to_full > 0) {
-                description = _("%.0f%% charged").printf (percentage);
-            } else {
-                description = _("%.0f%% remaining").printf (percentage);
-            }
-        }
+            if (is_charging) {
+                if (percentage == 100) {
+                    description = _("Fully charged");
+                    return;
+                }
 
-        if (percentage == 100 && is_charging) {
-            return _("Fully charged");
+                if (time_to_full > 0) {
+                    description = _("%.0f%% charged").printf (percentage);
+                } else {
+                    description = _("%.0f%% remaining").printf (percentage);
+                }
+            }
         }
 
         if (is_charging && time_to_full > 0) {
