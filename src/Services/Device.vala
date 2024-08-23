@@ -310,7 +310,7 @@ public class Power.Services.Device : Object {
             } else if (percentage < 80) {
                 description = C_("battery-level", "High");
             } else {
-                description = C_("battery-level", "Fully charged");
+                description = C_("battery-level", "Full");
             }
         } else {
             if (is_charging && time_to_full > 0) {
@@ -318,6 +318,10 @@ public class Power.Services.Device : Object {
             } else {
                 description = _("%.0f%% remaining").printf (percentage);
             }
+        }
+
+        if (percentage == 100 && is_charging) {
+            return _("Fully charged");
         }
 
         if (is_charging && time_to_full > 0) {
