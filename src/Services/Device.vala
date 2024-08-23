@@ -125,6 +125,7 @@ public class Power.Services.Device : Object {
 
     private DBusInterfaces.Device? device = null;
 
+    public bool coarse_battery_level { get; private set; default = false; }
     public bool has_history { get; private set; }
     public bool has_statistics { get; private set; }
     public bool is_present { get; private set; }
@@ -132,6 +133,7 @@ public class Power.Services.Device : Object {
     public bool online { get; private set; }
     public bool power_supply { get; private set; }
     public double capacity { get; private set; }
+    public string description { get; private set; }
     public double energy { get; private set; }
     public double energy_empty { get; private set; }
     public double energy_full { get; private set; }
@@ -164,6 +166,9 @@ public class Power.Services.Device : Object {
         if (connect_to_bus ()) {
             update_properties ();
             connect_signals ();
+
+            update_description ();
+            notify["percentage"].connect (update_description);
         }
     }
 
@@ -184,6 +189,7 @@ public class Power.Services.Device : Object {
     }
 
     private void update_properties () {
+        coarse_battery_level = device.battery_level != 1;
         has_history = device.has_history;
         has_statistics = device.has_statistics;
         is_present = device.is_present;
@@ -269,85 +275,89 @@ public class Power.Services.Device : Object {
         return "battery-full";
     }
 
-    public string get_info () {
-        var percent = (int) Math.round (percentage);
-
+    private void update_description () {
         if (!is_a_battery) {
-            return "";
+            return;
         }
 
-        if (percent <= 0) {
-            return _("Calculating…");
+        if (percentage == 0 && state == UNKNOWN) {
+            description = _("Unknown. Device may be locked.");
+            return;
         }
 
-        if (percent == 100 && is_charging) {
-            return _("Fully charged");
-        }
-
-        var info = "";
-
-        if (is_charging) {
-            info += _("%i%% charged").printf (percent);
-
-            if (time_to_full > 0) {
-                info += " - ";
-                if (time_to_full >= 3600) {
-                    var hours = time_to_full / 3600;
-                    info += dngettext (
-                        Constants.GETTEXT_PACKAGE,
-                        "%lld hour until full",
-                        "%lld hours until full",
-                        (ulong) hours
-                    ).printf (hours);
-                } else if (time_to_full >= 60) {
-                    var minutes = time_to_full / 60;
-                    info += dngettext (
-                        Constants.GETTEXT_PACKAGE,
-                        "%lld minute until full",
-                        "%lld minutes until full",
-                        (ulong) minutes
-                    ).printf (minutes);
-                } else {
-                    info += dngettext (
-                        Constants.GETTEXT_PACKAGE,
-                        "%lld second until full",
-                        "%lld seconds until full",
-                        (ulong) time_to_full
-                    ).printf (time_to_full);
-                }
+        if (coarse_battery_level) {
+            // Coarse battery level can sometimes be unknown, percentage is more reliable
+            if (percentage < 20) {
+                description = C_("battery-level", "Critical");
+            } else if (percentage < 40) {
+                description = C_("battery-level", "Low");
+            } else if (percentage < 60) {
+                description = C_("battery-level", "Good");
+            } else if (percentage < 80) {
+                description = C_("battery-level", "High");
+            } else {
+                description = C_("battery-level", "Fully charged");
             }
         } else {
-            info += _("%i%% remaining").printf (percent);
-
-            if (time_to_empty > 0) {
-                info += " - ";
-                if (time_to_empty >= 3600) {
-                    var hours = time_to_empty / 3600;
-                    info += dngettext (
-                        Constants.GETTEXT_PACKAGE,
-                        "%lld hour until empty",
-                        "%lld hours until empty",
-                        (ulong) hours
-                    ).printf (hours);
-                } else if (time_to_empty >= 60) {
-                    var minutes = time_to_empty / 60;
-                    info += dngettext (
-                        Constants.GETTEXT_PACKAGE,
-                        "%lld minute until empty",
-                        "%lld minutes until empty",
-                        (ulong) minutes
-                    ).printf (minutes);
-                } else {
-                    info += dngettext (
-                        Constants.GETTEXT_PACKAGE,
-                        "%lld second until empty",
-                        "%lld seconds until empty",
-                        (ulong) time_to_empty
-                    ).printf (time_to_empty);
-                }
+            if (is_charging && time_to_full > 0) {
+                description = _("%.0f%% charged").printf (percentage);
+            } else {
+                description = _("%.0f%% remaining").printf (percentage);
             }
         }
 
-        return info;
+        if (is_charging && time_to_full > 0) {
+            description += "—";
+            if (time_to_full >= 3600) {
+                var hours = time_to_full / 3600;
+                description += dngettext (
+                    Constants.GETTEXT_PACKAGE,
+                    "%lld hour until full",
+                    "%lld hours until full",
+                    (ulong) hours
+                ).printf (hours);
+            } else if (time_to_full >= 60) {
+                var minutes = time_to_full / 60;
+                description += dngettext (
+                    Constants.GETTEXT_PACKAGE,
+                    "%lld minute until full",
+                    "%lld minutes until full",
+                    (ulong) minutes
+                ).printf (minutes);
+            } else {
+                description += dngettext (
+                    Constants.GETTEXT_PACKAGE,
+                    "%lld second until full",
+                    "%lld seconds until full",
+                    (ulong) time_to_full
+                ).printf (time_to_full);
+            }
+        } else if (time_to_empty > 0) {
+            description += "—";
+            if (time_to_empty >= 3600) {
+                var hours = time_to_empty / 3600;
+                description += dngettext (
+                    Constants.GETTEXT_PACKAGE,
+                    "%lld hour until empty",
+                    "%lld hours until empty",
+                    (ulong) hours
+                ).printf (hours);
+            } else if (time_to_empty >= 60) {
+                var minutes = time_to_empty / 60;
+                description += dngettext (
+                    Constants.GETTEXT_PACKAGE,
+                    "%lld minute until empty",
+                    "%lld minutes until empty",
+                    (ulong) minutes
+                ).printf (minutes);
+            } else {
+                description += dngettext (
+                    Constants.GETTEXT_PACKAGE,
+                    "%lld second until empty",
+                    "%lld seconds until empty",
+                    (ulong) time_to_empty
+                ).printf (time_to_empty);
+            }
+        }
     }
 }

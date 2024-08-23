@@ -64,6 +64,7 @@ namespace Power.Services.DBusInterfaces {
         public abstract string native_path { public owned get; public set; }
         public abstract string serial { public owned get; public set; }
         public abstract string vendor { public owned get; public set; }
+        public abstract uint32 battery_level { owned get; }
         public abstract uint32 state { public owned get; public set; }
         public abstract uint32 technology { public owned get; public set; }
         public abstract uint32 Type { public owned get; public set; }

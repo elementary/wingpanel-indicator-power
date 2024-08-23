@@ -49,8 +49,7 @@ public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
             valign = Gtk.Align.END
         };
 
-
-        var info_label = new Gtk.Label (battery.get_info ()) {
+        var info_label = new Gtk.Label ("") {
             halign = Gtk.Align.START,
             valign = Gtk.Align.START
         };
@@ -73,8 +72,9 @@ public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
         battery.properties_updated.connect (() => {
             update_icons ();
             title_label.set_markup (get_title ());
-            info_label.label = battery.get_info ();
         });
+
+        battery.bind_property ("description", info_label, "label", SYNC_CREATE);
     }
 
     private void update_icons () {
