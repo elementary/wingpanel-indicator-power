@@ -236,7 +236,7 @@ public class Power.Services.Device : Object {
         if (percentage >= 20) {
             icon_name += "-%i".printf ((int) (5 * Math.round (percentage / 5)));
         } else if (percentage >= 10) {
-            icon_name += "10";
+            icon_name += "-10";
         } else {
             icon_name += "-0";
         }
