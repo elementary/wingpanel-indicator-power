@@ -243,7 +243,7 @@ public class Power.Services.Device : Object {
 
         if (is_charging) {
             icon_name += "-charging";
-        } else if (time_to_empty == 0 || time_to_empty < 30 * 60) {
+        } else if (time_to_empty > 0 && time_to_empty < 15 * 60) {
             icon_name = "battery-0";
         }
 
