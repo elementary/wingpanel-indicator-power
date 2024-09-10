@@ -3,38 +3,39 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-14 17:22+0000\n"
-"PO-Revision-Date: 2016-08-06 15:11+0000\n"
-"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2024-09-07 13:16+0000\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
+"wingpanel/wingpanel-indicator-power/zh_Hant/>\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
 
 #: src/Indicator.vala:181
 #, c-format
 msgid "%s: %s"
-msgstr ""
+msgstr "%s：%s"
 
 #: src/Indicator.vala:182
 msgid "Middle-click to hide percentage"
-msgstr ""
+msgstr "中鍵點擊來隱藏百分比"
 
 #: src/Indicator.vala:182
 msgid "Middle-click to show percentage"
-msgstr ""
+msgstr "中鍵點擊來顯示百分比"
 
 #: src/Indicator.vala:190
 #, c-format
 msgid "Screen brightness: %i"
-msgstr ""
+msgstr "螢幕亮度：%i"
 
 #: src/Indicator.vala:191
 msgid "Scroll to change screen brightness"
-msgstr ""
+msgstr "捲動來調整螢幕亮度"
 
 #: src/Services/Device.vala:65
 msgid "Battery"
@@ -66,37 +67,35 @@ msgstr "電話"
 
 #: src/Services/Device.vala:79
 msgid "Media Player"
-msgstr ""
+msgstr "媒體播放器"
 
 #: src/Services/Device.vala:81
 msgid "Tablet"
-msgstr ""
+msgstr "繪圖板"
 
 #: src/Services/Device.vala:83
 msgid "Computer"
-msgstr ""
+msgstr "電腦"
 
 #: src/Services/Device.vala:85
 msgid "Controller"
-msgstr ""
+msgstr "手把"
 
 #: src/Services/Device.vala:87
 msgid "Pen"
-msgstr ""
+msgstr "筆"
 
 #: src/Services/Device.vala:89
 msgid "Plugged In"
-msgstr ""
+msgstr "插入電源線"
 
 #: src/Services/Device.vala:280
 msgid "Calculating…"
 msgstr "正在計算…"
 
 #: src/Services/Device.vala:284
-#, fuzzy
-#| msgid "%i%% charged"
 msgid "Fully charged"
-msgstr "已充電 %i%%"
+msgstr "已充飽"
 
 #: src/Services/Device.vala:290
 #, c-format
@@ -152,7 +151,7 @@ msgstr "裝置"
 #: src/Widgets/DisplayWidget.vala:32
 #, c-format
 msgid "%i%%"
-msgstr ""
+msgstr "%i%%"
 
 #: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
@@ -163,18 +162,16 @@ msgid "Power Settings…"
 msgstr "電源設定值…"
 
 #: src/Widgets/PowerModeList.vala:66
-#, fuzzy
-#| msgid "Power"
 msgid "Power Saver"
-msgstr "電源"
+msgstr "省電"
 
 #: src/Widgets/PowerModeList.vala:84
 msgid "Balanced"
-msgstr ""
+msgstr "平衡"
 
 #: src/Widgets/PowerModeList.vala:104
 msgid "Performance"
-msgstr ""
+msgstr "效能"
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "大量耗電的程式"
