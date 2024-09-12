@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-14 17:22+0000\n"
-"PO-Revision-Date: 2023-03-13 21:25+0000\n"
+"PO-Revision-Date: 2024-09-13 00:01+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ka/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:49+0000\n"
 
 #: src/Indicator.vala:181
@@ -162,18 +162,16 @@ msgid "Power Settings…"
 msgstr "კვების მორგება…"
 
 #: src/Widgets/PowerModeList.vala:66
-#, fuzzy
-#| msgid "Power"
 msgid "Power Saver"
-msgstr "ელკვება"
+msgstr "კვების დაზოგვა"
 
 #: src/Widgets/PowerModeList.vala:84
 msgid "Balanced"
-msgstr ""
+msgstr "დაბალანსებული"
 
 #: src/Widgets/PowerModeList.vala:104
 msgid "Performance"
-msgstr ""
+msgstr "წარმადობა"
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "აპები, რომლებიც ბევრ ენერგიას იყენებენ"
