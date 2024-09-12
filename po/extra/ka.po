@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-14 17:22+0000\n"
-"PO-Revision-Date: 2023-04-15 00:59+0000\n"
+"PO-Revision-Date: 2024-09-13 00:01+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/ka/>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16.4\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/power.metainfo.xml.in:11
 msgid "Power Indicator"
-msgstr ""
+msgstr "კვების მაჩვენებელი"
 
 #: data/power.metainfo.xml.in:12
 msgid ""
@@ -92,7 +92,7 @@ msgstr ""
 
 #: data/power.metainfo.xml.in:101
 msgid "Filter out internal devices"
-msgstr ""
+msgstr "შიდა მოწყობილობების გაფილტვრა"
 
 #: data/power.metainfo.xml.in:102
 msgid "Show tooltip on hover"
