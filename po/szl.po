@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 17:22+0000\n"
+"POT-Creation-Date: 2024-10-02 17:54+0000\n"
 "PO-Revision-Date: 2020-02-22 19:08+0000\n"
 "Last-Translator: gkkulik <g.kulik@o2.pl>\n"
 "Language-Team: Silesian <https://l10n.elementary.io/projects/wingpanel/"
@@ -88,22 +88,22 @@ msgstr ""
 msgid "Plugged In"
 msgstr ""
 
-#: src/Services/Device.vala:280
+#: src/Services/Device.vala:303
 msgid "Calculating…"
 msgstr "Rachowanie…"
 
-#: src/Services/Device.vala:284
+#: src/Services/Device.vala:307
 #, fuzzy
 #| msgid "%i%% charged"
 msgid "Fully charged"
 msgstr "%i%% naladowane"
 
-#: src/Services/Device.vala:290
+#: src/Services/Device.vala:313
 #, c-format
 msgid "%i%% charged"
 msgstr "%i%% naladowane"
 
-#: src/Services/Device.vala:298
+#: src/Services/Device.vala:321
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
@@ -111,7 +111,7 @@ msgstr[0] "%lld godzina do naladowanio"
 msgstr[1] "%lld godziny do naladowanio"
 msgstr[2] "%lld godzin do naladowanio"
 
-#: src/Services/Device.vala:306
+#: src/Services/Device.vala:329
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
@@ -119,7 +119,7 @@ msgstr[0] "%lld minuta do naladowanio"
 msgstr[1] "%lld minuty do naladowanio"
 msgstr[2] "%lld minut do naladowanio"
 
-#: src/Services/Device.vala:313
+#: src/Services/Device.vala:336
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
@@ -127,12 +127,12 @@ msgstr[0] "%lld sekunda do naladowanio"
 msgstr[1] "%lld sekundy do naladowanio"
 msgstr[2] "%lld sekund do naladowanio"
 
-#: src/Services/Device.vala:320
+#: src/Services/Device.vala:343
 #, c-format
 msgid "%i%% remaining"
 msgstr "ôstało %i%%"
 
-#: src/Services/Device.vala:328
+#: src/Services/Device.vala:351
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
@@ -140,7 +140,7 @@ msgstr[0] "%lld godzina do kōńca"
 msgstr[1] "%lld godziny do kōńca"
 msgstr[2] "%lld godzin do kōńca"
 
-#: src/Services/Device.vala:336
+#: src/Services/Device.vala:359
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
@@ -148,7 +148,7 @@ msgstr[0] "%lld minuta do kōńca"
 msgstr[1] "%lld minuty do kōńca"
 msgstr[2] "%lld minut do kōńca"
 
-#: src/Services/Device.vala:343
+#: src/Services/Device.vala:366
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -174,17 +174,17 @@ msgstr "Pokoż procynt"
 msgid "Power Settings…"
 msgstr "Sztelōnki ynergije…"
 
-#: src/Widgets/PowerModeList.vala:66
+#: src/Widgets/PowerModeList.vala:53
 #, fuzzy
 #| msgid "Power"
 msgid "Power Saver"
 msgstr "Ynergijo"
 
-#: src/Widgets/PowerModeList.vala:84
+#: src/Widgets/PowerModeList.vala:55
 msgid "Balanced"
 msgstr ""
 
-#: src/Widgets/PowerModeList.vala:104
+#: src/Widgets/PowerModeList.vala:59
 msgid "Performance"
 msgstr ""
 

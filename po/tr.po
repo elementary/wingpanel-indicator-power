@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 17:22+0000\n"
+"POT-Creation-Date: 2024-10-02 17:54+0000\n"
 "PO-Revision-Date: 2023-05-18 21:06+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/wingpanel/"
@@ -89,60 +89,60 @@ msgstr "Kalem"
 msgid "Plugged In"
 msgstr "Prize takılı"
 
-#: src/Services/Device.vala:280
+#: src/Services/Device.vala:303
 msgid "Calculating…"
 msgstr "Hesaplanıyor…"
 
-#: src/Services/Device.vala:284
+#: src/Services/Device.vala:307
 msgid "Fully charged"
 msgstr "Tamamen şarj edildi"
 
-#: src/Services/Device.vala:290
+#: src/Services/Device.vala:313
 #, c-format
 msgid "%i%% charged"
 msgstr "%%%i şarj edildi"
 
-#: src/Services/Device.vala:298
+#: src/Services/Device.vala:321
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "dolmasına %lld saat kaldı"
 msgstr[1] "dolmasına %lld saat kaldı"
 
-#: src/Services/Device.vala:306
+#: src/Services/Device.vala:329
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "dolmasına %lld dakika kaldı"
 msgstr[1] "dolmasına %lld dakika kaldı"
 
-#: src/Services/Device.vala:313
+#: src/Services/Device.vala:336
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "dolmasına %lld saniye kaldı"
 msgstr[1] "dolmasına %lld saniye kaldı"
 
-#: src/Services/Device.vala:320
+#: src/Services/Device.vala:343
 #, c-format
 msgid "%i%% remaining"
 msgstr "%%%i kaldı"
 
-#: src/Services/Device.vala:328
+#: src/Services/Device.vala:351
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "bitmesine %lld saat kaldı"
 msgstr[1] "bitmesine %lld saat kaldı"
 
-#: src/Services/Device.vala:336
+#: src/Services/Device.vala:359
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "bitmesine %lld dakika kaldı"
 msgstr[1] "bitmesine %lld dakika kaldı"
 
-#: src/Services/Device.vala:343
+#: src/Services/Device.vala:366
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -167,17 +167,17 @@ msgstr "Yüzdeyi Göster"
 msgid "Power Settings…"
 msgstr "Güç Ayarları…"
 
-#: src/Widgets/PowerModeList.vala:66
+#: src/Widgets/PowerModeList.vala:53
 #, fuzzy
 #| msgid "Power"
 msgid "Power Saver"
 msgstr "Güç"
 
-#: src/Widgets/PowerModeList.vala:84
+#: src/Widgets/PowerModeList.vala:55
 msgid "Balanced"
 msgstr ""
 
-#: src/Widgets/PowerModeList.vala:104
+#: src/Widgets/PowerModeList.vala:59
 msgid "Performance"
 msgstr ""
 
