@@ -344,9 +344,9 @@ public class Power.Services.Device : Object {
 
                 if (time_to_full > 0) {
                     description = _("%.0f%% charged").printf (percentage);
-                } else {
-                    description = _("%.0f%% remaining").printf (percentage);
                 }
+            } else {
+                description = _("%.0f%% remaining").printf (percentage);
             }
         }
 
