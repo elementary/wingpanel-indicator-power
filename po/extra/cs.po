@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 17:22+0000\n"
+"POT-Creation-Date: 2024-10-02 17:54+0000\n"
 "PO-Revision-Date: 2022-01-10 17:06+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/wingpanel/"
@@ -32,78 +32,82 @@ msgstr ""
 "zobrazte aplikace, výrazně vybíjející akumulátor"
 
 #: data/power.metainfo.xml.in:35 data/power.metainfo.xml.in:45
-#: data/power.metainfo.xml.in:62 data/power.metainfo.xml.in:81
-#: data/power.metainfo.xml.in:98
+#: data/power.metainfo.xml.in:55 data/power.metainfo.xml.in:72
+#: data/power.metainfo.xml.in:91 data/power.metainfo.xml.in:108
 msgid "Minor updates:"
 msgstr "Drobné aktualizace:"
 
 #: data/power.metainfo.xml.in:37
-msgid "Drop inaccurate \"Apps using lots of power\" feature"
+msgid "Redesign battery panel icon and show more fine-grained levels"
 msgstr ""
 
-#: data/power.metainfo.xml.in:38 data/power.metainfo.xml.in:47
-#: data/power.metainfo.xml.in:65 data/power.metainfo.xml.in:85
-#: data/power.metainfo.xml.in:104
+#: data/power.metainfo.xml.in:38 data/power.metainfo.xml.in:48
+#: data/power.metainfo.xml.in:57 data/power.metainfo.xml.in:75
+#: data/power.metainfo.xml.in:95 data/power.metainfo.xml.in:114
 msgid "Updated translations"
 msgstr "Aktualizovány překlady"
 
-#: data/power.metainfo.xml.in:58 data/power.metainfo.xml.in:76
-#: data/power.metainfo.xml.in:92
+#: data/power.metainfo.xml.in:47
+msgid "Drop inaccurate \"Apps using lots of power\" feature"
+msgstr ""
+
+#: data/power.metainfo.xml.in:68 data/power.metainfo.xml.in:86
+#: data/power.metainfo.xml.in:102
 msgid "New features:"
 msgstr "Nové funkce:"
 
-#: data/power.metainfo.xml.in:60
+#: data/power.metainfo.xml.in:70
 msgid "Scroll horizontally on the panel icon to change display brightness"
 msgstr ""
 
-#: data/power.metainfo.xml.in:64
+#: data/power.metainfo.xml.in:74
 msgid "Do a better job hiding the brightness slider on unsupported displays"
 msgstr ""
 
-#: data/power.metainfo.xml.in:78
+#: data/power.metainfo.xml.in:88
 msgid "Show brightness level when scrolled"
 msgstr "Při otáčení kolečkem myši zobrazovat úrovně intenzity podsvětlení"
 
-#: data/power.metainfo.xml.in:79
+#: data/power.metainfo.xml.in:89
 msgid "Show battery percentage automatically at 20% or lower"
 msgstr ""
 "Při procentu nabití akumulátoru 20% a nižším automaticky zobrazovat procento"
 
-#: data/power.metainfo.xml.in:83
+#: data/power.metainfo.xml.in:93
 msgid "Match scroll direction with Sound indicator"
 msgstr "Správné vyhodnocování směru posouvání v indikátoru zvuku"
 
-#: data/power.metainfo.xml.in:84
+#: data/power.metainfo.xml.in:94
 msgid "Show \"Fully Charged\" at 100% when plugged in"
 msgstr ""
 "Při napájení ze zásuvky, pokud je úroveň nabití 100%, je zobrazeno „Plně "
 "nabito“"
 
-#: data/power.metainfo.xml.in:94
+#: data/power.metainfo.xml.in:104
 msgid "Show battery statistics when selected"
 msgstr "Když je vybráno, zobrazit statistiky akumulátoru"
 
-#: data/power.metainfo.xml.in:95
+#: data/power.metainfo.xml.in:105
 msgid "Launch apps using power when selected"
 msgstr "Spouštění aplikací využívajících napájení když vybráno"
 
-#: data/power.metainfo.xml.in:96
+#: data/power.metainfo.xml.in:106
 msgid "Control display brightness by scrolling the indicator"
 msgstr "Ovládání jasu obrazovky otáčením kolečkem na indikátoru"
 
-#: data/power.metainfo.xml.in:100
+#: data/power.metainfo.xml.in:110
 msgid "Improvements for desktops with peripherals"
 msgstr "Vylepšení pro počítače s připojenými periferiemi"
 
-#: data/power.metainfo.xml.in:101
+#: data/power.metainfo.xml.in:111
 msgid "Filter out internal devices"
 msgstr "Odfiltrována vestavěná zařízení"
 
-#: data/power.metainfo.xml.in:102
+#: data/power.metainfo.xml.in:112
 msgid "Show tooltip on hover"
 msgstr "Při najetí ukazatelem zobrazit bublinovou nápovědu"
 
-#: data/power.metainfo.xml.in:103
+#: data/power.metainfo.xml.in:113
 msgid "Performance improvements"
 msgstr "Vylepšení výkonu"
 
