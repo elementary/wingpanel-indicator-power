@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 17:22+0000\n"
+"POT-Creation-Date: 2024-10-02 17:54+0000\n"
 "PO-Revision-Date: 2021-09-04 23:27+0000\n"
 "Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/wingpanel/"
@@ -94,20 +94,20 @@ msgstr "قلم"
 msgid "Plugged In"
 msgstr "موصول بالكهرباء"
 
-#: src/Services/Device.vala:280
+#: src/Services/Device.vala:303
 msgid "Calculating…"
 msgstr "قيد الحساب…"
 
-#: src/Services/Device.vala:284
+#: src/Services/Device.vala:307
 msgid "Fully charged"
 msgstr "مشحون بالكامل"
 
-#: src/Services/Device.vala:290
+#: src/Services/Device.vala:313
 #, c-format
 msgid "%i%% charged"
 msgstr "مشحون بنسبة %i%%"
 
-#: src/Services/Device.vala:298
+#: src/Services/Device.vala:321
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
@@ -118,7 +118,7 @@ msgstr[3] "%lld ساعات حتى الامتلاء"
 msgstr[4] "%lld ساعة حتى الامتلاء"
 msgstr[5] "%lld ساعة حتى الامتلاء"
 
-#: src/Services/Device.vala:306
+#: src/Services/Device.vala:329
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
@@ -129,7 +129,7 @@ msgstr[3] "%lld دقائق حتى الامتلاء"
 msgstr[4] "%lld دقيقة حتى الامتلاء"
 msgstr[5] "%lld دقيقة حتى الامتلاء"
 
-#: src/Services/Device.vala:313
+#: src/Services/Device.vala:336
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
@@ -140,12 +140,12 @@ msgstr[3] "%lld ثوان حتى الامتلاء"
 msgstr[4] "%lld ثانية حتى الامتلاء"
 msgstr[5] "%lld ثانية حتى الامتلاء"
 
-#: src/Services/Device.vala:320
+#: src/Services/Device.vala:343
 #, c-format
 msgid "%i%% remaining"
 msgstr "متبق %i%%"
 
-#: src/Services/Device.vala:328
+#: src/Services/Device.vala:351
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
@@ -156,7 +156,7 @@ msgstr[3] "%lld ساعات حتى الإفراغ"
 msgstr[4] "%lld ساعة حتى الإفراغ"
 msgstr[5] "%lld ساعة حتى الإفراغ"
 
-#: src/Services/Device.vala:336
+#: src/Services/Device.vala:359
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
@@ -167,7 +167,7 @@ msgstr[3] "%lld دقائق حتى الإفراغ"
 msgstr[4] "%lld دقيقة حتى الإفراغ"
 msgstr[5] "%lld دقيقة حتى الإفراغ"
 
-#: src/Services/Device.vala:343
+#: src/Services/Device.vala:366
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -196,17 +196,17 @@ msgstr "أظهر النسبة المئوية"
 msgid "Power Settings…"
 msgstr "إعدادات الطاقة…"
 
-#: src/Widgets/PowerModeList.vala:66
+#: src/Widgets/PowerModeList.vala:53
 #, fuzzy
 #| msgid "Power"
 msgid "Power Saver"
 msgstr "الطاقة"
 
-#: src/Widgets/PowerModeList.vala:84
+#: src/Widgets/PowerModeList.vala:55
 msgid "Balanced"
 msgstr ""
 
-#: src/Widgets/PowerModeList.vala:104
+#: src/Widgets/PowerModeList.vala:59
 msgid "Performance"
 msgstr ""
 
