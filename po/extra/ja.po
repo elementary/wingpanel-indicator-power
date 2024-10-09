@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-02 17:54+0000\n"
+"POT-Creation-Date: 2024-10-09 03:58+0000\n"
 "PO-Revision-Date: 2024-10-06 09:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/wingpanel/"
@@ -31,90 +31,91 @@ msgstr ""
 "バッテリー残量を表示したり、ディスプレイの輝度を調整したり、電力の消費が激し"
 "いアプリを確認したりします"
 
-#: data/power.metainfo.xml.in:35 data/power.metainfo.xml.in:45
-#: data/power.metainfo.xml.in:55 data/power.metainfo.xml.in:72
-#: data/power.metainfo.xml.in:91 data/power.metainfo.xml.in:108
+#: data/power.metainfo.xml.in:35 data/power.metainfo.xml.in:48
+#: data/power.metainfo.xml.in:58 data/power.metainfo.xml.in:75
+#: data/power.metainfo.xml.in:94 data/power.metainfo.xml.in:111
 msgid "Minor updates:"
 msgstr "そのほかのアップデート:"
 
 #: data/power.metainfo.xml.in:37
 msgid "Redesign battery panel icon and show more fine-grained levels"
-msgstr "バッテリーパネルアイコンのデザインを変更し、より細かいバッテリーレベルを表示"
+msgstr ""
+"バッテリーパネルアイコンのデザインを変更し、より細かいバッテリーレベルを表示"
 "するように修正"
 
-#: data/power.metainfo.xml.in:38 data/power.metainfo.xml.in:48
-#: data/power.metainfo.xml.in:57 data/power.metainfo.xml.in:75
-#: data/power.metainfo.xml.in:95 data/power.metainfo.xml.in:114
+#: data/power.metainfo.xml.in:38 data/power.metainfo.xml.in:51
+#: data/power.metainfo.xml.in:60 data/power.metainfo.xml.in:78
+#: data/power.metainfo.xml.in:98 data/power.metainfo.xml.in:117
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/power.metainfo.xml.in:47
+#: data/power.metainfo.xml.in:50
 msgid "Drop inaccurate \"Apps using lots of power\" feature"
 msgstr "不正確な \"電力消費が激しいアプリ\" 機能を削除"
 
-#: data/power.metainfo.xml.in:68 data/power.metainfo.xml.in:86
-#: data/power.metainfo.xml.in:102
+#: data/power.metainfo.xml.in:71 data/power.metainfo.xml.in:89
+#: data/power.metainfo.xml.in:105
 msgid "New features:"
 msgstr "新機能:"
 
-#: data/power.metainfo.xml.in:70
+#: data/power.metainfo.xml.in:73
 msgid "Scroll horizontally on the panel icon to change display brightness"
 msgstr ""
 "パネルアイコン上で水平スクロールするとディスプレイの輝度を変更できる機能を追"
 "加"
 
-#: data/power.metainfo.xml.in:74
+#: data/power.metainfo.xml.in:77
 msgid "Do a better job hiding the brightness slider on unsupported displays"
 msgstr ""
 "輝度調整に非対応のディスプレイで調整用のスライダーを表示しないためのロジック"
 "を改善"
 
-#: data/power.metainfo.xml.in:88
+#: data/power.metainfo.xml.in:91
 msgid "Show brightness level when scrolled"
 msgstr ""
 "インジケーター上でスクロールした際にディスプレイの輝度レベルを表示するように"
 "修正"
 
-#: data/power.metainfo.xml.in:89
+#: data/power.metainfo.xml.in:92
 msgid "Show battery percentage automatically at 20% or lower"
 msgstr "バッテリー残量が 20% を切ると自動的に割合を表示するように変更"
 
-#: data/power.metainfo.xml.in:93
+#: data/power.metainfo.xml.in:96
 msgid "Match scroll direction with Sound indicator"
 msgstr "スクロールの方向をサウンドインジケーターと統一"
 
-#: data/power.metainfo.xml.in:94
+#: data/power.metainfo.xml.in:97
 msgid "Show \"Fully Charged\" at 100% when plugged in"
 msgstr ""
 "電源に接続されていてバッテリー残量が 100% の場合、\"充電済み\" と表示するよう"
 "に修正"
 
-#: data/power.metainfo.xml.in:104
+#: data/power.metainfo.xml.in:107
 msgid "Show battery statistics when selected"
 msgstr "デバイス選択時にバッテリーの統計情報を表示できる機能を追加"
 
-#: data/power.metainfo.xml.in:105
+#: data/power.metainfo.xml.in:108
 msgid "Launch apps using power when selected"
 msgstr "電力消費が激しいアプリを選択するとそのアプリを起動できる機能を追加"
 
-#: data/power.metainfo.xml.in:106
+#: data/power.metainfo.xml.in:109
 msgid "Control display brightness by scrolling the indicator"
 msgstr ""
 "インジケーター上でスクロールするとディスプレイの輝度を変更できる機能を追加"
 
-#: data/power.metainfo.xml.in:110
+#: data/power.metainfo.xml.in:113
 msgid "Improvements for desktops with peripherals"
 msgstr "周辺機器を接続したデスクトップPCでの表示を改善"
 
-#: data/power.metainfo.xml.in:111
+#: data/power.metainfo.xml.in:114
 msgid "Filter out internal devices"
 msgstr "内部デバイスを表示しないように修正"
 
-#: data/power.metainfo.xml.in:112
+#: data/power.metainfo.xml.in:115
 msgid "Show tooltip on hover"
 msgstr "ホバー時にツールチップを表示するように変更"
 
-#: data/power.metainfo.xml.in:113
+#: data/power.metainfo.xml.in:116
 msgid "Performance improvements"
 msgstr "パフォーマンスの改善"
 
