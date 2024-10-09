@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-02 17:54+0000\n"
-"PO-Revision-Date: 2024-07-21 06:16+0000\n"
+"PO-Revision-Date: 2024-10-08 21:16+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/uk/>\n"
@@ -41,6 +41,7 @@ msgstr "Незначні оновлення:"
 #: data/power.metainfo.xml.in:37
 msgid "Redesign battery panel icon and show more fine-grained levels"
 msgstr ""
+"Змінено вигляд піктограми панелі акумулятора та показано деталізованіші рівні"
 
 #: data/power.metainfo.xml.in:38 data/power.metainfo.xml.in:48
 #: data/power.metainfo.xml.in:57 data/power.metainfo.xml.in:75

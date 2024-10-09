@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-02 17:54+0000\n"
-"PO-Revision-Date: 2024-09-07 13:16+0000\n"
+"PO-Revision-Date: 2024-10-07 08:07+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "wingpanel/indicator-power-extra/zh_Hant/>\n"
@@ -37,7 +37,7 @@ msgstr "小型更新："
 
 #: data/power.metainfo.xml.in:37
 msgid "Redesign battery panel icon and show more fine-grained levels"
-msgstr ""
+msgstr "重新設計電池面板圖示，並且顯示更多電量等級"
 
 #: data/power.metainfo.xml.in:38 data/power.metainfo.xml.in:48
 #: data/power.metainfo.xml.in:57 data/power.metainfo.xml.in:75
