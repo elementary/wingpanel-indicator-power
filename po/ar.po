@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-02 17:54+0000\n"
+"POT-Creation-Date: 2024-10-09 03:58+0000\n"
 "PO-Revision-Date: 2021-09-04 23:27+0000\n"
 "Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/wingpanel/"
@@ -94,20 +94,53 @@ msgstr "قلم"
 msgid "Plugged In"
 msgstr "موصول بالكهرباء"
 
-#: src/Services/Device.vala:303
-msgid "Calculating…"
-msgstr "قيد الحساب…"
+#: src/Services/Device.vala:321
+msgid "Unknown. Device may be locked."
+msgstr ""
 
-#: src/Services/Device.vala:307
+#. Coarse battery level can sometimes be unknown, percentage is more reliable
+#: src/Services/Device.vala:328
+msgctxt "battery-level"
+msgid "Critical"
+msgstr ""
+
+#: src/Services/Device.vala:330
+msgctxt "battery-level"
+msgid "Low"
+msgstr ""
+
+#: src/Services/Device.vala:332
+msgctxt "battery-level"
+msgid "Good"
+msgstr ""
+
+#: src/Services/Device.vala:334
+msgctxt "battery-level"
+msgid "High"
+msgstr ""
+
+#: src/Services/Device.vala:336
+msgctxt "battery-level"
+msgid "Full"
+msgstr ""
+
+#: src/Services/Device.vala:341
 msgid "Fully charged"
 msgstr "مشحون بالكامل"
 
-#: src/Services/Device.vala:313
-#, c-format
-msgid "%i%% charged"
+#: src/Services/Device.vala:346
+#, fuzzy, c-format
+#| msgid "%i%% charged"
+msgid "%.0f%% charged"
 msgstr "مشحون بنسبة %i%%"
 
-#: src/Services/Device.vala:321
+#: src/Services/Device.vala:349
+#, fuzzy, c-format
+#| msgid "%i%% remaining"
+msgid "%.0f%% remaining"
+msgstr "متبق %i%%"
+
+#: src/Services/Device.vala:359
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
@@ -118,7 +151,7 @@ msgstr[3] "%lld ساعات حتى الامتلاء"
 msgstr[4] "%lld ساعة حتى الامتلاء"
 msgstr[5] "%lld ساعة حتى الامتلاء"
 
-#: src/Services/Device.vala:329
+#: src/Services/Device.vala:367
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
@@ -129,7 +162,7 @@ msgstr[3] "%lld دقائق حتى الامتلاء"
 msgstr[4] "%lld دقيقة حتى الامتلاء"
 msgstr[5] "%lld دقيقة حتى الامتلاء"
 
-#: src/Services/Device.vala:336
+#: src/Services/Device.vala:374
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
@@ -140,12 +173,7 @@ msgstr[3] "%lld ثوان حتى الامتلاء"
 msgstr[4] "%lld ثانية حتى الامتلاء"
 msgstr[5] "%lld ثانية حتى الامتلاء"
 
-#: src/Services/Device.vala:343
-#, c-format
-msgid "%i%% remaining"
-msgstr "متبق %i%%"
-
-#: src/Services/Device.vala:351
+#: src/Services/Device.vala:385
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
@@ -156,7 +184,7 @@ msgstr[3] "%lld ساعات حتى الإفراغ"
 msgstr[4] "%lld ساعة حتى الإفراغ"
 msgstr[5] "%lld ساعة حتى الإفراغ"
 
-#: src/Services/Device.vala:359
+#: src/Services/Device.vala:393
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
@@ -167,7 +195,7 @@ msgstr[3] "%lld دقائق حتى الإفراغ"
 msgstr[4] "%lld دقيقة حتى الإفراغ"
 msgstr[5] "%lld دقيقة حتى الإفراغ"
 
-#: src/Services/Device.vala:366
+#: src/Services/Device.vala:400
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -209,6 +237,9 @@ msgstr ""
 #: src/Widgets/PowerModeList.vala:59
 msgid "Performance"
 msgstr ""
+
+#~ msgid "Calculating…"
+#~ msgstr "قيد الحساب…"
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "تطبيقات تستهلك طاقة كبيرة"

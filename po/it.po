@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-02 17:54+0000\n"
+"POT-Creation-Date: 2024-10-09 03:58+0000\n"
 "PO-Revision-Date: 2020-10-27 10:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/wingpanel/"
@@ -89,62 +89,90 @@ msgstr "Penna"
 msgid "Plugged In"
 msgstr ""
 
-#: src/Services/Device.vala:303
-msgid "Calculating…"
-msgstr "Calcolo…"
+#: src/Services/Device.vala:321
+msgid "Unknown. Device may be locked."
+msgstr ""
 
-#: src/Services/Device.vala:307
+#. Coarse battery level can sometimes be unknown, percentage is more reliable
+#: src/Services/Device.vala:328
+msgctxt "battery-level"
+msgid "Critical"
+msgstr ""
+
+#: src/Services/Device.vala:330
+msgctxt "battery-level"
+msgid "Low"
+msgstr ""
+
+#: src/Services/Device.vala:332
+msgctxt "battery-level"
+msgid "Good"
+msgstr ""
+
+#: src/Services/Device.vala:334
+msgctxt "battery-level"
+msgid "High"
+msgstr ""
+
+#: src/Services/Device.vala:336
+msgctxt "battery-level"
+msgid "Full"
+msgstr ""
+
+#: src/Services/Device.vala:341
 #, fuzzy
 #| msgid "%i%% charged"
 msgid "Fully charged"
 msgstr "%i%% carico"
 
-#: src/Services/Device.vala:313
-#, c-format
-msgid "%i%% charged"
+#: src/Services/Device.vala:346
+#, fuzzy, c-format
+#| msgid "%i%% charged"
+msgid "%.0f%% charged"
 msgstr "%i%% carico"
 
-#: src/Services/Device.vala:321
+#: src/Services/Device.vala:349
+#, fuzzy, c-format
+#| msgid "%i%% remaining"
+msgid "%.0f%% remaining"
+msgstr "%i%% rimanente"
+
+#: src/Services/Device.vala:359
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld ora al completamento"
 msgstr[1] "%lld ore al completamento"
 
-#: src/Services/Device.vala:329
+#: src/Services/Device.vala:367
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld minuto al completamento"
 msgstr[1] "%lld minuti al completamento"
 
-#: src/Services/Device.vala:336
+#: src/Services/Device.vala:374
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld secondo al completamento"
 msgstr[1] "%lld secondi al completamento"
 
-#: src/Services/Device.vala:343
-#, c-format
-msgid "%i%% remaining"
-msgstr "%i%% rimanente"
-
-#: src/Services/Device.vala:351
+#: src/Services/Device.vala:385
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld ora all'esaurimento"
 msgstr[1] "%lld ore all'esaurimento"
 
-#: src/Services/Device.vala:359
+#: src/Services/Device.vala:393
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld minuto all'esaurimento"
 msgstr[1] "%lld minuti all'esaurimento"
 
-#: src/Services/Device.vala:366
+#: src/Services/Device.vala:400
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -182,6 +210,9 @@ msgstr ""
 #: src/Widgets/PowerModeList.vala:59
 msgid "Performance"
 msgstr ""
+
+#~ msgid "Calculating…"
+#~ msgstr "Calcolo…"
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Applicazioni che usano molta energia"
