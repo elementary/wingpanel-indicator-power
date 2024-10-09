@@ -38,6 +38,9 @@
           <li>Updated translations</li>
         </ul>
       </description>
+      <issues>
+        <issue url="https://github.com/elementary/wingpanel-indicator-power/issues/256">Mouse battery indicator stuck at 50%</issue>
+      </issues>
     </release>
 
     <release version="8.0.0" date="2024-08-21" urgency="medium">
