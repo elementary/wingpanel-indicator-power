@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-09 03:58+0000\n"
-"PO-Revision-Date: 2024-10-03 19:16+0000\n"
+"PO-Revision-Date: 2024-10-10 05:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/es/>\n"
@@ -87,7 +87,7 @@ msgstr ""
 
 #: data/power.metainfo.xml.in:97
 msgid "Show \"Fully Charged\" at 100% when plugged in"
-msgstr "Se muestra «Completamente Cargado» al 100 % cuando esté conectado"
+msgstr "Se muestra «Completamente cargado» al 100 % cuando esté conectado"
 
 #: data/power.metainfo.xml.in:107
 msgid "Show battery statistics when selected"
