@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-09 03:58+0000\n"
-"PO-Revision-Date: 2024-08-18 17:16+0000\n"
+"PO-Revision-Date: 2024-10-10 14:52+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/de/>\n"
@@ -91,49 +91,47 @@ msgstr "Am Netzstrom angeschlossen"
 
 #: src/Services/Device.vala:321
 msgid "Unknown. Device may be locked."
-msgstr ""
+msgstr "Unbekannt. Das Gerät ist möglichweise gesperrt."
 
 #. Coarse battery level can sometimes be unknown, percentage is more reliable
 #: src/Services/Device.vala:328
 msgctxt "battery-level"
 msgid "Critical"
-msgstr ""
+msgstr "Kritisch"
 
 #: src/Services/Device.vala:330
 msgctxt "battery-level"
 msgid "Low"
-msgstr ""
+msgstr "Niedrig"
 
 #: src/Services/Device.vala:332
 msgctxt "battery-level"
 msgid "Good"
-msgstr ""
+msgstr "Gut"
 
 #: src/Services/Device.vala:334
 msgctxt "battery-level"
 msgid "High"
-msgstr ""
+msgstr "Hoch"
 
 #: src/Services/Device.vala:336
 msgctxt "battery-level"
 msgid "Full"
-msgstr ""
+msgstr "Voll"
 
 #: src/Services/Device.vala:341
 msgid "Fully charged"
 msgstr "Vollständig geladen"
 
 #: src/Services/Device.vala:346
-#, fuzzy, c-format
-#| msgid "%i%% charged"
+#, c-format
 msgid "%.0f%% charged"
-msgstr "%i%% geladen"
+msgstr "%.0f% % geladen"
 
 #: src/Services/Device.vala:349
-#, fuzzy, c-format
-#| msgid "%i%% remaining"
+#, c-format
 msgid "%.0f%% remaining"
-msgstr "%i%% verbleibend"
+msgstr "%.0f% % verbleibend"
 
 #: src/Services/Device.vala:359
 #, c-format
