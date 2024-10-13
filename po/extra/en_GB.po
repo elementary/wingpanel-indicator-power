@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-09 03:58+0000\n"
-"PO-Revision-Date: 2024-07-21 06:16+0000\n"
+"PO-Revision-Date: 2024-10-13 07:05+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "wingpanel/indicator-power-extra/en_GB/>\n"
@@ -39,7 +39,7 @@ msgstr "Minor updates:"
 
 #: data/power.metainfo.xml.in:37
 msgid "Redesign battery panel icon and show more fine-grained levels"
-msgstr ""
+msgstr "Redesign battery panel icon and show more fine-grained levels"
 
 #: data/power.metainfo.xml.in:38 data/power.metainfo.xml.in:51
 #: data/power.metainfo.xml.in:60 data/power.metainfo.xml.in:78
