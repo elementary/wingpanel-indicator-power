@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-09 03:58+0000\n"
-"PO-Revision-Date: 2024-09-13 00:01+0000\n"
+"PO-Revision-Date: 2024-10-17 02:06+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ka/>\n"
@@ -124,16 +124,14 @@ msgid "Fully charged"
 msgstr "სრულად დატენილი"
 
 #: src/Services/Device.vala:346
-#, fuzzy, c-format
-#| msgid "%i%% charged"
+#, c-format
 msgid "%.0f%% charged"
-msgstr "%i%% დამუხტული"
+msgstr "დამუხტულია %.0f%%"
 
 #: src/Services/Device.vala:349
-#, fuzzy, c-format
-#| msgid "%i%% remaining"
+#, c-format
 msgid "%.0f%% remaining"
-msgstr "%i%% დარჩენილი"
+msgstr "დარჩენილია %.0f%%"
 
 #: src/Services/Device.vala:359
 #, c-format
