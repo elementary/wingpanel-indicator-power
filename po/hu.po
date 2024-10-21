@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-09 03:58+0000\n"
-"PO-Revision-Date: 2024-08-22 09:16+0000\n"
+"PO-Revision-Date: 2024-10-22 06:25+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/hu/>\n"
@@ -91,49 +91,47 @@ msgstr "Csatlakoztatva"
 
 #: src/Services/Device.vala:321
 msgid "Unknown. Device may be locked."
-msgstr ""
+msgstr "Ismeretlen. A készülék le lehet zárva."
 
 #. Coarse battery level can sometimes be unknown, percentage is more reliable
 #: src/Services/Device.vala:328
 msgctxt "battery-level"
 msgid "Critical"
-msgstr ""
+msgstr "Kritikus"
 
 #: src/Services/Device.vala:330
 msgctxt "battery-level"
 msgid "Low"
-msgstr ""
+msgstr "Alacsony"
 
 #: src/Services/Device.vala:332
 msgctxt "battery-level"
 msgid "Good"
-msgstr ""
+msgstr "Jó"
 
 #: src/Services/Device.vala:334
 msgctxt "battery-level"
 msgid "High"
-msgstr ""
+msgstr "Magas"
 
 #: src/Services/Device.vala:336
 msgctxt "battery-level"
 msgid "Full"
-msgstr ""
+msgstr "Tele"
 
 #: src/Services/Device.vala:341
 msgid "Fully charged"
 msgstr "Teljesen feltöltve"
 
 #: src/Services/Device.vala:346
-#, fuzzy, c-format
-#| msgid "%i%% charged"
+#, c-format
 msgid "%.0f%% charged"
-msgstr "%i%% töltöttség"
+msgstr "%.0f%% töltöttség"
 
 #: src/Services/Device.vala:349
-#, fuzzy, c-format
-#| msgid "%i%% remaining"
+#, c-format
 msgid "%.0f%% remaining"
-msgstr "%i%% hátralévő"
+msgstr "%.0f%% hátralévő"
 
 #: src/Services/Device.vala:359
 #, c-format
