@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 17:22+0000\n"
-"PO-Revision-Date: 2024-09-13 00:01+0000\n"
+"POT-Creation-Date: 2024-10-09 03:58+0000\n"
+"PO-Revision-Date: 2024-10-17 02:06+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ka/>\n"
@@ -89,55 +89,81 @@ msgstr "ფანქარი"
 msgid "Plugged In"
 msgstr "შეერთებული"
 
-#: src/Services/Device.vala:280
-msgid "Calculating…"
-msgstr "გამოთვლა…"
+#: src/Services/Device.vala:321
+msgid "Unknown. Device may be locked."
+msgstr ""
 
-#: src/Services/Device.vala:284
+#. Coarse battery level can sometimes be unknown, percentage is more reliable
+#: src/Services/Device.vala:328
+msgctxt "battery-level"
+msgid "Critical"
+msgstr ""
+
+#: src/Services/Device.vala:330
+msgctxt "battery-level"
+msgid "Low"
+msgstr ""
+
+#: src/Services/Device.vala:332
+msgctxt "battery-level"
+msgid "Good"
+msgstr ""
+
+#: src/Services/Device.vala:334
+msgctxt "battery-level"
+msgid "High"
+msgstr ""
+
+#: src/Services/Device.vala:336
+msgctxt "battery-level"
+msgid "Full"
+msgstr ""
+
+#: src/Services/Device.vala:341
 msgid "Fully charged"
 msgstr "სრულად დატენილი"
 
-#: src/Services/Device.vala:290
+#: src/Services/Device.vala:346
 #, c-format
-msgid "%i%% charged"
-msgstr "%i%% დამუხტული"
+msgid "%.0f%% charged"
+msgstr "დამუხტულია %.0f%%"
 
-#: src/Services/Device.vala:298
+#: src/Services/Device.vala:349
+#, c-format
+msgid "%.0f%% remaining"
+msgstr "დარჩენილია %.0f%%"
+
+#: src/Services/Device.vala:359
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld საათი სრულად დასამუხტად"
 
-#: src/Services/Device.vala:306
+#: src/Services/Device.vala:367
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld წუთი სრულად დასამუხტად"
 
-#: src/Services/Device.vala:313
+#: src/Services/Device.vala:374
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld წამი სრულად დასამუხტად"
 
-#: src/Services/Device.vala:320
-#, c-format
-msgid "%i%% remaining"
-msgstr "%i%% დარჩენილი"
-
-#: src/Services/Device.vala:328
+#: src/Services/Device.vala:385
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld საათი დასაცლელად"
 
-#: src/Services/Device.vala:336
+#: src/Services/Device.vala:393
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld წუთი დასაცლელად"
 
-#: src/Services/Device.vala:343
+#: src/Services/Device.vala:400
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -161,17 +187,20 @@ msgstr "პროცენტული მაჩვენებლის ჩვ�
 msgid "Power Settings…"
 msgstr "კვების მორგება…"
 
-#: src/Widgets/PowerModeList.vala:66
+#: src/Widgets/PowerModeList.vala:53
 msgid "Power Saver"
 msgstr "კვების დაზოგვა"
 
-#: src/Widgets/PowerModeList.vala:84
+#: src/Widgets/PowerModeList.vala:55
 msgid "Balanced"
 msgstr "დაბალანსებული"
 
-#: src/Widgets/PowerModeList.vala:104
+#: src/Widgets/PowerModeList.vala:59
 msgid "Performance"
 msgstr "წარმადობა"
+
+#~ msgid "Calculating…"
+#~ msgstr "გამოთვლა…"
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "აპები, რომლებიც ბევრ ენერგიას იყენებენ"

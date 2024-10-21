@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 17:22+0000\n"
-"PO-Revision-Date: 2024-09-07 13:16+0000\n"
+"POT-Creation-Date: 2024-10-09 03:58+0000\n"
+"PO-Revision-Date: 2024-10-07 08:07+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "wingpanel/indicator-power-extra/zh_Hant/>\n"
@@ -29,75 +29,79 @@ msgid ""
 "power"
 msgstr "檢視電池"
 
-#: data/power.metainfo.xml.in:35 data/power.metainfo.xml.in:45
-#: data/power.metainfo.xml.in:62 data/power.metainfo.xml.in:81
-#: data/power.metainfo.xml.in:98
+#: data/power.metainfo.xml.in:35 data/power.metainfo.xml.in:48
+#: data/power.metainfo.xml.in:58 data/power.metainfo.xml.in:75
+#: data/power.metainfo.xml.in:94 data/power.metainfo.xml.in:111
 msgid "Minor updates:"
 msgstr "小型更新："
 
 #: data/power.metainfo.xml.in:37
-msgid "Drop inaccurate \"Apps using lots of power\" feature"
-msgstr "捨棄不準確的「耗電量大的應用程式」功能"
+msgid "Redesign battery panel icon and show more fine-grained levels"
+msgstr "重新設計電池面板圖示，並且顯示更多電量等級"
 
-#: data/power.metainfo.xml.in:38 data/power.metainfo.xml.in:47
-#: data/power.metainfo.xml.in:65 data/power.metainfo.xml.in:85
-#: data/power.metainfo.xml.in:104
+#: data/power.metainfo.xml.in:38 data/power.metainfo.xml.in:51
+#: data/power.metainfo.xml.in:60 data/power.metainfo.xml.in:78
+#: data/power.metainfo.xml.in:98 data/power.metainfo.xml.in:117
 msgid "Updated translations"
 msgstr "翻譯更新"
 
-#: data/power.metainfo.xml.in:58 data/power.metainfo.xml.in:76
-#: data/power.metainfo.xml.in:92
+#: data/power.metainfo.xml.in:50
+msgid "Drop inaccurate \"Apps using lots of power\" feature"
+msgstr "捨棄不準確的「耗電量大的應用程式」功能"
+
+#: data/power.metainfo.xml.in:71 data/power.metainfo.xml.in:89
+#: data/power.metainfo.xml.in:105
 msgid "New features:"
 msgstr "新功能："
 
-#: data/power.metainfo.xml.in:60
+#: data/power.metainfo.xml.in:73
 msgid "Scroll horizontally on the panel icon to change display brightness"
 msgstr "在面板圖示上水平捲動來變更顯示器亮度"
 
-#: data/power.metainfo.xml.in:64
+#: data/power.metainfo.xml.in:77
 msgid "Do a better job hiding the brightness slider on unsupported displays"
 msgstr "改善在不支援的顯示器上隱藏亮度滑條的邏輯"
 
-#: data/power.metainfo.xml.in:78
+#: data/power.metainfo.xml.in:91
 msgid "Show brightness level when scrolled"
 msgstr "捲動時顯示亮度等級"
 
-#: data/power.metainfo.xml.in:79
+#: data/power.metainfo.xml.in:92
 msgid "Show battery percentage automatically at 20% or lower"
 msgstr "電量低於 20% 時自動顯示電池百分比"
 
-#: data/power.metainfo.xml.in:83
+#: data/power.metainfo.xml.in:96
 msgid "Match scroll direction with Sound indicator"
 msgstr "使用與音效指示器相同的捲動方向"
 
-#: data/power.metainfo.xml.in:84
+#: data/power.metainfo.xml.in:97
 msgid "Show \"Fully Charged\" at 100% when plugged in"
 msgstr "電量為 100% 且已插入電源線時顯示「已充飽」"
 
-#: data/power.metainfo.xml.in:94
+#: data/power.metainfo.xml.in:107
 msgid "Show battery statistics when selected"
 msgstr "選取時顯示電池統計資料"
 
-#: data/power.metainfo.xml.in:95
+#: data/power.metainfo.xml.in:108
 msgid "Launch apps using power when selected"
 msgstr "在耗電量打的應用程式清單中選取應用程式時啟動它"
 
-#: data/power.metainfo.xml.in:96
+#: data/power.metainfo.xml.in:109
 msgid "Control display brightness by scrolling the indicator"
 msgstr "捲動指示器來控制顯示器亮度"
 
-#: data/power.metainfo.xml.in:100
+#: data/power.metainfo.xml.in:113
 msgid "Improvements for desktops with peripherals"
 msgstr "改善在有週邊設備的桌上型電腦上的顯示"
 
-#: data/power.metainfo.xml.in:101
+#: data/power.metainfo.xml.in:114
 msgid "Filter out internal devices"
 msgstr "過濾掉內部裝置"
 
-#: data/power.metainfo.xml.in:102
+#: data/power.metainfo.xml.in:115
 msgid "Show tooltip on hover"
 msgstr "滑鼠停駐時顯示工具提示"
 
-#: data/power.metainfo.xml.in:103
+#: data/power.metainfo.xml.in:116
 msgid "Performance improvements"
 msgstr "效能改善"

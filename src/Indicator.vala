@@ -178,7 +178,7 @@ public class Power.Indicator : Wingpanel.Indicator {
                 display_widget.show_percentage (false);
             }
             if (display_device.is_a_battery) {
-                primary_text = _("%s: %s").printf (display_device.device_type.get_name (), display_device.get_info ());
+                primary_text = _("%s: %s").printf (display_device.device_type.get_name (), display_device.description);
                 secondary_text = is_showing_percent ? _("Middle-click to hide percentage") : _("Middle-click to show percentage");
 
             } else {

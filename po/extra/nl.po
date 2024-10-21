@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 17:22+0000\n"
+"POT-Creation-Date: 2024-10-09 03:58+0000\n"
 "PO-Revision-Date: 2024-08-07 00:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/wingpanel/"
@@ -31,76 +31,80 @@ msgstr ""
 "Zie het batterijniveau, pas de helderheid van het scherm aan en zie apps die "
 "veel energie gebruiken"
 
-#: data/power.metainfo.xml.in:35 data/power.metainfo.xml.in:45
-#: data/power.metainfo.xml.in:62 data/power.metainfo.xml.in:81
-#: data/power.metainfo.xml.in:98
+#: data/power.metainfo.xml.in:35 data/power.metainfo.xml.in:48
+#: data/power.metainfo.xml.in:58 data/power.metainfo.xml.in:75
+#: data/power.metainfo.xml.in:94 data/power.metainfo.xml.in:111
 msgid "Minor updates:"
 msgstr "Kleine updates:"
 
 #: data/power.metainfo.xml.in:37
-msgid "Drop inaccurate \"Apps using lots of power\" feature"
+msgid "Redesign battery panel icon and show more fine-grained levels"
 msgstr ""
 
-#: data/power.metainfo.xml.in:38 data/power.metainfo.xml.in:47
-#: data/power.metainfo.xml.in:65 data/power.metainfo.xml.in:85
-#: data/power.metainfo.xml.in:104
+#: data/power.metainfo.xml.in:38 data/power.metainfo.xml.in:51
+#: data/power.metainfo.xml.in:60 data/power.metainfo.xml.in:78
+#: data/power.metainfo.xml.in:98 data/power.metainfo.xml.in:117
 msgid "Updated translations"
 msgstr "Bijgewerkte vertalingen"
 
-#: data/power.metainfo.xml.in:58 data/power.metainfo.xml.in:76
-#: data/power.metainfo.xml.in:92
+#: data/power.metainfo.xml.in:50
+msgid "Drop inaccurate \"Apps using lots of power\" feature"
+msgstr ""
+
+#: data/power.metainfo.xml.in:71 data/power.metainfo.xml.in:89
+#: data/power.metainfo.xml.in:105
 msgid "New features:"
 msgstr "Nieuwe functionaliteit:"
 
-#: data/power.metainfo.xml.in:60
+#: data/power.metainfo.xml.in:73
 msgid "Scroll horizontally on the panel icon to change display brightness"
 msgstr ""
 
-#: data/power.metainfo.xml.in:64
+#: data/power.metainfo.xml.in:77
 msgid "Do a better job hiding the brightness slider on unsupported displays"
 msgstr ""
 
-#: data/power.metainfo.xml.in:78
+#: data/power.metainfo.xml.in:91
 msgid "Show brightness level when scrolled"
 msgstr ""
 
-#: data/power.metainfo.xml.in:79
+#: data/power.metainfo.xml.in:92
 msgid "Show battery percentage automatically at 20% or lower"
 msgstr ""
 
-#: data/power.metainfo.xml.in:83
+#: data/power.metainfo.xml.in:96
 msgid "Match scroll direction with Sound indicator"
 msgstr ""
 
-#: data/power.metainfo.xml.in:84
+#: data/power.metainfo.xml.in:97
 msgid "Show \"Fully Charged\" at 100% when plugged in"
 msgstr ""
 
-#: data/power.metainfo.xml.in:94
+#: data/power.metainfo.xml.in:107
 msgid "Show battery statistics when selected"
 msgstr ""
 
-#: data/power.metainfo.xml.in:95
+#: data/power.metainfo.xml.in:108
 msgid "Launch apps using power when selected"
 msgstr ""
 
-#: data/power.metainfo.xml.in:96
+#: data/power.metainfo.xml.in:109
 msgid "Control display brightness by scrolling the indicator"
 msgstr ""
 
-#: data/power.metainfo.xml.in:100
+#: data/power.metainfo.xml.in:113
 msgid "Improvements for desktops with peripherals"
 msgstr ""
 
-#: data/power.metainfo.xml.in:101
+#: data/power.metainfo.xml.in:114
 msgid "Filter out internal devices"
 msgstr ""
 
-#: data/power.metainfo.xml.in:102
+#: data/power.metainfo.xml.in:115
 msgid "Show tooltip on hover"
 msgstr ""
 
-#: data/power.metainfo.xml.in:103
+#: data/power.metainfo.xml.in:116
 msgid "Performance improvements"
 msgstr "Prestatieverbeteringen"
 

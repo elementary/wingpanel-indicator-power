@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 17:22+0000\n"
-"PO-Revision-Date: 2024-08-18 17:16+0000\n"
+"POT-Creation-Date: 2024-10-09 03:58+0000\n"
+"PO-Revision-Date: 2024-10-10 14:52+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/de/>\n"
@@ -89,60 +89,86 @@ msgstr "Stift"
 msgid "Plugged In"
 msgstr "Am Netzstrom angeschlossen"
 
-#: src/Services/Device.vala:280
-msgid "Calculating…"
-msgstr "Berechnen …"
+#: src/Services/Device.vala:321
+msgid "Unknown. Device may be locked."
+msgstr "Unbekannt. Das Gerät ist möglichweise gesperrt."
 
-#: src/Services/Device.vala:284
+#. Coarse battery level can sometimes be unknown, percentage is more reliable
+#: src/Services/Device.vala:328
+msgctxt "battery-level"
+msgid "Critical"
+msgstr "Kritisch"
+
+#: src/Services/Device.vala:330
+msgctxt "battery-level"
+msgid "Low"
+msgstr "Niedrig"
+
+#: src/Services/Device.vala:332
+msgctxt "battery-level"
+msgid "Good"
+msgstr "Gut"
+
+#: src/Services/Device.vala:334
+msgctxt "battery-level"
+msgid "High"
+msgstr "Hoch"
+
+#: src/Services/Device.vala:336
+msgctxt "battery-level"
+msgid "Full"
+msgstr "Voll"
+
+#: src/Services/Device.vala:341
 msgid "Fully charged"
 msgstr "Vollständig geladen"
 
-#: src/Services/Device.vala:290
+#: src/Services/Device.vala:346
 #, c-format
-msgid "%i%% charged"
-msgstr "%i%% geladen"
+msgid "%.0f%% charged"
+msgstr "%.0f% % geladen"
 
-#: src/Services/Device.vala:298
+#: src/Services/Device.vala:349
+#, c-format
+msgid "%.0f%% remaining"
+msgstr "%.0f% % verbleibend"
+
+#: src/Services/Device.vala:359
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "vollständig geladen in %lld Stunde"
 msgstr[1] "vollständig geladen in %lld Stunden"
 
-#: src/Services/Device.vala:306
+#: src/Services/Device.vala:367
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "vollständig geladen in %lld Minute"
 msgstr[1] "vollständig geladen in %lld Minuten"
 
-#: src/Services/Device.vala:313
+#: src/Services/Device.vala:374
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "vollständig geladen in %lld Sekunde"
 msgstr[1] "vollständig geladen in %lld Sekunden"
 
-#: src/Services/Device.vala:320
-#, c-format
-msgid "%i%% remaining"
-msgstr "%i%% verbleibend"
-
-#: src/Services/Device.vala:328
+#: src/Services/Device.vala:385
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "entladen in %lld Stunde"
 msgstr[1] "entladen in %lld Stunden"
 
-#: src/Services/Device.vala:336
+#: src/Services/Device.vala:393
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "entladen in %lld Minute"
 msgstr[1] "entladen in %lld Minuten"
 
-#: src/Services/Device.vala:343
+#: src/Services/Device.vala:400
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -167,17 +193,20 @@ msgstr "Prozentanzeige"
 msgid "Power Settings…"
 msgstr "Energieeinstellungen …"
 
-#: src/Widgets/PowerModeList.vala:66
+#: src/Widgets/PowerModeList.vala:53
 msgid "Power Saver"
 msgstr "Energie sparen"
 
-#: src/Widgets/PowerModeList.vala:84
+#: src/Widgets/PowerModeList.vala:55
 msgid "Balanced"
 msgstr "Ausgewogen"
 
-#: src/Widgets/PowerModeList.vala:104
+#: src/Widgets/PowerModeList.vala:59
 msgid "Performance"
 msgstr "Leistung"
+
+#~ msgid "Calculating…"
+#~ msgstr "Berechnen …"
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Anwendungen mit hohem Energieverbrauch"

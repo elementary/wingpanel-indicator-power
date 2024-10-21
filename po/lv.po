@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 17:22+0000\n"
+"POT-Creation-Date: 2024-10-09 03:58+0000\n"
 "PO-Revision-Date: 2017-03-22 12:29+0000\n"
 "Last-Translator: Oto Rudovics <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,22 +88,55 @@ msgstr ""
 msgid "Plugged In"
 msgstr ""
 
-#: src/Services/Device.vala:280
-msgid "Calculating…"
-msgstr "Aprēķina…"
+#: src/Services/Device.vala:321
+msgid "Unknown. Device may be locked."
+msgstr ""
 
-#: src/Services/Device.vala:284
+#. Coarse battery level can sometimes be unknown, percentage is more reliable
+#: src/Services/Device.vala:328
+msgctxt "battery-level"
+msgid "Critical"
+msgstr ""
+
+#: src/Services/Device.vala:330
+msgctxt "battery-level"
+msgid "Low"
+msgstr ""
+
+#: src/Services/Device.vala:332
+msgctxt "battery-level"
+msgid "Good"
+msgstr ""
+
+#: src/Services/Device.vala:334
+msgctxt "battery-level"
+msgid "High"
+msgstr ""
+
+#: src/Services/Device.vala:336
+msgctxt "battery-level"
+msgid "Full"
+msgstr ""
+
+#: src/Services/Device.vala:341
 #, fuzzy
 #| msgid "%i%% charged"
 msgid "Fully charged"
 msgstr "%i%% uzlādēts"
 
-#: src/Services/Device.vala:290
-#, c-format
-msgid "%i%% charged"
+#: src/Services/Device.vala:346
+#, fuzzy, c-format
+#| msgid "%i%% charged"
+msgid "%.0f%% charged"
 msgstr "%i%% uzlādēts"
 
-#: src/Services/Device.vala:298
+#: src/Services/Device.vala:349
+#, fuzzy, c-format
+#| msgid "%i%% remaining"
+msgid "%.0f%% remaining"
+msgstr "%i%% atlicis"
+
+#: src/Services/Device.vala:359
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
@@ -111,7 +144,7 @@ msgstr[0] "%lld stunda līdz pilnai uzlādei"
 msgstr[1] "%lld stundas līdz pilnai uzlādei"
 msgstr[2] "%lld hours until full"
 
-#: src/Services/Device.vala:306
+#: src/Services/Device.vala:367
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
@@ -119,7 +152,7 @@ msgstr[0] "%lld minūte līdz pilnai uzlādei"
 msgstr[1] "%lld minūtes līdz pilnai uzlādei"
 msgstr[2] "%lld minūtes līdz pilnai uzlādei"
 
-#: src/Services/Device.vala:313
+#: src/Services/Device.vala:374
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
@@ -127,12 +160,7 @@ msgstr[0] "%lld sekunde līdz pilnai uzlādei"
 msgstr[1] "%lld sekundes līdz pilnai uzlādei"
 msgstr[2] "%lld sekundes līdz pilnai uzlādei"
 
-#: src/Services/Device.vala:320
-#, c-format
-msgid "%i%% remaining"
-msgstr "%i%% atlicis"
-
-#: src/Services/Device.vala:328
+#: src/Services/Device.vala:385
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
@@ -140,7 +168,7 @@ msgstr[0] "%lld stunda līdz izlādei"
 msgstr[1] "%lld stundas līdz izlādei"
 msgstr[2] "%lld stundas līdz izlādei"
 
-#: src/Services/Device.vala:336
+#: src/Services/Device.vala:393
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
@@ -148,7 +176,7 @@ msgstr[0] "%lld minūte līdz izlādei"
 msgstr[1] "%lld minūtes līdz izlādei"
 msgstr[2] "%lld minūtes līdz izlādei"
 
-#: src/Services/Device.vala:343
+#: src/Services/Device.vala:400
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -174,19 +202,22 @@ msgstr "Rādīt procentus"
 msgid "Power Settings…"
 msgstr "Barošanas iestatījumi…"
 
-#: src/Widgets/PowerModeList.vala:66
+#: src/Widgets/PowerModeList.vala:53
 #, fuzzy
 #| msgid "Power"
 msgid "Power Saver"
 msgstr "Barošana"
 
-#: src/Widgets/PowerModeList.vala:84
+#: src/Widgets/PowerModeList.vala:55
 msgid "Balanced"
 msgstr ""
 
-#: src/Widgets/PowerModeList.vala:104
+#: src/Widgets/PowerModeList.vala:59
 msgid "Performance"
 msgstr ""
+
+#~ msgid "Calculating…"
+#~ msgstr "Aprēķina…"
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Aplikācijas izmanto ļoti daudz enerģijas"

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 17:22+0000\n"
-"PO-Revision-Date: 2024-08-22 09:16+0000\n"
+"POT-Creation-Date: 2024-10-09 03:58+0000\n"
+"PO-Revision-Date: 2024-10-11 23:16+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/ca/>\n"
@@ -89,60 +89,86 @@ msgstr "Bolígraf"
 msgid "Plugged In"
 msgstr "Endollat"
 
-#: src/Services/Device.vala:280
-msgid "Calculating…"
-msgstr "S’està calculant…"
+#: src/Services/Device.vala:321
+msgid "Unknown. Device may be locked."
+msgstr "Desconegut. És possible que el dispositiu estigui blocat."
 
-#: src/Services/Device.vala:284
+#. Coarse battery level can sometimes be unknown, percentage is more reliable
+#: src/Services/Device.vala:328
+msgctxt "battery-level"
+msgid "Critical"
+msgstr "Crítica"
+
+#: src/Services/Device.vala:330
+msgctxt "battery-level"
+msgid "Low"
+msgstr "Baixa"
+
+#: src/Services/Device.vala:332
+msgctxt "battery-level"
+msgid "Good"
+msgstr "Correcta"
+
+#: src/Services/Device.vala:334
+msgctxt "battery-level"
+msgid "High"
+msgstr "Alta"
+
+#: src/Services/Device.vala:336
+msgctxt "battery-level"
+msgid "Full"
+msgstr "Plena"
+
+#: src/Services/Device.vala:341
 msgid "Fully charged"
 msgstr "Càrrega completa"
 
-#: src/Services/Device.vala:290
+#: src/Services/Device.vala:346
 #, c-format
-msgid "%i%% charged"
-msgstr "%i %% carregat"
+msgid "%.0f%% charged"
+msgstr "%.0f%% carregada"
 
-#: src/Services/Device.vala:298
+#: src/Services/Device.vala:349
+#, c-format
+msgid "%.0f%% remaining"
+msgstr "Temps restant: %.0f%%"
+
+#: src/Services/Device.vala:359
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld hora per carregar-se"
 msgstr[1] "%lld hores per carregar-se"
 
-#: src/Services/Device.vala:306
+#: src/Services/Device.vala:367
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld minut per carregar-se"
 msgstr[1] "%lld minuts per carregar-se"
 
-#: src/Services/Device.vala:313
+#: src/Services/Device.vala:374
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld segon per carregar-se"
 msgstr[1] "%lld segons per carregar-se"
 
-#: src/Services/Device.vala:320
-#, c-format
-msgid "%i%% remaining"
-msgstr "Queda un %i %%"
-
-#: src/Services/Device.vala:328
+#: src/Services/Device.vala:385
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld hora fins que es buidi"
 msgstr[1] "%lld hores fins que es buidi"
 
-#: src/Services/Device.vala:336
+#: src/Services/Device.vala:393
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld minut fins que es buidi"
 msgstr[1] "%lld minuts fins que es buidi"
 
-#: src/Services/Device.vala:343
+#: src/Services/Device.vala:400
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
@@ -167,17 +193,20 @@ msgstr "Mostra'n el percentatge"
 msgid "Power Settings…"
 msgstr "Paràmetres de l'energia…"
 
-#: src/Widgets/PowerModeList.vala:66
+#: src/Widgets/PowerModeList.vala:53
 msgid "Power Saver"
 msgstr "Estalviador d'energia"
 
-#: src/Widgets/PowerModeList.vala:84
+#: src/Widgets/PowerModeList.vala:55
 msgid "Balanced"
 msgstr "Equilibrat"
 
-#: src/Widgets/PowerModeList.vala:104
+#: src/Widgets/PowerModeList.vala:59
 msgid "Performance"
 msgstr "Rendiment"
+
+#~ msgid "Calculating…"
+#~ msgstr "S’està calculant…"
 
 #~ msgid "Apps Using Lots of Power"
 #~ msgstr "Aplicacions que consumeixen molta energia"
