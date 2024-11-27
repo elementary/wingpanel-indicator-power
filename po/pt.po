@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-09 03:58+0000\n"
-"PO-Revision-Date: 2023-01-23 17:25+0000\n"
+"PO-Revision-Date: 2024-11-28 12:16+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/pt/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: src/Indicator.vala:181
@@ -91,49 +91,47 @@ msgstr "Ligado"
 
 #: src/Services/Device.vala:321
 msgid "Unknown. Device may be locked."
-msgstr ""
+msgstr "Desconhecido. O dispositivo pode estar bloqueado."
 
 #. Coarse battery level can sometimes be unknown, percentage is more reliable
 #: src/Services/Device.vala:328
 msgctxt "battery-level"
 msgid "Critical"
-msgstr ""
+msgstr "Crítica"
 
 #: src/Services/Device.vala:330
 msgctxt "battery-level"
 msgid "Low"
-msgstr ""
+msgstr "Baixa"
 
 #: src/Services/Device.vala:332
 msgctxt "battery-level"
 msgid "Good"
-msgstr ""
+msgstr "Boa"
 
 #: src/Services/Device.vala:334
 msgctxt "battery-level"
 msgid "High"
-msgstr ""
+msgstr "Alta"
 
 #: src/Services/Device.vala:336
 msgctxt "battery-level"
 msgid "Full"
-msgstr ""
+msgstr "Cheia"
 
 #: src/Services/Device.vala:341
 msgid "Fully charged"
-msgstr "Totalmente carregado"
+msgstr "Totalmente carregada"
 
 #: src/Services/Device.vala:346
-#, fuzzy, c-format
-#| msgid "%i%% charged"
+#, c-format
 msgid "%.0f%% charged"
-msgstr "%i%% carregado"
+msgstr "%.0f%% carregada"
 
 #: src/Services/Device.vala:349
-#, fuzzy, c-format
-#| msgid "%i%% remaining"
+#, c-format
 msgid "%.0f%% remaining"
-msgstr "%i%% restante"
+msgstr "%.0f%% restante"
 
 #: src/Services/Device.vala:359
 #, c-format
@@ -189,25 +187,23 @@ msgstr "%i%%"
 
 #: src/Widgets/PopoverWidget.vala:63
 msgid "Show Percentage"
-msgstr "Mostrar Percentagem"
+msgstr "Mostrar percentagem"
 
 #: src/Widgets/PopoverWidget.vala:86
 msgid "Power Settings…"
 msgstr "Definições de energia…"
 
 #: src/Widgets/PowerModeList.vala:53
-#, fuzzy
-#| msgid "Power"
 msgid "Power Saver"
-msgstr "Energia"
+msgstr "Poupança de energia"
 
 #: src/Widgets/PowerModeList.vala:55
 msgid "Balanced"
-msgstr ""
+msgstr "Equilibrado"
 
 #: src/Widgets/PowerModeList.vala:59
 msgid "Performance"
-msgstr ""
+msgstr "Desempenho"
 
 #~ msgid "Calculating…"
 #~ msgstr "A calcular…"
