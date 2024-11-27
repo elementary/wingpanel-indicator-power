@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-09 03:58+0000\n"
-"PO-Revision-Date: 2023-01-23 17:25+0000\n"
+"PO-Revision-Date: 2024-11-28 12:16+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/power.metainfo.xml.in:11
 msgid "Power Indicator"
@@ -40,6 +40,7 @@ msgstr "Pequenas atualizações:"
 #: data/power.metainfo.xml.in:37
 msgid "Redesign battery panel icon and show more fine-grained levels"
 msgstr ""
+"O ícone de bateria no painel foi redesenhado e mostra níveis mais refinados"
 
 #: data/power.metainfo.xml.in:38 data/power.metainfo.xml.in:51
 #: data/power.metainfo.xml.in:60 data/power.metainfo.xml.in:78
@@ -50,6 +51,7 @@ msgstr "Traduções atualizadas"
 #: data/power.metainfo.xml.in:50
 msgid "Drop inaccurate \"Apps using lots of power\" feature"
 msgstr ""
+"Elimine a funcionalidade imprecisa \"Aplicações que usam muita energia\""
 
 #: data/power.metainfo.xml.in:71 data/power.metainfo.xml.in:89
 #: data/power.metainfo.xml.in:105
