@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-09 03:58+0000\n"
-"PO-Revision-Date: 2023-01-26 09:25+0000\n"
+"PO-Revision-Date: 2024-12-02 14:16+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/fi/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: src/Indicator.vala:181
@@ -91,49 +91,47 @@ msgstr "Kytkettynä"
 
 #: src/Services/Device.vala:321
 msgid "Unknown. Device may be locked."
-msgstr ""
+msgstr "Tuntematon. Laite saattaa olla lukittu."
 
 #. Coarse battery level can sometimes be unknown, percentage is more reliable
 #: src/Services/Device.vala:328
 msgctxt "battery-level"
 msgid "Critical"
-msgstr ""
+msgstr "Kriittinen"
 
 #: src/Services/Device.vala:330
 msgctxt "battery-level"
 msgid "Low"
-msgstr ""
+msgstr "Matala"
 
 #: src/Services/Device.vala:332
 msgctxt "battery-level"
 msgid "Good"
-msgstr ""
+msgstr "Hyvä"
 
 #: src/Services/Device.vala:334
 msgctxt "battery-level"
 msgid "High"
-msgstr ""
+msgstr "Korkea"
 
 #: src/Services/Device.vala:336
 msgctxt "battery-level"
 msgid "Full"
-msgstr ""
+msgstr "Täysi"
 
 #: src/Services/Device.vala:341
 msgid "Fully charged"
 msgstr "Ladattu täyteen"
 
 #: src/Services/Device.vala:346
-#, fuzzy, c-format
-#| msgid "%i%% charged"
+#, c-format
 msgid "%.0f%% charged"
-msgstr "%i%% ladattu"
+msgstr "%.0f%% ladattu"
 
 #: src/Services/Device.vala:349
-#, fuzzy, c-format
-#| msgid "%i%% remaining"
+#, c-format
 msgid "%.0f%% remaining"
-msgstr "%i%% jäljellä"
+msgstr "%.0f%% jäljellä"
 
 #: src/Services/Device.vala:359
 #, c-format
@@ -196,18 +194,16 @@ msgid "Power Settings…"
 msgstr "Virranhallinnan asetukset…"
 
 #: src/Widgets/PowerModeList.vala:53
-#, fuzzy
-#| msgid "Power"
 msgid "Power Saver"
-msgstr "Virta"
+msgstr "Virransäästö"
 
 #: src/Widgets/PowerModeList.vala:55
 msgid "Balanced"
-msgstr ""
+msgstr "Tasapainotettu"
 
 #: src/Widgets/PowerModeList.vala:59
 msgid "Performance"
-msgstr ""
+msgstr "Suorituskyky"
 
 #~ msgid "Calculating…"
 #~ msgstr "Lasketaan…"
