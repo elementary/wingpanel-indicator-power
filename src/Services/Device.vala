@@ -238,11 +238,11 @@ public class Power.Services.Device : Object {
         }
 
         var icon_name = "battery";
+        var rounded_percentage = (int) (5 * Math.round (percentage / 5)).clamp (20, 100);
 
         if (percentage > 10) {
             // Round to the nearest 5 percent
             // Clamp to 20. There is no 15. Make sure we don't have single px red line until < 10
-            var rounded_percentage = (int) (5 * Math.round (percentage / 5)).clamp (20, 100);
             icon_name += "-%i".printf (rounded_percentage);
         } else if (percentage > 0) {
             icon_name += "-10";
@@ -252,8 +252,16 @@ public class Power.Services.Device : Object {
 
         if (is_charging) {
             icon_name += "-charging";
-        } else if (time_to_empty >= 0 && time_to_empty < 15 * 60) {
+        } else if (percentage == 0) {
+            // Only set battery-0 when the battery is empty (0%)
             icon_name = "battery-0";
+        } else if (time_to_empty >= 0 && time_to_empty < 15 * 60) {
+            // Prevent showing battery-0-symbolic if there's still battery left
+            if (percentage > 0) {
+                icon_name = "battery-%i".printf (rounded_percentage);  // Show correct icon with remaining percentage
+            } else {
+                icon_name = "battery-0";
+            }
         }
 
         return icon_name += "-symbolic";
