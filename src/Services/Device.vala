@@ -237,7 +237,7 @@ public class Power.Services.Device : Object {
         }
 
         // Round to the nearest 5 percent and clamp to the range [20, 100]
-        int rounded_percentage = (int) (5 * Math.round(percentage / 5)).clamp(20, 100);
+        int rounded_percentage = (int) (5 * Math.round (percentage / 5)).clamp (20, 100);
 
         // Default icon name
         var icon_name = "battery";
