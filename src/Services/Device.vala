@@ -236,9 +236,9 @@ public class Power.Services.Device : Object {
         if (!is_a_battery) {
             return "preferences-system-power-symbolic";
         }
-    
+
         var icon_name = "battery";
-    
+
         if (percentage > 10) {
             // Round to the nearest 5 percent
             // Clamp to 20. There is no 15. Make sure we don't have single px red line until < 10
@@ -249,7 +249,7 @@ public class Power.Services.Device : Object {
         } else {
             icon_name += "-0";
         }
-    
+
         if (is_charging) {
             icon_name += "-charging";
         } else if (percentage == 0) {
@@ -259,7 +259,7 @@ public class Power.Services.Device : Object {
             int rounded_percentage = (int) (5 * Math.round (percentage / 5)).clamp (20, 100);
             icon_name = "battery-%i".printf (rounded_percentage);
         }
-    
+
         return icon_name += "-symbolic";
     }
 
