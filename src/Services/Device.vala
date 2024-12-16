@@ -231,18 +231,19 @@ public class Power.Services.Device : Object {
         }
         return (Power.Services.Device.Type) device.Type;
     }
-
     public string get_symbolic_icon_name_for_battery () {
         if (!is_a_battery) {
             return "preferences-system-power-symbolic";
         }
 
-        var icon_name = "battery";
-        var rounded_percentage = (int) (5 * Math.round (percentage / 5)).clamp (20, 100);
+        // Round to the nearest 5 percent and clamp to the range [20, 100]
+        int rounded_percentage = (int) (5 * Math.round(percentage / 5)).clamp(20, 100);
 
+        // Default icon name
+        var icon_name = "battery";
+
+        // Set icon name based on percentage
         if (percentage > 10) {
-            // Round to the nearest 5 percent
-            // Clamp to 20. There is no 15. Make sure we don't have single px red line until < 10
             icon_name += "-%i".printf (rounded_percentage);
         } else if (percentage > 0) {
             icon_name += "-10";
@@ -250,18 +251,15 @@ public class Power.Services.Device : Object {
             icon_name += "-0";
         }
 
+        // Add charging state if applicable
         if (is_charging) {
             icon_name += "-charging";
         } else if (percentage == 0) {
             // Only set battery-0 when the battery is empty (0%)
             icon_name = "battery-0";
-        } else if (time_to_empty >= 0 && time_to_empty < 15 * 60) {
+        } else if (time_to_empty >= 0 && time_to_empty < 15 * 60 && percentage > 0) {
             // Prevent showing battery-0-symbolic if there's still battery left
-            if (percentage > 0) {
-                icon_name = "battery-%i".printf (rounded_percentage);  // Show correct icon with remaining percentage
-            } else {
-                icon_name = "battery-0";
-            }
+            icon_name = "battery-%i".printf (rounded_percentage);
         }
 
         return icon_name += "-symbolic";
