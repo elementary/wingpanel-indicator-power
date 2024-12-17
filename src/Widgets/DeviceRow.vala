@@ -105,12 +105,12 @@ public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
         }
 
         if (type_string == null) {
-            if (battery.vendor != null && battery.vendor.strip () != "") {
-                type_string = "%s %s".printf (battery.vendor, _("Device"));
-            }
-
-            if (battery.model != null && battery.model.strip () != "") {
+            if (battery.vendor != null && battery.vendor.strip() != "") {
+                type_string = "%s %s".printf(battery.vendor, _("Device"));
+            } else if (battery.model != null && battery.model.strip() != "") {
                 type_string = battery.model;
+            } else {
+                type_string = _("Device");
             }
         }
 
