@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-09 03:58+0000\n"
-"PO-Revision-Date: 2024-08-07 00:16+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-12-22 13:16+0000\n"
+"Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/wingpanel/"
 "indicator-power-extra/nl/>\n"
 "Language: nl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.8.4\n"
 
 #: data/power.metainfo.xml.in:11
 msgid "Power Indicator"
@@ -40,6 +40,7 @@ msgstr "Kleine updates:"
 #: data/power.metainfo.xml.in:37
 msgid "Redesign battery panel icon and show more fine-grained levels"
 msgstr ""
+"Ontwerp batterij paneel icoon opnieuw en laat meer verfijnde niveaus zien"
 
 #: data/power.metainfo.xml.in:38 data/power.metainfo.xml.in:51
 #: data/power.metainfo.xml.in:60 data/power.metainfo.xml.in:78
