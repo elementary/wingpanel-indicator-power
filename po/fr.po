@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-09 03:58+0000\n"
-"PO-Revision-Date: 2024-08-27 08:16+0000\n"
+"PO-Revision-Date: 2025-02-07 15:16+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/wingpanel/"
 "wingpanel-indicator-power/fr/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.9.2\n"
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 
 #: src/Indicator.vala:181
@@ -91,49 +91,47 @@ msgstr "Branché"
 
 #: src/Services/Device.vala:321
 msgid "Unknown. Device may be locked."
-msgstr ""
+msgstr "Inconnu. L'appareil est peut-être verrouillé."
 
 #. Coarse battery level can sometimes be unknown, percentage is more reliable
 #: src/Services/Device.vala:328
 msgctxt "battery-level"
 msgid "Critical"
-msgstr ""
+msgstr "Critique"
 
 #: src/Services/Device.vala:330
 msgctxt "battery-level"
 msgid "Low"
-msgstr ""
+msgstr "Faible"
 
 #: src/Services/Device.vala:332
 msgctxt "battery-level"
 msgid "Good"
-msgstr ""
+msgstr "Bonne"
 
 #: src/Services/Device.vala:334
 msgctxt "battery-level"
 msgid "High"
-msgstr ""
+msgstr "Haute"
 
 #: src/Services/Device.vala:336
 msgctxt "battery-level"
 msgid "Full"
-msgstr ""
+msgstr "Pleine"
 
 #: src/Services/Device.vala:341
 msgid "Fully charged"
 msgstr "Complètement chargé"
 
 #: src/Services/Device.vala:346
-#, fuzzy, c-format
-#| msgid "%i%% charged"
+#, c-format
 msgid "%.0f%% charged"
-msgstr "chargé à %i%%"
+msgstr "chargé à %.0f%%"
 
 #: src/Services/Device.vala:349
-#, fuzzy, c-format
-#| msgid "%i%% remaining"
+#, c-format
 msgid "%.0f%% remaining"
-msgstr "%i%% restants"
+msgstr "%.0f%% restants"
 
 #: src/Services/Device.vala:359
 #, c-format
