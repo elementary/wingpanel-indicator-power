@@ -30,6 +30,19 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+    <release version="8.0.2" date="2025-02-11" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/wingpanel-indicator-power/issues/270">Battery status goes to zero when plugging/unplugging cable</issue>
+        <issue url="https://github.com/elementary/wingpanel-indicator-power/issues/274">Display the real name of connected devices</issue>
+      </issues>
+    </release>
+    
     <release version="8.0.1" date="2024-10-21" urgency="medium">
       <description>
         <p>Minor updates:</p>
