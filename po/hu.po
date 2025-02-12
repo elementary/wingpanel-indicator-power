@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-09 03:58+0000\n"
+"POT-Creation-Date: 2025-02-11 22:47+0000\n"
 "PO-Revision-Date: 2024-12-11 17:16+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/wingpanel/"
@@ -89,93 +89,93 @@ msgstr "Toll"
 msgid "Plugged In"
 msgstr "Csatlakoztatva"
 
-#: src/Services/Device.vala:321
+#: src/Services/Device.vala:325
 msgid "Unknown. Device may be locked."
 msgstr "Ismeretlen. A készülék le lehet zárva."
 
 #. Coarse battery level can sometimes be unknown, percentage is more reliable
-#: src/Services/Device.vala:328
+#: src/Services/Device.vala:332
 msgctxt "battery-level"
 msgid "Critical"
 msgstr "Kritikus"
 
-#: src/Services/Device.vala:330
+#: src/Services/Device.vala:334
 msgctxt "battery-level"
 msgid "Low"
 msgstr "Alacsony"
 
-#: src/Services/Device.vala:332
+#: src/Services/Device.vala:336
 msgctxt "battery-level"
 msgid "Good"
 msgstr "Jó"
 
-#: src/Services/Device.vala:334
+#: src/Services/Device.vala:338
 msgctxt "battery-level"
 msgid "High"
 msgstr "Magas"
 
-#: src/Services/Device.vala:336
+#: src/Services/Device.vala:340
 msgctxt "battery-level"
 msgid "Full"
 msgstr "Tele"
 
-#: src/Services/Device.vala:341
+#: src/Services/Device.vala:345
 msgid "Fully charged"
 msgstr "Teljesen feltöltve"
 
-#: src/Services/Device.vala:346
+#: src/Services/Device.vala:350
 #, c-format
 msgid "%.0f%% charged"
 msgstr "%.0f%% töltöttség"
 
-#: src/Services/Device.vala:349
+#: src/Services/Device.vala:353
 #, c-format
 msgid "%.0f%% remaining"
 msgstr "%.0f%% hátralévő"
 
-#: src/Services/Device.vala:359
+#: src/Services/Device.vala:363
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "%lld óra a feltöltésig"
 msgstr[1] "%lld óra a feltöltésig"
 
-#: src/Services/Device.vala:367
+#: src/Services/Device.vala:371
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "%lld perc a feltöltésig"
 msgstr[1] "%lld perc a feltöltésig"
 
-#: src/Services/Device.vala:374
+#: src/Services/Device.vala:378
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "%lld másodperc a feltöltésig"
 msgstr[1] "%lld másodperc a feltöltésig"
 
-#: src/Services/Device.vala:385
+#: src/Services/Device.vala:389
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "%lld óra a lemerülésig"
 msgstr[1] "%lld óra a lemerülésig"
 
-#: src/Services/Device.vala:393
+#: src/Services/Device.vala:397
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "%lld perc a lemerülésig"
 msgstr[1] "%lld perc a lemerülésig"
 
-#: src/Services/Device.vala:400
+#: src/Services/Device.vala:404
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
 msgstr[0] "%lld másodperc a lemerülésig"
 msgstr[1] "%lld másodperc a lemerülésig"
 
-#: src/Widgets/DeviceRow.vala:108
+#: src/Widgets/DeviceRow.vala:109 src/Widgets/DeviceRow.vala:113
 msgid "Device"
 msgstr "Eszköz"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-09 03:58+0000\n"
+"POT-Creation-Date: 2025-02-11 22:47+0000\n"
 "PO-Revision-Date: 2024-10-07 05:38+0000\n"
 "Last-Translator: Marcin Serwin <marcin@serwin.dev>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/wingpanel/"
@@ -33,82 +33,84 @@ msgstr ""
 "pobierające dużo mocy"
 
 #: data/power.metainfo.xml.in:35 data/power.metainfo.xml.in:48
-#: data/power.metainfo.xml.in:58 data/power.metainfo.xml.in:75
-#: data/power.metainfo.xml.in:94 data/power.metainfo.xml.in:111
+#: data/power.metainfo.xml.in:61 data/power.metainfo.xml.in:71
+#: data/power.metainfo.xml.in:88 data/power.metainfo.xml.in:107
+#: data/power.metainfo.xml.in:124
 msgid "Minor updates:"
 msgstr "Mniejsze aktualizacje:"
 
-#: data/power.metainfo.xml.in:37
-msgid "Redesign battery panel icon and show more fine-grained levels"
-msgstr ""
-"Przeprojektowano panel ikony baterii i pokazano w nim dokładniejsze poziomy"
-
-#: data/power.metainfo.xml.in:38 data/power.metainfo.xml.in:51
-#: data/power.metainfo.xml.in:60 data/power.metainfo.xml.in:78
-#: data/power.metainfo.xml.in:98 data/power.metainfo.xml.in:117
+#: data/power.metainfo.xml.in:37 data/power.metainfo.xml.in:51
+#: data/power.metainfo.xml.in:64 data/power.metainfo.xml.in:73
+#: data/power.metainfo.xml.in:91 data/power.metainfo.xml.in:111
+#: data/power.metainfo.xml.in:130
 msgid "Updated translations"
 msgstr "Zaktualizowano tłumaczenia"
 
 #: data/power.metainfo.xml.in:50
+msgid "Redesign battery panel icon and show more fine-grained levels"
+msgstr ""
+"Przeprojektowano panel ikony baterii i pokazano w nim dokładniejsze poziomy"
+
+#: data/power.metainfo.xml.in:63
 msgid "Drop inaccurate \"Apps using lots of power\" feature"
 msgstr ""
 "Niedokładna funkcja „Aplikacje wykorzystujące sporo energii” została usunięta"
 
-#: data/power.metainfo.xml.in:71 data/power.metainfo.xml.in:89
-#: data/power.metainfo.xml.in:105
+#: data/power.metainfo.xml.in:84 data/power.metainfo.xml.in:102
+#: data/power.metainfo.xml.in:118
 msgid "New features:"
 msgstr "Nowe funkcje:"
 
-#: data/power.metainfo.xml.in:73
+#: data/power.metainfo.xml.in:86
 msgid "Scroll horizontally on the panel icon to change display brightness"
 msgstr ""
 "Przewijanie kółka myszy na ikonie w panelu zmienia jasność wyświetlacza"
 
-#: data/power.metainfo.xml.in:77
+#: data/power.metainfo.xml.in:90
 msgid "Do a better job hiding the brightness slider on unsupported displays"
 msgstr "Lepsze ukrywanie suwaka jasności na niewspieranych wyświetlaczach"
 
-#: data/power.metainfo.xml.in:91
+#: data/power.metainfo.xml.in:104
 msgid "Show brightness level when scrolled"
 msgstr "Pokaż poziomy jasności przy przewijaniu"
 
-#: data/power.metainfo.xml.in:92
+#: data/power.metainfo.xml.in:105
 msgid "Show battery percentage automatically at 20% or lower"
 msgstr "Pokaż procent baterii automatycznie przy 20% lub niżej"
 
-#: data/power.metainfo.xml.in:96
+#: data/power.metainfo.xml.in:109
 msgid "Match scroll direction with Sound indicator"
 msgstr "Dopasuj kierunek przewijania do wskaźnika dźwięku"
 
-#: data/power.metainfo.xml.in:97
+#: data/power.metainfo.xml.in:110
 msgid "Show \"Fully Charged\" at 100% when plugged in"
 msgstr "Pokaż „W pełni naładowane” przy 100% gdy podłączone"
 
-#: data/power.metainfo.xml.in:107
+#: data/power.metainfo.xml.in:120
 msgid "Show battery statistics when selected"
 msgstr "Pokaż statystyki baterii po wybraniu"
 
-#: data/power.metainfo.xml.in:108
+#: data/power.metainfo.xml.in:121
 msgid "Launch apps using power when selected"
 msgstr "Uruchom aplikacje pobierające moc przy wybraniu"
 
-#: data/power.metainfo.xml.in:109
+#: data/power.metainfo.xml.in:122
 msgid "Control display brightness by scrolling the indicator"
 msgstr "Kontrolowanie jasności ekranu przy przewijaniu nad wskaźnikiem"
 
-#: data/power.metainfo.xml.in:113
+#: data/power.metainfo.xml.in:126
 msgid "Improvements for desktops with peripherals"
 msgstr "Ulepszenia dla urządzeń z peryferiami"
 
-#: data/power.metainfo.xml.in:114
+#: data/power.metainfo.xml.in:127
 msgid "Filter out internal devices"
 msgstr "Filtrowanie urządzeń wewnętrznych"
 
-#: data/power.metainfo.xml.in:115
+#: data/power.metainfo.xml.in:128
 msgid "Show tooltip on hover"
 msgstr "Przy najechaniu pokazywany jest tooltip"
 
-#: data/power.metainfo.xml.in:116
+#: data/power.metainfo.xml.in:129
 msgid "Performance improvements"
 msgstr "Ulepszenie wydajności"
 

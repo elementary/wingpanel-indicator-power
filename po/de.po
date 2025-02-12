@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-09 03:58+0000\n"
+"POT-Creation-Date: 2025-02-11 22:47+0000\n"
 "PO-Revision-Date: 2024-10-10 14:52+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/wingpanel/"
@@ -89,93 +89,93 @@ msgstr "Stift"
 msgid "Plugged In"
 msgstr "Am Netzstrom angeschlossen"
 
-#: src/Services/Device.vala:321
+#: src/Services/Device.vala:325
 msgid "Unknown. Device may be locked."
 msgstr "Unbekannt. Das Gerät ist möglichweise gesperrt."
 
 #. Coarse battery level can sometimes be unknown, percentage is more reliable
-#: src/Services/Device.vala:328
+#: src/Services/Device.vala:332
 msgctxt "battery-level"
 msgid "Critical"
 msgstr "Kritisch"
 
-#: src/Services/Device.vala:330
+#: src/Services/Device.vala:334
 msgctxt "battery-level"
 msgid "Low"
 msgstr "Niedrig"
 
-#: src/Services/Device.vala:332
+#: src/Services/Device.vala:336
 msgctxt "battery-level"
 msgid "Good"
 msgstr "Gut"
 
-#: src/Services/Device.vala:334
+#: src/Services/Device.vala:338
 msgctxt "battery-level"
 msgid "High"
 msgstr "Hoch"
 
-#: src/Services/Device.vala:336
+#: src/Services/Device.vala:340
 msgctxt "battery-level"
 msgid "Full"
 msgstr "Voll"
 
-#: src/Services/Device.vala:341
+#: src/Services/Device.vala:345
 msgid "Fully charged"
 msgstr "Vollständig geladen"
 
-#: src/Services/Device.vala:346
+#: src/Services/Device.vala:350
 #, c-format
 msgid "%.0f%% charged"
 msgstr "%.0f% % geladen"
 
-#: src/Services/Device.vala:349
+#: src/Services/Device.vala:353
 #, c-format
 msgid "%.0f%% remaining"
 msgstr "%.0f% % verbleibend"
 
-#: src/Services/Device.vala:359
+#: src/Services/Device.vala:363
 #, c-format
 msgid "%lld hour until full"
 msgid_plural "%lld hours until full"
 msgstr[0] "vollständig geladen in %lld Stunde"
 msgstr[1] "vollständig geladen in %lld Stunden"
 
-#: src/Services/Device.vala:367
+#: src/Services/Device.vala:371
 #, c-format
 msgid "%lld minute until full"
 msgid_plural "%lld minutes until full"
 msgstr[0] "vollständig geladen in %lld Minute"
 msgstr[1] "vollständig geladen in %lld Minuten"
 
-#: src/Services/Device.vala:374
+#: src/Services/Device.vala:378
 #, c-format
 msgid "%lld second until full"
 msgid_plural "%lld seconds until full"
 msgstr[0] "vollständig geladen in %lld Sekunde"
 msgstr[1] "vollständig geladen in %lld Sekunden"
 
-#: src/Services/Device.vala:385
+#: src/Services/Device.vala:389
 #, c-format
 msgid "%lld hour until empty"
 msgid_plural "%lld hours until empty"
 msgstr[0] "entladen in %lld Stunde"
 msgstr[1] "entladen in %lld Stunden"
 
-#: src/Services/Device.vala:393
+#: src/Services/Device.vala:397
 #, c-format
 msgid "%lld minute until empty"
 msgid_plural "%lld minutes until empty"
 msgstr[0] "entladen in %lld Minute"
 msgstr[1] "entladen in %lld Minuten"
 
-#: src/Services/Device.vala:400
+#: src/Services/Device.vala:404
 #, c-format
 msgid "%lld second until empty"
 msgid_plural "%lld seconds until empty"
 msgstr[0] "entladen in %lld Sekunde"
 msgstr[1] "entladen in %lld Sekunden"
 
-#: src/Widgets/DeviceRow.vala:108
+#: src/Widgets/DeviceRow.vala:109 src/Widgets/DeviceRow.vala:113
 msgid "Device"
 msgstr "Gerät"
 
