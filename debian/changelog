@@ -1,3 +1,9 @@
+wingpanel-indicator-power (8.0.2) jammy; urgency=medium
+
+  * Release 8.0.2 (#280)
+
+ -- elementary, Inc. <builds@elementary.io>  Wed, 12 Feb 2025 17:11:07 +0000
+
 wingpanel-indicator-power (8.0.1) jammy; urgency=medium
 
   * Release 8.0.1 (#269)
