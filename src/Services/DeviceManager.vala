@@ -117,7 +117,7 @@ public class Power.Services.DeviceManager : Object {
             return;
         }
 
-        status = DDCUtil.open_display2 (dlist.info[0].dref, true,   out display_handle);
+        status = DDCUtil.open_display2 (dlist.info[0].dref, true, out display_handle);
 
         if (status != DDCUtil.Status.OK || display_handle == null) {
             return;
