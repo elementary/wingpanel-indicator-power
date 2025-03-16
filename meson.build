@@ -17,6 +17,7 @@ add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format(gettext_name), language:'c
 add_project_arguments(['--vapidir', meson.current_source_dir() / 'vapi'], language: 'vala')
 add_project_arguments('-DG_LOG_DOMAIN="io.elementary.wingpanel.power"', language:'c')
 
+vapi_dir = meson.current_source_dir() / 'vapi'
 
 indicator_resources = gnome.compile_resources (
     'indicator_resources',

@@ -29,6 +29,7 @@ public class Power.Services.Backlight : GLib.Object {
     }
 
     private static bool get_backlight_present () {
+        print ("VJR BACKLIGHT CHECK\n");
         var context = new UDev.Context ();
         var e = context.create_enumerate ();
         e.add_match_subsystem (BACKLIGHT_NAME);
@@ -43,6 +44,22 @@ public class Power.Services.Backlight : GLib.Object {
             }
         }
 
+        DDCUtil.Status status;
+
+        DDCUtil.DisplayInfoList dlist;
+
+        print ("VJR BACKLIGHT CHECK2\n");
+
+        status = DDCUtil.get_display_info_list2 (true, out dlist);
+
+        print ("VJR BACKLIGHT CHECK3\n");
+
+        if (status == DDCUtil.Status.OK && dlist.info.length > 0) {
+            print ("VJR BACKLIGHT CHECK4\n");
+            return true;
+        }
+
+        print ("VJR BACKLIGHT CHECK5 %i\n", status);
         return false;
     }
 }

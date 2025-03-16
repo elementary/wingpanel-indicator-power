@@ -39,6 +39,7 @@ dependencies = [
     dependency('libudev'),
     dependency('libnotify'),
     meson.get_compiler('vala').find_library('posix'),
+    meson.get_compiler('vala').find_library('libddcutil', dirs: vapi_dir, required: true),
     wingpanel_dep
 ]
 
@@ -48,6 +49,7 @@ shared_module(
     indicator_resources,
     config_in,
     dependencies: dependencies,
+    link_args: ['-lddcutil'],
     install: true,
     install_dir : wingpanel_indicatorsdir
 )
