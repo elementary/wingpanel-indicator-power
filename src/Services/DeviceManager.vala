@@ -29,9 +29,6 @@ public class Power.Services.DeviceManager : Object {
     private DBusInterfaces.UPower? upower = null;
     private DBusInterfaces.PowerSettings? iscreen = null;
 
-    private DDCUtil.DisplayHandle? display_handle = null;
-    private DDCUtil.NonTableVcpValue? display_value = null;
-
     public Services.Backlight backlight { get; construct; }
     public Gee.HashMap<string, Device> devices { get; private set; }
     public Gee.Iterator batteries { get; private set; }
@@ -42,7 +39,6 @@ public class Power.Services.DeviceManager : Object {
     public int brightness {
         get {
             if (!backlight.present) {
-                print ("VJR BACKLIST PRESENT = FALSE");
                 return -1;
             }
 
@@ -50,24 +46,11 @@ public class Power.Services.DeviceManager : Object {
                 return iscreen.brightness;
             }
 
-            if (display_handle != null) {
-                DDCUtil.Status status;
-                DDCUtil.VcpFeatureCode feature = 0x10;
-                status = DDCUtil.get_non_table_vcp_value (display_handle, feature, out display_value);
-                if (status == DDCUtil.Status.OK) {
-                    return (int) display_value.sh << 8 | display_value.sl;
-                }
-                print ("VJR BACKLIST STATUS = NOT OK");
-            }
-
-            print ("VJR HANDLE = NULL");
-
-            return -1;
+            return DDC.get_brightness ();
         }
 
         set {
             if (!backlight.present) {
-                print ("VJR BACKLIST PRESENT = FALSE2");
                 return;
             }
 
@@ -76,14 +59,8 @@ public class Power.Services.DeviceManager : Object {
                 return;
             }
 
-            if (display_handle != null) {
-                DDCUtil.VcpFeatureCode feature = 0x10;
-                value = value.clamp (0, (int) display_value.mh << 8 | display_value.ml);
-                uint8 hibyte = (uint8) ((value >> 8) & 0xff);
-                uint8 lobyte = (uint8) (value & 0xff);
-                DDCUtil.set_non_table_vcp_value (display_handle, feature, hibyte, lobyte);
-            }
-            print ("VJR BACKLIST HANDLE = NULL2");
+            DDC.set_brightness (value.clamp (0, 100));
+            brightness_changed (value.clamp (0, 100));
         }
     }
 
@@ -102,29 +79,6 @@ public class Power.Services.DeviceManager : Object {
                 connect_signals ();
             }
         });
-
-        if (iscreen != null) {
-            return;
-        }
-
-        DDCUtil.Status status;
-
-        DDCUtil.DisplayInfoList dlist;
-
-        status = DDCUtil.get_display_info_list2 (false, out dlist);
-
-        if (status != DDCUtil.Status.OK || dlist.info.length <= 0) {
-            return;
-        }
-
-        status = DDCUtil.open_display2 (dlist.info[0].dref, true, out display_handle);
-
-        if (status != DDCUtil.Status.OK || display_handle == null) {
-            return;
-        }
-
-        DDCUtil.VcpFeatureCode feature = 0x10;
-        DDCUtil.get_non_table_vcp_value (display_handle, feature, out display_value);
     }
 
     // singleton one class object in memory. use instance to get data.
@@ -155,6 +109,10 @@ public class Power.Services.DeviceManager : Object {
                 DBusProxyFlags.GET_INVALIDATED_PROPERTIES
             );
             debug ("Connection to Power Settings bus established");
+
+            if (iscreen.brightness <= 0) {
+                iscreen = null;
+            }
 
             return true;
         } catch (Error e) {
@@ -261,6 +219,8 @@ public class Power.Services.DeviceManager : Object {
     public void change_brightness (int change) {
         if (iscreen != null) {
             brightness = iscreen.brightness + change;
+            return;
         }
+        brightness = DDC.get_brightness () + change;
     }
 }

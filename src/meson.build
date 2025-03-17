@@ -12,6 +12,8 @@ config_in = configure_file(
 )
 
 files = files(
+    'ddc/ddc.h',
+    'ddc/ddc.c',
     'Indicator.vala',
     'Utils.vala',
     'Services/Backlight/Backlight.vala',
@@ -30,6 +32,8 @@ files = files(
     'Widgets/PowerModeList.vala'
 )
 
+ddc_dir = meson.current_source_dir() / 'ddc'
+
 dependencies = [
     dependency('glib-2.0'),
     dependency('gobject-2.0'),
@@ -39,7 +43,7 @@ dependencies = [
     dependency('libudev'),
     dependency('libnotify'),
     meson.get_compiler('vala').find_library('posix'),
-    meson.get_compiler('vala').find_library('libddcutil', dirs: vapi_dir, required: true),
+    meson.get_compiler('vala').find_library('ddc', dirs: ddc_dir, required: true),
     wingpanel_dep
 ]
 
@@ -49,6 +53,7 @@ shared_module(
     indicator_resources,
     config_in,
     dependencies: dependencies,
+    include_directories: ['ddc'],
     link_args: ['-lddcutil'],
     install: true,
     install_dir : wingpanel_indicatorsdir
