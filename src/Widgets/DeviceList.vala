@@ -17,13 +17,19 @@
  * Boston, MA 02110-1301, USA.
  */
 
-public class Power.Widgets.DeviceList : Gtk.ListBox {
+public class Power.Widgets.DeviceList : Gtk.Bin {
     public Gee.HashMap<string, Power.Widgets.DeviceRow> entries;
     public Gee.HashMap<Gtk.ListBoxRow, string> path_entries;
 
+    private Gtk.ListBox listbox;
+
     construct {
-        selection_mode = Gtk.SelectionMode.NONE;
-        set_sort_func (sort_function);
+        listbox = new Gtk.ListBox () {
+            selection_mode = NONE,
+        };
+        listbox.set_sort_func (sort_function);
+
+        child = listbox;
 
         entries = new Gee.HashMap<string, Power.Widgets.DeviceRow> ();
         path_entries = new Gee.HashMap<Gtk.ListBoxRow, string> ();
@@ -35,7 +41,7 @@ public class Power.Widgets.DeviceList : Gtk.ListBox {
         // load all battery information.
         dm.read_devices ();
 
-        this.row_activated.connect ((value) => {
+        listbox.row_activated.connect ((value) => {
             string device_path = path_entries.@get (value);
             try {
                 AppInfo statistics_app = AppInfo.create_from_commandline (
@@ -59,9 +65,9 @@ public class Power.Widgets.DeviceList : Gtk.ListBox {
         entries.@set (device_path, device_row);
         path_entries.@set (device_row, device_path);
 
-        add (device_row);
+        listbox.add (device_row);
         show_all ();
-        invalidate_sort ();
+        listbox.invalidate_sort ();
     }
 
     private void remove_battery (string device_path) {
