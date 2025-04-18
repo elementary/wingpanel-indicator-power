@@ -43,7 +43,7 @@ public class Power.Indicator : Wingpanel.Indicator {
     construct {
         GLib.Intl.bindtextdomain (Constants.GETTEXT_PACKAGE, Constants.LOCALEDIR);
         GLib.Intl.bind_textdomain_codeset (Constants.GETTEXT_PACKAGE, "UTF-8");
-        Gtk.IconTheme.get_default ().add_resource_path ("/io/elementary/desktop/wingpanel/power");
+        Gtk.IconTheme.get_for_display (Gdk.Display.get_default ()).add_resource_path ("/io/elementary/desktop/wingpanel/power");
 
         dm = Power.Services.DeviceManager.get_default ();
 
@@ -69,8 +69,13 @@ public class Power.Indicator : Wingpanel.Indicator {
             settings.changed["show-percentage"].connect (update_tooltip);
 
             if (dm.backlight.present) {
-                display_widget.scroll_event.connect ((e) => {
-                    if (Utils.handle_scroll_event (e, natural_scroll_mouse, natural_scroll_touchpad )) {
+                var scroll_controller = new Gtk.EventControllerScroll (BOTH_AXES);
+                scroll_controller.scroll.connect ((controller, dx, dy) => {
+                    if (Utils.handle_scroll_event (
+                            (Gdk.ScrollEvent) controller.get_current_event (),
+                            natural_scroll_mouse,
+                            natural_scroll_touchpad)
+                    ) {
                         if (popover_widget == null || !popover_widget.is_visible ()) {
                           show_notification ();
                         }
@@ -80,6 +85,7 @@ public class Power.Indicator : Wingpanel.Indicator {
 
                     return false;
                 });
+                display_widget.add_controller (scroll_controller);
 
                 dm.brightness_changed.connect (update_tooltip);
             }
