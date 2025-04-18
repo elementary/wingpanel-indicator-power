@@ -17,7 +17,7 @@
  * Boston, MA 02110-1301, USA.
  */
 
-public class Power.Widgets.DeviceList : Gtk.Bin {
+public class Power.Widgets.DeviceList : Granite.Bin {
     public Gee.HashMap<string, Power.Widgets.DeviceRow> entries;
     public Gee.HashMap<Gtk.ListBoxRow, string> path_entries;
 
@@ -65,8 +65,7 @@ public class Power.Widgets.DeviceList : Gtk.Bin {
         entries.@set (device_path, device_row);
         path_entries.@set (device_row, device_path);
 
-        listbox.add (device_row);
-        show_all ();
+        listbox.append (device_row);
         listbox.invalidate_sort ();
     }
 
