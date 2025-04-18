@@ -146,8 +146,4 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
     private void update_device_separator_revealer () {
         device_separator_revealer.reveal_child = dm.backlight.present && dm.has_battery;
     }
-
-    public void update_power_mode () {
-        power_mode_list?.update_active_profile ();
-    }
 }
