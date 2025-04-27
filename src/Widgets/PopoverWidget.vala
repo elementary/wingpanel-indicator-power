@@ -17,7 +17,7 @@
  * Boston, MA 02110-1301, USA.
  */
 
-public class Power.Widgets.PopoverWidget : Gtk.Grid {
+public class Power.Widgets.PopoverWidget : Gtk.Box {
     public bool is_in_session { get; construct; default = false; }
 
     private static Services.DeviceManager dm;
@@ -88,23 +88,24 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         var show_settings_button = new Gtk.Button.with_label (_("Power Settings…"));
         show_settings_button.add_css_class (Granite.STYLE_CLASS_MENUITEM);
 
-        attach (show_percent_revealer, 0, 0);
-        attach (device_list_revealer, 0, 1);
-        attach (device_separator_revealer, 0, 3);
+        orientation = VERTICAL;
+        append (show_percent_revealer);
+        append (device_list_revealer);
+        append (device_separator_revealer);
 
         if (dm.backlight.present) {
             var screen_brightness = new ScreenBrightness ();
-            attach (screen_brightness, 0, 4);
+            append (screen_brightness);
         }
 
         if (PowerModeList.successfully_initialized) {
-            attach (power_mode_separator, 0, 5);
-            attach (power_mode_list, 0, 6);
+            append (power_mode_separator);
+            append (power_mode_list);
         }
 
         if (is_in_session) {
-            attach (last_separator_revealer, 0, 7);
-            attach (show_settings_button, 0, 8);
+            append (last_separator_revealer);
+            append (show_settings_button);
         }
 
         update_device_separator_revealer ();
