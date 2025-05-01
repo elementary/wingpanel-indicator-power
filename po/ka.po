@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-11 22:47+0000\n"
-"PO-Revision-Date: 2024-10-17 02:06+0000\n"
+"PO-Revision-Date: 2025-05-02 03:55+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
-"Language-Team: Georgian <https://l10n.elementary.io/projects/wingpanel/"
+"Language-Team: Georgian <https://l10n.elementaryos.org/projects/wingpanel/"
 "wingpanel-indicator-power/ka/>\n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:49+0000\n"
 
 #: src/Indicator.vala:181
@@ -91,33 +91,33 @@ msgstr "შეერთებული"
 
 #: src/Services/Device.vala:325
 msgid "Unknown. Device may be locked."
-msgstr ""
+msgstr "უცნობია. შეიძლება, მოწყობილობა ჩაკეტილია."
 
 #. Coarse battery level can sometimes be unknown, percentage is more reliable
 #: src/Services/Device.vala:332
 msgctxt "battery-level"
 msgid "Critical"
-msgstr ""
+msgstr "კრიტიკული"
 
 #: src/Services/Device.vala:334
 msgctxt "battery-level"
 msgid "Low"
-msgstr ""
+msgstr "დაბალი"
 
 #: src/Services/Device.vala:336
 msgctxt "battery-level"
 msgid "Good"
-msgstr ""
+msgstr "კარგი"
 
 #: src/Services/Device.vala:338
 msgctxt "battery-level"
 msgid "High"
-msgstr ""
+msgstr "მაღალი"
 
 #: src/Services/Device.vala:340
 msgctxt "battery-level"
 msgid "Full"
-msgstr ""
+msgstr "სრული"
 
 #: src/Services/Device.vala:345
 msgid "Fully charged"
