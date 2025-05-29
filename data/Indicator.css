@@ -1,6 +1,7 @@
 .battery-indicator label {
+    margin-left: -4px;
+    margin-right: 3px;
     text-shadow: none;
-    margin-left: -1px;
 }
 
 panel.color-dark .battery-indicator label,

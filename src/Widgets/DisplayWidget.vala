@@ -47,7 +47,7 @@ public class Power.Widgets.DisplayWidget : Gtk.Bin {
 
         percent_revealer = new Gtk.Revealer () {
             child = percent_label,
-            halign = START,
+            hexpand = true,
             transition_type = CROSSFADE
         };
 
