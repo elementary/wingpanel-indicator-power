@@ -17,7 +17,7 @@
  * Boston, MA 02110-1301, USA.
  */
 
-public class Power.Widgets.DisplayWidget : Gtk.Box {
+public class Power.Widgets.DisplayWidget : Gtk.Bin {
     private Gtk.Revealer percent_revealer;
     public string icon_name {
         set {
@@ -28,8 +28,7 @@ public class Power.Widgets.DisplayWidget : Gtk.Box {
     public bool allow_percent { get; set; default = false; }
     public int percentage {
         set {
-            ///Translators: This represents battery charge precentage with `%i` representing the number and `%%` representing the percent symbol
-            percent_label.label = _("%i%%").printf (value);
+            percent_label.label = "%i".printf (value);
         }
     }
 
@@ -47,12 +46,18 @@ public class Power.Widgets.DisplayWidget : Gtk.Box {
         percent_label = new Gtk.Label (null);
 
         percent_revealer = new Gtk.Revealer () {
-            transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT
+            child = percent_label,
+            hexpand = true,
+            transition_type = CROSSFADE
         };
-        percent_revealer.add (percent_label);
 
-        add (image);
-        add (percent_revealer);
+        var percent_overlay = new Gtk.Overlay () {
+            child = image
+        };
+        percent_overlay.add_overlay (percent_revealer);
+
+        get_style_context ().add_class ("battery-indicator");
+        child = percent_overlay;
 
         var settings = new GLib.Settings ("io.elementary.desktop.wingpanel.power");
         settings.bind ("show-percentage", percent_revealer, "reveal-child", GLib.SettingsBindFlags.GET);

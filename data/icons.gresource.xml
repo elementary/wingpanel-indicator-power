@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
   <gresource prefix="/io/elementary/desktop/wingpanel/power">
+    <file compressed="true">Indicator.css</file>
+
     <file alias="scalable/categories/power-mode-balanced-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/balanced.svg</file>
     <file alias="scalable/categories/power-mode-performance-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/performance.svg</file>
     <file alias="scalable/categories/power-mode-powersaver-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/powersaver.svg</file>
+
+    <file alias="24x24/status/battery-labeled-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-labeled.svg</file>
+    <file alias="24x24/status/battery-labeled-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-labeled-charging.svg</file>
+    <file alias="24x24/status/battery-labeled-critical-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-labeled-critical.svg</file>
+    <file alias="24x24/status/battery-labeled-full-charging-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-labeled-full-charging.svg</file>
 
     <file alias="24x24/status/battery-100-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-100.svg</file>
     <file alias="24x24/status/battery-95-symbolic.svg" compressed="true" preprocess="xml-stripblanks">icons/battery-95.svg</file>

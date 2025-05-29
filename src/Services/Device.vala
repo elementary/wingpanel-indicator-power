@@ -237,6 +237,11 @@ public class Power.Services.Device : Object {
             return "preferences-system-power-symbolic";
         }
 
+        var settings = new GLib.Settings ("io.elementary.desktop.wingpanel.power");
+        if (settings.get_boolean ("show-percentage")) {
+            return get_icon_name_labeled ();
+        }
+
         var icon_name = "battery";
 
         if (percentage > 10) {
@@ -258,6 +263,22 @@ public class Power.Services.Device : Object {
             // Prevent showing battery-0-symbolic if there's still battery left
             int rounded_percentage = (int) (5 * Math.round (percentage / 5)).clamp (20, 100);
             icon_name = "battery-%i".printf (rounded_percentage);
+        }
+
+        return icon_name += "-symbolic";
+    }
+
+    private string get_icon_name_labeled () {
+        var icon_name = "battery-labeled";
+
+        if (is_charging) {
+            if (percentage == 100) {
+                icon_name += "-full";
+            }
+
+            icon_name += "-charging";
+        } else if (time_to_empty >= 0 && time_to_empty < 15 * 60 && percentage > 0) {
+            icon_name += "-critical";
         }
 
         return icon_name += "-symbolic";

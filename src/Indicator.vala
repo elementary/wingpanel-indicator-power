@@ -57,6 +57,15 @@ public class Power.Indicator : Wingpanel.Indicator {
 
     public override Gtk.Widget get_display_widget () {
         if (display_widget == null) {
+            var provider = new Gtk.CssProvider ();
+            provider.load_from_resource ("io/elementary/desktop/wingpanel/power/Indicator.css");
+
+            Gtk.StyleContext.add_provider_for_screen (
+                Gdk.Screen.get_default (),
+                provider,
+                Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+            );
+
             display_widget = new Widgets.DisplayWidget ();
 
             /* No need to display the indicator when the device is completely in AC mode */
