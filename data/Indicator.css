@@ -1,0 +1,19 @@
+.battery-indicator label {
+    text-shadow: none;
+    margin-left: -1px;
+}
+
+panel.color-dark .battery-indicator label,
+panel.maximized .battery-indicator label {
+    color: #333;
+}
+
+panel.color-light .battery-indicator label {
+    color: white;
+}
+
+/*Workaround shadow clip, replace with overflow in GTK4*/
+.battery-indicator image {
+    margin-right: 1px;
+    margin-left: 1px;
+}
