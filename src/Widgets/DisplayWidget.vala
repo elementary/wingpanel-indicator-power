@@ -61,7 +61,9 @@ public class Power.Widgets.DisplayWidget : Gtk.Box {
         settings.bind ("show-percentage", percent_revealer, "reveal-child", GLib.SettingsBindFlags.GET);
         bind_property ("allow-percent", percent_revealer, "visible", GLib.BindingFlags.SYNC_CREATE);
 
-        gesture_click = new Gtk.GestureMultiPress (this);
+        gesture_click = new Gtk.GestureMultiPress (this) {
+            button = Gdk.BUTTON_MIDDLE
+        };
         gesture_click.pressed.connect (on_press);
     }
 
