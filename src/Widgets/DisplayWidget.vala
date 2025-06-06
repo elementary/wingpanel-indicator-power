@@ -18,6 +18,8 @@
  */
 
 public class Power.Widgets.DisplayWidget : Gtk.Box {
+    private static Settings settings = new GLib.Settings ("io.elementary.desktop.wingpanel.power");
+
     private Gtk.Revealer percent_revealer;
     public string icon_name {
         set {
@@ -36,6 +38,8 @@ public class Power.Widgets.DisplayWidget : Gtk.Box {
     private Gtk.Label percent_label;
     private Gtk.Image image;
 
+    private Gtk.GestureMultiPress gesture_click;
+
     construct {
         valign = Gtk.Align.CENTER;
 
@@ -47,27 +51,29 @@ public class Power.Widgets.DisplayWidget : Gtk.Box {
         percent_label = new Gtk.Label (null);
 
         percent_revealer = new Gtk.Revealer () {
-            transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT
+            transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT,
+            child = percent_label,
         };
-        percent_revealer.add (percent_label);
 
         add (image);
         add (percent_revealer);
 
-        var settings = new GLib.Settings ("io.elementary.desktop.wingpanel.power");
         settings.bind ("show-percentage", percent_revealer, "reveal-child", GLib.SettingsBindFlags.GET);
         bind_property ("allow-percent", percent_revealer, "visible", GLib.BindingFlags.SYNC_CREATE);
-        button_press_event.connect ((e) => {
-            if (allow_percent && e.button == Gdk.BUTTON_MIDDLE) {
-                settings.set_boolean ("show-percentage", !(settings.get_boolean ("show-percentage")));
-                return true;
-            }
 
-            return false;
-        });
+        gesture_click = new Gtk.GestureMultiPress (this) {
+            button = Gdk.BUTTON_MIDDLE
+        };
+        gesture_click.pressed.connect (on_press);
     }
 
     public void show_percentage (bool show) {
         percent_revealer.reveal_child = show;
+    }
+
+    private void on_press () {
+        if (allow_percent) {
+            settings.set_boolean ("show-percentage", !(settings.get_boolean ("show-percentage")));
+        }
     }
 }
