@@ -1,5 +1,5 @@
 # Wingpanel Power Indicator
-[![Translation status](https://l10n.elementary.io/widgets/wingpanel/-/wingpanel-indicator-power/svg-badge.svg)](https://l10n.elementary.io/engage/wingpanel/?utm_source=widget)
+[![Translation status](https://l10n.elementaryos.org/widget/wingpanel/power/svg-badge.svg)](https://l10n.elementaryos.org/engage/wingpanel/)
 ![Screenshot](data/screenshot.png?raw=true)
 
 ## Building and Installation
