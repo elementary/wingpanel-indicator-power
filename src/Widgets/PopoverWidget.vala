@@ -63,7 +63,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
         };
 
         var show_percent_switch = new Granite.SwitchModelButton (_("Show Percentage"));
-        show_percent_switch.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
+        show_percent_switch.add_css_class (Granite.STYLE_CLASS_H4_LABEL);
 
         var show_percent_sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
             margin_top = 3,
@@ -85,8 +85,9 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
             margin_bottom = 3
         };
 
-        var show_settings_button = new Gtk.Button.with_label (_("Power Settings…"));
-        show_settings_button.add_css_class (Granite.STYLE_CLASS_MENUITEM);
+        var show_settings_button = new Wingpanel.PopoverMenuItem () {
+            text = _("Power Settings…")
+        };
 
         orientation = VERTICAL;
         append (show_percent_revealer);
