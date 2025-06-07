@@ -1,6 +1,6 @@
 This work was packaged for Debian by:
 
-    Cody Garver <cody@elementary.io> on Sat, 20 Jun 2015 20:47:26 -0500
+    elementary, Inc. <builds@elementary.io> on Sat, 20 Jun 2015 20:47:26 -0500
 
 It was downloaded from:
 
@@ -35,5 +35,6 @@ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
 The Debian packaging is:
 
     Copyright (C) 2015 Cody Garver <cody@elementary.io>
+                  2025 elementary, Inc. <builds@elementary.io>
 
 and is licensed under the GPL version 3, see above.
