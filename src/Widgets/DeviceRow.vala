@@ -28,7 +28,7 @@ public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
     }
 
     construct {
-        device_image = new Gtk.Image.from_icon_name ("battery", Gtk.IconSize.DIALOG) {
+        device_image = new Gtk.Image.from_icon_name ("battery") {
             pixel_size = 48,
             margin_end = 3
         };
@@ -39,8 +39,9 @@ public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
             valign = Gtk.Align.END
         };
 
-        var overlay = new Gtk.Overlay ();
-        overlay.add (device_image);
+        var overlay = new Gtk.Overlay () {
+            child = device_image,
+        };
         overlay.add_overlay (battery_image);
 
         var title_label = new Gtk.Label (get_title ()) {
@@ -65,8 +66,7 @@ public class Power.Widgets.DeviceRow : Gtk.ListBoxRow {
         grid.attach (title_label, 1, 0);
         grid.attach (info_label, 1, 1);
 
-
-        add (grid);
+        child = grid;
         update_icons ();
 
         battery.properties_updated.connect (() => {

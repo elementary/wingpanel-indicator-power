@@ -17,7 +17,7 @@
  * Boston, MA 02110-1301, USA.
  */
 
-public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
+public class Power.Widgets.ScreenBrightness : Granite.Bin {
     private Gtk.Scale brightness_slider;
     private Power.Services.DeviceManager dm;
 
@@ -32,12 +32,12 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
         var touchpad_settings = new GLib.Settings ("org.gnome.desktop.peripherals.touchpad");
         touchpad_settings.bind ("natural-scroll", this, "natural-scroll-touchpad", SettingsBindFlags.DEFAULT);
 
-        var image = new Gtk.Image.from_icon_name ("brightness-display-symbolic", Gtk.IconSize.DIALOG) {
-            margin_start = 6
+        var image = new Gtk.Image.from_icon_name ("brightness-display-symbolic") {
+            pixel_size = 48
         };
 
         brightness_slider = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 10) {
-            margin_end = 12,
+            margin_end = 6,
             hexpand = true,
             draw_value = false,
             width_request = 175
@@ -49,24 +49,23 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
             margin_end = 12
         };
 
-        box.add (image);
-        box.add (brightness_slider);
+        box.append (image);
+        box.append (brightness_slider);
 
-        var show_brightness_slider = new Gtk.Revealer ();
-        show_brightness_slider.add (box);
+        var show_brightness_slider = new Gtk.Revealer () {
+            child = box
+        };
 
-        add (show_brightness_slider);
+        child = show_brightness_slider;
 
         if (dm.brightness != -1) {
             brightness_slider.set_value (dm.brightness);
             show_brightness_slider.reveal_child = true;
         }
 
-        brightness_slider.scroll_event.connect ((e) => {
-          /* Re-emit the signal on the eventbox instead of using native handler */
-          on_scroll_event (e);
-          return Gdk.EVENT_STOP;
-        });
+        var scroll_controller = new Gtk.EventControllerScroll (BOTH_AXES);
+        scroll_controller.scroll.connect (on_scroll);
+        add_controller (scroll_controller);
 
         brightness_slider.value_changed.connect ((value) => {
             brightness_slider.set_value (value.get_value ());
@@ -83,7 +82,7 @@ public class Power.Widgets.ScreenBrightness : Gtk.EventBox {
         });
     }
 
-    private bool on_scroll_event (Gdk.EventScroll e) {
-        return Utils.handle_scroll_event (e, natural_scroll_mouse, natural_scroll_touchpad);
+    private bool on_scroll (Gtk.EventControllerScroll controller, double dx, double dy) {
+        return Utils.handle_scroll_event ((Gdk.ScrollEvent) controller.get_current_event (), natural_scroll_mouse, natural_scroll_touchpad);
     }
 }

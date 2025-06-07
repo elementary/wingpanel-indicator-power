@@ -17,7 +17,7 @@
  * Boston, MA 02110-1301, USA.
  */
 
-public class Power.Widgets.PopoverWidget : Gtk.Grid {
+public class Power.Widgets.PopoverWidget : Gtk.Box {
     public bool is_in_session { get; construct; default = false; }
 
     private static Services.DeviceManager dm;
@@ -63,7 +63,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         };
 
         var show_percent_switch = new Granite.SwitchModelButton (_("Show Percentage"));
-        show_percent_switch.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
+        show_percent_switch.add_css_class (Granite.STYLE_CLASS_H4_LABEL);
 
         var show_percent_sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
             margin_top = 3,
@@ -71,8 +71,8 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
         };
 
         var show_percent_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
-        show_percent_box.add (show_percent_switch);
-        show_percent_box.add (show_percent_sep);
+        show_percent_box.append (show_percent_switch);
+        show_percent_box.append (show_percent_sep);
 
         var show_percent_revealer = new Gtk.Revealer () {
             child = show_percent_box,
@@ -85,27 +85,29 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
             margin_bottom = 3
         };
 
-        var show_settings_button = new Gtk.ModelButton () {
+        var show_settings_button = new Wingpanel.PopoverMenuItem () {
+            margin_bottom = 3,
             text = _("Power Settings…")
         };
 
-        attach (show_percent_revealer, 0, 0);
-        attach (device_list_revealer, 0, 1);
-        attach (device_separator_revealer, 0, 3);
+        orientation = VERTICAL;
+        append (show_percent_revealer);
+        append (device_list_revealer);
+        append (device_separator_revealer);
 
         if (dm.backlight.present) {
             var screen_brightness = new ScreenBrightness ();
-            attach (screen_brightness, 0, 4);
+            append (screen_brightness);
         }
 
         if (PowerModeList.successfully_initialized) {
-            attach (power_mode_separator, 0, 5);
-            attach (power_mode_list, 0, 6);
+            append (power_mode_separator);
+            append (power_mode_list);
         }
 
         if (is_in_session) {
-            attach (last_separator_revealer, 0, 7);
-            attach (show_settings_button, 0, 8);
+            append (last_separator_revealer);
+            append (show_settings_button);
         }
 
         update_device_separator_revealer ();
@@ -146,9 +148,5 @@ public class Power.Widgets.PopoverWidget : Gtk.Grid {
 
     private void update_device_separator_revealer () {
         device_separator_revealer.reveal_child = dm.backlight.present && dm.has_battery;
-    }
-
-    public void update_power_mode () {
-        power_mode_list?.update_active_profile ();
     }
 }
