@@ -52,7 +52,7 @@ public class Power.Indicator : Wingpanel.Indicator {
         var touchpad_settings = new GLib.Settings ("org.gnome.desktop.peripherals.touchpad");
         touchpad_settings.bind ("natural-scroll", this, "natural-scroll-touchpad", SettingsBindFlags.DEFAULT);
 
-        settings = new GLib.Settings ("io.elementary.desktop.wingpanel.power");
+        settings = new GLib.Settings ("io.elementary.panel.power");
     }
 
     public override Gtk.Widget get_display_widget () {

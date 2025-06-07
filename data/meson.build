@@ -8,6 +8,7 @@ i18n.merge_file(
 )
 
 install_data(
-    'io.elementary.desktop.wingpanel.power.gschema.xml',
-    install_dir: datadir / 'glib-2.0' / 'schemas'
+    'power.gschema.xml',
+    install_dir: datadir / 'glib-2.0' / 'schemas',
+    rename: 'io.elementary.panel.power.gschema.xml'
 )
