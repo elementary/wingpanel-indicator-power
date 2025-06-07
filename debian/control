@@ -1,4 +1,4 @@
-Source: wingpanel-indicator-power
+Source: io.elementary.panel.power
 Section: x11
 Priority: optional
 Maintainer: elementary, Inc. <builds@elementary.io>
@@ -16,7 +16,7 @@ Build-Depends: debhelper (>= 10.5.1),
 Standards-Version: 4.1.1
 Homepage: https://github.com/elementary/wingpanel-indicator-power
 
-Package: wingpanel-indicator-power
+Package: io.elementary.panel.power
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Recommends: gnome-power-manager
