@@ -33,11 +33,11 @@ public class Power.Widgets.ScreenBrightness : Granite.Bin {
         touchpad_settings.bind ("natural-scroll", this, "natural-scroll-touchpad", SettingsBindFlags.DEFAULT);
 
         var image = new Gtk.Image.from_icon_name ("brightness-display-symbolic") {
-            margin_start = 6
+            pixel_size = 48
         };
 
         brightness_slider = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 10) {
-            margin_end = 12,
+            margin_end = 6,
             hexpand = true,
             draw_value = false,
             width_request = 175
