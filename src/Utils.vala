@@ -5,33 +5,36 @@ public class Power.Utils {
     private static double total_x_delta = 0;
 
     /* Smooth scrolling vertical support. Accumulate delta_y until threshold exceeded before actioning */
-    public static bool handle_scroll_event (Gdk.EventScroll e,
+    public static bool handle_scroll_event (Gdk.ScrollEvent e,
                                             bool natural_scroll_mouse,
                                             bool natural_scroll_touchpad) {
         var dir = 0.0;
         bool natural_scroll;
-        var event_source_device = e.get_source_device ();
-        if (event_source_device == null) {
+        var event_device = e.get_device ();
+        if (event_device == null) {
             return false;
         }
 
-        if (event_source_device.input_source == Gdk.InputSource.MOUSE) {
+        if (event_device.source == Gdk.InputSource.MOUSE) {
             natural_scroll = natural_scroll_mouse;
-        } else if (event_source_device.input_source == Gdk.InputSource.TOUCHPAD) {
+        } else if (event_device.source == Gdk.InputSource.TOUCHPAD) {
             natural_scroll = natural_scroll_touchpad;
         } else {
             natural_scroll = true;
         }
 
-        switch (e.direction) {
+        double delta_x, delta_y;
+        e.get_deltas (out delta_x, out delta_y);
+
+        switch (e.get_direction ()) {
             case Gdk.ScrollDirection.SMOOTH:
-                var abs_x = double.max (e.delta_x.abs (), 0.0001);
-                var abs_y = double.max (e.delta_y.abs (), 0.0001);
+                var abs_x = double.max (delta_x.abs (), 0.0001);
+                var abs_y = double.max (delta_y.abs (), 0.0001);
 
                 if (abs_y / abs_x > 2.0) {
-                    total_y_delta += e.delta_y;
+                    total_y_delta += delta_y;
                 } else if (abs_x / abs_y > 2.0) {
-                    total_x_delta += e.delta_x;
+                    total_x_delta += delta_x;
                 }
 
                 break;

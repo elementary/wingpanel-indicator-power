@@ -38,8 +38,6 @@ public class Power.Widgets.DisplayWidget : Gtk.Box {
     private Gtk.Label percent_label;
     private Gtk.Image image;
 
-    private Gtk.GestureMultiPress gesture_click;
-
     construct {
         valign = Gtk.Align.CENTER;
 
@@ -55,16 +53,17 @@ public class Power.Widgets.DisplayWidget : Gtk.Box {
             child = percent_label,
         };
 
-        add (image);
-        add (percent_revealer);
+        append (image);
+        append (percent_revealer);
 
         settings.bind ("show-percentage", percent_revealer, "reveal-child", GLib.SettingsBindFlags.GET);
         bind_property ("allow-percent", percent_revealer, "visible", GLib.BindingFlags.SYNC_CREATE);
 
-        gesture_click = new Gtk.GestureMultiPress (this) {
+        var gesture_click = new Gtk.GestureClick () {
             button = Gdk.BUTTON_MIDDLE
         };
         gesture_click.pressed.connect (on_press);
+        add_controller (gesture_click);
     }
 
     public void show_percentage (bool show) {

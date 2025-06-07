@@ -6,10 +6,10 @@
 
 You'll need the following dependencies:
 
-* libgranite-dev
+* libgranite-7-dev
 * libgtop2-dev
 * libudev-dev
-* libwingpanel-dev
+* libwingpanel-8-dev
 * libnotify-dev
 * meson >= 0.58.0
 * valac
