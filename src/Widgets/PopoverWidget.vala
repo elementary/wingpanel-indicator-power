@@ -86,6 +86,7 @@ public class Power.Widgets.PopoverWidget : Gtk.Box {
         };
 
         var show_settings_button = new Wingpanel.PopoverMenuItem () {
+            margin_bottom = 3,
             text = _("Power Settings…")
         };
 
