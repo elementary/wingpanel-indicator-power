@@ -111,8 +111,7 @@ public class Power.Widgets.PowerModeList : Gtk.Box {
 
             var label_widget = new Gtk.Label (label);
 
-            // Kinda funky spacing to center icon between label and radio
-            var box = new Gtk.Box (HORIZONTAL, 1) {
+            var box = new Gtk.Box (HORIZONTAL, 6) {
                 halign = START,
                 margin_top = 3,
                 margin_bottom = 3,
