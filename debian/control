@@ -5,12 +5,12 @@ Maintainer: elementary, Inc. <builds@elementary.io>
 Build-Depends: debhelper (>= 10.5.1),
                gettext,
                gobject-introspection,
-               libgranite-dev,
-               libgtk-3-dev (>= 3.12),
+               libgranite-7-dev,
+               libgtk-4-dev (>= 3.12),
                libgtop2-dev,
                libnotify-dev,
                libudev-dev,
-               libwingpanel-dev,
+               libwingpanel-8-dev,
                meson,
                valac (>= 0.28)
 Standards-Version: 4.1.1
