@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: power-indicator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-11 22:47+0000\n"
+"POT-Creation-Date: 2025-06-09 18:50+0000\n"
 "PO-Revision-Date: 2021-08-01 17:35+0000\n"
 "Last-Translator: elSolus <tumbleweed@tuta.io>\n"
 "Language-Team: Punjabi <https://l10n.elementary.io/projects/wingpanel/"
@@ -19,29 +19,29 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:185
 #, c-format
 msgid "%s: %s"
 msgstr "%s: %s"
 
-#: src/Indicator.vala:182
+#: src/Indicator.vala:186
 #, fuzzy
 #| msgid "Middle-click to toggle percentage"
 msgid "Middle-click to hide percentage"
 msgstr "ਫ਼ੀਸਦ ਚਾਲੂ ਜਾਂ ਬੰਦ ਕਰਨ ਲਈ ਵਿਚਕਾਰਲੀ-ਕਲਿੱਕ"
 
-#: src/Indicator.vala:182
+#: src/Indicator.vala:186
 #, fuzzy
 #| msgid "Middle-click to toggle percentage"
 msgid "Middle-click to show percentage"
 msgstr "ਫ਼ੀਸਦ ਚਾਲੂ ਜਾਂ ਬੰਦ ਕਰਨ ਲਈ ਵਿਚਕਾਰਲੀ-ਕਲਿੱਕ"
 
-#: src/Indicator.vala:190
+#: src/Indicator.vala:194
 #, c-format
 msgid "Screen brightness: %i"
 msgstr "ਸਕਰੀਨ ਦੀ ਚਮਕ: %i"
 
-#: src/Indicator.vala:191
+#: src/Indicator.vala:195
 msgid "Scroll to change screen brightness"
 msgstr "ਸਕਰੀਨ ਦੀ ਚਮਕ ਬਦਲਣ ਲਈ ਸਕਰੋਲ ਕਰੋ"
 
@@ -190,28 +190,28 @@ msgid "Device"
 msgstr "ਡਿਵਾਈਸ"
 
 #. /Translators: This represents battery charge precentage with `%i` representing the number and `%%` representing the percent symbol
-#: src/Widgets/DisplayWidget.vala:32
+#: src/Widgets/DisplayWidget.vala:34
 #, c-format
 msgid "%i%%"
 msgstr "%i%%"
 
-#: src/Widgets/PopoverWidget.vala:63
+#: src/Widgets/PopoverWidget.vala:65
 msgid "Show Percentage"
 msgstr "ਫ਼ੀਸਦ ਵਿਖਾਓ"
 
-#: src/Widgets/PopoverWidget.vala:86
+#: src/Widgets/PopoverWidget.vala:90
 msgid "Power Settings…"
 msgstr "ਊਰਜਾ ਸੈਟਿੰਗਾਂ…"
 
-#: src/Widgets/PowerModeList.vala:53
+#: src/Widgets/PowerModeList.vala:67
 msgid "Power Saver"
 msgstr ""
 
-#: src/Widgets/PowerModeList.vala:55
+#: src/Widgets/PowerModeList.vala:68
 msgid "Balanced"
 msgstr ""
 
-#: src/Widgets/PowerModeList.vala:59
+#: src/Widgets/PowerModeList.vala:69
 msgid "Performance"
 msgstr ""
 

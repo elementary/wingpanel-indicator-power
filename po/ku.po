@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wingpanel-indicator-power\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-11 22:47+0000\n"
+"POT-Creation-Date: 2025-06-09 18:50+0000\n"
 "PO-Revision-Date: 2017-05-04 20:05+0000\n"
 "Last-Translator: Rokar <rokartv10@gmail.com>\n"
 "Language-Team: ku (generated) <https://l10n.elementary.io/projects/wingpanel/"
@@ -20,25 +20,25 @@ msgstr ""
 "X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-02-19 05:58+0000\n"
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:185
 #, c-format
 msgid "%s: %s"
 msgstr ""
 
-#: src/Indicator.vala:182
+#: src/Indicator.vala:186
 msgid "Middle-click to hide percentage"
 msgstr ""
 
-#: src/Indicator.vala:182
+#: src/Indicator.vala:186
 msgid "Middle-click to show percentage"
 msgstr ""
 
-#: src/Indicator.vala:190
+#: src/Indicator.vala:194
 #, c-format
 msgid "Screen brightness: %i"
 msgstr ""
 
-#: src/Indicator.vala:191
+#: src/Indicator.vala:195
 msgid "Scroll to change screen brightness"
 msgstr ""
 
@@ -189,30 +189,30 @@ msgid "Device"
 msgstr "Cîhaz"
 
 #. /Translators: This represents battery charge precentage with `%i` representing the number and `%%` representing the percent symbol
-#: src/Widgets/DisplayWidget.vala:32
+#: src/Widgets/DisplayWidget.vala:34
 #, c-format
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:63
+#: src/Widgets/PopoverWidget.vala:65
 msgid "Show Percentage"
 msgstr "rêjeya sedî nîşan bike"
 
-#: src/Widgets/PopoverWidget.vala:86
+#: src/Widgets/PopoverWidget.vala:90
 msgid "Power Settings…"
 msgstr "sekinandina Hêz…"
 
-#: src/Widgets/PowerModeList.vala:53
+#: src/Widgets/PowerModeList.vala:67
 #, fuzzy
 #| msgid "Power"
 msgid "Power Saver"
 msgstr "Hêz"
 
-#: src/Widgets/PowerModeList.vala:55
+#: src/Widgets/PowerModeList.vala:68
 msgid "Balanced"
 msgstr ""
 
-#: src/Widgets/PowerModeList.vala:59
+#: src/Widgets/PowerModeList.vala:69
 msgid "Performance"
 msgstr ""
 

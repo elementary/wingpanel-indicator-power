@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-11 22:47+0000\n"
+"POT-Creation-Date: 2025-06-09 18:50+0000\n"
 "PO-Revision-Date: 2016-02-14 10:01+0000\n"
 "Last-Translator: Dmitry Taranovich <vorbissmcgregor@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,25 +15,25 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-11-07 06:48+0000\n"
 "X-Generator: Launchpad (build 18246)\n"
 
-#: src/Indicator.vala:181
+#: src/Indicator.vala:185
 #, c-format
 msgid "%s: %s"
 msgstr ""
 
-#: src/Indicator.vala:182
+#: src/Indicator.vala:186
 msgid "Middle-click to hide percentage"
 msgstr ""
 
-#: src/Indicator.vala:182
+#: src/Indicator.vala:186
 msgid "Middle-click to show percentage"
 msgstr ""
 
-#: src/Indicator.vala:190
+#: src/Indicator.vala:194
 #, c-format
 msgid "Screen brightness: %i"
 msgstr ""
 
-#: src/Indicator.vala:191
+#: src/Indicator.vala:195
 msgid "Scroll to change screen brightness"
 msgstr ""
 
@@ -190,30 +190,30 @@ msgid "Device"
 msgstr "Прылада"
 
 #. /Translators: This represents battery charge precentage with `%i` representing the number and `%%` representing the percent symbol
-#: src/Widgets/DisplayWidget.vala:32
+#: src/Widgets/DisplayWidget.vala:34
 #, c-format
 msgid "%i%%"
 msgstr ""
 
-#: src/Widgets/PopoverWidget.vala:63
+#: src/Widgets/PopoverWidget.vala:65
 msgid "Show Percentage"
 msgstr "Паказваць у працэнтах"
 
-#: src/Widgets/PopoverWidget.vala:86
+#: src/Widgets/PopoverWidget.vala:90
 msgid "Power Settings…"
 msgstr "Налады сілкавання…"
 
-#: src/Widgets/PowerModeList.vala:53
+#: src/Widgets/PowerModeList.vala:67
 #, fuzzy
 #| msgid "Power"
 msgid "Power Saver"
 msgstr "Сілкаванне"
 
-#: src/Widgets/PowerModeList.vala:55
+#: src/Widgets/PowerModeList.vala:68
 msgid "Balanced"
 msgstr ""
 
-#: src/Widgets/PowerModeList.vala:59
+#: src/Widgets/PowerModeList.vala:69
 msgid "Performance"
 msgstr ""
 
