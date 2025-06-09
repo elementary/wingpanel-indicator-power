@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-11 22:47+0000\n"
+"POT-Creation-Date: 2025-06-09 18:50+0000\n"
 "PO-Revision-Date: 2024-06-16 03:16+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -30,6 +30,10 @@ msgid ""
 msgstr ""
 "Vis batterinivåer, juster skjermlysstyrke, og se programmer som bruker mye "
 "effekt"
+
+#: data/power.metainfo.xml.in:27
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/power.metainfo.xml.in:35 data/power.metainfo.xml.in:48
 #: data/power.metainfo.xml.in:61 data/power.metainfo.xml.in:71
@@ -116,6 +120,3 @@ msgstr "Ytelsesforbedringer"
 
 #~ msgid "Reduce spacing when percentage is shown"
 #~ msgstr "Reduser mellomrom når prosentsats vises"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

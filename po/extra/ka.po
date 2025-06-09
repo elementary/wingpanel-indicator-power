@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-11 22:47+0000\n"
+"POT-Creation-Date: 2025-06-09 18:50+0000\n"
 "PO-Revision-Date: 2025-05-02 03:55+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementaryos.org/projects/wingpanel/"
@@ -30,6 +30,10 @@ msgid ""
 msgstr ""
 "ნახეთ ელემენტის დონეები, გაასწორეთ ეკრანის სიკაშკაშე და ნახეთ აპები, "
 "რომლებიც ბევრ ენერგიას ხარჯავენ"
+
+#: data/power.metainfo.xml.in:27
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/power.metainfo.xml.in:35 data/power.metainfo.xml.in:48
 #: data/power.metainfo.xml.in:61 data/power.metainfo.xml.in:71
@@ -110,6 +114,3 @@ msgstr "გადატარებისას მინიშნების �
 #: data/power.metainfo.xml.in:129
 msgid "Performance improvements"
 msgstr "წარმადობის გაუმჯობესებები"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

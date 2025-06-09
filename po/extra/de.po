@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-11 22:47+0000\n"
+"POT-Creation-Date: 2025-06-09 18:50+0000\n"
 "PO-Revision-Date: 2021-08-24 08:26+0000\n"
 "Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/wingpanel/"
@@ -30,6 +30,10 @@ msgid ""
 msgstr ""
 "Akkustand anzeigen, Bildschirmhelligkeit anpassen und Apps mit hohem "
 "Energieverbrauch ansehen"
+
+#: data/power.metainfo.xml.in:27
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/power.metainfo.xml.in:35 data/power.metainfo.xml.in:48
 #: data/power.metainfo.xml.in:61 data/power.metainfo.xml.in:71
@@ -118,6 +122,3 @@ msgstr "Leistungsverbesserungen"
 
 #~ msgid "Reduce spacing when percentage is shown"
 #~ msgstr "Zeichenabstand reduziert wenn Prozentzahl angezeigt wird"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

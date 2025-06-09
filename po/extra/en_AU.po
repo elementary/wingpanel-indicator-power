@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-11 22:47+0000\n"
+"POT-Creation-Date: 2025-06-09 18:50+0000\n"
 "PO-Revision-Date: 2024-08-07 00:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: English (Australia) <https://l10n.elementary.io/projects/"
@@ -30,6 +30,10 @@ msgid ""
 msgstr ""
 "View battery levels, adjust display brightness, and see apps using lots of "
 "power"
+
+#: data/power.metainfo.xml.in:27
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/power.metainfo.xml.in:35 data/power.metainfo.xml.in:48
 #: data/power.metainfo.xml.in:61 data/power.metainfo.xml.in:71
@@ -109,6 +113,3 @@ msgstr ""
 #: data/power.metainfo.xml.in:129
 msgid "Performance improvements"
 msgstr "Performance improvements"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

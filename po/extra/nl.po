@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-11 22:47+0000\n"
+"POT-Creation-Date: 2025-06-09 18:50+0000\n"
 "PO-Revision-Date: 2024-12-22 13:16+0000\n"
 "Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/wingpanel/"
@@ -30,6 +30,10 @@ msgid ""
 msgstr ""
 "Zie het batterijniveau, pas de helderheid van het scherm aan en zie apps die "
 "veel energie gebruiken"
+
+#: data/power.metainfo.xml.in:27
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/power.metainfo.xml.in:35 data/power.metainfo.xml.in:48
 #: data/power.metainfo.xml.in:61 data/power.metainfo.xml.in:71
@@ -113,6 +117,3 @@ msgstr "Prestatieverbeteringen"
 
 #~ msgid "Reduce spacing when percentage is shown"
 #~ msgstr "Verminder witruimte als een percentage getoond wordt"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

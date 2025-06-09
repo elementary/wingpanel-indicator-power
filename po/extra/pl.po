@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-11 22:47+0000\n"
+"POT-Creation-Date: 2025-06-09 18:50+0000\n"
 "PO-Revision-Date: 2024-10-07 05:38+0000\n"
 "Last-Translator: Marcin Serwin <marcin@serwin.dev>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/wingpanel/"
@@ -31,6 +31,10 @@ msgid ""
 msgstr ""
 "Zobacz poziom baterii, dopasuj jasność ekranu oraz zobacz aplikacje "
 "pobierające dużo mocy"
+
+#: data/power.metainfo.xml.in:27
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/power.metainfo.xml.in:35 data/power.metainfo.xml.in:48
 #: data/power.metainfo.xml.in:61 data/power.metainfo.xml.in:71
@@ -119,9 +123,6 @@ msgstr "Ulepszenie wydajności"
 
 #~ msgid "Reduce spacing when percentage is shown"
 #~ msgstr "Zmniejszenie rozstawienie gdy widoczny jest procent baterii"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid ""
 #~ "Clicking the \"Apps Using Lots of Power\" header label causes a crash"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-11 22:47+0000\n"
+"POT-Creation-Date: 2025-06-09 18:50+0000\n"
 "PO-Revision-Date: 2021-03-02 04:42+0000\n"
 "Last-Translator: david <dcardelleg@gmail.com>\n"
 "Language-Team: Galician <https://l10n.elementary.io/projects/wingpanel/"
@@ -30,6 +30,10 @@ msgid ""
 msgstr ""
 "Vexa os niveis de batería, axuste o brillo da pantalla e vexa as aplicacións "
 "que consumen moita enerxía"
+
+#: data/power.metainfo.xml.in:27
+msgid "elementary, Inc."
+msgstr ""
 
 #: data/power.metainfo.xml.in:35 data/power.metainfo.xml.in:48
 #: data/power.metainfo.xml.in:61 data/power.metainfo.xml.in:71
